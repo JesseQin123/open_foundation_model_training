@@ -1,17 +1,105 @@
 # Open Foundation Model Training
 
-Solo Unicorn 的中文模型训练学习原型：6 个单元、18 课，包含讲解、例子与理解检查。第 1 课含互动，后续为入门阅读课；38 章 Marin 技术材料可在课程内展开，另有 83 条历史训练记录。
+An educational website by **Solo Unicorn** that explains how foundation models are trained, evaluated, and refined. It connects introductory lessons with technical reading and public project records, helping readers understand both the training process and the evidence behind reported progress.
 
-运行：`npm run prototype`，打开 http://localhost:4317。
+**[Visit the website → atlas.solounicorn.club](https://atlas.solounicorn.club)**
 
-验证：`npm run verify`。
+The learning content is currently written in Simplified Chinese. This README documents the project in English for contributors and other repository visitors.
 
-生产构建：`npm run build`。先验证课程、引用和导航，再将 11 个公开静态资源输出到 `dist/`；本地工具和编辑笔记不进入网站产物。
+## Overview
 
-部署配置：Vercel `jesse-workspace/atlas`，关联此仓库的 `main` 分支。正式域名为 `https://atlas.solounicorn.club`；DNS 由 Cloudflare 管理。后续推送到 `main` 会触发 Vercel 构建。开发环境的布局实验不会在生产站点启用。
+The project is intended for students, product professionals, and technical readers seeking an end-to-end introduction to model training. The introductory lessons require no prior training experience or GPU access; the optional technical material covers more advanced mathematics, code, and distributed systems.
 
-- [内容与阅读结构审查](CONTENT_AUDIT.md)：已修正、已对照与待复核项。
-- [课程与资料映射](CURRICULUM_INTEGRATION.md)。
-- [原型说明](prototype/NOTES.md)与[验证记录](prototype/QA.md)。
+The website provides:
 
-默认首页按六个单元组织。原型布局实验仅在 `?layouts=1&variant=A`（或 B / C）开启。历史记录不代表实时状态，来源可达不等于事实已核验。
+- **18 lessons across six units**, organized into a single, sequential learning path.
+- **An interactive first lesson** demonstrating prediction, loss, and parameter updates with a toy model.
+- **17 introductory reading lessons**, each with explanations, an example, and a comprehension question with an answer.
+- **38 chapters of Marin-focused technical material**, available as optional, expandable reading within the relevant lessons.
+- **83 historical training records**, with source links and distinctions between reported results, experiments, plans, and unresolved questions.
+
+Marin provides the main case study for pretraining and training infrastructure. Xiaomi MiMo provides an additional public reference for post-training and reinforcement learning.
+
+## Learning path
+
+| Unit | Lessons | Focus |
+| --- | --- | --- |
+| 1. Foundations | 1–3 | Prediction, loss, the model development lifecycle, and tokenization |
+| 2. Training preparation | 4–6 | Data preparation, data mixtures, and small-scale experiments |
+| 3. Model architecture | 7–9 | Transformers, mixture-of-experts models, and optimization steps |
+| 4. Training systems | 10–12 | Parallelism, throughput, checkpoints, and recovery |
+| 5. Evaluation | 13–15 | Interpreting loss, comparing benchmarks, and extending context length |
+| 6. Post-training and practice | 16–18 | Supervised fine-tuning, reinforcement learning, and reading training evidence |
+
+Each lesson leads directly to the next. Technical material and external references are optional supplements, so readers can follow the course without navigating a separate textbook.
+
+## Run locally
+
+**Requirements:** Node.js 22.x and npm. The current implementation uses browser APIs and Node.js built-in modules, with no third-party package dependencies to install.
+
+```bash
+git clone https://github.com/JesseQin123/open_foundation_model_training.git
+cd open_foundation_model_training
+npm run prototype
+```
+
+Open [http://localhost:4317](http://localhost:4317).
+
+## Validation and build
+
+```bash
+# Check content mappings, citations, routing, and selected editorial assertions
+npm run verify
+
+# Run validation and generate the production site
+npm run build
+```
+
+The build writes the public HTML, CSS, JavaScript, and downloadable textbook to `dist/`. Local development tools and editorial documentation are excluded from the published site. Build output is generated and is not committed to the repository.
+
+Automated checks verify structural consistency and selected behaviors; they do not independently establish the accuracy of every source claim. Browser checks and their coverage are documented in [QA notes](prototype/QA.md).
+
+## Deployment
+
+The website is deployed on Vercel at [atlas.solounicorn.club](https://atlas.solounicorn.club). Pushes to this repository's `main` branch trigger a production build.
+
+[vercel.json](vercel.json) specifies the build command and `dist/` output directory. The production build disables the local layout experiments.
+
+## Project structure
+
+| Path | Purpose |
+| --- | --- |
+| `prototype/` | Website source, styles, lesson content, and the local server |
+| `prototype/lessons.js` | Introductory reading content for lessons 2–18 |
+| `prototype/marin-data.js` | Imported technical chapters, historical records, and source references |
+| `prototype/reading.js` | Learning pages, navigation, and the shared reading experience |
+| `prototype/verify.mjs` | Automated content and navigation checks |
+| `prototype/build.mjs` | Production static-site build |
+| `audit/` | Source-retrieval records supporting the editorial review |
+| `vercel.json` | Deployment configuration |
+
+The `prototype/` directory name reflects the project's current stage: a published educational prototype built with HTML, CSS, and JavaScript.
+
+## Content status and evidence
+
+The imported training records are a **historical snapshot dated September 22, 2026**, not a live monitoring feed. Their original editorial status and the scope of subsequent checks are documented separately.
+
+Teaching examples and simulations are labeled to distinguish them from project measurements. Source accessibility, reported observations, and independently reproduced results are different levels of evidence. The editorial review has corrected selected factual and interpretive issues, but has not verified every claim or reproduced the underlying training runs.
+
+Current limitations include:
+
+- Only the first lesson has a dedicated interactive simulation; later lessons provide introductory reading rather than complete training labs.
+- Lesson completion is not persisted across page reloads.
+- Some original textbook illustrations were unavailable in the imported material and are marked accordingly.
+- Automated collection of new training records is not implemented.
+
+For review scope, corrections, and unresolved evidence, see [Content Audit](CONTENT_AUDIT.md).
+
+## Further documentation
+
+- [Curriculum Integration](CURRICULUM_INTEGRATION.md): lesson-to-chapter mappings and historical data provenance.
+- [Prototype Notes](prototype/NOTES.md): implementation scope and local design experiments.
+- [QA Notes](prototype/QA.md): browser checks and known verification limits.
+- [Project Plan](PROJECT_PLAN.md): design rationale and proposed future work; planned features are not necessarily implemented.
+
+Some supporting documents are written in Chinese. When reporting a content issue, include the page, the specific statement, and a supporting source where available.
