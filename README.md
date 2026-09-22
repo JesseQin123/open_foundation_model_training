@@ -13,8 +13,8 @@ The project is intended for students, product professionals, and technical reade
 The website provides:
 
 - **18 lessons across six units**, organized into a single, sequential learning path.
-- **Three illustrated, interactive lessons in Unit 1**, covering parameter updates, the development lifecycle, and the path from text to token IDs and vectors.
-- **15 introductory reading lessons**, each with explanations, an example, and a comprehension question with an answer.
+- **Six illustrated, interactive lessons in Units 1–2**, covering parameter updates, the development lifecycle, tokenization, data preparation, data mixtures, and controlled small-scale experiments.
+- **12 introductory reading lessons**, each with explanations, an example, and a comprehension question with an answer.
 - **38 chapters of Marin-focused technical material**, available as optional, expandable reading within the relevant lessons.
 - **83 historical training records**, with source links and distinctions between reported results, experiments, plans, and unresolved questions.
 
@@ -71,6 +71,7 @@ The website is deployed on Vercel at [atlas.solounicorn.club](https://atlas.solo
 | --- | --- |
 | `prototype/` | Website source, styles, lesson content, and the local server |
 | `prototype/lessons.js` | Baseline introductory reading content |
+| `prototype/unit-two.js` | Detailed Unit 2 lessons and deterministic data-preparation, mixture, and experiment teaching models |
 | `prototype/unit-one.js` | Detailed Unit 1 lessons, interactive diagrams, and teaching models |
 | `prototype/marin-data.js` | Imported technical chapters, historical records, and source references |
 | `prototype/reading.js` | Learning pages, navigation, and the shared reading experience |

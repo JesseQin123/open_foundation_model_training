@@ -29,3 +29,6 @@ Original source links:
 - https://github.com/XiaomiMiMo/MiMo
 
 The existing Solo Unicorn editorial textbook is imported in full and has received the corrections documented in `../CONTENT_AUDIT.md`. The Markdown download is the corrected edition. External papers and project records are linked as evidence; retrieval alone is not presented as claim verification. Missing textbook illustrations remain explicitly marked.
+
+### Unit 2 depth pass
+Lessons 4–6 are now illustrated interactive lessons alongside Unit 1. Lessons 7–18 remain introductory reading versions. `unit-two.js` adds deterministic examples for preparation, overlap-aware splitting, token-budget allocation and controlled experiments; `unit-two.css` extends the shared lesson styles. The interactive state lasts only within the current page session and is not saved across reloads.

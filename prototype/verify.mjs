@@ -11,7 +11,7 @@ const navigate=(url)=>{const u=new URL(url,location.href);location.href=u.href};
 const history={get state(){return entries[pointer].state},replaceState(state,_,url){entries[pointer]={state,url:new URL(url,location.href).href};navigate(url)},pushState(state,_,url){entries.splice(pointer+1);entries.push({state,url:new URL(url,location.href).href});pointer++;navigate(url)}};
 const context={window:{scrollY:0,scrollTo(x,y){this.scrollY=y},addEventListener(n,f){listeners.set(n,f)}},document,history,location,URL,URLSearchParams,console,clearInterval,setInterval,clearTimeout,setTimeout,requestAnimationFrame:f=>f(),innerWidth:1440};
 vm.createContext(context);
-for(const file of ['app.js','marin-data.js','integration.js','review.js','lessons.js','unit-one.js','reading.js'])vm.runInContext(fs.readFileSync(new URL(file,import.meta.url),'utf8'),context,{filename:file});
+for(const file of ['app.js','marin-data.js','integration.js','review.js','lessons.js','unit-one.js','unit-two.js','reading.js'])vm.runInContext(fs.readFileSync(new URL(file,import.meta.url),'utf8'),context,{filename:file});
 const evaluate=s=>vm.runInContext(s,context);
 const a=context.window.MARIN_ARCHIVE;
 assert.equal(a.chapters.length,38);assert.equal(a.updates.length,83);assert.equal(a.sources.length,93);
@@ -80,3 +80,41 @@ pointer--;navigate(entries[pointer].url);listeners.get('popstate')();
 assert.equal(evaluate('timelineState.limit'),24);assert.equal(evaluate('timelineState.query'),'checkpoint');assert.equal(context.window.scrollY,640);
 evaluate('go("chapter-999")');assert.match(element.innerHTML,/没有找到这一页/);
 console.log('PASS: 38 chapters, 18 topics, 83 events, 131 citation mappings; editorial numeric checks; course/chapter routing, browser history, scroll and timeline-filter restoration, invalid-route fallback.');
+
+// Unit 2: quantities stay consistent and the contamination example changes only its split.
+assert.equal(evaluate('preparedDocs(0).length'),8);
+assert.equal(evaluate('preparedDocs(1).length'),8);
+assert.equal(evaluate('preparedDocs(2).length'),6);
+assert.equal(evaluate('preparedDocs(3).length'),5);
+assert.equal(evaluate('preparedDocs(3).some(d=>d.id==="H")'),true);
+assert.equal(evaluate('preparedDocs(3).some(d=>d.id==="C")'),true);
+assert.equal(evaluate('preparedDocs(3).some(d=>d.id==="B")'),false);
+assert.equal(evaluate('splitExample("files").overlap.length'),1);
+assert.equal(evaluate('splitExample("family").overlap.length'),0);
+for(const mode of ['files','family']){
+ const split=evaluate(`splitExample("${mode}")`);
+ assert.deepEqual([...split.train,...split.validation].sort(),['A','C','D','G','H']);
+}
+for(const budget of [100,200,400])for(let code=0;code<=100;code+=10){
+ const m=evaluate(`mixtureMetrics(${code},${budget})`);
+ assert.equal(m.code+m.web,budget);
+ assert.equal(m.codePasses*20,m.code);
+ assert.ok(Math.abs(m.webPasses*80-m.web)<1e-10);
+ assert.ok(m.web>=0&&m.code>=0);
+}
+assert.equal(evaluate('mixtureMetrics(50,100).codePasses'),2.5);
+assert.equal(evaluate('mixtureMetrics(100,400).codePasses'),20);
+assert.ok(Math.abs(evaluate('ladderEstimate(ladderCases.controlled.b)')-2.4)<1e-10);
+evaluate('prepState.revealed=false');assert.doesNotMatch(evaluate('ladderView()'),/示例结果 2.44/);
+evaluate('prepState.revealed=true');assert.match(evaluate('ladderView()'),/示例结果 2.44/);
+evaluate('prepState.revealed=false');
+assert.match(evaluate('gateSummary()'),/0 \/ 3/);
+evaluate('prepState.gates={compare:true,restore:true,system:true}');assert.match(evaluate('gateSummary()'),/不代表系统实际通过/);
+evaluate('prepState.gates={}');
+for(const id of [4,5,6]){
+ const page=evaluate(`courseTopic(${id})`);
+ assert.match(page,/第二单元学习路线/);
+ assert.equal((page.match(/data-unit-question=/g)||[]).length,3);
+ assert.match(page,/本课依据与演示边界/);
+}
+console.log('PASS: Unit 2 filtering, split integrity, mixture budget conservation, repetition, held-out prediction and lesson coverage.');

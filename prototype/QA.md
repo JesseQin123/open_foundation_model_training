@@ -43,3 +43,12 @@ See `../CONTENT_AUDIT.md` for factual review scope and unresolved source gaps. T
 - Visual checks at 1440×1000 and 390×844 cover the lifecycle and tokenizer diagrams. All three lesson routes have no horizontal overflow at the checked mobile size; the mobile directory starts collapsed.
 - Automated checks cover text reconstruction, valid token IDs, fixed-table size under repeated input, and arithmetic across every offered sentence/rule combination. Existing research and routing checks remain in the production build.
 - The tokenizer is an explicit teaching model, not a real BPE implementation. Its vectors are deterministic illustrative values, not trained semantic embeddings. No external model API is called.
+
+## Unit 2 illustrated lessons — 2026-09-22
+
+- Lessons 4–6 now use the illustrated lesson layout, a three-lesson route, inline supplemental reading, and nine questions with option-specific explanations.
+- Verified the preparation stages retain 8 → 8 → 6 → 5 records; near-duplicate C and colloquial H remain after exact deduplication. Group-aware splitting removes the example's known cross-split family overlap without losing records.
+- Checked data-mixture boundaries (0% and 100% code), all three token budgets, conservation of the total allocation, and average-pass calculations, including 20 passes at the maximum example setting.
+- Checked prediction disclosure, reset when changing comparison conditions, the confounded comparison explanation, and all three readiness checkboxes. The checklist explicitly does not execute or certify system tests.
+- Browser checked wrong/correct answer feedback, next-lesson routing, desktop layout, 390 px mobile layout for all three lessons, and no horizontal overflow or console errors in the tested flows.
+- All samples, loss values and predictions are labelled as synthetic educational examples. This is not a validation of model performance or a complete re-audit of the historical supplemental material.
