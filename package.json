@@ -1,0 +1,10 @@
+{
+  "name": "open-foundation-model-training",
+  "private": true,
+  "engines": { "node": "22.x" },
+  "scripts": {
+    "prototype": "node prototype/server.mjs",
+    "verify": "node prototype/verify.mjs",
+    "build": "node prototype/build.mjs"
+  }
+}

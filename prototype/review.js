@@ -1,0 +1,22 @@
+// Claim-level checks: a working URL alone is not a factual verification.
+const reviewChecks=[
+ {title:'Hero 的基本训练配置',result:'与公开 job summary 一致',detail:'535.3B 总参数、22.76B 激活参数、384 选 8 专家及 2 个 shared experts，与 M4 记录相符。11 个 rack 每个使用 64 个 GPU，对应 704 个 active ranks。这里确认的是该份历史配置。',sources:['M4']},
+ {title:'主要 production handoff',result:'来源记载支持',detail:'逐条核对了 mixture、PDL-off 和 clean-main 的精确评论：均明确给出 run identity 与实际更新。只确认记录描述的部署及有限窗口结果，不等于独立重跑或长期稳定性证明。',sources:['M93','M96','M99']},
+ {title:'GC 与 65K H100 实验',result:'实验与部署边界正确',detail:'GC launcher PR 已合并，但不足以证明运行中的 Hero 已采用。65K H100 记录是 fresh-init、synthetic-data 的十步实验，不能说明主模型学会了长上下文；现已补充不同 batch 的比较限制。',sources:['M105','M113']},
+ {title:'小规模实验与最终能力',result:'来源支持有限结论',detail:'gated-latent 的单 seed 结果、residual-width 的 scaling-law 推导收益及固定报告中的 Hero forecast，不能当作最终能力或 production 收益。已核对相应报告中的主要数字与限定条件。',sources:['M81','M114','M61']},
+ {title:'故障归因与历史经验',result:'保留来源自己的限制',detail:'NVLink 归因撤回评论支持“局部硬件故障不等于 hang 根因”。Marin 32B 复盘支持 QK-Norm、数据污染与 shuffle 问题的叙述。第 27 章已把时长增加与吞吐下降分开计算。',sources:['M76','M22','M16']}
+];
+const reviewCorrections=[
+ {chapter:1,title:'开源的定义过于宽松',detail:'“能看到部分代码”不充分。改为分别检查许可证、代码、权重、数据信息与使用自由，并指向 OSI 的定义。'},
+ {chapter:10,title:'Logits 整体平移与梯度被混为一谈',detail:'明确 softmax 与交叉熵梯度 p−y 对统一平移不变；数值风险与 z-loss 的约束另行解释。'},
+ {chapter:15,title:'“回答 100% 风险”承诺过强',detail:'改成用小预算提前检查规模风险，避免暗示 scaling ladder 能消除所有风险。'},
+ {chapter:20,title:'不同 batch 的每步时间不可直接比较',detail:'补上 384 / 96 global batch、四倍 tokens/update 和 helper versions 差异。'},
+ {chapter:22,title:'消融不必只做“减一项”',detail:'改成隔离 feature 影响，保留逐项移除作为常用方式。'},
+ {chapter:27,title:'性能变化的分母不明确',detail:'10.17 → 84.02 秒是时长增加约 726%，对应吞吐下降约 87.9%。'},
+ {chapter:29,title:'精确数字只有搜索页引用',detail:'M30 没有固定 PR 锚点；撤下 DCGM 流量降幅数字，保留待复核说明。'},
+ {chapter:32,title:'旧回滚状态与后续部署冲突',detail:'明确 9 月 2 日 trial 回滚与 9 月 10 日重新部署的时间顺序；将“排除确定性触发”收窄为有限窗口未复现。'}
+];
+function auditPage(){
+  const refs=Object.values(archive.references);
+  return `<main class="container"><section class="curriculum-intro"><div class="eyebrow">关于本站 / 来源与核查</div><h1>每个结论，都要知道它从哪里来。</h1><p>我们是 Solo Unicorn 的模型训练学习项目，用中文解释公开的训练过程。内容包括原创教学模拟、已有教材的整理，以及带日期的训练观察。</p></section><article class="audit-content"><div class="scope-card"><strong>本次核查：2026-09-22 · 有范围的检查</strong><p>检查了课程、教材与记录的数据结构和引用映射，抽查高风险概念、部署结论与数字。请求了 25 个既有引用地址，并对照补充的一手资料；来源能打开，不等于结论已验证。</p><p>这不是 ${archive.chapters.length} 章、${events.length} 条记录中每一句话的全面认证，也没有重跑训练。下面分别列出已对照的结论、校订与待复核项。</p></div><h2>目前内容完成到哪里？</h2><p>18 课共用一条学习顺序。第 1 课有互动模拟；第 2–18 课已补入门讲解、例子、理解题与答案解释，尚无专属动画或训练实作。SFT / RL 讲一般原理，并引用 InstructGPT 方法示例，不代表 Marin 已完成相应训练。38 章技术材料可在对应课程内展开，但原稿插图文件没有导入。83 条训练记录来自历史编辑快照，自动采集尚未启用。</p><h2>已对照一手来源的重点</h2>${reviewChecks.map(c=>`<section class="audit-item"><span class="badge">${c.result}</span><h3>${c.title}</h3><p>${c.detail}</p><p>${c.sources.map(id=>`<a target="_blank" rel="noopener noreferrer" href="${esc(archive.references[id].url)}">${id} · 原文 ↗</a>`).join(' · ')}</p></section>`).join('')}<h2>已做的编辑校订</h2>${reviewCorrections.map(c=>`<section class="audit-item"><h3>${c.title}</h3><p>${c.detail}</p><a href="${href('chapter-'+c.chapter)}" data-go="chapter-${c.chapter}">查看第 ${c.chapter} 章 →</a></section>`).join('')}<h2>还不能确认什么？</h2><ul><li>Live W&B 的 step 139,999、loss 1.2145、MFU 24.43% 等数字，本次读取只得到网页外壳，未取得可复核的数据行。保留为历史整理值，不能称为本次已验证。</li><li>M30 的精确原始 PR 尚未定位；此前的性能数字已撤下。</li><li>其余未在上述范围内列出的历史数字、外链内容和因果结论仍需逐条复核。</li><li>公开项目仓库内也可能包含机器人或 AI 整理的评论。核对原文是来源对照，不自动等于独立实验复现。</li></ul><h2>读这些材料时，分清三层</h2><p><strong>原始事实状态：</strong>记录当时被标为已确认、实验、计划、推断或未知。<br><strong>本次核查状态：</strong>是否拿到了准确的来源正文，以及正文是否支持对应结论。<br><strong>教学解释：</strong>本站的类比、简化模型与学习路径，不是项目实测结果。</p><p>外部资料在新标签页打开，站内保留阅读位置。MiMo 官方说明可支持其公开 RL 案例的定位；厂商报告的能力与成本结论仍应标明自述范围，不能套用到 Marin。</p><p><a href="https://opensource.org/ai/open-source-ai-definition" target="_blank" rel="noopener noreferrer">OSI Open Source AI Definition 1.0 ↗</a> · <a href="https://arxiv.org/html/2202.08906v1" target="_blank" rel="noopener noreferrer">ST-MoE：router z-loss 与数值稳定性 ↗</a> · <a href="https://mimo.mi.com/docs/en-US/news/latest/v2-6" target="_blank" rel="noopener noreferrer">MiMo-V2.6 官方说明 ↗</a></p><details class="source-register"><summary>展开全部 ${refs.length} 个引用条目（含论文与项目资料）</summary><p>其中 ${archive.sources.length} 个条目被历史训练记录引用。下列目录不代表所有来源已复核。</p>${refs.map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.id)} · ${esc(s.title)} ↗</a>`).join('')}</details><p class="audit-label">发现问题时，请记录页面、具体句子、原始来源和日期，交给项目维护者复核。本站目前没有在线提交表单。</p></article></main>`;
+}

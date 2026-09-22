@@ -1,0 +1,340 @@
+{
+  "auditDate": "2026-09-22",
+  "note": "HTTP success is not factual verification. This manifest records retrieval; claim checks are documented separately. GitHub comments use the public API to retrieve exact comment bodies.",
+  "sources": [
+    {
+      "id": "M4",
+      "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5335872267",
+      "fetchUrl": "https://api.github.com/repos/marin-community/marin/issues/comments/5335872267",
+      "http": 200,
+      "chars": 26488,
+      "metadata": {
+        "html_url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5335872267",
+        "created_at": "2026-08-19T00:15:31Z",
+        "updated_at": "2026-08-20T22:39:51Z",
+        "state": null,
+        "merged_at": null
+      },
+      "retrievedTextSha256": "66ff6c47aef671471fcfcc1c181bce0ca97a41f8e4b239a67de210668897b59f",
+      "accessConclusion": "body retrieved; see CONTENT_AUDIT.md for claim-level scope"
+    },
+    {
+      "id": "M14",
+      "url": "https://github.com/marin-community/marin/pull/8642",
+      "fetchUrl": "https://api.github.com/repos/marin-community/marin/pulls/8642",
+      "http": 200,
+      "chars": 1032,
+      "metadata": {
+        "html_url": "https://github.com/marin-community/marin/pull/8642",
+        "created_at": "2026-08-24T22:14:17Z",
+        "updated_at": "2026-08-24T22:19:01Z",
+        "state": "closed",
+        "merged_at": "2026-08-24T22:14:39Z"
+      },
+      "retrievedTextSha256": "a8b885dc0dd8d3cbbc130ca8571cd0d58613e46caeac41db7f935a9c58bf6ff6",
+      "accessConclusion": "body retrieved; see CONTENT_AUDIT.md for claim-level scope"
+    },
+    {
+      "id": "M16",
+      "url": "https://github.com/marin-community/marin/pull/8663",
+      "fetchUrl": "https://api.github.com/repos/marin-community/marin/pulls/8663",
+      "http": 200,
+      "chars": 1256,
+      "metadata": {
+        "html_url": "https://github.com/marin-community/marin/pull/8663",
+        "created_at": "2026-08-25T11:49:25Z",
+        "updated_at": "2026-08-26T04:25:31Z",
+        "state": "closed",
+        "merged_at": "2026-08-26T04:25:30Z"
+      },
+      "retrievedTextSha256": "090c607a5cdecb5d5601bd4aa7c2b8abf6ffc5e2915bb8dc1890ff55d8065789",
+      "accessConclusion": "body retrieved; see CONTENT_AUDIT.md for claim-level scope"
+    },
+    {
+      "id": "M22",
+      "url": "https://marin.readthedocs.io/en/latest/reports/marin-32b-retro/",
+      "fetchUrl": "https://marin.readthedocs.io/en/latest/reports/marin-32b-retro/",
+      "http": 200,
+      "chars": 50069,
+      "metadata": {},
+      "retrievedTextSha256": "bfafa739ea49ad26918ba470369b3be34aae3fcd9945dcbebe8a8ed8a1c3ef3f",
+      "accessConclusion": "body retrieved; see CONTENT_AUDIT.md for claim-level scope"
+    },
+    {
+      "id": "M30",
+      "url": "https://github.com/marin-community/marin/pulls?q=is%3Apr+dcgm+node+agent",
+      "fetchUrl": "https://github.com/marin-community/marin/pulls?q=is%3Apr+dcgm+node+agent",
+      "http": 200,
+      "chars": 24154,
+      "metadata": {},
+      "retrievedTextSha256": "6d9ef3bac0b9fdc4489730760f6d5d9e6abc00152029db325f6edf4b8565ab0a",
+      "accessConclusion": "search-results-only; exact supporting PR unresolved"
+    },
+    {
+      "id": "M61",
+      "url": "https://storage.googleapis.com/marin-public/held/hero-open-weight-ppl/2026.09.05.1/index.html",
+      "fetchUrl": "https://storage.googleapis.com/marin-public/held/hero-open-weight-ppl/2026.09.05.1/index.html",
+      "http": 200,
+      "chars": 9975,
+      "metadata": {},
+      "retrievedTextSha256": "58bf4c855ecd70093c1d64953e8f13e45fa336f6c9ec7ba2fc1b41b4a6677af3",
+      "accessConclusion": "body retrieved; see CONTENT_AUDIT.md for claim-level scope"
+    },
+    {
+      "id": "M69",
+      "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5610467489",
+      "fetchUrl": "https://api.github.com/repos/marin-community/marin/issues/comments/5610467489",
+      "http": 200,
+      "chars": 1131,
+      "metadata": {
+        "html_url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5610467489",
+        "created_at": "2026-09-09T23:59:35Z",
+        "updated_at": "2026-09-09T23:59:35Z",
+        "state": null,
+        "merged_at": null
+      },
+      "retrievedTextSha256": "821010a931da4d805ea2560c20c27a30f84748b42473ba807e6580a772bfca6e",
+      "accessConclusion": "body retrieved; see CONTENT_AUDIT.md for claim-level scope"
+    },
+    {
+      "id": "M76",
+      "url": "https://github.com/marin-community/marin/issues/8934#issuecomment-5625217090",
+      "fetchUrl": "https://api.github.com/repos/marin-community/marin/issues/comments/5625217090",
+      "http": 200,
+      "chars": 2098,
+      "metadata": {
+        "html_url": "https://github.com/marin-community/marin/issues/8934#issuecomment-5625217090",
+        "created_at": "2026-09-10T20:46:58Z",
+        "updated_at": "2026-09-10T20:46:58Z",
+        "state": null,
+        "merged_at": null
+      },
+      "retrievedTextSha256": "c04bd4e5cc47f982e752e771649b0255b71579c53d2c75439e23e9c95fd87f4f",
+      "accessConclusion": "body retrieved; see CONTENT_AUDIT.md for claim-level scope"
+    },
+    {
+      "id": "M81",
+      "url": "https://github.com/marin-community/marin/issues/9110",
+      "fetchUrl": "https://api.github.com/repos/marin-community/marin/issues/9110",
+      "http": 200,
+      "chars": 19862,
+      "metadata": {
+        "html_url": "https://github.com/marin-community/marin/issues/9110",
+        "created_at": "2026-09-11T17:13:46Z",
+        "updated_at": "2026-09-13T06:09:24Z",
+        "state": "open",
+        "merged_at": null
+      },
+      "retrievedTextSha256": "d55422622c51d7b0314cd63df4ed3507de0baff4c9991f0c57d3c2966a7a54e2",
+      "accessConclusion": "body retrieved; see CONTENT_AUDIT.md for claim-level scope"
+    },
+    {
+      "id": "M93",
+      "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5684891157",
+      "fetchUrl": "https://api.github.com/repos/marin-community/marin/issues/comments/5684891157",
+      "http": 200,
+      "chars": 829,
+      "metadata": {
+        "html_url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5684891157",
+        "created_at": "2026-09-15T17:27:10Z",
+        "updated_at": "2026-09-18T23:29:44Z",
+        "state": null,
+        "merged_at": null
+      },
+      "retrievedTextSha256": "80ebea6fca92682c60c3b6acd4ad00d65f97c5819dceb7de642445b7422b7dae",
+      "accessConclusion": "body retrieved; see CONTENT_AUDIT.md for claim-level scope"
+    },
+    {
+      "id": "M94",
+      "url": "https://github.com/marin-community/marin/pull/9162",
+      "fetchUrl": "https://api.github.com/repos/marin-community/marin/pulls/9162",
+      "http": 200,
+      "chars": 708,
+      "metadata": {
+        "html_url": "https://github.com/marin-community/marin/pull/9162",
+        "created_at": "2026-09-14T22:10:50Z",
+        "updated_at": "2026-09-14T23:41:47Z",
+        "state": "closed",
+        "merged_at": "2026-09-14T23:41:46Z"
+      },
+      "retrievedTextSha256": "6449a3131caac947e7e2cdf939916ebbc92210c5435c5a89258b398ffee16d10",
+      "accessConclusion": "body retrieved; see CONTENT_AUDIT.md for claim-level scope"
+    },
+    {
+      "id": "M96",
+      "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5690222518",
+      "fetchUrl": "https://api.github.com/repos/marin-community/marin/issues/comments/5690222518",
+      "http": 200,
+      "chars": 966,
+      "metadata": {
+        "html_url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5690222518",
+        "created_at": "2026-09-16T00:33:19Z",
+        "updated_at": "2026-09-16T00:33:19Z",
+        "state": null,
+        "merged_at": null
+      },
+      "retrievedTextSha256": "6b9c68a823f1d33e3b9509fa691a7ede26011c0534208bb5ee132e130afc78b1",
+      "accessConclusion": "body retrieved; see CONTENT_AUDIT.md for claim-level scope"
+    },
+    {
+      "id": "M99",
+      "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5734989379",
+      "fetchUrl": "https://api.github.com/repos/marin-community/marin/issues/comments/5734989379",
+      "http": 200,
+      "chars": 2213,
+      "metadata": {
+        "html_url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5734989379",
+        "created_at": "2026-09-18T19:15:11Z",
+        "updated_at": "2026-09-18T20:36:59Z",
+        "state": null,
+        "merged_at": null
+      },
+      "retrievedTextSha256": "14fc078897f30db11722d9b10bc211a3b0d25b8e014c80ef9cb0959e61da4b5a",
+      "accessConclusion": "body retrieved; see CONTENT_AUDIT.md for claim-level scope"
+    },
+    {
+      "id": "M100",
+      "url": "https://wandb.ai/marin-community/marin_moe/runs/hero-main-step121638",
+      "fetchUrl": "https://wandb.ai/marin-community/marin_moe/runs/hero-main-step121638",
+      "http": 200,
+      "chars": 4339,
+      "metadata": {},
+      "retrievedTextSha256": "de105299be89bd31e220d51da514de233dc7bd3ae5ee612f33e20d839d517186",
+      "accessConclusion": "page-shell-only; historical metrics unverified"
+    },
+    {
+      "id": "M105",
+      "url": "https://github.com/marin-community/marin/issues/9277",
+      "fetchUrl": "https://api.github.com/repos/marin-community/marin/issues/9277",
+      "http": 200,
+      "chars": 11620,
+      "metadata": {
+        "html_url": "https://github.com/marin-community/marin/issues/9277",
+        "created_at": "2026-09-19T08:58:21Z",
+        "updated_at": "2026-09-19T12:03:14Z",
+        "state": "open",
+        "merged_at": null
+      },
+      "retrievedTextSha256": "e6da68d7f1280593dbf19db6aa9a84df3ffd1b979d8748a90127b732f2366b84",
+      "accessConclusion": "body retrieved; see CONTENT_AUDIT.md for claim-level scope"
+    },
+    {
+      "id": "M110",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.09.20/index.html",
+      "fetchUrl": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.09.20/index.html",
+      "http": 200,
+      "chars": 25446,
+      "metadata": {},
+      "retrievedTextSha256": "9065eacf6142e0076fb3dca53efb27ab0cb592075c40143505aa564d634c5ce8",
+      "accessConclusion": "body retrieved; see CONTENT_AUDIT.md for claim-level scope"
+    },
+    {
+      "id": "M112",
+      "url": "https://github.com/marin-community/marin/issues/9324",
+      "fetchUrl": "https://api.github.com/repos/marin-community/marin/issues/9324",
+      "http": 200,
+      "chars": 13242,
+      "metadata": {
+        "html_url": "https://github.com/marin-community/marin/issues/9324",
+        "created_at": "2026-09-22T13:40:38Z",
+        "updated_at": "2026-09-22T13:40:38Z",
+        "state": "open",
+        "merged_at": null
+      },
+      "retrievedTextSha256": "1292647e21efbba66a228cccc21c2ef66d71d08a63964857d7a839fa40550eb6",
+      "accessConclusion": "body retrieved; see CONTENT_AUDIT.md for claim-level scope"
+    },
+    {
+      "id": "M113",
+      "url": "https://github.com/marin-community/marin/pull/9266",
+      "fetchUrl": "https://api.github.com/repos/marin-community/marin/pulls/9266",
+      "http": 200,
+      "chars": 2328,
+      "metadata": {
+        "html_url": "https://github.com/marin-community/marin/pull/9266",
+        "created_at": "2026-09-18T23:45:39Z",
+        "updated_at": "2026-09-22T00:41:28Z",
+        "state": "closed",
+        "merged_at": "2026-09-22T00:41:26Z"
+      },
+      "retrievedTextSha256": "a93635a50e13d67ae9b4d4e4ab32f5f3b41fcda3054c9b63857057dba41be64f",
+      "accessConclusion": "body retrieved; see CONTENT_AUDIT.md for claim-level scope"
+    },
+    {
+      "id": "M114",
+      "url": "https://github.com/marin-community/marin/issues/9317",
+      "fetchUrl": "https://api.github.com/repos/marin-community/marin/issues/9317",
+      "http": 200,
+      "chars": 7321,
+      "metadata": {
+        "html_url": "https://github.com/marin-community/marin/issues/9317",
+        "created_at": "2026-09-22T05:03:32Z",
+        "updated_at": "2026-09-22T05:17:30Z",
+        "state": "closed",
+        "merged_at": null
+      },
+      "retrievedTextSha256": "3501cadc9fe7e3a914c89861b7b61bb168d8a6a11d746fdecc08a2ae0903c3ba",
+      "accessConclusion": "body retrieved; see CONTENT_AUDIT.md for claim-level scope"
+    },
+    {
+      "id": "P1",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "fetchUrl": "https://arxiv.org/abs/1706.03762",
+      "http": 200,
+      "chars": 10731,
+      "metadata": {},
+      "retrievedTextSha256": "d27e67bcb21acf462ac6ec89e020b6b78f7a559f413c8bae23be3f4f9f4a7b23",
+      "accessConclusion": "body retrieved; see CONTENT_AUDIT.md for claim-level scope"
+    },
+    {
+      "id": "P4",
+      "url": "https://arxiv.org/abs/1910.07467",
+      "fetchUrl": "https://arxiv.org/abs/1910.07467",
+      "http": 200,
+      "chars": 10507,
+      "metadata": {},
+      "retrievedTextSha256": "1ad680f75657f208db68070f79aa99623c1e538e89825dce038d830a7a37316e",
+      "accessConclusion": "body retrieved; see CONTENT_AUDIT.md for claim-level scope"
+    },
+    {
+      "id": "P5",
+      "url": "https://arxiv.org/abs/2205.14135",
+      "fetchUrl": "https://arxiv.org/abs/2205.14135",
+      "http": 200,
+      "chars": 10982,
+      "metadata": {},
+      "retrievedTextSha256": "964ecf95dc89f1a7ba630c92e8b155f8896f7e2d1895be6e439bbff9ad45882e",
+      "accessConclusion": "body retrieved; see CONTENT_AUDIT.md for claim-level scope"
+    },
+    {
+      "id": "P6",
+      "url": "https://arxiv.org/abs/2101.03961",
+      "fetchUrl": "https://arxiv.org/abs/2101.03961",
+      "http": 200,
+      "chars": 10940,
+      "metadata": {},
+      "retrievedTextSha256": "3eb0a6ea0ce12031b6c4eb971e5a5d49a83d83f930b1a3580d7121b3ff17302f",
+      "accessConclusion": "body retrieved; see CONTENT_AUDIT.md for claim-level scope"
+    },
+    {
+      "id": "P8",
+      "url": "https://arxiv.org/abs/2203.15556",
+      "fetchUrl": "https://arxiv.org/abs/2203.15556",
+      "http": 200,
+      "chars": 10516,
+      "metadata": {},
+      "retrievedTextSha256": "2b06661a6467279b366676f48f8159f009cb4851cdf7c33427f0737324716ae1",
+      "accessConclusion": "body retrieved; see CONTENT_AUDIT.md for claim-level scope"
+    },
+    {
+      "id": "P10",
+      "url": "https://arxiv.org/abs/2202.08906",
+      "fetchUrl": "https://arxiv.org/abs/2202.08906",
+      "http": 200,
+      "chars": 10121,
+      "metadata": {},
+      "retrievedTextSha256": "7dbd81c29d6de5921f688fb6e414e8d2f2e476d4bf48a3059627405ffb487eb2",
+      "accessConclusion": "body retrieved; see CONTENT_AUDIT.md for claim-level scope"
+    }
+  ]
+}
