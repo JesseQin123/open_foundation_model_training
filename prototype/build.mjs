@@ -6,7 +6,7 @@ import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 const output = new URL('../dist/', import.meta.url);
 const assets = [
   'index.html', 'style.css', 'integration.css', 'reading.css',
-  'app.js', 'marin-data.js', 'integration.js', 'review.js', 'lessons.js', 'reading.js',
+  'app.js', 'marin-data.js', 'marin-research.js', 'integration.js', 'review.js', 'lessons.js', 'reading.js',
   'marin-original.md'
 ];
 await rm(output, { recursive: true, force: true });

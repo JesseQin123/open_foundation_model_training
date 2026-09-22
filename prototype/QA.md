@@ -26,6 +26,14 @@ The first lesson is interactive. Lessons 2–18 are introductory reading lessons
 
 See `../CONTENT_AUDIT.md` for factual review scope and unresolved source gaps. This is local prototype validation, not a production deployment.
 
+## Atlas daily research migration · 2026-09-22
+
+- Preserved all 83 bilingual historical records, all 38 chapter bodies, all 93 original research source entries and every existing event deep link. The canonical M registry now includes all 115 M references shared by the textbook and journal.
+- `npm run verify` checks daily coverage from 2026-08-29 through the research snapshot, unique IDs/URLs, citation resolution, reverse date order, evidence states, and rejection of malformed data. An English-only next-day fixture renders, searches and connects to a lesson without requiring Chinese fields. The fixture is not published content.
+- Actual browser on the local site: English full-text search for “Coordinated GC” combined with Planned returns the expected single entry; filters survive reload. Loading earlier entries increases the visible count from 12 to 24. English summaries, source links and historical verification limits were visually inspected. No browser console errors were observed.
+- `npm run build` validates and packages the new research asset. Existing lesson, chapter, history and routing checks pass. No fresh verification of historical W&B figures is claimed by this migration.
+- The Codex daily automation is retargeted to the Atlas repository task at 09:00 America/New_York. Production publication remains separate from branch pushes and Preview builds.
+
 ## Single learning path follow-up · 2026-09-22
 
 - `npm run verify` now also checks lessons 2–18 for explanation, example, question/answer, inline assigned chapters, resolved teaching sources, and absence of chapter-page navigation in their bodies. The learning directory has no chapter links; primary navigation has no textbook entry.
