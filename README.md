@@ -4,7 +4,7 @@ An educational website by **Solo Unicorn** that explains how foundation models a
 
 **[Visit the website → atlas.solounicorn.club](https://atlas.solounicorn.club)**
 
-The learning content is currently written in Simplified Chinese. This README documents the project in English for contributors and other repository visitors.
+The lessons and textbook are currently written in Simplified Chinese. The daily Marin research timeline is maintained in English; existing Chinese research translations are retained for future bilingual support. This README documents the project in English for contributors and other repository visitors.
 
 ## Overview
 
@@ -16,7 +16,7 @@ The website provides:
 - **An interactive first lesson** demonstrating prediction, loss, and parameter updates with a toy model.
 - **17 introductory reading lessons**, each with explanations, an example, and a comprehension question with an answer.
 - **38 chapters of Marin-focused technical material**, available as optional, expandable reading within the relevant lessons.
-- **83 historical training records**, with source links and distinctions between reported results, experiments, plans, and unresolved questions.
+- **A daily Marin research timeline**, seeded with 83 historical records, with source links and distinctions between reported results, experiments, plans, and unresolved questions.
 
 Marin provides the main case study for pretraining and training infrastructure. Xiaomi MiMo provides an additional public reference for post-training and reinforcement learning.
 
@@ -65,13 +65,17 @@ The website is deployed on Vercel at [atlas.solounicorn.club](https://atlas.solo
 
 [vercel.json](vercel.json) specifies the build command and `dist/` output directory. The production build disables the local layout experiments.
 
+Daily research commits are pushed to `codex/marin-535b-session` for a PR and Vercel **Preview**. The task does not merge the PR or publish production; the public domain changes only after a separately authorized production release. See [Daily Research](docs/marin-daily-research.md).
+
 ## Project structure
 
 | Path | Purpose |
 | --- | --- |
 | `prototype/` | Website source, styles, lesson content, and the local server |
 | `prototype/lessons.js` | Introductory reading content for lessons 2–18 |
-| `prototype/marin-data.js` | Imported technical chapters, historical records, and source references |
+| `prototype/marin-data.js` | Fixed technical chapters and non-M source references |
+| `prototype/marin-research.js` | Canonical English research log, snapshot, M sources and claim groups |
+| `docs/marin-daily-research.md` | Daily research, continuity, evidence and publishing procedure |
 | `prototype/reading.js` | Learning pages, navigation, and the shared reading experience |
 | `prototype/verify.mjs` | Automated content and navigation checks |
 | `prototype/build.mjs` | Production static-site build |
@@ -82,7 +86,7 @@ The `prototype/` directory name reflects the project's current stage: a publishe
 
 ## Content status and evidence
 
-The imported training records are a **historical snapshot dated September 22, 2026**, not a live monitoring feed. Their original editorial status and the scope of subsequent checks are documented separately.
+The timeline starts with 83 imported records through **September 22, 2026**. Their original editorial classifications remain labeled as imported history, not newly verified facts. The daily Codex task checks public sources at **09:00 America/New_York**, fills missing calendar dates and writes English updates to `prototype/marin-research.js`. The page displays the latest completed research date; it is not a live W&B feed. The textbook keeps its own fixed snapshot date.
 
 Teaching examples and simulations are labeled to distinguish them from project measurements. Source accessibility, reported observations, and independently reproduced results are different levels of evidence. The editorial review has corrected selected factual and interpretive issues, but has not verified every claim or reproduced the underlying training runs.
 
@@ -91,7 +95,7 @@ Current limitations include:
 - Only the first lesson has a dedicated interactive simulation; later lessons provide introductory reading rather than complete training labs.
 - Lesson completion is not persisted across page reloads.
 - Some original textbook illustrations were unavailable in the imported material and are marked accordingly.
-- Automated collection of new training records is not implemented.
+- The daily research task runs through local Codex scheduling. Source access, machine availability and usage limits can interrupt a run; the next run checks continuity and backfills gaps.
 
 For review scope, corrections, and unresolved evidence, see [Content Audit](CONTENT_AUDIT.md).
 

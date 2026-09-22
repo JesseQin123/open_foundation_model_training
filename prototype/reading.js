@@ -1,5 +1,5 @@
 // Reader-facing information architecture. Legacy prototype layouts remain opt-in.
-const pageNames = {home:'首页',learn:'学习目录',projects:'项目案例',marin:'Marin',mimo:'Xiaomi MiMo',timeline:'训练记录',library:'教材全文',resources:'补充资源',audit:'来源与核查',journal:'图解与观察'};
+const pageNames = {home:'首页',learn:'学习目录',projects:'项目案例',marin:'Marin',mimo:'Xiaomi MiMo',timeline:'Research timeline',library:'教材全文',resources:'补充资源',audit:'来源与核查',journal:'图解与观察'};
 const unitOutcomes = [
   '说清 token、参数和 loss 的关系，画出训练全流程。',
   '解释数据清洗、配比和小规模实验为什么要先做。',
@@ -130,7 +130,7 @@ render=function(){
     const intro=$('.curriculum-intro');intro?.insertAdjacentHTML('beforeend',`<nav class="library-index" aria-label="单元目录">${courseUnits.map(u=>`<a href="#unit-${u.id}">0${u.id} · ${u.title}</a>`).join('')}</nav>`);
     main.querySelectorAll('.chapter-chips a').forEach(a=>{const row=a.closest('.course-row');const lesson=Number(row.querySelector('.number').textContent);a.dataset.from=lesson;a.href+='&from='+lesson});
   }
-  if(state.page==='timeline')main.querySelector('.archive-banner')?.insertAdjacentHTML('beforeend',` <a href="${href('audit')}" data-go="audit">查看本次核查范围与待复核项 →</a>`);
+  if(state.page==='timeline')main.querySelector('.archive-banner')?.insertAdjacentHTML('beforeend',` <a href="${href('audit')}" data-go="audit">Review scope and unresolved evidence →</a>`);
   // Keep the current location visible without letting the directory consume a phone screen.
   if(window.innerWidth<=760)main.querySelectorAll('.reader-sidebar > details').forEach(el=>el.open=false);
   document.title=invalid?'页面未找到 · OFMT':`${id?courses[id-1].title:state.page.startsWith('chapter-')?chapterById(Number(state.page.slice(8))).title:pageNames[state.page]} · Open Foundation Model Training`;
