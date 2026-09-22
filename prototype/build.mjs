@@ -5,8 +5,8 @@ import { mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 // Publish only browser assets; local tools and editorial notes stay in the repository.
 const output = new URL('../dist/', import.meta.url);
 const assets = [
-  'index.html', 'style.css', 'integration.css', 'reading.css',
-  'app.js', 'marin-data.js', 'integration.js', 'review.js', 'lessons.js', 'reading.js',
+  'index.html', 'style.css', 'integration.css', 'reading.css', 'unit-one.css',
+  'app.js', 'marin-data.js', 'integration.js', 'review.js', 'lessons.js', 'unit-one.js', 'reading.js',
   'marin-original.md'
 ];
 await rm(output, { recursive: true, force: true });

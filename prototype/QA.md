@@ -33,3 +33,13 @@ See `../CONTENT_AUDIT.md` for factual review scope and unresolved source gaps. T
 - First lesson: learning rate 1.20 still produces 98% / 0.02; answer B shows correct feedback. The next-lesson control now sits directly after the quiz and opens the authored course 2.
 - At 390×844, course 4 (including expanded technical reading), the 18-card learning directory and home have no horizontal page overflow. Mobile directory is collapsed on entry. Course 4's typography was visually inspected.
 - Primary navigation has four entries; browser reported no console errors in the tested flow. This is introductory reading completion, not a claim of 17 additional interactive lessons or full training labs.
+
+## Unit 1 illustrated lessons · 2026-09-22
+
+- Lessons 2 and 3 now use dedicated teaching pages in `unit-one.js`, with a shared three-lesson route and an explicit bridge from lesson 1.
+- Lesson 2 browser checks: stage selection changes the input/signal/output explanation; final-stage Next is disabled; training/inference changes the return path; wrong and correct answers show different explanations.
+- Lesson 3 browser checks: the default sentence has 4 tokens with the piece rule and 6 with the character rule; repeating it three times produces 12 piece tokens and 36 retrieved vector components while the fixed 15-by-3 embedding table remains 45 parameters. Repeated token positions return the same ID and vector. A longer example renders 24 selectable tokens on mobile.
+- Lesson 1 regression: learning rate 1.20 still gives 98% target probability and 0.02 loss; answer B, the unit route, the new recap, and next-lesson navigation work.
+- Visual checks at 1440×1000 and 390×844 cover the lifecycle and tokenizer diagrams. All three lesson routes have no horizontal overflow at the checked mobile size; the mobile directory starts collapsed.
+- Automated checks cover text reconstruction, valid token IDs, fixed-table size under repeated input, and arithmetic across every offered sentence/rule combination. Existing research and routing checks remain in the production build.
+- The tokenizer is an explicit teaching model, not a real BPE implementation. Its vectors are deterministic illustrative values, not trained semantic embeddings. No external model API is called.

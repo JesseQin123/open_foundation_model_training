@@ -11,7 +11,7 @@ const navigate=(url)=>{const u=new URL(url,location.href);location.href=u.href};
 const history={get state(){return entries[pointer].state},replaceState(state,_,url){entries[pointer]={state,url:new URL(url,location.href).href};navigate(url)},pushState(state,_,url){entries.splice(pointer+1);entries.push({state,url:new URL(url,location.href).href});pointer++;navigate(url)}};
 const context={window:{scrollY:0,scrollTo(x,y){this.scrollY=y},addEventListener(n,f){listeners.set(n,f)}},document,history,location,URL,URLSearchParams,console,clearInterval,setInterval,clearTimeout,setTimeout,requestAnimationFrame:f=>f(),innerWidth:1440};
 vm.createContext(context);
-for(const file of ['app.js','marin-data.js','integration.js','review.js','lessons.js','reading.js'])vm.runInContext(fs.readFileSync(new URL(file,import.meta.url),'utf8'),context,{filename:file});
+for(const file of ['app.js','marin-data.js','integration.js','review.js','lessons.js','unit-one.js','reading.js'])vm.runInContext(fs.readFileSync(new URL(file,import.meta.url),'utf8'),context,{filename:file});
 const evaluate=s=>vm.runInContext(s,context);
 const a=context.window.MARIN_ARCHIVE;
 assert.equal(a.chapters.length,38);assert.equal(a.updates.length,83);assert.equal(a.sources.length,93);
@@ -37,6 +37,27 @@ for(let i=2;i<=18;i++){
 }
 assert.doesNotMatch(evaluate('header()'),/教材全文/);
 assert.doesNotMatch(evaluate('learn()'),/data-go="chapter-/);
+// The teaching tokenizer preserves text and IDs; longer inputs do not grow its parameter table.
+for(let sentence=0;sentence<3;sentence++)for(const rule of ['pieces','characters']){
+ const m=evaluate(`tokenMetrics(${sentence},${JSON.stringify(rule)},1)`);
+ const repeated=evaluate(`tokenMetrics(${sentence},${JSON.stringify(rule)},3)`);
+ assert.equal(m.tokens.map(t=>t.text).join(''),m.text);
+ assert.ok(m.tokens.every(t=>t.id>=0));
+ assert.equal(repeated.tokens.length,m.tokens.length*3);
+ assert.equal(repeated.parameters,m.parameters);
+ assert.equal(repeated.characters,m.characters*3);
+ for(const token of repeated.tokens)assert.equal(evaluate(`toyVocabulary[${token.id}]`),token.text);
+}
+assert.equal(evaluate('tokenMetrics(0,"pieces",1).tokens.length'),4);
+assert.equal(evaluate('tokenMetrics(0,"characters",1).tokens.length'),6);
+assert.equal(evaluate('toyVector(0).length'),3);
+assert.equal(evaluate('lifecycleScenes.filter(s=>s.change).length'),3);
+assert.match(evaluate('trainingModeView("infer")'),/保持固定/);
+for(const key of evaluate('Object.keys(unitQuestions)')){
+ const q=evaluate(`unitQuestions[${JSON.stringify(key)}]`);
+ assert.equal(q.explanations.length,q.options.length);
+ assert.ok(q.correct>=0&&q.correct<q.options.length);
+}
 for(let i=1;i<=38;i++)assert.match(evaluate(`chapterReader(${i})`),/本章目录/);
 assert.doesNotMatch(a.chapters[9].html,/却可能放大 gradient/);
 assert.doesNotMatch(a.chapters[28].html,/19\.13MB/);

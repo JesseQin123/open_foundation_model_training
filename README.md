@@ -13,8 +13,8 @@ The project is intended for students, product professionals, and technical reade
 The website provides:
 
 - **18 lessons across six units**, organized into a single, sequential learning path.
-- **An interactive first lesson** demonstrating prediction, loss, and parameter updates with a toy model.
-- **17 introductory reading lessons**, each with explanations, an example, and a comprehension question with an answer.
+- **Three illustrated, interactive lessons in Unit 1**, covering parameter updates, the development lifecycle, and the path from text to token IDs and vectors.
+- **15 introductory reading lessons**, each with explanations, an example, and a comprehension question with an answer.
 - **38 chapters of Marin-focused technical material**, available as optional, expandable reading within the relevant lessons.
 - **83 historical training records**, with source links and distinctions between reported results, experiments, plans, and unresolved questions.
 
@@ -70,7 +70,8 @@ The website is deployed on Vercel at [atlas.solounicorn.club](https://atlas.solo
 | Path | Purpose |
 | --- | --- |
 | `prototype/` | Website source, styles, lesson content, and the local server |
-| `prototype/lessons.js` | Introductory reading content for lessons 2–18 |
+| `prototype/lessons.js` | Baseline introductory reading content |
+| `prototype/unit-one.js` | Detailed Unit 1 lessons, interactive diagrams, and teaching models |
 | `prototype/marin-data.js` | Imported technical chapters, historical records, and source references |
 | `prototype/reading.js` | Learning pages, navigation, and the shared reading experience |
 | `prototype/verify.mjs` | Automated content and navigation checks |
@@ -88,7 +89,7 @@ Teaching examples and simulations are labeled to distinguish them from project m
 
 Current limitations include:
 
-- Only the first lesson has a dedicated interactive simulation; later lessons provide introductory reading rather than complete training labs.
+- Unit 1 includes dedicated interactive explanations. Lessons 4–18 remain introductory reading editions awaiting deeper treatment; the course does not provide complete training labs.
 - Lesson completion is not persisted across page reloads.
 - Some original textbook illustrations were unavailable in the imported material and are marked accordingly.
 - Automated collection of new training records is not implemented.

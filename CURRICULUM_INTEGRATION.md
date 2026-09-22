@@ -75,3 +75,9 @@ Three user-provided resources are now available on the shared resources page, th
 - [Speedrun scaling](https://marin.community/speedrun/?track=scaling&xAxis=model_flops&yAxis=absolute): interactive compute-quality comparison, mapped to lessons 6, 11 and 14. Preserve query parameters. Read Model FLOPs and Absolute BPB axes; distinguish observations, fitted curves and projected BPB from actual Hero outcomes.
 
 Verification: documentation and DeepWiki overview were read through the web tool. Speedrun's dynamic page was inspected in a browser because the text fetch returned no body; the selected axes, scaling leaderboard and projected-BPB labeling were confirmed. No leaderboard numbers or posts were imported into the timeline.
+
+## Unit 1 depth pass · 2026-09-22
+
+Lessons 1–3 now form the first detailed unit. Lesson 1 retains the prediction and gradient-descent demonstration, with a new recap and route into the next two lessons. Lesson 2 follows a code-explanation assistant through six development stages, compares training with inference, and provides three questions with choice-specific feedback. Lesson 3 provides a fixed-vocabulary teaching tokenizer, token-to-ID-to-vector lookup, an input-length experiment, contextual-meaning illustrations and three comprehension questions.
+
+The new interactive pages are implemented in `prototype/unit-one.js` and `prototype/unit-one.css`. General-method references include InstructGPT, Hugging Face's tokenizer documentation, and Attention Is All You Need. Teaching examples and numbers are explicitly distinguished from project measurements. Lessons 4–18 remain baseline reading editions, labeled for later expansion.
