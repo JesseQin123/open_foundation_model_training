@@ -14,6 +14,20 @@ Run daily at **09:00 America/New_York**. The existing Codex automation `marin-53
 
 **Write new research in English.** Require `title.en`, `detail.en`, `concept.en` and `exercise.en`. Chinese fields are optional: preserve existing translations, but do not fabricate translations, copy English into `.zh`, or spend each daily run translating. Full bilingual publishing is deferred until the site supports it. This static public site has no old member Dashboard or public Lab split; its Timeline intentionally contains the complete research log.
 
+## Writing for readers
+
+Write for a curious reader who follows AI but does not work on distributed training. The first glance should answer what happened and why it matters.
+
+- Use a plain-English headline about the change or finding. Do not lead with PR numbers, run IDs, steps, acronyms or evidence-taxonomy language. Keep the existing status field for classification.
+- Start each detail with the finding, then its practical significance and the key limitation. Put supporting measurements and source identifiers afterward. Aim for roughly 100–170 words when that is enough; use additional detail only when needed to preserve meaning.
+- Explain an unfamiliar term briefly at first use: for example, “experts” are specialized parts of the model, and a checkpoint is a saved training state. Avoid assuming the reader knows kernels, EP, MFU or query bias.
+- State whether a result concerns the main training run, merged code, a plan or a small experiment in ordinary language. Simplifying prose must never strengthen the evidence or promise an unmeasured benefit.
+- Keep the complete technical measurements, configurations and reproduction details in the dated audit notes. Include only the numbers needed to understand the Timeline finding, while retaining required daily monitoring values after the opening explanation.
+- Concepts and exercises should help the reader reason about the finding without requiring implementation knowledge.
+- Before publishing, read only the headlines and first two sentences: can a new reader explain what changed and why they should care? Revise if not.
+
+For example, prefer “Code for faster training and longer inputs has been merged” to a headline beginning with kernel names or PR numbers. Follow immediately with whether the main run is known to use that code.
+
 ## Start with continuity
 
 1. Read this guide, the research data, relevant textbook sections and both validation files. Run `agent-reach doctor --json` and select tools by `active_backend`.
@@ -95,4 +109,4 @@ After push, verify the deployment/checks for that exact commit and report its Pr
 
 ## Daily report
 
-Return: date; findings grouped by confirmed/planned/experimental/inference/unknown; key sources with title, URL, what each proves and does not prove; technical significance; connection to previous work; unresolved questions; backfilled dates and remaining gaps; modified files; commit hash; push/PR status; Vercel Preview URL/status; test results. Report failures or required user action explicitly. A routine no-change day still adds its required research record and reports the completed daily maintenance.
+Open with a short plain-language account of what happened and why it matters; put engineering and delivery details afterward. Return: date; findings grouped by confirmed/planned/experimental/inference/unknown; key sources with title, URL, what each proves and does not prove; technical significance; connection to previous work; unresolved questions; backfilled dates and remaining gaps; modified files; commit hash; push/PR status; Vercel Preview URL/status; test results. Report failures or required user action explicitly. A routine no-change day still adds its required research record and reports the completed daily maintenance.

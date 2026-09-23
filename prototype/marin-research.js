@@ -825,10 +825,10 @@ window.MARIN_RESEARCH = {
       "date": "2026-09-23",
       "status": "confirmed",
       "title": {
-        "en": "No newly verified production handoff: main Hero is running at step 144,609"
+        "en": "Marin keeps training; no new upgrade to the main run is confirmed"
       },
       "detail": {
-        "en": "An anonymous public W&B API read returned hero-main-step121638 as running, with global_step 144,609 and a metric timestamp of 2026-09-23 13:04:40 UTC. Its latest summary point reports train loss 1.21372, instantaneous MFU 19.21%, train-step duration 20.43 seconds and full-iteration duration 21.89 seconds. The separately reported rolling MFU summary covers 500 samples, with a mean of 23.93% and median of 24.14%; one slower point is not evidence of a sustained regression or its cause. The latest returned sampled evaluation row is step 143,999: dropless Paloma macro BPB 0.796569 and UncheatableEval macro BPB 0.518059. Issues #8506 and #8870 contain no newer handoff or incident entry in this review, while #8435 adds a router side experiment. The September 21 standup still describes GC and native-attention deployment as upcoming work. The inspected fixed Hero comparison still reports step 45,837 (Paloma 0.818798; legacy seven-subset UncheatableEval 0.536178), and the latest completion page still shows checkpoints 102,000 and 108,000. The fixed mixture report remains a small-model scaling artifact. These observations verify continued public reporting, not deployment of newly merged kernels, context parallelism or coordinated GC. No newly verified production state change was found; this does not establish that no internal work occurred."
+        "en": "Marin's main model is still training. Today's public checks show continued progress, but no newly confirmed switch to the upgrades discussed below. For readers following the project, this is a progress report rather than evidence of a new capability or a finished model. The team’s design, running-status and incident threads, latest weekly standup, and fixed evaluation and sample reports were checked. The fixed comparison still covers an older checkpoint, and the latest sample page still shows checkpoints 102,000 and 108,000. Public W&B monitoring recorded training step 144,609 at 13:04 UTC, with loss 1.21372 and 20.43 seconds per training step. Compute utilization (MFU) was 19.21% at that point, versus a 24.14% median over 500 samples; one slower point does not establish a slowdown. The latest returned evaluation was earlier, at step 143,999: Paloma 0.796569 and UncheatableEval 0.518059 bits per byte. These live measurements do not confirm a new deployment or replace a fixed evaluation report."
       },
       "sourceIds": [
         "M100",
@@ -843,10 +843,10 @@ window.MARIN_RESEARCH = {
       "reviewStatus": "reviewed",
       "checkedAt": "2026-09-23T13:09:22Z",
       "concept": {
-        "en": "An instantaneous training point, a rolling performance window and an evaluation checkpoint answer different questions. A live summary can retain the last evaluation value while the training step continues to advance."
+        "en": "A training step counts progress through training; it is not a score of how capable the model has become. Capability needs separate evaluation."
       },
       "exercise": {
-        "en": "Compare the 19.21% instantaneous MFU with the 24.14% rolling median. List the additional timing and incident evidence needed before attributing a regression to a kernel change."
+        "en": "Which evidence would tell you that the model kept training, and which would tell you that it became better at a task?"
       }
     },
     {
@@ -854,10 +854,10 @@ window.MARIN_RESEARCH = {
       "date": "2026-09-23",
       "status": "confirmed",
       "title": {
-        "en": "Repository changes confirmed: native SM100 attention and context parallelism merged; Hero deployment remains unverified"
+        "en": "Code for faster training and longer inputs has been merged"
       },
       "detail": {
-        "en": "GitHub records PR #9332 merged at 2026-09-23 04:50:21 UTC and PR #9119 merged at 2026-09-22 22:06:17 UTC. The former introduces native SM100 FA4 forward/backward kernels and selects the backend in the Hero configuration; the latter adds context-parallel training support. Neither merge is a production handoff. The approximately 8% FA4 throughput expectation compounds two separate 64-GB200 studies (4.03% backward and 4.02% forward), rather than one measurement of the entire change against main. PR #9119 cites an earlier-revision, 40-update 262K-context test with 10.03% median MFU and 1.42% mean dropped assignments; it does not establish long-context learning quality. Issue #9344 leaves performance and gradient-reduction precision work open. No later launch record in the inspected Hero status thread confirms these merged settings in the running production lineage."
+        "en": "Marin has merged two upgrades into its codebase: one aims to speed up attention, the calculation that connects information across an input; the other lets more devices share the work of processing long inputs. These could improve training efficiency and make longer inputs more practical. We have not found public confirmation that the main Hero run is using either upgrade. The attention work’s roughly 8% expected speed gain combines two separate tests, so it is not a measured improvement for the main run. The long-input work has completed a short test, but that does not show the model can reliably understand long documents. The merged changes are native SM100 attention (#9332) and context parallelism (#9119); performance and numerical-precision follow-up work remains open (#9344). The next meaningful evidence would be confirmation of use in the main run, followed by performance and quality measurements."
       },
       "sourceIds": [
         "M116",
@@ -869,10 +869,10 @@ window.MARIN_RESEARCH = {
       "reviewStatus": "reviewed",
       "checkedAt": "2026-09-23T13:09:22Z",
       "concept": {
-        "en": "Code availability, configuration selection, deployment and demonstrated model capability are four separate evidence levels."
+        "en": "Merging an upgrade makes it available in the code. A running training job may still use an earlier version."
       },
       "exercise": {
-        "en": "For each merged PR, identify one public artifact that would establish production adoption and one evaluation that would establish the claimed capability."
+        "en": "What would you want to see before saying “Marin now trains faster” or “Marin understands longer documents”?"
       }
     },
     {
@@ -880,10 +880,10 @@ window.MARIN_RESEARCH = {
       "date": "2026-09-23",
       "status": "experimental",
       "title": {
-        "en": "More accurate router arithmetic changes expert choices without a demonstrated benefit for switching the live Hero"
+        "en": "More precise calculations do not yet justify changing how Marin chooses its experts"
       },
       "detail": {
-        "en": "The September 22 public experiment comment in #8435 recommends keeping the ongoing Hero on its current router arithmetic. BF16 operands with FP32 accumulation/output matched the FP64-reference top-8 order for all 324 saved entries, versus 80 ordering mismatches with current arithmetic. On a restored step-126,000 batch, it changed the selected expert set for 2.6479% of routed tokens. Short one-rack continuations reported an approximate 1.5–2% step-time cost, nearly identical mean training loss and diverging router state. Corrected fixed-policy Paloma evaluation after 20 updates was higher by 0.00072265 macro loss for the candidate-trained checkpoint. That short result does not establish durable harm or benefit. The full-model experiments used one data-parallel replica with batch 1,024, not the production 11 racks and batch 11,264; cross-rack reductions were not exercised. The comment explicitly states that no PR was opened and no live Hero setting or checkpoint was changed. Its public description, rather than the referenced private storage artifacts, is the evidence used here."
+        "en": "Marin divides some work among specialized parts of the model called experts. A small experiment tested whether more precise calculations would help it choose those experts. The choices became closer to a high-precision reference, but the short training test did not demonstrate a lasting quality benefit and reported a roughly 1.5–2% time cost per step. The public report recommends keeping the main run unchanged. This matters because changing which experts receive work can alter the model’s later learning, even when the arithmetic itself is more accurate. The experiment used one rack of machines and only 20 training updates, far short of a full-scale comparison. Its corrected evaluation replaces the earlier results. No live Hero setting was changed, and the conclusions here rely on the public report rather than its private experiment files."
       },
       "sourceIds": [
         "M117",
@@ -892,10 +892,10 @@ window.MARIN_RESEARCH = {
       "reviewStatus": "reviewed",
       "checkedAt": "2026-09-23T13:09:22Z",
       "concept": {
-        "en": "In an MoE router, a numerically more accurate dot product can change discrete expert selection and the subsequent optimization trajectory; arithmetic accuracy alone does not establish better training quality."
+        "en": "More accurate arithmetic does not automatically make a better model: it can change which parts learn from each example."
       },
       "exercise": {
-        "en": "Explain why matching the FP64 top-8 order in saved inputs is insufficient to justify a mid-run production switch. Design a longer matched continuation with a common evaluation policy."
+        "en": "Would you switch a long-running training job after a 20-step test? Name one additional comparison you would need."
       }
     },
     {
@@ -903,10 +903,10 @@ window.MARIN_RESEARCH = {
       "date": "2026-09-23",
       "status": "planned",
       "title": {
-        "en": "Checkpoint evaluation needs pending query-bias state; the proposed fix remains unmerged"
+        "en": "An evaluation issue could make saved-model comparisons misleading"
       },
       "detail": {
-        "en": "Open issue #9352 documents checkpoint-only evaluation exposing raw current and EMA parameters without applying pending_qb_betas, even though the next training forward and sampling restore path apply that pending update. Its proposed behavior is to apply the state to evaluation model views while leaving ordinary logging and checkpoint callbacks unchanged. An experimental fork fix and regression test exist, but the issue says they are not merged. The original a1 router-comparison evaluations are explicitly superseded by corrected a2 evaluations. The observed differences were small and came from two checkpoints produced by 20 updates on one B200 rack; they do not establish the impact on other checkpoints, invalidate all historical Hero evaluation values, or demonstrate a production fix."
+        "en": "A reported issue shows that one evaluation path can test a slightly different model state from the one training would use next. When restoring a saved model, it leaves out a pending adjustment that affects how work is distributed among experts. That matters when comparing two training methods: differences in how they are evaluated can be mistaken for differences in what they learned. A proposed fix exists in an experimental copy of the code but has not been merged. The router experiment above has already replaced its original evaluations with corrected results. The observed differences were small and limited to two checkpoints from a short one-rack experiment. We do not yet know the wider impact, and this report does not establish that all historical Hero evaluations are wrong. The issue and proposed behavior are documented in #9352."
       },
       "sourceIds": [
         "M118",
@@ -915,10 +915,10 @@ window.MARIN_RESEARCH = {
       "reviewStatus": "reviewed",
       "checkedAt": "2026-09-23T13:09:22Z",
       "concept": {
-        "en": "A checkpoint can contain deferred state transitions in addition to model weights. Evaluation must define which effective model state it measures."
+        "en": "A checkpoint is a saved training state. Comparing checkpoints fairly requires restoring the relevant state and using the same evaluation rules."
       },
       "exercise": {
-        "en": "List the current-parameter, EMA and pending query-bias state that a checkpoint evaluation should handle. Explain why ordinary checkpoint-writing callbacks should not automatically perform evaluation-only work."
+        "en": "If two saved models are tested under different rules, how could that affect your conclusion about which training method worked better?"
       }
     },
     {
@@ -926,10 +926,10 @@ window.MARIN_RESEARCH = {
       "date": "2026-09-23",
       "status": "experimental",
       "title": {
-        "en": "Open ragged-EP candidate reports 2.21% single-rack throughput gain; multi-rack benefit remains unknown"
+        "en": "A small test suggests a way to speed up communication between experts"
       },
       "detail": {
-        "en": "PR #9333 remains open. It combines symmetric all-gather/reduce-scatter buffers with removal of unused QuACK expert-MLP tail masks. Three paired repetitions on 64 GB200 GPUs report 2.21% mean training-throughput improvement and 2.18% full-iteration improvement for the combination. Symmetric buffers alone showed no established mean benefit: slow updates erased the median gain. The runs restored step 30,000, used batch 1,024 and scored 60 post-warmup updates per run; all nine completed with finite losses. These tests exclude the full Hero inter-rack collectives, and the throughput measurements have not been repeated on the rebased code. A completed d768 comparison supports approximately matched losses but changes native attention and EP together, so it cannot isolate their effects. The evidence supports a candidate, not a merged change or a Hero production rollout."
+        "en": "A proposed change helped a one-rack training test process work about 2.21% faster on average. It combines changes to how devices exchange work with removal of unnecessary calculations. A gain like this could reduce training time if it holds at the scale of the main Hero run, but that has not been demonstrated. The proposal remains open for review (#9333). Testing the communication change alone showed no clear average benefit: occasional slow updates erased its typical-step improvement. The combined result came from three repeated comparisons on one rack, not the full multi-rack system, and has not been repeated after the code was updated to a newer base. It is a candidate worth testing further, not an improvement already delivered to the main model."
       },
       "sourceIds": [
         "M119",
@@ -938,10 +938,10 @@ window.MARIN_RESEARCH = {
       "reviewStatus": "reviewed",
       "checkedAt": "2026-09-23T13:09:22Z",
       "concept": {
-        "en": "Mean, median and full-iteration throughput can disagree when occasional slow updates matter. A combined treatment also needs controls before its benefit can be attributed to one component."
+        "en": "Typical speed and total training time can tell different stories. Occasional slow steps can cancel out gains on most steps."
       },
       "exercise": {
-        "en": "Given the control, symmetric-buffer-only and combined treatments, identify the missing arm of a full factorial comparison and explain why an 11-rack test is still required."
+        "en": "Would you choose an upgrade based on its fastest steps, its typical step, or the total time for the same work? Explain why."
       }
     },
     {
