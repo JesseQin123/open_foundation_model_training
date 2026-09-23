@@ -1,0 +1,121 @@
+{
+  "retrievedOn": "2026-09-23",
+  "sourceUrl": "https://wandb.ai/marin-community/marin_moe/runs/hero-main-step121638",
+  "endpoint": "https://api.wandb.ai/graphql",
+  "authentication": "none",
+  "run": {
+    "name": "hero-main-step121638",
+    "state": "running"
+  },
+  "metricTimestampUtc": "2026-09-23T13:04:40.155867+00:00",
+  "summaryMetrics": {
+    "global_step": 144609,
+    "_step": 144609,
+    "_timestamp": 1790168680.1558673,
+    "train/loss": 1.2137199640274048,
+    "throughput/mfu": 19.211862857104826,
+    "throughput/duration": 20.431366975884885,
+    "throughput/iteration_time": 21.887882086914033,
+    "throughput/mean_mfu": 23.928277417014165,
+    "throughput/p50_mfu": 24.143271104794046,
+    "throughput/mfu_sample_count": 500,
+    "eval_dropless/paloma/macro_bpb": 0.7965694665908813,
+    "eval_dropless/uncheatable_eval/macro_bpb": 0.5180590748786926
+  },
+  "latestReturnedEvaluationRow": {
+    "_step": 143999,
+    "global_step": 143999,
+    "eval_dropless/paloma/macro_bpb": 0.7965694665908813,
+    "eval_dropless/uncheatable_eval/macro_bpb": 0.5180590748786926
+  },
+  "sampledEvaluationRows": [
+    {
+      "_step": 110999,
+      "global_step": 110999,
+      "eval_dropless/paloma/macro_bpb": 0.8028090000152588,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.5235640406608582
+    },
+    {
+      "_step": 113999,
+      "global_step": 113999,
+      "eval_dropless/paloma/macro_bpb": 0.8022366762161255,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.5229763388633728
+    },
+    {
+      "_step": 116999,
+      "global_step": 116999,
+      "eval_dropless/paloma/macro_bpb": 0.8027592897415161,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.521825909614563
+    },
+    {
+      "_step": 119999,
+      "global_step": 119999,
+      "eval_dropless/paloma/macro_bpb": 0.8015051484107971,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.5219438672065735
+    },
+    {
+      "_step": 122999,
+      "global_step": 122999,
+      "eval_dropless/paloma/macro_bpb": 0.8034502267837524,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.5207727551460266
+    },
+    {
+      "_step": 125999,
+      "global_step": 125999,
+      "eval_dropless/paloma/macro_bpb": 0.8000919222831726,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.5205481648445129
+    },
+    {
+      "_step": 128999,
+      "global_step": 128999,
+      "eval_dropless/paloma/macro_bpb": 0.7983362078666687,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.5196768045425415
+    },
+    {
+      "_step": 131999,
+      "global_step": 131999,
+      "eval_dropless/paloma/macro_bpb": 0.7988355159759521,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.5194763541221619
+    },
+    {
+      "_step": 134999,
+      "global_step": 134999,
+      "eval_dropless/paloma/macro_bpb": 0.8006804585456848,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.5193170309066772
+    },
+    {
+      "_step": 137999,
+      "global_step": 137999,
+      "eval_dropless/paloma/macro_bpb": 0.7977093458175659,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.5187897086143494
+    },
+    {
+      "_step": 140999,
+      "global_step": 140999,
+      "eval_dropless/paloma/macro_bpb": 0.7986156940460205,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.5186377167701721
+    },
+    {
+      "_step": 143999,
+      "global_step": 143999,
+      "eval_dropless/paloma/macro_bpb": 0.7965694665908813,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.5180590748786926
+    }
+  ],
+  "summaryQuery": "query { project(name: \"marin_moe\", entityName: \"marin-community\") { run(name: \"hero-main-step121638\") { name state summaryMetrics } } }",
+  "evaluationRequest": {
+    "query": "query($specs:[JSONString!]!) { project(name:\"marin_moe\",entityName:\"marin-community\") {run(name:\"hero-main-step121638\") {sampledHistory(specs:$specs)}}}",
+    "variables": {
+      "specs": [
+        "{\"keys\": [\"_step\", \"global_step\", \"eval_dropless/paloma/macro_bpb\", \"eval_dropless/uncheatable_eval/macro_bpb\"], \"samples\": 1000}"
+      ]
+    }
+  },
+  "limitations": [
+    "Dynamic public API observation; not a fixed evaluation artifact or independently reproduced training result.",
+    "Summary values can come from different logging steps. The evaluation step is taken from a separate sampled-history row, not the summary global_step.",
+    "MFU values are already in percent. The rolling summary reports 500 samples.",
+    "Historical fork rows occur in this run; do not assume every sampled-history row originated in this continuation.",
+    "The record does not prove deployment of recently merged code."
+  ]
+}

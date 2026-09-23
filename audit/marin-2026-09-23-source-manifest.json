@@ -1,0 +1,93 @@
+[
+  {
+    "url": "https://github.com/marin-community/marin/issues/8435",
+    "title": "[Hero Run] 535B-A23B on 18T tokens",
+    "updatedAt": "2026-09-22T22:33:48Z",
+    "mergedAt": null,
+    "bodySha256": "22a97f668ce94a4af08585f75eb8c1cc348181bc289848392d994caf7c592af5"
+  },
+  {
+    "url": "https://github.com/marin-community/marin/issues/8506",
+    "title": "Hero Run / Ongoing Status",
+    "updatedAt": "2026-09-18T23:29:44Z",
+    "mergedAt": null,
+    "bodySha256": "081953b6a8c6060dfd5847ae08ff37ad73d1beb679b283958ce355f4d310e60b"
+  },
+  {
+    "url": "https://github.com/marin-community/marin/issues/8870",
+    "title": "[grug] Ragged EP train step hangs silently on one rack at d6144 hero scale",
+    "updatedAt": "2026-09-19T23:35:15Z",
+    "mergedAt": null,
+    "bodySha256": "80f9b77da9ba97bed5658d1e7ab7bde533f974f6c47a89e75f12787f730ce554"
+  },
+  {
+    "url": "https://github.com/marin-community/marin/issues/9324",
+    "title": "Week of September 21st, 2026 standup",
+    "updatedAt": "2026-09-22T13:40:38Z",
+    "mergedAt": null,
+    "bodySha256": "809e49575fe413c70e2f9e310775c2a82d35af6c111a6fe85580a40e47b10311"
+  },
+  {
+    "url": "https://github.com/marin-community/marin/issues/9344",
+    "title": "[grug] Evaluate context-parallel performance and gradient precision",
+    "updatedAt": "2026-09-22T19:52:19Z",
+    "mergedAt": null,
+    "bodySha256": "363fe5dffecf005970213e40e88325e2525ab132cddd07e4df1d2a96c0927663"
+  },
+  {
+    "url": "https://github.com/marin-community/marin/issues/9352",
+    "title": "[grug] Apply pending query bias during checkpoint evaluation",
+    "updatedAt": "2026-09-23T00:29:15Z",
+    "mergedAt": null,
+    "bodySha256": "b3e7b60d42f7f5d2ded7eef526e681e24e48dfce3cf2b4f71d5814bf0a595cbe"
+  },
+  {
+    "url": "https://github.com/marin-community/marin/pull/9119",
+    "title": "[grug] Enable context-parallel hero training",
+    "updatedAt": "2026-09-22T22:06:20Z",
+    "mergedAt": "2026-09-22T22:06:17Z",
+    "bodySha256": "e3863a5f3f4f65fea8685c2729822c9b078ef385cd60056b95c9b76fb997fa8f"
+  },
+  {
+    "url": "https://github.com/marin-community/marin/pull/9266",
+    "title": "[grug] Enable coordinated GC in the hero launcher",
+    "updatedAt": "2026-09-22T00:41:28Z",
+    "mergedAt": "2026-09-22T00:41:26Z",
+    "bodySha256": "5b5e451774dbb21c102fef643cc8e90d476560b952ca0a07ef5ae53dff024ffe"
+  },
+  {
+    "url": "https://github.com/marin-community/marin/pull/9287",
+    "title": "[grug] Add fast_track 16k dense-vs-MoE H100 scaling ladder",
+    "updatedAt": null,
+    "mergedAt": "2026-09-23T00:58:27Z",
+    "bodySha256": "8243c60d280eb2912b13b14b61c547750c2da9ee1ae27542bc3957797699a8de"
+  },
+  {
+    "url": "https://github.com/marin-community/marin/pull/9318",
+    "title": "Close hero data loaders before JAX shutdown",
+    "updatedAt": null,
+    "mergedAt": null,
+    "bodySha256": "d2bbcff6265aa9c4d84d93385617b56198073d80d20ba7b7403607737f2a13d9"
+  },
+  {
+    "url": "https://github.com/marin-community/marin/pull/9319",
+    "title": "Clear masked shared-memory tiles in segmented FA4 backward",
+    "updatedAt": null,
+    "mergedAt": null,
+    "bodySha256": "389a41110696e22716e2430cfb55671ffaf73958be0d56383d6a8b05478ff176"
+  },
+  {
+    "url": "https://github.com/marin-community/marin/pull/9332",
+    "title": "Use native SM100 FA4 forward and backward kernels",
+    "updatedAt": "2026-09-23T04:50:23Z",
+    "mergedAt": "2026-09-23T04:50:21Z",
+    "bodySha256": "faaad1b664c3ce1ff4535850a8c479bd111e0d18ed5272e6e8b934aef9fb35d2"
+  },
+  {
+    "url": "https://github.com/marin-community/marin/pull/9333",
+    "title": "[grug] Reduce collective and mask overhead in ragged EP",
+    "updatedAt": "2026-09-23T05:28:39Z",
+    "mergedAt": null,
+    "bodySha256": "8fa6ce47d7551495df5f0b90bb0cf7ffe3eca2bef32b1ec6a05f637cf494ba86"
+  }
+]

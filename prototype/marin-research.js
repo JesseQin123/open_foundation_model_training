@@ -1,6 +1,6 @@
 // Canonical daily research log. English is required; existing Chinese translations are retained.
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-09-22",
+  "snapshot": "2026-09-23",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -695,6 +695,36 @@ window.MARIN_RESEARCH = {
       "kind": "issue",
       "title": "Step-114K checkpoint metadata failure diagnosis · #8506 comment",
       "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5707969984"
+    },
+    {
+      "id": "M116",
+      "kind": "pr",
+      "title": "Native SM100 FA4 forward and backward kernels · PR #9332",
+      "url": "https://github.com/marin-community/marin/pull/9332"
+    },
+    {
+      "id": "M117",
+      "kind": "issue",
+      "title": "Hero router arithmetic: one-rack continuation and keep-current recommendation · #8435 comment",
+      "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5785310423"
+    },
+    {
+      "id": "M118",
+      "kind": "issue",
+      "title": "Apply pending query bias during checkpoint evaluation · #9352",
+      "url": "https://github.com/marin-community/marin/issues/9352"
+    },
+    {
+      "id": "M119",
+      "kind": "pr",
+      "title": "Reduce collective and mask overhead in ragged EP · PR #9333",
+      "url": "https://github.com/marin-community/marin/pull/9333"
+    },
+    {
+      "id": "M120",
+      "kind": "issue",
+      "title": "Context-parallel performance and gradient-precision follow-up · #9344",
+      "url": "https://github.com/marin-community/marin/issues/9344"
     }
   ],
   "claimGroups": [
@@ -702,67 +732,218 @@ window.MARIN_RESEARCH = {
       "status": "confirmed",
       "facts": {
         "en": [
-          "The historical clean-main handoff records hero-main-step121638 restoring a checkpoint and passing a 200-step gate. This is evidence of that dated handoff, not a fresh live measurement."
+          "The historical clean-main handoff records hero-main-step121638 restoring a checkpoint and passing a 200-step gate. The September 23 anonymous public W&B read reports this run as running at step 144,609; this observation does not identify a new production rollout.",
+          "The observed point reports train loss 1.21372, instantaneous MFU 19.21% and train-step duration 20.43 seconds. Its 500-sample MFU summary has mean 23.93% and median 24.14%. The latest returned evaluation row is step 143,999 (dropless Paloma macro BPB 0.796569; UncheatableEval macro BPB 0.518059). These are dynamic measurements, separate from the fixed step-45,837 evaluation artifact.",
+          "PR #9332 (native SM100 FA4) and PR #9119 (context parallelism) are merged repository changes. Their production deployment is not established by merge status."
         ]
       },
       "sourceIds": [
-        "M99"
+        "M99",
+        "M100",
+        "M61",
+        "M116",
+        "M80"
       ],
-      "reviewStatus": "imported"
+      "reviewStatus": "reviewed"
     },
     {
       "status": "planned",
       "facts": {
         "en": [
-          "Coordinated GC is merged into the Hero launcher, but the imported snapshot has no later production launch confirming it active. Long-context production and post-training handoff remain unconfirmed."
+          "Coordinated GC, native SM100 attention and context-parallel code are merged, but the inspected production status contains no later handoff establishing adoption of these settings. Long-context production and post-training handoff remain unconfirmed.",
+          "Issue #9352 requests applying pending query-bias state to current and EMA evaluation views; its experimental fix remains unmerged. Ragged EP PR #9333 and context-parallel performance/precision follow-ups remain open."
         ]
       },
       "sourceIds": [
         "M112",
-        "M113"
+        "M113",
+        "M3",
+        "M116",
+        "M80",
+        "M118",
+        "M119",
+        "M120"
       ],
-      "reviewStatus": "imported"
+      "reviewStatus": "reviewed"
     },
     {
       "status": "experimental",
       "facts": {
         "en": [
-          "The 65K H100 work is a fresh-init synthetic-data side experiment. Single-rack GC validation is not evidence of a mature 704-rank production deployment."
+          "The historical 65K H100 work is a synthetic-data side experiment. One-rack GC validation and the earlier 40-update 262K context-parallel benchmark do not establish production-scale safety or long-context learning.",
+          "The router precision study uses one rack and short continuations; it recommends keeping the running Hero unchanged. Corrected a2 checkpoint evaluations supersede the study's a1 results.",
+          "PR #9333 reports a combined 2.21% mean step-throughput gain on one rack, with no demonstrated mean benefit from symmetric buffers alone and no full-Hero multi-rack measurement."
         ]
       },
       "sourceIds": [
         "M105",
-        "M113"
+        "M113",
+        "M80",
+        "M117",
+        "M118",
+        "M119"
       ],
-      "reviewStatus": "imported"
+      "reviewStatus": "reviewed"
     },
     {
       "status": "inference",
       "facts": {
         "en": [
-          "Forecasts in the fixed Hero comparison report describe fitted expectations, not measurements of a final checkpoint."
+          "Forecasts in the fixed Hero comparison describe fitted expectations, not a measured final checkpoint.",
+          "The roughly 8% native-FA4 expectation compounds separate forward/backward studies; it is not a direct measurement of the full change against main or of production speedup."
         ]
       },
       "sourceIds": [
-        "M61"
+        "M61",
+        "M116"
       ],
-      "reviewStatus": "imported"
+      "reviewStatus": "reviewed"
     },
     {
       "status": "unknown",
       "facts": {
         "en": [
-          "Current live W&B step, loss, MFU and evaluation values have not been independently reverified in this migration. The initiating cause of the recurring multi-rack hang remains unresolved in the imported record."
+          "No inspected public handoff confirms that merged GC, native SM100 attention or context-parallel settings are active in the running Hero. Continued W&B metrics alone do not resolve these configuration questions.",
+          "The initiating cause of the recurring multi-rack hang remains unresolved in the inspected incident record. A slower instantaneous training point cannot establish a sustained regression or a cause.",
+          "Long-run quality effects of the router arithmetic change, the production-wide impact of the pending-query-bias evaluation omission and multi-rack gains from the open EP candidate remain unestablished."
         ]
       },
       "sourceIds": [
+        "M3",
+        "M45",
         "M100",
-        "M45"
+        "M117",
+        "M118",
+        "M119"
       ],
-      "reviewStatus": "imported"
+      "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-09-23-hero-observation",
+      "date": "2026-09-23",
+      "status": "confirmed",
+      "title": {
+        "en": "No newly verified production handoff: main Hero is running at step 144,609"
+      },
+      "detail": {
+        "en": "An anonymous public W&B API read returned hero-main-step121638 as running, with global_step 144,609 and a metric timestamp of 2026-09-23 13:04:40 UTC. Its latest summary point reports train loss 1.21372, instantaneous MFU 19.21%, train-step duration 20.43 seconds and full-iteration duration 21.89 seconds. The separately reported rolling MFU summary covers 500 samples, with a mean of 23.93% and median of 24.14%; one slower point is not evidence of a sustained regression or its cause. The latest returned sampled evaluation row is step 143,999: dropless Paloma macro BPB 0.796569 and UncheatableEval macro BPB 0.518059. Issues #8506 and #8870 contain no newer handoff or incident entry in this review, while #8435 adds a router side experiment. The September 21 standup still describes GC and native-attention deployment as upcoming work. The inspected fixed Hero comparison still reports step 45,837 (Paloma 0.818798; legacy seven-subset UncheatableEval 0.536178), and the latest completion page still shows checkpoints 102,000 and 108,000. The fixed mixture report remains a small-model scaling artifact. These observations verify continued public reporting, not deployment of newly merged kernels, context parallelism or coordinated GC. No newly verified production state change was found; this does not establish that no internal work occurred."
+      },
+      "sourceIds": [
+        "M100",
+        "M3",
+        "M45",
+        "M2",
+        "M112",
+        "M61",
+        "M110",
+        "M95"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-09-23T13:09:22Z",
+      "concept": {
+        "en": "An instantaneous training point, a rolling performance window and an evaluation checkpoint answer different questions. A live summary can retain the last evaluation value while the training step continues to advance."
+      },
+      "exercise": {
+        "en": "Compare the 19.21% instantaneous MFU with the 24.14% rolling median. List the additional timing and incident evidence needed before attributing a regression to a kernel change."
+      }
+    },
+    {
+      "id": "event-2026-09-23-merged-attention-and-context",
+      "date": "2026-09-23",
+      "status": "confirmed",
+      "title": {
+        "en": "Repository changes confirmed: native SM100 attention and context parallelism merged; Hero deployment remains unverified"
+      },
+      "detail": {
+        "en": "GitHub records PR #9332 merged at 2026-09-23 04:50:21 UTC and PR #9119 merged at 2026-09-22 22:06:17 UTC. The former introduces native SM100 FA4 forward/backward kernels and selects the backend in the Hero configuration; the latter adds context-parallel training support. Neither merge is a production handoff. The approximately 8% FA4 throughput expectation compounds two separate 64-GB200 studies (4.03% backward and 4.02% forward), rather than one measurement of the entire change against main. PR #9119 cites an earlier-revision, 40-update 262K-context test with 10.03% median MFU and 1.42% mean dropped assignments; it does not establish long-context learning quality. Issue #9344 leaves performance and gradient-reduction precision work open. No later launch record in the inspected Hero status thread confirms these merged settings in the running production lineage."
+      },
+      "sourceIds": [
+        "M116",
+        "M80",
+        "M120",
+        "M3",
+        "M112"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-09-23T13:09:22Z",
+      "concept": {
+        "en": "Code availability, configuration selection, deployment and demonstrated model capability are four separate evidence levels."
+      },
+      "exercise": {
+        "en": "For each merged PR, identify one public artifact that would establish production adoption and one evaluation that would establish the claimed capability."
+      }
+    },
+    {
+      "id": "event-2026-09-23-router-precision",
+      "date": "2026-09-23",
+      "status": "experimental",
+      "title": {
+        "en": "More accurate router arithmetic changes expert choices without a demonstrated benefit for switching the live Hero"
+      },
+      "detail": {
+        "en": "The September 22 public experiment comment in #8435 recommends keeping the ongoing Hero on its current router arithmetic. BF16 operands with FP32 accumulation/output matched the FP64-reference top-8 order for all 324 saved entries, versus 80 ordering mismatches with current arithmetic. On a restored step-126,000 batch, it changed the selected expert set for 2.6479% of routed tokens. Short one-rack continuations reported an approximate 1.5–2% step-time cost, nearly identical mean training loss and diverging router state. Corrected fixed-policy Paloma evaluation after 20 updates was higher by 0.00072265 macro loss for the candidate-trained checkpoint. That short result does not establish durable harm or benefit. The full-model experiments used one data-parallel replica with batch 1,024, not the production 11 racks and batch 11,264; cross-rack reductions were not exercised. The comment explicitly states that no PR was opened and no live Hero setting or checkpoint was changed. Its public description, rather than the referenced private storage artifacts, is the evidence used here."
+      },
+      "sourceIds": [
+        "M117",
+        "M118"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-09-23T13:09:22Z",
+      "concept": {
+        "en": "In an MoE router, a numerically more accurate dot product can change discrete expert selection and the subsequent optimization trajectory; arithmetic accuracy alone does not establish better training quality."
+      },
+      "exercise": {
+        "en": "Explain why matching the FP64 top-8 order in saved inputs is insufficient to justify a mid-run production switch. Design a longer matched continuation with a common evaluation policy."
+      }
+    },
+    {
+      "id": "event-2026-09-23-pending-query-bias",
+      "date": "2026-09-23",
+      "status": "planned",
+      "title": {
+        "en": "Checkpoint evaluation needs pending query-bias state; the proposed fix remains unmerged"
+      },
+      "detail": {
+        "en": "Open issue #9352 documents checkpoint-only evaluation exposing raw current and EMA parameters without applying pending_qb_betas, even though the next training forward and sampling restore path apply that pending update. Its proposed behavior is to apply the state to evaluation model views while leaving ordinary logging and checkpoint callbacks unchanged. An experimental fork fix and regression test exist, but the issue says they are not merged. The original a1 router-comparison evaluations are explicitly superseded by corrected a2 evaluations. The observed differences were small and came from two checkpoints produced by 20 updates on one B200 rack; they do not establish the impact on other checkpoints, invalidate all historical Hero evaluation values, or demonstrate a production fix."
+      },
+      "sourceIds": [
+        "M118",
+        "M117"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-09-23T13:09:22Z",
+      "concept": {
+        "en": "A checkpoint can contain deferred state transitions in addition to model weights. Evaluation must define which effective model state it measures."
+      },
+      "exercise": {
+        "en": "List the current-parameter, EMA and pending query-bias state that a checkpoint evaluation should handle. Explain why ordinary checkpoint-writing callbacks should not automatically perform evaluation-only work."
+      }
+    },
+    {
+      "id": "event-2026-09-23-ragged-ep-candidate",
+      "date": "2026-09-23",
+      "status": "experimental",
+      "title": {
+        "en": "Open ragged-EP candidate reports 2.21% single-rack throughput gain; multi-rack benefit remains unknown"
+      },
+      "detail": {
+        "en": "PR #9333 remains open. It combines symmetric all-gather/reduce-scatter buffers with removal of unused QuACK expert-MLP tail masks. Three paired repetitions on 64 GB200 GPUs report 2.21% mean training-throughput improvement and 2.18% full-iteration improvement for the combination. Symmetric buffers alone showed no established mean benefit: slow updates erased the median gain. The runs restored step 30,000, used batch 1,024 and scored 60 post-warmup updates per run; all nine completed with finite losses. These tests exclude the full Hero inter-rack collectives, and the throughput measurements have not been repeated on the rebased code. A completed d768 comparison supports approximately matched losses but changes native attention and EP together, so it cannot isolate their effects. The evidence supports a candidate, not a merged change or a Hero production rollout."
+      },
+      "sourceIds": [
+        "M119",
+        "M116"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-09-23T13:09:22Z",
+      "concept": {
+        "en": "Mean, median and full-iteration throughput can disagree when occasional slow updates matter. A combined treatment also needs controls before its benefit can be attributed to one component."
+      },
+      "exercise": {
+        "en": "Given the control, symmetric-buffer-only and combined treatments, identify the missing arm of a full factorial comparison and explain why an 11-rack test is still required."
+      }
+    },
     {
       "date": "2026-09-22",
       "status": "confirmed",
