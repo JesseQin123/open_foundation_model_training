@@ -1,0 +1,788 @@
+{
+  "reviewedAt": "2026-09-24T13:07:27Z",
+  "github": [
+    {
+      "url": "https://github.com/marin-community/marin/issues/8435",
+      "title": "[Hero Run] 535B-A23B on 18T tokens",
+      "updatedAt": "2026-09-22T22:33:48Z",
+      "state": null,
+      "mergedAt": null,
+      "bodySha256": "22a97f668ce94a4af08585f75eb8c1cc348181bc289848392d994caf7c592af5",
+      "comments": [
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5335872267",
+          "createdAt": "2026-08-19T00:15:31Z",
+          "bodySha256": "434845dd2bca9ded2cfea870182f9d35c64ba05c4d9ab01bbaa8fa5e9f639b1e"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5336301526",
+          "createdAt": "2026-08-19T01:16:46Z",
+          "bodySha256": "22fe78bec194739baa2fd1db60bbdad017ca2b1e4913d24c53449162f58babc2"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5337709199",
+          "createdAt": "2026-08-19T04:56:01Z",
+          "bodySha256": "13981a6b85876f52f51140261a5bac8262a59ee9d1e7e384cf41b6d6d645e8b0"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5344533796",
+          "createdAt": "2026-08-19T15:47:34Z",
+          "bodySha256": "59f42ca7c5217d198d0f373c9c3f7f85f07547d5ed57b4376d7a1b71a2e29a5e"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5344804457",
+          "createdAt": "2026-08-19T16:09:22Z",
+          "bodySha256": "7d5cf970d3933358a736cae996b8571fc5076b52a2c268c7ad397b43af271fcb"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5344856737",
+          "createdAt": "2026-08-19T16:13:54Z",
+          "bodySha256": "a42bbd40ec877d3a75de36019bc6c37bac860be985905f6822be646c0a1c9c80"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5345040115",
+          "createdAt": "2026-08-19T16:29:23Z",
+          "bodySha256": "1d63e2bde186defd293dfecd5cc4aadbe6ccc90005913aaaeec84fc7d67f3edd"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5357943524",
+          "createdAt": "2026-08-20T15:19:25Z",
+          "bodySha256": "6d1cd8a2926b514eea647315ce1bf86cc5cb2ac1c1d75d8b3aa55605105cbb71"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5357978745",
+          "createdAt": "2026-08-20T15:21:51Z",
+          "bodySha256": "051dba4ab73563846303572113951b54d7d697193cecf84ba9c7126788b37b9a"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5358054499",
+          "createdAt": "2026-08-20T15:27:51Z",
+          "bodySha256": "907a7203fb569c3b5a1b088c1a8f708aa69d1a36a96334c65cfcb888d2982238"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5361751142",
+          "createdAt": "2026-08-20T21:15:16Z",
+          "bodySha256": "1e1970a12b30d165190a66495f28f9c47d3f5b17b8f1b27404af9017eb5b3051"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5362936645",
+          "createdAt": "2026-08-20T22:40:56Z",
+          "bodySha256": "8f7c7cc87a7a94e8a0de5b1bcfd7c1a0b702cd3b75a95c3f4231573acadea0ee"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5378422117",
+          "createdAt": "2026-08-22T06:22:27Z",
+          "bodySha256": "3ebfd82c5f88c4ab8a74df34c8206727118050a70172a70b6c5de0c260954cd9"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5390867355",
+          "createdAt": "2026-08-24T04:48:10Z",
+          "bodySha256": "fbcd8cd5114afa7fbb3834f22009fd98b07f624f277b5523c89e28be183549b2"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5395671408",
+          "createdAt": "2026-08-24T13:11:15Z",
+          "bodySha256": "77f0b7f5ebce18c01441299f70cc3944feff8e1b6f5a2e765b1efbfed020dfed"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5401686089",
+          "createdAt": "2026-08-24T21:36:53Z",
+          "bodySha256": "9a34a9121020e9e45880115606c86af0ca988943a49f57d1e97f674c6e8a9db0"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5406648997",
+          "createdAt": "2026-08-25T06:53:00Z",
+          "bodySha256": "1f047e8dfb6de953676aade169f94dd673db76588390f07c1ace14438e1dfb58"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5427499956",
+          "createdAt": "2026-08-26T15:28:41Z",
+          "bodySha256": "57134271d3c37ead6bde1e1d74530d5ec9eac1a2b71e4b3fbe0f3cce6a0d2708"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5433154702",
+          "createdAt": "2026-08-27T01:23:04Z",
+          "bodySha256": "99203594a3f83ececf656cbeb8d89c3ccfd46e1eccead009626656ed8d8511e9"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5433737400",
+          "createdAt": "2026-08-27T02:50:16Z",
+          "bodySha256": "f5603aa24fb288a6a7c5cf247d7f042dad591444f297f669d8c6d057fb10c683"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5458731192",
+          "createdAt": "2026-08-28T23:14:07Z",
+          "bodySha256": "662d20d93a637602b58631372e921989b80b86bf378569bd93512099ba692518"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5483980316",
+          "createdAt": "2026-08-31T20:15:57Z",
+          "bodySha256": "91afac949a5f8ee8fdfc3786552dac1933e3f1ef8289b0a7cd0151d748420687"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5485981757",
+          "createdAt": "2026-08-31T23:08:11Z",
+          "bodySha256": "301217f5dab08a1bb679041f5b23693d7f620599e023af2f0db4cbad0fc3e07d"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5489229549",
+          "createdAt": "2026-09-01T05:13:00Z",
+          "bodySha256": "cb71fe79abb4041f7868f8012259f5fecfbb798c63ef4e1be8bab08b60289639"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5785310423",
+          "createdAt": "2026-09-22T22:32:10Z",
+          "bodySha256": "c51c561881af521ad09248a8cd413f05e06afb674a38219c7b7158e5bd9ce564"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-5785318684",
+          "createdAt": "2026-09-22T22:32:44Z",
+          "bodySha256": "fed2795b2b2f17a6f3a474bb45b0a9998737436be8a7fddacfacfd6325df3da6"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/marin-community/marin/issues/8506",
+      "title": "Hero Run / Ongoing Status",
+      "updatedAt": "2026-09-23T22:41:06Z",
+      "state": null,
+      "mergedAt": null,
+      "bodySha256": "081953b6a8c6060dfd5847ae08ff37ad73d1beb679b283958ce355f4d310e60b",
+      "comments": [
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5363258940",
+          "createdAt": "2026-08-20T23:22:04Z",
+          "bodySha256": "d39272eaf6b6e4e06a3764f9ad553dbd78992e90995021bfc7ace3b6073bdc6b"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5365222655",
+          "createdAt": "2026-08-21T04:31:59Z",
+          "bodySha256": "5213c7a7d5f3ba6b445dd34ec677587c25618b1c5d288c3dd24c3d8d0f9e99bf"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5372233783",
+          "createdAt": "2026-08-21T15:59:48Z",
+          "bodySha256": "c1a3f486696a32b76491a5aa8ea8c28ff16f2d5368648cd6c75ce14f4f5349cb"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5373722833",
+          "createdAt": "2026-08-21T18:27:40Z",
+          "bodySha256": "e7702ff46aa213c27748f9ed8a75a73530ed507837e682bd7111ea7f779fef63"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5381228200",
+          "createdAt": "2026-08-22T15:43:25Z",
+          "bodySha256": "1e0e494f85a69cec691118f1c6052ea4297e1c8fcd74d8f1aa22a914e15bcc6b"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5389008642",
+          "createdAt": "2026-08-23T23:11:34Z",
+          "bodySha256": "df0acf142a401527ef0e9287213523d4ca2cd98fd870c415ab90926c8a0919fe"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5389681869",
+          "createdAt": "2026-08-24T01:28:38Z",
+          "bodySha256": "a043b0009043a8f8ad2a2d84118c18c4b8061318ad72d3bc96171b2375ff0851"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5389725084",
+          "createdAt": "2026-08-24T01:36:39Z",
+          "bodySha256": "ed7c758ed2f3cd2f262ac799555097697d5505b15de0f977af7c17cbc8490063"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5394314776",
+          "createdAt": "2026-08-24T11:03:59Z",
+          "bodySha256": "6d3387ad9d5261137389780298cb53b4586071e3d312d52b8ad29d6026fca850"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5401613236",
+          "createdAt": "2026-08-24T21:29:34Z",
+          "bodySha256": "5412ec4de44a7e7e8339c59369f05c9ee5f0095dd402ce67966b4e32bfc47ffa"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5442658185",
+          "createdAt": "2026-08-27T17:16:28Z",
+          "bodySha256": "132d1d77c33b02ce23320cecddbe8b07c0347414e85b459636fe64806508517d"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5502471700",
+          "createdAt": "2026-09-02T00:25:58Z",
+          "bodySha256": "214c3ee47d0a5a2699a45024e51ea94a094b76587a20f028be5419db17fa4bd1"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5518372559",
+          "createdAt": "2026-09-03T00:19:44Z",
+          "bodySha256": "5b60ece6088a896b1cbef9eec4349845a1e2a2bd9af6e9cd96686b46daf9c4fd"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5518830230",
+          "createdAt": "2026-09-03T01:16:59Z",
+          "bodySha256": "322eaff2064d835347ecd961e77f394b73a265a9cf93d63261dd95334f6de622"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5518941160",
+          "createdAt": "2026-09-03T01:31:10Z",
+          "bodySha256": "6c62c0ee03b67f82a6c8c4754a3f497c5100e0d0019bec45f54fe89e755370b9"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5534208221",
+          "createdAt": "2026-09-04T01:07:13Z",
+          "bodySha256": "8f10a6399cdc60049bd91bd0649a2a04ccfc3e5952862db406fe9ad8e4af0b2f"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5547644106",
+          "createdAt": "2026-09-04T23:32:14Z",
+          "bodySha256": "3e81fea068ced7201d17f64944b3317dd5e0f3d8c386d8a643688d22a62582bc"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5553842711",
+          "createdAt": "2026-09-05T18:19:13Z",
+          "bodySha256": "75e27c2d8c8b4f63a89a8d4d40c653aaacbf1abac9f5d05aa3719a726efaaaba"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5606002395",
+          "createdAt": "2026-09-09T17:26:25Z",
+          "bodySha256": "30a39a7e64f41d1866f53f8de109d527b5b92b26159fcb17d5711deaf9b4ca8c"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5606812293",
+          "createdAt": "2026-09-09T18:31:06Z",
+          "bodySha256": "83748d73a5683635eb164f15b84d6561e8cb1bc5d6aec4e90e57186d1f724a00"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5607600274",
+          "createdAt": "2026-09-09T19:34:39Z",
+          "bodySha256": "8362acc1a6f56d6316ca397b521b68f3fdbd34a3f376f20d896e9de74d1426a8"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5607607490",
+          "createdAt": "2026-09-09T19:35:15Z",
+          "bodySha256": "882d1757ad4e07ba36076ee5e6df7384fbcf7bb5ec3d5cdb36a9093454559ab8"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5607788308",
+          "createdAt": "2026-09-09T19:49:13Z",
+          "bodySha256": "49e2a77c211da9a649242c621d87c86d29c8de3299e66d765f76db8ca5c48ba4"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5608209836",
+          "createdAt": "2026-09-09T20:23:38Z",
+          "bodySha256": "423173f2e3a47d806fbf67b6fbe438987bf7883ad8486dd29e4991326a1ccabd"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5608215407",
+          "createdAt": "2026-09-09T20:24:06Z",
+          "bodySha256": "493d090a5d959c4d9b955393f7dd47bd81b8aa2b96509cfe80bcbaec7ece0f23"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5608404121",
+          "createdAt": "2026-09-09T20:39:01Z",
+          "bodySha256": "f46995409303e288d4fcd32d07e557df347a82ab3486a4809bb2aad2962d1cbc"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5608541587",
+          "createdAt": "2026-09-09T20:48:56Z",
+          "bodySha256": "9b8f3b4e46bafaed93bb114ede44ae00128ad2c9ae1564ed628a3f9be7db56b5"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5608545188",
+          "createdAt": "2026-09-09T20:49:14Z",
+          "bodySha256": "1f4fb44f5de60e3753907b1b9b2fc2ef363660b1fece5647593454bc6594a0eb"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5608763494",
+          "createdAt": "2026-09-09T21:07:43Z",
+          "bodySha256": "7df34df6f0fae791d4478c6f2cce69e69301b18105fd25ffe0895e23aad80f3a"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5608807722",
+          "createdAt": "2026-09-09T21:11:18Z",
+          "bodySha256": "2031542430bd8a5d592f16937e14fed2084da0928cc2c783a3a3541fb3abd6fb"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5608811817",
+          "createdAt": "2026-09-09T21:11:40Z",
+          "bodySha256": "e07f07fa2c59801e79cb80e91cd117415300f90c6589856e780792c5e00578b2"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5609573154",
+          "createdAt": "2026-09-09T22:24:57Z",
+          "bodySha256": "f274f8024f4563061eba9fcd00d3b05e4a7cfef4a4c64d88a1140f6292fcfde7"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5609812430",
+          "createdAt": "2026-09-09T22:50:37Z",
+          "bodySha256": "a00a3952bae74700b35a6416e3015bcb8dff55dad08203d3e6fbdc2f1281a94a"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5609817090",
+          "createdAt": "2026-09-09T22:51:07Z",
+          "bodySha256": "9baf41a9d120c4ab71ad0ee4fd9b83ba36de702d05d13c3f77aa0759fda4277a"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5610467489",
+          "createdAt": "2026-09-09T23:59:35Z",
+          "bodySha256": "da9838c31b7038bebf4522cad32a91cd9f403b427e8d2f93417cbd9e1d914416"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5613579243",
+          "createdAt": "2026-09-10T05:18:58Z",
+          "bodySha256": "804932b13a12ef6a25e3f074589ca9a67cef77f1149a6c23d2078ed56b94ed0b"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5614639876",
+          "createdAt": "2026-09-10T07:13:36Z",
+          "bodySha256": "ac4f41f55efe6b48cfd7798f466d6610bc507f6f1c3a7b528d393a4f4d6b20c0"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5614680529",
+          "createdAt": "2026-09-10T07:17:12Z",
+          "bodySha256": "72a21f664865941bf53de46d398de0bc407e49550222c9946caebdd8db4ab0c8"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5615118768",
+          "createdAt": "2026-09-10T07:54:46Z",
+          "bodySha256": "831401dd357eadb51adc75ad80054dbe645075cad38db72e76d8f52eaf9c9f7d"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5615346838",
+          "createdAt": "2026-09-10T08:12:35Z",
+          "bodySha256": "4802a82761a5d416152f20e927932366a617ac63d80d6751317b09a742a93a80"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5684706768",
+          "createdAt": "2026-09-15T17:15:14Z",
+          "bodySha256": "03d00b177db54e3821cb75a3dbd47a21caa54bfd497a45d162fede3d04abbc3a"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5684891157",
+          "createdAt": "2026-09-15T17:27:10Z",
+          "bodySha256": "a6ea61a475ca1f72f6295a56fb260ecc332ea836a14dc20b0b616a8be4ef08bb"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5689462381",
+          "createdAt": "2026-09-15T23:20:36Z",
+          "bodySha256": "d43a5e85926997eca64b1593870d4e74e80076013d64ad0e6c768e6e8fd77195"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5689464022",
+          "createdAt": "2026-09-15T23:20:44Z",
+          "bodySha256": "16b926b1ccbe1273d7b9a6664ba62ccb41362cbc9c09275d011b26de88fe79e6"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5689628437",
+          "createdAt": "2026-09-15T23:34:49Z",
+          "bodySha256": "0819e32893672f1bf999d43a380aae5505e8c748bedea78f23260bba4a874c11"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5690222518",
+          "createdAt": "2026-09-16T00:33:19Z",
+          "bodySha256": "2ade92de23ddb551a828c9f10342a241dc6ea9e4a394bd8c353803938749cb87"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5695342852",
+          "createdAt": "2026-09-16T09:38:40Z",
+          "bodySha256": "baf32fd55ffde8b75ce7fcfa463feafb87bf01436dff7eb7596dd5370751427b"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5707969984",
+          "createdAt": "2026-09-17T03:22:13Z",
+          "bodySha256": "9f514cac82db06ed1dd2c957bab7f809b77d9958009981afc53f6f0f043cbb02"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5708008076",
+          "createdAt": "2026-09-17T03:26:53Z",
+          "bodySha256": "b94aed5e6b87af9c8ba6d5c15205b43055048a8288977c9db874af192d1252d2"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5734989379",
+          "createdAt": "2026-09-18T19:15:11Z",
+          "bodySha256": "bb6da1645e7fb16236f3937b393bd84eb1867439dba8f6580d4d58f74b13726e"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5803401391",
+          "createdAt": "2026-09-23T21:39:45Z",
+          "bodySha256": "627d6138d77547ee93e5806e76ce01e8a03eb53eadbbb79474d3259e2f2b39ac"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5803416767",
+          "createdAt": "2026-09-23T21:40:58Z",
+          "bodySha256": "33418865580b5537173e4a5d41a2f9edfda7acd910ad1498926796b12f9c488d"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5804146010",
+          "createdAt": "2026-09-23T22:41:06Z",
+          "bodySha256": "c870cea9c7faeafb08a08e661ad4e0192da8994173ca2026ab250165b1c34bcb"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/marin-community/marin/issues/8827",
+      "title": "Hero Run Checkpoint Prompt Completions",
+      "updatedAt": "2026-09-24T10:27:58Z",
+      "state": "OPEN",
+      "mergedAt": null,
+      "bodySha256": "99d80a89bd806f8570b10a61e85de5bb8e7167f3aacfb9e368bb1c1e61766838",
+      "comments": [
+        {
+          "url": "https://github.com/marin-community/marin/issues/8827#issuecomment-5489155657",
+          "createdAt": "2026-09-01T05:02:59Z",
+          "bodySha256": "3c6b699bf670588cad59098a9d17ddde4497f407a4255ec0ff13f8596b42d225"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8827#issuecomment-5594290387",
+          "createdAt": "2026-09-09T01:18:46Z",
+          "bodySha256": "5f4e83c2e8c7a3703beacae900a8485cb21af525b929d092e3595ff780aa7f2b"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8827#issuecomment-5640173450",
+          "createdAt": "2026-09-11T20:20:48Z",
+          "bodySha256": "422f8b9d0622f595b39fe4764adbe2899943b980d640ac8d3d5042668c7144c6"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8827#issuecomment-5669470567",
+          "createdAt": "2026-09-14T19:21:37Z",
+          "bodySha256": "d2b3139885d03bf3f8a5d17e906e6e30238c0328819aaf05f0dce95e93f9c1c2"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8827#issuecomment-5673791896",
+          "createdAt": "2026-09-15T02:32:28Z",
+          "bodySha256": "07a2f38ec4411598b4ee74aecb56cc015e259c4095cc71cee9a39f0d05b86756"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8827#issuecomment-5723229156",
+          "createdAt": "2026-09-18T00:39:05Z",
+          "bodySha256": "8f3d6a19fc1f215da8180794f542746a51628960c3bbb1c164bbf93ecf4dc860"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/marin-community/marin/issues/8870",
+      "title": "[grug] Ragged EP train step hangs silently on one rack at d6144 hero scale",
+      "updatedAt": "2026-09-24T00:09:31Z",
+      "state": null,
+      "mergedAt": null,
+      "bodySha256": "80f9b77da9ba97bed5658d1e7ab7bde533f974f6c47a89e75f12787f730ce554",
+      "comments": [
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5531534090",
+          "createdAt": "2026-09-03T20:13:00Z",
+          "bodySha256": "8d928ea1401fb1b46f3a8dd9aa442562a5d12cd0b5f9f2bf8b2eb18c7678b070"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5531788080",
+          "createdAt": "2026-09-03T20:35:07Z",
+          "bodySha256": "325fff3c6531b69f65287b8997b9b5c0d7f25192136cd8bbdc7fd4d9e2ce06d7"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5534213125",
+          "createdAt": "2026-09-04T01:07:52Z",
+          "bodySha256": "2411075e4bc7a68f9288e37f4dbd9fa1dadae9b3f10ae7014786ef382d361e43"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5534579271",
+          "createdAt": "2026-09-04T01:57:10Z",
+          "bodySha256": "2cfe9aa66060a106b71387c7a7e1b0d6462434a5bb40478a75dd5a547303edac"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5537281960",
+          "createdAt": "2026-09-04T07:35:56Z",
+          "bodySha256": "ac20a4198552c6e39a667831c6e985e015a1c3bd706091cbcd55def065fd973c"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5542825683",
+          "createdAt": "2026-09-04T15:34:15Z",
+          "bodySha256": "f9b669a208a4a0866c8a967b9f3e9586203f62fee62556a3da060261c9cf3d7a"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5542836603",
+          "createdAt": "2026-09-04T15:35:09Z",
+          "bodySha256": "8f283845814c2ef5bd2cfe45ffa8f966c7e370e01fec46fdc9fc93f51b410d60"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5547757908",
+          "createdAt": "2026-09-04T23:49:19Z",
+          "bodySha256": "2b71d4ca15041cac83f9d91dc80feb56b7571dd9263d527b5de10dd6adf4749a"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5548674783",
+          "createdAt": "2026-09-05T02:15:38Z",
+          "bodySha256": "954c37d323de071dec24a4d07d4b74f3cd455e231fea9b51177d8807348c9d73"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5548861875",
+          "createdAt": "2026-09-05T02:51:26Z",
+          "bodySha256": "a51e4fb3039f0483eca10fbff2f98fedd78a32d5ac9c97f5d4071f0a0105661c"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5554893088",
+          "createdAt": "2026-09-05T21:26:34Z",
+          "bodySha256": "cf4cc915426908d7386dacf75366bca285c2ee452ec8631921ed47003af5dea9"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5555213202",
+          "createdAt": "2026-09-05T22:28:10Z",
+          "bodySha256": "57e35c33943ec22295d265668a3da2586e8b0399b77c4679f4aee1ddb5219ec3"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5608303709",
+          "createdAt": "2026-09-09T20:31:32Z",
+          "bodySha256": "6f045b890b6675b95d60ceaab8b701bdc3f86bd38cffacc5f3dd8428a44cee66"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5609573276",
+          "createdAt": "2026-09-09T22:24:57Z",
+          "bodySha256": "fa95dd818bcf5d8bdc996677d1e344b7effabb49d35750a9ed827f30a1f72fb5"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5622750841",
+          "createdAt": "2026-09-10T17:27:46Z",
+          "bodySha256": "47ba96aadef48fc148373b60040896a4fe9fc7ec0f6e8452c13caf2c5ead85c4"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5623357096",
+          "createdAt": "2026-09-10T18:17:06Z",
+          "bodySha256": "6640cf3a393a251a249240d93cbbfe4c98ec8128c5939d873efc65c17d17290f"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5649942949",
+          "createdAt": "2026-09-13T01:26:51Z",
+          "bodySha256": "b676896be8f6843c68041c207f9641634dd67917e7cf25c27022d5048b3a7b76"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5665271397",
+          "createdAt": "2026-09-14T14:06:50Z",
+          "bodySha256": "9c7ab422f93d7e082cface9554b4c51c5f4ba1dc512236ea671c8bc96cbe0876"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5667537696",
+          "createdAt": "2026-09-14T16:51:37Z",
+          "bodySha256": "c76a1fd48c10f7239cc26b6daa896302fac6edadfaf7f2a737a365c7d3d9e7e4"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5680853004",
+          "createdAt": "2026-09-15T13:19:48Z",
+          "bodySha256": "f8f2a0cca8c993cd7921a4c269d42f119e7d9fdc5c38afe5b4ae43094468ff32"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5687716531",
+          "createdAt": "2026-09-15T20:35:11Z",
+          "bodySha256": "9e78d7be92ce910ec1cb1ed24f0a2451eea42fc49022d1c7008fcf75253ce390"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5688286822",
+          "createdAt": "2026-09-15T21:23:38Z",
+          "bodySha256": "be3cd69be7d94f417b47b3e6d75904841771e59c09f575bb52edccd3cb295095"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5688372126",
+          "createdAt": "2026-09-15T21:31:28Z",
+          "bodySha256": "b07b41f207d8df2e4d4b5ceaf84a0d4d03fe959085cefb434548cc7167424519"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5689476037",
+          "createdAt": "2026-09-15T23:21:46Z",
+          "bodySha256": "176a7a2ce3978016d1f7b4b04bb1b36b4dee5720131a6653a3300d249c18d931"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5707472701",
+          "createdAt": "2026-09-17T02:21:09Z",
+          "bodySha256": "cc1ad0ef1987c6b95dafbbcd1c0ce45d2adbbd4e41c913b5cddfbc9ae66af952"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5724125614",
+          "createdAt": "2026-09-18T02:18:37Z",
+          "bodySha256": "8660883c68fc3d204fbc64d857f43cdbd5817b4ff50e195142b4d46f1218cc12"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5728192581",
+          "createdAt": "2026-09-18T09:40:58Z",
+          "bodySha256": "00770edf3473f77fa406d5e7759b4df51078e98c2b6da74419f35d6a9f625f37"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5746060303",
+          "createdAt": "2026-09-19T23:19:14Z",
+          "bodySha256": "039d572e7c31c86e1c5e5eef8176832c4641b4c58bf19ffabb7065256471dd13"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5746144214",
+          "createdAt": "2026-09-19T23:35:14Z",
+          "bodySha256": "53dad0ba4f39671e790c8e510b2b55cd4777dc7658d419a526ce28fa22d85bc9"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5804993083",
+          "createdAt": "2026-09-24T00:03:28Z",
+          "bodySha256": "bdb878e5303f852b7c1e84f992519c28fdb173a8ce2d861852b3110b425c1213"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/marin-community/marin/issues/9324",
+      "title": "Week of September 21st, 2026 standup",
+      "updatedAt": "2026-09-22T13:40:38Z",
+      "state": null,
+      "mergedAt": null,
+      "bodySha256": "809e49575fe413c70e2f9e310775c2a82d35af6c111a6fe85580a40e47b10311",
+      "comments": []
+    },
+    {
+      "url": "https://github.com/marin-community/marin/issues/9344",
+      "title": "[grug] Evaluate context-parallel performance and gradient precision",
+      "updatedAt": "2026-09-22T19:52:19Z",
+      "state": "OPEN",
+      "mergedAt": null,
+      "bodySha256": "363fe5dffecf005970213e40e88325e2525ab132cddd07e4df1d2a96c0927663",
+      "comments": []
+    },
+    {
+      "url": "https://github.com/marin-community/marin/issues/9352",
+      "title": "[grug] Apply pending query bias during checkpoint evaluation",
+      "updatedAt": "2026-09-23T00:29:15Z",
+      "state": "OPEN",
+      "mergedAt": null,
+      "bodySha256": "b3e7b60d42f7f5d2ded7eef526e681e24e48dfce3cf2b4f71d5814bf0a595cbe",
+      "comments": []
+    },
+    {
+      "url": "https://github.com/marin-community/marin/pull/9333",
+      "title": "[grug] Skip unused tail masks in the ragged expert MLP",
+      "updatedAt": "2026-09-23T19:19:20Z",
+      "state": "MERGED",
+      "mergedAt": "2026-09-23T19:19:17Z",
+      "bodySha256": "a2cb438ef7163c5023f1a14d0ac540e4359ade03028ba42ac423ad2b663ffe91",
+      "comments": [
+        {
+          "url": "https://github.com/marin-community/marin/pull/9333#issuecomment-5796880636",
+          "createdAt": "2026-09-23T14:40:22Z",
+          "bodySha256": "2ee02cd38c180a9197c547ff67f0b12950dc4d35198bcf7accce51bfe3473e6d"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/marin-community/marin/pull/9374",
+      "title": "[grug] Register symmetric buffers for hero all-gather and reduce-scatter",
+      "updatedAt": "2026-09-23T22:04:37Z",
+      "state": "OPEN",
+      "mergedAt": null,
+      "bodySha256": "eb63ee631cfaa7d3c8b67935d34a855425891d88cc1b0c268f13a59ee75e2972",
+      "comments": [
+        {
+          "url": "https://github.com/marin-community/marin/pull/9374#issuecomment-5796873476",
+          "createdAt": "2026-09-23T14:39:55Z",
+          "bodySha256": "35a59a5d997892fc3c69e781358392c2cb3680c6e2ed2b7cdd789b4eed00c7a3"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/marin-community/marin/pull/9378",
+      "title": "[grug] Hand off the hero to native SM100 FA4 and mask-free ragged MLP",
+      "updatedAt": "2026-09-23T22:16:13Z",
+      "state": "MERGED",
+      "mergedAt": "2026-09-23T20:51:52Z",
+      "bodySha256": "b9d2747aada31ad5709a3cee45e869f80a974ee4a94791a994df067a1c71baea",
+      "comments": [
+        {
+          "url": "https://github.com/marin-community/marin/pull/9378#issuecomment-5799234730",
+          "createdAt": "2026-09-23T17:06:42Z",
+          "bodySha256": "45d30202c98dc5e55059eef87ca65db8f1e61704431b7656609396218123192e"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/marin-community/marin/pull/9387",
+      "title": "hero: rack-wide completion sampling and stable sample identity",
+      "updatedAt": "2026-09-23T19:04:49Z",
+      "state": "MERGED",
+      "mergedAt": "2026-09-23T19:04:46Z",
+      "bodySha256": "cae38cfbbcf5f4dc0cf36355deafd1f03d089ef16a9688cf3644c6881f8e26c1",
+      "comments": []
+    },
+    {
+      "url": "https://github.com/marin-community/marin/pull/9393",
+      "title": "[grug] Close FA4 SM100 review follow-ups",
+      "updatedAt": "2026-09-23T21:31:46Z",
+      "state": "OPEN",
+      "mergedAt": null,
+      "bodySha256": "cf5c0ca218201cac85920d3b2cb324adb73d8bae8ae0ec3bea6acf3268bdbc9d",
+      "comments": []
+    },
+    {
+      "url": "https://github.com/marin-community/marin/pull/9395",
+      "title": "[iac] Limit hero checkpoint deletion deny to east-02a",
+      "updatedAt": "2026-09-24T00:39:48Z",
+      "state": "OPEN",
+      "mergedAt": null,
+      "bodySha256": "abc5ba8865ea8957b919c8f1b4806920beaee28374d8085843d3da8821a2cbad",
+      "comments": [
+        {
+          "url": "https://github.com/marin-community/marin/pull/9395#issuecomment-5805032601",
+          "createdAt": "2026-09-24T00:07:35Z",
+          "bodySha256": "1017d5e949d137f50001b53ce5c84849a04007512b39ce9ca529fb29ff81983e"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/pull/9395#issuecomment-5805044422",
+          "createdAt": "2026-09-24T00:08:48Z",
+          "bodySha256": "5c4a57a8e9f319d333edc579ceb30bcc85141327c5ecdb4275c69b15526db677"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/marin-community/marin/pull/9402",
+      "title": "[grafana] Project the training finish from the recent step rate",
+      "updatedAt": "2026-09-24T03:15:30Z",
+      "state": "OPEN",
+      "mergedAt": null,
+      "bodySha256": "58bb51e25e996e66ab2c4295982552779ca7fec8a37a92b9c0e9bc9bf59520f6",
+      "comments": [
+        {
+          "url": "https://github.com/marin-community/marin/pull/9402#issuecomment-5806804251",
+          "createdAt": "2026-09-24T03:12:41Z",
+          "bodySha256": "d965874fb32148619533b89626ac0bb2b80514cd5ce4d4d2cce72972f4de4da5"
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "name": "fixed",
+      "sourceUrl": "https://storage.googleapis.com/marin-public/held/hero-open-weight-ppl/2026.09.05.1/index.html",
+      "readerResponseSha256": "7d1dc856bc29b54d7d3d1a3f9b2027d368182152055538d3eaaf26b8a215b2d0"
+    },
+    {
+      "name": "mixture",
+      "sourceUrl": "https://storage.googleapis.com/marin-public/held/h100-mix25-paloma/final-2026.09.15.1/index.html",
+      "readerResponseSha256": "cd5050e67396df4706af352950a457fc3b9230f1d730674b8484bbb3bb3b0255"
+    },
+    {
+      "name": "completions",
+      "sourceUrl": "https://storage.googleapis.com/marin-public/rav/hero-completions/latest/index.html",
+      "readerResponseSha256": "005c6d92c5b6d27443cc75e1d7e3437191944b2af9cbe6fa5be55e7dc313e799"
+    },
+    {
+      "name": "completions-fixed",
+      "sourceUrl": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.09.24/index.html",
+      "readerResponseSha256": "66ef57178b7a8d45f7d452bd1dba9a8a6663ceaff8ec83ac8855a43f195fe278"
+    },
+    {
+      "name": "athena",
+      "sourceUrl": "https://openathena.ai/blog/",
+      "readerResponseSha256": "af1872f3d6c5761fa67a29f762e140d8d2e31597127b69dbd5c64e771e98aeb9"
+    },
+    {
+      "name": "overlap",
+      "sourceUrl": "https://wandb.ai/marin-community/marin_moe/reports/Hero-cutover:-native-SM100-FA4-and-mask-free-ragged-MLP,-200-step-overlap-at-checkpoint-146139--VmlldzoxNzk5NTA1Ng==",
+      "readerResponseSha256": "43f5677ee2612594232a5bc858ff4da4d0d2f1de4f5b6c00449448d0c64d8a93"
+    },
+    {
+      "name": "data-pipeline",
+      "sourceUrl": "https://openathena.ai/blog/marin-data-pipeline-overview/",
+      "readerResponseSha256": "ddcc1b46598bc71acb36dc14ac06c4c26f5823f95b2787541573012206ff29e5"
+    }
+  ],
+  "discovery": {
+    "query": "repo:marin-community/marin updated:>=2026-09-23",
+    "reportedTotal": 124,
+    "pagesRead": 2,
+    "latestStandup": 9324
+  }
+}

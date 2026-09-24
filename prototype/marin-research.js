@@ -1,6 +1,6 @@
 // Canonical daily research log. English is required; existing Chinese translations are retained.
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-09-23",
+  "snapshot": "2026-09-24",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -725,6 +725,66 @@ window.MARIN_RESEARCH = {
       "kind": "issue",
       "title": "Context-parallel performance and gradient-precision follow-up · #9344",
       "url": "https://github.com/marin-community/marin/issues/9344"
+    },
+    {
+      "id": "M121",
+      "kind": "pr",
+      "title": "Hero handoff to native SM100 attention and mask-free expert computation · PR #9378",
+      "url": "https://github.com/marin-community/marin/pull/9378"
+    },
+    {
+      "id": "M122",
+      "kind": "issue",
+      "title": "Hero production handoff accepted after a 200-step paired trial · #8506 comment",
+      "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5804146010"
+    },
+    {
+      "id": "M123",
+      "kind": "report",
+      "title": "Hero native-attention continuation from step 146,139 · public W&B run",
+      "url": "https://wandb.ai/marin-community/marin_moe/runs/hero-fa4sm100-nomask-step146k"
+    },
+    {
+      "id": "M124",
+      "kind": "report",
+      "title": "Hero cutover: 200-step comparison at checkpoint 146139",
+      "url": "https://wandb.ai/marin-community/marin_moe/reports/Hero-cutover:-native-SM100-FA4-and-mask-free-ragged-MLP,-200-step-overlap-at-checkpoint-146139--VmlldzoxNzk5NTA1Ng=="
+    },
+    {
+      "id": "M125",
+      "kind": "issue",
+      "title": "Checkpoint upload stall and automatic Hero recovery · #8870 comment",
+      "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5804993083"
+    },
+    {
+      "id": "M126",
+      "kind": "pr",
+      "title": "Separate symmetric-buffer experiment for Hero collectives · PR #9374",
+      "url": "https://github.com/marin-community/marin/pull/9374"
+    },
+    {
+      "id": "M127",
+      "kind": "pr",
+      "title": "Restore completion sampling with stable identity and rack-wide execution · PR #9387",
+      "url": "https://github.com/marin-community/marin/pull/9387"
+    },
+    {
+      "id": "M128",
+      "kind": "report",
+      "title": "Hero checkpoint completions · September 24 fixed snapshot",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.09.24/index.html"
+    },
+    {
+      "id": "M129",
+      "kind": "pr",
+      "title": "Project training finish from the recent step rate · PR #9402",
+      "url": "https://github.com/marin-community/marin/pull/9402"
+    },
+    {
+      "id": "M130",
+      "kind": "pr",
+      "title": "Narrow checkpoint deletion restrictions · PR #9395",
+      "url": "https://github.com/marin-community/marin/pull/9395"
     }
   ],
   "claimGroups": [
@@ -732,17 +792,17 @@ window.MARIN_RESEARCH = {
       "status": "confirmed",
       "facts": {
         "en": [
-          "The historical clean-main handoff records hero-main-step121638 restoring a checkpoint and passing a 200-step gate. The September 23 anonymous public W&B read reports this run as running at step 144,609; this observation does not identify a new production rollout.",
-          "The observed point reports train loss 1.21372, instantaneous MFU 19.21% and train-step duration 20.43 seconds. Its 500-sample MFU summary has mean 23.93% and median 24.14%. The latest returned evaluation row is step 143,999 (dropless Paloma macro BPB 0.796569; UncheatableEval macro BPB 0.518059). These are dynamic measurements, separate from the fixed step-45,837 evaluation artifact.",
-          "PR #9332 (native SM100 FA4) and PR #9119 (context parallelism) are merged repository changes. Their production deployment is not established by merge status."
+          "The main Hero run has switched to faster attention, removal of unnecessary expert-computation masks, and coordinated memory cleanup. The September 23 acceptance record confirms hero-fa4sm100-nomask-step146k remains the main run after a 200-step comparison; its median training step was 14.67 seconds versus 16.29 seconds previously.",
+          "The new run stalled during a checkpoint storage upload and automatically restarted from an earlier save. The September 24 public observation reports step 149,003, loss 1.20975, instantaneous MFU 26.62% and 14.74 seconds per step; its 500-sample median MFU is 26.66%.",
+          "The latest returned live evaluation is step 146,999: Paloma 0.797810 and UncheatableEval 0.517665 bits per byte. The September 24 fixed sample report separately provides 27 completed sample sets, including outputs from checkpoints 138,000 and 144,000. Neither is a final-model benchmark."
         ]
       },
       "sourceIds": [
-        "M99",
-        "M100",
-        "M61",
-        "M116",
-        "M80"
+        "M122",
+        "M124",
+        "M125",
+        "M123",
+        "M128"
       ],
       "reviewStatus": "reviewed"
     },
@@ -750,19 +810,17 @@ window.MARIN_RESEARCH = {
       "status": "planned",
       "facts": {
         "en": [
-          "Coordinated GC, native SM100 attention and context-parallel code are merged, but the inspected production status contains no later handoff establishing adoption of these settings. Long-context production and post-training handoff remain unconfirmed.",
-          "Issue #9352 requests applying pending query-bias state to current and EMA evaluation views; its experimental fix remains unmerged. Ragged EP PR #9333 and context-parallel performance/precision follow-ups remain open."
+          "Longer-input support is in the code but explicitly not enabled in this Hero handoff. Follow-up performance and precision work remains open.",
+          "The pending query-bias evaluation fix remains unmerged. The separate communication-buffer proposal, recent-speed finish-date estimator and narrower checkpoint-deletion policy are also open; their deployment is not established."
         ]
       },
       "sourceIds": [
-        "M112",
-        "M113",
-        "M3",
-        "M116",
-        "M80",
+        "M121",
+        "M120",
         "M118",
-        "M119",
-        "M120"
+        "M126",
+        "M129",
+        "M130"
       ],
       "reviewStatus": "reviewed"
     },
@@ -770,18 +828,16 @@ window.MARIN_RESEARCH = {
       "status": "experimental",
       "facts": {
         "en": [
-          "The historical 65K H100 work is a synthetic-data side experiment. One-rack GC validation and the earlier 40-update 262K context-parallel benchmark do not establish production-scale safety or long-context learning.",
-          "The router precision study uses one rack and short continuations; it recommends keeping the running Hero unchanged. Corrected a2 checkpoint evaluations supersede the study's a1 results.",
-          "PR #9333 reports a combined 2.21% mean step-throughput gain on one rack, with no demonstrated mean benefit from symmetric buffers alone and no full-Hero multi-rack measurement."
+          "The communication-buffer work was separated from the deployed mask removal. Its latest one-rack comparison reports only 0.09% mean throughput improvement, with a 95% bootstrap interval from -0.17% to +0.27%; a dependable benefit at main-run scale has not been demonstrated.",
+          "The short router-precision experiment still recommends keeping the running model unchanged. More accurate expert selection has not established a lasting training-quality benefit. Historical long-context tests are separate experiments, not demonstrated long-document ability in the main model."
         ]
       },
       "sourceIds": [
-        "M105",
-        "M113",
-        "M80",
+        "M126",
+        "M119",
         "M117",
         "M118",
-        "M119"
+        "M80"
       ],
       "reviewStatus": "reviewed"
     },
@@ -789,13 +845,15 @@ window.MARIN_RESEARCH = {
       "status": "inference",
       "facts": {
         "en": [
-          "Forecasts in the fixed Hero comparison describe fitted expectations, not a measured final checkpoint.",
-          "The roughly 8% native-FA4 expectation compounds separate forward/backward studies; it is not a direct measurement of the full change against main or of production speedup."
+          "Faster measured steps could shorten remaining training if the improvement persists, but downtime, saving and later training changes also affect elapsed time. A projected completion date is not a measured endpoint.",
+          "The fixed Hero comparison and mixture-swap report contain scaling-based estimates. These should not be read as an achieved final Hero score or a measured reduction in its training time."
         ]
       },
       "sourceIds": [
+        "M124",
+        "M129",
         "M61",
-        "M116"
+        "M95"
       ],
       "reviewStatus": "reviewed"
     },
@@ -803,23 +861,128 @@ window.MARIN_RESEARCH = {
       "status": "unknown",
       "facts": {
         "en": [
-          "No inspected public handoff confirms that merged GC, native SM100 attention or context-parallel settings are active in the running Hero. Continued W&B metrics alone do not resolve these configuration questions.",
-          "The initiating cause of the recurring multi-rack hang remains unresolved in the inspected incident record. A slower instantaneous training point cannot establish a sustained regression or a cause.",
-          "Long-run quality effects of the router arithmetic change, the production-wide impact of the pending-query-bias evaluation omission and multi-rack gains from the open EP candidate remain unestablished."
+          "The latest stall was observed inside a checkpoint storage upload, but why that request stayed blocked is unresolved. This does not identify the cause of earlier multi-rack GPU hangs or prove the new attention code caused the event.",
+          "The accepted handoff trial did not test all saving and recovery paths. A later restart and live evaluation are now observed, but permanent-save completion at step 150,000 and durable reliability remain unverified in this review.",
+          "The long-term quality effect of the upgrade, broader impact of the pending query-bias evaluation issue, and main-run benefit of the separate communication experiment remain unestablished."
         ]
       },
       "sourceIds": [
-        "M3",
+        "M125",
         "M45",
-        "M100",
-        "M117",
+        "M122",
+        "M123",
         "M118",
-        "M119"
+        "M126"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-09-24-faster-main-run",
+      "date": "2026-09-24",
+      "status": "confirmed",
+      "title": {
+        "en": "Marin has switched its main training run to faster software"
+      },
+      "detail": {
+        "en": "Yesterday's proposed speed improvements are now in use by Marin's main training run. In a comparison using the same 200 batches, a typical training step took about 10% less time, allowing more training work per hour. This is a confirmed deployment, supported by the team's September 23 handoff decision and public comparison report. The update combines faster attention calculations, removal of unnecessary work in the model's specialized “experts,” and coordinated memory cleanup. Median step time fell from 16.29 to 14.67 seconds; measured throughput rose from 2.83 to 3.14 million tokens per second. The new run is hero-fa4sm100-nomask-step146k, restored from saved step 146,139. The comparison showed a small upward training-loss difference that the team accepted, not proof of unchanged long-term quality. Longer-input processing was not enabled, and the separate communication-buffer experiment remains outside this deployment. The trial also did not cover saving and restarting; the later incident is recorded below."
+      },
+      "sourceIds": [
+        "M121",
+        "M122",
+        "M124",
+        "M116",
+        "M119",
+        "M113",
+        "M126"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-09-24T13:07:27Z",
+      "concept": {
+        "en": "A fair speed comparison gives the old and new versions the same work. A successful short trial still leaves longer-term quality and reliability to check."
+      },
+      "exercise": {
+        "en": "If training steps become 10% shorter, what interruptions could prevent total training time from improving by the same amount?"
+      },
+      "productionChange": true,
+      "productionEvidenceIds": [
+        "M122",
+        "M124"
+      ]
+    },
+    {
+      "id": "event-2026-09-24-checkpoint-recovery",
+      "date": "2026-09-24",
+      "status": "confirmed",
+      "title": {
+        "en": "A stalled save interrupted training; automatic recovery got it moving again"
+      },
+      "detail": {
+        "en": "The upgraded run later stopped making progress while trying to save its state. Automatic recovery restarted it from an earlier saved checkpoint, so training continued, but 228 steps of progress had to be replayed. The public incident report places one process inside a blocked storage upload; it does not explain why the upload failed to return or connect this event to earlier GPU hangs. At 00:01 UTC on September 24, the retry restored step 146,355. By today's public monitoring observation at 13:02 UTC, the run was reporting step 149,003, loss 1.20975 and 14.74 seconds per training step. Compute utilization (MFU) was 26.62%, with a 26.66% median over 500 samples. The latest returned evaluation is step 146,999: Paloma 0.797810 and UncheatableEval 0.517665 bits per byte. These are live measurements, not a fixed final-model evaluation. Recovery is confirmed; a lasting storage fix and the first permanent save at step 150,000 are not yet verified."
+      },
+      "sourceIds": [
+        "M125",
+        "M123",
+        "M122",
+        "M45"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-09-24T13:07:27Z",
+      "concept": {
+        "en": "A checkpoint is a saved training state. After a failure, restarting from it preserves earlier work but can require repeating everything done since that save."
+      },
+      "exercise": {
+        "en": "If a job saves every hour, how much work might it need to repeat after a failure? How would more frequent saves change the cost?"
+      }
+    },
+    {
+      "id": "event-2026-09-24-new-writing-samples",
+      "date": "2026-09-24",
+      "status": "confirmed",
+      "title": {
+        "en": "New examples let readers inspect more recent versions of the model"
+      },
+      "detail": {
+        "en": "Marin has published fresh examples of what its model writes, including saved versions from steps 138,000 and 144,000. Readers can now inspect more recent outputs instead of relying only on training scores. The September 24 fixed report lists 27 completed sample sets across sampling versions, with multiple outputs for a prompt and information about token probabilities. These examples come from before the latest software handoff, so they do not demonstrate that the upgrade improved model quality. A merged sampling fix explains why publication had fallen behind: an unrelated model-configuration change invalidated completed results, and some sampling jobs exceeded their time limit. The revised code separates sample identity from that configuration and gives jobs more capacity and time. The samples are useful for spotting behavior to investigate; they are not a representative benchmark or proof that the model consistently answers correctly."
+      },
+      "sourceIds": [
+        "M127",
+        "M128"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-09-24T13:07:27Z",
+      "concept": {
+        "en": "A few examples can reveal a failure worth investigating. A broad capability claim needs a defined test set and consistent scoring."
+      },
+      "exercise": {
+        "en": "Choose the same prompt at two checkpoints. Describe one visible difference, then name one conclusion those two outputs cannot support."
+      }
+    },
+    {
+      "id": "event-2026-09-24-finish-date-estimates",
+      "date": "2026-09-24",
+      "status": "planned",
+      "title": {
+        "en": "A proposed dashboard change would make finish estimates react sooner"
+      },
+      "detail": {
+        "en": "A proposed dashboard change would estimate the training finish from recent progress instead of the run's entire history. That could make the estimate respond sooner to a speed upgrade, but it would also stop reflecting an old outage once that outage leaves the measurement window. This matters after yesterday's faster launch and subsequent restart: the choice of averaging window can move a projected finish date substantially without changing the amount of work remaining. The proposal uses the last 1,000 logged steps and accounts for where a restarted run branches from its parent. It is still an open pull request, not a confirmed dashboard deployment. Any resulting finish date remains a forecast that assumes the recent pace will continue; it cannot promise that future saves, outages or changes in training will take no extra time."
+      },
+      "sourceIds": [
+        "M129",
+        "M125",
+        "M122"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-09-24T13:07:27Z",
+      "concept": {
+        "en": "A forecast depends on the period used to estimate speed. A short window reacts quickly; a long window includes more history, including interruptions."
+      },
+      "exercise": {
+        "en": "Would you use the last hour or the last week to predict a training finish after an upgrade? Explain one weakness of each choice."
+      }
+    },
     {
       "id": "event-2026-09-23-hero-observation",
       "date": "2026-09-23",

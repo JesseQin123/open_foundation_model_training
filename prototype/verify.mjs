@@ -42,7 +42,7 @@ for (const mutate of [
   r => { r.sources.push({ ...r.sources[0], url: 'https://example.com/new' }); },
   r => { r.updates.reverse(); },
   r => { delete r.updates[0].title.en; },
-  r => { r.updates[0].productionChange = true; },
+  r => { r.updates[0].productionChange = true; delete r.updates[0].productionEvidenceIds; },
 ]) {
   const invalid = structuredClone(research); mutate(invalid);
   assert.throws(() => validateResearch(invalid));

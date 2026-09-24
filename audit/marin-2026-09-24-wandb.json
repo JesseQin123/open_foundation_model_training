@@ -1,0 +1,129 @@
+{
+  "retrievedOn": "2026-09-24",
+  "reviewedAt": "2026-09-24T13:07:27Z",
+  "sourceUrl": "https://wandb.ai/marin-community/marin_moe/runs/hero-fa4sm100-nomask-step146k",
+  "endpoint": "https://api.wandb.ai/graphql",
+  "authentication": "none",
+  "run": {
+    "name": "hero-fa4sm100-nomask-step146k",
+    "state": "running"
+  },
+  "metricTimestampUtc": "2026-09-24T13:02:13.515898+00:00",
+  "summaryMetrics": {
+    "global_step": 149003,
+    "_step": 149003,
+    "_timestamp": 1790254933.5158978,
+    "train/loss": 1.2097456455230713,
+    "throughput/mfu": 26.621242680657144,
+    "throughput/duration": 14.744789528893307,
+    "throughput/iteration_time": 14.976051056059077,
+    "throughput/mean_mfu": 26.490361933902978,
+    "throughput/p50_mfu": 26.660772685867773,
+    "throughput/mfu_sample_count": 500,
+    "eval_dropless/paloma/macro_bpb": 0.7978096008300781,
+    "eval_dropless/uncheatable_eval/macro_bpb": 0.5176651477813721
+  },
+  "latestReturnedEvaluationRow": {
+    "_step": 146999,
+    "global_step": 146999,
+    "eval_dropless/paloma/macro_bpb": 0.7978096008300781,
+    "eval_dropless/uncheatable_eval/macro_bpb": 0.5176651477813721
+  },
+  "sampledEvaluationRows": [
+    {
+      "_step": 110999,
+      "global_step": 110999,
+      "eval_dropless/paloma/macro_bpb": 0.8028090000152588,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.5235640406608582
+    },
+    {
+      "_step": 113999,
+      "global_step": 113999,
+      "eval_dropless/paloma/macro_bpb": 0.8022366762161255,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.5229763388633728
+    },
+    {
+      "_step": 116999,
+      "global_step": 116999,
+      "eval_dropless/paloma/macro_bpb": 0.8027592897415161,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.521825909614563
+    },
+    {
+      "_step": 119999,
+      "global_step": 119999,
+      "eval_dropless/paloma/macro_bpb": 0.8015051484107971,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.5219438672065735
+    },
+    {
+      "_step": 122999,
+      "global_step": 122999,
+      "eval_dropless/paloma/macro_bpb": 0.8034502267837524,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.5207727551460266
+    },
+    {
+      "_step": 125999,
+      "global_step": 125999,
+      "eval_dropless/paloma/macro_bpb": 0.8000919222831726,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.5205481648445129
+    },
+    {
+      "_step": 128999,
+      "global_step": 128999,
+      "eval_dropless/paloma/macro_bpb": 0.7983362078666687,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.5196768045425415
+    },
+    {
+      "_step": 131999,
+      "global_step": 131999,
+      "eval_dropless/paloma/macro_bpb": 0.7988355159759521,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.5194763541221619
+    },
+    {
+      "_step": 134999,
+      "global_step": 134999,
+      "eval_dropless/paloma/macro_bpb": 0.8006804585456848,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.5193170309066772
+    },
+    {
+      "_step": 137999,
+      "global_step": 137999,
+      "eval_dropless/paloma/macro_bpb": 0.7977093458175659,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.5187897086143494
+    },
+    {
+      "_step": 140999,
+      "global_step": 140999,
+      "eval_dropless/paloma/macro_bpb": 0.7986156940460205,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.5186377167701721
+    },
+    {
+      "_step": 143999,
+      "global_step": 143999,
+      "eval_dropless/paloma/macro_bpb": 0.7965694665908813,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.5180590748786926
+    },
+    {
+      "_step": 146999,
+      "global_step": 146999,
+      "eval_dropless/paloma/macro_bpb": 0.7978096008300781,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.5176651477813721
+    }
+  ],
+  "summaryRequest": {
+    "query": "query { project(name: \"marin_moe\", entityName: \"marin-community\") { run(name: \"hero-fa4sm100-nomask-step146k\") { name state summaryMetrics } } }"
+  },
+  "historyRequest": {
+    "query": "query($specs:[JSONString!]!) { project(name:\"marin_moe\",entityName:\"marin-community\") {run(name:\"hero-fa4sm100-nomask-step146k\") {sampledHistory(specs:$specs)}}}",
+    "variables": {
+      "specs": [
+        "{\"keys\": [\"_step\", \"global_step\", \"eval_dropless/paloma/macro_bpb\", \"eval_dropless/uncheatable_eval/macro_bpb\"], \"samples\": 1000}"
+      ]
+    }
+  },
+  "limitations": [
+    "Live public observation, not an immutable evaluation artifact.",
+    "Rows before the fork at step 146138 are inherited history.",
+    "Latest returned evaluation step is distinct from latest training step.",
+    "A single observed point does not demonstrate sustained quality or reliability."
+  ]
+}
