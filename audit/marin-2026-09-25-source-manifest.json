@@ -1,0 +1,345 @@
+{
+  "reviewedAt": "2026-09-25T13:06:56Z",
+  "discovery": {
+    "query": "repo:marin-community/marin updated:>=2026-09-24",
+    "reportedTotal": 134,
+    "pagesRead": 2,
+    "latestStandup": 9324
+  },
+  "github": [
+    {
+      "url": "https://github.com/marin-community/marin/issues/8317",
+      "title": "[grug] Ragged EP64 hero: match fixed-transport throughput below 2% drops",
+      "updatedAt": "2026-09-24T20:32:03Z",
+      "state": "OPEN",
+      "mergedAt": null,
+      "bodySha256": "a08d8ab78caa3378b3faa4af7826ebbef7cbeb9e6ed065cb7289ee311104730d",
+      "recentComments": [
+        {
+          "url": "https://github.com/marin-community/marin/issues/8317#issuecomment-5821773936",
+          "createdAt": "2026-09-24T20:32:03Z",
+          "bodySha256": "0600ae5e1e6209d9217e4f4ea5081bf1241d8ce71711d4d4f4b78c28b0fb62be"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/marin-community/marin/issues/8435",
+      "title": "[Hero Run] 535B-A23B on 18T tokens",
+      "updatedAt": "2026-09-22T22:33:48Z",
+      "state": "OPEN",
+      "mergedAt": null,
+      "bodySha256": "22a97f668ce94a4af08585f75eb8c1cc348181bc289848392d994caf7c592af5",
+      "recentComments": []
+    },
+    {
+      "url": "https://github.com/marin-community/marin/issues/8506",
+      "title": "Hero Run / Ongoing Status",
+      "updatedAt": "2026-09-24T15:47:28Z",
+      "state": "OPEN",
+      "mergedAt": null,
+      "bodySha256": "081953b6a8c6060dfd5847ae08ff37ad73d1beb679b283958ce355f4d310e60b",
+      "recentComments": [
+        {
+          "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5817400840",
+          "createdAt": "2026-09-24T15:47:28Z",
+          "bodySha256": "336a6ba3e83ebb143b1018aa1e3cc5fbd7ca586e3b9e55132c883510da49775b"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/marin-community/marin/issues/8827",
+      "title": "Hero Run Checkpoint Prompt Completions",
+      "updatedAt": "2026-09-25T07:57:53Z",
+      "state": "OPEN",
+      "mergedAt": null,
+      "bodySha256": "99d80a89bd806f8570b10a61e85de5bb8e7167f3aacfb9e368bb1c1e61766838",
+      "recentComments": []
+    },
+    {
+      "url": "https://github.com/marin-community/marin/issues/8870",
+      "title": "[grug] Ragged EP train step hangs silently on one rack at d6144 hero scale",
+      "updatedAt": "2026-09-24T00:09:31Z",
+      "state": "OPEN",
+      "mergedAt": null,
+      "bodySha256": "80f9b77da9ba97bed5658d1e7ab7bde533f974f6c47a89e75f12787f730ce554",
+      "recentComments": [
+        {
+          "url": "https://github.com/marin-community/marin/issues/8870#issuecomment-5804993083",
+          "createdAt": "2026-09-24T00:03:28Z",
+          "bodySha256": "bdb878e5303f852b7c1e84f992519c28fdb173a8ce2d861852b3110b425c1213"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/marin-community/marin/issues/9277",
+      "title": "[experiment] Hero 535B at 65K on H100: 15.5% MFU with PP24/EP8",
+      "updatedAt": "2026-09-19T12:03:14Z",
+      "state": "OPEN",
+      "mergedAt": null,
+      "bodySha256": "5349ca9a09764a5602e31dc779dde9e49d35128c2d25e35432fb7ce72aa94961",
+      "recentComments": []
+    },
+    {
+      "url": "https://github.com/marin-community/marin/issues/9324",
+      "title": "Week of September 21st, 2026 standup",
+      "updatedAt": "2026-09-22T13:40:38Z",
+      "state": "OPEN",
+      "mergedAt": null,
+      "bodySha256": "809e49575fe413c70e2f9e310775c2a82d35af6c111a6fe85580a40e47b10311",
+      "recentComments": []
+    },
+    {
+      "url": "https://github.com/marin-community/marin/issues/9352",
+      "title": "[grug] Apply pending query bias during checkpoint evaluation",
+      "updatedAt": "2026-09-23T00:29:15Z",
+      "state": "OPEN",
+      "mergedAt": null,
+      "bodySha256": "b3e7b60d42f7f5d2ded7eef526e681e24e48dfce3cf2b4f71d5814bf0a595cbe",
+      "recentComments": []
+    },
+    {
+      "url": "https://github.com/marin-community/marin/issues/9409",
+      "title": "Marin Eval Policy (2026-09-24)",
+      "updatedAt": "2026-09-24T16:08:22Z",
+      "state": "OPEN",
+      "mergedAt": null,
+      "bodySha256": "79be7affba4cc416291cd76708bdc92e1d8b624b3698cf1323d376054b37ebdb",
+      "recentComments": [
+        {
+          "url": "https://github.com/marin-community/marin/issues/9409#issuecomment-5817686762",
+          "createdAt": "2026-09-24T16:05:09Z",
+          "bodySha256": "efd85d417085f8134bbaac1ec2f317c8e0de1ed6d8efcb4393c71f414890a3c9"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/9409#issuecomment-5817742337",
+          "createdAt": "2026-09-24T16:08:22Z",
+          "bodySha256": "0615f5a046d6828748fb7827a8f0871ca8b1718d9941abcbfb4e4afa977baa20"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/marin-community/marin/issues/9412",
+      "title": "Marin eval baselines and initial Snowball results (2026-09-24)",
+      "updatedAt": "2026-09-24T16:08:08Z",
+      "state": "OPEN",
+      "mergedAt": null,
+      "bodySha256": "b4e8730843006bd227569fa7372ea883585d555da5ea4e458a21ced5faaa5838",
+      "recentComments": []
+    },
+    {
+      "url": "https://github.com/marin-community/marin/issues/9438",
+      "title": "[fast-track] KDA, MLA + Inkling relative position, Attention Residuals, Over-Encoding, FP8: kernels, ablations and ladder",
+      "updatedAt": "2026-09-25T08:04:12Z",
+      "state": "OPEN",
+      "mergedAt": null,
+      "bodySha256": "0daad2fd0ad13a3f9377eac05ce7cafcfea87c91aecec5864d8ceae3465cc686",
+      "recentComments": [
+        {
+          "url": "https://github.com/marin-community/marin/issues/9438#issuecomment-5826695879",
+          "createdAt": "2026-09-25T04:25:01Z",
+          "bodySha256": "cc0ac3bace681bb8dc3d93802d7d75f4cabb05cac2dd51b088e6905938cbd890"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/9438#issuecomment-5826696137",
+          "createdAt": "2026-09-25T04:25:02Z",
+          "bodySha256": "c4d5fc53bb7fc9a541c3e676234d203de5b3f38f971121c3bd3161138eb6a0aa"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/9438#issuecomment-5826696333",
+          "createdAt": "2026-09-25T04:25:03Z",
+          "bodySha256": "6465b6f492b37dc4f0fba773cc783b033eec8388d1bbf42d471df53c2daa00bf"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/9438#issuecomment-5826696510",
+          "createdAt": "2026-09-25T04:25:04Z",
+          "bodySha256": "b09821f4ba5b14646176985e1ffaf3ef658d4239560935f05d586f6551e51bb9"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/9438#issuecomment-5826696696",
+          "createdAt": "2026-09-25T04:25:05Z",
+          "bodySha256": "33e1637d031d58552990db035cf96189a65487497bc093ebd67a1950445b217b"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/9438#issuecomment-5826696849",
+          "createdAt": "2026-09-25T04:25:06Z",
+          "bodySha256": "2aabd9e69009ccb83980ccb556c65565875b5e3617b567f00471795a0400dcca"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/9438#issuecomment-5827352681",
+          "createdAt": "2026-09-25T05:32:32Z",
+          "bodySha256": "9938bbf7bcea5d06866aa8dca58cb38283d1fa4739b6f61c6fd804bf3053b4a9"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/9438#issuecomment-5827536865",
+          "createdAt": "2026-09-25T05:52:11Z",
+          "bodySha256": "5c80f19c0c97c09a6665f8006c1faa783fe0ce24a75b70a1f10560d8ecafa3a1"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/9438#issuecomment-5827558126",
+          "createdAt": "2026-09-25T05:54:28Z",
+          "bodySha256": "0b2956cc5a47f57cbbe733445cb45fbf311eb9a9aebf76b37c3e416b81bf69fc"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/9438#issuecomment-5828317529",
+          "createdAt": "2026-09-25T07:01:53Z",
+          "bodySha256": "c7815d8aa6b20e46d2b02a670440159ba19aff680e40fc18a26d3d45b2bb5b77"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/9438#issuecomment-5828330547",
+          "createdAt": "2026-09-25T07:03:10Z",
+          "bodySha256": "3627ecbff35cf82ea057b2cc911a13ff56e17da7f5c8e26eb25a8cfa2e854180"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/issues/9438#issuecomment-5829053742",
+          "createdAt": "2026-09-25T08:04:12Z",
+          "bodySha256": "d3b6d1b8f7ee435861f1bdb284b099c1544983838264ec025adb1d2001cfbe1d"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/marin-community/marin/pull/8646",
+      "title": "[eval] Use all UncheatableEval July 2026 subsets",
+      "updatedAt": "2026-09-25T02:17:40Z",
+      "state": "CLOSED",
+      "mergedAt": null,
+      "bodySha256": "0ac8c1489781ec6d9a01fc375f95c118f45f5e32b138d751fbbbef72afa03360",
+      "recentComments": [
+        {
+          "url": "https://github.com/marin-community/marin/pull/8646#issuecomment-5825592706",
+          "createdAt": "2026-09-25T02:17:39Z",
+          "bodySha256": "dee5e71e8bcb5792654a0d066f0c90df976ff10bc536e9bf255808ad5d375402"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/marin-community/marin/pull/8706",
+      "title": "[evals] Run generative MRCR on Grug checkpoints",
+      "updatedAt": "2026-09-24T22:46:30Z",
+      "state": "CLOSED",
+      "mergedAt": null,
+      "bodySha256": "a13925f60196af2572589e3e477d511a130cdc38099bc7d7ae0b6587299ba7d3",
+      "recentComments": []
+    },
+    {
+      "url": "https://github.com/marin-community/marin/pull/9279",
+      "title": "[grug] Add the Hero H100 pipeline prototype",
+      "updatedAt": "2026-09-25T06:41:32Z",
+      "state": "OPEN",
+      "mergedAt": null,
+      "bodySha256": "36efdecb907e3e58aab02b10b1e4d2090f85b3e9c530a77a7d46dad7f9847626",
+      "recentComments": [
+        {
+          "url": "https://github.com/marin-community/marin/pull/9279#issuecomment-5823948671",
+          "createdAt": "2026-09-24T23:26:51Z",
+          "bodySha256": "ed620db2ab3fdda0d9805983efda92c71b46313503bee75eac2610abc99578d6"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/marin-community/marin/pull/9374",
+      "title": "[grug] Register symmetric buffers for hero all-gather and reduce-scatter",
+      "updatedAt": "2026-09-23T22:04:37Z",
+      "state": "OPEN",
+      "mergedAt": null,
+      "bodySha256": "eb63ee631cfaa7d3c8b67935d34a855425891d88cc1b0c268f13a59ee75e2972",
+      "recentComments": []
+    },
+    {
+      "url": "https://github.com/marin-community/marin/pull/9395",
+      "title": "[iac] Limit hero checkpoint deletion deny to east-02a",
+      "updatedAt": "2026-09-24T00:39:48Z",
+      "state": "OPEN",
+      "mergedAt": null,
+      "bodySha256": "abc5ba8865ea8957b919c8f1b4806920beaee28374d8085843d3da8821a2cbad",
+      "recentComments": [
+        {
+          "url": "https://github.com/marin-community/marin/pull/9395#issuecomment-5805032601",
+          "createdAt": "2026-09-24T00:07:35Z",
+          "bodySha256": "1017d5e949d137f50001b53ce5c84849a04007512b39ce9ca529fb29ff81983e"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/pull/9395#issuecomment-5805044422",
+          "createdAt": "2026-09-24T00:08:48Z",
+          "bodySha256": "5c4a57a8e9f319d333edc579ceb30bcc85141327c5ecdb4275c69b15526db677"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/marin-community/marin/pull/9402",
+      "title": "[grafana] Project the training finish from the recent step rate",
+      "updatedAt": "2026-09-24T19:20:05Z",
+      "state": "MERGED",
+      "mergedAt": "2026-09-24T19:20:03Z",
+      "bodySha256": "58bb51e25e996e66ab2c4295982552779ca7fec8a37a92b9c0e9bc9bf59520f6",
+      "recentComments": [
+        {
+          "url": "https://github.com/marin-community/marin/pull/9402#issuecomment-5806804251",
+          "createdAt": "2026-09-24T03:12:41Z",
+          "bodySha256": "d965874fb32148619533b89626ac0bb2b80514cd5ce4d4d2cce72972f4de4da5"
+        },
+        {
+          "url": "https://github.com/marin-community/marin/pull/9402#issuecomment-5820412617",
+          "createdAt": "2026-09-24T19:04:38Z",
+          "bodySha256": "b2a76f975ad030c2ebf39eb086bfd98c82d8ae5e953a58adc4ec9e23d41dc46e"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/marin-community/marin/pull/9415",
+      "title": "[grafana] Read hero evaluation history from W&B",
+      "updatedAt": "2026-09-24T18:42:40Z",
+      "state": "OPEN",
+      "mergedAt": null,
+      "bodySha256": "adeaf760c65f9ed06132f50c142e88d3461610f6ddee1d19f199bc0a3539b25b",
+      "recentComments": [
+        {
+          "url": "https://github.com/marin-community/marin/pull/9415#issuecomment-5819998962",
+          "createdAt": "2026-09-24T18:39:22Z",
+          "bodySha256": "af9713c1cb769d5f105786060454767b35166b10a1d53fc1afc735545710ae35"
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/marin-community/marin/pull/9427",
+      "title": "[grug] Bound hero checkpoint storage across cutovers",
+      "updatedAt": "2026-09-24T22:44:53Z",
+      "state": "MERGED",
+      "mergedAt": "2026-09-24T22:44:51Z",
+      "bodySha256": "1fbce7e20506093f002fe751d059d115db2780c5fab55493847e6669f0c83e6b",
+      "recentComments": [
+        {
+          "url": "https://github.com/marin-community/marin/pull/9427#issuecomment-5821657863",
+          "createdAt": "2026-09-24T20:23:43Z",
+          "bodySha256": "9ea3bd97c6ef7cd267c9643f6e1d45b812612d3ebf763b716aff493667819146"
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "name": "fixed",
+      "sourceUrl": "https://storage.googleapis.com/marin-public/held/hero-open-weight-ppl/2026.09.05.1/index.html",
+      "readerResponseSha256": "7d1dc856bc29b54d7d3d1a3f9b2027d368182152055538d3eaaf26b8a215b2d0"
+    },
+    {
+      "name": "mixture",
+      "sourceUrl": "https://storage.googleapis.com/marin-public/held/h100-mix25-paloma/final-2026.09.15.1/index.html",
+      "readerResponseSha256": "cd5050e67396df4706af352950a457fc3b9230f1d730674b8484bbb3bb3b0255"
+    },
+    {
+      "name": "completions",
+      "sourceUrl": "https://storage.googleapis.com/marin-public/rav/hero-completions/latest/index.html",
+      "readerResponseSha256": "efe5868484e2a2e745860743dadf8895e8071e2090f8d05f1070ea9fd03bd436"
+    },
+    {
+      "name": "completions-fixed",
+      "sourceUrl": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.09.24/index.html",
+      "readerResponseSha256": "66ef57178b7a8d45f7d452bd1dba9a8a6663ceaff8ec83ac8855a43f195fe278"
+    },
+    {
+      "name": "athena",
+      "sourceUrl": "https://openathena.ai/blog/",
+      "readerResponseSha256": "b371b2e6c642eab8370f3dee3e61f8c6861276ac4d3e43b520ea435a8da53e5b"
+    }
+  ]
+}
