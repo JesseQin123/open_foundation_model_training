@@ -1,0 +1,40 @@
+{
+  "researchDate": "2026-09-26",
+  "reviewedAt": "2026-09-27T13:08:00.649410Z",
+  "observationTime": "2026-09-26T13:02:21.851673+00:00",
+  "runUrl": "https://wandb.ai/marin-community/marin_moe/runs/hero-fa4sm100-nomask-step146k",
+  "runName": "hero-fa4sm100-nomask-step146k",
+  "state": "running",
+  "summary": {
+    "_step": 160362,
+    "global_step": 160362,
+    "_timestamp": 1790427741.8516734,
+    "train/loss": 1.2113213539123535,
+    "throughput/duration": 14.816872572060674,
+    "throughput/iteration_time": 15.042350397910923,
+    "throughput/mfu": 26.491732206973424,
+    "throughput/mean_mfu": 26.484689891322194,
+    "throughput/p50_mfu": 26.618611936164037,
+    "throughput/mfu_sample_count": 500
+  },
+  "latestReturnedEvaluation": {
+    "_step": 158999,
+    "global_step": 158999,
+    "eval_dropless/paloma/macro_bpb": 0.795619010925293,
+    "eval_dropless/uncheatable_eval/macro_bpb": 0.5153690576553345
+  },
+  "queries": {
+    "summary": {
+      "query": "query { project(name:\"marin_moe\",entityName:\"marin-community\") {run(name:\"hero-fa4sm100-nomask-step146k\") {name state summaryMetrics}}}"
+    },
+    "history": {
+      "query": "query($specs:[JSONString!]!) { project(name:\"marin_moe\",entityName:\"marin-community\") {run(name:\"hero-fa4sm100-nomask-step146k\") {sampledHistory(specs:$specs)}}}",
+      "variables": {
+        "specs": [
+          "{\"keys\": [\"_step\", \"global_step\", \"eval_dropless/paloma/macro_bpb\", \"eval_dropless/uncheatable_eval/macro_bpb\"], \"samples\": 1000}"
+        ]
+      }
+    }
+  },
+  "limits": "Anonymous public W&B observations; latest returned evaluation is separate from the training step. Inherited history is not new-run history. Live values are not a fixed final evaluation. September 26 data was retrieved on September 26 and reviewed for backfill September 27."
+}

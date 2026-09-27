@@ -14,19 +14,18 @@ Run daily at **09:00 America/New_York**. The existing Codex automation `marin-53
 
 **Write new research in English.** Require `title.en`, `detail.en`, `concept.en` and `exercise.en`. Chinese fields are optional: preserve existing translations, but do not fabricate translations, copy English into `.zh`, or spend each daily run translating. Full bilingual publishing is deferred until the site supports it. This static public site has no old member Dashboard or public Lab split; its Timeline intentionally contains the complete research log.
 
-## Writing for readers
+## Reader-first writing
 
-Write for a curious reader who follows AI but does not work on distributed training. The first glance should answer what happened and why it matters.
+Use the plain-English style approved by the user for all future Timeline entries and daily reports. Write for a curious AI reader who does not already understand distributed training.
 
-- Use a plain-English headline about the change or finding. Do not lead with PR numbers, run IDs, steps, acronyms or evidence-taxonomy language. Keep the existing status field for classification.
-- Start each detail with the finding, then its practical significance and the key limitation. Put supporting measurements and source identifiers afterward. Aim for roughly 100–170 words when that is enough; use additional detail only when needed to preserve meaning.
-- Explain an unfamiliar term briefly at first use: for example, “experts” are specialized parts of the model, and a checkpoint is a saved training state. Avoid assuming the reader knows kernels, EP, MFU or query bias.
-- State whether a result concerns the main training run, merged code, a plan or a small experiment in ordinary language. Simplifying prose must never strengthen the evidence or promise an unmeasured benefit.
-- Keep the complete technical measurements, configurations and reproduction details in the dated audit notes. Include only the numbers needed to understand the Timeline finding, while retaining required daily monitoring values after the opening explanation.
-- Concepts and exercises should help the reader reason about the finding without requiring implementation knowledge.
-- Before publishing, read only the headlines and first two sentences: can a new reader explain what changed and why they should care? Revise if not.
+- **Lead with the finding.** The headline and first two sentences should explain what happened and why it matters. Readers should not need to open a source or decode an acronym to understand the update.
+- **Explain the consequence before the machinery.** Say whether training can continue, recover after a failure, run faster, or produce stronger evidence about model quality. Explain an unfamiliar term briefly when first needed; for example, a checkpoint is a saved training state that lets work resume.
+- **Make the scope visible in ordinary words.** Say “in a small test,” “the change was accepted into the codebase,” or “the main training run adopted the change,” as the evidence warrants. Keep the formal evidence classification and citations, but do not make those labels carry the explanation.
+- **Put supporting detail after the explanation.** PR numbers, run IDs, configuration names and dense metric lists belong later in the entry or in linked audit notes. Retain important measured values and observation dates; explain what they tell the reader and what they do not establish. Do not describe a measurement as progress without a valid comparison.
+- **Give each entry one main point.** Aim for roughly 100–170 words when enough; add detail only when needed to preserve meaning. Avoid a headline that bundles several unrelated infrastructure changes. A quiet day can say “Training continues; no new change to the main run is confirmed,” followed by what was checked and the limits of that conclusion.
+- **Teach one useful idea.** Keep the learning concept and short exercise approachable and connected to the finding, rather than testing recall of identifiers or jargon.
 
-For example, prefer “Code for faster training and longer inputs has been merged” to a headline beginning with kernel names or PR numbers. Follow immediately with whether the main run is known to use that code.
+Before publishing, read only the headline and first two sentences. Rewrite them if a new reader cannot tell what changed, why it matters, and whether it concerns the main run or an experiment. Apply the same check to the opening of the daily report, before its evidence categories and delivery details. English remains the primary publishing language; preserve existing Chinese content and defer new translations until bilingual support is available.
 
 ## Start with continuity
 
