@@ -1,6 +1,6 @@
 // Canonical daily research log. English is required; existing Chinese translations are retained.
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-09-27",
+  "snapshot": "2026-09-28",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -923,6 +923,60 @@ window.MARIN_RESEARCH = {
       "kind": "pr",
       "title": "Register publication-policy evaluation configurations by name · PR #9476",
       "url": "https://github.com/marin-community/marin/pull/9476"
+    },
+    {
+      "id": "M154",
+      "kind": "issue",
+      "title": "September 27 Hero watchdog retry and unresolved initiating stall",
+      "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5856665151"
+    },
+    {
+      "id": "M155",
+      "kind": "issue",
+      "title": "Communication-overlap follow-up: rank differences and rejected scheduling changes",
+      "url": "https://github.com/marin-community/marin/issues/8317#issuecomment-5860234620"
+    },
+    {
+      "id": "M156",
+      "kind": "pr",
+      "title": "Preserve evaluation infrastructure failures and reject low-coverage runs · PR #9484",
+      "url": "https://github.com/marin-community/marin/pull/9484"
+    },
+    {
+      "id": "M157",
+      "kind": "pr",
+      "title": "Use local evaluation endpoints and reuse proxy connections · PR #9480",
+      "url": "https://github.com/marin-community/marin/pull/9480"
+    },
+    {
+      "id": "M158",
+      "kind": "pr",
+      "title": "Align Hero alert runbooks with telemetry queries · PR #9486",
+      "url": "https://github.com/marin-community/marin/pull/9486"
+    },
+    {
+      "id": "M159",
+      "kind": "pr",
+      "title": "Register Hero data quality scores and calibrated buckets as reproducible steps · PR #8303",
+      "url": "https://github.com/marin-community/marin/pull/8303"
+    },
+    {
+      "id": "M160",
+      "kind": "issue",
+      "title": "Candidate 9 passes two small-model checks · #9451 comment",
+      "url": "https://github.com/marin-community/marin/issues/9451#issuecomment-5869939570"
+    },
+    {
+      "id": "M161",
+      "kind": "issue",
+      "title": "Small-model single-process stall diagnosis and proposed batch loader · #9451 comment",
+      "url": "https://github.com/marin-community/marin/issues/9451#issuecomment-5868298823"
+    },
+    {
+      "id": "M162",
+      "kind": "issue",
+      "title": "Evaluation-policy corrections planned for the next release · #9409 comment",
+      "url": "https://github.com/marin-community/marin/issues/9409#issuecomment-5871164546"
     }
   ],
   "claimGroups": [
@@ -930,25 +984,26 @@ window.MARIN_RESEARCH = {
       "status": "confirmed",
       "facts": {
         "en": [
-          "The main run remains on the September 23 handoff. At the September 27 public observation it reached step 165,699: training loss 1.19613, MFU 26.63%, training-step duration 14.74 seconds and 500-sample median MFU 26.67%. No newer main-run handoff was found.",
-          "The latest returned live evaluation is step 164,999 (Paloma 0.793284; UncheatableEval 0.513993 bits per byte). The live completion report has 40 sets; its fixed September 25 version has 39. Both include checkpoint 150,000. These are not final Hero capability results.",
-          "The first checkpoint-upload stall was attributed to storage-quota write suspension. Cleanup restored writes; the second stall remains unexplained.",
-          "The startup agreement check, its 30-minute rendezvous timeout, narrower checkpoint-deletion policy, retention safeguards and finish estimator are merged repository changes. No fresh Hero deployment is established by those merges.",
-          "Publication-policy benchmark configurations can now be selected by name after PR #9476 merged. Existing suites are unchanged; this is not a new Hero score or evaluation deployment."
+          "The September 27 public incident report confirms a progress stall followed by watchdog termination and retries; training reached step 166006 by 14:19 UTC. Its initiating cause remains unknown. This is recovery evidence, not a new software handoff.",
+          "At the September 28 observation, the same public run reached step 171572: training loss 1.19071, MFU 26.58%, 14.77 seconds per training step and 500-sample median MFU 26.59%. Latest returned evaluation: step 170999, Paloma 0.793834 and UncheatableEval 0.513713 bits per byte.",
+          "The first earlier checkpoint-upload stall was attributed to storage-quota write suspension; the second upload stall remains unexplained. The live writing-sample report still contains 40 sets and the fixed September 25 version 39, including checkpoint 150000.",
+          "Hero alert runbook corrections and evaluation endpoint/connection-reuse changes have merged. The former corrects query guidance and the documented polling interval; neither merge proves a new Hero training deployment. Earlier startup, storage-policy, retention and finish-estimator merges retain that same limitation."
         ]
       },
       "sourceIds": [
-        "M122",
+        "M154",
         "M123",
+        "M122",
+        "M131",
         "M137",
         "M141",
-        "M131",
+        "M158",
+        "M157",
         "M143",
         "M144",
         "M130",
         "M132",
-        "M129",
-        "M153"
+        "M129"
       ],
       "reviewStatus": "reviewed"
     },
@@ -956,19 +1011,22 @@ window.MARIN_RESEARCH = {
       "status": "planned",
       "facts": {
         "en": [
-          "The evaluation-alarm repair, pending query-bias evaluation fix and symmetric-buffer proposal remain open. Main-run adoption is not established.",
-          "The one-rack overlap proposal remains open and needs a new latency profile and validation for the eleven-rack program. Applying its code alone is not supported as a performance improvement.",
-          "The named-rack placement proposal remains open with no live placement test. It would constrain an individual job, not reserve Hero racks.",
-          "The H100 pipeline and checkpoint-resume proposals remain open, with dependency blockers and no import path for existing Hero checkpoints. Longer-input support remains disabled in the confirmed Hero handoff."
+          "The evaluation infrastructure-error repair remains open; it would preserve failures and gate low-coverage runs. A separate policy comment promises corrections to the NUPA output cap and AIME24 repetition setup in a future release, not new results now.",
+          "The Hero quality-data registration proposal remains open despite reported processing of 292 sources. It does not establish a production mixture change.",
+          "The communication-overlap and named-rack placement proposals remain open. The former needs full-scale profiling and correctness checks; the latter lacks live placement validation and does not reserve racks.",
+          "The evaluation-alarm repair, pending query-bias evaluation fix, symmetric-buffer proposal and alternate H100 pipeline/save-resume work remain open. Main-run adoption is unverified; longer-input support remains disabled in the confirmed handoff."
         ]
       },
       "sourceIds": [
-        "M133",
-        "M118",
-        "M126",
+        "M156",
+        "M162",
+        "M159",
         "M147",
         "M149",
         "M148",
+        "M133",
+        "M118",
+        "M126",
         "M138",
         "M142",
         "M121"
@@ -979,21 +1037,20 @@ window.MARIN_RESEARCH = {
       "status": "experimental",
       "facts": {
         "en": [
-          "One-rack tests report 81.0% communication overlap and 13.72-second steps with code plus a measured latency profile, versus 60.5% and 13.94 seconds at baseline. Code alone is slower. These are not eleven-rack production results.",
-          "The alternate H100 pipeline reports two bounded save/resume comparisons through step 2. It has not demonstrated full 48-layer, 65K-context checkpoint recovery or main-run continuation.",
-          "A 400-step small-model test reports mean step time falling from 213.8 to 161.7 milliseconds after coordinated garbage collection, with the median near 160 milliseconds. Its timing budget still excludes some elapsed work.",
-          "The separate ladder reports four-size recipe improvements at matched step counts and a smaller candidate that does better under its nominal fixed-time budget. These public agent-reported tests are not Hero adoption or proof of a full-scale wall-clock gain. Earlier MLA-plus-Inkling and router-precision tests remain separate research."
+          "The original one-rack overlap proposal retains its reported 13.72 versus 13.94-second result with a program-specific profile. A new follow-up finds rank-dependent overlap, and rejects additional changes that slowed steps and showed loss drift under one schedule. It is not a whole-rack or eleven-rack deployment result.",
+          "Candidate 9 improves reported two-seed mean loss by 0.0056 at width 512 and 0.0051 at width 768 at matched step counts, with a speed cost. Adoption refers to the small-model research baseline only.",
+          "A separate single-process small-model diagnosis attributes stalls to data-loader prefetch work competing for the Python interpreter; the proposed batched NumPy path is not yet implemented. This is distinct from the earlier coordinated-GC test and from Hero production incidents.",
+          "The alternate pipeline still has only bounded checkpoint-resume tests through step 2, not full 48-layer/65K recovery or an import path for main-run checkpoints."
         ]
       },
       "sourceIds": [
+        "M155",
         "M147",
-        "M142",
+        "M160",
+        "M161",
         "M150",
-        "M146",
-        "M151",
-        "M152",
-        "M136",
-        "M117"
+        "M142",
+        "M138"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1001,17 +1058,19 @@ window.MARIN_RESEARCH = {
       "status": "inference",
       "facts": {
         "en": [
-          "A persistent storage-side problem is the leading explanation offered for the second upload stall, not a confirmed cause.",
-          "The new ladder recipe's roughly 1.09× compute-equivalent benefit at 10^24 FLOPs is an extrapolation from smaller measured runs, with a fixed fitted loss floor. It is not a measured Hero result or a 9% elapsed-time saving.",
-          "Communication-speed forecasts and dashboard completion dates remain estimates. The one-rack overlap improvement does not determine the gain at eleven racks."
+          "The possible scheduling race in rejected overlap experiments is a hypothesis based on loss drifting under one profile-guided schedule but not another. No root cause is confirmed.",
+          "Small-model compute-equivalent multipliers, projected full-scale performance and dashboard finish dates remain estimates, not measured Hero outcomes. The older four-size recipe projection and newer candidate are different comparisons.",
+          "A persistent storage-side issue remains the offered explanation for the second earlier upload stall, not its confirmed cause. New shutdown-time CUDA errors likewise do not establish the cause of the September 27 progress stall."
         ]
       },
       "sourceIds": [
-        "M131",
+        "M155",
+        "M160",
         "M152",
-        "M147",
         "M129",
-        "M61"
+        "M61",
+        "M131",
+        "M154"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1019,29 +1078,154 @@ window.MARIN_RESEARCH = {
       "status": "unknown",
       "facts": {
         "en": [
-          "The second checkpoint-upload stall and earlier multi-rack GPU hangs still lack confirmed causes. The first stall's quota explanation should not be generalized to them.",
-          "The main run's adoption of merged startup, storage and finish-estimator changes is unestablished. The new communication-profile proposal needs full-scale timing, memory and correctness checks.",
-          "The rack audit did not measure a slowdown from spare-node jobs. A rack-selection feature does not establish exclusive resource use.",
-          "The longer-term quality effect of the September 23 handoff, impact of pending query-bias evaluation state, and full-scale benefit of small-model candidates remain unestablished. An official Marin X account was not verified; supplemental social coverage is incomplete."
+          "The September 27 initiating stall, second earlier checkpoint-upload stall and older multi-rack GPU hangs remain unexplained. Shutdown-time errors must not be promoted into a causal diagnosis.",
+          "No newer Hero software handoff was found. Adoption of merged startup/storage/monitoring changes, the complete evaluation-routing rollout and full-scale benefit of communication changes are not established.",
+          "The rack audit did not measure harm from jobs on spare nodes. The new data-registration proposal does not prove a production data-mixture change, and small-model recipe gains do not establish final Hero capabilities.",
+          "The longer-term quality effect of the September 23 handoff and impact of pending query-bias evaluation state remain unestablished. X discovery was unavailable today and an official Marin X handle remains unverified."
         ]
       },
       "sourceIds": [
+        "M154",
         "M131",
         "M45",
-        "M143",
-        "M144",
-        "M130",
-        "M132",
-        "M129",
+        "M3",
+        "M158",
+        "M157",
         "M147",
         "M148",
-        "M118",
-        "M152"
+        "M159",
+        "M160",
+        "M118"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-09-28-stall-recovery",
+      "date": "2026-09-28",
+      "status": "confirmed",
+      "title": {
+        "en": "Automatic recovery restarted training after an unexplained stall"
+      },
+      "detail": {
+        "en": "A new public report confirms that Hero stopped making progress on September 27 and later resumed after automatic retries. Recovery kept the training effort moving, but it did not explain the original stall. The report says progress stopped at 08:20 UTC; a watchdog, which checks whether training is advancing, terminated the workers around 08:36. Further setup retries followed, and training reached step 166,006 by 14:19. CUDA peer-memory errors appeared during watchdog shutdown, so they do not establish a GPU fault as the cause. The report was published after yesterday's review. Today's public monitoring of the same run reached step 171,572 at 13:51 UTC: training loss 1.19071, 14.77 seconds per training step and compute utilization (MFU) of 26.58%, with a 26.59% median over 500 samples. The latest returned evaluation was step 170,999: Paloma 0.793834 and UncheatableEval 0.513713 bits per byte. These are live observations, not a final model assessment. No newer software handoff was found; the confirmed change is the reported interruption and recovery, not a new training recipe."
+      },
+      "sourceIds": [
+        "M154",
+        "M123",
+        "M122",
+        "M3",
+        "M45"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-09-28T13:56:27.990073Z",
+      "concept": {
+        "en": "A recovery mechanism can restart useful work without identifying why it stopped. Errors emitted during shutdown may be consequences rather than causes."
+      },
+      "exercise": {
+        "en": "Which timestamp would you compare with an error message before treating that error as the cause of a stall?"
+      },
+      "productionChange": true,
+      "productionEvidenceIds": [
+        "M154"
+      ]
+    },
+    {
+      "id": "event-2026-09-28-overlap-limits",
+      "date": "2026-09-28",
+      "status": "experimental",
+      "title": {
+        "en": "A higher overlap score does not necessarily mean faster training"
+      },
+      "detail": {
+        "en": "Follow-up tests put an important limit on yesterday's communication result: the overlap percentage changes depending on which GPU is measured. A faster GPU can spend more time waiting for slower peers, so one device's score does not describe the whole rack. The existing proposal measured 81.0% overlap on one rank and 72.5% on another in separate runs, which may have used different racks. Attempts to push the score higher did not improve the result. One further change made steps slower, from 13.72 to 14.0 seconds, and its profiled schedule developed a small loss drift. Those additional changes will not land. The author suspects a scheduling race, but that explanation is not confirmed. The original open proposal still reports 1.6% shorter steps on one rack; full-scale adoption remains unverified. A more informative next check would trace several GPUs in the same run and compare total step time and correctness."
+      },
+      "sourceIds": [
+        "M155",
+        "M147",
+        "M134"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-09-28T13:56:27.990073Z",
+      "concept": {
+        "en": "A local performance metric can mix useful work with waiting caused elsewhere. Measure the system outcome before optimizing the score."
+      },
+      "exercise": {
+        "en": "Why would traces from several GPUs in the same run be stronger evidence than two traces collected in separate runs?"
+      }
+    },
+    {
+      "id": "event-2026-09-28-evaluation-failures",
+      "date": "2026-09-28",
+      "status": "planned",
+      "title": {
+        "en": "An evaluation fix would separate broken connections from wrong answers"
+      },
+      "detail": {
+        "en": "A proposed evaluation repair would stop infrastructure failures from being recorded as empty model answers. That distinction matters because a failed request says little about the model's ability to solve the question. The public pull request describes a September 26 math evaluation with 288 connection failures among 500 samples; rebuilding its archive lost the failure markers and reported all 500 as scored. The proposal preserves those markers and labels affected runs as infrastructure failures when fewer than 90% of intended items are scored. Scores and coverage remain visible. A related routing and connection-reuse change has merged, but part of it requires an updated controller image; deployment is not established by the merge. These findings concern the evaluation system, not evidence that Hero's current live Paloma or UncheatableEval scores are wrong. The record-repair proposal remains open, and no replacement final Hero evaluation was found."
+      },
+      "sourceIds": [
+        "M156",
+        "M157",
+        "M123"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-09-28T13:56:27.990073Z",
+      "concept": {
+        "en": "A wrong answer and a request that never reached the model are different outcomes. Evaluation coverage should be reported alongside the score."
+      },
+      "exercise": {
+        "en": "What would a score hide if a report counted failed network requests as completed model responses?"
+      }
+    },
+    {
+      "id": "event-2026-09-28-data-provenance",
+      "date": "2026-09-28",
+      "status": "planned",
+      "title": {
+        "en": "A data proposal makes quality filtering easier to trace and rerun"
+      },
+      "detail": {
+        "en": "An open data-pipeline proposal would give Hero's quality scores and filtered data explicit, reproducible processing steps. That would help readers and engineers distinguish a change in the scoring model from a change in how scores are converted into quality buckets. The proposal reports processing all 292 sources: about 18.71 billion documents across 162,535 shards. A detailed check on one source reproduced document order, stored scores, content types and calibrated buckets. The scoring model and calibration file have separate fingerprints, so changing the calibration need not recompute all raw scores. There is a historical limitation: tokenized inputs used by an August run were deleted, so its existing scores are registered from saved outputs rather than regenerated from those original inputs. This is evidence of reported data-processing work in an open PR. It does not establish that the main Hero run changed its data mixture or adopted the new pipeline."
+      },
+      "sourceIds": [
+        "M159",
+        "M2"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-09-28T13:56:27.990073Z",
+      "concept": {
+        "en": "A reproducible data pipeline identifies both its inputs and each transformation. Registering an old output preserves provenance, but cannot recreate a deleted input."
+      },
+      "exercise": {
+        "en": "Why should the scoring-model fingerprint and the score-calibration fingerprint be tracked separately?"
+      }
+    },
+    {
+      "id": "event-2026-09-28-small-recipe",
+      "date": "2026-09-28",
+      "status": "experimental",
+      "title": {
+        "en": "A research recipe passes a second small-model check"
+      },
+      "detail": {
+        "en": "A new candidate recipe improved a text-prediction score at two small model sizes, giving the researchers a reason to keep testing it. The improvement also came with a speed cost, so it is not yet a demonstrated saving for the main model. The public experiment log reports two random-seed comparisons at each size: mean Paloma loss was lower by 0.0056 at width 512 and by 0.0051 at width 768 relative to the previous candidate. The smaller test used 2,817 steps and the larger 7,325. The changes combine routing, output-combination and optimizer adjustments. At the smaller size the median step became about 1% slower; the larger test also processed fewer examples per second. The log's word 'adopted' refers to the baseline for this research campaign, not Hero production. Compute-equivalent multipliers in the report come from a scaling formula and should not be read as measured full-model speedups. These are public agent-reported experiments, not independently reproduced results."
+      },
+      "sourceIds": [
+        "M160",
+        "M145",
+        "M161"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-09-28T13:56:27.990073Z",
+      "concept": {
+        "en": "An idea that helps at two sizes has stronger evidence than one that helps at only one. Its speed and quality effects still need to be compared under the same budget."
+      },
+      "exercise": {
+        "en": "What extra evidence would you require before describing this candidate as cheaper training at Hero scale?"
+      }
+    },
     {
       "id": "event-2026-09-27-progress",
       "date": "2026-09-27",
