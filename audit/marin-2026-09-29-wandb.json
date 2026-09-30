@@ -1,0 +1,41 @@
+{
+  "researchDate": "2026-09-29",
+  "researchTimezone": "America/New_York",
+  "reviewedAt": "2026-09-29T16:54:13.648974Z",
+  "observationTime": "2026-09-29T16:48:50.598101+00:00",
+  "runName": "hero-fa4sm100-nomask-step146k",
+  "runUrl": "https://wandb.ai/marin-community/marin_moe/runs/hero-fa4sm100-nomask-step146k",
+  "state": "running",
+  "summary": {
+    "_step": 177946,
+    "global_step": 177946,
+    "_timestamp": 1790700530.5981011,
+    "train/loss": 1.1917884349822998,
+    "throughput/duration": 15.11008210410364,
+    "throughput/iteration_time": 15.348428135039285,
+    "throughput/mfu": 25.977662968308955,
+    "throughput/mean_mfu": 26.422453525571076,
+    "throughput/p50_mfu": 26.548193359233146,
+    "throughput/mfu_sample_count": 500
+  },
+  "latestReturnedEvaluation": {
+    "_step": 176999,
+    "global_step": 176999,
+    "eval_dropless/paloma/macro_bpb": 0.7928037047386169,
+    "eval_dropless/uncheatable_eval/macro_bpb": 0.5135380029678345
+  },
+  "queries": {
+    "summary": {
+      "query": "query { project(name:\"marin_moe\",entityName:\"marin-community\") {run(name:\"hero-fa4sm100-nomask-step146k\") {name state summaryMetrics}}}"
+    },
+    "history": {
+      "query": "query($specs:[JSONString!]!) { project(name:\"marin_moe\",entityName:\"marin-community\") {run(name:\"hero-fa4sm100-nomask-step146k\") {sampledHistory(specs:$specs)}}}",
+      "variables": {
+        "specs": [
+          "{\"keys\": [\"_step\", \"global_step\", \"eval_dropless/paloma/macro_bpb\", \"eval_dropless/uncheatable_eval/macro_bpb\"], \"samples\": 1000}"
+        ]
+      }
+    }
+  },
+  "limits": "Live anonymous observations, not a fixed final evaluation or evidence of uninterrupted operation. This W&B observation is distinct from the public GitHub comment summarizing a six-hour FineLog sample."
+}
