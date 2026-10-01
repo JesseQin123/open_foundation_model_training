@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-09-30",
+  "snapshot": "2026-10-01",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -1102,6 +1102,66 @@ window.MARIN_RESEARCH = {
       "kind": "issue",
       "title": "One-sample Snowball generation evaluations are not yet repeatable",
       "url": "https://github.com/marin-community/marin/issues/9558"
+    },
+    {
+      "id": "M184",
+      "kind": "issue",
+      "title": "Hero September 30 checkpoint-barrier timeout and recovery",
+      "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-5922288472"
+    },
+    {
+      "id": "M185",
+      "kind": "issue",
+      "title": "One-rack Hero throughput and expert drops at 8K and 16K context",
+      "url": "https://github.com/marin-community/marin/issues/9615"
+    },
+    {
+      "id": "M186",
+      "kind": "issue",
+      "title": "Proposed direct 16K extension and attention-scale comparisons",
+      "url": "https://github.com/marin-community/marin/issues/9615#issuecomment-5923072768"
+    },
+    {
+      "id": "M187",
+      "kind": "pr",
+      "title": "Announce Hero retries while a replacement attempt restores",
+      "url": "https://github.com/marin-community/marin/pull/9620"
+    },
+    {
+      "id": "M188",
+      "kind": "pr",
+      "title": "Gate verified evaluation cohorts before launch and comparison",
+      "url": "https://github.com/marin-community/marin/pull/9461"
+    },
+    {
+      "id": "M189",
+      "kind": "issue",
+      "title": "Belay host dispatch and pipelined-loop measurements, failures and limits",
+      "url": "https://github.com/marin-community/marin/issues/9451#issuecomment-5934720837"
+    },
+    {
+      "id": "M190",
+      "kind": "issue",
+      "title": "Belay logit-control removal: stable small tests without measurable benefit",
+      "url": "https://github.com/marin-community/marin/issues/9451#issuecomment-5916810072"
+    },
+    {
+      "id": "M191",
+      "kind": "issue",
+      "title": "Belay parameter-matched layer comparison qualifies the write-width hypothesis",
+      "url": "https://github.com/marin-community/marin/issues/9451#issuecomment-5925057549"
+    },
+    {
+      "id": "M192",
+      "kind": "pr",
+      "title": "Quality-scoring tokenizer prefetch and vectorized remapping",
+      "url": "https://github.com/marin-community/marin/pull/9617"
+    },
+    {
+      "id": "M193",
+      "kind": "pr",
+      "title": "MarinSkyRL learner batch invariance: immutable serving wheels still pending",
+      "url": "https://github.com/marin-community/MarinSkyRL/pull/799"
     }
   ],
   "claimGroups": [
@@ -1109,27 +1169,29 @@ window.MARIN_RESEARCH = {
       "status": "confirmed",
       "facts": {
         "en": [
-          "At the September 30 public observation, the same Hero run reached step 183871: training loss 1.19327, MFU 26.54%, 14.79-second training steps and 26.47% median MFU over 500 samples. Latest returned evaluation: step 182999, Paloma 0.789069 and UncheatableEval 0.511935 bits per byte. No newer software handoff was found.",
-          "The September 29 timing follow-up identifies the earlier FineLog sample as diagnostic steps only. It reports 0.335 seconds mean overhead across updates excluding one evaluation, and attributes much of current overhead to metric conversion and checkpoint coordination. The older recurring slow pattern is absent in its 8001-update window; this does not explain historical stalls.",
-          "PR #9600 merged a metric-transfer prefetch improvement. Earlier evaluation-alarm and archive repairs also remain merged repository facts. None of these merges alone confirms live deployment or repaired historical results everywhere.",
-          "Open Athena's September 29 expert-parallelism article explains historical design and the earlier step-82000 transition. The live completion report remains at 40 sets, the fixed September 25 version at 39; no new fixed final Hero evaluation was found.",
-          "The September 27 retry/recovery remains confirmed. The first earlier upload stall was attributed to storage-quota suspension; the second stall and September 27 initiating cause remain unresolved."
+          "The September 30 checkpoint at step 184731 did not complete; the next save hit a checkpoint-barrier timeout and the training gang restarted. Public status confirms recovery, but no preceding storage, worker or GPU error identified the initiating cause.",
+          "At 16:02 UTC October 1 the same public run reached step 188475: training loss 1.19418, 14.80-second training steps, MFU 26.51% and 500-sample median MFU 26.46%. Latest returned evaluation: step 185999, Paloma 0.788651 and UncheatableEval 0.511471 bits per byte. No new software handoff was found.",
+          "Hero exporter #9584 and evaluation-cohort checks #9461 have merged. Logging prefetch #9600 and earlier evaluation-alarm/archive repairs remain merged repository facts. Their live deployment and full-model release implications require separate evidence.",
+          "The fixed Hero and mixture reports are unchanged; live writing samples remain at 40 sets and the fixed September 25 version at 39. Open Athena's latest relevant article remains the September 29 historical expert-parallelism account.",
+          "The September 29 timing report attributes much of current between-step overhead to metric conversion and checkpoint coordination, with 0.335 seconds mean overhead excluding one evaluation in its window. It does not explain the new checkpoint incident or historical GPU hangs."
         ]
       },
       "sourceIds": [
+        "M184",
         "M123",
         "M122",
-        "M172",
+        "M177",
+        "M188",
         "M173",
         "M133",
         "M156",
         "M164",
-        "M176",
         "M137",
         "M141",
         "M61",
-        "M154",
-        "M131"
+        "M95",
+        "M176",
+        "M172"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1137,29 +1199,32 @@ window.MARIN_RESEARCH = {
       "status": "planned",
       "facts": {
         "en": [
-          "The native Hero checkpoint exporter remains open; fixture conversion is not a full Hero export or published compatible serving package. Production adoption of merged logging and evaluation changes remains unverified.",
-          "The September 29 evaluation policy is a draft; its campaign-configuration PR and verification gates remain separate work. A submitter's version label is not policy attestation, and the draft does not provide final Hero benchmark results.",
-          "Hero quality-data registration and the stacked content-type pipeline remain open. Existing registered Hero data paths are not changed by their existence. Communication overlap, named-rack placement, query-bias evaluation and symmetric-buffer work remain open.",
-          "Alternate H100 pipeline and checkpoint-resume work remain open and depend on local dependency overlays. Main-run checkpoint import, full 48-layer/65K recovery and long-run stability remain unvalidated; no new Hero long-context handoff was found."
+          "A team comment now favors a direct 4K-to-16K extension, with short attention-scale/evaluation comparisons and checks on learning-rate, weight-decay, data and evaluation schedules. The main-run transition remains unconfirmed; the initial experiment tested 8K and 16K ahead of a previously planned 8K switch.",
+          "Open #9620 would announce retries during restore instead of allowing the training-phase gate to clear the pending alert. The incident and proposal do not prove this repair is deployed.",
+          "Although Hero export code has merged, a full export using the final cleanup and immutable qualified serving packages remain unestablished. MarinSkyRL #799 is still open and explicitly distinguishes source-overlay qualification from a frozen installation.",
+          "The September 29 evaluation draft and open campaign PR remain separate from the merged checks for earlier policies. Hero data-registration/content-type work and a tokenizer-prefetch proposal remain open; no production mixture change is established.",
+          "Communication overlap, named-rack placement, query-bias evaluation, symmetric buffers, and the alternate H100 pipeline/resume work remain open. Existing pipeline tests do not prove full-shape recovery or import of main-run checkpoints."
         ]
       },
       "sourceIds": [
+        "M185",
+        "M186",
+        "M187",
         "M177",
-        "M173",
-        "M133",
-        "M156",
+        "M193",
         "M178",
         "M179",
+        "M188",
         "M159",
         "M165",
+        "M192",
         "M147",
         "M149",
         "M118",
         "M126",
         "M138",
         "M142",
-        "M171",
-        "M121"
+        "M171"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1167,22 +1232,23 @@ window.MARIN_RESEARCH = {
       "status": "experimental",
       "facts": {
         "en": [
-          "Belay candidate 9 has completed width-1024 and width-1280 tests with losses 2.5147 and 2.3967, each with one seed. Width 1280 uses four gradient-accumulation microbatches to fit memory. These are separate research results, not Hero adoption.",
-          "The corrected, data-matched width-768 mean is 2.7249. Earlier width-768 results used about 6% extra tokens, so their absolute scaling comparisons must not be reused unchanged. The smallest rung in the new four-size fit still has 18% extra tokens.",
-          "A one-GB200 component benchmark for #9600 reduces metric-conversion time from 175 to 58 ms, and diagnostic-payload conversion from 740 to 269 ms. It does not measure eleven-rack end-to-end throughput.",
-          "Belay reports fewer host stalls after less frequent autotune-cache syncing in two small-model runs; this does not establish a fix for Hero incidents. The separate one-rack communication experiment retains its limited, profile-dependent result.",
-          "The earlier boundary loss-backward PR #9557 closed without merging. Replacement baseline proposal #9561 remains open with a matched 32-step TPU test showing 3.25% throughput gain; long-run quality and Hero benefit are unmeasured."
+          "One-rack tests from step 180000 report 1.6% and 3.1% fewer tokens/s at 8K and 16K than 4K, with roughly 4.5x and 16x more dropped expert assignments. Three seeds and 100 steps per arm do not establish eleven-rack behavior, long-term quality or a deployment.",
+          "Belay's flat-state change reduces the narrow step timer by 6.9%; the full elapsed time is larger. A more aggressive overlapping loop is 12.6% faster in a 300-step test but crashes near steps 512–515 in longer runs and remains disabled. This is not the cause or fix of the Hero checkpoint incident.",
+          "Belay candidate 9 retains completed width-1024/1280 results with one seed each. Candidate-10 work changes final-layer capacity/output width and runtime; validation is still in progress. Parameter-matched controls qualify the earlier claim that output width alone explains the gain.",
+          "Removing the small candidate's final-logit penalty remained stable in a four-times-longer test but produced no measurable quality gain. Keeping or dropping that penalty in a tiny model is not a Hero recipe decision.",
+          "One-GPU logging-prefetch measurements and earlier one-rack communication tests remain limited benchmarks. The open TPU baseline loss-backward proposal reports a short-run gain, not measured Hero benefit."
         ]
       },
       "sourceIds": [
+        "M185",
+        "M189",
         "M174",
         "M175",
-        "M182",
+        "M191",
+        "M190",
         "M173",
-        "M181",
         "M147",
         "M155",
-        "M170",
         "M180"
       ],
       "reviewStatus": "reviewed"
@@ -1191,19 +1257,21 @@ window.MARIN_RESEARCH = {
       "status": "inference",
       "facts": {
         "en": [
-          "The four-rung candidate fit forecasts 1.710 versus 1.727 loss at 1e24 FLOPs. Its compute-equivalent multipliers depend on fit and data-budget assumptions, including an unmatched smallest rung; they are not measured full-scale speedups or final Hero quality.",
-          "Stack-sampling attribution estimates how current overhead is distributed across code locations. It does not prove that the one-GPU logging improvement will save the same fraction of whole-run time.",
-          "The proposed scheduling race in rejected overlap tests and persistent storage-side problem after the earlier quota incident remain hypotheses. Historical article comparisons combine architecture and systems changes and do not isolate one kernel's causal contribution."
+          "Extrapolating one-rack context-drop ratios to eleven racks is a forecast. The test already has roughly twice the main run's 4K drop rate, uses different learning-rate/weight-decay settings and varies attention scaling alongside context length.",
+          "Candidate 9's four-rung forecast remains 1.710 versus 1.727 loss at 1e24 FLOPs, with unmatched tokens at the smallest rung and limited seeds. Compute-equivalent multipliers are not elapsed-time gains or measured final Hero quality.",
+          "Small-model estimates of quality at a fixed time budget and interpretations of why extra final-layer capacity helps remain conditional. Neither a timer improvement nor a short successful run proves long-term end-to-end benefit.",
+          "The older persistent-storage and overlap-scheduling explanations remain hypotheses. A barrier timeout identifies a failed synchronization, not the initiating cause of the September 30 incident."
         ]
       },
       "sourceIds": [
+        "M185",
         "M175",
         "M182",
-        "M172",
-        "M173",
-        "M155",
+        "M189",
+        "M191",
         "M131",
-        "M176"
+        "M155",
+        "M184"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1211,31 +1279,159 @@ window.MARIN_RESEARCH = {
       "status": "unknown",
       "facts": {
         "en": [
-          "The September 27 initiating stall, second earlier upload stall and older multi-rack GPU hangs remain unexplained. The current timing attribution is not a diagnosis of those incidents or proof of a PDL regression.",
-          "Deployment and end-to-end benefit of the merged metric-transfer change are unverified, as are adoption of other merged monitoring, evaluation, startup and storage repairs. Full-size checkpoint export and compatible serving-package release remain unestablished.",
-          "Candidate quality at full Hero scale and robustness across seeds remain unmeasured. The new evaluation draft has unresolved reproduction/timeout/context questions. Separately, Snowball repeated-generation scores differ; the suspected request-seeding cause still needs confirmation and is not a Hero score claim.",
-          "The rack audit does not establish harm from spare-node jobs. Percy search returned no items, which is not proof of no posts; an official Marin X handle remains unverified, so supplemental social coverage is incomplete."
+          "The initiating cause of the September 30 checkpoint-barrier failure, September 27 stall, second older upload stall and earlier multi-rack GPU hangs remain unresolved. They must not be conflated with each other or with Belay's separate pipelining crashes.",
+          "Deployment and full-run benefit of merged logging, export and evaluation work remain unverified. No public evidence reviewed confirms the proposed longer-context main-run switch or a new final Hero evaluation.",
+          "Belay's overlapping-loop failure mechanism, candidate-10 robustness and larger-scale quality remain unknown. The current context tests omit evaluation and long-run routing; apparent utilization increases do not establish higher token throughput.",
+          "Snowball evaluation-repeatability and policy questions remain separate from Hero quality. An official Marin X handle remains unverified; Percy returned no recent items and the model-specific search produced no relevant primary evidence."
         ]
       },
       "sourceIds": [
+        "M184",
         "M154",
         "M131",
         "M45",
-        "M172",
+        "M189",
         "M173",
-        "M133",
-        "M156",
         "M177",
-        "M175",
-        "M178",
-        "M179",
+        "M188",
+        "M185",
+        "M186",
         "M183",
-        "M148"
+        "M178"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-10-01-checkpoint-recovery",
+      "date": "2026-10-01",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero resumes after a saved-training-state operation stalls"
+      },
+      "detail": {
+        "en": "Hero has resumed training after an attempt to save its state failed to finish. The restart shows that training recovered, but the public logs still do not explain what caused the failure. A temporary checkpoint at step 184,731 began on September 30 at 21:34 UTC. An hour later, the next save timed out while waiting for the trainers to reach a shared checkpoint barrier, and the system restarted the training group. The public status report confirms progress on the replacement attempt; at 16:02 UTC on October 1, the same W&B run reached step 188,475. Training loss was 1.19418, step time 14.80 seconds, and compute utilization (MFU) 26.51%, with a 26.46% median over 500 samples. The latest returned evaluation was step 185,999: Paloma 0.788651 and UncheatableEval 0.511471 bits per byte. These live observations do not establish uninterrupted uptime or a new software handoff. Checks covered the required design, status and incident threads, updated work, latest available September 21 standup, fixed reports and Open Athena. No newer fixed final-model evaluation was found; the live and fixed writing-sample reports remain at 40 and 39 sets. An open monitoring fix would announce retries during restore, when the old alert could disappear before training resumed."
+      },
+      "sourceIds": [
+        "M184",
+        "M123",
+        "M3",
+        "M2",
+        "M45",
+        "M112",
+        "M61",
+        "M95",
+        "M137",
+        "M141",
+        "M187"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-01T16:08:24.736897Z",
+      "concept": {
+        "en": "A checkpoint is a saved training state. Recovery proves the system resumed; a timeout identifies where it stopped waiting, not necessarily why another worker was late."
+      },
+      "exercise": {
+        "en": "What additional evidence would distinguish a storage delay from a stalled worker in this incident?"
+      }
+    },
+    {
+      "id": "event-2026-10-01-longer-inputs",
+      "date": "2026-10-01",
+      "status": "experimental",
+      "title": {
+        "en": "Longer-input tests show a small speed cost, with more expert assignments dropped"
+      },
+      "detail": {
+        "en": "A separate one-rack test suggests Hero could process longer inputs with a modest loss of throughput. It also drops more token-to-expert assignments, so speed alone cannot establish whether the switch is worthwhile or safe for long training. Across three seeds and 100 steps per arm, 8K inputs processed 1.6% fewer tokens per second than 4K, and 16K processed 3.1% fewer. The dropped-assignment fractions were about 0.019%, 0.083% and 0.294%, respectively; these are missed expert contributions, not whole tokens removed from the data. The test kept tokens per step fixed but changed attention scaling alongside input length, and its learning rate and weight decay differ from the main run. No evaluation was run. A newer team comment favors moving directly to 16K, with short comparisons of attention settings and checks that training schedules still work. That is a proposal, not a confirmed main-run switch. The one-rack baseline already drops about twice as many assignments as the eleven-rack run, and longer-term routing and quality remain untested. Utilization rises in these tests even while tokens per second falls because longer attention is counted as more computation."
+      },
+      "sourceIds": [
+        "M185",
+        "M186",
+        "M2",
+        "M3"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-01T16:08:24.736897Z",
+      "concept": {
+        "en": "When comparing different input lengths, more compute utilization can coexist with less data processed per second. Read the metric together with the work it counts."
+      },
+      "exercise": {
+        "en": "Why would a higher utilization percentage alone be insufficient evidence that 16K training is faster than 4K?"
+      }
+    },
+    {
+      "id": "event-2026-10-01-export-merged",
+      "date": "2026-10-01",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero checkpoint-export tooling has been accepted into the codebase"
+      },
+      "detail": {
+        "en": "Yesterday's proposed checkpoint exporter has merged, moving preparation for using saved Hero models forward. This is a code milestone, not a public model release or proof that a complete Hero checkpoint has been exported with the final code. The exporter converts a selected immutable training checkpoint into files inference software can load, while retaining the chosen weights and pending routing adjustment. It checks file identity, size and a fresh digest before reusing partial output, and writes its completion record last. CPU fixtures and earlier GPU fixtures tested conversion, loading and interrupted-upload recovery. The final cleanup has no fresh GPU or full-model export, and a separate open task still requires published, qualified serving packages for both processor architectures. Those missing steps matter before calling the result a reproducible release. The merge occurred September 30 at 22:15 UTC; it does not establish a change to the ongoing training run."
+      },
+      "sourceIds": [
+        "M177",
+        "M193"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-01T16:08:24.736897Z",
+      "concept": {
+        "en": "A reproducible release needs compatible files and a tested, obtainable runtime. An exporter passing small tests covers only part of that chain."
+      },
+      "exercise": {
+        "en": "What artifact and installation evidence would turn this code milestone into confirmation of a usable Hero release?"
+      }
+    },
+    {
+      "id": "event-2026-10-01-evaluation-gates",
+      "date": "2026-10-01",
+      "status": "confirmed",
+      "title": {
+        "en": "New evaluation checks aim to keep unlike test runs out of the same comparison"
+      },
+      "detail": {
+        "en": "Marin has merged checks that reject evaluation configurations which do not match a chosen policy and separate results produced under different model settings. This can make comparisons easier to audit, but the merge alone does not show that the live dashboard has adopted the checks or that all older scores are comparable. The code checks benchmark settings, configuration digests and evaluator versions before submitting a verified cohort—a group of runs governed by the same policy. It also labels historical and mixed-cohort views whose settings have not been checked for comparability. A coverage correction lets fully scored coding tasks use their recorded scored count when it matches the attempted count. The checks implement the September 16 and September 24 policies; the newer September 29 draft and its campaign-configuration proposal remain separate, with the latter still open. This is evaluation infrastructure, not a new final Hero benchmark or proof of policy conformance for every existing result."
+      },
+      "sourceIds": [
+        "M188",
+        "M178",
+        "M179"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-01T16:08:24.736897Z",
+      "concept": {
+        "en": "Two benchmark scores are only a fair comparison when relevant test conditions match. A policy label needs checks on the actual configuration behind it."
+      },
+      "exercise": {
+        "en": "Name two settings that could make scores from the same benchmark misleading to compare."
+      }
+    },
+    {
+      "id": "event-2026-10-01-small-loop-limits",
+      "date": "2026-10-01",
+      "status": "experimental",
+      "title": {
+        "en": "A faster small-model training loop fails when the test runs longer"
+      },
+      "detail": {
+        "en": "A Belay experiment briefly made a small model's training loop faster, then repeatedly crashed when run for longer. The result is a useful reminder that a short speed test is not enough to approve a training change, and it is separate from Hero's checkpoint incident. One change removed repeated Python work preparing model state and reduced the reported step timer from 184.3 to 171.6 milliseconds. The full elapsed time was still about 191 milliseconds because that timer excluded work between steps. A second change overlapped consecutive steps and cut a 300-step test from 195.8 to 171.2 milliseconds per step, but full-length attempts failed around steps 512–515. Trials crashed with compiler profiling both on and off, while the non-overlapping control completed. The experiment therefore leaves overlapping steps disabled by default; the exact failure mechanism is unresolved. Further recipe work toward candidate 10 remains small-scale validation, not adoption by the main Hero run or a proven full-size speedup."
+      },
+      "sourceIds": [
+        "M189",
+        "M145",
+        "M172",
+        "M184"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-01T16:08:24.736897Z",
+      "concept": {
+        "en": "Performance and reliability need different tests. A benchmark that ends before a repeatable failure can report a real short-term speed gain while missing an unusable design."
+      },
+      "exercise": {
+        "en": "How long would you run the next control and trial to test a failure that appears near step 512, and which timer would you compare?"
+      }
+    },
     {
       "id": "event-2026-09-30-progress",
       "date": "2026-09-30",
