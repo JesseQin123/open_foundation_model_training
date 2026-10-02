@@ -1,0 +1,203 @@
+{
+  "checkedAt": "2026-10-02T17:02:35.551688Z",
+  "url": "https://wandb.ai/marin-community/marin_moe/runs/hero-fa4sm100-nomask-step146k",
+  "name": "hero-fa4sm100-nomask-step146k",
+  "state": "running",
+  "summary": {
+    "_timestamp": 1790956990.5470002,
+    "global_step": 193768,
+    "train/loss": 1.192000389099121,
+    "throughput/duration": 14.70946907508187,
+    "throughput/iteration_time": 14.92627685284242,
+    "throughput/mfu": 26.685165747336548,
+    "throughput/p50_mfu": 26.696527574443806,
+    "throughput/mfu_sample_count": 118,
+    "eval_dropless/paloma/macro_bpb": 0.7873322367668152,
+    "eval_dropless/uncheatable_eval/macro_bpb": 0.5105385780334473
+  },
+  "requests": {
+    "summary": {
+      "query": "query { project(name:\"marin_moe\",entityName:\"marin-community\") {run(name:\"hero-fa4sm100-nomask-step146k\") {name state summaryMetrics}}}"
+    },
+    "history": {
+      "query": "query($specs:[JSONString!]!) { project(name:\"marin_moe\",entityName:\"marin-community\") {run(name:\"hero-fa4sm100-nomask-step146k\") {sampledHistory(specs:$specs)}}}",
+      "variables": {
+        "specs": [
+          "{\"keys\": [\"_step\", \"global_step\", \"eval_dropless/paloma/macro_bpb\", \"eval_dropless/uncheatable_eval/macro_bpb\"], \"samples\": 1000}"
+        ]
+      }
+    }
+  },
+  "evaluationHistory": [
+    [
+      {
+        "_step": 110999,
+        "global_step": 110999,
+        "eval_dropless/paloma/macro_bpb": 0.8028090000152588,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5235640406608582
+      },
+      {
+        "_step": 113999,
+        "global_step": 113999,
+        "eval_dropless/paloma/macro_bpb": 0.8022366762161255,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5229763388633728
+      },
+      {
+        "_step": 116999,
+        "global_step": 116999,
+        "eval_dropless/paloma/macro_bpb": 0.8027592897415161,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.521825909614563
+      },
+      {
+        "_step": 119999,
+        "global_step": 119999,
+        "eval_dropless/paloma/macro_bpb": 0.8015051484107971,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5219438672065735
+      },
+      {
+        "_step": 122999,
+        "global_step": 122999,
+        "eval_dropless/paloma/macro_bpb": 0.8034502267837524,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5207727551460266
+      },
+      {
+        "_step": 125999,
+        "global_step": 125999,
+        "eval_dropless/paloma/macro_bpb": 0.8000919222831726,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5205481648445129
+      },
+      {
+        "_step": 128999,
+        "global_step": 128999,
+        "eval_dropless/paloma/macro_bpb": 0.7983362078666687,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5196768045425415
+      },
+      {
+        "_step": 131999,
+        "global_step": 131999,
+        "eval_dropless/paloma/macro_bpb": 0.7988355159759521,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5194763541221619
+      },
+      {
+        "_step": 134999,
+        "global_step": 134999,
+        "eval_dropless/paloma/macro_bpb": 0.8006804585456848,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5193170309066772
+      },
+      {
+        "_step": 137999,
+        "global_step": 137999,
+        "eval_dropless/paloma/macro_bpb": 0.7977093458175659,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5187897086143494
+      },
+      {
+        "_step": 140999,
+        "global_step": 140999,
+        "eval_dropless/paloma/macro_bpb": 0.7986156940460205,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5186377167701721
+      },
+      {
+        "_step": 143999,
+        "global_step": 143999,
+        "eval_dropless/paloma/macro_bpb": 0.7965694665908813,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5180590748786926
+      },
+      {
+        "_step": 146999,
+        "global_step": 146999,
+        "eval_dropless/paloma/macro_bpb": 0.7978096008300781,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5176651477813721
+      },
+      {
+        "_step": 149999,
+        "global_step": 149999,
+        "eval_dropless/paloma/macro_bpb": 0.7968181371688843,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5167757272720337
+      },
+      {
+        "_step": 152999,
+        "global_step": 152999,
+        "eval_dropless/paloma/macro_bpb": 0.7958360910415649,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5165671110153198
+      },
+      {
+        "_step": 155999,
+        "global_step": 155999,
+        "eval_dropless/paloma/macro_bpb": 0.7952389717102051,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5155300498008728
+      },
+      {
+        "_step": 158999,
+        "global_step": 158999,
+        "eval_dropless/paloma/macro_bpb": 0.795619010925293,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5153690576553345
+      },
+      {
+        "_step": 161999,
+        "global_step": 161999,
+        "eval_dropless/paloma/macro_bpb": 0.7957942485809326,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5143194794654846
+      },
+      {
+        "_step": 164999,
+        "global_step": 164999,
+        "eval_dropless/paloma/macro_bpb": 0.7932844758033752,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5139933824539185
+      },
+      {
+        "_step": 167999,
+        "global_step": 167999,
+        "eval_dropless/paloma/macro_bpb": 0.7929630279541016,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5133777260780334
+      },
+      {
+        "_step": 170999,
+        "global_step": 170999,
+        "eval_dropless/paloma/macro_bpb": 0.7938337326049805,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5137130618095398
+      },
+      {
+        "_step": 173999,
+        "global_step": 173999,
+        "eval_dropless/paloma/macro_bpb": 0.792608916759491,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5134554505348206
+      },
+      {
+        "_step": 176999,
+        "global_step": 176999,
+        "eval_dropless/paloma/macro_bpb": 0.7928037047386169,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5135380029678345
+      },
+      {
+        "_step": 179999,
+        "global_step": 179999,
+        "eval_dropless/paloma/macro_bpb": 0.7915565371513367,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5122242569923401
+      },
+      {
+        "_step": 182999,
+        "global_step": 182999,
+        "eval_dropless/paloma/macro_bpb": 0.7890691757202148,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5119348764419556
+      },
+      {
+        "_step": 185999,
+        "global_step": 185999,
+        "eval_dropless/paloma/macro_bpb": 0.7886508703231812,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5114712715148926
+      },
+      {
+        "_step": 188999,
+        "global_step": 188999,
+        "eval_dropless/paloma/macro_bpb": 0.7886934280395508,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5107039213180542
+      },
+      {
+        "_step": 191999,
+        "global_step": 191999,
+        "eval_dropless/paloma/macro_bpb": 0.7873322367668152,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5105385780334473
+      }
+    ]
+  ]
+}
