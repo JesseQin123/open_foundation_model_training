@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-10-03",
+  "snapshot": "2026-10-04",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -1294,6 +1294,66 @@ window.MARIN_RESEARCH = {
       "title": "Hero checkpoint completions: October 2 fixed snapshot",
       "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.02/index.html",
       "kind": "report"
+    },
+    {
+      "id": "M216",
+      "title": "Opt-in isolated storage-failure quarantine proposal #9721",
+      "url": "https://github.com/marin-community/marin/pull/9721",
+      "kind": "pr"
+    },
+    {
+      "id": "M217",
+      "title": "Forward federated preemption to executing peer #9720",
+      "url": "https://github.com/marin-community/marin/pull/9720",
+      "kind": "pr"
+    },
+    {
+      "id": "M218",
+      "title": "Proposed UncheatableEval Hero health metric #9729",
+      "url": "https://github.com/marin-community/marin/pull/9729",
+      "kind": "pr"
+    },
+    {
+      "id": "M219",
+      "title": "GCE Hero alert coverage gap #9731",
+      "url": "https://github.com/marin-community/marin/issues/9731",
+      "kind": "issue"
+    },
+    {
+      "id": "M220",
+      "title": "Hero completions October 4 fixed snapshot",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.04/index.html",
+      "kind": "report"
+    },
+    {
+      "id": "M221",
+      "title": "Two concurrent Hero completion jobs proposal #9745",
+      "url": "https://github.com/marin-community/marin/pull/9745",
+      "kind": "pr"
+    },
+    {
+      "id": "M222",
+      "title": "Qwen3.6 tau3 context/output diagnostic #9743",
+      "url": "https://github.com/marin-community/marin/issues/9743",
+      "kind": "issue"
+    },
+    {
+      "id": "M223",
+      "title": "October 4 TPU multislice startup retry disagreement #9742",
+      "url": "https://github.com/marin-community/marin/issues/9742",
+      "kind": "issue"
+    },
+    {
+      "id": "M224",
+      "title": "Belay scale-free compression and diagnostics batch180",
+      "url": "https://github.com/marin-community/marin/issues/9451#issuecomment-5984981491",
+      "kind": "issue"
+    },
+    {
+      "id": "M225",
+      "title": "September campaign Pi startup pin #9707",
+      "url": "https://github.com/marin-community/marin/pull/9707",
+      "kind": "pr"
     }
   ],
   "claimGroups": [
@@ -1301,12 +1361,13 @@ window.MARIN_RESEARCH = {
       "status": "confirmed",
       "facts": {
         "en": [
-          "The latest official October 3 report describes a step-198000 save failure and an attempt-13 restore stall. Public W&B reports crashed with last metrics at step 197999, timestamp 10:06:31.861 UTC; successful recovery is not yet confirmed.",
+          "October 4 anonymous W&B confirms resumed training on the same Hero run identity at step 205038, timestamp 22:35:54.279 UTC; running state and advancing steps replace yesterday’s unconfirmed-recovery boundary. Exact restart time, restore checkpoint and interventions remain unestablished by the unchanged status thread.",
           "At 16:03 UTC October 2 the same public run reached step 193768: loss 1.19200, 14.71-second training steps, 14.93-second iterations and MFU 26.69%. Median MFU is 26.70% over 118 samples. Latest returned evaluation: step 191999, Paloma 0.787332 and UncheatableEval 0.510539 BPB. No new software handoff is established.",
           "Launch-provenance PR #9637 merged; its tracked-file hash excludes untracked file contents. Exporter #9584, evaluation checks #9461 and logging prefetch #9600 remain merged repository facts with separate deployment requirements.",
           "The fixed Hero and mixture reports, live writing-sample page, fixed September 25 artifact and Open Athena index are unchanged from October 1. Latest returned standup remains September 21.",
           "Tokenizer-prefetch PR #9617 is closed without merge. Its earlier small benchmark is not an adopted data-pipeline change.",
-          "Retry-resource/source-capture fixes #9705 and production-user alert enrollment #9700 are merged repository facts, without inspected Hero adoption evidence. A new fixed October 2 completion report preserves 41 sample sets, not a final benchmark."
+          "Retry-resource/source-capture fixes #9705 and production-user alert enrollment #9700 are merged repository facts, without inspected Hero adoption evidence. A new fixed October 2 completion report preserves 41 sample sets, not a final benchmark.",
+          "Step 192000 writing samples completed October 4 18:03UTC; live and October 4 fixed page list 42 sets, while October 2 remains 41. Samples do not establish final capability."
         ]
       },
       "sourceIds": [
@@ -1326,7 +1387,8 @@ window.MARIN_RESEARCH = {
         "M207",
         "M208",
         "M209",
-        "M215"
+        "M215",
+        "M220"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1340,7 +1402,8 @@ window.MARIN_RESEARCH = {
           "GB200 pipeline launcher #9662 is experimental and open; the latest full-rack attempt failed during installation before finite updates. Earlier H100 pipeline/resume and dependency proposals remain open.",
           "Hero data registration/content-type, rack placement, symmetric buffers and query-bias evaluation remain unresolved. Closed tokenizer-prefetch #9617 is no longer an active open proposal. OLMo-core kernel comparisons are a benchmark plan, not a measured Hero gain.",
           "Evaluation campaign #9569 and policy-semantics #9407 remain open. MarinSkyRL #799 still requires published and qualified immutable serving packages; merged exporter code alone is not a reproducible release.",
-          "The context discussion favors skipping each source unfinished shuffle window; the 50B-token worst-case statement is a public planning estimate. #9639 and #9481 are closed without merge. #9708 is the new open speed candidate; neither its optimization series nor a context switch is confirmed in production."
+          "The context discussion favors skipping each source unfinished shuffle window; the 50B-token worst-case statement is a public planning estimate. #9639 and #9481 are closed without merge. #9708 is the new open speed candidate; neither its optimization series nor a context switch is confirmed in production.",
+          "Node storage quarantine #9721, federated preemption forwarding #9720, UncheatableEval alert #9729 and dual sampling #9745 remain open without production adoption evidence; GCE progress/loss enrollment is an open documented gap."
         ]
       },
       "sourceIds": [
@@ -1366,7 +1429,12 @@ window.MARIN_RESEARCH = {
         "M193",
         "M211",
         "M212",
-        "M210"
+        "M210",
+        "M216",
+        "M217",
+        "M218",
+        "M219",
+        "M221"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1380,7 +1448,9 @@ window.MARIN_RESEARCH = {
           "Tiny matched Hero serving fixtures generate identical 32-token outputs on H100 and v5p. The 2.205x native/eager-vLLM TPU ratio is workload-specific; production checkpoints and Hero CUDA graphs remain unvalidated.",
           "Earlier one-rack 8K/16K tests retain their 100-step and mismatched optimizer-setting limits. Small logging-prefetch and communications results remain component experiments, not established main-run speedups.",
           "The one-rack candidate reports 13.899→12.611 s/step, or 12.515 with an exact-program profile, while peak HBM rises 103.1→123.2 GiB; 100-step, seed-0 results do not establish full-scale speed or quality.",
-          "Belay compression did not improve the short d512 score; stronger interventions hurt loss. Its hundred-times-longer trial remains an experiment without completion evidence."
+          "Belay compression did not improve the short d512 score; stronger interventions hurt loss. Its completed hundred-times-longer trial reports no benefit: 2.5694 baseline, 2.5702 transfer, 2.5817 gap, one seed at d512.",
+          "Qwen3.6 tau3 diagnostic selects 131K/32K from reported scoreable-trial results; partial coverage, changed harnesses and policy status prevent a Hero or universal capability claim.",
+          "The separate October 4 TPU two-slice canary timed out during startup after unequal task retries produced different coordinator names. This does not diagnose Hero."
         ]
       },
       "sourceIds": [
@@ -1395,7 +1465,10 @@ window.MARIN_RESEARCH = {
         "M147",
         "M210",
         "M213",
-        "M214"
+        "M214",
+        "M224",
+        "M222",
+        "M223"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1407,7 +1480,8 @@ window.MARIN_RESEARCH = {
           "One-rack context-drop ratios do not predict eleven-rack behavior directly. Earlier data-repeat and cursor-displacement estimates in the context inventory are not independently reproduced correctness guarantees.",
           "Candidate 9's older four-rung full-scale loss forecast does not become a measured result for candidates 10 or 11. Their small-model gains and timer-derived budgets do not establish Hero quality or whole-job speed.",
           "The proposed Snowball attention-layer FLOP correction can raise reported MFU by changing the accounting, without changing throughput. It is open and separate from the measured Hero run.",
-          "The 50B skipped-token worst case and roughly seventeen-hour Belay trial duration are planning estimates. Neither is a measured outcome; task-17 storage errors and compilation waiting do not independently establish the original save-failure cause."
+          "The 50B skipped-token worst case and earlier roughly seventeen-hour Belay trial duration were planning estimates. Neither is a measured outcome; task-17 storage errors and compilation waiting do not independently establish the original save-failure cause.",
+          "Belay near-zero routed-share ratios may reflect shared-output magnitude growth rather than silent experts; absolute logs are required. Sampling queue-time figures explain a reported backlog but are not guaranteed service times."
         ]
       },
       "sourceIds": [
@@ -1421,7 +1495,9 @@ window.MARIN_RESEARCH = {
         "M206",
         "M212",
         "M214",
-        "M207"
+        "M207",
+        "M224",
+        "M221"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1429,11 +1505,12 @@ window.MARIN_RESEARCH = {
       "status": "unknown",
       "facts": {
         "en": [
-          "October 3 recovery and initiating cause remain unconfirmed; pod Running status does not establish advancing training. The October 2 initiating cause remains unverified, even though merged #9705 explains two failed recovery mechanisms.",
+          "October 3 initiating cause remains unconfirmed despite October 4 live recovery evidence. Actual restore checkpoint, recovery time, operator actions and adoption of new recovery/alert code remain unknown.",
           "No inspected evidence confirms the longer-context main-run switch, adoption of newly merged launch-provenance/export/evaluation/logging changes, a full Hero release or a new fixed final evaluation.",
           "The production checkpoint slowdown mechanism, full-rack pipeline behavior, full-size native serving performance and candidate-11 larger-scale benefit remain unknown. Earlier Belay overlapping-loop crashes are not established as fixed.",
           "Official Marin X account identity remains unverified. Supplemental posts point back to the already reviewed expert-parallelism article; no social claim is used as production evidence. Snowball repeatability and evaluation-policy questions remain separate from Hero quality.",
-          "New Belay fusion compilation deadlocks remain unsolved; the public small-model symptoms are not evidence of the cause of Hero restore waiting."
+          "New Belay fusion compilation deadlocks remain unsolved; the public small-model symptoms are not evidence of the cause of Hero restore waiting.",
+          "No inspected evidence confirms the new TPU coordinator fix, Hero context/speed deployment, or the explanation of near-zero Belay routed-share ratios."
         ]
       },
       "sourceIds": [
@@ -1457,12 +1534,190 @@ window.MARIN_RESEARCH = {
         "M178",
         "M207",
         "M208",
-        "M213"
+        "M213",
+        "M216",
+        "M217",
+        "M224",
+        "M223"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-10-04-main-run-recovered",
+      "date": "2026-10-04",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero is training again after yesterday’s save and restore stall"
+      },
+      "detail": {
+        "en": "The main Hero model is training again, with public measurements advancing beyond the point where yesterday's save failed. Recovery is now supported by the live run, while the cause of the interruption and the configuration used to recover remain unresolved. An anonymous W&B retrieval records hero-fa4sm100-nomask-step146k as running at step 205038, with metric timestamp October 4 at 22:35:54.279 UTC (18:35 New York). This is a late-day observation, not a 09:00 measurement. Yesterday's last returned step was 197999 and state crashed. The new reading is loss 1.1689278, training-step duration 14.9978 seconds, full iteration 15.2324 seconds, compute utilization (MFU) 26.1722%, and median MFU 26.3709% over 500 samples. The latest returned evaluation is step 203999, Paloma 0.783674 and UncheatableEval 0.508664 bits per byte. These observations establish additional training on the same public run identity, not uninterrupted uptime, a new software handoff or a final capability result. The required official status thread still ends at yesterday's triage, so the exact restart time, actual restore checkpoint and any operator interventions are not publicly established by that thread. Checks covered design, status, incidents, all 90 updated issue/PR search results, the latest available September 21 standup, fixed reports and Open Athena. No new main-run speed or context-length adoption was confirmed."
+      },
+      "sourceIds": [
+        "M123",
+        "M207",
+        "M1",
+        "M45",
+        "M112"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-04T22:42:42.383264Z",
+      "concept": {
+        "en": "Advancing training measurements can confirm recovery even before a terse status log is updated. They do not explain how recovery happened."
+      },
+      "exercise": {
+        "en": "Which fields demonstrate resumed work, and which source would you need to identify the actual recovery checkpoint?"
+      },
+      "productionChange": true,
+      "productionEvidenceIds": [
+        "M123"
+      ]
+    },
+    {
+      "id": "event-2026-10-04-targeted-recovery-proposals",
+      "date": "2026-10-04",
+      "status": "planned",
+      "title": {
+        "en": "New proposals aim to keep unhealthy nodes out of recovery attempts"
+      },
+      "detail": {
+        "en": "Two open proposals address ways recovery can remain stuck even when the cluster looks healthy. One would avoid sending new work to a node with persistent storage failures; the other would make a stop request reach the cluster actually executing a federated job. Neither is merged or confirmed active in Hero. The storage probe tests a tiny object with a bounded read/write/delete deadline, using fresh successful probes from a majority of peers to distinguish an isolated failure from a wider outage. It defaults to a one-node quarantine budget, ignores credential/configuration errors as node-failure evidence, fences stale reports and does not evict running tasks. Repair and unquarantine remain operator steps. The peer-forwarding proposal reports that mirrored task overrides could be acknowledged without stopping the remote runtime; it resolves attempts at the execution peer and restricts forwarded actions to the handoff relationship. Both cite yesterday's incident, but their public descriptions do not prove a node defect caused the original save failure, nor that either intervention produced today's recovery."
+      },
+      "sourceIds": [
+        "M216",
+        "M217",
+        "M207"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-04T22:42:42.383264Z",
+      "concept": {
+        "en": "A healthy node indicator and a successful request to shared storage test different things. Comparing peers helps distinguish an isolated failure from a service-wide outage."
+      },
+      "exercise": {
+        "en": "Why should a quarantine controller check healthy peers before isolating a node, and why should credential failures be handled separately?"
+      }
+    },
+    {
+      "id": "event-2026-10-04-alert-coverage-and-metric",
+      "date": "2026-10-04",
+      "status": "planned",
+      "title": {
+        "en": "Alert proposals separate missing coverage from a change in the score watched"
+      },
+      "detail": {
+        "en": "Marin is proposing a different evaluation signal for Hero's health alert while separately documenting a platform coverage gap. These are monitoring changes under discussion, not proof that model quality fell or that the running alert system has adopted a fix. Open #9729 would watch UncheatableEval macro loss instead of Paloma for the evaluation-regression alert, citing noisy Paloma alerts; it keeps the threshold and 30-minute freshness window unchanged. The Paloma report chart would stay as it is. A separate open issue says progress/loss rules discover jobs from a state rollup that GCE controllers do not publish, so a Hero job on GCE cannot currently enter those rules through that path. A runbook proposal aligns investigation queries with the bridge's longer execution-selection window and isolates cluster, process zero and attempt identity. This coverage issue is not evidence that the current GB200 Hero run moved to GCE. Silence from a rule with missing inputs cannot establish health."
+      },
+      "sourceIds": [
+        "M218",
+        "M219"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-04T22:42:42.383264Z",
+      "concept": {
+        "en": "Changing the metric watched does not repair missing data coverage. First ask whether the alert actually evaluated the intended run and observation window."
+      },
+      "exercise": {
+        "en": "If an alert is quiet, what evidence would distinguish a healthy run from an unenrolled run?"
+      }
+    },
+    {
+      "id": "event-2026-10-04-belay-long-compression-result",
+      "date": "2026-10-04",
+      "status": "experimental",
+      "title": {
+        "en": "The longer small-model compression trial finished without an improvement"
+      },
+      "detail": {
+        "en": "Yesterday's much longer Belay trial now has final results, and neither compression variant beat its baseline. This closes the specific small-model test without proving that every form of the idea fails or that Hero should change. The public batch-179 comment was updated October 4 at 03:13 UTC with final Paloma macro losses after 281700 updates, seed 0: baseline 2.5694, transfer 2.5702 (+0.0008), and gap variant 2.5817 (+0.0123). The transfer's short-run cost narrowed within reported noise; the gap variant became worse with longer training. The experiment used 148 billion tokens from a 124-billion-token cache, repeating roughly 19% of data. Its baseline had a NaN at step 49041 and reportedly resumed from step 44932; that side-run recovery is not evidence about Hero's incident. Ratio logs show near-zero routed share in five layers, but cannot distinguish experts becoming silent from a shared output becoming much larger. A new scale-free compression batch adds absolute output magnitudes and weight/activation diagnostics to test that explanation. Its design is public, but a completed quality result is not yet established. New learned-output-scale trials are likewise separate small-model research."
+      },
+      "sourceIds": [
+        "M214",
+        "M224",
+        "M213"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-04T22:42:42.383264Z",
+      "concept": {
+        "en": "A ratio can fall because its numerator shrinks or its denominator grows. Absolute measurements are needed before explaining the mechanism."
+      },
+      "exercise": {
+        "en": "Why does near-zero routed share alone fail to prove that routed experts stopped contributing?"
+      }
+    },
+    {
+      "id": "event-2026-10-04-evaluation-budget-diagnostic",
+      "date": "2026-10-04",
+      "status": "experimental",
+      "title": {
+        "en": "An evaluation comparison shows why input and reply budgets must be recorded"
+      },
+      "detail": {
+        "en": "A separate Qwen3.6 evaluation found its best observed result with a larger input window and a particular reply limit. This demonstrates how evaluation settings can influence comparisons; it is not a Hero capability result or a universal recommendation for longer context. The public tau3 diagnostic reports 153 wins among 373 scoreable trials (0.410) at total context 131072 and per-turn output 32768, versus 75/372 (0.202) at 65536/16384. Increasing the reply cap to 65536 at 131072 context gave 118/355 (0.332), while 262144/65536 gave 144/373 (0.386). The 65536/32768 arm remains an incomplete 52/218 estimate with infrastructure failures and below-threshold coverage; it must not be treated as a fully valid score. Several cells change two settings, so the entire score difference cannot be attributed to context alone. The chosen configuration is on the still-open September campaign PR #9569, not an accepted released policy. Its older historical comparisons use different harness revisions. A separate startup dependency fix is reported merged upstream in Harbor, while Marin's pin PR #9707 remains open. The draft policy also records simulated-user integration failures that may be counted as model failures. Test setup and infrastructure failures remain separate from actual model answers."
+      },
+      "sourceIds": [
+        "M222",
+        "M179",
+        "M225"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-04T22:42:42.383264Z",
+      "concept": {
+        "en": "Fair comparisons record both the space available for the conversation and the budget for each reply. Score denominators and infrastructure failures matter too."
+      },
+      "exercise": {
+        "en": "Which two table rows hold the reply budget fixed, and what uncertainty remains even in that comparison?"
+      }
+    },
+    {
+      "id": "event-2026-10-04-new-samples-and-backlog",
+      "date": "2026-10-04",
+      "status": "confirmed",
+      "title": {
+        "en": "A newer saved Hero model now has inspectable writing samples"
+      },
+      "detail": {
+        "en": "Readers can now inspect outputs from Hero's step-192000 saved model, and an October 4 fixed page preserves 42 sample sets. This is useful qualitative evidence, not a final evaluation or proof that recovery improved model quality. The new sample set completed at 18:03 UTC and belongs to the existing native-attention run; yesterday's live page listed 41 sets and the October 2 fixed snapshot still lists 41. An open sampling-workflow proposal explains that a set can take roughly forty hours, mostly waiting for a 64-GPU batch allocation, while permanent checkpoints arrive about every twenty-eight hours. It proposes allowing two concurrent sampling jobs instead of one and a manual backlog catch-up after merge. The missing intermediate sample attempts therefore reflect a reported scheduling backlog rather than evidence that those model versions failed. The proposal has not been merged. Fixed Hero forecast/open-weight and mixture reports retain yesterday's hashes, and Open Athena still leads with the expert-parallelism article; no new final fixed Hero evaluation was found."
+      },
+      "sourceIds": [
+        "M220",
+        "M221",
+        "M137",
+        "M215",
+        "M176"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-04T22:42:42.383264Z",
+      "concept": {
+        "en": "An output publication time can lag the model version it represents. Queue delays can create gaps in examples without implying a gap in training."
+      },
+      "exercise": {
+        "en": "Which dates would you record before comparing a newly published sample with today’s live training metrics?"
+      }
+    },
+    {
+      "id": "event-2026-10-04-separate-tpu-startup-failure",
+      "date": "2026-10-04",
+      "status": "experimental",
+      "title": {
+        "en": "A separate TPU smoke test stalled before training could start"
+      },
+      "detail": {
+        "en": "A small two-slice TPU infrastructure test timed out after different workers retried independently. Its public logs identify disagreement about the shared startup endpoint; this is a concrete test failure, not a diagnosis of Hero's earlier GB200 stall. The October 4 canary used task attempts 2 and 1, which constructed different coordinator names at 16:38:57 UTC. One later exited after a registration deadline, and the job's wait expired after 135 minutes before completing its intended five updates. The issue links an existing open coordinator-naming fix. The observed naming mismatch supports investigation of that test's startup path, but no inspected evidence proves the fix deployed or that it explains other registration timeouts. Keep hardware, job identity and failure stage explicit before connecting incidents."
+      },
+      "sourceIds": [
+        "M223",
+        "M207"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-04T22:42:42.383264Z",
+      "concept": {
+        "en": "Similar timeout messages can come from different failure mechanisms. A controlled test can reveal one mechanism without diagnosing every incident with that message."
+      },
+      "exercise": {
+        "en": "Which matching observations would you need before linking this TPU startup failure to a separate Hero incident?"
+      }
+    },
     {
       "id": "event-2026-10-03-save-and-restore-stall",
       "date": "2026-10-03",
