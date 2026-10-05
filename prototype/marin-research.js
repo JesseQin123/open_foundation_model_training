@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-10-04",
+  "snapshot": "2026-10-05",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -1354,6 +1354,48 @@ window.MARIN_RESEARCH = {
       "title": "September campaign Pi startup pin #9707",
       "url": "https://github.com/marin-community/marin/pull/9707",
       "kind": "pr"
+    },
+    {
+      "id": "M226",
+      "title": "Hero completion samples October 5 fixed edition",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.05/index.html",
+      "kind": "report"
+    },
+    {
+      "id": "M227",
+      "title": "Belay proposed candidate 13 and fixed-time state-shape comparison",
+      "url": "https://github.com/marin-community/marin/issues/9451#issuecomment-5990285128",
+      "kind": "issue"
+    },
+    {
+      "id": "M228",
+      "title": "Belay candidate 12 and throughput/profile comparisons",
+      "url": "https://github.com/marin-community/marin/issues/9451#issuecomment-5989031075",
+      "kind": "issue"
+    },
+    {
+      "id": "M229",
+      "title": "Belay gain/combine replications batches 185–187",
+      "url": "https://github.com/marin-community/marin/issues/9451#issuecomment-5986874164",
+      "kind": "issue"
+    },
+    {
+      "id": "M230",
+      "title": "Belay FP8 component benchmarks and numerical-test plan",
+      "url": "https://github.com/marin-community/marin/issues/9451#issuecomment-5987815375",
+      "kind": "issue"
+    },
+    {
+      "id": "M231",
+      "title": "Silo sandbox leak reproduction and partial cleanup",
+      "url": "https://github.com/marin-community/marin/issues/9696#issuecomment-5985679231",
+      "kind": "issue"
+    },
+    {
+      "id": "M232",
+      "title": "Belay learned gain results batch181",
+      "url": "https://github.com/marin-community/marin/issues/9451#issuecomment-5985074958",
+      "kind": "issue"
     }
   ],
   "claimGroups": [
@@ -1361,13 +1403,14 @@ window.MARIN_RESEARCH = {
       "status": "confirmed",
       "facts": {
         "en": [
-          "October 4 anonymous W&B confirms resumed training on the same Hero run identity at step 205038, timestamp 22:35:54.279 UTC; running state and advancing steps replace yesterday’s unconfirmed-recovery boundary. Exact restart time, restore checkpoint and interventions remain unestablished by the unchanged status thread.",
+          "October5 13:03UTC anonymous W&B confirms continued running on the same Hero identity at step208435, with latest evaluation step206999 (Paloma0.7809569, UncheatableEval0.5078040 BPB). No new main-run handoff is established; recovery mechanism remains unknown.",
           "At 16:03 UTC October 2 the same public run reached step 193768: loss 1.19200, 14.71-second training steps, 14.93-second iterations and MFU 26.69%. Median MFU is 26.70% over 118 samples. Latest returned evaluation: step 191999, Paloma 0.787332 and UncheatableEval 0.510539 BPB. No new software handoff is established.",
           "Launch-provenance PR #9637 merged; its tracked-file hash excludes untracked file contents. Exporter #9584, evaluation checks #9461 and logging prefetch #9600 remain merged repository facts with separate deployment requirements.",
-          "The fixed Hero and mixture reports, live writing-sample page, fixed September 25 artifact and Open Athena index are unchanged from October 1. Latest returned standup remains September 21.",
+          "Fixed Hero/mixture and Open Athena reports retain the prior review hashes; latest standup remains September21. October5 fixed completion page holds45 sets, including step204000; this is not a final evaluation.",
           "Tokenizer-prefetch PR #9617 is closed without merge. Its earlier small benchmark is not an adopted data-pipeline change.",
           "Retry-resource/source-capture fixes #9705 and production-user alert enrollment #9700 are merged repository facts, without inspected Hero adoption evidence. A new fixed October 2 completion report preserves 41 sample sets, not a final benchmark.",
-          "Step 192000 writing samples completed October 4 18:03UTC; live and October 4 fixed page list 42 sets, while October 2 remains 41. Samples do not establish final capability."
+          "Step 192000 writing samples completed October 4 18:03UTC; live and October 4 fixed page list 42 sets, while October 2 remains 41. Samples do not establish final capability.",
+          "Separate Silo cleanup and leak reproduction were publicly reported; two nodes remained unfinished, hosts stopped and fix not yet pushed at report time. This is not Hero root-cause evidence."
         ]
       },
       "sourceIds": [
@@ -1388,7 +1431,9 @@ window.MARIN_RESEARCH = {
         "M208",
         "M209",
         "M215",
-        "M220"
+        "M220",
+        "M226",
+        "M231"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1450,7 +1495,9 @@ window.MARIN_RESEARCH = {
           "The one-rack candidate reports 13.899→12.611 s/step, or 12.515 with an exact-program profile, while peak HBM rises 103.1→123.2 GiB; 100-step, seed-0 results do not establish full-scale speed or quality.",
           "Belay compression did not improve the short d512 score; stronger interventions hurt loss. Its completed hundred-times-longer trial reports no benefit: 2.5694 baseline, 2.5702 transfer, 2.5817 gap, one seed at d512.",
           "Qwen3.6 tau3 diagnostic selects 131K/32K from reported scoreable-trial results; partial coverage, changed harnesses and policy status prevent a Hero or universal capability claim.",
-          "The separate October 4 TPU two-slice canary timed out during startup after unequal task retries produced different coordinator names. This does not diagnose Hero."
+          "The separate October 4 TPU two-slice canary timed out during startup after unequal task retries produced different coordinator names. This does not diagnose Hero.",
+          "Belay candidate12 is adopted within the research track but equal-time loss ties candidate11. Candidate13 remains a proposed state reshape with two-seed small-model gains and a seed0 delta discrepancy; no Hero adoption.",
+          "Bounded compression does not improve loss; exponential-gain benefit fails seed1 replication. FP8 component speed varies by width; the planned simulated-quality test was stopped, without a completed width-scaling pass."
         ]
       },
       "sourceIds": [
@@ -1468,7 +1515,12 @@ window.MARIN_RESEARCH = {
         "M214",
         "M224",
         "M222",
-        "M223"
+        "M223",
+        "M227",
+        "M228",
+        "M230",
+        "M232",
+        "M229"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1481,7 +1533,8 @@ window.MARIN_RESEARCH = {
           "Candidate 9's older four-rung full-scale loss forecast does not become a measured result for candidates 10 or 11. Their small-model gains and timer-derived budgets do not establish Hero quality or whole-job speed.",
           "The proposed Snowball attention-layer FLOP correction can raise reported MFU by changing the accounting, without changing throughput. It is open and separate from the measured Hero run.",
           "The 50B skipped-token worst case and earlier roughly seventeen-hour Belay trial duration were planning estimates. Neither is a measured outcome; task-17 storage errors and compilation waiting do not independently establish the original save-failure cause.",
-          "Belay near-zero routed-share ratios may reflect shared-output magnitude growth rather than silent experts; absolute logs are required. Sampling queue-time figures explain a reported backlog but are not guaranteed service times."
+          "Belay near-zero routed-share ratios may reflect shared-output magnitude growth rather than silent experts; later bounded-scaling absolute logs address the new tests, while the earlier long-trial absolute outputs remain unlogged. Sampling queue-time figures explain a reported backlog but are not guaranteed service times.",
+          "A fused FP8 conversion cost and potential1.9× speed are estimates. Belay hidden-gate and kernel-spill mechanisms are interpretations scoped to the tested models, not Hero explanations."
         ]
       },
       "sourceIds": [
@@ -1497,7 +1550,10 @@ window.MARIN_RESEARCH = {
         "M214",
         "M207",
         "M224",
-        "M221"
+        "M221",
+        "M230",
+        "M227",
+        "M229"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1510,7 +1566,8 @@ window.MARIN_RESEARCH = {
           "The production checkpoint slowdown mechanism, full-rack pipeline behavior, full-size native serving performance and candidate-11 larger-scale benefit remain unknown. Earlier Belay overlapping-loop crashes are not established as fixed.",
           "Official Marin X account identity remains unverified. Supplemental posts point back to the already reviewed expert-parallelism article; no social claim is used as production evidence. Snowball repeatability and evaluation-policy questions remain separate from Hero quality.",
           "New Belay fusion compilation deadlocks remain unsolved; the public small-model symptoms are not evidence of the cause of Hero restore waiting.",
-          "No inspected evidence confirms the new TPU coordinator fix, Hero context/speed deployment, or the explanation of near-zero Belay routed-share ratios."
+          "No inspected evidence confirms the new TPU coordinator fix, Hero context/speed deployment, or the explanation of near-zero Belay routed-share ratios.",
+          "Candidate13 refreshed seed0 table and reported delta do not match exactly; full-scale replication and adoption remain unknown. Deployed Silo leak fix and sustained teardown verification are not established."
         ]
       },
       "sourceIds": [
@@ -1538,12 +1595,158 @@ window.MARIN_RESEARCH = {
         "M216",
         "M217",
         "M224",
-        "M223"
+        "M223",
+        "M227",
+        "M231"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-10-05-training-continues",
+      "date": "2026-10-05",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero keeps training; no new change to the main run is confirmed"
+      },
+      "detail": {
+        "en": "Hero continues training after yesterday's recovery, and public measurements now show additional completed updates. No new change to the main run's software or context length was confirmed, so continued work should not be read as a newly adopted optimization. The same public run, hero-fa4sm100-nomask-step146k, is running at step 208435 with metric timestamp October 5 13:03:03.772 UTC (09:03 New York), compared with October 4 22:35 UTC step 205038. Train loss is 1.1700730, training-step duration 14.8790 seconds, full iteration 15.1138 seconds, MFU (compute utilization) 26.3811%, and median MFU 26.3324% over 500 samples. Latest returned evaluation is step 206999: Paloma 0.7809569 and UncheatableEval 0.5078040 bits per byte. These are live observations, not fixed final evaluation artifacts or uninterrupted-uptime proof. Required design #8435, ongoing status #8506 and incidents #8870 have no new official recovery comment; the exact restart time, restore checkpoint and initiating cause remain unknown. We screened all 64 issue/PR results updated since October 4, retrieved the relevant threads and full newly updated Belay comments, and checked the latest standup (still September 21). Fixed Hero forecast/open-weight and mixture reports and the Open Athena index/article retain their prior hashes. Supplemental X discovery returned no matches and does not establish absence of activity."
+      },
+      "sourceIds": [
+        "M123",
+        "M1",
+        "M45",
+        "M112",
+        "M176"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-05T13:08:06.408421Z",
+      "concept": {
+        "en": "More completed updates establish continued training. A software improvement needs separate evidence showing what changed and where it was adopted."
+      },
+      "exercise": {
+        "en": "What demonstrates resumed work, and what additional evidence would demonstrate adoption of a speed improvement?"
+      }
+    },
+    {
+      "id": "event-2026-10-05-new-writing-samples",
+      "date": "2026-10-05",
+      "status": "confirmed",
+      "title": {
+        "en": "More saved Hero models now have public writing samples"
+      },
+      "detail": {
+        "en": "The fixed October 5 page now preserves 45 sample sets, three more than the October 4 page. Readers can inspect more model versions, including step 204000, while these examples remain a qualitative check rather than a new final capability score. New-to-this-review sets are step 204000 completed October 4 21:52:04.812 UTC, step 198000 completed October 5 01:29:08.971 UTC and step 180000 completed October 5 05:36:18.988 UTC, all on the existing native-attention run and reference sampling version. Completion time is not the model's training time, and the older step 180000 result illustrates backlog being filled. We discovered these through today's fixed page; we do not claim all were first public today. The live page has the same 45 entries. The two-job sampling proposal #9745 remains open, so added outputs do not establish its deployment. October 2 and October 4 fixed pages still contain 41 and 42 sets respectively."
+      },
+      "sourceIds": [
+        "M226",
+        "M137",
+        "M220",
+        "M221"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-05T13:08:06.408421Z",
+      "concept": {
+        "en": "A report date, sample generation time and model training step describe different moments. Filling an older gap does not mean training moved backward."
+      },
+      "exercise": {
+        "en": "Why can a step-180000 sample appear after a step-204000 sample without contradicting forward training progress?"
+      }
+    },
+    {
+      "id": "event-2026-10-05-belay-state-shape",
+      "date": "2026-10-05",
+      "status": "experimental",
+      "title": {
+        "en": "A small-model candidate improves scores without adding measured step time"
+      },
+      "detail": {
+        "en": "A proposed Belay candidate rearranges an attention module's memory and reports better small-model scores at roughly unchanged step time. This is encouraging evidence for the research track, not an adopted Hero architecture or a full-job speed result. Candidate 13 is proposed on top of candidate 12: four KDA heads use a 64-key by 256-value state instead of 128 by 128, retaining 16384 state entries per head while changing projection widths (about 0.65M additional parameters per layer at width 512). Faster state-pass tiling uses block_v=64. At 2817 updates the latest width 512 table reports controls 2.9532/2.9584 and candidate 2.9482/2.9489 for two seeds, with measured steps 191.3 versus 191.0–191.7 ms. The accompanying text claims deltas −0.0056/−0.0095 and mean about −0.0075; the displayed refreshed seed-0 control gives −0.0050 instead. This small arithmetic inconsistency remains explicit, and seed-1 control is inherited from df4 rather than a wholly new matched pair. Earlier equal-step width 768 evidence reports 2.7143 versus 2.7207 at 6929 updates, with a 1.9% step-time cost before the tiling fix. Candidate 12's preceding ragged/6-head changes were adopted within Belay, but its gain disappeared at equal time: 2.9714/2.9750 versus candidate11 2.9715/2.9750, across different clusters. The #9708 port reduced the small ragged path from 193.6 to 182.7 ms; that PR itself remains open. Wider or more numerous heads can improve equal-step scores while taking enough extra time to erase the benefit. Larger-rung replication, consistent baseline accounting and an explicit main-run handoff are still needed."
+      },
+      "sourceIds": [
+        "M227",
+        "M228",
+        "M210"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-05T13:08:06.408421Z",
+      "concept": {
+        "en": "An attention memory layout can keep the same number of stored values while changing how much information each address retrieves. Equal-step gains and equal-time gains answer different questions."
+      },
+      "exercise": {
+        "en": "Subtract the displayed candidate13 seed-0 score from its refreshed control. Why should that discrepancy and inherited seed-1 control remain in the report?"
+      }
+    },
+    {
+      "id": "event-2026-10-05-belay-precision-limits",
+      "date": "2026-10-05",
+      "status": "experimental",
+      "title": {
+        "en": "Lower-precision arithmetic is not automatically faster end to end"
+      },
+      "detail": {
+        "en": "A separate component test found that faster low-precision matrix multiplication can be outweighed by the work needed to convert its inputs. This explains why a promising arithmetic benchmark is not enough to promise faster training; it does not establish an FP8 change in Hero. One-GB200 synthetic linear forward/backward tests report JAX MXFP8 end-to-end speed relative to bf16 of 0.4–0.6× at widths512–1024, 0.78× at 2048, 1.02× at 4096 and1.20× at 6144. At width6144, block-scaled multiplication takes about 1.44–1.49 ms versus1.43 ms for per-tensor FP8 and2.7 ms for bf16, while repeated quantization costs about 2.1 ms. A fused-conversion estimate of0.4 ms and potential 1.9× speed are projections, not measured implementation results. Gaussian/outlier input error tests report 3.8% MXFP8 and 5.9% per-tensor error, not model-quality guarantees. The initially proposed width-scaling numerical test simulates rounded FP8 operands while still computing bf16; it cannot measure real FP8 speed. The later batch 190–201 comment says that test was stopped and FP8 dropped from this track, so no completed across-width quality pass or production adoption is claimed."
+      },
+      "sourceIds": [
+        "M230",
+        "M228"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-05T13:08:06.408421Z",
+      "concept": {
+        "en": "Measure the whole path, including format conversion. A simulated low-precision calculation can test numerical behavior while saying nothing about real hardware speed."
+      },
+      "exercise": {
+        "en": "Which timings must be added to a matrix-multiplication benchmark before predicting a whole-step speedup?"
+      }
+    },
+    {
+      "id": "event-2026-10-05-belay-diagnostic-results",
+      "date": "2026-10-05",
+      "status": "experimental",
+      "title": {
+        "en": "Better diagnostics ruled out several tempting small-model changes"
+      },
+      "detail": {
+        "en": "Follow-up Belay tests separated a plausible mechanism from an actual quality improvement. They corrected runaway shared-output scaling, yet the tested compression and gain changes still did not produce a repeatable score benefit in these small runs. Batch180's four bounded-scaling methods report Paloma 2.9648,2.9679,2.9688 and2.9697 versus shadow control 2.9632, with stated noise about 0.0056. Absolute output measurements show shared/routed outputs comparable in size; they do not retroactively establish the unlogged mechanism in the earlier long trial. Exponential gains looked slightly better on seed 0 (−0.0026), but seed 1 gave only−0.0002; the gain/scale family was therefore closed at width 512 for this token budget. Capping every normalization gain at2 hurt a separate seed 0 test by0.1149. Removing the fixed routed-combine sum eliminated a layer 5 outlier while remaining loss-neutral on two seeds (+0.0002/+0.0007); its interpretation as a workaround for per-token scaling is a model-specific causal explanation, not a Hero root cause. Neither simpler internals nor a visually cleaner diagnostic automatically imply better loss. Compilation deadlocks were bypassed by resubmission in several tests, which is not evidence of a permanent compiler fix."
+      },
+      "sourceIds": [
+        "M224",
+        "M232",
+        "M229"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-05T13:08:06.408421Z",
+      "concept": {
+        "en": "A change can repair an undesirable internal behavior without improving the outcome score. Replication helps distinguish a small apparent win from noise."
+      },
+      "exercise": {
+        "en": "Why did a gain change that looked better on one seed fail to become a demonstrated quality improvement?"
+      }
+    },
+    {
+      "id": "event-2026-10-05-silo-cleanup",
+      "date": "2026-10-05",
+      "status": "confirmed",
+      "title": {
+        "en": "A separate container leak was reproduced; cleanup is still incomplete"
+      },
+      "detail": {
+        "en": "A public infrastructure report reproduced a container-deletion leak and describes stopping the affected Silo hosts while cleaning them up. This narrows that incident's cause, but it is separate from Hero's save-and-restore failure and does not prove a repaired service is running. The October 4 23:40 UTC comment reports that nerdctl with runsc could return success while leaving stopped tasks, shim processes and empty resource groups; comparison with runc and manual task/container deletion reproduced the difference. The proposed fix checks deletion and retries or raises failures, but its branch was not yet pushed at the report time. Owner-run cleanup on idle hosts reduced memory-cgroup counts on 15 nodes from 10K–35K to700–1250 before all 17 CoreWeave hosts and the RNO hosts were stopped. Two CoreWeave nodes still had unresolved empty groups, and about 12K dying groups on another node awaited kernel reclamation. Repeated create/teardown on a deployed fixed host had not been run. Preserve those exceptions rather than reading the comment's short opening as universal cleanup completion. The broker stayed running, but Silo hosts were to remain down until a fixed host was deployed."
+      },
+      "sourceIds": [
+        "M231"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-05T13:08:06.408421Z",
+      "concept": {
+        "en": "A successful command exit can still leave resources behind. Check the postcondition, and keep incident reproduction, cleanup and repaired-service deployment separate."
+      },
+      "exercise": {
+        "en": "What post-deletion checks would catch this leak, and what test is still needed before declaring the service fixed?"
+      }
+    },
     {
       "id": "event-2026-10-04-main-run-recovered",
       "date": "2026-10-04",
