@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-10-06",
+  "snapshot": "2026-10-07",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -1426,6 +1426,90 @@ window.MARIN_RESEARCH = {
       "title": "Proposed first-4K PTB scoring in Hero sample checks #9776",
       "url": "https://github.com/marin-community/marin/pull/9776",
       "kind": "pr"
+    },
+    {
+      "id": "M238",
+      "title": "October6 Hero gang retry and resumed status",
+      "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-6025364160",
+      "kind": "issue"
+    },
+    {
+      "id": "M239",
+      "title": "Keep Iris controller backups progressing under writes #9842",
+      "url": "https://github.com/marin-community/marin/pull/9842",
+      "kind": "pr"
+    },
+    {
+      "id": "M240",
+      "title": "Regional controller backup deployment and watch",
+      "url": "https://github.com/marin-community/marin/pull/9842#issuecomment-6026287521",
+      "kind": "issue"
+    },
+    {
+      "id": "M241",
+      "title": "October6 fixed Hero sample report",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.06/index.html",
+      "kind": "report"
+    },
+    {
+      "id": "M242",
+      "title": "Single-rack optimization split and revised benchmark",
+      "url": "https://github.com/marin-community/marin/pull/9708#issuecomment-6023524545",
+      "kind": "issue"
+    },
+    {
+      "id": "M243",
+      "title": "Streaming short convolution proposal #9829",
+      "url": "https://github.com/marin-community/marin/pull/9829",
+      "kind": "pr"
+    },
+    {
+      "id": "M244",
+      "title": "Hero router top-k stack base #9830",
+      "url": "https://github.com/marin-community/marin/pull/9830",
+      "kind": "pr"
+    },
+    {
+      "id": "M245",
+      "title": "Shared-expert QuACK stack tip #9836",
+      "url": "https://github.com/marin-community/marin/pull/9836",
+      "kind": "pr"
+    },
+    {
+      "id": "M246",
+      "title": "Belay shifted-key study and tied-query small experiment",
+      "url": "https://github.com/marin-community/marin/issues/9451#issuecomment-6030629166",
+      "kind": "issue"
+    },
+    {
+      "id": "M247",
+      "title": "Inference port collision and wrong-model evaluation failure #9862",
+      "url": "https://github.com/marin-community/marin/issues/9862",
+      "kind": "issue"
+    },
+    {
+      "id": "M248",
+      "title": "Reserve inference ports and verify model identity #9863",
+      "url": "https://github.com/marin-community/marin/pull/9863",
+      "kind": "pr"
+    },
+    {
+      "id": "M249",
+      "title": "Bound Grafana bridge memory proposal #9854",
+      "url": "https://github.com/marin-community/marin/pull/9854",
+      "kind": "pr"
+    },
+    {
+      "id": "M250",
+      "title": "Merged StoragePath S3 directory short circuit #9805",
+      "url": "https://github.com/marin-community/marin/pull/9805",
+      "kind": "pr"
+    },
+    {
+      "id": "M251",
+      "title": "Hero scaling ladder and historical mid-run phases",
+      "url": "https://wandb.ai/marin-community/marin_moe/reports/535B-A23B-18T-Token-Hero-Run-Scaling-Ladder--VmlldzoxNzc2MDM5Ng",
+      "kind": "report"
     }
   ],
   "claimGroups": [
@@ -1433,15 +1517,16 @@ window.MARIN_RESEARCH = {
       "status": "confirmed",
       "facts": {
         "en": [
-          "October 6 13:02:38.798 UTC anonymous W&B confirms same-lineage running at step 214081; latest evaluation step 212999 (Paloma 0.7771823, UncheatableEval 0.5067323 BPB). No new main-run handoff or recovery-mechanism evidence.",
+          "October7 public status reports an October6 NoExecute-taint task eviction and gang retry; all176 tasks resumed by21:00UTC. October7 13:02UTC W&B confirms same-lineage running at219515, latest evaluation218999; taint condition and October3 cause remain unknown.",
           "At 16:03 UTC October 2 the same public run reached step 193768: loss 1.19200, 14.71-second training steps, 14.93-second iterations and MFU 26.69%. Median MFU is 26.70% over 118 samples. Latest returned evaluation: step 191999, Paloma 0.787332 and UncheatableEval 0.510539 BPB. No new software handoff is established.",
           "Launch-provenance PR #9637 merged; its tracked-file hash excludes untracked file contents. Exporter #9584, evaluation checks #9461 and logging prefetch #9600 remain merged repository facts with separate deployment requirements.",
-          "Fixed Hero/mixture and Open Athena reports retain prior hashes; latest standup September21. October5 fixed samples remain45 while live inventory is48 on October6; October6 dated report returned404. Samples are not final evaluation.",
+          "Fixed Hero/mixture and Open Athena hashes unchanged; latest standup September21. October6 fixed samples now readable at49, live51 includes changed-spec210000/204000 outputs; October7 fixed page404. Historical W&B phase report updatedSeptember23 supplies no newOctober handoff.",
           "Tokenizer-prefetch PR #9617 is closed without merge. Its earlier small benchmark is not an adopted data-pipeline change.",
           "Retry-resource/source-capture fixes #9705 and production-user alert enrollment #9700 are merged repository facts, without inspected Hero adoption evidence. A new fixed October 2 completion report preserves 41 sample sets, not a final benchmark.",
           "Step 192000 writing samples completed October 4 18:03UTC; live and October 4 fixed page list 42 sets, while October 2 remains 41. Samples do not establish final capability.",
           "Separate Silo cleanup and leak reproduction were publicly reported; two nodes remained unfinished, hosts stopped and fix not yet pushed at report time. This is not Hero root-cause evidence.",
-          "PRs9720 preemption forwarding,9745 two-job sampling,9633 Snowball compute accounting and9707 evaluation-startup pin merged. These are repository facts; execution/adoption needs separate evidence."
+          "PRs9720 preemption forwarding,9745 two-job sampling,9633 Snowball compute accounting and9707 evaluation-startup pin merged. These are repository facts; execution/adoption needs separate evidence.",
+          "Regional controller backup tree26e2fa60b7 deployment publicly reported, ordinary backup about9s and boundedfive-minute watch healthy; temporary node pin/guard remain.9842,9805S3directoryfix and9776PTBprompt merged; these are separate deployment/repository scopes."
         ]
       },
       "sourceIds": [
@@ -1468,7 +1553,14 @@ window.MARIN_RESEARCH = {
         "M217",
         "M221",
         "M206",
-        "M225"
+        "M225",
+        "M238",
+        "M240",
+        "M239",
+        "M250",
+        "M237",
+        "M241",
+        "M251"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1482,9 +1574,10 @@ window.MARIN_RESEARCH = {
           "GB200 pipeline launcher #9662 is experimental and open; the latest full-rack attempt failed during installation before finite updates. Earlier H100 pipeline/resume and dependency proposals remain open.",
           "Hero data registration/content-type, rack placement, symmetric buffers and query-bias evaluation remain unresolved. Closed tokenizer-prefetch #9617 is no longer an active open proposal. OLMo-core kernel comparisons are a benchmark plan, not a measured Hero gain.",
           "Evaluation campaign #9569 and policy-semantics #9407 remain open. MarinSkyRL #799 still requires published and qualified immutable serving packages; merged exporter code alone is not a reproducible release.",
-          "The context discussion favors skipping each source unfinished shuffle window; the 50B-token worst-case statement is a public planning estimate. #9639 and #9481 are closed without merge. #9708 is the new open speed candidate; neither its optimization series nor a context switch is confirmed in production.",
+          "The context discussion favors skipping each source unfinished shuffle window; the 50B-token worst-case statement is a public planning estimate. #9639 and #9481 are closed without merge. #9708 closed without merge and is replaced by open #9829 and #9830–#9836; neither its optimization series nor a context switch is confirmed in production.",
           "Node storage quarantine #9721 and UncheatableEval alert #9729 remain open without production adoption evidence; GCE progress/loss enrollment is an open documented gap.",
-          "Merged9720/9745 implementation is accepted, but main-run recovery adoption and completed manual backlog submission remain unknown. Open9806 zero-norm safeguard,9808 incomplete allocation history and9776 limited PTB scoring await adoption;9708 requested review split remains open."
+          "Merged9720/9745 implementation is accepted, but main-run recovery adoption and completed manual backlog submission remain unknown. Open9806 zero-norm safeguard,9808 incomplete allocation history await adoption;9708 is replaced by eight open child PRs.",
+          "GPU history9808 now requested-priority only with missing production reader/503;9854 memory bounds and9863 model-identity/port fix remain open."
         ]
       },
       "sourceIds": [
@@ -1519,7 +1612,13 @@ window.MARIN_RESEARCH = {
         "M233",
         "M235",
         "M237",
-        "M236"
+        "M236",
+        "M242",
+        "M243",
+        "M244",
+        "M245",
+        "M249",
+        "M248"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1537,7 +1636,8 @@ window.MARIN_RESEARCH = {
           "Qwen3.6 tau3 diagnostic selects 131K/32K from reported scoreable-trial results; partial coverage, changed harnesses and policy status prevent a Hero or universal capability claim.",
           "The separate October 4 TPU two-slice canary timed out during startup after unequal task retries produced different coordinator names. This does not diagnose Hero.",
           "Belay candidate12 is adopted within the research track but equal-time loss ties candidate11. Candidate13 remains a proposed state reshape with two-seed small-model gains and a seed0 delta discrepancy; no Hero adoption.",
-          "Bounded compression does not improve loss; exponential-gain benefit fails seed1 replication. FP8 component speed varies by width; the planned simulated-quality test was stopped, without a completed width-scaling pass."
+          "Bounded compression does not improve loss; exponential-gain benefit fails seed1 replication. FP8 component speed varies by width; the planned simulated-quality test was stopped, without a completed width-scaling pass.",
+          "Belay shifted-key tied-query small test2.9517vs2.9521 at190.3vs190.2ms is neutral within noise; interpretation and sparse retrieval proposals do not establish Hero adoption."
         ]
       },
       "sourceIds": [
@@ -1560,7 +1660,8 @@ window.MARIN_RESEARCH = {
         "M228",
         "M230",
         "M232",
-        "M229"
+        "M229",
+        "M246"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1574,7 +1675,8 @@ window.MARIN_RESEARCH = {
           "The proposed Snowball attention-layer FLOP correction can raise reported MFU by changing the accounting, without changing throughput. PR9633 is now merged as an accounting correction; this remains separate from measured Hero throughput.",
           "The 50B skipped-token worst case and earlier roughly seventeen-hour Belay trial duration were planning estimates. Neither is a measured outcome; task-17 storage errors and compilation waiting do not independently establish the original save-failure cause.",
           "Belay near-zero routed-share ratios may reflect shared-output magnitude growth rather than silent experts; later bounded-scaling absolute logs address the new tests, while the earlier long-trial absolute outputs remain unlogged. Sampling queue-time figures explain a reported backlog but are not guaranteed service times.",
-          "A fused FP8 conversion cost and potential1.9× speed are estimates. Belay hidden-gate and kernel-spill mechanisms are interpretations scoped to the tested models, not Hero explanations."
+          "A fused FP8 conversion cost and potential1.9× speed are estimates. Belay hidden-gate and kernel-spill mechanisms are interpretations scoped to the tested models, not Hero explanations.",
+          "Belay induction-lookup and low-rank sparse-selection interpretation comes from limited weight/attention probes; activation usage and broader causal claims need tests."
         ]
       },
       "sourceIds": [
@@ -1593,7 +1695,8 @@ window.MARIN_RESEARCH = {
         "M221",
         "M230",
         "M227",
-        "M229"
+        "M229",
+        "M246"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1608,7 +1711,8 @@ window.MARIN_RESEARCH = {
           "New Belay fusion compilation deadlocks remain unsolved; the public small-model symptoms are not evidence of the cause of Hero restore waiting.",
           "No inspected evidence confirms the new TPU coordinator fix, Hero context/speed deployment, or the explanation of near-zero Belay routed-share ratios.",
           "Candidate13 refreshed seed0 table and reported delta do not match exactly; full-scale replication and adoption remain unknown. Deployed Silo leak fix and sustained teardown verification are not established.",
-          "October6 fixed sample report unavailable (404). Execution of merged preemption/sampling code, optimizer guard deployment and historical allocation completeness remain unknown."
+          "October6 report recovered; October7 fixed sample report404. Execution of merged preemption/sampling code, optimizer guard deployment and historical allocation completeness remain unknown; current history proposal has no production reader.",
+          "Condition causingOctober6 node taint, child-speed proposal adoption and wrong-model serving fix deployment remain unknown. Controller database backup improvement does not establish model-checkpoint improvement."
         ]
       },
       "sourceIds": [
@@ -1642,12 +1746,194 @@ window.MARIN_RESEARCH = {
         "M137",
         "M221",
         "M233",
-        "M235"
+        "M235",
+        "M238",
+        "M240",
+        "M248"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-10-07-retry-and-training",
+      "date": "2026-10-07",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero resumed after another task eviction; the node trigger remains unknown"
+      },
+      "detail": {
+        "en": "An official status comment reports another training-group retry and confirms the main Hero run resumed. Today’s public measurements show more work completed, but they do not explain what caused the node to be isolated or the earlier October3 interruption. The October6 comment says Kubernetes deleted task16 on node s14fys64 because of a NoExecute taint, a node marker that evicts affected tasks; Iris requeued the gang and all176 tasks were running at step215756 by21:00UTC. A whole training group is called a gang because its workers must run together. Anonymous W&B at October7 13:02:21.099UTC (09:02 New York) returns the same hero-fa4sm100-nomask-step146k identity running at step219515 versus yesterday214081. Loss1.1663888; training-step14.7924s; iteration15.0136s; MFU26.5355%; median26.4755% over500samples. Latest returned evaluation step218999: Paloma0.7794218, UncheatableEval0.5055967BPB. Live readings are not fixed final evaluations or uninterrupted uptime. Required design8435 and incidents8870 have no new comment; latest standup stillSeptember21. All149 updated issue/PR results were screened across two pages, with relevant launcher/checkpoint/transport/mixture/kernel/memory/context/evaluation/handoff threads read. Fixed Hero/mixture and Open Athena report hashes remain unchanged. Percy Liang’s X links led to an anonymously readable W&B phase summary updated September23, covering already-recorded handoffs through step146139; it supplies no new October deployment, and its projected trajectory is not a measured final checkpoint."
+      },
+      "sourceIds": [
+        "M238",
+        "M123",
+        "M1",
+        "M45",
+        "M112",
+        "M251"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-07T13:08:06.908095Z",
+      "concept": {
+        "en": "A recovery report can establish that work resumed while leaving the reason for the original disruption unanswered. Separate the immediate trigger from the underlying cause."
+      },
+      "exercise": {
+        "en": "What does the node eviction report establish, and which cause remains unconfirmed?"
+      },
+      "productionChange": true,
+      "productionEvidenceIds": [
+        "M238",
+        "M123"
+      ]
+    },
+    {
+      "id": "event-2026-10-07-controller-backup-deployed",
+      "date": "2026-10-07",
+      "status": "confirmed",
+      "title": {
+        "en": "A regional controller backup fix was deployed and completed a backup quickly"
+      },
+      "detail": {
+        "en": "A public deployment report says a regional controller can now finish its database backup while jobs keep updating it. This is a concrete improvement to regional operations, not a change to Hero’s model or proof that every controller is repaired. PR9842 merged October6 22:06:44UTC; its public comment at22:04 reports deploying tree26e2fa60b7 to cw-us-east-02a on the original node g530eda. The fix holds one SQLite read snapshot across backup pages so concurrent commits cannot repeatedly restart the copy; database writers continue, while old-log reclamation waits. The ordinary checkpoint took about9seconds including main/auth uploads after earlier300- and1800-second timeouts. A smoke job passed and a five-minute watch reported36/36 healthy nodes with62–65 jobs running. Startup reused a healthy local database, skipped remote restore, and a separate recovery backup was verified beforehand. Hostname pin and startup guard remain temporary deployment conditions that a normal restart would remove. These are a directly stated rollout and bounded watch, not independently inspected internal logs, permanent stability, a model-weight checkpoint speedup or the cause of Hero’s task eviction."
+      },
+      "sourceIds": [
+        "M239",
+        "M240"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-07T13:08:06.908095Z",
+      "concept": {
+        "en": "A database snapshot fixes which committed state the backup reads. This can allow active writers without making the backup chase an endlessly changing source."
+      },
+      "exercise": {
+        "en": "Why must a controller database backup be distinguished from saving model weights?"
+      },
+      "productionChange": true,
+      "productionEvidenceIds": [
+        "M240"
+      ]
+    },
+    {
+      "id": "event-2026-10-07-speed-stack-replacement",
+      "date": "2026-10-07",
+      "status": "planned",
+      "title": {
+        "en": "The speed proposal is now eight smaller reviews, with no confirmed main-run adoption"
+      },
+      "detail": {
+        "en": "Marin replaced the large speed proposal with eight focused reviews rather than merging the original bundle. This makes individual assumptions easier to assess, while the reported speed remains a short single-rack experiment. Original9708 is closed without merge; independent9829 and the open9830→9836 stack cover short convolution, top-k, launcher/profile settings, buffers/scatter, routing-weight gradients, routed kernels, scheduling and shared kernels. A public split comment reports12.590s/step and31.18%MFU on one rack with the convolution patch applied atop the stack, versus12.610s for an earlier Triton version. Its wording about merging into the stack is branch integration, not a GitHub main merge: all eight PRs remain open. The new standalone convolution test reports4.45→1.76ms in one GPU Hero block; no rack run isolated the final kernel alone. Context remains64GPUs,100updates,seed0 restored from step180000, and higher device-memory use. The aggregate result does not assign independent gains to every child PR, prove long-run quality or establish eleven-rack production adoption."
+      },
+      "sourceIds": [
+        "M210",
+        "M242",
+        "M243",
+        "M244",
+        "M245"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-07T13:08:06.908095Z",
+      "concept": {
+        "en": "Closing a replaced proposal does not mean its code was accepted. Follow successor reviews and keep branch integration separate from merging into the shared codebase."
+      },
+      "exercise": {
+        "en": "Which evidence would distinguish a patch applied on a test branch from a merged and deployed improvement?"
+      }
+    },
+    {
+      "id": "event-2026-10-07-samples-and-new-spec",
+      "date": "2026-10-07",
+      "status": "confirmed",
+      "title": {
+        "en": "A saved sample report is available, and newer samples use a changed test set"
+      },
+      "detail": {
+        "en": "The October6 fixed sample report is now readable, preserving49 sample sets after it was unavailable yesterday. The live page has51, including newer step210000 outputs under a changed sampling specification, so model comparisons must account for the test-set change. New-to-this-review results are step156000 completed October6 09:50:41.772UTC under old spec915e9147…, plus step210000 October7 02:31:37.466UTC and step204000 October7 04:37:17.966UTC under spec55355d34…. Both sample-spec identities and actual completion dates remain explicit; these are not necessarily first published today. PR9776 merged October6 17:31:07UTC, adding the first approximately4K Penn Treebank tokens to the prompt bank and creating new sampling requests. Its local47-prompt checks do not establish complete benchmark coverage. Live result metadata proves new-spec outputs exist, not a full-corpus evaluation; scoring also reflects PTB’s lowercase, number and rare-word format. October7 fixed URL returned404; do not label live51 as a fixed October7 artifact. Earlier fixedOctober5 remains45 and October4 remains42."
+      },
+      "sourceIds": [
+        "M241",
+        "M137",
+        "M226",
+        "M220",
+        "M237"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-07T13:08:06.908095Z",
+      "concept": {
+        "en": "To compare saved models fairly, record which test specification produced their outputs. A changed prompt bank is not interchangeable with the old one."
+      },
+      "exercise": {
+        "en": "Before comparing two step204000 sample sets, what identity besides model step should you check?"
+      }
+    },
+    {
+      "id": "event-2026-10-07-belay-attention-study",
+      "date": "2026-10-07",
+      "status": "experimental",
+      "title": {
+        "en": "A small-model attention study found a simpler design with a similar score"
+      },
+      "detail": {
+        "en": "A Belay analysis suggests that part of a small model’s attention looks up what followed earlier occurrences of similar tokens. Tying two learned directions produced a similar score in one small run, but this is a limited experiment rather than a Hero architecture change or proven long-context breakthrough. The d512 study uses candidate12/current-best EMA weights and a shifted64-channel half of MLA keys. Weight-space direction matches and attention probes support the lookup interpretation; weight rank alone does not establish how many directions real activations use. The tied-query test reports Paloma2.9517 versus2.9521 control, with190.3 versus190.2ms steps, a difference within prior seed-noise limits. It removes64 query columns per head in two layers; no full-job speed gain or broader replication is measured. Sparse retrieval using16–32-dimensional indexes and different offsets remain proposals. The interpretation of diffuse later-layer heads and the inductive mechanism is explicitly inference, not a direct guarantee of model behavior."
+      },
+      "sourceIds": [
+        "M246"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-07T13:08:06.908095Z",
+      "concept": {
+        "en": "A useful interpretation can suggest a simpler model without proving an improvement. Check behavior, replication and the difference between weight-space structure and used activations."
+      },
+      "exercise": {
+        "en": "Why does a neutral one-run score not prove that the simpler design will work at larger scale?"
+      }
+    },
+    {
+      "id": "event-2026-10-07-wrong-model-serving",
+      "date": "2026-10-07",
+      "status": "planned",
+      "title": {
+        "en": "An evaluation failure shows why a ready server must identify the model it serves"
+      },
+      "detail": {
+        "en": "A separate evaluation incident reports that two workers chose the same port and one accepted the other model’s server as ready. This is an infrastructure failure affecting the validity of those requests, not602 wrong answers from the intended model and not a Hero capability result. Public9862 says North Mini Code accepted Nemotron on the shared localhost port and all602 MRCR-32K requests failed with model-not-found errors. Open9863 proposes task-owned backend ports and checking the configured model identifier in the readiness response. Its merge and runtime adoption remain unconfirmed. Public issue/PR descriptions support the incident and proposed remedy; linked internal logs are not used as independently accessible evidence. A responding endpoint alone cannot prove the correct model is serving."
+      },
+      "sourceIds": [
+        "M247",
+        "M248"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-07T13:08:06.908095Z",
+      "concept": {
+        "en": "Readiness should verify identity as well as connectivity. A model-not-found infrastructure error cannot be treated as an attempted answer by the intended model."
+      },
+      "exercise": {
+        "en": "What should a readiness check verify before an evaluation sends its first request?"
+      }
+    },
+    {
+      "id": "event-2026-10-07-monitoring-limits-revised",
+      "date": "2026-10-07",
+      "status": "planned",
+      "title": {
+        "en": "The GPU history proposal now uses requested priority and still lacks a production reader"
+      },
+      "detail": {
+        "en": "The GPU history proposal narrowed its display to the priority jobs requested, and its live data reader is still unfinished. This avoids treating requested priority as the priority actually applied, but the planned chart still cannot establish complete historical allocation or idle capacity. Updated9808 says an Interactive request dispatched as Batch stays in the Interactive group, with no applied-priority toggle. Every point is incomplete; missing inputs leave gaps and setup quantities remain unknown. The bridge returns503 without the production metadata reader. A temporary authorized transport pilot was removed, with no lasting grants or deployment; a44,398-call API-reader figure is an estimate, not latency. A25.4MB compressed GB200 backup probe found5712 attempts through a0.032s local query, but regional coverage and refresh/memory costs still need validation. Earlier applied-view replay timings are historical tests, not current production performance. Separate open9854 proposes limiting dashboard work to two slots and releasing failed-query inputs: local failure-cache and synthetic pod-scan reproductions show memory defects, but do not identify every cause of production memory exhaustion. Neither proposal is a deployed dashboard fix."
+      },
+      "sourceIds": [
+        "M235",
+        "M249"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-07T13:08:06.908095Z",
+      "concept": {
+        "en": "Requested priority, dispatch priority and actual resource allocation are different measurements. Labels and missing-data markers must say which one is being shown."
+      },
+      "exercise": {
+        "en": "Why should an Interactive request that ran as Batch remain distinguishable from its actual dispatch priority?"
+      }
+    },
     {
       "id": "event-2026-10-06-training-continues",
       "date": "2026-10-06",
