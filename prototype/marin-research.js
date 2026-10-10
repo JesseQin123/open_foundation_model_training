@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-10-09",
+  "snapshot": "2026-10-10",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -1690,6 +1690,102 @@ window.MARIN_RESEARCH = {
       "title": "Shared NVIDIA/AMD routing-kernel candidate #9942",
       "url": "https://github.com/marin-community/marin/pull/9942",
       "kind": "pr"
+    },
+    {
+      "id": "M282",
+      "title": "Official Hero optimization handoff GO after 200 paired steps",
+      "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-6086320955",
+      "kind": "issue"
+    },
+    {
+      "id": "M283",
+      "title": "Hero optimized continuation step231k public W&B",
+      "url": "https://wandb.ai/marin-community/marin_moe/runs/hero-mfu30-step231k",
+      "kind": "report"
+    },
+    {
+      "id": "M284",
+      "title": "Official Hero cutover checkpoint and parent cancellation",
+      "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-6085377485",
+      "kind": "issue"
+    },
+    {
+      "id": "M285",
+      "title": "One-rack longer-context re-test on optimized stack",
+      "url": "https://github.com/marin-community/marin/issues/9615#issuecomment-6086748179",
+      "kind": "issue"
+    },
+    {
+      "id": "M286",
+      "title": "Proposed evaluation preflight before Hero cutover #9990",
+      "url": "https://github.com/marin-community/marin/pull/9990",
+      "kind": "pr"
+    },
+    {
+      "id": "M287",
+      "title": "Public subset audit and windowed contamination matcher report",
+      "url": "https://github.com/marin-community/marin/issues/9874#issuecomment-6084418948",
+      "kind": "issue"
+    },
+    {
+      "id": "M288",
+      "title": "Windowed PTB text can evade existing matcher",
+      "url": "https://github.com/marin-community/marin/issues/6852#issuecomment-6084440623",
+      "kind": "issue"
+    },
+    {
+      "id": "M289",
+      "title": "Closed superseded evaluation retry repair #9986",
+      "url": "https://github.com/marin-community/marin/pull/9986",
+      "kind": "pr"
+    },
+    {
+      "id": "M290",
+      "title": "Evaluation per-step recovery proposal #9813",
+      "url": "https://github.com/marin-community/marin/pull/9813",
+      "kind": "pr"
+    },
+    {
+      "id": "M291",
+      "title": "Evalchemy durable request resume proposal #209",
+      "url": "https://github.com/marin-community/evalchemy/pull/209",
+      "kind": "pr"
+    },
+    {
+      "id": "M292",
+      "title": "Retry repair ownership correction and published port",
+      "url": "https://github.com/marin-community/marin/issues/9972#issuecomment-6087241884",
+      "kind": "issue"
+    },
+    {
+      "id": "M293",
+      "title": "Bound pending W&B metric host copies #10024",
+      "url": "https://github.com/marin-community/marin/pull/10024",
+      "kind": "pr"
+    },
+    {
+      "id": "M294",
+      "title": "Staged vLLM0.30 GPU candidate #10022",
+      "url": "https://github.com/marin-community/marin/pull/10022",
+      "kind": "pr"
+    },
+    {
+      "id": "M295",
+      "title": "Staged vLLM0.30 TPU pair #10023",
+      "url": "https://github.com/marin-community/marin/pull/10023",
+      "kind": "pr"
+    },
+    {
+      "id": "M296",
+      "title": "AMD multi-GPU Triton loader race diagnostic",
+      "url": "https://github.com/marin-community/marin/pull/9853#issuecomment-6090140907",
+      "kind": "issue"
+    },
+    {
+      "id": "M297",
+      "title": "Pallas attention fallback proposal for AMD #10014",
+      "url": "https://github.com/marin-community/marin/pull/10014",
+      "kind": "pr"
     }
   ],
   "claimGroups": [
@@ -1697,10 +1793,10 @@ window.MARIN_RESEARCH = {
       "status": "confirmed",
       "facts": {
         "en": [
-          "October9 13:02:53.481UTC same-lineage W&B running at230773, latest evaluation227999: Paloma0.7776986/Uncheatable0.5040121BPB. PTB overlap caution retained; no new main-run profile/context handoff.",
+          "Official October9 GO adopts hero-mfu30-step231k from231464 after200 paired updates. October10 13:01:39UTC running236597; latest fresh eval233999 Paloma0.7760042/Uncheatable0.5037948BPB. Own-checkpoint resume unverified; PTB caution retained.",
           "At 16:03 UTC October 2 the same public run reached step 193768: loss 1.19200, 14.71-second training steps, 14.93-second iterations and MFU 26.69%. Median MFU is 26.70% over 118 samples. Latest returned evaluation: step 191999, Paloma 0.787332 and UncheatableEval 0.510539 BPB. No new software handoff is established.",
           "Launch-provenance PR #9637 merged; its tracked-file hash excludes untracked file contents. Exporter #9584, evaluation checks #9461 and logging prefetch #9600 remain merged repository facts with separate deployment requirements.",
-          "Fixed Hero/mixture and Open Athena hashes unchanged; standup remainsSeptember21. October9 fixed/live samples60 versusOctober8fixed55, newest sample228000. Fixed samples are not final evaluation.",
+          "Fixed Hero/mixture and Open Athena hashes unchanged; standupSeptember21. Live samples61, October9fixed60, October10fixed404; newest sample228000. Live count is not a fixed evaluation artifact.",
           "Tokenizer-prefetch PR #9617 is closed without merge. Its earlier small benchmark is not an adopted data-pipeline change.",
           "Retry-resource/source-capture fixes #9705 and production-user alert enrollment #9700 are merged repository facts, without inspected Hero adoption evidence. A new fixed October 2 completion report preserves 41 sample sets, not a final benchmark.",
           "Step 192000 writing samples completed October 4 18:03UTC; live and October 4 fixed page list 42 sets, while October 2 remains 41. Samples do not establish final capability.",
@@ -1709,7 +1805,8 @@ window.MARIN_RESEARCH = {
           "Regional controller backup tree26e2fa60b7 deployment publicly reported, ordinary backup about9s and boundedfive-minute watch healthy; temporary node pin/guard remain.9842,9805S3directoryfix and9776PTBprompt merged; these are separate deployment/repository scopes.",
           "Public PTB scan reports exact validation text in reconstructed stream209390–209669; public repository file independently matches format/phrase. Full scan not independently reproduced; no clean corrected score or remediation confirmed.",
           "9721 storage probes,9829 convolution,9830 topk,9831 launcher tooling,9694 scoring,9895 writer abort and9900 iterator stop merged; production adoption still requires separate evidence. Quality model artifact publication is reported, not Hero mixture adoption.",
-          "9832/9833/9834 and launch-budget9958 merged. Existing Hero retries retain original bundle; optimization cutover9960 remains open with placeholders."
+          "9832/9833/9834 and launch-budget9958 merged. Existing Hero retries retain original bundle; 9960 merged and official GO confirms optimized Hero adoption, with first eval now logged.",
+          "Paired200-step gate:29.44vs26.32%medianMFU,13.33vs14.91sstep,123.4vs120.8GiBpeak;meanlossdelta−8.5e-5. This confirms the bundle, not individual causal attribution or long-term recovery."
         ]
       },
       "sourceIds": [
@@ -1762,7 +1859,10 @@ window.MARIN_RESEARCH = {
         "M270",
         "M271",
         "M272",
-        "M273"
+        "M273",
+        "M282",
+        "M283",
+        "M284"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1776,12 +1876,12 @@ window.MARIN_RESEARCH = {
           "GB200 pipeline launcher #9662 is experimental and open; the latest full-rack attempt failed during installation before finite updates. Earlier H100 pipeline/resume and dependency proposals remain open.",
           "Hero data registration/content-type, rack placement, symmetric buffers and query-bias evaluation remain unresolved. Closed tokenizer-prefetch #9617 is no longer an active open proposal. OLMo-core kernel comparisons are a benchmark plan, not a measured Hero gain.",
           "Evaluation campaign #9569 and policy-semantics #9407 remain open. MarinSkyRL #799 still requires published and qualified immutable serving packages; merged exporter code alone is not a reproducible release.",
-          "The context discussion favors skipping each source unfinished shuffle window; the 50B-token worst-case statement is a public planning estimate. #9639 and #9481 are closed without merge. #9708 closed without merge and is replaced by a partially merged stack:9829/9830/9831 merged,9832–9834 now merged with adoption unknown,9835/9836 closed without merge; neither its optimization series nor a context switch is confirmed in production.",
+          "The context discussion favors skipping each source unfinished shuffle window; the 50B-token worst-case statement is a public planning estimate. #9639 and #9481 are closed without merge. #9708 closed without merge and is replaced by a partially merged stack:9829/9830/9831 merged,9832–9834 now merged with adoption unknown,9835/9836 closed without merge; optimization bundle adoption is confirmed by official GO; context switch remains unconfirmed.",
           "Storage quarantine #9721 is merged with deployment unknown; UncheatableEval alert #9729 remains open without production adoption evidence; GCE progress/loss enrollment is an open documented gap.",
           "Merged9720/9745 implementation is accepted, but main-run recovery adoption and completed manual backlog submission remain unknown. Open9806 zero-norm safeguard,9808 incomplete allocation history await adoption;9708 has successors with mixed acceptance states.",
           "GPU history9808 now requested-priority only with missing production reader/503;9854 memory bounds merged with deployment unknown;9863 model-identity/port fix remains open.",
-          "Open9888/9890/9689 context stack preserves4K live default;216000 handoff skip52B is estimated. Profile9879 explicitly says main run has no profile and needs matched11-rack trace plus startup/memory guards.",
-          "9960 proposes checkpoint/fork/new child plus200-step multi-rack gate, still open with placeholders. Required d768 validation pass cannot be read. Context stack remains open; evaluation9972 immutable-attempt repair remains planned."
+          "Open9888/9890/9689 context stack preserves4K live default;216000 handoff skip52B is estimated. October8 profile9879 proposal requires matched11-rack trace and startup/memory guards; current separate profile adoption is not established by the optimization GO alone.",
+          "Longer-context phase stack remains open;9990 proposes eval-before-cutover preflight.9986 closed without merge;9813 and Evalchemy209 successor work require pin/execution evidence.10024 logging bound and10022/10023 serving candidates remain open."
         ]
       },
       "sourceIds": [
@@ -1829,7 +1929,14 @@ window.MARIN_RESEARCH = {
         "M257",
         "M269",
         "M278",
-        "M270"
+        "M270",
+        "M286",
+        "M289",
+        "M290",
+        "M291",
+        "M293",
+        "M294",
+        "M295"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1850,7 +1957,8 @@ window.MARIN_RESEARCH = {
           "Bounded compression does not improve loss; exponential-gain benefit fails seed1 replication. FP8 component speed varies by width; the planned simulated-quality test was stopped, without a completed width-scaling pass.",
           "Belay shifted-key tied-query small test2.9517vs2.9521 at190.3vs190.2ms is neutral within noise; interpretation and sparse retrieval proposals do not establish Hero adoption.",
           "Profile one-rack1.5–1.9% timing gains coexist with compile/OOM failures; candidate plugin unpromoted and buffer growth unknown. Quality-scoring heldout values0.8350/0.7153 and legacy comparison0.9205/0.8412 have split/window limits.",
-          "9960 one-rack4K12.70vs13.97s,124GiB peak supports a candidate upgrade, not11-rack deployment.9832 compile-once fill controls match on8GPUs; separate compilations reorder bf16 sums. Snowball9920 transfer arms improve seen-prompt scores with budget/verifier/replication limits."
+          "9960 one-rack4K12.70vs13.97s,124GiB peak supports a candidate upgrade, not11-rack deployment.9832 compile-once fill controls match on8GPUs; separate compilations reorder bf16 sums. Snowball9920 transfer arms improve seen-prompt scores with budget/verifier/replication limits.",
+          "One-rack updated context test speeds each length about10% but leaves drop/long-context costs. WindowedPTB matcher test exposes recall gap, proposed stitching not deployed.8-copy metric conversion2vs418threads/33vs31ms is local. AMD compiled-loader race and staged serving qualification remain separate fromHeroproduction."
         ]
       },
       "sourceIds": [
@@ -1880,7 +1988,13 @@ window.MARIN_RESEARCH = {
         "M265",
         "M269",
         "M274",
-        "M279"
+        "M279",
+        "M285",
+        "M288",
+        "M293",
+        "M296",
+        "M294",
+        "M295"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1897,7 +2011,8 @@ window.MARIN_RESEARCH = {
           "A fused FP8 conversion cost and potential1.9× speed are estimates. Belay hidden-gate and kernel-spill mechanisms are interpretations scoped to the tested models, not Hero explanations.",
           "Belay induction-lookup and low-rank sparse-selection interpretation comes from limited weight/attention probes; activation usage and broader causal claims need tests.",
           "PTB post210k score change is explained by reported near-checkpoint test-text exposure; predicted repeat362280–362578 assumes retained recipe/order and is not observed. Wider evaluation contamination is not inferred from this subset alone.",
-          "Independent frozen9977v2 finalPaloma macro_loss2.035 [80%2.023–2.047], PTB-free2.047. Exact-refit lm_head accounting moves2.100→2.056, not measured gain. Forecast data through227999; no final checkpoint."
+          "Independent frozen9977v2 finalPaloma macro_loss2.035 [80%2.023–2.047], PTB-free2.047. Exact-refit lm_head accounting moves2.100→2.056, not measured gain. Forecast data through227999; no final checkpoint.",
+          "Additional PTB/WikiText anomalies motivate targeted scans and a companion trend curve; they are hypotheses, not independently confirmed additional exposures. Bundle trial cannot assign its speed gain to any one kernel."
         ]
       },
       "sourceIds": [
@@ -1922,7 +2037,9 @@ window.MARIN_RESEARCH = {
         "M254",
         "M275",
         "M276",
-        "M277"
+        "M277",
+        "M287",
+        "M282"
       ],
       "reviewStatus": "reviewed"
     },
@@ -1933,14 +2050,14 @@ window.MARIN_RESEARCH = {
           "October 3 initiating cause remains unconfirmed despite October 4 live recovery evidence. Actual restore checkpoint, recovery time, operator actions and adoption of new recovery/alert code remain unknown.",
           "No inspected evidence confirms the longer-context main-run switch, adoption of newly merged launch-provenance/export/evaluation/logging changes, a full Hero release or a new fixed final evaluation.",
           "The production checkpoint slowdown mechanism, full-rack pipeline behavior, full-size native serving performance and candidate-11 larger-scale benefit remain unknown. Earlier Belay overlapping-loop crashes are not established as fixed.",
-          "October9 Tarsight focused X request failed HTTP401; current social coverage and official identity remain unverified. Supplemental posts point back to the already reviewed expert-parallelism article; no social claim is used as production evidence. Snowball repeatability and evaluation-policy questions remain separate from Hero quality.",
+          "October10 Tarsight focused X request failed HTTP401; current social coverage and official identity remain unverified. Supplemental posts point back to the already reviewed expert-parallelism article; no social claim is used as production evidence. Snowball repeatability and evaluation-policy questions remain separate from Hero quality.",
           "New Belay fusion compilation deadlocks remain unsolved; the public small-model symptoms are not evidence of the cause of Hero restore waiting.",
-          "No inspected evidence confirms the new TPU coordinator fix, Hero context/speed deployment, or the explanation of near-zero Belay routed-share ratios.",
+          "No inspected evidence confirms the new TPU coordinator fix, Hero context deployment, or the explanation of near-zero Belay routed-share ratios.",
           "Candidate13 refreshed seed0 table and reported delta do not match exactly; full-scale replication and adoption remain unknown. Deployed Silo leak fix and sustained teardown verification are not established.",
           "October6 report recovered; October7 andOctober8 fixed reports now readable. Execution of merged preemption/sampling code, optimizer guard deployment and historical allocation completeness remain unknown; current history proposal has no production reader.",
-          "Condition causingOctober6 node taint, child-speed proposal adoption and wrong-model serving fix deployment remain unknown. Controller database backup improvement does not establish model-checkpoint improvement.",
-          "PTB decontamination/clean correction and impact on other sets remain unknown. Main-run adoption of merged kernels/storage/scorer is unconfirmed; PGLE candidate failures require guards, no production profile speed result.",
-          "9960 production handoff and its d768 validation pass unconfirmed.9972 retry-overwrite report lacks independently accessible underlying archives and completed repair; do not extend it toHeroW&B/fixedsamples. PTB clean correction still unknown."
+          "Condition causingOctober6 node taint,  wrong-model serving fix deployment remain unknown. Controller database backup improvement does not establish model-checkpoint improvement.",
+          "PTB decontamination/clean correction and impact on other sets remain unknown. Optimized kernel bundle is adopted; storage/scorer adoption is unconfirmed; PGLE candidate failures require guards, no production profile speed result.",
+          "Own-checkpoint resume on optimizedHero is unverified; latest fresh eval233999 supplies first-eval evidence. Trial/smallvalidation reader shells prevent independent report extraction, though public9960 summary reports d76811420-step validation2.6783vs2.6791. October10fixedsample404. Evalchemy209/9813 deployed repair and clean PTB correction remain unknown."
         ]
       },
       "sourceIds": [
@@ -1983,12 +2100,224 @@ window.MARIN_RESEARCH = {
         "M256",
         "M263",
         "M269",
-        "M278"
+        "M278",
+        "M283",
+        "M282",
+        "M290",
+        "M291"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-10-10-optimized-hero-adopted",
+      "date": "2026-10-10",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero adopted the speed upgrade after a matched main-run trial"
+      },
+      "detail": {
+        "en": "The official status record now confirms that the optimized replacement stays on as Hero after a 200-step comparison on the same training batches. This moves the upgrade from a proposal to main-run adoption, with faster steps in that validation window; it does not certify long-term reliability or explain which individual change delivered the gain. The October 9 17:53 UTC GO names hero-mfu30-step231k on main f2bc69bf6c. It restored durable checkpoint 231464 from the old run, whose coordinator was cancelled after step231664; parent W&B fork row231463. Paired steps231464–231663: median MFU29.44% versus26.32%, step13.33 versus14.91 seconds, iteration13.43 versus15.14 seconds, peak HBM123.4 versus120.8GiB, mean drop7.66e-5 versus7.25e-5. Mean train-loss difference−8.5e-5, largest4.2e-4; routing metrics within0.5%, no restart/retry/error in the trial. The accepted bundle is9829–9834 plus9958 launch memory settings, not every later proposal or a longer-context switch. The GO had not yet exercised first eval or resume; today's public history supplies the first post-handoff eval, while own-checkpoint resume remains unverified. The W&B trial reader returned only a shell, so the trial numbers are attributed to the explicit public status comment rather than independently extracted from that report."
+      },
+      "sourceIds": [
+        "M282",
+        "M284",
+        "M283",
+        "M269",
+        "M270"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-10T13:06:39.789345Z",
+      "concept": {
+        "en": "A matched trial controls the training batches so a change can be evaluated fairly. A successful handoff establishes adoption; recovery and long-term behavior need later evidence."
+      },
+      "exercise": {
+        "en": "What new evidence is still needed after a successful 200-step handoff?"
+      },
+      "productionChange": true,
+      "productionEvidenceIds": [
+        "M282",
+        "M284"
+      ]
+    },
+    {
+      "id": "event-2026-10-10-new-run-and-review",
+      "date": "2026-10-10",
+      "status": "confirmed",
+      "title": {
+        "en": "The replacement Hero is training and has logged its first new evaluation"
+      },
+      "detail": {
+        "en": "The new Hero has continued beyond its handoff and logged a fresh evaluation, providing evidence that training and evaluation both progressed after the upgrade. Today's single step is slower than the trial median, so it should not replace the matched-trial result with a new speed claim. Anonymous W&B observation October10 13:01:39.480UTC (09:01 New York): hero-mfu30-step231k running at236597, train loss1.1550424, training-step16.8774 seconds, full iteration17.0439 seconds, instantaneous MFU23.2574%, median29.2981% over500 samples. Latest returned evaluation233999: Paloma0.7760042 and UncheatableEval0.5037948BPB. Earlier child-history rows are inherited parent history; this233999 row is beyond the231464 handoff. Parent summary ends at231665 with state crashed, but the official record documents deliberate cancellation at231664; do not report the dashboard label as a new unexplained crash. No own-checkpoint resume is confirmed. The prior PTB contamination caution remains. Required8435/8506/8870 and their comments were read;155 updated issue/PR results screened across two pages,71 relevant Marin threads read plus the Evalchemy successor. Latest standup remainsSeptember21; paginated Belay comments after the last review returned none. Hero/mixture fixed-report and Open Athena index/article hashes unchanged. Live samples now61, latest sampled228000; October9 fixed page remains60, today's fixed page404. The extra live sample completed yesterday, not a new final capability result. Tarsight focused X query October9–10 failed upstreamHTTP401; no verified social coverage or absence claim."
+      },
+      "sourceIds": [
+        "M283",
+        "M282",
+        "M284",
+        "M123",
+        "M1",
+        "M45",
+        "M112",
+        "M280",
+        "M252"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-10T13:06:39.789345Z",
+      "concept": {
+        "en": "A forked run can inherit old measurements. Only rows beyond the handoff demonstrate new execution, and one slow step is not a matched speed comparison."
+      },
+      "exercise": {
+        "en": "Which child-history row confirms a new evaluation rather than inherited history?"
+      }
+    },
+    {
+      "id": "event-2026-10-10-long-context-repeat",
+      "date": "2026-10-10",
+      "status": "experimental",
+      "title": {
+        "en": "Longer inputs still cost capacity in a small test of the upgraded code"
+      },
+      "detail": {
+        "en": "A one-rack re-test found that the upgraded code speeds up all tested input lengths, while longer inputs still lose more expert assignments. This helps prepare a future context switch, but the main run has not been confirmed as switching to longer inputs. The October9 re-test restored180000 on one GB200 rack, seed0,100steps, fixed4.19M tokens/update. Pre-stack versus stack:4K13.97→12.70s,8K14.18→12.89s,16K14.41→13.15s, about10.0/10.0/9.6% more tokens per second. Stack drop fractions1.88e-4/8.46e-4/3.14e-3 remain similar to their controls;16K throughput is3.4% below4K on the stack. Peak memory123–124GiB. Attention scale changes with length; the short one-rack optimizer/data conditions retain earlier comparison limits and do not measure long-run full-rack quality. Open9689/9888/9890 continue preparing phase-aware data order; no confirmed8K handoff. New preflight9990 proposes restoring the deploy commit on one rack through an eval and later train steps, because a200-step trial may end before the executable switch; it remains open."
+      },
+      "sourceIds": [
+        "M285",
+        "M261",
+        "M262",
+        "M196",
+        "M286"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-10T13:06:39.789345Z",
+      "concept": {
+        "en": "Faster code need not remove the tradeoff from longer inputs. Tokens per second and assignment drops answer different questions from an analytic utilization score."
+      },
+      "exercise": {
+        "en": "Why can utilization rise while longer inputs still reduce useful throughput?"
+      }
+    },
+    {
+      "id": "event-2026-10-10-windowed-contamination",
+      "date": "2026-10-10",
+      "status": "experimental",
+      "title": {
+        "en": "A public matcher test explains how test text can slip through in a changed format"
+      },
+      "detail": {
+        "en": "A public diagnostic reports that the current contamination matcher misses PTB text rewritten as overlapping word windows, even when the test is added to its index. Reconstructing the original text restores the match in that test; this is a proposed detection improvement, not confirmed cleanup of Hero's training data. Public October9 reports use unchanged13-gram matching,50% overlap threshold and at least2 matched features: the repository's windowed document scores0.000 versus1.000 with raw validation text. Windows3–30 words stay below0.144; stitching reports1.000, about6% matcher-time overhead, and no triggers in241449 paragraphs from5724 ordinary files. This is limited negative-control evidence, not a general false-positive guarantee. The report says Paloma is not indexed and WikiText is excluded. It also flags unexplained earlier PTB changes and WikiText-specific drops versus stable general-Wikipedia scores, proposing further scan windows and a14-subset companion curve. Those additional contamination hypotheses and estimated noise reductions are inference, not confirmed exposures. The known near210k overlap remains separately supported; clean correction and store-wide remediation are unknown. We read the public reports, not independently rerun the matcher."
+      },
+      "sourceIds": [
+        "M287",
+        "M288",
+        "M253",
+        "M254"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-10T13:06:39.789345Z",
+      "concept": {
+        "en": "Text can contain the same information in a format a literal matcher does not recognize. A detection fix must test recall and false positives separately."
+      },
+      "exercise": {
+        "en": "What broader negative controls would you add before adopting the stitching rule?"
+      }
+    },
+    {
+      "id": "event-2026-10-10-retry-repair-successors",
+      "date": "2026-10-10",
+      "status": "planned",
+      "title": {
+        "en": "The evaluation repair moved to successor proposals; closing the draft did not fix deployment"
+      },
+      "detail": {
+        "en": "The draft meant to protect completed evaluation results was closed because its work overlaps an existing Marin proposal. The durable-resume work now has a separate public Evalchemy proposal, so the repair has a clearer path but is not confirmed in deployed evaluation jobs. Marin9986 closed without merge;9813 remains open with per-evaluation success caching and an acknowledged record-to-success crash window. The October9 correction points to Evalchemy209 for restoring durable request state, changed-fingerprint rejection and completion markers before rewriting outputs. Its public status is recorded in the audit; acceptance of upstream code alone would still require a compatible Marin pin and production execution evidence. The public tests are local, and S3/GCS conditional publication was not exercised in the closed draft. The reported overwrite examples concern other evaluation jobs; no inspected source proves that Hero's W&B or dated samples were affected."
+      },
+      "sourceIds": [
+        "M289",
+        "M290",
+        "M291",
+        "M292",
+        "M278"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-10T13:06:39.789345Z",
+      "concept": {
+        "en": "A closed proposal may be superseded rather than completed. Track its successor, dependency pin and actual execution before claiming the bug is fixed."
+      },
+      "exercise": {
+        "en": "Which three states would you check before calling a cross-repository repair deployed?"
+      }
+    },
+    {
+      "id": "event-2026-10-10-bounded-metric-copies",
+      "date": "2026-10-10",
+      "status": "experimental",
+      "title": {
+        "en": "A small logging test reduced thread growth by limiting pending metric copies"
+      },
+      "detail": {
+        "en": "A proposed logging change limits how many GPU-to-host metric copies are started together. A small reproduction reports nearly the same conversion speed with far fewer threads, but there is no public evidence that Hero adopted the fix or that this explains every slowdown. Open10024 follows logging prefetch9600: one GPU converting2000 scalars reports1thread/60ms before prefetch,418threads/31ms with it, and2threads/33ms with an8-copy limit. A one-rack restore had reportedly grown to about1700 callback-named threads per training process within20minutes; a controlled d768 reproduction and revert isolated the prefetch path. This is a measured local mechanism, not a demonstrated root cause of Hero's earlier hangs. Existing profile and checkpoint slowdown questions remain separate; the proposal is open."
+      },
+      "sourceIds": [
+        "M293",
+        "M173"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-10T13:06:39.789345Z",
+      "concept": {
+        "en": "Starting more asynchronous work can consume resources without improving throughput. Bounded work can retain overlap while avoiding a burst of background activity."
+      },
+      "exercise": {
+        "en": "What main-run measurement would show whether the eight-copy limit helps beyond the small reproduction?"
+      }
+    },
+    {
+      "id": "event-2026-10-10-serving-candidate-gates",
+      "date": "2026-10-10",
+      "status": "experimental",
+      "title": {
+        "en": "A new serving candidate remains unaccepted after a slower GPU test and TPU blockers"
+      },
+      "detail": {
+        "en": "The staged serving package passed some small checks, but its Hero GPU policy-update test was slower and its TPU runtime is still unqualified. These findings are release gates for a separate serving/training profile, not a rollback or regression measurement of the newly adopted Hero pretraining run. Open draft10022 reports matched GB200 batch128/context4096 policy updates56.37 versus48.10seconds,17.2% longer, with similar peak allocation. Other small fresh/resume/export gates and Snowball64-case serving comparisons retain their scopes; exact combined-profile Hero/GB200 qualification is incomplete. Draft10023 reports reproducible complete TPU wheels and install/import checks, but a missing auxiliary-output API blocks runtime qualification. GitHub producer launches returnedHTTP422, so required hardware/promotion records do not exist. Source and artifacts remain staged, official promotion pending; merged installation/export code is not an accepted serving release."
+      },
+      "sourceIds": [
+        "M294",
+        "M295"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-10T13:06:39.789345Z",
+      "concept": {
+        "en": "A package can install correctly and still fail performance or hardware qualification. Different runtime profiles need their own comparison and release evidence."
+      },
+      "exercise": {
+        "en": "Why does a clean installation not establish a safe release for the training-and-serving profile?"
+      }
+    },
+    {
+      "id": "event-2026-10-10-amd-loader-race",
+      "date": "2026-10-10",
+      "status": "experimental",
+      "title": {
+        "en": "A multi-GPU AMD test exposed a loader race that single-GPU speed tests missed"
+      },
+      "detail": {
+        "en": "A public reproduction reports that a faster candidate kernel can fail when one process launches it on several AMD GPUs. The reported race in loading its compiled file motivates a fallback proposal; it is not evidence of a new NVIDIA Hero incident. The9853 diagnostic reports first-step failure on8MI350Xs and a one-line add reproduction on8MI350Xs/8MI325Xs, while single-GPU tests passed. Multiple threads miss the cache, one reads/deletes the temporary compiled image and the others cannot load it, then wait at the next collective. Open10014 and10009 propose Pallas-Triton alternatives while the AMD loader fix is awaited;9853/9859 remain unaccepted candidates.9942 changed from its earlier Pallas port back to jax_triton, and its new comment warns that its one-GPU timing cannot validate multi-GPU safety. Local kernel speed is not full-step speed or production reliability."
+      },
+      "sourceIds": [
+        "M296",
+        "M297",
+        "M281"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-10T13:06:39.789345Z",
+      "concept": {
+        "en": "Concurrency creates failure modes a one-device benchmark cannot exercise. Test the intended launch topology before generalizing a component speed result."
+      },
+      "exercise": {
+        "en": "Which multi-device control would distinguish a kernel calculation bug from a compiled-file loading race?"
+      }
+    },
     {
       "id": "event-2026-10-09-training-and-samples",
       "date": "2026-10-09",
