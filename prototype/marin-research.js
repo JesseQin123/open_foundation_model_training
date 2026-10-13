@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-10-12",
+  "snapshot": "2026-10-13",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -1924,6 +1924,102 @@ window.MARIN_RESEARCH = {
       "kind": "pr",
       "title": "AMD target scope and closure · PR #9905",
       "url": "https://github.com/marin-community/marin/pull/9905#issuecomment-6111543590"
+    },
+    {
+      "id": "M321",
+      "kind": "pr",
+      "title": "[inference] Refresh Snowball GPU scores after rounding fixes · #10069",
+      "url": "https://github.com/marin-community/marin/pull/10069"
+    },
+    {
+      "id": "M322",
+      "kind": "pr",
+      "title": "[datakit] Release the shared Zephyr pool after its last stage · #10067",
+      "url": "https://github.com/marin-community/marin/pull/10067"
+    },
+    {
+      "id": "M323",
+      "kind": "issue",
+      "title": "[canary-datakit-smoke] Store workers remain unplaced at timeout · #10064",
+      "url": "https://github.com/marin-community/marin/issues/10064"
+    },
+    {
+      "id": "M324",
+      "kind": "pr",
+      "title": "[iris] Keep preferred constraints optional during demand routing · #10065",
+      "url": "https://github.com/marin-community/marin/pull/10065"
+    },
+    {
+      "id": "M325",
+      "kind": "pr",
+      "title": "[zephyr] Cap native thread pools at the worker's and task's CPU share · #10074",
+      "url": "https://github.com/marin-community/marin/pull/10074"
+    },
+    {
+      "id": "M326",
+      "kind": "pr",
+      "title": "[inference] Align GPU refreshes with releases built from main · #9746",
+      "url": "https://github.com/marin-community/marin/pull/9746"
+    },
+    {
+      "id": "M327",
+      "kind": "pr",
+      "title": "[datakit] Aggregate large-cluster count files in one group_by · #10073",
+      "url": "https://github.com/marin-community/marin/pull/10073"
+    },
+    {
+      "id": "M328",
+      "kind": "pr",
+      "title": "[dependencies] adopt SkyRL tracker finalization · #10062",
+      "url": "https://github.com/marin-community/marin/pull/10062"
+    },
+    {
+      "id": "M329",
+      "kind": "report",
+      "title": "Qualified vLLM GPU release manifest · October 12 sources",
+      "url": "https://github.com/marin-community/vllm/releases/download/marin-vllm-gpu-20261012-3a054c458ca8/marin-vllm-gpu-manifest.json"
+    },
+    {
+      "id": "M330",
+      "kind": "report",
+      "title": "Published qualified vLLM GPU release",
+      "url": "https://github.com/marin-community/vllm/releases/tag/marin-vllm-gpu-20261012-3a054c458ca8"
+    },
+    {
+      "id": "M331",
+      "kind": "web",
+      "title": "Official GPU build and physical qualification · run 38314409260",
+      "url": "https://github.com/marin-community/vllm/actions/runs/38314409260"
+    },
+    {
+      "id": "M332",
+      "kind": "pr",
+      "title": "MarinSkyRL released GPU package reconciliation · #944",
+      "url": "https://github.com/marin-community/MarinSkyRL/pull/944"
+    },
+    {
+      "id": "M333",
+      "kind": "pr",
+      "title": "Controlled native Snowball GPU rounding comparison",
+      "url": "https://github.com/marin-community/marin/pull/9400#issuecomment-6133449648"
+    },
+    {
+      "id": "M334",
+      "kind": "pr",
+      "title": "Refreshed Snowball TPU candidate and unallocated causal comparisons",
+      "url": "https://github.com/marin-community/marin/pull/9400#issuecomment-6134779466"
+    },
+    {
+      "id": "M335",
+      "kind": "pr",
+      "title": "Temporary TPU pin superseded by refreshed #9400",
+      "url": "https://github.com/marin-community/marin/pull/9403#issuecomment-6128801835"
+    },
+    {
+      "id": "M336",
+      "kind": "issue",
+      "title": "Belay intake: momentum warmup suggestion",
+      "url": "https://github.com/marin-community/marin/issues/9451#issuecomment-6139164012"
     }
   ],
   "claimGroups": [
@@ -1931,10 +2027,10 @@ window.MARIN_RESEARCH = {
       "status": "confirmed",
       "facts": {
         "en": [
-          "October 12 13:00:38 UTC optimized Hero is running at step 248998; latest fresh evaluation step 245999: Paloma 0.7709853 and UncheatableEval 0.5015119 BPB. October 9 adoption remains confirmed; no further main-run change or own-checkpoint restore evidenced.",
+          "October 13 13:55:47 UTC optimized Hero running255410; latest fresh evaluation254999 Paloma0.7684392/Uncheatable0.5001357 BPB. October9 adoption remains the last confirmed main-run change; own-checkpoint restore unverified.",
           "At 16:03 UTC October 2 the same public run reached step 193768: loss 1.19200, 14.71-second training steps, 14.93-second iterations and MFU 26.69%. Median MFU is 26.70% over 118 samples. Latest returned evaluation: step 191999, Paloma 0.787332 and UncheatableEval 0.510539 BPB. No new software handoff is established.",
           "Launch-provenance PR #9637 merged; its tracked-file hash excludes untracked file contents. Exporter #9584, evaluation checks #9461 and logging prefetch #9600 remain merged repository facts with separate deployment requirements.",
-          "Fixed Hero/mixture and Open Athena hashes unchanged; latest standup September 21. Live samples 63, including newly completed older steps 156000/150000; highest sampled step remains 228000. October 11 fixed page is now readable with 62 sets; October 12 fixed page unavailable. No new fixed final capability evaluation.",
+          "Fixed Hero/mixture and Open Athena hashes unchanged; standupSeptember21. Live samples63 unchanged, highest228000 completedOctober9. October12/13 fixed sample pages unavailable; no new final fixed evaluation.",
           "Tokenizer-prefetch PR #9617 is closed without merge. Its earlier small benchmark is not an adopted data-pipeline change.",
           "Retry-resource/source-capture fixes #9705 and production-user alert enrollment #9700 are merged repository facts, without inspected Hero adoption evidence. A new fixed October 2 completion report preserves 41 sample sets, not a final benchmark.",
           "Step 192000 writing samples completed October 4 18:03UTC; live and October 4 fixed page list 42 sets, while October 2 remains 41. Samples do not establish final capability.",
@@ -1945,8 +2041,9 @@ window.MARIN_RESEARCH = {
           "9721 storage probes,9829 convolution,9830 topk,9831 launcher tooling,9694 scoring,9895 writer abort and9900 iterator stop merged; production adoption still requires separate evidence. Quality model artifact publication is reported, not Hero mixture adoption.",
           "9832/9833/9834 and launch-budget9958 merged. Existing Hero retries retain original bundle; 9960 merged and official GO confirms optimized Hero adoption, with first eval now logged.",
           "Paired200-step gate:29.44vs26.32%medianMFU,13.33vs14.91sstep,123.4vs120.8GiBpeak;meanlossdelta−8.5e-5. This confirms the bundle, not individual causal attribution or long-term recovery.",
-          "9701 shared export mechanics merged; CPU tests do not establish full-size accelerator export/live upload. TPU candidate producer38083919768 succeeded; published candidate remains unqualified.",
-          "Snowball serving-layout PR #9401 merged; no inspected live serving/Hero deployment. AMD #9904/#9905 closed without merge for target-hardware scope, not benchmark invalidation."
+          "9701 shared export mechanics merged, full-size export/live upload unverified. GPU release 3a054c458ca8 publicly published with official successful workflow and fixed manifest; application adoption PR10022/MSRL944 open. TPU candidate remains unqualified.",
+          "Snowball serving-layout PR #9401 merged; no inspected live serving/Hero deployment. AMD #9904/#9905 closed without merge for target-hardware scope, not benchmark invalidation.",
+          "Native GPU Snowball reference10069 merged after a controlled rounding comparison; model quality not measured. Alert guidance10049, scheduler preference10065 and count aggregation10073 are merged repository facts, with deployed remediation/adoption unverified."
         ]
       },
       "sourceIds": [
@@ -2011,7 +2108,15 @@ window.MARIN_RESEARCH = {
         "M316",
         "M317",
         "M319",
-        "M320"
+        "M320",
+        "M329",
+        "M330",
+        "M331",
+        "M321",
+        "M333",
+        "M310",
+        "M324",
+        "M327"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2032,7 +2137,8 @@ window.MARIN_RESEARCH = {
           "Open9888/9890/9689 context stack preserves4K live default;216000 handoff skip52B is estimated. October8 profile9879 proposal requires matched11-rack trace and startup/memory guards; current separate profile adoption is not established by the optimization GO alone.",
           "Longer-context phase stack remains open;9990 proposes eval-before-cutover preflight.9986 closed without merge;9813 and Evalchemy209 successor work require pin/execution evidence.10024 logging bound and10022/10023 serving candidates remain open.",
           "Open10033 endpoint relay requires CoreWeave task-token/child execution validation;10037/10038 competing queue/startup approaches await final choice.9701 is merged with full-size execution unknown.209/9813 still open; no sealed-result repair deployment.",
-          "Open #10049 documents the critical-alert retry gap tracked in #10048; deployed remediation is unverified. Snowball #9403/#9400 remain dependent on fork #26/#27 acceptance, a landed pin and focused TPU requalification; #7556 is superseded. Closed AMD #9904/#9905 are not active adoption proposals."
+          "Alert guidance10049 merged, while critical retry gap10048 remains open and deployed repair unverified. Temporary TPU pin9403 closed unmerged; refreshed9400 requires backend28/29/27 acceptance, a final maintained-main pin and all six checks. AMD9904/9905 remain closed unmerged.",
+          "10022 adopts the published qualified GPU release but remains draft; MSRL944 consumer reconciliation open. TPU10023 draft has missing AuxOutput API and unexecuted physical gate.10067 data-pipeline worker release/wait continuation and10074 thread caps open; candidate results are not scheduled-pipeline or Hero adoption."
         ]
       },
       "sourceIds": [
@@ -2095,7 +2201,11 @@ window.MARIN_RESEARCH = {
         "M309",
         "M310",
         "M314",
-        "M315"
+        "M315",
+        "M332",
+        "M322",
+        "M325",
+        "M335"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2119,7 +2229,8 @@ window.MARIN_RESEARCH = {
           "9960 one-rack4K12.70vs13.97s,124GiB peak supports a candidate upgrade, not11-rack deployment.9832 compile-once fill controls match on8GPUs; separate compilations reorder bf16 sums. Snowball9920 transfer arms improve seen-prompt scores with budget/verifier/replication limits.",
           "One-rack updated context test speeds each length about10% but leaves drop/long-context costs. WindowedPTB matcher test exposes recall gap, proposed stitching not deployed.8-copy metric conversion2vs418threads/33vs31ms is local. AMD compiled-loader race and staged serving qualification remain separate fromHeroproduction.",
           "Belay base16 drops gates: d512 small loss benefit outweighed full-shape one-rack19.42vs17.95s cost; noHero adoption/full-scale quality. GPU candidate policy-onlyTE2.19 two-update48.68s is not full combined-profile qualification.",
-          "Separate Datakit tests #10047/#10059 timed out while jobs were active; tier-3 skipped performance reporting. Public reports expose worker-capacity constraints, not a completed performance benchmark, sole root cause or Hero mixture adoption. Snowball earlier six-layout tests qualify the temporary head e9904b0633 only."
+          "Separate Datakit tests #10047/#10059 timed out while jobs were active; tier-3 skipped performance reporting. Public reports expose worker-capacity constraints, not a completed performance benchmark, sole root cause or Hero mixture adoption. Snowball earlier six-layout tests qualify the temporary head e9904b0633 only.",
+          "10067 fixed-code canaries reportedly completed56min/5h47m; not a matched speed comparison or adopted mixture.10074 two-CPU proxy assignment68.8→11.8s with equal hashes, production-stage gain unmeasured. Refreshed native TPU candidate9400 fails saved scores; serving reanalysis fails one current-native4K bound."
         ]
       },
       "sourceIds": [
@@ -2160,7 +2271,11 @@ window.MARIN_RESEARCH = {
         "M304",
         "M311",
         "M312",
-        "M315"
+        "M315",
+        "M322",
+        "M325",
+        "M334",
+        "M323"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2180,7 +2295,8 @@ window.MARIN_RESEARCH = {
           "Independent frozen9977v2 finalPaloma macro_loss2.035 [80%2.023–2.047], PTB-free2.047. Exact-refit lm_head accounting moves2.100→2.056, not measured gain. Forecast data through227999; no final checkpoint.",
           "Additional PTB/WikiText anomalies motivate targeted scans and a companion trend curve; they are hypotheses, not independently confirmed additional exposures. Bundle trial cannot assign its speed gain to any one kernel.",
           "Gate cost does not by itself establish net quality benefit from removal; a published package and cancelled hardware workflow do not predict a passing release.",
-          "Alert silence and test-wait timeouts need interpretation alongside execution state. This is a monitoring lesson from separate reports, not a causal explanation of Hero training or proof that all timeouts share a cause."
+          "Alert silence and test-wait timeouts need interpretation alongside execution state. This is a monitoring lesson from separate reports, not a causal explanation of Hero training or proof that all timeouts share a cause.",
+          "Capacity, process-thread competition and wait policy may interact, but separate reports do not isolate one cause for all canary timeouts. GPU rounding explanation is supported by its controlled comparison and cannot substitute for an unexecuted TPU causal test."
         ]
       },
       "sourceIds": [
@@ -2212,7 +2328,11 @@ window.MARIN_RESEARCH = {
         "M306",
         "M309",
         "M311",
-        "M312"
+        "M312",
+        "M322",
+        "M325",
+        "M333",
+        "M334"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2230,9 +2350,10 @@ window.MARIN_RESEARCH = {
           "October6 report recovered; October7 andOctober8 fixed reports now readable. Execution of merged preemption/sampling code, optimizer guard deployment and historical allocation completeness remain unknown; current history proposal has no production reader.",
           "Condition causingOctober6 node taint,  wrong-model serving fix deployment remain unknown. Controller database backup improvement does not establish model-checkpoint improvement.",
           "PTB decontamination/clean correction and impact on other sets remain unknown. Optimized kernel bundle is adopted; storage/scorer adoption is unconfirmed; PGLE candidate failures require guards, no production profile speed result.",
-          "Own-checkpoint resume on optimizedHero is unverified; latest fresh eval245999 supplies first-eval evidence. Trial/smallvalidation reader shells prevent independent report extraction, though public9960 summary reports d76811420-step validation2.6783vs2.6791. October 10 fixed sample unavailable; October 11 now readable; October 12 fixed sample unavailable. Evalchemy209/9813 deployed repair and clean PTB correction remain unknown.",
+          "Own-checkpoint resume on optimizedHero is unverified; latest fresh eval254999 supplies first-eval evidence. Trial/smallvalidation reader shells prevent independent report extraction, though public9960 summary reports d76811420-step validation2.6783vs2.6791. October 10 fixed sample unavailable; October 11 now readable; October 12/13 fixed sample unavailable. Evalchemy209/9813 deployed repair and clean PTB correction remain unknown.",
           "Own-checkpointHero restore remains unverified. TPU gate cancelled without placement; auxiliary API/performance qualification and release remain pending. Existing partial mirror cleanup and10039 deployment unknown.",
-          "Public #10048 reports a critical-alert gap during a September 30 retry; initiating failure cause and deployed repair unknown. #10047 exact pending-worker verdict unavailable; #10059 memory constraint is visible but not isolated as the sole timeout cause. Own-checkpoint restoration of optimized Hero remains unverified."
+          "Public #10048 reports a critical-alert gap during a September 30 retry; initiating failure cause and deployed repair unknown. #10047 exact pending-worker verdict unavailable; #10059 memory constraint is visible but not isolated as the sole timeout cause. Own-checkpoint restoration of optimized Hero remains unverified.",
+          "Native TPU full-model discrepancy and current-reference serving4K mismatch unresolved; causal jobs never allocated. Final revised backend qualification, GPU consumer adoption, performance equivalence, optimized-Hero own-checkpoint restore and critical-alert repair remain unverified."
         ]
       },
       "sourceIds": [
@@ -2286,12 +2407,193 @@ window.MARIN_RESEARCH = {
         "M309",
         "M311",
         "M312",
-        "M318"
+        "M318",
+        "M334",
+        "M295",
+        "M323",
+        "M294"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-10-13-training-and-review",
+      "date": "2026-10-13",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero keeps training; no further change to the main run is confirmed"
+      },
+      "detail": {
+        "en": "Hero continues on the upgrade adopted October 9 and has recorded later evaluations. Today's public review does not establish another main-run configuration change or a successful restore from this run's own saved state, so continued execution is not a new rollout. Anonymous W&B observed October 13 13:55:47.492 UTC (09:55 New York): hero-mfu30-step231k running at step 255410, compared with 248998 at yesterday's observation; the observations are not exactly 24 hours apart. Train loss 1.1594416, training step 13.4980 seconds, full iteration 13.8747 seconds, MFU 29.0803%, median 29.0694% across 500 samples. MFU is the share of theoretical compute used by training; these values are not a new matched speed test. Latest returned evaluation step 254999: Paloma 0.7684392 and UncheatableEval 0.5001357 bits per byte, measurements of text prediction rather than a final capability verdict. Inherited parent history and the previously reported PTB contamination caution remain separate. Required launch, status and incident threads #8435/#8506/#8870 have no new official comment after the previous review. All 104 updated search results across two pages were screened; 166 related topics read across launcher, checkpoint/restore, mixtures, communication, kernels, memory, long context, evaluation and handoff. Latest standup remains September 21. Paginated Belay comments add an approved intake suggestion to test momentum warmup, not a measured result or Hero adoption. Fixed Hero/mixture and Open Athena hashes are unchanged; live completion sets remain 63 with highest sampled step 228000 completed October 9. October 12 and 13 fixed sample pages return 404, which is an access limit rather than proof of no work. A focused Tarsight X query returned zero rows for candidate author IDs; account identity and complete coverage are unverified, and no broader search or inactivity claim follows."
+      },
+      "sourceIds": [
+        "M283",
+        "M282",
+        "M2",
+        "M3",
+        "M45",
+        "M112",
+        "M252",
+        "M137",
+        "M336"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-13T14:02:15.188896+00:00",
+      "concept": {
+        "en": "Training continuity, a new configuration and successful recovery are different facts. More steps do not by themselves verify a restart."
+      },
+      "exercise": {
+        "en": "What additional record would convince you that this run resumed from its own saved training state?"
+      }
+    },
+    {
+      "id": "event-2026-10-13-qualified-gpu-release",
+      "date": "2026-10-13",
+      "status": "confirmed",
+      "title": {
+        "en": "A GPU serving release is published and tested; adoption is still awaiting review"
+      },
+      "detail": {
+        "en": "Marin's GPU serving software now has a published package release with recorded hardware checks. That makes the candidate reproducibly identifiable, but the PRs that would adopt it remain open; this does not establish a new deployment to the main Hero run. The official vLLM workflow 38314409260, attempt 2, is completed/success at source 3a054c458ca8a32609ba2bc578c4d9b93eabb395. GitHub reports release publication October 13 03:42:30 UTC. Its fixed manifest was independently downloaded and matches SHA256 e8a9e8e11781e0c1021783c5b559b9de4f82d0b90ca496de48b208d81baeeb82, recording x86_64/aarch64 packages, Torch 2.14.1+cu132 and CUDA 13.2.2. Public consumer PR #10022 reports physical H100/GB200 checks and fresh 64-case exported-Snowball compatibility on Levanter 8 H100 and vLLM 8/16 H100, with maximum absolute probability differences 0.056754/0.064367/0.055632 within unchanged bounds. These are reported application checks, not an independent rerun. Standalone Transformers 5.18.0 and combined training profile 5.12.1 have distinct scopes. MarinSkyRL #944 remains open and preserves earlier four-case training/restore/export evidence with applicability limits. The earlier 56.37 versus 48.10 seconds native-policy-update comparison is a multi-dependency profile difference; its cause and performance equivalence remain unproved. Optional Rust executable equivalence is unproved and normal paths disable it. PR #9746's release-first instructions merged October 12 16:59:59 UTC with production pins unchanged. TPU adoption #10023 remains draft, missing the AuxOutput API and a physical runtime gate; GPU qualification does not qualify TPU or the running Hero's own recovery."
+      },
+      "sourceIds": [
+        "M294",
+        "M329",
+        "M330",
+        "M331",
+        "M332",
+        "M326",
+        "M295"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-13T14:02:15.188896+00:00",
+      "concept": {
+        "en": "A fixed release manifest is a receipt for exactly which software was built. A receipt and passing tests still need an explicit adoption record before they describe a running service."
+      },
+      "exercise": {
+        "en": "Which separate evidence would turn a published package into a confirmed main-run deployment?"
+      }
+    },
+    {
+      "id": "event-2026-10-13-snowball-gpu-rounding",
+      "date": "2026-10-13",
+      "status": "confirmed",
+      "title": {
+        "en": "An older Snowball GPU check now uses a reference that matches intentional rounding"
+      },
+      "detail": {
+        "en": "An accepted correction resolves a failing numerical check for the older Snowball model on GPUs. Controlled tests traced the mismatch to intentional rounding boundaries added after the saved reference; this concerns test correctness, not a measured improvement in model quality or a Hero deployment. PR #10069 merged October 12 22:32:48 UTC and refreshes native GPU scores for the June step-42150 checkpoint with source/input/runtime provenance. A public controlled comparison on the same eight H100s and runtime removed only four compiler barriers and restored all 64 old score sets exactly. With those barriers, three cases chose a different next token. Independent higher-precision formula checks and inference-versus-training regressions passed. All 64 cases matched the corrected reference on two H100 nodes at bce2d5c331 and in integration 1c72f85f22. These public reported controls support the GPU rounding explanation; private job artifacts were not independently reproduced. Exported-model bounds, prompts, checkpoint and native TPU reference remain unchanged. Model quality was not measured, and this GPU explanation cannot be transferred to the unresolved full-model TPU mismatch without its own control."
+      },
+      "sourceIds": [
+        "M321",
+        "M333",
+        "M315"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-13T14:02:15.188896+00:00",
+      "concept": {
+        "en": "A saved numerical reference can become stale when intentional arithmetic changes. Changing it responsibly needs a controlled explanation, not simply making a failing test pass."
+      },
+      "exercise": {
+        "en": "Why does removing only the rounding changes on the same hardware give stronger evidence than comparing two unrelated runs?"
+      }
+    },
+    {
+      "id": "event-2026-10-13-snowball-tpu-qualification",
+      "date": "2026-10-13",
+      "status": "unknown",
+      "title": {
+        "en": "The refreshed Snowball TPU candidate still has an unresolved numerical mismatch"
+      },
+      "detail": {
+        "en": "Tests of the older Snowball model on TPUs produced mixed results and have not completed release qualification. The missing controlled comparison matters: a GPU explanation is available, but it does not establish why this separate TPU test disagrees with its reference. Public #9400 comment reports candidate native TPU execution of all 64 cases at 4e9a9782, with 64 exact score-set mismatches and three changed greedy tokens. A separate TPU serving candidate at 5db9dc48 passed five preflight checks and all 64 prompts against the existing reference, on attempt 2 after two worker losses. Reanalysis of those same saved serving observations against current native candidate scores fails one unchanged 4K-context bound: 0.114590 versus 0.10; that is a reanalysis, not a new serving run or justification to rewrite the reference. Two causal-comparison jobs never obtained a worker and were canceled at their queue limits around October 13 00:43 and 01:43 UTC, producing no numerical evidence. Small CPU higher-precision checks passed, but they do not isolate the full-model TPU cause. Private worker-loss incident logs were not independently inspected. Temporary-pin PR #9403 is closed without merge and superseded by refreshed draft #9400. Backend #28/#29/#27 still need acceptance, one maintained-main pin and all six hardware checks passing at a final Marin revision. September's successful six-layout check remains historical and does not qualify refreshed sources or Hero production."
+      },
+      "sourceIds": [
+        "M315",
+        "M334",
+        "M335"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-13T14:02:15.188896+00:00",
+      "concept": {
+        "en": "A test that never starts cannot explain a numerical mismatch. A successful test on one device is not automatically evidence about another device."
+      },
+      "exercise": {
+        "en": "What is still missing before the team can safely change the native TPU reference?"
+      }
+    },
+    {
+      "id": "event-2026-10-13-datakit-capacity-recovery",
+      "date": "2026-10-13",
+      "status": "planned",
+      "title": {
+        "en": "A proposed data-pipeline fix finishes separate tests, while capacity remains a constraint"
+      },
+      "detail": {
+        "en": "A proposed change releases idle data-processing workers and asks for smaller store workers, helping separate tests finish. It is still an open PR, so these results show candidate behavior rather than adoption by the scheduled pipeline or main Hero training. PR #10067 reports a change from 4 CPU/32GiB RAM/64GiB disk store workers to 2 CPU/8GiB/16GiB, with per-shard memory below 2GiB and spill below 1GiB. The reported old request got one of 106 workers; the smaller request got 12 workers in one minute. Separate fixed-code tier-1 and tier-3 runs reportedly completed in 56 minutes and 5h47m; the latter is longer than the 20700-second wait budget. Only 275 of 512 shared workers were available, and tokenization took 2h37m versus October 5's 37 minutes on a different capacity situation, not a matched performance experiment. The proposal releases the shared pool after its last stage, continues a timed-out wait in a second CI job and bounds the overall Iris job at 36000 seconds. New incident #10064 reports another October 12 small test with an explicit insufficient-memory verdict: need 32GB, available 1.1GB, while the root job remained active with zero task failures. At 17:57 UTC, 102 workers were pending and four building. Merged scheduler PR #10065 keeps preferred placement constraints optional; accepted code alone does not establish deployment or that it fixed these incidents. Candidate success and visible memory limits do not isolate every capacity or timeout cause."
+      },
+      "sourceIds": [
+        "M322",
+        "M323",
+        "M324",
+        "M311",
+        "M312"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-13T14:02:15.188896+00:00",
+      "concept": {
+        "en": "Idle workers can still reserve machines. Finishing one stage should free resources for later stages; a test also needs a waiting window that matches its workload."
+      },
+      "exercise": {
+        "en": "Why might freeing idle workers help more than merely increasing the timeout?"
+      }
+    },
+    {
+      "id": "event-2026-10-13-accepted-alert-guidance",
+      "date": "2026-10-13",
+      "status": "confirmed",
+      "title": {
+        "en": "Alert guidance is accepted, but the reported retry blind spot is not shown repaired"
+      },
+      "detail": {
+        "en": "Marin accepted clearer instructions for interpreting missing training telemetry and retries. This helps operators read the dashboard correctly, but the accepted change is documentation and does not demonstrate that the alert blind spot itself has been fixed. PR #10049 merged October 13 01:18:18 UTC. It explains that older phase samples in a 24-hour window can still classify an active silent run when a 30-minute telemetry query is empty, and that critical alerts group by run while health warnings group by alert/cluster. The reported retry-initialization coverage gap #10048 remains open; GCE enrollment and the older failure's initiating cause remain separate unresolved questions. No deployed critical-alert repair is confirmed."
+      },
+      "sourceIds": [
+        "M310",
+        "M309"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-13T14:02:15.188896+00:00",
+      "concept": {
+        "en": "Better instructions and better detection are different changes. Documentation can explain a blind spot without removing it."
+      },
+      "exercise": {
+        "en": "What would prove that the alert now fires during a failed attempt and its initializing replacement?"
+      }
+    },
+    {
+      "id": "event-2026-10-13-cpu-thread-budget",
+      "date": "2026-10-13",
+      "status": "experimental",
+      "title": {
+        "en": "Small tests show that too many CPU threads can make shared work slower"
+      },
+      "detail": {
+        "en": "A proposed worker change limits helper libraries to the CPU share assigned to each task. In small proxy tests, that reduced competition between processes, but the actual production-stage gain remains unmeasured and the PR is still open. PR #10074 reports eight fresh two-CPU-shaped processes on a 16-CPU machine, three repeats: the assignment proxy's median elapsed time fell from 68.8 to 11.8 seconds with equal result hashes. Embedding changed 21.7 to 21.0, reading 7.7 to 7.65, and shuffle 8.6 to 7.9 seconds. This is a specific shared-process setup, not a full pipeline or Hero speedup. A lone process on an idle machine became slower when restricted to two threads. The proposed caps are applied before native libraries initialize; the CoreWeave CPU-request-only shape is inferred from backend code rather than measured on a cluster. Quality-scoring XLA threads and other listed paths are outside the scope. A local pipeline produced identical bytes with peak-memory ratios 1.004/1.001, not proof of a production memory reduction."
+      },
+      "sourceIds": [
+        "M325"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-13T14:02:15.188896+00:00",
+      "concept": {
+        "en": "More threads help only when useful CPU capacity is available. Too many competing threads can spend time switching instead of finishing work."
+      },
+      "exercise": {
+        "en": "Why would a two-thread limit help eight competing processes but slow one process on an otherwise idle machine?"
+      }
+    },
     {
       "id": "event-2026-10-12-training-and-review",
       "date": "2026-10-12",
