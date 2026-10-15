@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-10-14",
+  "snapshot": "2026-10-15",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -2080,6 +2080,48 @@ window.MARIN_RESEARCH = {
       "kind": "report",
       "title": "Hero completed samples · fixed October13",
       "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.13/index.html"
+    },
+    {
+      "id": "M347",
+      "kind": "pr",
+      "title": "[grug] Balance attention work across batch shards in hero train step · #10121",
+      "url": "https://github.com/marin-community/marin/pull/10121"
+    },
+    {
+      "id": "M348",
+      "kind": "pr",
+      "title": "[levanter] Vectorize FA4 SM100 segment mask and zero accumulators in prep · #10122",
+      "url": "https://github.com/marin-community/marin/pull/10122"
+    },
+    {
+      "id": "M349",
+      "kind": "pr",
+      "title": "[grug] Flatten MLP tokens locally under context parallelism · #10145",
+      "url": "https://github.com/marin-community/marin/pull/10145"
+    },
+    {
+      "id": "M350",
+      "kind": "issue",
+      "title": "Belay Ckpt1 research baseline and provisional scaling fit",
+      "url": "https://github.com/marin-community/marin/issues/9451#issuecomment-6183987780"
+    },
+    {
+      "id": "M351",
+      "kind": "issue",
+      "title": "Filtered Stack-v3 evaluation-copy scan and unexplained drops",
+      "url": "https://github.com/marin-community/marin/issues/9874#issuecomment-6182919312"
+    },
+    {
+      "id": "M352",
+      "kind": "report",
+      "title": "Hero sample sets · fixed October14",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.14/index.html"
+    },
+    {
+      "id": "M353",
+      "kind": "web",
+      "title": "There is no posttraining data commons · October15",
+      "url": "https://openathena.ai/blog/there-is-no-posttraining-data-commons/"
     }
   ],
   "claimGroups": [
@@ -2087,10 +2129,10 @@ window.MARIN_RESEARCH = {
       "status": "confirmed",
       "facts": {
         "en": [
-          "October14 official GO confirms16K Hero adoption from permanent parent257553 atmain eadf76a1bc;704-rank restore and agreed gates passed. Fresh child at13:05:54UTC running260306. Eval now16K-packed, not directly comparable to parent4K.",
+          "October15 13:00:26UTC16K child running266431;latest16K evaluation263999Paloma0.7596867/Uncheatable0.4927688BPB. October14GO remains last confirmed main-run change;child own-checkpoint restart unverified.",
           "At 16:03 UTC October 2 the same public run reached step 193768: loss 1.19200, 14.71-second training steps, 14.93-second iterations and MFU 26.69%. Median MFU is 26.70% over 118 samples. Latest returned evaluation: step 191999, Paloma 0.787332 and UncheatableEval 0.510539 BPB. No new software handoff is established.",
           "Launch-provenance PR #9637 merged; its tracked-file hash excludes untracked file contents. Exporter #9584, evaluation checks #9461 and logging prefetch #9600 remain merged repository facts with separate deployment requirements.",
-          "Fixed Hero/mixture and Open Athena hashes unchanged; standupSeptember21. Live/October13 fixed samples65 sets, highest240000 completedOctober13. October14 fixed page unavailable; no final fixed capability artifact.",
+          "Hero/mixture and OpenAthena expert-parallel report hashes unchanged;Athena index addsOctober15data-commons explainer,not production evidence. StandupSeptember21. Live/October14fixed samples70,highest258000 child completedOctober14;October15fixed unavailable.",
           "Tokenizer-prefetch PR #9617 is closed without merge. Its earlier small benchmark is not an adopted data-pipeline change.",
           "Retry-resource/source-capture fixes #9705 and production-user alert enrollment #9700 are merged repository facts, without inspected Hero adoption evidence. A new fixed October 2 completion report preserves 41 sample sets, not a final benchmark.",
           "Step 192000 writing samples completed October 4 18:03UTC; live and October 4 fixed page list 42 sets, while October 2 remains 41. Samples do not establish final capability.",
@@ -2104,7 +2146,8 @@ window.MARIN_RESEARCH = {
           "9701 shared export mechanics merged, full-size export/live upload unverified. GPU release 3a054c458ca8 publicly published with official successful workflow and fixed manifest; application adoption PR10022/MSRL944 open. TPU candidate remains unqualified.",
           "Snowball serving-layout PR #9401 merged; no inspected live serving/Hero deployment. AMD #9904/#9905 closed without merge for target-hardware scope, not benchmark invalidation.",
           "Native GPU Snowball reference10069 merged after a controlled rounding comparison; model quality not measured. Alert guidance10049, scheduler preference10065 and count aggregation10073 are merged repository facts, with deployed remediation/adoption unverified.",
-          "Context/data controls9888/9890/9689 and deploy10101 merged with16K adoption separately confirmed by official GO. Logging bound10024 and readiness10038 merged repository facts; independent deployed-performance/recovered-eval outcomes unverified.10037 closed unmerged."
+          "Context/data controls9888/9890/9689 and deploy10101 merged with16K adoption separately confirmed by official GO. Logging bound10024 and readiness10038 merged repository facts; independent deployed-performance/recovered-eval outcomes unverified.10037 closed unmerged.",
+          "10039 cache-marker exclusion merged;existing partial mirror cleanup and deployed outcomes unverified. No new main-run deployment from side experiments or accepted cache code."
         ]
       },
       "sourceIds": [
@@ -2183,7 +2226,10 @@ window.MARIN_RESEARCH = {
         "M337",
         "M293",
         "M303",
-        "M346"
+        "M346",
+        "M308",
+        "M352",
+        "M353"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2201,7 +2247,8 @@ window.MARIN_RESEARCH = {
           "Open10033 endpoint relay requires CoreWeave task-token/child execution validation;10038 merged;10037 closed unmerged, deployed evaluation outcomes unverified.9701 is merged with full-size execution unknown.209/9813 still open; no sealed-result repair deployment.",
           "Alert guidance10049 merged, while critical retry gap10048 remains open and deployed repair unverified. Temporary TPU pin9403 closed unmerged; refreshed9400 requires backend28/29/27 acceptance, a final maintained-main pin and all six checks. AMD9904/9905 remain closed unmerged.",
           "10022 adopts the published qualified GPU release but remains draft; MSRL944 consumer reconciliation open. TPU10023 draft has missing AuxOutput API and unexecuted physical gate.10067 data-pipeline worker release/wait continuation and10074 thread caps open; candidate results are not scheduled-pipeline or Hero adoption.",
-          "16K is adopted; future longer-context phases require separate evidence.10100 old-checkpoint model config selection remains an open fix;9990 one-rack eval preflight remains open. GPU10022/MSRL944 and TPU10023 adoption/qualification still pending; endpoint10033 and sealed-result repairs remain open."
+          "16K is adopted; future longer-context phases require separate evidence.10100 old-checkpoint model config selection remains an open fix;9990 one-rack eval preflight remains open. GPU10022/MSRL944 and TPU10023 adoption/qualification still pending; endpoint10033 and sealed-result repairs remain open.",
+          "10121 row placement,10122 mask/buffer work and10145local flatten remain open with no main-run adoption;10100sampler fix remains open.10039merged butoldmirrorcleanup/deployedvalidation remain separate."
         ]
       },
       "sourceIds": [
@@ -2269,7 +2316,11 @@ window.MARIN_RESEARCH = {
         "M322",
         "M325",
         "M335",
-        "M338"
+        "M338",
+        "M347",
+        "M348",
+        "M349",
+        "M308"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2278,7 +2329,7 @@ window.MARIN_RESEARCH = {
       "facts": {
         "en": [
           "One-rack deferred memory purge reduced purge-call counts but not save time meaningfully: 8.5 versus 8.9 excess seconds, only three versus two saves and about three seconds of shared measurement overhead. The test does not reproduce production's long post-save slowdown.",
-          "Belay has adopted candidates 10 and 11 within its research track. Candidate 10 improves equal-step results at widths 512/768; candidate 11 reduces a short step timer by 3.5% and improves two-seed loss by about 0.0053 at calculated 480-second step budgets. These are not complete-job wall-clock measurements or Hero adoption.",
+          "Earlier Belay research adopted candidates 10 and 11 within its research track. Candidate 10 improves equal-step results at widths 512/768; candidate 11 reduces a short step timer by 3.5% and improves two-seed loss by about 0.0053 at calculated 480-second step budgets. These are not complete-job wall-clock measurements or Hero adoption.",
           "The pipeline now reports twenty real-data updates on sixteen H100s with two full-width layers and no save, plus a corrected two-update GB200 gate. Full 48-layer GB200 installation failed before finite updates; the full H100 trial is held.",
           "Tiny matched Hero serving fixtures generate identical 32-token outputs on H100 and v5p. The 2.205x native/eager-vLLM TPU ratio is workload-specific; production checkpoints and Hero CUDA graphs remain unvalidated.",
           "Earlier one-rack 8K/16K tests retain their 100-step and mismatched optimizer-setting limits. Small logging-prefetch and communications results remain component experiments, not established main-run speedups.",
@@ -2286,7 +2337,7 @@ window.MARIN_RESEARCH = {
           "Belay compression did not improve the short d512 score; stronger interventions hurt loss. Its completed hundred-times-longer trial reports no benefit: 2.5694 baseline, 2.5702 transfer, 2.5817 gap, one seed at d512.",
           "Qwen3.6 tau3 diagnostic selects 131K/32K from reported scoreable-trial results; partial coverage, changed harnesses and policy status prevent a Hero or universal capability claim.",
           "The separate October 4 TPU two-slice canary timed out during startup after unequal task retries produced different coordinator names. This does not diagnose Hero.",
-          "Belay candidate12 is adopted within the research track but equal-time loss ties candidate11. Candidate13 remains a proposed state reshape with two-seed small-model gains and a seed0 delta discrepancy; no Hero adoption.",
+          "Earlier Belay candidate12 was adopted within the research track but equal-time loss ties candidate11. Candidate13 remains a proposed state reshape with two-seed small-model gains and a seed0 delta discrepancy; no Hero adoption.",
           "Bounded compression does not improve loss; exponential-gain benefit fails seed1 replication. FP8 component speed varies by width; the planned simulated-quality test was stopped, without a completed width-scaling pass.",
           "Belay shifted-key tied-query small test2.9517vs2.9521 at190.3vs190.2ms is neutral within noise; interpretation and sparse retrieval proposals do not establish Hero adoption.",
           "Profile one-rack1.5–1.9% timing gains coexist with compile/OOM failures; candidate plugin unpromoted and buffer growth unknown. Quality-scoring heldout values0.8350/0.7153 and legacy comparison0.9205/0.8412 have split/window limits.",
@@ -2295,7 +2346,8 @@ window.MARIN_RESEARCH = {
           "Belay base16 drops gates: d512 small loss benefit outweighed full-shape one-rack19.42vs17.95s cost; noHero adoption/full-scale quality. GPU candidate policy-onlyTE2.19 two-update48.68s is not full combined-profile qualification.",
           "Separate Datakit tests #10047/#10059 timed out while jobs were active; tier-3 skipped performance reporting. Public reports expose worker-capacity constraints, not a completed performance benchmark, sole root cause or Hero mixture adoption. Snowball earlier six-layout tests qualify the temporary head e9904b0633 only.",
           "10067 fixed-code canaries reportedly completed56min/5h47m; not a matched speed comparison or adopted mixture.10074 two-CPU proxy assignment68.8→11.8s with equal hashes, production-stage gain unmeasured. Refreshed native TPU candidate9400 fails saved scores; serving reanalysis fails one current-native4K bound.",
-          "Eleven-rack100-step16K QK trials support keeping1.48, totals nearly tied; paired-batch public analysis is not independent reproduction or a long-term optimum.10024 scalar logging repro2vs418 threads/33vs31ms is not a full-run performance comparison."
+          "Eleven-rack100-step16K QK trials support keeping1.48, totals nearly tied; paired-batch public analysis is not independent reproduction or a long-term optimum.10024 scalar logging repro2vs418 threads/33vs31ms is not a full-run performance comparison.",
+          "Belay Ckpt1 replaces base16 within research track;fixed8min d512 is one seed,larger ladder has different budgets,d1280unfinished.1.33×/0.729BPB forecast provisional. Open10121/10122 show small16K one-rack gains;combined+1.66%not sum. Open10145 CP4/EP16 65K15.035→14.626s/drop2.21→0.23% is a side test,main remains16K."
         ]
       },
       "sourceIds": [
@@ -2342,7 +2394,11 @@ window.MARIN_RESEARCH = {
         "M334",
         "M323",
         "M344",
-        "M337"
+        "M337",
+        "M350",
+        "M347",
+        "M348",
+        "M349"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2364,7 +2420,8 @@ window.MARIN_RESEARCH = {
           "Gate cost does not by itself establish net quality benefit from removal; a published package and cancelled hardware workflow do not predict a passing release.",
           "Alert silence and test-wait timeouts need interpretation alongside execution state. This is a monitoring lesson from separate reports, not a causal explanation of Hero training or proof that all timeouts share a cause.",
           "Capacity, process-thread competition and wait policy may interact, but separate reports do not isolate one cause for all canary timeouts. GPU rounding explanation is supported by its controlled comparison and cannot substitute for an unexecuted TPU causal test.",
-          "The16K evaluation step-down is mainly a packing effect per official status, not measured capability improvement. No same-batch main-run control window exists because the parent stopped at handoff."
+          "The16K evaluation step-down is mainly a packing effect per official status, not measured capability improvement. No same-batch main-run control window exists because the parent stopped at handoff.",
+          "Belay large-budget compute advantage is a scaling-fit forecast with unfinished d1280,not final checkpoint. Lower loss in65Klayout trial may involve fewer drops as well as layout;unique causal attribution unestablished."
         ]
       },
       "sourceIds": [
@@ -2402,7 +2459,10 @@ window.MARIN_RESEARCH = {
         "M333",
         "M334",
         "M340",
-        "M337"
+        "M337",
+        "M350",
+        "M349",
+        "M351"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2422,7 +2482,8 @@ window.MARIN_RESEARCH = {
           "PTB decontamination/clean correction and impact on other sets remain unknown. Optimized kernel bundle is adopted; storage/scorer adoption is unconfirmed; PGLE candidate failures require guards, no production profile speed result.",
           "16K child own-checkpoint restart remains unverified; parent handoff restoration is confirmed. TPU gate cancelled without placement; auxiliary API/performance qualification and release remain pending. Existing partial mirror cleanup and10039 deployment unknown.",
           "Public #10048 reports a critical-alert gap during a September 30 retry; initiating failure cause and deployed repair unknown. #10047 exact pending-worker verdict unavailable; #10059 memory constraint is visible but not isolated as the sole timeout cause. Own-checkpoint restoration of optimized Hero remains unverified.",
-          "16K child own-checkpoint restart remains unexercised publicly despite confirmed parent-checkpoint restore and first child save.10100 regeneration-config risk has no demonstrated corruption or deployed fix. Final serving qualification,clean PTB correction and critical-alert repair remain unverified."
+          "16K child own-checkpoint restart remains unexercised publicly despite confirmed parent-checkpoint restore and first child save.10100 regeneration-config risk has no demonstrated corruption or deployed fix. Final serving qualification,clean PTB correction and critical-alert repair remain unverified.",
+          "Filtered current-Stack-v3 scan does not explain newerPTB/WikiTextdrops orcertifyfullstoreclean;olderpinnedrevision403,optout/name/size/formatgaps remain. Clean corrected eval,childownrestart,main-rack adoption andexistingpartialmirrorcleanup unverified."
         ]
       },
       "sourceIds": [
@@ -2483,12 +2544,159 @@ window.MARIN_RESEARCH = {
         "M294",
         "M338",
         "M340",
-        "M343"
+        "M343",
+        "M351"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-10-15-training-and-review",
+      "date": "2026-10-15",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero keeps training at 16K; no further main-run change is confirmed"
+      },
+      "detail": {
+        "en": "Hero continues on the16K configuration adopted yesterday and has logged later evaluations. Today's public review found no additional main-run handoff or verified restart from the child run's own saved state, so continued training is not another deployment or recovery test. Anonymous W&B at October15 13:00:26.863 UTC (09:00 New York): hero-ctx16k-step257k running266431, versus yesterday260306 at a slightly different observation time; loss1.0649965, training step13.7835s, full iteration13.8765s, MFU30.5577%, median30.5512% over500 samples. MFU is utilization of theoretical compute, not a matched speed comparison. Latest returned16K evaluation263999: Paloma0.7596867/UncheatableEval0.4927688 bits per byte. Inherited4K history and fresh16K measurements remain separate; the packing change and existing contamination caution prevent a cross-phase capability claim. Required #8435/#8506/#8870 and comments were checked with no new official status since the prior review. All145 updated search results across two pages and212 relevant topics were read across launch, save/restore/export, mixtures, communication, kernels, memory, context, evaluation and handoff. Latest standup remains September21. Fully paginated Belay adds a research baseline and batch plans, not Hero adoption. Fixed Hero/mixture and Open Athena expert-parallel article hashes unchanged. Open Athena's index adds an October15 posttraining-data explainer; it is conceptual commentary, not a Hero launch or measured new evaluation. Live and October14 fixed completion pages now list70 sets, highest258000 from this16K child completed October14 15:57:45UTC. Samples are not a fixed final benchmark; October15 fixed page returns404. Focused supplemental X candidate-author query returned zero rows, with account identity/full coverage unverified; no inactivity claim follows."
+      },
+      "sourceIds": [
+        "M343",
+        "M340",
+        "M2",
+        "M3",
+        "M45",
+        "M112",
+        "M137",
+        "M352",
+        "M353"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-15T13:03:45.639826+00:00",
+      "concept": {
+        "en": "Continued execution, a new rollout and recovery from a saved state require different evidence. More sample sets do not establish final model quality."
+      },
+      "exercise": {
+        "en": "What observation would distinguish ordinary training from a successful restart using this child run's own checkpoint?"
+      }
+    },
+    {
+      "id": "event-2026-10-15-attention-small-tests",
+      "date": "2026-10-15",
+      "status": "experimental",
+      "title": {
+        "en": "Small tests find modest gains from spreading attention work and simplifying masks"
+      },
+      "detail": {
+        "en": "Two proposed changes make a single-rack 16K training test slightly faster by distributing work more evenly and reducing attention overhead. Both PRs are open; the measured gains are short experiments, not a speedup adopted by the main Hero run. PR #10121 rearranges rows across devices by document-attention cost: the busiest/mean global-attention work ratio falls2.10→1.17 on real16K batches. On one GB200 NVL72 rack restored from240000,106 scored steps per arm, time falls13.131→13.055s (+0.58% tokens/s);4K changes12.764→12.732s. PR #10122 vectorizes the document mask and prepares backward buffers differently. One-GPU local attention forward3.16→1.96ms and forward/backward10.23→8.97ms; a rack test reports13.055→12.956s (+0.76%), with peak memory +0.5GB. These component and rack numbers have different scopes. A second-rack combined comparison reports13.046→12.833s (+1.66%); its balancing-only contribution is+0.29%, so separate percentages must not be added. Loss stays within reported same-code noise and drop changes are small in the reported tests. Numerical/reference checks and observed gains are public PR reports, not independently reproduced full-run results or long-term stability evidence."
+      },
+      "sourceIds": [
+        "M347",
+        "M348"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-15T13:03:45.639826+00:00",
+      "concept": {
+        "en": "The slowest device can hold everyone else up. Reducing imbalance and reducing the cost of a computation may overlap, so their gains need a combined measurement."
+      },
+      "exercise": {
+        "en": "Why is adding the two separate speedup percentages less reliable than measuring the combined change?"
+      }
+    },
+    {
+      "id": "event-2026-10-15-context-parallel-65k",
+      "date": "2026-10-15",
+      "status": "experimental",
+      "title": {
+        "en": "A 65K side test reduces communication and token drops without changing main-run context"
+      },
+      "detail": {
+        "en": "A proposed layout change improves a single-rack test with much longer 65K sequences. It is evidence about that experimental layout, not a switch of the main Hero run beyond16K. Open PR #10145 flattens tokens locally when a sequence is split across devices, avoiding extra all-to-all exchanges that shuffle data among them. A no-drop CPU test matches outputs between the split and unsplit layouts; compiled forward exchanges fall8→4. On one GB200 NVL72 rack restored from240000, CP4/EP16 on top of row balancing,106 scored steps per arm, time falls15.035→14.626s (+2.80% tokens/s), drops2.21%→0.23%, loss4.2e-3 lower. The same configuration without context splitting reports15.137s/1.94% drops. Changing layout also changes which tokens are dropped when experts fill, so the lower loss is not isolated as a pure speed effect. This short result does not prove eleven-rack scaling, long-term quality, checkpoint recovery or production adoption."
+      },
+      "sourceIds": [
+        "M349",
+        "M347"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-15T13:03:45.639826+00:00",
+      "concept": {
+        "en": "A layout can change both communication and which work gets discarded. Better loss in that test can have more than one cause."
+      },
+      "exercise": {
+        "en": "Which extra checks would you need before using this65K layout on the eleven-rack main run?"
+      }
+    },
+    {
+      "id": "event-2026-10-15-mirror-marker-fix",
+      "date": "2026-10-15",
+      "status": "confirmed",
+      "title": {
+        "en": "An accepted cache fix prevents an incomplete model download from looking finished"
+      },
+      "detail": {
+        "en": "Marin accepted a fix that keeps a remote model's cache marker from prematurely marking a local mirror complete. It addresses a concrete incomplete-download case, but existing partial mirrors still need separate cleanup and deployment is not established by merge alone. PR #10039 merged October15 06:24:46UTC. A DARE-TIES-02 repository carried .cache_metadata.json; it reached the regional mirror before all weight files, and a follower treated a90GB mirror with28 of39 shards as a cache hit. The change skips repository files matching the configured completion marker. A regression interrupts a weight download and checks that the marker appears only after a successful retry. It does not prove damaged mirrors were cleaned, full-size model release/export succeeded, or Hero training changed."
+      },
+      "sourceIds": [
+        "M308"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-15T13:03:45.639826+00:00",
+      "concept": {
+        "en": "A completion marker is a promise made after local verification. Copying someone else's marker before the files arrive breaks that promise."
+      },
+      "exercise": {
+        "en": "Why should the local downloader create its own completion marker only after verifying every required file?"
+      }
+    },
+    {
+      "id": "event-2026-10-15-evaluation-copy-scan-limits",
+      "date": "2026-10-15",
+      "status": "unknown",
+      "title": {
+        "en": "A narrower data scan leaves the newer evaluation drops unexplained"
+      },
+      "detail": {
+        "en": "A public follow-up searched selected code-data files for evaluation text and still could not explain several sharp score drops. That narrows one search, but it does not establish that training data is clean or identify the cause of the newer changes. The author reports screening all8192 Stack-v3 parquet files but scoring only529 files selected by path/size, using13-word overlap and reconstructing shifted text windows. The pinned older dataset returned403, so the scan used current v3.1 revision1f61b735 instead. It rediscovers torch-nplm PTB validation/test overlap0.988/0.987 after reconstruction; selected WikiText validation overlap tops out at0.024. A separate selected file contains WikiText test text, which is not Paloma's validation split: whether Hero read it remains conditional. Names/sizes, code/markup embedding, table formats and opted-out repositories leave recall gaps. The author reports that88% of the parent-run Paloma macro drop at254999 came from WikiText; the other14 subsets changed only0.0016 on average and Uncheatable macro1.583→1.582. Those are reported macro-loss observations, not the live BPB values above. No independent full scan, cleaned corrected score or causal explanation is established. Scores from257999 onward use16K packing and cannot be compared directly with the4K windows."
+      },
+      "sourceIds": [
+        "M351",
+        "M252",
+        "M252",
+        "M253",
+        "M254"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-15T13:03:45.639826+00:00",
+      "concept": {
+        "en": "Finding no copy in a filtered search only describes the searched files and matching method. Validation and test splits also answer different questions."
+      },
+      "exercise": {
+        "en": "Which files and text formats could this scan miss, and why would a clean result still not certify the whole training store?"
+      }
+    },
+    {
+      "id": "event-2026-10-15-belay-research-baseline",
+      "date": "2026-10-15",
+      "status": "experimental",
+      "title": {
+        "en": "Belay adopts a new research baseline; its large-scale advantage is still a projection"
+      },
+      "detail": {
+        "en": "The separate Belay research track has selected a new baseline for future small-model experiments. This gives its next tests a stable comparison, but it is not a new Hero architecture or a measured full-scale quality result. Public Ckpt1 report replaces base16 for d512 experiments at fixed eight minutes. A one-seed8H100 d512 test reports2760steps at0.175s/step, Paloma loss3.0270/BPB1.2562 versus August-Hero-architecture3.1306/1.2980. A separate scaling ladder reports Ckpt1/AugHero BPB1.1934/1.2309 atd512,1.0899/1.1230 atd768,1.0097/1.0329 atd1024;d1280 remains training. Those ladder runs use different tokens/active-parameter budgets171 versus235, not the same fixed-eight-minute protocol. A fitted300k-GB200-hour forecast gives0.729 versus0.735BPB and provisional1.33× hardware-compute advantage, not a measured final checkpoint or wall-clock speedup. The assumed floor is0.498; the advantage shrinks across larger rungs and the report cautions to wait for d1280. One-rack full-shape speed14.59s/step at28.9%MFU and reported11-rack26.9 versus28.8%MFU are distinct observations, not interchangeable proof of faster completion. New momentum-warmup and multi-stream batch plans remain research; a later comment declines to integrate the small momentum effect."
+      },
+      "sourceIds": [
+        "M350"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-15T13:03:45.639826+00:00",
+      "concept": {
+        "en": "A research baseline is a shared starting point. Extrapolating its small-model curve to a large compute budget is a forecast, with uncertainty that larger tests must check."
+      },
+      "exercise": {
+        "en": "Why can a strong small-model result lose much of its apparent advantage when projected to the full training budget?"
+      }
+    },
     {
       "id": "event-2026-10-14-hero-16k-adopted",
       "date": "2026-10-14",
