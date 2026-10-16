@@ -1,0 +1,490 @@
+{
+  "checkedAt": "2026-10-16T13:09:56.750997+00:00",
+  "name": "hero-ctx16k-step257k",
+  "state": "running",
+  "summary": {
+    "_timestamp": 1792155932.323163,
+    "global_step": 272592,
+    "train/loss": 1.0910732746124268,
+    "throughput/duration": 13.827950181090273,
+    "throughput/iteration_time": 13.939960230956785,
+    "throughput/mfu": 30.45939163277303,
+    "throughput/p50_mfu": 30.481454597828858,
+    "throughput/mfu_sample_count": 500
+  },
+  "evaluationHistory": [
+    [
+      {
+        "global_step": 110999,
+        "eval_dropless/paloma/macro_bpb": 0.8028090000152588,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5235640406608582
+      },
+      {
+        "global_step": 113999,
+        "eval_dropless/paloma/macro_bpb": 0.8022366762161255,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5229763388633728
+      },
+      {
+        "global_step": 116999,
+        "eval_dropless/paloma/macro_bpb": 0.8027592897415161,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.521825909614563
+      },
+      {
+        "global_step": 119999,
+        "eval_dropless/paloma/macro_bpb": 0.8015051484107971,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5219438672065735
+      },
+      {
+        "global_step": 122999,
+        "eval_dropless/paloma/macro_bpb": 0.8034502267837524,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5207727551460266
+      },
+      {
+        "global_step": 125999,
+        "eval_dropless/paloma/macro_bpb": 0.8000919222831726,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5205481648445129
+      },
+      {
+        "global_step": 128999,
+        "eval_dropless/paloma/macro_bpb": 0.7983362078666687,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5196768045425415
+      },
+      {
+        "global_step": 131999,
+        "eval_dropless/paloma/macro_bpb": 0.7988355159759521,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5194763541221619
+      },
+      {
+        "global_step": 134999,
+        "eval_dropless/paloma/macro_bpb": 0.8006804585456848,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5193170309066772
+      },
+      {
+        "global_step": 137999,
+        "eval_dropless/paloma/macro_bpb": 0.7977093458175659,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5187897086143494
+      },
+      {
+        "global_step": 140999,
+        "eval_dropless/paloma/macro_bpb": 0.7986156940460205,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5186377167701721
+      },
+      {
+        "global_step": 143999,
+        "eval_dropless/paloma/macro_bpb": 0.7965694665908813,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5180590748786926
+      },
+      {
+        "global_step": 146999,
+        "eval_dropless/paloma/macro_bpb": 0.7978096008300781,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5176651477813721
+      },
+      {
+        "global_step": 149999,
+        "eval_dropless/paloma/macro_bpb": 0.7968181371688843,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5167757272720337
+      },
+      {
+        "global_step": 152999,
+        "eval_dropless/paloma/macro_bpb": 0.7958360910415649,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5165671110153198
+      },
+      {
+        "global_step": 155999,
+        "eval_dropless/paloma/macro_bpb": 0.7952389717102051,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5155300498008728
+      },
+      {
+        "global_step": 158999,
+        "eval_dropless/paloma/macro_bpb": 0.795619010925293,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5153690576553345
+      },
+      {
+        "global_step": 161999,
+        "eval_dropless/paloma/macro_bpb": 0.7957942485809326,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5143194794654846
+      },
+      {
+        "global_step": 164999,
+        "eval_dropless/paloma/macro_bpb": 0.7932844758033752,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5139933824539185
+      },
+      {
+        "global_step": 167999,
+        "eval_dropless/paloma/macro_bpb": 0.7929630279541016,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5133777260780334
+      },
+      {
+        "global_step": 170999,
+        "eval_dropless/paloma/macro_bpb": 0.7938337326049805,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5137130618095398
+      },
+      {
+        "global_step": 173999,
+        "eval_dropless/paloma/macro_bpb": 0.792608916759491,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5134554505348206
+      },
+      {
+        "global_step": 176999,
+        "eval_dropless/paloma/macro_bpb": 0.7928037047386169,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5135380029678345
+      },
+      {
+        "global_step": 179999,
+        "eval_dropless/paloma/macro_bpb": 0.7915565371513367,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5122242569923401
+      },
+      {
+        "global_step": 182999,
+        "eval_dropless/paloma/macro_bpb": 0.7890691757202148,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5119348764419556
+      },
+      {
+        "global_step": 185999,
+        "eval_dropless/paloma/macro_bpb": 0.7886508703231812,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5114712715148926
+      },
+      {
+        "global_step": 188999,
+        "eval_dropless/paloma/macro_bpb": 0.7886934280395508,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5107039213180542
+      },
+      {
+        "global_step": 191999,
+        "eval_dropless/paloma/macro_bpb": 0.7873322367668152,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5105385780334473
+      },
+      {
+        "global_step": 194999,
+        "eval_dropless/paloma/macro_bpb": 0.7860899567604065,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5097953677177429
+      },
+      {
+        "global_step": 197999,
+        "eval_dropless/paloma/macro_bpb": 0.7851399183273315,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.509362518787384
+      },
+      {
+        "global_step": 200999,
+        "eval_dropless/paloma/macro_bpb": 0.7868003845214844,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5083661675453186
+      },
+      {
+        "global_step": 203999,
+        "eval_dropless/paloma/macro_bpb": 0.7836735248565674,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5086643099784851
+      },
+      {
+        "global_step": 206999,
+        "eval_dropless/paloma/macro_bpb": 0.7809569239616394,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5078039765357971
+      },
+      {
+        "global_step": 209999,
+        "eval_dropless/paloma/macro_bpb": 0.7766333818435669,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5075049996376038
+      },
+      {
+        "global_step": 212999,
+        "eval_dropless/paloma/macro_bpb": 0.7771823406219482,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5067322850227356
+      },
+      {
+        "global_step": 215999,
+        "eval_dropless/paloma/macro_bpb": 0.7807334065437317,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5057049989700317
+      },
+      {
+        "global_step": 218999,
+        "eval_dropless/paloma/macro_bpb": 0.7794218063354492,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5055966973304749
+      },
+      {
+        "global_step": 221999,
+        "eval_dropless/paloma/macro_bpb": 0.7803134918212891,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5054969787597656
+      },
+      {
+        "global_step": 224999,
+        "eval_dropless/paloma/macro_bpb": 0.7800097465515137,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5048865675926208
+      },
+      {
+        "global_step": 227999,
+        "eval_dropless/paloma/macro_bpb": 0.7776986360549927,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5040121078491211
+      },
+      {
+        "global_step": 230999,
+        "eval_dropless/paloma/macro_bpb": 0.7780135869979858,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5038994550704956
+      },
+      {
+        "global_step": 233999,
+        "eval_dropless/paloma/macro_bpb": 0.7760041952133179,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5037948489189148
+      },
+      {
+        "global_step": 236999,
+        "eval_dropless/paloma/macro_bpb": 0.7728574275970459,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5033191442489624
+      },
+      {
+        "global_step": 239999,
+        "eval_dropless/paloma/macro_bpb": 0.7714505195617676,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5027218461036682
+      },
+      {
+        "global_step": 242999,
+        "eval_dropless/paloma/macro_bpb": 0.7705299854278564,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5024227499961853
+      },
+      {
+        "global_step": 245999,
+        "eval_dropless/paloma/macro_bpb": 0.7709853053092957,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5015118718147278
+      },
+      {
+        "global_step": 248999,
+        "eval_dropless/paloma/macro_bpb": 0.7734256386756897,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5010627508163452
+      },
+      {
+        "global_step": 251999,
+        "eval_dropless/paloma/macro_bpb": 0.7721438407897949,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5006915330886841
+      },
+      {
+        "global_step": 254999,
+        "eval_dropless/paloma/macro_bpb": 0.7684391736984253,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.5001357197761536
+      },
+      {
+        "global_step": 257999,
+        "eval_dropless/paloma/macro_bpb": 0.7599176168441772,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.4933640956878662
+      },
+      {
+        "global_step": 260999,
+        "eval_dropless/paloma/macro_bpb": 0.7589080333709717,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.4929439127445221
+      },
+      {
+        "global_step": 263999,
+        "eval_dropless/paloma/macro_bpb": 0.7596867084503174,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.4927687644958496
+      },
+      {
+        "global_step": 266999,
+        "eval_dropless/paloma/macro_bpb": 0.7594441175460815,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.49303629994392395
+      },
+      {
+        "global_step": 269999,
+        "eval_dropless/paloma/macro_bpb": 0.7571412324905396,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.49225348234176636
+      }
+    ]
+  ],
+  "olderComparisonRuns": {
+    "r0": {
+      "name": "moe_67b_a2b_d2560_step156k_paloma_lm_eval_rolling4096",
+      "state": "finished",
+      "summary": {
+        "_runtime": 1191.68162854,
+        "_step": 156000,
+        "_timestamp": 1792104947.3819563,
+        "_wandb.runtime": 255,
+        "backend": "tpu",
+        "lm_eval_rolling/paloma/4chan/bpb": 0.8254051412852188,
+        "lm_eval_rolling/paloma/4chan/docs": 404,
+        "lm_eval_rolling/paloma/4chan/tokens": 926434,
+        "lm_eval_rolling/paloma/c4_100_domains/bpb": 0.6512900044802867,
+        "lm_eval_rolling/paloma/c4_100_domains/docs": 14131,
+        "lm_eval_rolling/paloma/c4_100_domains/tokens": 9439367.0,
+        "lm_eval_rolling/paloma/c4_en/bpb": 0.6982429439474201,
+        "lm_eval_rolling/paloma/c4_en/docs": 2124,
+        "lm_eval_rolling/paloma/c4_en/tokens": 963902,
+        "lm_eval_rolling/paloma/docs": 154440,
+        "lm_eval_rolling/paloma/dolma-v1_5/bpb": 0.6183087403209991,
+        "lm_eval_rolling/paloma/dolma-v1_5/docs": 4481,
+        "lm_eval_rolling/paloma/dolma-v1_5/tokens": 2364100.0,
+        "lm_eval_rolling/paloma/dolma_100_programing_languages/bpb": 0.3021625071281081,
+        "lm_eval_rolling/paloma/dolma_100_programing_languages/docs": 7832,
+        "lm_eval_rolling/paloma/dolma_100_programing_languages/tokens": 8517489.0,
+        "lm_eval_rolling/paloma/dolma_100_subreddits/bpb": 0.8706616804808337,
+        "lm_eval_rolling/paloma/dolma_100_subreddits/docs": 46203,
+        "lm_eval_rolling/paloma/dolma_100_subreddits/tokens": 9300722.0,
+        "lm_eval_rolling/paloma/falcon-refinedweb/bpb": 0.7124432784392714,
+        "lm_eval_rolling/paloma/falcon-refinedweb/docs": 1711,
+        "lm_eval_rolling/paloma/falcon-refinedweb/tokens": 965327,
+        "lm_eval_rolling/paloma/gab/bpb": 1.309453891872408,
+        "lm_eval_rolling/paloma/gab/docs": 23187,
+        "lm_eval_rolling/paloma/gab/tokens": 892785,
+        "lm_eval_rolling/paloma/m2d2_s2orc_unsplit/bpb": 0.618284976342145,
+        "lm_eval_rolling/paloma/m2d2_s2orc_unsplit/docs": 167,
+        "lm_eval_rolling/paloma/m2d2_s2orc_unsplit/tokens": 16845611.0,
+        "lm_eval_rolling/paloma/m2d2_wikipedia_unsplit/bpb": 0.5824401271253165,
+        "lm_eval_rolling/paloma/m2d2_wikipedia_unsplit/docs": 49,
+        "lm_eval_rolling/paloma/m2d2_wikipedia_unsplit/tokens": 4835121.0,
+        "lm_eval_rolling/paloma/macro_bpb": 0.7811811569323537,
+        "lm_eval_rolling/paloma/manosphere_meta_sep/bpb": 0.8895978001902866,
+        "lm_eval_rolling/paloma/manosphere_meta_sep/docs": 2309,
+        "lm_eval_rolling/paloma/manosphere_meta_sep/tokens": 955738,
+        "lm_eval_rolling/paloma/mc4/bpb": 0.6461466285502522,
+        "lm_eval_rolling/paloma/mc4/docs": 1202,
+        "lm_eval_rolling/paloma/mc4/tokens": 954539,
+        "lm_eval_rolling/paloma/ptb/bpb": 0.6755482195547453,
+        "lm_eval_rolling/paloma/ptb/docs": 1,
+        "lm_eval_rolling/paloma/ptb/tokens": 98829,
+        "lm_eval_rolling/paloma/redpajama/bpb": 0.53560962493702,
+        "lm_eval_rolling/paloma/redpajama/docs": 578,
+        "lm_eval_rolling/paloma/redpajama/tokens": 649331,
+        "lm_eval_rolling/paloma/twitterAAE_HELM_fixed/bpb": 2.0201307838977196,
+        "lm_eval_rolling/paloma/twitterAAE_HELM_fixed/docs": 50000,
+        "lm_eval_rolling/paloma/twitterAAE_HELM_fixed/tokens": 686428,
+        "lm_eval_rolling/paloma/wikitext_103/bpb": 0.543172162365629,
+        "lm_eval_rolling/paloma/wikitext_103/docs": 61,
+        "lm_eval_rolling/paloma/wikitext_103/tokens": 285107,
+        "num_devices": 32,
+        "num_hosts": 8
+      }
+    },
+    "r1": {
+      "name": "moe_67b_a2b_d2560_step156k_uncheatable_eval_lm_eval_rolling4096",
+      "state": "finished",
+      "summary": {
+        "_runtime": 232.060808038,
+        "_step": 156000,
+        "_timestamp": 1792104247.598795,
+        "_wandb.runtime": 232,
+        "backend": "tpu",
+        "lm_eval_rolling/uncheatable_eval/ao3_english/bpb": 0.8001145363614791,
+        "lm_eval_rolling/uncheatable_eval/ao3_english/docs": 1000,
+        "lm_eval_rolling/uncheatable_eval/ao3_english/tokens": 1089991.0,
+        "lm_eval_rolling/uncheatable_eval/arxiv_computer_science/bpb": 0.5437571772727746,
+        "lm_eval_rolling/uncheatable_eval/arxiv_computer_science/docs": 1000,
+        "lm_eval_rolling/uncheatable_eval/arxiv_computer_science/tokens": 920003,
+        "lm_eval_rolling/uncheatable_eval/arxiv_physics/bpb": 0.5544310198284309,
+        "lm_eval_rolling/uncheatable_eval/arxiv_physics/docs": 1000,
+        "lm_eval_rolling/uncheatable_eval/arxiv_physics/tokens": 1057598.0,
+        "lm_eval_rolling/uncheatable_eval/bbc_news/bpb": 0.6297538601173067,
+        "lm_eval_rolling/uncheatable_eval/bbc_news/docs": 1081,
+        "lm_eval_rolling/uncheatable_eval/bbc_news/tokens": 762854,
+        "lm_eval_rolling/uncheatable_eval/docs": 7052,
+        "lm_eval_rolling/uncheatable_eval/github_cpp/bpb": 0.26052790796427794,
+        "lm_eval_rolling/uncheatable_eval/github_cpp/docs": 998,
+        "lm_eval_rolling/uncheatable_eval/github_cpp/tokens": 973258,
+        "lm_eval_rolling/uncheatable_eval/github_python/bpb": 0.2482813683805367,
+        "lm_eval_rolling/uncheatable_eval/github_python/docs": 973,
+        "lm_eval_rolling/uncheatable_eval/github_python/tokens": 933298,
+        "lm_eval_rolling/uncheatable_eval/macro_bpb": 0.517785611367506,
+        "lm_eval_rolling/uncheatable_eval/wikipedia_english/bpb": 0.5876334096477361,
+        "lm_eval_rolling/uncheatable_eval/wikipedia_english/docs": 1000,
+        "lm_eval_rolling/uncheatable_eval/wikipedia_english/tokens": 577542,
+        "num_devices": 32,
+        "num_hosts": 8
+      }
+    },
+    "r2": {
+      "name": "moe_67b_a2b_d2560_ctxext_qk175_skew8_step157k_paloma_lm_eval_rolling4096",
+      "state": "finished",
+      "summary": {
+        "_runtime": 956.776952321,
+        "_step": 157000,
+        "_timestamp": 1792105249.6132834,
+        "_wandb.runtime": 956,
+        "backend": "tpu",
+        "lm_eval_rolling/paloma/4chan/bpb": 0.8245334100333536,
+        "lm_eval_rolling/paloma/4chan/docs": 404,
+        "lm_eval_rolling/paloma/4chan/tokens": 926434,
+        "lm_eval_rolling/paloma/c4_100_domains/bpb": 0.6503341337037312,
+        "lm_eval_rolling/paloma/c4_100_domains/docs": 14131,
+        "lm_eval_rolling/paloma/c4_100_domains/tokens": 9439367.0,
+        "lm_eval_rolling/paloma/c4_en/bpb": 0.6971565402567951,
+        "lm_eval_rolling/paloma/c4_en/docs": 2124,
+        "lm_eval_rolling/paloma/c4_en/tokens": 963902,
+        "lm_eval_rolling/paloma/docs": 154440,
+        "lm_eval_rolling/paloma/dolma-v1_5/bpb": 0.6173495274002234,
+        "lm_eval_rolling/paloma/dolma-v1_5/docs": 4481,
+        "lm_eval_rolling/paloma/dolma-v1_5/tokens": 2364100.0,
+        "lm_eval_rolling/paloma/dolma_100_programing_languages/bpb": 0.30187164087337154,
+        "lm_eval_rolling/paloma/dolma_100_programing_languages/docs": 7832,
+        "lm_eval_rolling/paloma/dolma_100_programing_languages/tokens": 8517489.0,
+        "lm_eval_rolling/paloma/dolma_100_subreddits/bpb": 0.8691613410133676,
+        "lm_eval_rolling/paloma/dolma_100_subreddits/docs": 46203,
+        "lm_eval_rolling/paloma/dolma_100_subreddits/tokens": 9300722.0,
+        "lm_eval_rolling/paloma/falcon-refinedweb/bpb": 0.7112272533820904,
+        "lm_eval_rolling/paloma/falcon-refinedweb/docs": 1711,
+        "lm_eval_rolling/paloma/falcon-refinedweb/tokens": 965327,
+        "lm_eval_rolling/paloma/gab/bpb": 1.306907878069635,
+        "lm_eval_rolling/paloma/gab/docs": 23187,
+        "lm_eval_rolling/paloma/gab/tokens": 892785,
+        "lm_eval_rolling/paloma/m2d2_s2orc_unsplit/bpb": 0.6171752913604358,
+        "lm_eval_rolling/paloma/m2d2_s2orc_unsplit/docs": 167,
+        "lm_eval_rolling/paloma/m2d2_s2orc_unsplit/tokens": 16845611.0,
+        "lm_eval_rolling/paloma/m2d2_wikipedia_unsplit/bpb": 0.5811841100038884,
+        "lm_eval_rolling/paloma/m2d2_wikipedia_unsplit/docs": 49,
+        "lm_eval_rolling/paloma/m2d2_wikipedia_unsplit/tokens": 4835121.0,
+        "lm_eval_rolling/paloma/macro_bpb": 0.7795192839597143,
+        "lm_eval_rolling/paloma/manosphere_meta_sep/bpb": 0.8884166106799064,
+        "lm_eval_rolling/paloma/manosphere_meta_sep/docs": 2309,
+        "lm_eval_rolling/paloma/manosphere_meta_sep/tokens": 955738,
+        "lm_eval_rolling/paloma/mc4/bpb": 0.644920447030953,
+        "lm_eval_rolling/paloma/mc4/docs": 1202,
+        "lm_eval_rolling/paloma/mc4/tokens": 954539,
+        "lm_eval_rolling/paloma/ptb/bpb": 0.6731681154411527,
+        "lm_eval_rolling/paloma/ptb/docs": 1,
+        "lm_eval_rolling/paloma/ptb/tokens": 98829,
+        "lm_eval_rolling/paloma/redpajama/bpb": 0.5346179039093223,
+        "lm_eval_rolling/paloma/redpajama/docs": 578,
+        "lm_eval_rolling/paloma/redpajama/tokens": 649331,
+        "lm_eval_rolling/paloma/twitterAAE_HELM_fixed/bpb": 2.0119552566050514,
+        "lm_eval_rolling/paloma/twitterAAE_HELM_fixed/docs": 50000,
+        "lm_eval_rolling/paloma/twitterAAE_HELM_fixed/tokens": 686428,
+        "lm_eval_rolling/paloma/wikitext_103/bpb": 0.5423290835921499,
+        "lm_eval_rolling/paloma/wikitext_103/docs": 61,
+        "lm_eval_rolling/paloma/wikitext_103/tokens": 285107,
+        "num_devices": 32,
+        "num_hosts": 8
+      }
+    },
+    "r3": {
+      "name": "moe_67b_a2b_d2560_ctxext_qk175_skew8_step157k_uncheatable_eval_lm_eval_rolling4096",
+      "state": "finished",
+      "summary": {
+        "_runtime": 227.62158094,
+        "_step": 157000,
+        "_timestamp": 1792104693.4257462,
+        "_wandb.runtime": 227,
+        "backend": "tpu",
+        "lm_eval_rolling/uncheatable_eval/ao3_english/bpb": 0.7990068143494502,
+        "lm_eval_rolling/uncheatable_eval/ao3_english/docs": 1000,
+        "lm_eval_rolling/uncheatable_eval/ao3_english/tokens": 1089991.0,
+        "lm_eval_rolling/uncheatable_eval/arxiv_computer_science/bpb": 0.5435709793352378,
+        "lm_eval_rolling/uncheatable_eval/arxiv_computer_science/docs": 1000,
+        "lm_eval_rolling/uncheatable_eval/arxiv_computer_science/tokens": 920003,
+        "lm_eval_rolling/uncheatable_eval/arxiv_physics/bpb": 0.5537421414249707,
+        "lm_eval_rolling/uncheatable_eval/arxiv_physics/docs": 1000,
+        "lm_eval_rolling/uncheatable_eval/arxiv_physics/tokens": 1057598.0,
+        "lm_eval_rolling/uncheatable_eval/bbc_news/bpb": 0.6287735659046984,
+        "lm_eval_rolling/uncheatable_eval/bbc_news/docs": 1081,
+        "lm_eval_rolling/uncheatable_eval/bbc_news/tokens": 762854,
+        "lm_eval_rolling/uncheatable_eval/docs": 7052,
+        "lm_eval_rolling/uncheatable_eval/github_cpp/bpb": 0.26010750397376664,
+        "lm_eval_rolling/uncheatable_eval/github_cpp/docs": 998,
+        "lm_eval_rolling/uncheatable_eval/github_cpp/tokens": 973258,
+        "lm_eval_rolling/uncheatable_eval/github_python/bpb": 0.24761023127769202,
+        "lm_eval_rolling/uncheatable_eval/github_python/docs": 973,
+        "lm_eval_rolling/uncheatable_eval/github_python/tokens": 933298,
+        "lm_eval_rolling/uncheatable_eval/macro_bpb": 0.5171094147109829,
+        "lm_eval_rolling/uncheatable_eval/wikipedia_english/bpb": 0.5869546667110646,
+        "lm_eval_rolling/uncheatable_eval/wikipedia_english/docs": 1000,
+        "lm_eval_rolling/uncheatable_eval/wikipedia_english/tokens": 577542,
+        "num_devices": 32,
+        "num_hosts": 8
+      }
+    }
+  },
+  "limits": "Inherited4K rows distinct from child16K. Comparison runs belong to older67B,notliveHero;notfinalcapability orownrestartproof."
+}
