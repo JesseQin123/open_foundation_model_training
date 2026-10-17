@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-10-16",
+  "snapshot": "2026-10-17",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -2206,6 +2206,84 @@ window.MARIN_RESEARCH = {
       "kind": "web",
       "title": "Old67B finished comparison · moe_67b_a2b_d2560_ctxext_qk175_skew8_step157k_uncheatable_eval_lm_eval_rolling4096",
       "url": "https://wandb.ai/marin-community/marin_moe/runs/moe_67b_a2b_d2560_ctxext_qk175_skew8_step157k_uncheatable_eval_lm_eval_rolling4096"
+    },
+    {
+      "id": "M368",
+      "kind": "pr",
+      "title": "[hero] Sample vibe-check completions at temperature 0.7 from step 270k · #10224",
+      "url": "https://github.com/marin-community/marin/pull/10224"
+    },
+    {
+      "id": "M369",
+      "kind": "pr",
+      "title": "[iac] Temporarily allow thinning 17 CoreWeave hero checkpoints · #10218",
+      "url": "https://github.com/marin-community/marin/pull/10218"
+    },
+    {
+      "id": "M370",
+      "kind": "issue",
+      "title": "[levanter] LM evaluation fails with explicitly context-sharded tokens · #10232",
+      "url": "https://github.com/marin-community/marin/issues/10232"
+    },
+    {
+      "id": "M371",
+      "kind": "pr",
+      "title": "[levanter] Shift eval targets across context shards · #10233",
+      "url": "https://github.com/marin-community/marin/pull/10233"
+    },
+    {
+      "id": "M372",
+      "kind": "pr",
+      "title": "Preserve evaluator-owned metrics after infrastructure failures · #10195",
+      "url": "https://github.com/marin-community/marin/pull/10195"
+    },
+    {
+      "id": "M373",
+      "kind": "issue",
+      "title": "SWE-smith Harbor packages expose the fix through git history in the agent container · #10212",
+      "url": "https://github.com/marin-community/marin/issues/10212"
+    },
+    {
+      "id": "M374",
+      "kind": "issue",
+      "title": "mini-swe-agent sandbox contains clean copies of SWE-smith task repositories · #10223",
+      "url": "https://github.com/marin-community/marin/issues/10223"
+    },
+    {
+      "id": "M375",
+      "kind": "issue",
+      "title": "Marin Eval Policy (2026-10-16) · #10197",
+      "url": "https://github.com/marin-community/marin/issues/10197"
+    },
+    {
+      "id": "M376",
+      "kind": "issue",
+      "title": "Marin eval policy roadmap · #10234",
+      "url": "https://github.com/marin-community/marin/issues/10234"
+    },
+    {
+      "id": "M377",
+      "kind": "pr",
+      "title": "Preserve evaluator-owned partial metrics · Evalchemy214",
+      "url": "https://github.com/marin-community/evalchemy/pull/214"
+    },
+    {
+      "id": "M378",
+      "kind": "report",
+      "title": "Hero samples · fixed October17",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.17/index.html"
+    },
+    {
+      "id": "M379",
+      "kind": "report",
+      "title": "Hero step270000 sample artifact · hero-native-v6-temperature-0.7",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/results/3bf895bd05a289ad6872dd01d55b0d5a3f60296dfa7d25a716f7c2e2b03d74be.json"
+    },
+    {
+      "id": "M380",
+      "kind": "report",
+      "title": "Hero step270000 sample artifact · hero-native-v5-temperature-1",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/results/bfba8b33ace2f669656f4be4637097407c0b0a73823aa1b63d470d3c0747f0ae.json"
     }
   ],
   "claimGroups": [
@@ -2213,10 +2291,10 @@ window.MARIN_RESEARCH = {
       "status": "confirmed",
       "facts": {
         "en": [
-          "October16 13:05:32UTC16K child running272592;fresh evaluation269999Paloma0.7571412/Uncheatable0.4922535BPB. October14GO remains latest confirmed main-run change;own-child restart unverified.",
+          "October17 13:00:52UTC16K child running278700;latest16K evaluation275999Paloma0.7556372/Uncheatable0.4909331BPB. October14GO remains latest main-run change;own-child restart unverified.",
           "At 16:03 UTC October 2 the same public run reached step 193768: loss 1.19200, 14.71-second training steps, 14.93-second iterations and MFU 26.69%. Median MFU is 26.70% over 118 samples. Latest returned evaluation: step 191999, Paloma 0.787332 and UncheatableEval 0.510539 BPB. No new software handoff is established.",
           "Launch-provenance PR #9637 merged; its tracked-file hash excludes untracked file contents. Exporter #9584, evaluation checks #9461 and logging prefetch #9600 remain merged repository facts with separate deployment requirements.",
-          "Hero/mixture and OpenAthena fixed index/article hashes unchanged;standupSeptember21. Live/October16fixed samples77highest270000childcompletedOctober16;October15fixed72. Not a final capability benchmark.",
+          "Hero/mixture and OpenAthena index/article hashes unchanged;standupSeptember21. Live/October17fixed samples84,highest270000;newtemperature0.7/1.0 artifacts are sample variants,not qualitybenchmarks.",
           "Tokenizer-prefetch PR #9617 is closed without merge. Its earlier small benchmark is not an adopted data-pipeline change.",
           "Retry-resource/source-capture fixes #9705 and production-user alert enrollment #9700 are merged repository facts, without inspected Hero adoption evidence. A new fixed October 2 completion report preserves 41 sample sets, not a final benchmark.",
           "Step 192000 writing samples completed October 4 18:03UTC; live and October 4 fixed page list 42 sets, while October 2 remains 41. Samples do not establish final capability.",
@@ -2232,7 +2310,8 @@ window.MARIN_RESEARCH = {
           "Native GPU Snowball reference10069 merged after a controlled rounding comparison; model quality not measured. Alert guidance10049, scheduler preference10065 and count aggregation10073 are merged repository facts, with deployed remediation/adoption unverified.",
           "Context/data controls9888/9890/9689 and deploy10101 merged with16K adoption separately confirmed by official GO. Logging bound10024 and readiness10038 merged repository facts; independent deployed-performance/recovered-eval outcomes unverified.10037 closed unmerged.",
           "10039 cache-marker exclusion merged;existing partial mirror cleanup and deployed outcomes unverified. No new main-run deployment from side experiments or accepted cache code.",
-          "9813 per-evaluation success-cache/result orchestration merged;deployment and recovered historical results unverified. Open10169 handles inference preemption separately. Old67B comparison measurements are distinct from currentHero."
+          "9813 per-evaluation success-cache/result orchestration merged;deployment and recovered historical results unverified. Open10169 handles inference preemption separately. Old67B comparison measurements are distinct from currentHero.",
+          "10170revisedFA4query-swap wrapper and10195evaluator-owned metrics merged;main-run adoption/historical recovery not verified. Higher-temperature fixed samples published while default10224 remains open."
         ]
       },
       "sourceIds": [
@@ -2317,7 +2396,12 @@ window.MARIN_RESEARCH = {
         "M353",
         "M290",
         "M362",
-        "M363"
+        "M363",
+        "M358",
+        "M372",
+        "M378",
+        "M379",
+        "M380"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2337,7 +2421,8 @@ window.MARIN_RESEARCH = {
           "10022 adopts the published qualified GPU release but remains draft; MSRL944 consumer reconciliation open. TPU10023 draft has missing AuxOutput API and unexecuted physical gate.10067 data-pipeline worker release/wait continuation and10074 thread caps open; candidate results are not scheduled-pipeline or Hero adoption.",
           "16K is adopted; future longer-context phases require separate evidence.10100 old-checkpoint model config selection remains an open fix;9990 one-rack eval preflight remains open. GPU10022/MSRL944 and TPU10023 adoption/qualification still pending; endpoint10033 and inference recovery10169 remain open;9813 merged with deployment unverified.",
           "10121 row placement,10122 mask/buffer work and10145local flatten remain open with no main-run adoption;10100sampler fix remains open.10039merged butoldmirrorcleanup/deployedvalidation remain separate.",
-          "10174 stored-router-bias loading/export-version correction and10175reference attention bounds open;pretraining update/activeFA4 unchanged.10169preemptionresume open;10170zigzag layout open.10121latest two fixes unremeasured;no main-rack adoption."
+          "10174 stored-router-bias loading/export-version correction and10175reference attention bounds open;pretraining update/activeFA4 unchanged.10169preemptionresume open;10170zigzag wrapper merged;deployment unverified.10121latest two fixes unremeasured;no main-rack adoption.",
+          "10224temperature0.7default,10218fixed-manifest checkpoint thinning,10233context-sharded evaluator fix remain open.10197evalpolicy/10234roadmap public documents do not certify all results.10195and214partial-metric recovery merged;deployment/recoveredresults unverified."
         ]
       },
       "sourceIds": [
@@ -2413,7 +2498,12 @@ window.MARIN_RESEARCH = {
         "M354",
         "M356",
         "M357",
-        "M358"
+        "M358",
+        "M368",
+        "M369",
+        "M371",
+        "M377",
+        "M375"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2441,7 +2531,8 @@ window.MARIN_RESEARCH = {
           "10067 fixed-code canaries reportedly completed56min/5h47m; not a matched speed comparison or adopted mixture.10074 two-CPU proxy assignment68.8→11.8s with equal hashes, production-stage gain unmeasured. Refreshed native TPU candidate9400 fails saved scores; serving reanalysis fails one current-native4K bound.",
           "Eleven-rack100-step16K QK trials support keeping1.48, totals nearly tied; paired-batch public analysis is not independent reproduction or a long-term optimum.10024 scalar logging repro2vs418 threads/33vs31ms is not a full-run performance comparison.",
           "Belay Ckpt1 replaces base16 within research track;fixed8min d512 is one seed,larger ladder has different budgets,d1280unfinished.1.33×/0.729BPB forecast provisional. Open10121/10122 show small16K one-rack gains;combined+1.66%not sum. Open10145 CP4/EP16 65K15.035→14.626s/drop2.21→0.23% is a side test,main remains16K.",
-          "10170single-rack262KCP4/EP16short66-step test29.66→23.21s,+27.8%tokens/s,peak+1.2GiB;not16Kproduction. Old67Brolling4096Palomatest0.7812/0.7795vsQwen0.8397;7Uncheatable0.5178/0.5171vs0.5245,remaining task/preprocessing/overlap limits."
+          "Earlier10170whole-model layout tested29.66→23.21s;revised mergedwrapper reports23.22s/+0.8GiB/unchanged1.63%drops,not16Kproduction. Old67Brolling4096Palomatest0.7812/0.7795vsQwen0.8397;7Uncheatable0.5178/0.5171vs0.5245,remaining task/preprocessing/overlap limits.",
+          "Merged10170finalwrapper262Ksingle-rack66steps29.66→23.22s,+27.8%,std3.19→1.39s,peak+0.8GiB,drops1.63%unchanged,lossRMS4.6e-4;not11rackdeployment. Step270000one-offtemp0.7/1.0 artifacts need settings-aware comparison."
         ]
       },
       "sourceIds": [
@@ -2496,7 +2587,8 @@ window.MARIN_RESEARCH = {
         "M358",
         "M359",
         "M360",
-        "M361"
+        "M361",
+        "M368"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2520,7 +2612,8 @@ window.MARIN_RESEARCH = {
           "Capacity, process-thread competition and wait policy may interact, but separate reports do not isolate one cause for all canary timeouts. GPU rounding explanation is supported by its controlled comparison and cannot substitute for an unexecuted TPU causal test.",
           "The16K evaluation step-down is mainly a packing effect per official status, not measured capability improvement. No same-batch main-run control window exists because the parent stopped at handoff.",
           "Belay large-budget compute advantage is a scaling-fit forecast with unfinished d1280,not final checkpoint. Lower loss in65Klayout trial may involve fewer drops as well as layout;unique causal attribution unestablished.",
-          "Earlycheckpoint stale-pending/one-step-ahead-weight/async-save explanations are hypotheses,not established causes. Common rolling scoring reduces packing/split confounds but cannot certify unknown custom task/preprocessing or broad superiority."
+          "Earlycheckpoint stale-pending/one-step-ahead-weight/async-save explanations are hypotheses,not established causes. Common rolling scoring reduces packing/split confounds but cannot certify unknown custom task/preprocessing or broad superiority.",
+          "Sampling-temperature variety is not measured checkpoint capability gain. History-reading commands include benign use,so16.4%ofreportedpassingtraces cannot be applied as a universal cheat-rate correction."
         ]
       },
       "sourceIds": [
@@ -2563,7 +2656,10 @@ window.MARIN_RESEARCH = {
         "M349",
         "M351",
         "M355",
-        "M359"
+        "M359",
+        "M373",
+        "M374",
+        "M368"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2585,7 +2681,8 @@ window.MARIN_RESEARCH = {
           "Public #10048 reports a critical-alert gap during a September 30 retry; initiating failure cause and deployed repair unknown. #10047 exact pending-worker verdict unavailable; #10059 memory constraint is visible but not isolated as the sole timeout cause. Own-checkpoint restoration of optimized Hero remains unverified.",
           "16K child own-checkpoint restart remains unexercised publicly despite confirmed parent-checkpoint restore and first child save.10100 regeneration-config risk has no demonstrated corruption or deployed fix. Final serving qualification,clean PTB correction and critical-alert repair remain unverified.",
           "Filtered current-Stack-v3 scan does not explain newerPTB/WikiTextdrops orcertifyfullstoreclean;olderpinnedrevision403,optout/name/size/formatgaps remain. Clean corrected eval,childownrestart,main-rack adoption andexistingpartialmirrorcleanup unverified.",
-          "10180sixearlycheckpoint bias/pending equality remains unexplained;later nine comparisons do not certify all current saves. Corrected export/deployed10174/10175,full11racklatest10121cost,childownrestart and clean corrected evaluation remain unverified."
+          "10180sixearlycheckpoint bias/pending equality remains unexplained;later nine comparisons do not certify all current saves. Corrected export/deployed10174/10175,full11racklatest10121cost,childownrestart and clean corrected evaluation remain unverified.",
+          "10232shared-context evaluator accelerator rerun,10212/10223cleanpackages/fullhistoricaltraceaudit,checkpointthinningoperatorexecution/restoredprotection and main-run adoption of merged10170 remain unverified. Earlysave10180andownchildrestartstill unresolved."
         ]
       },
       "sourceIds": [
@@ -2651,12 +2748,190 @@ window.MARIN_RESEARCH = {
         "M355",
         "M354",
         "M356",
-        "M359"
+        "M359",
+        "M370",
+        "M373",
+        "M374",
+        "M369"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-10-17-training-and-review",
+      "date": "2026-10-17",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero keeps training at 16K; accepted preparation is not a new main-run rollout"
+      },
+      "detail": {
+        "en": "The16K main Hero continues training and has recorded later evaluations. Today's review finds no new main-run handoff or verified restart from its own later checkpoint;accepted long-context code and new sample settings have separate evidence scopes. Anonymous W&B at October17 13:00:52.533 UTC (09:00 New York): hero-ctx16k-step257k running278700,versus yesterday272592 at a slightly different time;loss1.0790259,training step13.6532s,full iteration14.0016s,MFU30.8492%,median30.4570% over500 samples. MFU measures utilization,not a fresh matched speed comparison. Latest16K evaluation275999:Paloma0.7556372/UncheatableEval0.4909331 bits per byte. Parent4K inherited history,packing differences and contamination caution remain separate from these fresh measurements. Required8435/8506/8870 have no new official status since the prior review. All119 updated GitHub search results across two pages and148 related topics were read across launch,checkpoint/restore,mixtures,communication,kernels,memory,context,evaluation and handoff. Latest standup remains September21. Paginated Belay adds no material new result;source bodies and edited comments were reviewed. Hero/mixture fixed reports and OpenAthena index/expert-parallel hashes unchanged. Live and October17 fixed sample pages list84 sets,highest270000;one new0.7-temperature and one1.0-temperature set are separately labeled. These are generation examples,not a final capability evaluation. Focused X candidate-author query returned zero rows with identity/full coverage unverified;no inactivity conclusion follows. Early checkpoint issue10180 and proposed loader/reference corrections10174/10175 remain open."
+      },
+      "sourceIds": [
+        "M343",
+        "M340",
+        "M2",
+        "M3",
+        "M45",
+        "M112",
+        "M137",
+        "M378"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-17T13:05:08.410843+00:00",
+      "concept": {
+        "en": "Code acceptance,sample publication and a running training configuration are different milestones. Each needs its own evidence before it changes the main-run account."
+      },
+      "exercise": {
+        "en": "What explicit record would turn accepted262K preparation into a confirmed main-run context switch?"
+      }
+    },
+    {
+      "id": "event-2026-10-17-accepted-zigzag-wrapper",
+      "date": "2026-10-17",
+      "status": "confirmed",
+      "title": {
+        "en": "Accepted long-context code spreads work more evenly without changing main-run context"
+      },
+      "detail": {
+        "en": "Marin accepted a narrower implementation of the zigzag attention idea tested yesterday. It balances early and late document work inside the attention wrapper,but merge alone does not establish adoption by the main Hero,which still trains at16K. PR #10170 merged October16 21:55:04UTC. Instead of storing the entire sequence in zigzag order,it swaps half of each shard's query chunks inside FA4 and swaps outputs back;the rest of the model keeps ordinary sequence order. The public final one-rack262K,CP4/EP16,restore240000,66-scored-step comparison reports29.66→23.22s (+27.8% tokens/s),step-time standard deviation3.19→1.39s,peak memory+0.8GiB,drops unchanged1.63%,80-step loss RMS4.6e-4. These supersede neither yesterday's dated observations nor qualify eleven-rack production. The earlier whole-model layout was23.18s on the same rack,so the report puts the wrapper transfer overhead at most0.2%. The implementation scope and memory/drop figures changed;do not present old-version numbers as current-head results. A stated future262K switch is a plan,not a launch or recovery record."
+      },
+      "sourceIds": [
+        "M358",
+        "M340",
+        "M343"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-17T13:05:08.410843+00:00",
+      "concept": {
+        "en": "A smaller implementation can preserve the same idea while changing overhead and risk. Tests belong to the exact version they measured."
+      },
+      "exercise": {
+        "en": "Why should the revised memory and drop figures be reported separately from yesterday’s earlier implementation?"
+      }
+    },
+    {
+      "id": "event-2026-10-17-sample-temperature-versions",
+      "date": "2026-10-17",
+      "status": "experimental",
+      "title": {
+        "en": "New examples use more randomness,so style changes need a settings-aware comparison"
+      },
+      "detail": {
+        "en": "The public sample report now includes separately labeled higher-randomness outputs from the same270000-step checkpoint. More varied prose can reflect this sampling setting rather than a stronger model;it is not a training configuration change. Fixed result artifacts independently read here contain one hero-native-v6-temperature-0.7 set completed October17 08:57:47UTC and one v5-temperature-1 set completed06:19:38UTC,alongside earlier0.2 examples. Open PR #10224 proposes0.7 as the sampler default and starts newly identified requests at270000 to avoid regenerating the whole lineage. Artifact publication is confirmed,but the default-change PR remains unmerged. Earlier releases retain their results and separate labels. This does not fix the older-checkpoint model-config risk10100 or establish a judged capability improvement. Compare the same checkpoint,prompt and sampling settings before interpreting output quality changes."
+      },
+      "sourceIds": [
+        "M368",
+        "M379",
+        "M380",
+        "M338"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-17T13:05:08.410843+00:00",
+      "concept": {
+        "en": "Temperature controls how randomly a model chooses its next token. Changing it can change variety without changing the learned weights."
+      },
+      "exercise": {
+        "en": "What would you keep fixed when comparing two checkpoints using these examples?"
+      }
+    },
+    {
+      "id": "event-2026-10-17-context-sharded-evaluation",
+      "date": "2026-10-17",
+      "status": "planned",
+      "title": {
+        "en": "A proposed evaluator fix addresses a job that trained successfully but failed its first held-out check"
+      },
+      "detail": {
+        "en": "A separate Snowball pilot trained until its first held-out evaluation,then failed because evaluation could not shift token targets across a sharded context axis. An open shared-code fix addresses that gap;this is not evidence of a failure in the16K main Hero. Issue #10232 reports a32GPU explicit context4 layout at32768 tokens,global batch16,on the #10213 SFT sweep;the first held-out check at completed update548 raises a JAX ShardingTypeError. The labeled path has the same operation but was not exercised in that job. PR #10233 reuses the training loss's sharding-aware next-token shift and preserves layout for byte lookup. A two-device CPU mesh matches unsharded tagged loss/BPB and labeled target IDs. The PR is open,no successful affected accelerator rerun or deployed fix is established. Training updates succeeding did not validate the evaluator path."
+      },
+      "sourceIds": [
+        "M370",
+        "M371"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-17T13:05:08.410843+00:00",
+      "concept": {
+        "en": "Training and evaluation may prepare targets differently. A successful training step does not prove the first held-out evaluation can run."
+      },
+      "exercise": {
+        "en": "What extra test should a context-parallel launch complete before it is considered ready?"
+      }
+    },
+    {
+      "id": "event-2026-10-17-evaluator-owned-partial-metrics",
+      "date": "2026-10-17",
+      "status": "confirmed",
+      "title": {
+        "en": "Accepted recovery code keeps the evaluator’s scoring rules instead of rebuilding a simple average"
+      },
+      "detail": {
+        "en": "Marin accepted a change to preserve benchmark metrics produced by the evaluator after infrastructure failures. That avoids replacing task-specific scoring with a generic sample average,but acceptance does not prove historical scores were repaired or production recovery succeeded. PR #10195 merged October16 16:39:39UTC. Its public description accepts partial results only when the evaluator's scored count matches the valid archived samples;partial recovery depends on Evalchemy #214,which also merged October16 16:42:57UTC. Both merges are repository facts rather than deployment or historical-repair proof. Metric names,breakdowns and benchmark-specific aggregation must remain evaluator-owned. This is distinct from previously merged9813 success caching and still-open inference recovery10169/endpoint relay10033. No clean rerun or deployed adoption is inferred from merge alone."
+      },
+      "sourceIds": [
+        "M372",
+        "M377",
+        "M290",
+        "M357",
+        "M300"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-17T13:05:08.410843+00:00",
+      "concept": {
+        "en": "A benchmark score is not always the average of per-sample numbers. Recovery should preserve the evaluator’s definition and reconcile which samples were actually scored."
+      },
+      "exercise": {
+        "en": "Why must the scored count agree with the valid archive before publishing a partial result?"
+      }
+    },
+    {
+      "id": "event-2026-10-17-checkpoint-retention-proposal",
+      "date": "2026-10-17",
+      "status": "planned",
+      "title": {
+        "en": "A proposed checkpoint cleanup preserves key transition snapshots,with no completed deletion verified"
+      },
+      "detail": {
+        "en": "An open plan would free storage by thinning17 superseded Hero checkpoints while retaining selected history and transition boundaries. This is a proposed irreversible cleanup,not evidence that the checkpoints have already been deleted or that main training changed. PR #10218 proposes temporarily narrowing a delete-protection rule for a fixed manifest of552013 objects,reported70.3TiB. The live16K phase and two named phases remain fully protected;retention keeps every12000-step checkpoint plus specified early and change-boundary snapshots,including257553/258000 around the16K switch. The plan preserves the first/last sides of earlier weight-decay,routing and mixture transitions. It explicitly says bucket versioning is suspended and deletion permanent,followed by restoring broad protection by October23. Operator preview,application,deletion and protection restoration are separate required actions;no completion evidence was found. This review performs none of those operations. Historical reproducibility depends on exactly which snapshots survive."
+      },
+      "sourceIds": [
+        "M369"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-17T13:05:08.410843+00:00",
+      "concept": {
+        "en": "Checkpoint retention is a trade-off between storage and the ability to revisit a past transition. Keeping both sides of a change preserves more diagnostic value than keeping arbitrary points."
+      },
+      "exercise": {
+        "en": "Which snapshots would you keep to compare model behavior immediately before and after a configuration change?"
+      }
+    },
+    {
+      "id": "event-2026-10-17-coding-task-shortcuts",
+      "date": "2026-10-17",
+      "status": "unknown",
+      "title": {
+        "en": "Reported coding-task shortcuts limit what existing pass rates can prove"
+      },
+      "detail": {
+        "en": "Two public reports describe ways a coding agent can find a task's reference fix inside its environment. They raise a concrete evaluation and training-data validity problem,but clean replacement packages and audited corrected historical results are not yet established. Issue #10212 reports SWE-smith task images retaining git history and branches containing unbroken code;in one existing trace set,860 of5237 passing trials and433 of4119 failing trials used history-reading commands. Some commands are benign,so that16.4% is not a measured cheat rate or a correction factor for all passes. Issue #10223 describes another path:agent-installed libraries or image caches can contain readable clean copies of the target repository. A reported GLM trial copied tenacity code from the agent environment and passed. Its dependency-pinned survey covers eight repositories and542 tasks of a2100-task pool before replacement. Existing trace sets used different environments and were not fully audited for these paths. The reports distinguish SWE-smith from SWE-bench Verified and tool-environment from image-level exposure;do not generalize the finding to every benchmark or the live Hero. The open October16 evaluation-policy document10197 and roadmap10234 describe intended reportability/reproducibility standards,but do not by themselves remove these shortcuts or certify all reported scores. Public findings were read,not independently reproduced inside those sandboxes."
+      },
+      "sourceIds": [
+        "M373",
+        "M374",
+        "M375",
+        "M376"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-17T13:05:08.410843+00:00",
+      "concept": {
+        "en": "A task may be solvable through an unintended shortcut rather than the skill it is supposed to measure. Exposing a reference copy changes what a pass means."
+      },
+      "exercise": {
+        "en": "Why should an audit inspect the agent-installed environment as well as the task image prepared before the agent starts?"
+      }
+    },
     {
       "id": "event-2026-10-16-training-and-review",
       "date": "2026-10-16",
