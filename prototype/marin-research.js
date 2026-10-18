@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-10-17",
+  "snapshot": "2026-10-18",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -2284,6 +2284,90 @@ window.MARIN_RESEARCH = {
       "kind": "report",
       "title": "Hero step270000 sample artifact · hero-native-v5-temperature-1",
       "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/results/bfba8b33ace2f669656f4be4637097407c0b0a73823aa1b63d470d3c0747f0ae.json"
+    },
+    {
+      "id": "M381",
+      "kind": "standup",
+      "title": "Week of October 13, 2026 standup",
+      "url": "https://github.com/marin-community/marin/issues/10148"
+    },
+    {
+      "id": "M382",
+      "kind": "pr",
+      "title": "[iac] Restore the hero-* checkpoint deletion deny",
+      "url": "https://github.com/marin-community/marin/pull/10245"
+    },
+    {
+      "id": "M383",
+      "kind": "pr",
+      "title": "[evaluation] Resume brokered evals and expose serving status",
+      "url": "https://github.com/marin-community/marin/pull/10222"
+    },
+    {
+      "id": "M384",
+      "kind": "pr",
+      "title": "Evalchemy: preserve checkpoints when replacing inference endpoints",
+      "url": "https://github.com/marin-community/evalchemy/pull/216"
+    },
+    {
+      "id": "M385",
+      "kind": "pr",
+      "title": "[dependencies] Advance external runtimes",
+      "url": "https://github.com/marin-community/marin/pull/10249"
+    },
+    {
+      "id": "M386",
+      "kind": "pr",
+      "title": "[evals] Validate Evalchemy benchmark metadata",
+      "url": "https://github.com/marin-community/marin/pull/10239"
+    },
+    {
+      "id": "M387",
+      "kind": "pr",
+      "title": "[finelog] Increase forwarding throughput for dense log backlogs",
+      "url": "https://github.com/marin-community/marin/pull/10238"
+    },
+    {
+      "id": "M388",
+      "kind": "issue",
+      "title": "[iris] GPU jobs default to NCCL_DEBUG=INFO and flood log forwarding",
+      "url": "https://github.com/marin-community/marin/issues/10240"
+    },
+    {
+      "id": "M389",
+      "kind": "pr",
+      "title": "[iris] Default GPU NCCL logging to warnings",
+      "url": "https://github.com/marin-community/marin/pull/10241"
+    },
+    {
+      "id": "M390",
+      "kind": "issue",
+      "title": "[inference] remote_inference keeps a stale address after the served task is rescheduled",
+      "url": "https://github.com/marin-community/marin/issues/10237"
+    },
+    {
+      "id": "M391",
+      "kind": "issue",
+      "title": "[tpu] Step12 TPU serving diverges from H100 past the 2048-token sliding window",
+      "url": "https://github.com/marin-community/marin/issues/10250"
+    },
+    {
+      "id": "M392",
+      "kind": "pr",
+      "title": "[iris] Default GPU jobs to NCCL_DEBUG=WARN",
+      "url": "https://github.com/marin-community/marin/pull/10242"
+    },
+    {
+      "id": "M393",
+      "kind": "report",
+      "title": "Hero completions: fixed October 18, 2026 snapshot",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.18/index.html"
+    },
+    {
+      "id": "M394",
+      "kind": "report",
+      "title": "Hero step 282000: fixed reference-EOS sample artifact, October 18",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/results/80563d14317b03a7404470ae03a37fccdd486d3a1b1b1b62e728658b348d0173.json"
     }
   ],
   "claimGroups": [
@@ -2291,10 +2375,10 @@ window.MARIN_RESEARCH = {
       "status": "confirmed",
       "facts": {
         "en": [
-          "October17 13:00:52UTC16K child running278700;latest16K evaluation275999Paloma0.7556372/Uncheatable0.4909331BPB. October14GO remains latest main-run change;own-child restart unverified.",
+          "October 18 13:02:07.908 UTC: the 16K Hero child is running at step 284831; latest evaluation 281999 has Paloma 0.7547842 / UncheatableEval 0.4893956 BPB. October 14 GO remains the latest main-run configuration adoption; own-child later-checkpoint restart remains unverified.",
           "At 16:03 UTC October 2 the same public run reached step 193768: loss 1.19200, 14.71-second training steps, 14.93-second iterations and MFU 26.69%. Median MFU is 26.70% over 118 samples. Latest returned evaluation: step 191999, Paloma 0.787332 and UncheatableEval 0.510539 BPB. No new software handoff is established.",
           "Launch-provenance PR #9637 merged; its tracked-file hash excludes untracked file contents. Exporter #9584, evaluation checks #9461 and logging prefetch #9600 remain merged repository facts with separate deployment requirements.",
-          "Hero/mixture and OpenAthena index/article hashes unchanged;standupSeptember21. Live/October17fixed samples84,highest270000;newtemperature0.7/1.0 artifacts are sample variants,not qualitybenchmarks.",
+          "Hero/mixture fixed reports and Open Athena index/expert-parallel article hashes remain unchanged. Latest standup is October 13, published October 15. Live/October 18 fixed examples contain 92 sample sets, highest step 282000; sample publication is not a judged capability result.",
           "Tokenizer-prefetch PR #9617 is closed without merge. Its earlier small benchmark is not an adopted data-pipeline change.",
           "Retry-resource/source-capture fixes #9705 and production-user alert enrollment #9700 are merged repository facts, without inspected Hero adoption evidence. A new fixed October 2 completion report preserves 41 sample sets, not a final benchmark.",
           "Step 192000 writing samples completed October 4 18:03UTC; live and October 4 fixed page list 42 sets, while October 2 remains 41. Samples do not establish final capability.",
@@ -2311,7 +2395,10 @@ window.MARIN_RESEARCH = {
           "Context/data controls9888/9890/9689 and deploy10101 merged with16K adoption separately confirmed by official GO. Logging bound10024 and readiness10038 merged repository facts; independent deployed-performance/recovered-eval outcomes unverified.10037 closed unmerged.",
           "10039 cache-marker exclusion merged;existing partial mirror cleanup and deployed outcomes unverified. No new main-run deployment from side experiments or accepted cache code.",
           "9813 per-evaluation success-cache/result orchestration merged;deployment and recovered historical results unverified. Open10169 handles inference preemption separately. Old67B comparison measurements are distinct from currentHero.",
-          "10170revisedFA4query-swap wrapper and10195evaluator-owned metrics merged;main-run adoption/historical recovery not verified. Higher-temperature fixed samples published while default10224 remains open."
+          "10170revisedFA4query-swap wrapper and10195evaluator-owned metrics merged;main-run adoption/historical recovery not verified. Higher-temperature fixed samples published while default10224 remains open.",
+          "Public #10245 reports 17 old checkpoints / 552013 objects / 70.26 TiB deleted and 30 retained intact. #10218 and policy-revert #10245 merged; effective cloud policy restoration still lacks an apply receipt.",
+          "Merged #10222 and public separate Qwen3-8B report: 25 evaluations reused, four resumed, 29 records succeeded in 12m13s recovery, with one DROP request unscored. Evalchemy #216 and dependency pin #10249 merged; no blanket Hero historical repair is established.",
+          "Merged #10239 accepts four benchmark provenance fields without changing scoring; EvalDash deployment/backfill remain unverified. Open #10238 publicly reports an earlier logging-capacity rollout drained the backlog, while its newer chunk splitting remains undeployed."
         ]
       },
       "sourceIds": [
@@ -2401,7 +2488,21 @@ window.MARIN_RESEARCH = {
         "M372",
         "M378",
         "M379",
-        "M380"
+        "M380",
+        "M381",
+        "M382",
+        "M383",
+        "M384",
+        "M385",
+        "M386",
+        "M387",
+        "M388",
+        "M389",
+        "M392",
+        "M390",
+        "M391",
+        "M393",
+        "M394"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2422,7 +2523,7 @@ window.MARIN_RESEARCH = {
           "16K is adopted; future longer-context phases require separate evidence.10100 old-checkpoint model config selection remains an open fix;9990 one-rack eval preflight remains open. GPU10022/MSRL944 and TPU10023 adoption/qualification still pending; endpoint10033 and inference recovery10169 remain open;9813 merged with deployment unverified.",
           "10121 row placement,10122 mask/buffer work and10145local flatten remain open with no main-run adoption;10100sampler fix remains open.10039merged butoldmirrorcleanup/deployedvalidation remain separate.",
           "10174 stored-router-bias loading/export-version correction and10175reference attention bounds open;pretraining update/activeFA4 unchanged.10169preemptionresume open;10170zigzag wrapper merged;deployment unverified.10121latest two fixes unremeasured;no main-rack adoption.",
-          "10224temperature0.7default,10218fixed-manifest checkpoint thinning,10233context-sharded evaluator fix remain open.10197evalpolicy/10234roadmap public documents do not certify all results.10195and214partial-metric recovery merged;deployment/recoveredresults unverified."
+          "Checkpoint thinning is publicly reported completed, superseding the proposal; targeted cloud-policy apply still requires evidence. #10241 quieter GPU logging and #10238 chunk splitting remain open; #10242 closed unmerged. #10239 dashboard deployment/backfill and custom-benchmark pin-gate coverage remain pending."
         ]
       },
       "sourceIds": [
@@ -2503,7 +2604,21 @@ window.MARIN_RESEARCH = {
         "M369",
         "M371",
         "M377",
-        "M375"
+        "M375",
+        "M381",
+        "M382",
+        "M383",
+        "M384",
+        "M385",
+        "M386",
+        "M387",
+        "M388",
+        "M389",
+        "M392",
+        "M390",
+        "M391",
+        "M393",
+        "M394"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2532,7 +2647,8 @@ window.MARIN_RESEARCH = {
           "Eleven-rack100-step16K QK trials support keeping1.48, totals nearly tied; paired-batch public analysis is not independent reproduction or a long-term optimum.10024 scalar logging repro2vs418 threads/33vs31ms is not a full-run performance comparison.",
           "Belay Ckpt1 replaces base16 within research track;fixed8min d512 is one seed,larger ladder has different budgets,d1280unfinished.1.33×/0.729BPB forecast provisional. Open10121/10122 show small16K one-rack gains;combined+1.66%not sum. Open10145 CP4/EP16 65K15.035→14.626s/drop2.21→0.23% is a side test,main remains16K.",
           "Earlier10170whole-model layout tested29.66→23.21s;revised mergedwrapper reports23.22s/+0.8GiB/unchanged1.63%drops,not16Kproduction. Old67Brolling4096Palomatest0.7812/0.7795vsQwen0.8397;7Uncheatable0.5178/0.5171vs0.5245,remaining task/preprocessing/overlap limits.",
-          "Merged10170finalwrapper262Ksingle-rack66steps29.66→23.22s,+27.8%,std3.19→1.39s,peak+0.8GiB,drops1.63%unchanged,lossRMS4.6e-4;not11rackdeployment. Step270000one-offtemp0.7/1.0 artifacts need settings-aware comparison."
+          "Merged10170finalwrapper262Ksingle-rack66steps29.66→23.22s,+27.8%,std3.19→1.39s,peak+0.8GiB,drops1.63%unchanged,lossRMS4.6e-4;not11rackdeployment. Step270000one-offtemp0.7/1.0 artifacts need settings-aware comparison.",
+          "Separate Step12 TPU/H100 comparison #10250 reports long-position divergence beyond 2048 with identical IDs; lower repeated TPU MATH500 scores remain stack-scoped, not Hero weight quality or a confirmed root cause."
         ]
       },
       "sourceIds": [
@@ -2588,7 +2704,21 @@ window.MARIN_RESEARCH = {
         "M359",
         "M360",
         "M361",
-        "M368"
+        "M368",
+        "M381",
+        "M382",
+        "M383",
+        "M384",
+        "M385",
+        "M386",
+        "M387",
+        "M388",
+        "M389",
+        "M392",
+        "M390",
+        "M391",
+        "M393",
+        "M394"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2613,7 +2743,8 @@ window.MARIN_RESEARCH = {
           "The16K evaluation step-down is mainly a packing effect per official status, not measured capability improvement. No same-batch main-run control window exists because the parent stopped at handoff.",
           "Belay large-budget compute advantage is a scaling-fit forecast with unfinished d1280,not final checkpoint. Lower loss in65Klayout trial may involve fewer drops as well as layout;unique causal attribution unestablished.",
           "Earlycheckpoint stale-pending/one-step-ahead-weight/async-save explanations are hypotheses,not established causes. Common rolling scoring reduces packing/split confounds but cannot certify unknown custom task/preprocessing or broad superiority.",
-          "Sampling-temperature variety is not measured checkpoint capability gain. History-reading commands include benign use,so16.4%ofreportedpassingtraces cannot be applied as a universal cheat-rate correction."
+          "Sampling-temperature variety is not measured checkpoint capability gain. History-reading commands include benign use,so16.4%ofreportedpassingtraces cannot be applied as a universal cheat-rate correction.",
+          "The onset at 2048 in #10250 motivates attention/cache controls but does not identify the failing mechanism. #10222’s 3–3.5-hour fresh-suite budget is a forecast, not its measured 12m13s partial recovery or measured full-suite throughput."
         ]
       },
       "sourceIds": [
@@ -2659,7 +2790,21 @@ window.MARIN_RESEARCH = {
         "M359",
         "M373",
         "M374",
-        "M368"
+        "M368",
+        "M381",
+        "M382",
+        "M383",
+        "M384",
+        "M385",
+        "M386",
+        "M387",
+        "M388",
+        "M389",
+        "M392",
+        "M390",
+        "M391",
+        "M393",
+        "M394"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2682,7 +2827,8 @@ window.MARIN_RESEARCH = {
           "16K child own-checkpoint restart remains unexercised publicly despite confirmed parent-checkpoint restore and first child save.10100 regeneration-config risk has no demonstrated corruption or deployed fix. Final serving qualification,clean PTB correction and critical-alert repair remain unverified.",
           "Filtered current-Stack-v3 scan does not explain newerPTB/WikiTextdrops orcertifyfullstoreclean;olderpinnedrevision403,optout/name/size/formatgaps remain. Clean corrected eval,childownrestart,main-rack adoption andexistingpartialmirrorcleanup unverified.",
           "10180sixearlycheckpoint bias/pending equality remains unexplained;later nine comparisons do not certify all current saves. Corrected export/deployed10174/10175,full11racklatest10121cost,childownrestart and clean corrected evaluation remain unverified.",
-          "10232shared-context evaluator accelerator rerun,10212/10223cleanpackages/fullhistoricaltraceaudit,checkpointthinningoperatorexecution/restoredprotection and main-run adoption of merged10170 remain unverified. Earlysave10180andownchildrestartstill unresolved."
+          "10232shared-context evaluator accelerator rerun,10212/10223cleanpackages/fullhistoricaltraceaudit,effective restored checkpoint cloud protection and main-run adoption of merged10170 remain unverified. Earlysave10180andownchildrestartstill unresolved.",
+          "#10245 reports deletion, but effective restored cloud deletion protection has no public apply receipt. #10237 shared endpoint failover, #10239 deployed dashboard/backfill, and #10250 TPU serving cause/repair remain unverified; none is evidence of a main Hero training failure."
         ]
       },
       "sourceIds": [
@@ -2752,12 +2898,203 @@ window.MARIN_RESEARCH = {
         "M370",
         "M373",
         "M374",
-        "M369"
+        "M369",
+        "M381",
+        "M382",
+        "M383",
+        "M384",
+        "M385",
+        "M386",
+        "M387",
+        "M388",
+        "M389",
+        "M392",
+        "M390",
+        "M391",
+        "M393",
+        "M394"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-10-18-training-and-review",
+      "date": "2026-10-18",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero keeps training; new examples do not yet show a change in final model quality"
+      },
+      "detail": {
+        "en": "The main Hero run continues training with the 16K context setting, which lets it read longer passages than its earlier phase. No further main-run configuration change or restart from its own later saved state was confirmed in today’s review. Anonymous W&B observed October 18 at 13:02:07.908 UTC (09:02 New York) shows hero-ctx16k-step257k running at step 284831, versus 278700 at yesterday’s 13:00:52 UTC observation. Train loss is 1.0764176; training step 13.9350 seconds; full iteration 14.0484 seconds; MFU 30.2253%, median 30.4515% over 500 samples. MFU measures hardware utilization, not model quality or a new matched speed gain. Latest returned 16K evaluation is step 281999: Paloma 0.7547842 and UncheatableEval 0.4893956 bits per byte. These text-prediction measurements are not a final capability score; inherited 4K history, packing differences and contamination concerns remain separate. Required issues #8435, #8506 and #8870 have no new official handoff since the previous review. Screened 98 updated GitHub results and retrieved 132 related topics, including launch, checkpoint/restore, mixtures, communications, kernels, memory, long context, evaluation and handoff. The latest standup is the week of October 13, published October 15; stale October 16–17 references are corrected without re-dating old measurements. Belay has no new result since the prior review. Fixed Hero/mixture reports and Open Athena index/expert-parallel article hashes are unchanged. The live and October 18 fixed sample pages contain 92 sets, highest step 282000. That artifact completed October 18 at 08:45:09 UTC, identifies the current child checkpoint and reference-EOS release; more examples are not a judged quality improvement. The 0.7 default proposal #10224 remains open. A focused supplemental X candidate-author query returned zero rows; identity/full coverage remain unverified, so no inactivity claim follows."
+      },
+      "sourceIds": [
+        "M343",
+        "M340",
+        "M2",
+        "M3",
+        "M45",
+        "M381",
+        "M137",
+        "M393",
+        "M394",
+        "M368"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-18T13:06:02.834134+00:00",
+      "concept": {
+        "en": "A training counter tells us work continued. A controlled evaluation tells us what changed in performance; these answer different questions."
+      },
+      "exercise": {
+        "en": "Why does publishing eight more sample sets not establish that the model became better?"
+      }
+    },
+    {
+      "id": "event-2026-10-18-checkpoint-cleanup",
+      "date": "2026-10-18",
+      "status": "confirmed",
+      "title": {
+        "en": "The team reports deleting selected old snapshots while keeping the important transition points"
+      },
+      "detail": {
+        "en": "Marin reports that 17 selected old Hero training snapshots have been deleted, freeing about 70 TiB of storage while keeping 30 permanent snapshots. This moves yesterday’s cleanup proposal to a reported completed storage action; it does not change the live training recipe or prove that cloud deletion protection has already been restored. PR #10218 merged October 17 at 18:35:36 UTC. Follow-up #10245 explicitly reports 552013 objects / 70.26 TiB deleted, no remaining objects under the 17 prefixes, and 30 retained checkpoints intact; it merged at 23:08:12 UTC. A checkpoint is a saved state used to resume or inspect training. The retention plan keeps regular snapshots and both sides of key weight-decay, routing, data-mixture and context transitions; the live 16K phase stays protected. Versioning is suspended, so the reported deletions are permanent. The follow-up restores the broad hero-* deletion deny in code, but its text still calls for a targeted infrastructure apply. No public operator apply receipt was found, and bucket contents were not independently enumerated here. Preserve that distinction between a public operational report, merged policy code and verified effective cloud policy."
+      },
+      "sourceIds": [
+        "M369",
+        "M382"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-18T13:06:02.834134+00:00",
+      "concept": {
+        "en": "Keeping the snapshots just before and after a major change makes it possible to investigate what that change did, even when some intermediate saves are removed."
+      },
+      "exercise": {
+        "en": "What separate evidence would show that a restored protection rule is actually active in the cloud?"
+      }
+    },
+    {
+      "id": "event-2026-10-18-evaluation-recovery",
+      "date": "2026-10-18",
+      "status": "confirmed",
+      "title": {
+        "en": "A separate evaluation recovered unfinished work instead of starting all its tests again"
+      },
+      "detail": {
+        "en": "A public Qwen3-8B evaluation report says recovery reused 25 completed tests and resumed four unfinished ones, saving repeated work. This is an observed result from a separate evaluation job, not proof that Hero’s historical evaluations have been repaired. PR #10222 reports the first pass ended with 25 of 29 complete after 2h42m24s; recovery took 12m13s and saved all 29 records as succeeded. It retried only 14 generation requests: 13 succeeded, while one DROP context-limit request stayed unscored (9535 of 9536 scored). The report’s 19 proxy responses include readiness probes and should not be called 19 retried generations. Eight one-H100 workers and eight simultaneous evaluators were used. The 12-minute recovery is not full-suite throughput; a fresh 29-test run has not been measured, and the stated 3–3.5-hour budget is a forecast. The PR merged October 17 at 16:51 UTC; Evalchemy #216 merged at 22:20:39 UTC, and external-runtime update #10249 merged October 18 at 04:45:51 UTC to pin it. Those merges are repository facts; the public job report supplies the separate execution evidence. Partial results keep evaluator-owned scoring, saved-input identity checks and the 90% coverage gate. Inference-preemption proposal #10169 and the newly reported stale-address issue remain separate."
+      },
+      "sourceIds": [
+        "M383",
+        "M384",
+        "M385",
+        "M357",
+        "M390"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-18T13:06:02.834134+00:00",
+      "concept": {
+        "en": "An interrupted test can resume safely only when saved results still belong to the same model, prompts and scoring rules. A successful record may still disclose a small unscored fraction."
+      },
+      "exercise": {
+        "en": "Why would “all 29 records succeeded” be misleading without the remaining unscored DROP request?"
+      }
+    },
+    {
+      "id": "event-2026-10-18-metadata-validation",
+      "date": "2026-10-18",
+      "status": "confirmed",
+      "title": {
+        "en": "Accepted metadata support can make already-scored tests visible, after the dashboard is updated"
+      },
+      "detail": {
+        "en": "Marin accepted support for extra benchmark information that otherwise caused some scored evaluations to be rejected as invalid records. This repairs a record format boundary, not the model’s answers; the dashboard still needs a matching deployment before old results are republished. PR #10239 merged October 17 at 22:26:26 UTC. It declares source, reducers, prompt_length and requires_judge, while continuing to reject unknown fields. Scoring is explicitly unchanged. Public review notes explain that custom benchmarks emit these fields while the current gsm8k smoke check does not exercise that path; adding such coverage is a separate follow-up. No EvalDash deployment or completed historical backfill is established here. Do not turn an accepted schema change into a claim that missing results are already visible or their scores improved."
+      },
+      "sourceIds": [
+        "M386"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-18T13:06:02.834134+00:00",
+      "concept": {
+        "en": "A result can exist but fail to appear because its description no longer matches the reader’s expected format. Fixing that format does not change the underlying score."
+      },
+      "exercise": {
+        "en": "Which two receipts would you check after merging this fix: deployment of the reader and completion of the backfill?"
+      }
+    },
+    {
+      "id": "event-2026-10-18-logging-backlog",
+      "date": "2026-10-18",
+      "status": "confirmed",
+      "title": {
+        "en": "A reported logging rollout cleared a backlog; the newer serialization change still awaits deployment"
+      },
+      "detail": {
+        "en": "A public incident report says a logging-system rollout cleared delayed logs from separate GPU jobs, making their activity visible again. This is evidence about operational visibility, not a measured speed improvement in main Hero training. Open PR #10238 reports roughly 395 million sequence positions of backlog, about 24000 accepted positions per second before deployment, and 87000–107000 in successive 71- and 65-second samples after namespace concurrency and larger reads were deployed. By October 17 at 17:56 UTC, backlog was 91 positions and all 417 rows for the affected task were on the hub. Sequence positions can include gaps or filtered rows and are not exact line counts. The PR’s newer chunk-splitting follow-up is explicitly undeployed: its synthetic million-row test reduces serialization attempts from seven to three and total serialized bytes from 1010 to 589 MB, not measured end-to-end throughput. Separately, issue #10240 reports around 80000 mostly NCCL diagnostic log lines per second against roughly 34500 lines per second of forwarding capacity. PR #10241 proposes quieter warning defaults but remains open; duplicate #10242 closed without merge. The reported rollout and unmerged follow-ups must stay distinct. The deployment report was read publicly, not independently reproduced on the logging service."
+      },
+      "sourceIds": [
+        "M387",
+        "M388",
+        "M389",
+        "M392"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-18T13:06:02.834134+00:00",
+      "concept": {
+        "en": "If a system produces logs faster than they can be forwarded, the monitoring view falls behind. Reducing noise and increasing delivery capacity are different interventions."
+      },
+      "exercise": {
+        "en": "Why should a cleared log backlog not be described as faster model training?"
+      },
+      "productionChange": true,
+      "productionEvidenceIds": [
+        "M387"
+      ]
+    },
+    {
+      "id": "event-2026-10-18-stale-inference-address",
+      "date": "2026-10-18",
+      "status": "unknown",
+      "title": {
+        "en": "An interrupted server can leave callers using its old address, even after it restarts"
+      },
+      "detail": {
+        "en": "A separate Snowball data-collection incident reports that callers kept sending requests to an old server address after the server moved. The job could therefore write a success marker despite many failed trials; a restarted process alone does not establish recovered work. Issue #10237 reports 198 of 200 trials errored in one October 17 TMax relay round and 85 of 97 in a SWE-smith round. The public source audit says ordinary direct-endpoint retries reuse the same stale URL; an existing capability route has different behavior. A branch-local relay change re-resolves on connection failure and adds a failed-trial gate, but the shared fix and successful representative failover remain unverified. This is not evidence that main Hero training failed, nor is it resolved merely because #10222’s different brokered recovery succeeded. The incident descriptions and code-path audit are public evidence; linked internal incident pages are not used as independently accessible proof."
+      },
+      "sourceIds": [
+        "M390",
+        "M383"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-18T13:06:02.834134+00:00",
+      "concept": {
+        "en": "Retrying the same address only helps if that address is still correct. Recovery must rediscover moved services and verify useful work, not just that a process exited."
+      },
+      "exercise": {
+        "en": "What test would show that a client can follow a server to a new host without falsely marking failed work successful?"
+      }
+    },
+    {
+      "id": "event-2026-10-18-tpu-serving-window",
+      "date": "2026-10-18",
+      "status": "experimental",
+      "title": {
+        "en": "A separate model’s TPU answers diverge on longer passages; the cause is still unproven"
+      },
+      "detail": {
+        "en": "A public test of the smaller Snowball Step12 model reports that TPU and H100 predictions begin to disagree more once text passes 2048 tokens. It raises a serving-correctness question for that tested model and software stack, not evidence that main Hero’s trained weights are wrong. Issue #10250 reports repeated MATH500 scores of 0.944/0.950 on H100 versus 0.878/0.882 on v6e-8 and 0.884 on v5p-8. Ten matched texts contain 35801 scored positions with identical token IDs; mean absolute log-probability difference rises from 0.010–0.019 before 2048 to 0.063 at positions 2048–3071 and 0.142 at 3072–4095, while measured TPU self-noise there is 0.014/0.018. These are reported measurements, not independently rerun here. Matching simple attention-mask inequalities does not establish correct block traversal or cache contents; neither suspected cause is confirmed. The author corrects the proposed next step: changing grugmoe_attention_mode in the served vLLM build has no effect because that path does not read it. A kernel-level comparison with the reference at the tested window, page and head shapes is needed instead. A later automated proposal still suggests that ineffective config switch and must not override the correction. Exact model revision, runtime pins, input hash and replay caveat are retained in audit notes. No repaired TPU qualification or Hero deployment is established."
+      },
+      "sourceIds": [
+        "M391",
+        "M315"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-18T13:06:02.834134+00:00",
+      "concept": {
+        "en": "Two machines running the same weights can disagree because their serving software handles long text differently. Finding where disagreement begins helps design a test; it does not by itself identify the cause."
+      },
+      "exercise": {
+        "en": "Why must you check that a proposed test setting actually reaches the serving code before using its result?"
+      }
+    },
     {
       "id": "event-2026-10-17-training-and-review",
       "date": "2026-10-17",
@@ -2766,7 +3103,7 @@ window.MARIN_RESEARCH = {
         "en": "Hero keeps training at 16K; accepted preparation is not a new main-run rollout"
       },
       "detail": {
-        "en": "The16K main Hero continues training and has recorded later evaluations. Today's review finds no new main-run handoff or verified restart from its own later checkpoint;accepted long-context code and new sample settings have separate evidence scopes. Anonymous W&B at October17 13:00:52.533 UTC (09:00 New York): hero-ctx16k-step257k running278700,versus yesterday272592 at a slightly different time;loss1.0790259,training step13.6532s,full iteration14.0016s,MFU30.8492%,median30.4570% over500 samples. MFU measures utilization,not a fresh matched speed comparison. Latest16K evaluation275999:Paloma0.7556372/UncheatableEval0.4909331 bits per byte. Parent4K inherited history,packing differences and contamination caution remain separate from these fresh measurements. Required8435/8506/8870 have no new official status since the prior review. All119 updated GitHub search results across two pages and148 related topics were read across launch,checkpoint/restore,mixtures,communication,kernels,memory,context,evaluation and handoff. Latest standup remains September21. Paginated Belay adds no material new result;source bodies and edited comments were reviewed. Hero/mixture fixed reports and OpenAthena index/expert-parallel hashes unchanged. Live and October17 fixed sample pages list84 sets,highest270000;one new0.7-temperature and one1.0-temperature set are separately labeled. These are generation examples,not a final capability evaluation. Focused X candidate-author query returned zero rows with identity/full coverage unverified;no inactivity conclusion follows. Early checkpoint issue10180 and proposed loader/reference corrections10174/10175 remain open."
+        "en": "The16K main Hero continues training and has recorded later evaluations. Today's review finds no new main-run handoff or verified restart from its own later checkpoint;accepted long-context code and new sample settings have separate evidence scopes. Anonymous W&B at October17 13:00:52.533 UTC (09:00 New York): hero-ctx16k-step257k running278700,versus yesterday272592 at a slightly different time;loss1.0790259,training step13.6532s,full iteration14.0016s,MFU30.8492%,median30.4570% over500 samples. MFU measures utilization,not a fresh matched speed comparison. Latest16K evaluation275999:Paloma0.7556372/UncheatableEval0.4909331 bits per byte. Parent4K inherited history,packing differences and contamination caution remain separate from these fresh measurements. Required8435/8506/8870 have no new official status since the prior review. All119 updated GitHub search results across two pages and148 related topics were read across launch,checkpoint/restore,mixtures,communication,kernels,memory,context,evaluation and handoff. Correction recorded October 18: the October 13 standup (#10148), published October 15 at 14:00:34 UTC, was already available by this review. The previous latest-standup statement was stale. This correction does not refresh the dated W&B measurements above. Paginated Belay adds no material new result;source bodies and edited comments were reviewed. Hero/mixture fixed reports and OpenAthena index/expert-parallel hashes unchanged. Live and October17 fixed sample pages list84 sets,highest270000;one new0.7-temperature and one1.0-temperature set are separately labeled. These are generation examples,not a final capability evaluation. Focused X candidate-author query returned zero rows with identity/full coverage unverified;no inactivity conclusion follows. Early checkpoint issue10180 and proposed loader/reference corrections10174/10175 remain open."
       },
       "sourceIds": [
         "M343",
@@ -2776,7 +3113,8 @@ window.MARIN_RESEARCH = {
         "M45",
         "M112",
         "M137",
-        "M378"
+        "M378",
+        "M381"
       ],
       "reviewStatus": "reviewed",
       "checkedAt": "2026-10-17T13:05:08.410843+00:00",
@@ -2940,7 +3278,7 @@ window.MARIN_RESEARCH = {
         "en": "Hero keeps training at 16K as saved-model evaluation checks continue"
       },
       "detail": {
-        "en": "The16K main Hero run is still training and has logged later evaluations. Today's review finds no further main-run configuration handoff or verified restart from its own later checkpoint; new saved-state and evaluation proposals must not be described as an adopted production repair. Anonymous W&B at October16 13:05:32.323 UTC (09:05 New York): hero-ctx16k-step257k running272592, versus yesterday266431 at a slightly different time; loss1.0910733, training step13.8280s, full iteration13.9400s, MFU30.4594%, median30.4815% over500 samples. MFU describes utilization, not a new matched speed gain. Latest fresh16K evaluation269999: Paloma0.7571412/UncheatableEval0.4922535 bits per byte; inherited4K history and cross-packing comparisons remain separate, and contamination caution still applies. Required8435/8506/8870 comments have no new official status after the last review. All145 updated search results across two pages and218 related topics were read across launch,save/restore/export,mixtures,communication,kernels,memory,context,evaluation and handoff. Latest standup remains September21. Paginated Belay adds a multi-stream research batch update, not Hero adoption. Hero/mixture fixed reports and OpenAthena index/expert-parallel article hashes unchanged. Live and October16 fixed sample pages list77 sets,highest270000 from the child completed October16 10:54:50UTC;October15 fixed page has72 sets. These are generation examples, not a final capability benchmark. Focused X candidate-author query returned zero rows; identity/full coverage unverified,not an inactivity claim."
+        "en": "The16K main Hero run is still training and has logged later evaluations. Today's review finds no further main-run configuration handoff or verified restart from its own later checkpoint; new saved-state and evaluation proposals must not be described as an adopted production repair. Anonymous W&B at October16 13:05:32.323 UTC (09:05 New York): hero-ctx16k-step257k running272592, versus yesterday266431 at a slightly different time; loss1.0910733, training step13.8280s, full iteration13.9400s, MFU30.4594%, median30.4815% over500 samples. MFU describes utilization, not a new matched speed gain. Latest fresh16K evaluation269999: Paloma0.7571412/UncheatableEval0.4922535 bits per byte; inherited4K history and cross-packing comparisons remain separate, and contamination caution still applies. Required8435/8506/8870 comments have no new official status after the last review. All145 updated search results across two pages and218 related topics were read across launch,save/restore/export,mixtures,communication,kernels,memory,context,evaluation and handoff. Correction recorded October 18: the October 13 standup (#10148), published October 15 at 14:00:34 UTC, was already available by this review. The previous latest-standup statement was stale. This correction does not refresh the dated W&B measurements above. Paginated Belay adds a multi-stream research batch update, not Hero adoption. Hero/mixture fixed reports and OpenAthena index/expert-parallel article hashes unchanged. Live and October16 fixed sample pages list77 sets,highest270000 from the child completed October16 10:54:50UTC;October15 fixed page has72 sets. These are generation examples, not a final capability benchmark. Focused X candidate-author query returned zero rows; identity/full coverage unverified,not an inactivity claim."
       },
       "sourceIds": [
         "M343",
@@ -2951,7 +3289,8 @@ window.MARIN_RESEARCH = {
         "M112",
         "M137",
         "M362",
-        "M363"
+        "M363",
+        "M381"
       ],
       "reviewStatus": "reviewed",
       "checkedAt": "2026-10-16T13:09:56.750997+00:00",
