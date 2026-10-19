@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-10-18",
+  "snapshot": "2026-10-19",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -2368,6 +2368,54 @@ window.MARIN_RESEARCH = {
       "kind": "report",
       "title": "Hero step 282000: fixed reference-EOS sample artifact, October 18",
       "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/results/80563d14317b03a7404470ae03a37fccdd486d3a1b1b1b62e728658b348d0173.json"
+    },
+    {
+      "id": "M395",
+      "kind": "pr",
+      "title": "Clarify Finelog outage behavior in hero alert runbooks",
+      "url": "https://github.com/marin-community/marin/pull/10257"
+    },
+    {
+      "id": "M396",
+      "kind": "issue",
+      "title": "Levanter ignores dtype_override when reading BF16 safetensors",
+      "url": "https://github.com/marin-community/marin/issues/10266"
+    },
+    {
+      "id": "M397",
+      "kind": "pr",
+      "title": "[levanter] Honor dtype overrides for BF16 safetensors",
+      "url": "https://github.com/marin-community/marin/pull/10267"
+    },
+    {
+      "id": "M398",
+      "kind": "issue",
+      "title": "[harbor] mini-swe-agent trials exit before the first model call since litellm 1.106.0; SWE-bench scores read 0",
+      "url": "https://github.com/marin-community/marin/issues/10262"
+    },
+    {
+      "id": "M399",
+      "kind": "pr",
+      "title": "Add a fixed-batch Belay+CPLM TPU baseline",
+      "url": "https://github.com/marin-community/marin/pull/10260"
+    },
+    {
+      "id": "M400",
+      "kind": "pr",
+      "title": "[grug] Add the quality-classifier fast track",
+      "url": "https://github.com/marin-community/marin/pull/10108"
+    },
+    {
+      "id": "M401",
+      "kind": "pr",
+      "title": "[marina] Add the public Snowball model family tree",
+      "url": "https://github.com/marin-community/marin/pull/9737"
+    },
+    {
+      "id": "M402",
+      "kind": "report",
+      "title": "Snowball model family tree: public revision 6, October 19",
+      "url": "https://public.applets.marina.oa.dev/a/d3b5517a-c119-4fd9-999d-362183422bf3/v/6/"
     }
   ],
   "claimGroups": [
@@ -2375,10 +2423,10 @@ window.MARIN_RESEARCH = {
       "status": "confirmed",
       "facts": {
         "en": [
-          "October 18 13:02:07.908 UTC: the 16K Hero child is running at step 284831; latest evaluation 281999 has Paloma 0.7547842 / UncheatableEval 0.4893956 BPB. October 14 GO remains the latest main-run configuration adoption; own-child later-checkpoint restart remains unverified.",
+          "October 19 12:56:13.724 UTC: 16K Hero child running at step 290858; latest evaluation 287999 has Paloma 0.7537031 / UncheatableEval 0.4878578 BPB. October 14 GO remains latest main-run adoption; own-child later-checkpoint restart unverified.",
           "At 16:03 UTC October 2 the same public run reached step 193768: loss 1.19200, 14.71-second training steps, 14.93-second iterations and MFU 26.69%. Median MFU is 26.70% over 118 samples. Latest returned evaluation: step 191999, Paloma 0.787332 and UncheatableEval 0.510539 BPB. No new software handoff is established.",
           "Launch-provenance PR #9637 merged; its tracked-file hash excludes untracked file contents. Exporter #9584, evaluation checks #9461 and logging prefetch #9600 remain merged repository facts with separate deployment requirements.",
-          "Hero/mixture fixed reports and Open Athena index/expert-parallel article hashes remain unchanged. Latest standup is October 13, published October 15. Live/October 18 fixed examples contain 92 sample sets, highest step 282000; sample publication is not a judged capability result.",
+          "Hero/mixture fixed reports and Open Athena index/expert-parallel article hashes remain unchanged. Latest standup is October 13. Live samples 94 sets, highest 282000; October 18 fixed page remains 92 sets, October 19 page 404. New live entries are old checkpoints, not fresh capability evidence.",
           "Tokenizer-prefetch PR #9617 is closed without merge. Its earlier small benchmark is not an adopted data-pipeline change.",
           "Retry-resource/source-capture fixes #9705 and production-user alert enrollment #9700 are merged repository facts, without inspected Hero adoption evidence. A new fixed October 2 completion report preserves 41 sample sets, not a final benchmark.",
           "Step 192000 writing samples completed October 4 18:03UTC; live and October 4 fixed page list 42 sets, while October 2 remains 41. Samples do not establish final capability.",
@@ -2398,7 +2446,9 @@ window.MARIN_RESEARCH = {
           "10170revisedFA4query-swap wrapper and10195evaluator-owned metrics merged;main-run adoption/historical recovery not verified. Higher-temperature fixed samples published while default10224 remains open.",
           "Public #10245 reports 17 old checkpoints / 552013 objects / 70.26 TiB deleted and 30 retained intact. #10218 and policy-revert #10245 merged; effective cloud policy restoration still lacks an apply receipt.",
           "Merged #10222 and public separate Qwen3-8B report: 25 evaluations reused, four resumed, 29 records succeeded in 12m13s recovery, with one DROP request unscored. Evalchemy #216 and dependency pin #10249 merged; no blanket Hero historical repair is established.",
-          "Merged #10239 accepts four benchmark provenance fields without changing scoring; EvalDash deployment/backfill remain unverified. Open #10238 publicly reports an earlier logging-capacity rollout drained the backlog, while its newer chunk splitting remains undeployed."
+          "Merged #10239 accepts four benchmark provenance fields without changing scoring; EvalDash deployment/backfill remain unverified. Now-merged #10238 publicly reports an earlier logging-capacity rollout drained the backlog, while its newer chunk splitting remains undeployed.",
+          "Merged #10257 documents non-firing run-alert rows during retryable Finelog failures; it is guidance, not a deployed alert repair. #10238 merged October 18; its newer chunk-splitting deployment remains unverified.",
+          "Public Snowball family-tree revision 6 independently exposes 130 nodes and 138 parent links; #9737 merged separately. Internal nodes, selection limits and optimizer resets remain explicit; not a Hero release."
         ]
       },
       "sourceIds": [
@@ -2502,7 +2552,10 @@ window.MARIN_RESEARCH = {
         "M390",
         "M391",
         "M393",
-        "M394"
+        "M394",
+        "M395",
+        "M401",
+        "M402"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2523,7 +2576,8 @@ window.MARIN_RESEARCH = {
           "16K is adopted; future longer-context phases require separate evidence.10100 old-checkpoint model config selection remains an open fix;9990 one-rack eval preflight remains open. GPU10022/MSRL944 and TPU10023 adoption/qualification still pending; endpoint10033 and inference recovery10169 remain open;9813 merged with deployment unverified.",
           "10121 row placement,10122 mask/buffer work and10145local flatten remain open with no main-run adoption;10100sampler fix remains open.10039merged butoldmirrorcleanup/deployedvalidation remain separate.",
           "10174 stored-router-bias loading/export-version correction and10175reference attention bounds open;pretraining update/activeFA4 unchanged.10169preemptionresume open;10170zigzag wrapper merged;deployment unverified.10121latest two fixes unremeasured;no main-rack adoption.",
-          "Checkpoint thinning is publicly reported completed, superseding the proposal; targeted cloud-policy apply still requires evidence. #10241 quieter GPU logging and #10238 chunk splitting remain open; #10242 closed unmerged. #10239 dashboard deployment/backfill and custom-benchmark pin-gate coverage remain pending."
+          "Checkpoint thinning is publicly reported completed, superseding the proposal; targeted cloud-policy apply still requires evidence. #10241 quieter GPU logging remains open; #10238 chunk splitting is merged with deployment unverified; #10242 closed unmerged. #10239 dashboard deployment/backfill and custom-benchmark pin-gate coverage remain pending.",
+          "Open #10267 proposes BF16 dtype-override repair with passing regression reports; API shows unmerged despite ambiguous comment wording. A matched-precision rerun is still pending. Quality-track #10108 remains open with unresolved contamination/dedup input limits."
         ]
       },
       "sourceIds": [
@@ -2618,7 +2672,10 @@ window.MARIN_RESEARCH = {
         "M390",
         "M391",
         "M393",
-        "M394"
+        "M394",
+        "M396",
+        "M397",
+        "M400"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2648,7 +2705,8 @@ window.MARIN_RESEARCH = {
           "Belay Ckpt1 replaces base16 within research track;fixed8min d512 is one seed,larger ladder has different budgets,d1280unfinished.1.33×/0.729BPB forecast provisional. Open10121/10122 show small16K one-rack gains;combined+1.66%not sum. Open10145 CP4/EP16 65K15.035→14.626s/drop2.21→0.23% is a side test,main remains16K.",
           "Earlier10170whole-model layout tested29.66→23.21s;revised mergedwrapper reports23.22s/+0.8GiB/unchanged1.63%drops,not16Kproduction. Old67Brolling4096Palomatest0.7812/0.7795vsQwen0.8397;7Uncheatable0.5178/0.5171vs0.5245,remaining task/preprocessing/overlap limits.",
           "Merged10170finalwrapper262Ksingle-rack66steps29.66→23.22s,+27.8%,std3.19→1.39s,peak+0.8GiB,drops1.63%unchanged,lossRMS4.6e-4;not11rackdeployment. Step270000one-offtemp0.7/1.0 artifacts need settings-aware comparison.",
-          "Separate Step12 TPU/H100 comparison #10250 reports long-position divergence beyond 2048 with identical IDs; lower repeated TPU MATH500 scores remain stack-scoped, not Hero weight quality or a confirmed root cause."
+          "Separate Step12 TPU/H100 comparison #10250 reports long-position divergence beyond 2048 with identical IDs; lower repeated TPU MATH500 scores remain stack-scoped, not Hero weight quality or a confirmed root cause.",
+          "#10260 open Belay TPU port reports 400 matching losses, zero drops and 417400.46 sustained tokens/s over a 300-update window; full-run quality/restore unvalidated and cited external fixed report 404. #10108 downstream judge proposal is a small dense-model study; its ridge selection remains worse than random."
         ]
       },
       "sourceIds": [
@@ -2718,7 +2776,9 @@ window.MARIN_RESEARCH = {
         "M390",
         "M391",
         "M393",
-        "M394"
+        "M394",
+        "M399",
+        "M400"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2744,7 +2804,8 @@ window.MARIN_RESEARCH = {
           "Belay large-budget compute advantage is a scaling-fit forecast with unfinished d1280,not final checkpoint. Lower loss in65Klayout trial may involve fewer drops as well as layout;unique causal attribution unestablished.",
           "Earlycheckpoint stale-pending/one-step-ahead-weight/async-save explanations are hypotheses,not established causes. Common rolling scoring reduces packing/split confounds but cannot certify unknown custom task/preprocessing or broad superiority.",
           "Sampling-temperature variety is not measured checkpoint capability gain. History-reading commands include benign use,so16.4%ofreportedpassingtraces cannot be applied as a universal cheat-rate correction.",
-          "The onset at 2048 in #10250 motivates attention/cache controls but does not identify the failing mechanism. #10222’s 3–3.5-hour fresh-suite budget is a forecast, not its measured 12m13s partial recovery or measured full-suite throughput."
+          "The onset at 2048 in #10250 motivates attention/cache controls but does not identify the failing mechanism. #10222’s 3–3.5-hour fresh-suite budget is a forecast, not its measured 12m13s partial recovery or measured full-suite throughput.",
+          "Zero SWE scores before any model query are not coding-ability measurements; mismatched BF16/FP32 runs cannot identify a same-precision backend difference. Small-model loss-order agreement in #10108 is study-scoped, not a universal metric ranking."
         ]
       },
       "sourceIds": [
@@ -2804,7 +2865,10 @@ window.MARIN_RESEARCH = {
         "M390",
         "M391",
         "M393",
-        "M394"
+        "M394",
+        "M398",
+        "M396",
+        "M400"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2828,7 +2892,8 @@ window.MARIN_RESEARCH = {
           "Filtered current-Stack-v3 scan does not explain newerPTB/WikiTextdrops orcertifyfullstoreclean;olderpinnedrevision403,optout/name/size/formatgaps remain. Clean corrected eval,childownrestart,main-rack adoption andexistingpartialmirrorcleanup unverified.",
           "10180sixearlycheckpoint bias/pending equality remains unexplained;later nine comparisons do not certify all current saves. Corrected export/deployed10174/10175,full11racklatest10121cost,childownrestart and clean corrected evaluation remain unverified.",
           "10232shared-context evaluator accelerator rerun,10212/10223cleanpackages/fullhistoricaltraceaudit,effective restored checkpoint cloud protection and main-run adoption of merged10170 remain unverified. Earlysave10180andownchildrestartstill unresolved.",
-          "#10245 reports deletion, but effective restored cloud deletion protection has no public apply receipt. #10237 shared endpoint failover, #10239 deployed dashboard/backfill, and #10250 TPU serving cause/repair remain unverified; none is evidence of a main Hero training failure."
+          "#10245 reports deletion, but effective restored cloud deletion protection has no public apply receipt. #10237 shared endpoint failover, #10239 deployed dashboard/backfill, and #10250 TPU serving cause/repair remain unverified; none is evidence of a main Hero training failure.",
+          "#10262 shared Harbor-main repair, Marin pin advancement and matched clean reruns remain unverified; reported score/error counts have an unreconciled denominator. #10266 original FP32-vs-FP32 interpretation is withdrawn; new controlled comparison and deployed fix unknown. October 19 dated sample artifact is unavailable (404), not proof of no samples."
         ]
       },
       "sourceIds": [
@@ -2912,12 +2977,183 @@ window.MARIN_RESEARCH = {
         "M390",
         "M391",
         "M393",
-        "M394"
+        "M394",
+        "M398",
+        "M396",
+        "M397"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-10-19-training-and-review",
+      "date": "2026-10-19",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero keeps training; today’s evaluation warnings concern separate jobs"
+      },
+      "detail": {
+        "en": "The main Hero run continues with its 16K context setting, and today’s public review confirms no new main-run configuration switch. New evaluation failures and reference-test corrections concern separate jobs; they must not be described as a Hero training failure or capability change. Anonymous W&B at October 19 12:56:13.724 UTC (08:56 New York) shows hero-ctx16k-step257k running at step 290858, versus 284831 at yesterday’s 13:02:07 UTC observation. Loss is 1.0561378; training step 13.7853 seconds; full iteration 13.8912 seconds; MFU 30.5537%, median 30.5964% over 500 samples. MFU describes hardware utilization, not a fresh matched speed comparison. Latest returned 16K evaluation is step 287999: Paloma 0.7537031 and UncheatableEval 0.4878578 bits per byte. These dated text-prediction measurements are not a final capability evaluation; inherited 4K history, changed packing and contamination limits remain separate. Required #8435/#8506/#8870 have no later official handoff than October 14. Screened 75 updated GitHub results and retrieved 123 related topics across launch, checkpoint/restore, mixtures, communication, kernels, memory, context, evaluation and production handoff. Latest standup remains October 13 (#10148); Belay’s main research thread has no new result, while a separate TPU port has a scoped calibration. Hero/mixture fixed reports and Open Athena index/expert-parallel article hashes are unchanged. The live example page has 94 sets, highest step 282000: the two additional sets are old step 36000/24000 checkpoints generated October 18, not later training checkpoints. The October 18 fixed page remains 92 sets; October 19’s dated page returns 404, so its content is unknown. No own-child later-checkpoint restart or effective restored cloud deletion-policy apply receipt was found. #10238 logging code is now merged, but no deployment of its newer chunk-splitting follow-up is verified. Focused X candidate-author query returned zero rows with identity/full coverage unverified; no inactivity conclusion follows."
+      },
+      "sourceIds": [
+        "M343",
+        "M340",
+        "M2",
+        "M3",
+        "M45",
+        "M381",
+        "M137",
+        "M393",
+        "M387"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-19T13:01:06.501187+00:00",
+      "concept": {
+        "en": "A new example can come from an old checkpoint. Publication time, checkpoint age and the current training step are different dates to keep straight."
+      },
+      "exercise": {
+        "en": "If two examples appear today from step 24000, what do they tell you about today’s training progress?"
+      }
+    },
+    {
+      "id": "event-2026-10-19-zero-score-startup-failure",
+      "date": "2026-10-19",
+      "status": "unknown",
+      "title": {
+        "en": "A reported zero score came before the coding agent ever called the model"
+      },
+      "detail": {
+        "en": "A public incident report says newly installed coding agents failed before their first model request, making affected SWE-bench results read zero. Those zeros describe a broken test setup rather than measured coding ability; a clean rerun on a fixed, matched environment is still needed. Issue #10262 reports a missing mcp dependency after LiteLLM 1.106.0 became available October 18 at 05:49 UTC. It identifies mini-swe-agent 2.1.0 sandboxes installed after that time on Harbor pins 016dd78b or 18e71265, the latter packaged by Marin main. Reported trajectories have two steps, zero prompt/completion tokens, tokenize requests but no chat-completion request. The public tally says 0/99 alongside 98 nonzero exits, one verifier error and one timeout, which sum to 100; that denominator is not reconciled here and is not used as a corrected score. The reported local first-query reproduction fails on 1.106.0 without mcp and succeeds with the branch-local mcp 2.3.0 installation fix or the earlier client. Harbor main adoption and Marin pin advancement to the repair are not established. Fresh baselines should use the same repaired install because its client version differs from pre-incident runs. Terminus-2, Evalchemy and BFCL use other paths; the report says earlier task204 screens finished before the incident window. This is separate from previously reported task-answer exposure and does not invalidate every earlier SWE-bench result or implicate main Hero training."
+      },
+      "sourceIds": [
+        "M398",
+        "M373",
+        "M374"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-19T13:01:06.501187+00:00",
+      "concept": {
+        "en": "A score is meaningful only if the test actually reaches the model. Zero generated tokens can reveal an infrastructure failure hidden behind a numeric score."
+      },
+      "exercise": {
+        "en": "Before treating a zero as a model weakness, which request and token-count evidence would you inspect?"
+      }
+    },
+    {
+      "id": "event-2026-10-19-bf16-reference-correction",
+      "date": "2026-10-19",
+      "status": "planned",
+      "title": {
+        "en": "A loading bug changes the meaning of a supposedly high-precision comparison"
+      },
+      "detail": {
+        "en": "A public report withdraws the claim that both sides of one diagnostic used full precision: the Levanter side actually loaded lower-precision weights. An open fix has regression evidence, but neither merge nor a new matched-precision rerun is established. Issue #10266 explains that NumPy’s floating-type check excludes BF16, so a requested FP32 override is silently skipped when reading BF16 safetensors, including through the Hugging Face checkpoint converter. BF16 and FP32 are different numeric formats; requesting one does not prove it was used. PR #10267 changes the guard to JAX’s floating predicate, tests exact widened values and preserves integer tensors. The API still reports the PR open and unmerged, despite a comment saying a regression passes against “merged main”; that wording is not merge evidence. Public reports say 1316 tests passed and 55 skipped in fresh-process batches, while a monolithic run exhausted local memory. The affected Qwen diagnostic in #10213 remains a BF16-versus-FP32 measurement; its old full-precision-versus-full-precision interpretation is explicitly withdrawn. No Hero checkpoint corruption or deployed correction is inferred, and the diagnostic is not retroactively re-labeled as a newly measured controlled comparison."
+      },
+      "sourceIds": [
+        "M396",
+        "M397"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-19T13:01:06.501187+00:00",
+      "concept": {
+        "en": "A fair numerical comparison needs the actual loaded data type on each side, not just a requested configuration value. Converting stored weights later cannot recover precision already lost."
+      },
+      "exercise": {
+        "en": "What runtime assertion would you add before trusting a comparison labeled FP32 versus FP32?"
+      }
+    },
+    {
+      "id": "event-2026-10-19-alert-runbook-limits",
+      "date": "2026-10-19",
+      "status": "confirmed",
+      "title": {
+        "en": "Accepted alert guidance explains why silence may mean the monitoring query failed"
+      },
+      "detail": {
+        "en": "Marin accepted documentation explaining that a temporary failure to query logs can leave individual Hero alerts silent. The clarification helps operators interpret missing alarms; it does not repair or independently verify a deployed alert system. PR #10257 merged October 19 at 04:13:49 UTC. Retryable Finelog query failures produce non-firing rows for run alerts, while FinelogFleetUnhealthy reports the shared query-path problem. Empty or invalid bridge responses still use Grafana’s no-data and execution-error states. The loss-spike runbook also distinguishes healthy from warming_up after sample minimums are met. This is a confirmed documentation change, separate from #10238’s accepted forwarding code, the earlier reported logging-capacity rollout, and still-open quieter logging default #10241. No new runbook text proves that all past critical-alert gaps were fixed, that every alert fired in a live test or that Hero’s training changed."
+      },
+      "sourceIds": [
+        "M395",
+        "M387",
+        "M389"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-19T13:01:06.501187+00:00",
+      "concept": {
+        "en": "No alarm is reassuring only if the monitoring path is healthy and has enough observations. A shared health alarm and a model-specific alarm answer different questions."
+      },
+      "exercise": {
+        "en": "When a loss alert is silent, what evidence would distinguish normal loss from an unavailable monitoring query?"
+      }
+    },
+    {
+      "id": "event-2026-10-19-belay-tpu-calibration",
+      "date": "2026-10-19",
+      "status": "experimental",
+      "title": {
+        "en": "A small TPU training port reports matching losses, with full-run recovery still untested"
+      },
+      "detail": {
+        "en": "A separate Belay copy-head model port reports a short TPU run with exactly the same 400 loss values as its comparison harness. That is useful execution and numerical evidence for the port, not a main Hero upgrade or proof of full training quality and recovery. Open PR #10260 targets an older Belay development branch rather than main and reports d512 on TPU v4-32, fixed logical batch 16×8192, single-way expert layout and zero token drops. Its native 300-update drained window processed 39321600 tokens in 94.20593262 seconds: 417400.46 sustained tokens per second, useful MFU 5.7162%, with final NLL 4.25661278. Median per-step throughput is separately reported as 424171.37 and must not replace sustained throughput. Earlier optimized harness runs report 416823/418299 versus an unoptimized 230953 tokens per second with matched losses and seed 0. The 10980-update schedule was not shortened for calibration; full-schedule quality, evaluation endpoints and checkpoint restore remain unvalidated. The reported fixed external evidence URL returned 404 in this review; measurements are attributed to the public Marin PR and comment, not independently inspected raw logs. The PR remains open, with broader CI failures reported separately from the successful numerical checks and TPU calibration."
+      },
+      "sourceIds": [
+        "M399"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-19T13:01:06.501187+00:00",
+      "concept": {
+        "en": "Matching losses over a short run checks one kind of correctness. It does not establish long-run quality, reliable saving or recovery after a failure."
+      },
+      "exercise": {
+        "en": "What would you still test before using this short calibration as evidence that a full training run is ready?"
+      }
+    },
+    {
+      "id": "event-2026-10-19-quality-selection-gate",
+      "date": "2026-10-19",
+      "status": "experimental",
+      "title": {
+        "en": "A data-selection study proposes checking useful tasks instead of trusting one prediction score"
+      },
+      "detail": {
+        "en": "An open data-selection experiment reports that one text-prediction average often ranked candidate datasets differently from its chosen downstream task target. It proposes a broader decision gate for small tests; this does not establish a better Hero data mixture or an accepted production filter. Updated PR #10108 reports an 85-dense-run study across d512/d768 and selected d1280 probes. Paloma macro agreed with the task-target ordering on 32%/35% of pairs at d512/d768 (22%/26% without the longest-document probe); Uncheatable macro agreed on 86%/84%. These are the authors’ study statistics, not independently recomputed here or universal reliability rates. The proposed judge uses English, code and math evidence plus a long-context guard, matched random selection, paired examples and run resampling. The current ridge scorer remains worse than random under that judge at every reported rung; a more elaborate gate is not a successful selector. Public review says the raw pool still lacks the pinned contamination and duplicate filters used by the Hero baseline, and some label inputs remain under mutable personal paths. Later replies report fixes for version/example matching, scorer identity and some versioned task paths, but these unresolved input limits remain. The external study artifact and offline W&B were not independently reproduced. No merge, main-run mixture adoption or causally isolated full-scale capability gain is established."
+      },
+      "sourceIds": [
+        "M400"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-19T13:01:06.501187+00:00",
+      "concept": {
+        "en": "A measurement can favor a data mix because it resembles the test distribution. A useful selection decision needs matched controls, clean inputs and several relevant skills."
+      },
+      "exercise": {
+        "en": "Why could a lower average text-prediction loss coexist with worse coding results?"
+      }
+    },
+    {
+      "id": "event-2026-10-19-snowball-family-tree",
+      "date": "2026-10-19",
+      "status": "confirmed",
+      "title": {
+        "en": "A public family tree makes model ancestry easier to inspect without turning every node into a release"
+      },
+      "detail": {
+        "en": "Marin’s public Snowball family tree now exposes a fixed revision showing how checkpoints were trained, merged or resumed. This improves traceability for the smaller model family; it is not a release of the main 535B Hero or proof that every listed checkpoint is publicly downloadable. Revision 6 was independently read here: 130 nodes and 138 parent links, with an October 19 research-snapshot label. PR #9737 merged October 19 at 12:51:36 UTC, and an explicit publication comment separately identifies the live revision. The tree distinguishes public models from internal .45/.47 checkpoints and preserves the .32→.45→.47→.49 continuation. Fresh optimizer starts at .32/.45 differ from state-preserving resumes at .47/.49; the displayed continuation counter excludes .32’s first 14 updates. The .32 selection used a repeatedly inspected development panel; .49 is user-selected with incomplete evaluation coverage, so lineage does not prove a fair best-model ranking. The source release guards merged later than revision 6; its publication predates the guarded provenance path, not a retrospectively certified guarded release. Individual model cards, downloads and every inherited metric were not independently re-audited in this review."
+      },
+      "sourceIds": [
+        "M401",
+        "M402"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-19T13:01:06.501187+00:00",
+      "concept": {
+        "en": "A model family tree records ancestry. It should separately label weight reuse, optimizer-state reuse, public release status and how a checkpoint was selected."
+      },
+      "exercise": {
+        "en": "Why might two children of the same checkpoint have different meanings if only one resumes the optimizer state?"
+      }
+    },
     {
       "id": "event-2026-10-18-training-and-review",
       "date": "2026-10-18",
