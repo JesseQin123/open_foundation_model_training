@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-10-19",
+  "snapshot": "2026-10-20",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -2416,6 +2416,60 @@ window.MARIN_RESEARCH = {
       "kind": "report",
       "title": "Snowball model family tree: public revision 6, October 19",
       "url": "https://public.applets.marina.oa.dev/a/d3b5517a-c119-4fd9-999d-362183422bf3/v/6/"
+    },
+    {
+      "id": "M403",
+      "kind": "pr",
+      "title": "[grug] Update context-sharding tests for the local token flatten",
+      "url": "https://github.com/marin-community/marin/pull/10313"
+    },
+    {
+      "id": "M404",
+      "kind": "pr",
+      "title": "[levanter] Compute grug cross-entropy gradients in the forward",
+      "url": "https://github.com/marin-community/marin/pull/10311"
+    },
+    {
+      "id": "M405",
+      "kind": "pr",
+      "title": "[levanter] Fuse the EP hero's RMSNorm and GatedNorm",
+      "url": "https://github.com/marin-community/marin/pull/10312"
+    },
+    {
+      "id": "M406",
+      "kind": "issue",
+      "title": "[iris] Capability proxy returns 502 while a preempted serve task is being replaced",
+      "url": "https://github.com/marin-community/marin/issues/10273"
+    },
+    {
+      "id": "M407",
+      "kind": "issue",
+      "title": "[evaluation] Evalchemy c1d5c62c keeps a stale aggregate when rerun over a scored archive with transport-failure rows",
+      "url": "https://github.com/marin-community/marin/issues/10274"
+    },
+    {
+      "id": "M408",
+      "kind": "issue",
+      "title": "[iris] Capability-URL round trips into cw-us-east-02a take 6–10 s under load (cw-rno2a: 0.15–0.5 s through the same gateway)",
+      "url": "https://github.com/marin-community/marin/issues/10318"
+    },
+    {
+      "id": "M409",
+      "kind": "pr",
+      "title": "[storage] Route shared CoreWeave scratch to US-EAST-08A",
+      "url": "https://github.com/marin-community/marin/pull/10221"
+    },
+    {
+      "id": "M410",
+      "kind": "issue",
+      "title": "[storage] Remove legacy checkpoint discovery after the scratch TTL",
+      "url": "https://github.com/marin-community/marin/issues/10278"
+    },
+    {
+      "id": "M411",
+      "kind": "pr",
+      "title": "[storage] Remove expired scratch checkpoint discovery",
+      "url": "https://github.com/marin-community/marin/pull/10279"
     }
   ],
   "claimGroups": [
@@ -2423,10 +2477,10 @@ window.MARIN_RESEARCH = {
       "status": "confirmed",
       "facts": {
         "en": [
-          "October 19 12:56:13.724 UTC: 16K Hero child running at step 290858; latest evaluation 287999 has Paloma 0.7537031 / UncheatableEval 0.4878578 BPB. October 14 GO remains latest main-run adoption; own-child later-checkpoint restart unverified.",
+          "October 20 13:00:08.472 UTC: 16K Hero child running at step 296877; latest evaluation 293999 has Paloma 0.7520026 / UncheatableEval 0.4876671 BPB. October 14 remains latest official adoption; own-child later-checkpoint restart unverified.",
           "At 16:03 UTC October 2 the same public run reached step 193768: loss 1.19200, 14.71-second training steps, 14.93-second iterations and MFU 26.69%. Median MFU is 26.70% over 118 samples. Latest returned evaluation: step 191999, Paloma 0.787332 and UncheatableEval 0.510539 BPB. No new software handoff is established.",
           "Launch-provenance PR #9637 merged; its tracked-file hash excludes untracked file contents. Exporter #9584, evaluation checks #9461 and logging prefetch #9600 remain merged repository facts with separate deployment requirements.",
-          "Hero/mixture fixed reports and Open Athena index/expert-parallel article hashes remain unchanged. Latest standup is October 13. Live samples 94 sets, highest 282000; October 18 fixed page remains 92 sets, October 19 page 404. New live entries are old checkpoints, not fresh capability evidence.",
+          "Fixed Hero/mixture and Open Athena index/expert-parallel hashes unchanged; latest standup October 13. Live samples 94, highest 282000, October 18 fixed 92; October 19/20 dated pages 404. No final capability result inferred.",
           "Tokenizer-prefetch PR #9617 is closed without merge. Its earlier small benchmark is not an adopted data-pipeline change.",
           "Retry-resource/source-capture fixes #9705 and production-user alert enrollment #9700 are merged repository facts, without inspected Hero adoption evidence. A new fixed October 2 completion report preserves 41 sample sets, not a final benchmark.",
           "Step 192000 writing samples completed October 4 18:03UTC; live and October 4 fixed page list 42 sets, while October 2 remains 41. Samples do not establish final capability.",
@@ -2448,7 +2502,8 @@ window.MARIN_RESEARCH = {
           "Merged #10222 and public separate Qwen3-8B report: 25 evaluations reused, four resumed, 29 records succeeded in 12m13s recovery, with one DROP request unscored. Evalchemy #216 and dependency pin #10249 merged; no blanket Hero historical repair is established.",
           "Merged #10239 accepts four benchmark provenance fields without changing scoring; EvalDash deployment/backfill remain unverified. Now-merged #10238 publicly reports an earlier logging-capacity rollout drained the backlog, while its newer chunk splitting remains undeployed.",
           "Merged #10257 documents non-firing run-alert rows during retryable Finelog failures; it is guidance, not a deployed alert repair. #10238 merged October 18; its newer chunk-splitting deployment remains unverified.",
-          "Public Snowball family-tree revision 6 independently exposes 130 nodes and 138 parent links; #9737 merged separately. Internal nodes, selection limits and optimizer resets remain explicit; not a Hero release."
+          "Public Snowball family-tree revision 6 independently exposes 130 nodes and 138 parent links; #9737 merged separately. Internal nodes, selection limits and optimizer resets remain explicit; not a Hero release.",
+          "10145 local token flatten,10313 test dependency/reference update,10267 precision override,10241 quieter logging and10221 scratch routing are merged repository facts. None supplies a new main Hero adoption record."
         ]
       },
       "sourceIds": [
@@ -2555,7 +2610,11 @@ window.MARIN_RESEARCH = {
         "M394",
         "M395",
         "M401",
-        "M402"
+        "M402",
+        "M349",
+        "M403",
+        "M397",
+        "M409"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2570,14 +2629,15 @@ window.MARIN_RESEARCH = {
           "Storage quarantine #9721 is merged with deployment unknown; UncheatableEval alert #9729 remains open without production adoption evidence; GCE progress/loss enrollment is an open documented gap.",
           "Merged9720/9745 implementation is accepted, but main-run recovery adoption and completed manual backlog submission remain unknown. Open9806 zero-norm safeguard,9808 incomplete allocation history await adoption;9708 has successors with mixed acceptance states.",
           "GPU history9808 now requested-priority only with missing production reader/503;9854 memory bounds merged with deployment unknown;9863 model-identity/port fix remains open.",
-          "Open10033 endpoint relay requires CoreWeave task-token/child execution validation;10038 merged;10037 closed unmerged, deployed evaluation outcomes unverified.9701 is merged with full-size execution unknown.9813 merged;209 still open;no deployed/recovered-result evidence.",
+          "10033 endpoint relay closed without merge;10169 brokered recovery remains open;10038 merged;10037 closed unmerged, deployed evaluation outcomes unverified.9701 is merged with full-size execution unknown.9813 merged;209 still open;no deployed/recovered-result evidence.",
           "Alert guidance10049 merged, while critical retry gap10048 remains open and deployed repair unverified. Temporary TPU pin9403 closed unmerged; refreshed9400 requires backend28/29/27 acceptance, a final maintained-main pin and all six checks. AMD9904/9905 remain closed unmerged.",
           "10022 adopts the published qualified GPU release but remains draft; MSRL944 consumer reconciliation open. TPU10023 draft has missing AuxOutput API and unexecuted physical gate.10067 data-pipeline worker release/wait continuation and10074 thread caps open; candidate results are not scheduled-pipeline or Hero adoption.",
-          "16K is adopted; future longer-context phases require separate evidence.10100 old-checkpoint model config selection remains an open fix;9990 one-rack eval preflight remains open. GPU10022/MSRL944 and TPU10023 adoption/qualification still pending; endpoint10033 and inference recovery10169 remain open;9813 merged with deployment unverified.",
-          "10121 row placement,10122 mask/buffer work and10145local flatten remain open with no main-run adoption;10100sampler fix remains open.10039merged butoldmirrorcleanup/deployedvalidation remain separate.",
+          "16K is adopted; future longer-context phases require separate evidence.10100 old-checkpoint model config selection remains an open fix;9990 one-rack eval preflight remains open. GPU10022/MSRL944 and TPU10023 adoption/qualification still pending; 10033 closed unmerged and inference recovery10169 remains open;9813 merged with deployment unverified.",
+          "10121 row placement and10122 mask/buffer work remain open;10145 local flatten merged with no inspected main-run adoption;10100sampler fix remains open.10039merged butoldmirrorcleanup/deployedvalidation remain separate.",
           "10174 stored-router-bias loading/export-version correction and10175reference attention bounds open;pretraining update/activeFA4 unchanged.10169preemptionresume open;10170zigzag wrapper merged;deployment unverified.10121latest two fixes unremeasured;no main-rack adoption.",
-          "Checkpoint thinning is publicly reported completed, superseding the proposal; targeted cloud-policy apply still requires evidence. #10241 quieter GPU logging remains open; #10238 chunk splitting is merged with deployment unverified; #10242 closed unmerged. #10239 dashboard deployment/backfill and custom-benchmark pin-gate coverage remain pending.",
-          "Open #10267 proposes BF16 dtype-override repair with passing regression reports; API shows unmerged despite ambiguous comment wording. A matched-precision rerun is still pending. Quality-track #10108 remains open with unresolved contamination/dedup input limits."
+          "Checkpoint thinning is publicly reported completed, superseding the proposal; targeted cloud-policy apply still requires evidence. #10241 quieter GPU logging merged with live adoption unverified; #10238 chunk splitting is merged with deployment unverified; #10242 closed unmerged. #10239 dashboard deployment/backfill and custom-benchmark pin-gate coverage remain pending.",
+          "Merged #10267 repairs BF16 dtype override; the matched-precision rerun and deployment remain unverified. Quality-track #10108 remains open with unresolved input limitations.",
+          "10311 forward-computed CE gradients and10312 fused normalization are open default-off candidates.10169 proposes brokered recovery;10033 closed unmerged.10279 legacy discovery removal is draft with earliest November2 review and a last-writer/expiration gate."
         ]
       },
       "sourceIds": [
@@ -2675,7 +2735,10 @@ window.MARIN_RESEARCH = {
         "M394",
         "M396",
         "M397",
-        "M400"
+        "M400",
+        "M404",
+        "M405",
+        "M411"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2702,11 +2765,12 @@ window.MARIN_RESEARCH = {
           "Separate Datakit tests #10047/#10059 timed out while jobs were active; tier-3 skipped performance reporting. Public reports expose worker-capacity constraints, not a completed performance benchmark, sole root cause or Hero mixture adoption. Snowball earlier six-layout tests qualify the temporary head e9904b0633 only.",
           "10067 fixed-code canaries reportedly completed56min/5h47m; not a matched speed comparison or adopted mixture.10074 two-CPU proxy assignment68.8→11.8s with equal hashes, production-stage gain unmeasured. Refreshed native TPU candidate9400 fails saved scores; serving reanalysis fails one current-native4K bound.",
           "Eleven-rack100-step16K QK trials support keeping1.48, totals nearly tied; paired-batch public analysis is not independent reproduction or a long-term optimum.10024 scalar logging repro2vs418 threads/33vs31ms is not a full-run performance comparison.",
-          "Belay Ckpt1 replaces base16 within research track;fixed8min d512 is one seed,larger ladder has different budgets,d1280unfinished.1.33×/0.729BPB forecast provisional. Open10121/10122 show small16K one-rack gains;combined+1.66%not sum. Open10145 CP4/EP16 65K15.035→14.626s/drop2.21→0.23% is a side test,main remains16K.",
+          "Belay Ckpt1 replaces base16 within research track;fixed8min d512 is one seed,larger ladder has different budgets,d1280unfinished.1.33×/0.729BPB forecast provisional. Open10121/10122 show small16K one-rack gains;combined+1.66%not sum. Earlier10145 CP4/EP16 65K15.035→14.626s/drop2.21→0.23% is a side test,main remains16K.",
           "Earlier10170whole-model layout tested29.66→23.21s;revised mergedwrapper reports23.22s/+0.8GiB/unchanged1.63%drops,not16Kproduction. Old67Brolling4096Palomatest0.7812/0.7795vsQwen0.8397;7Uncheatable0.5178/0.5171vs0.5245,remaining task/preprocessing/overlap limits.",
           "Merged10170finalwrapper262Ksingle-rack66steps29.66→23.22s,+27.8%,std3.19→1.39s,peak+0.8GiB,drops1.63%unchanged,lossRMS4.6e-4;not11rackdeployment. Step270000one-offtemp0.7/1.0 artifacts need settings-aware comparison.",
           "Separate Step12 TPU/H100 comparison #10250 reports long-position divergence beyond 2048 with identical IDs; lower repeated TPU MATH500 scores remain stack-scoped, not Hero weight quality or a confirmed root cause.",
-          "#10260 open Belay TPU port reports 400 matching losses, zero drops and 417400.46 sustained tokens/s over a 300-update window; full-run quality/restore unvalidated and cited external fixed report 404. #10108 downstream judge proposal is a small dense-model study; its ridge selection remains worse than random."
+          "#10260 open Belay TPU port reports 400 matching losses, zero drops and 417400.46 sustained tokens/s over a 300-update window; full-run quality/restore unvalidated and cited external fixed report 404. #10108 downstream judge proposal is a small dense-model study; its ridge selection remains worse than random.",
+          "Final10145 one-rack65K CP4/EP16,106 steps per arm:15.938→15.586s,+2.26% tokens/s,drops1.17→0.23%,loss−0.0023; distinct from earlier dated version and not a main16K deployment.10311/10312 report isolated B200 operation gains, not measured full-step GB200/11-rack speed."
         ]
       },
       "sourceIds": [
@@ -2778,7 +2842,9 @@ window.MARIN_RESEARCH = {
         "M393",
         "M394",
         "M399",
-        "M400"
+        "M400",
+        "M404",
+        "M405"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2805,7 +2871,8 @@ window.MARIN_RESEARCH = {
           "Earlycheckpoint stale-pending/one-step-ahead-weight/async-save explanations are hypotheses,not established causes. Common rolling scoring reduces packing/split confounds but cannot certify unknown custom task/preprocessing or broad superiority.",
           "Sampling-temperature variety is not measured checkpoint capability gain. History-reading commands include benign use,so16.4%ofreportedpassingtraces cannot be applied as a universal cheat-rate correction.",
           "The onset at 2048 in #10250 motivates attention/cache controls but does not identify the failing mechanism. #10222’s 3–3.5-hour fresh-suite budget is a forecast, not its measured 12m13s partial recovery or measured full-suite throughput.",
-          "Zero SWE scores before any model query are not coding-ability measurements; mismatched BF16/FP32 runs cannot identify a same-precision backend difference. Small-model loss-order agreement in #10108 is study-scoped, not a universal metric ranking."
+          "Zero SWE scores before any model query are not coding-ability measurements; mismatched BF16/FP32 runs cannot identify a same-precision backend difference. Small-model loss-order agreement in #10108 is study-scoped, not a universal metric ranking.",
+          "10311 estimated0.7% and10312 estimated0.6% full-step savings are forecasts from operation tests, not additive measured production gains.10318 load dependence is inferred; GET probes and POST counter-window means do not identify one bottleneck."
         ]
       },
       "sourceIds": [
@@ -2868,7 +2935,10 @@ window.MARIN_RESEARCH = {
         "M394",
         "M398",
         "M396",
-        "M400"
+        "M400",
+        "M404",
+        "M405",
+        "M408"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2893,7 +2963,8 @@ window.MARIN_RESEARCH = {
           "10180sixearlycheckpoint bias/pending equality remains unexplained;later nine comparisons do not certify all current saves. Corrected export/deployed10174/10175,full11racklatest10121cost,childownrestart and clean corrected evaluation remain unverified.",
           "10232shared-context evaluator accelerator rerun,10212/10223cleanpackages/fullhistoricaltraceaudit,effective restored checkpoint cloud protection and main-run adoption of merged10170 remain unverified. Earlysave10180andownchildrestartstill unresolved.",
           "#10245 reports deletion, but effective restored cloud deletion protection has no public apply receipt. #10237 shared endpoint failover, #10239 deployed dashboard/backfill, and #10250 TPU serving cause/repair remain unverified; none is evidence of a main Hero training failure.",
-          "#10262 shared Harbor-main repair, Marin pin advancement and matched clean reruns remain unverified; reported score/error counts have an unreconciled denominator. #10266 original FP32-vs-FP32 interpretation is withdrawn; new controlled comparison and deployed fix unknown. October 19 dated sample artifact is unavailable (404), not proof of no samples."
+          "#10262 shared Harbor-main repair, Marin pin advancement and matched clean reruns remain unverified; reported score/error counts have an unreconciled denominator. #10266 original FP32-vs-FP32 interpretation is withdrawn; new controlled comparison and deployed fix unknown. October 19 dated sample artifact is unavailable (404), not proof of no samples.",
+          "10273 capability replacement-gap availability and10274 scored-archive failure-row repair remain unverified; newer main pins do not certify historical policy archives.10318 connection/decision/ingress attribution lacks isolation. Merged precision/logging/layout/scratch code lacks inspected main-run adoption; own-child restore and effective restored cloud protection remain unknown."
         ]
       },
       "sourceIds": [
@@ -2980,12 +3051,239 @@ window.MARIN_RESEARCH = {
         "M394",
         "M398",
         "M396",
-        "M397"
+        "M397",
+        "M406",
+        "M407",
+        "M408",
+        "M349",
+        "M409"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-10-20-training-and-review",
+      "date": "2026-10-20",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero keeps training; accepted preparation does not confirm a new main-run upgrade"
+      },
+      "detail": {
+        "en": "The main Hero run continues at 16K context, with no new configuration handoff confirmed today. Accepted long-context, precision-loading and logging changes are separate repository milestones; their merge does not prove that the running job adopted them. Anonymous W&B at October 20 13:00:08.472 UTC (09:00 New York) shows hero-ctx16k-step257k running at step 296877, versus 290858 at yesterday’s 12:56:13 UTC observation. Train loss is 1.0584774; training step 13.7564 seconds; full iteration 13.8633 seconds; MFU 30.6179%, median 30.5803% over 500 samples. MFU is hardware utilization, not a fresh matched speed comparison. Latest returned 16K evaluation is step 293999: Paloma 0.7520026 and UncheatableEval 0.4876671 bits per byte. These text-prediction observations do not establish final capability; inherited 4K history, packing changes and contamination limits remain separate. Required #8435/#8506/#8870 have no later official handoff than October 14. Screened 157 updated GitHub results across two pages and retrieved 203 related topics covering launch, checkpoint/restore, mixtures, communication, kernels, memory, context, evaluation and handoff. Latest standup remains October 13 (#10148), and Belay’s main thread has no new result. Fixed Hero/mixture reports and Open Athena index/expert-parallel article hashes are unchanged. Live samples remain 94 sets, highest step 282000; October 18 fixed page remains 92. October 19/20 dated pages return 404: unavailable artifacts, not proof that no work occurred. No own-child later-checkpoint restart, effective restored cloud-policy apply or clean historical benchmark repair was confirmed. Focused X candidate-author query returned zero rows; identity/full coverage unverified, with no inactivity conclusion."
+      },
+      "sourceIds": [
+        "M343",
+        "M340",
+        "M2",
+        "M3",
+        "M45",
+        "M381",
+        "M137",
+        "M393"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-20T13:02:50.940308+00:00",
+      "concept": {
+        "en": "A running job can keep using the code packaged when it launched, even after newer code is accepted. Continued work and adoption of a new version need separate evidence."
+      },
+      "exercise": {
+        "en": "What launch or running-lineage evidence would you request before saying today’s accepted code sped up the main run?"
+      }
+    },
+    {
+      "id": "event-2026-10-20-accepted-local-flatten",
+      "date": "2026-10-20",
+      "status": "confirmed",
+      "title": {
+        "en": "Accepted long-text code avoids device exchanges, but its main-run adoption is unverified"
+      },
+      "detail": {
+        "en": "Marin accepted a change that keeps part of long-text processing local to each device rather than exchanging token layouts between devices. A revised one-rack test reports a modest speed gain, while the main Hero remains at 16K and has no inspected adoption record. PR #10145 merged October 19 at 23:02:33 UTC. At 65K context, CP4/EP16, restored from step 240000, its final 106-step-per-arm report gives 15.938→15.586 seconds per step (+2.26% tokens/s), token drops 1.17%→0.23%, and loss delta −0.0023. These final figures belong to this version, not the earlier dated 15.035→14.626-second comparison. The change also alters which tokens compete for expert capacity, so the loss difference cannot be uniquely attributed to speed or communication removal. At 262K each device holds one row and the compiled program is unchanged. Follow-up #10313 merged October 20 at 02:40:17 UTC: three tests had assumed the old layout, and CI dependency selection missed subprocess-only model imports. The update fixes references and declares those dependencies; test coverage is a separate fact from full-rack deployment or checkpoint recovery."
+      },
+      "sourceIds": [
+        "M349",
+        "M403",
+        "M340",
+        "M343"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-20T13:02:50.940308+00:00",
+      "concept": {
+        "en": "A layout optimization can change both communication and which tokens are dropped. That makes performance and quality effects related but not interchangeable."
+      },
+      "exercise": {
+        "en": "Why should a new layout’s lower loss not be assigned to communication removal alone?"
+      }
+    },
+    {
+      "id": "event-2026-10-20-single-chip-kernel-candidates",
+      "date": "2026-10-20",
+      "status": "experimental",
+      "title": {
+        "en": "Small chip tests suggest modest savings; the full Hero step has not been measured"
+      },
+      "detail": {
+        "en": "Two open proposals reduce work inside individual training operations in single-B200 tests. They are default-off candidates, not measured speedups of the main Hero run, and their estimated savings should not be added into a promised production gain. PR #10311 computes cross-entropy gradients while blocks of predictions are still in memory: at the Hero-sized shape it reports 351–356→242.6 milliseconds for value plus gradient, peak memory 12.08→13.06 GB, and unchanged reported gradient error against FP32. Its roughly 94-millisecond / 0.7% full-step saving is an estimate using the current GB200 kernel time; the new path has not run on GB200 or inside a full Hero step. PR #10312 combines two normalization operations and reports 444→361 milliseconds for a modeled per-step call count on B200, with a roughly 0.6% full-step estimate and lower reported numerical error. It too has no full-step or GB200 measurement. Defaults retain existing paths. Both PRs are open and request review/workflow approval; numerical tests and per-operation timings do not qualify eleven-rack training, memory headroom, end-to-end throughput or recovery."
+      },
+      "sourceIds": [
+        "M404",
+        "M405"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-20T13:02:50.940308+00:00",
+      "concept": {
+        "en": "A microbenchmark measures one operation under selected conditions. Its potential saving can be hidden or offset by other work in the complete training step."
+      },
+      "exercise": {
+        "en": "What full-run checks would you need before combining these two estimated savings?"
+      }
+    },
+    {
+      "id": "event-2026-10-20-precision-fix-accepted",
+      "date": "2026-10-20",
+      "status": "confirmed",
+      "title": {
+        "en": "The precision-loading fix is accepted; the old comparison still needs a new controlled rerun"
+      },
+      "detail": {
+        "en": "Marin accepted the fix that makes BF16 checkpoint tensors honor a requested FP32 conversion. This repairs the loader’s behavior in the codebase; it does not retroactively turn yesterday’s mismatched-precision diagnostic into a valid same-precision result. PR #10267 merged October 19 at 14:44:35 UTC and issue #10266 is closed. The changed floating-type guard includes BF16 and preserves integer tensors. Public regression evidence remains exact widened values and the previously reported batched tests; no new deployed adoption or matched Qwen FP32-versus-FP32 rerun was found. The old observations remain Levanter BF16 versus HF FP32, with their former same-precision interpretation withdrawn. Accepting a fix and remeasuring the affected scientific claim are separate tasks; no main Hero weight corruption or training configuration change follows."
+      },
+      "sourceIds": [
+        "M396",
+        "M397"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-20T13:02:50.940308+00:00",
+      "concept": {
+        "en": "Fixing an instrument does not repair measurements already taken with it. A corrected comparison must be measured again under the intended conditions."
+      },
+      "exercise": {
+        "en": "Which old conclusion remains withdrawn until both sides are rerun with verified actual precision?"
+      }
+    },
+    {
+      "id": "event-2026-10-20-quieter-logging-accepted",
+      "date": "2026-10-20",
+      "status": "confirmed",
+      "title": {
+        "en": "A quieter GPU logging default is accepted, with current-job adoption still unknown"
+      },
+      "detail": {
+        "en": "Marin accepted a change that makes ordinary GPU jobs emit warnings instead of verbose communication diagnostics by default. This can reduce pressure on log delivery, but merge alone does not prove the current Hero job changed its environment or that a new backlog test succeeded. PR #10241 merged October 19 at 17:02:58 UTC and #10240 closed. Explicit diagnostic jobs retain INFO logging. The motivating separate SFT incident reported about 80000 lines/s against roughly 34500 lines/s of forwarding and a roughly 90-minute delay; those are historical incident figures, not a fresh effect size for this merge. Existing launches can retain their submitted environment. The earlier reported capacity rollout, merged forwarding serialization changes and this default change are distinct interventions. No new live adoption receipt, matched reduction in logging traffic or Hero training speed measurement is inferred."
+      },
+      "sourceIds": [
+        "M389",
+        "M388",
+        "M387",
+        "M395"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-20T13:02:50.940308+00:00",
+      "concept": {
+        "en": "A safer default affects jobs that receive it. Already-running jobs may keep old settings, so code acceptance and observed operational change need different checks."
+      },
+      "exercise": {
+        "en": "Where would you inspect the effective logging setting of the current Hero job?"
+      }
+    },
+    {
+      "id": "event-2026-10-20-brokered-recovery-proposal",
+      "date": "2026-10-20",
+      "status": "planned",
+      "title": {
+        "en": "Evaluation recovery now proposes a stable broker, while long interruptions remain a separate test"
+      },
+      "detail": {
+        "en": "An updated open proposal would keep a stable evaluation address while GPU workers move, then restart the evaluator around saved work after service becomes ready. This is a recovery design, not a verified production fix for all interrupted evaluations. PR #10169 now reuses the existing inference broker for single-instance jobs; pipeline-parallel gangs retain direct serving. The separate relay #10033 closed without merge, so it must no longer be listed as an open or accepted fix. Requests can be replayed only before response headers are accepted; worker loss after that breaks the stream, and the broker’s in-memory queue is not durable across broker actor failure. Separate issue #10273 reports capability-route 502s during replacement and potentially 404s after endpoint leases expire; a stable name alone is insufficient for long outages. The public incident reports 112/1319 and 960/1319 affected GSM8K rows on separate dates, not Hero loss changes. The proposal’s tests and prior brokered Qwen recovery do not establish successful representative cross-host recovery, capability-proxy availability across every replacement gap or a repaired historical score."
+      },
+      "sourceIds": [
+        "M357",
+        "M300",
+        "M406",
+        "M390",
+        "M383"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-20T13:02:50.940308+00:00",
+      "concept": {
+        "en": "Recovery needs more than an unchanged URL: it must preserve valid work, wait for real readiness and handle a failure at the right point in a streamed response."
+      },
+      "exercise": {
+        "en": "Why can a request safely restart before response headers but need different handling after a partial response?"
+      }
+    },
+    {
+      "id": "event-2026-10-20-stale-evaluation-aggregate",
+      "date": "2026-10-20",
+      "status": "unknown",
+      "title": {
+        "en": "Regenerated answers can still leave the published aggregate stale"
+      },
+      "detail": {
+        "en": "A public report describes a selective evaluation rerun that replaced failed model responses but did not update the saved score or sample table. This means successful request recovery alone cannot certify a corrected benchmark result. Issue #10274 identifies the older policy Evalchemy pin c1d5c62c: a previously scored archive triggers an early return even when its rows contain transport failures. The report says exactly 112 failed units were regenerated and 1207 successful payloads stayed byte-identical, yet aggregates remained unchanged. A cached regrade on a copy of the archive reportedly produced 1215/1319; this is a reported model score, not the count of successfully transported rows, and the original was left untouched. Marin main has a newer writer that supersedes result/sample tables, but repair of this specific scored-with-failures archive shape has not been verified there; the policy branch still has a different pin. The proposed regression must test failed-unit replacement, unchanged successful payloads, refreshed samples/aggregate and idempotent repeat behavior together. No blanket historical repair or independently inspected archive is established."
+      },
+      "sourceIds": [
+        "M407",
+        "M385",
+        "M357"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-20T13:02:50.940308+00:00",
+      "concept": {
+        "en": "A benchmark has several layers: model responses, per-example scores and the final aggregate. Updating the first layer does not guarantee the others were refreshed."
+      },
+      "exercise": {
+        "en": "After selectively retrying failed requests, what would you compare besides the new response count?"
+      }
+    },
+    {
+      "id": "event-2026-10-20-relay-latency-limits",
+      "date": "2026-10-20",
+      "status": "unknown",
+      "title": {
+        "en": "Slow agent turns are reported on one route, but the bottleneck is not yet isolated"
+      },
+      "detail": {
+        "en": "A public incident report finds long delays reaching one cluster’s model endpoints even while the model backend’s own response speed stays similar. This points to a delivery-path investigation for separate agent jobs, not a measured slowdown or root cause of main Hero training. Issue #10318 reports October 20 around 04:50 UTC: capability GET probes to four east-cluster endpoints took 5.9–10.5 seconds, direct requests inside their own containers 0–0.009 seconds, and another cluster’s capability requests 0.15–0.49 seconds from the same client. Agent reply-to-next-request gaps reportedly rose to 23–28 seconds as concurrency roughly doubled; load causation remains inferred. A later public counter analysis finds added parent-to-child wait in POST aggregates, but those are window means and do not match individual GET probes. It does not isolate connection setup, routing decisions or ingress delay; live ingress inspection was denied. No deployed repair, definitive concurrency limit or authenticated replacement route is validated. Model backend latency, network path latency and whole-agent turn time must not be conflated."
+      },
+      "sourceIds": [
+        "M408"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-20T13:02:50.940308+00:00",
+      "concept": {
+        "en": "A task can wait outside the model even when token generation stays fast. Timing each boundary helps locate a delay; correlation with higher load is not a proven cause."
+      },
+      "exercise": {
+        "en": "Which synchronized measurements would distinguish connection setup from a queue inside the relay?"
+      }
+    },
+    {
+      "id": "event-2026-10-20-scratch-migration-guard",
+      "date": "2026-10-20",
+      "status": "planned",
+      "title": {
+        "en": "Accepted scratch routing keeps old resume paths until a dated safety gate is met"
+      },
+      "detail": {
+        "en": "Marin accepted new temporary-storage routing while keeping old checkpoint search paths available during migration. Removing those paths is a separate draft plan with a waiting period, so accepted routing does not prove every controller has switched or old checkpoints are safe to ignore. PR #10221 merged October 19 at 17:11:21 UTC: shared CoreWeave temporary writes target a separate scratch bucket, permanent roots stay separate, and d6144 Hero explicitly retains hero-checkpoints for rolling writes and resume. Existing jobs keep their launch environment; controller defaults require deployment, and downstream package/lock adoption is separate. Draft #10279 and issue #10278 allow removal only after the last legacy non-Hero writer has stopped for 14 full days and expiration/resume dependencies are rechecked. November 2 is the earliest review date, not an automatic deletion or merge date; a later writer stop moves it. Explicit restore paths and Hero routing must remain. No effective cloud deletion-protection restoration or completed fleet migration is inferred from these repository changes."
+      },
+      "sourceIds": [
+        "M409",
+        "M410",
+        "M411",
+        "M382"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-20T13:02:50.940308+00:00",
+      "concept": {
+        "en": "A migration can need old read paths after new writes move. Time since a cutover is not enough unless the last old writer and remaining restore dependencies are known."
+      },
+      "exercise": {
+        "en": "Why should the waiting period begin at the last legacy writer’s stop rather than the code merge time?"
+      }
+    },
     {
       "id": "event-2026-10-19-training-and-review",
       "date": "2026-10-19",
