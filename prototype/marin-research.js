@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-10-20",
+  "snapshot": "2026-10-21",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -2470,6 +2470,66 @@ window.MARIN_RESEARCH = {
       "kind": "pr",
       "title": "[storage] Remove expired scratch checkpoint discovery",
       "url": "https://github.com/marin-community/marin/pull/10279"
+    },
+    {
+      "id": "M412",
+      "kind": "issue",
+      "title": "[data] Sequence-level shuffled v16384 cache removes 128-step loss sawtooth and improves eval",
+      "url": "https://github.com/marin-community/marin/issues/10412"
+    },
+    {
+      "id": "M413",
+      "kind": "pr",
+      "title": "[levanter] Wrap cudnn-frontend's fused MXFP8 MoE kernels for JAX",
+      "url": "https://github.com/marin-community/marin/pull/10414"
+    },
+    {
+      "id": "M414",
+      "kind": "pr",
+      "title": "[levanter] Add opt-in MXFP8 routed experts to the ragged EP backend",
+      "url": "https://github.com/marin-community/marin/pull/10415"
+    },
+    {
+      "id": "M415",
+      "kind": "pr",
+      "title": "[evals] Fix seven IFBench checker defects and pin the dataset revision",
+      "url": "https://github.com/marin-community/marin/pull/10423"
+    },
+    {
+      "id": "M416",
+      "kind": "pr",
+      "title": "Vendor Harbor with an isolated runtime and local Marin dependencies",
+      "url": "https://github.com/marin-community/marin/pull/10287"
+    },
+    {
+      "id": "M417",
+      "kind": "pr",
+      "title": "Vendor Evalchemy with an isolated evaluation runtime",
+      "url": "https://github.com/marin-community/marin/pull/10288"
+    },
+    {
+      "id": "M418",
+      "kind": "issue",
+      "title": "Hero 535B RL readiness: correctness and performance on H100 and GB200",
+      "url": "https://github.com/marin-community/marin/issues/10388"
+    },
+    {
+      "id": "M419",
+      "kind": "report",
+      "title": "Hero completions: fixed October 20, 2026 snapshot",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.20/index.html"
+    },
+    {
+      "id": "M420",
+      "kind": "report",
+      "title": "Hero step 288000 fixed sample artifact, October 20",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/results/7f4bcaf7815b6ea94650b327fbbc7d5afce8043758debe8f9dc1650c00e18197.json"
+    },
+    {
+      "id": "M421",
+      "kind": "report",
+      "title": "IFBench grader audit: fixed revision a31c6841",
+      "url": "https://github.com/XiaoyuanWang111/ifbench-audit/blob/a31c6841dae2632dafda740bd51496843d9e5f38/reports/AUDIT.md"
     }
   ],
   "claimGroups": [
@@ -2477,10 +2537,10 @@ window.MARIN_RESEARCH = {
       "status": "confirmed",
       "facts": {
         "en": [
-          "October 20 13:00:08.472 UTC: 16K Hero child running at step 296877; latest evaluation 293999 has Paloma 0.7520026 / UncheatableEval 0.4876671 BPB. October 14 remains latest official adoption; own-child later-checkpoint restart unverified.",
+          "October 21 13:00:45.438 UTC: 16K Hero child running303008, latest eval302999 Paloma0.7457772 / Uncheatable0.4858823BPB. October14 remains latest main-run adoption; own-child later-checkpoint restart unverified.",
           "At 16:03 UTC October 2 the same public run reached step 193768: loss 1.19200, 14.71-second training steps, 14.93-second iterations and MFU 26.69%. Median MFU is 26.70% over 118 samples. Latest returned evaluation: step 191999, Paloma 0.787332 and UncheatableEval 0.510539 BPB. No new software handoff is established.",
           "Launch-provenance PR #9637 merged; its tracked-file hash excludes untracked file contents. Exporter #9584, evaluation checks #9461 and logging prefetch #9600 remain merged repository facts with separate deployment requirements.",
-          "Fixed Hero/mixture and Open Athena index/expert-parallel hashes unchanged; latest standup October 13. Live samples 94, highest 282000, October 18 fixed 92; October 19/20 dated pages 404. No final capability result inferred.",
+          "Hero/mixture fixed reports and Open Athena hashes unchanged; standupOctober13. Live/October20fixed95sets,highest288000, new artifact completedOctober20 15:52UTC. October19/21pages404; samples not final capability results.",
           "Tokenizer-prefetch PR #9617 is closed without merge. Its earlier small benchmark is not an adopted data-pipeline change.",
           "Retry-resource/source-capture fixes #9705 and production-user alert enrollment #9700 are merged repository facts, without inspected Hero adoption evidence. A new fixed October 2 completion report preserves 41 sample sets, not a final benchmark.",
           "Step 192000 writing samples completed October 4 18:03UTC; live and October 4 fixed page list 42 sets, while October 2 remains 41. Samples do not establish final capability.",
@@ -2496,14 +2556,15 @@ window.MARIN_RESEARCH = {
           "Native GPU Snowball reference10069 merged after a controlled rounding comparison; model quality not measured. Alert guidance10049, scheduler preference10065 and count aggregation10073 are merged repository facts, with deployed remediation/adoption unverified.",
           "Context/data controls9888/9890/9689 and deploy10101 merged with16K adoption separately confirmed by official GO. Logging bound10024 and readiness10038 merged repository facts; independent deployed-performance/recovered-eval outcomes unverified.10037 closed unmerged.",
           "10039 cache-marker exclusion merged;existing partial mirror cleanup and deployed outcomes unverified. No new main-run deployment from side experiments or accepted cache code.",
-          "9813 per-evaluation success-cache/result orchestration merged;deployment and recovered historical results unverified. Open10169 handles inference preemption separately. Old67B comparison measurements are distinct from currentHero.",
+          "9813 per-evaluation success-cache/result orchestration merged;deployment and recovered historical results unverified. Merged10169 handles inference preemption separately with deployed outcomes unverified. Old67B comparison measurements are distinct from currentHero.",
           "10170revisedFA4query-swap wrapper and10195evaluator-owned metrics merged;main-run adoption/historical recovery not verified. Higher-temperature fixed samples published while default10224 remains open.",
           "Public #10245 reports 17 old checkpoints / 552013 objects / 70.26 TiB deleted and 30 retained intact. #10218 and policy-revert #10245 merged; effective cloud policy restoration still lacks an apply receipt.",
           "Merged #10222 and public separate Qwen3-8B report: 25 evaluations reused, four resumed, 29 records succeeded in 12m13s recovery, with one DROP request unscored. Evalchemy #216 and dependency pin #10249 merged; no blanket Hero historical repair is established.",
           "Merged #10239 accepts four benchmark provenance fields without changing scoring; EvalDash deployment/backfill remain unverified. Now-merged #10238 publicly reports an earlier logging-capacity rollout drained the backlog, while its newer chunk splitting remains undeployed.",
           "Merged #10257 documents non-firing run-alert rows during retryable Finelog failures; it is guidance, not a deployed alert repair. #10238 merged October 18; its newer chunk-splitting deployment remains unverified.",
           "Public Snowball family-tree revision 6 independently exposes 130 nodes and 138 parent links; #9737 merged separately. Internal nodes, selection limits and optimizer resets remain explicit; not a Hero release.",
-          "10145 local token flatten,10313 test dependency/reference update,10267 precision override,10241 quieter logging and10221 scratch routing are merged repository facts. None supplies a new main Hero adoption record."
+          "10145 local token flatten,10313 test dependency/reference update,10267 precision override,10241 quieter logging and10221 scratch routing are merged repository facts. None supplies a new main Hero adoption record.",
+          "Harbor10287,Evalchemy10288,campaign9569 and brokered recovery10169 merged. Public source/wiring check confirms current Marin vendored install repair; no fresh SWE-bench trial or blanket historical score repair. Historical pre-vendoring policies need their matching old checkout."
         ]
       },
       "sourceIds": [
@@ -2614,7 +2675,12 @@ window.MARIN_RESEARCH = {
         "M349",
         "M403",
         "M397",
-        "M409"
+        "M409",
+        "M416",
+        "M417",
+        "M179",
+        "M357",
+        "M398"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2629,15 +2695,16 @@ window.MARIN_RESEARCH = {
           "Storage quarantine #9721 is merged with deployment unknown; UncheatableEval alert #9729 remains open without production adoption evidence; GCE progress/loss enrollment is an open documented gap.",
           "Merged9720/9745 implementation is accepted, but main-run recovery adoption and completed manual backlog submission remain unknown. Open9806 zero-norm safeguard,9808 incomplete allocation history await adoption;9708 has successors with mixed acceptance states.",
           "GPU history9808 now requested-priority only with missing production reader/503;9854 memory bounds merged with deployment unknown;9863 model-identity/port fix remains open.",
-          "10033 endpoint relay closed without merge;10169 brokered recovery remains open;10038 merged;10037 closed unmerged, deployed evaluation outcomes unverified.9701 is merged with full-size execution unknown.9813 merged;209 still open;no deployed/recovered-result evidence.",
+          "10033 endpoint relay closed without merge;10169 brokered recovery merged with deployment unverified;10038 merged;10037 closed unmerged, deployed evaluation outcomes unverified.9701 is merged with full-size execution unknown.9813 merged;209 still open;no deployed/recovered-result evidence.",
           "Alert guidance10049 merged, while critical retry gap10048 remains open and deployed repair unverified. Temporary TPU pin9403 closed unmerged; refreshed9400 requires backend28/29/27 acceptance, a final maintained-main pin and all six checks. AMD9904/9905 remain closed unmerged.",
           "10022 adopts the published qualified GPU release but remains draft; MSRL944 consumer reconciliation open. TPU10023 draft has missing AuxOutput API and unexecuted physical gate.10067 data-pipeline worker release/wait continuation and10074 thread caps open; candidate results are not scheduled-pipeline or Hero adoption.",
-          "16K is adopted; future longer-context phases require separate evidence.10100 old-checkpoint model config selection remains an open fix;9990 one-rack eval preflight remains open. GPU10022/MSRL944 and TPU10023 adoption/qualification still pending; 10033 closed unmerged and inference recovery10169 remains open;9813 merged with deployment unverified.",
+          "16K is adopted; future longer-context phases require separate evidence.10100 old-checkpoint model config selection remains an open fix;9990 one-rack eval preflight remains open. GPU10022/MSRL944 and TPU10023 adoption/qualification still pending; 10033 closed unmerged and inference recovery10169 merged with deployment unverified;9813 merged with deployment unverified.",
           "10121 row placement and10122 mask/buffer work remain open;10145 local flatten merged with no inspected main-run adoption;10100sampler fix remains open.10039merged butoldmirrorcleanup/deployedvalidation remain separate.",
-          "10174 stored-router-bias loading/export-version correction and10175reference attention bounds open;pretraining update/activeFA4 unchanged.10169preemptionresume open;10170zigzag wrapper merged;deployment unverified.10121latest two fixes unremeasured;no main-rack adoption.",
+          "10174 stored-router-bias loading/export-version correction and10175reference attention bounds open;pretraining update/activeFA4 unchanged.10169 preemption recovery merged; deployment unverified;10170zigzag wrapper merged;deployment unverified.10121latest two fixes unremeasured;no main-rack adoption.",
           "Checkpoint thinning is publicly reported completed, superseding the proposal; targeted cloud-policy apply still requires evidence. #10241 quieter GPU logging merged with live adoption unverified; #10238 chunk splitting is merged with deployment unverified; #10242 closed unmerged. #10239 dashboard deployment/backfill and custom-benchmark pin-gate coverage remain pending.",
           "Merged #10267 repairs BF16 dtype override; the matched-precision rerun and deployment remain unverified. Quality-track #10108 remains open with unresolved input limitations.",
-          "10311 forward-computed CE gradients and10312 fused normalization are open default-off candidates.10169 proposes brokered recovery;10033 closed unmerged.10279 legacy discovery removal is draft with earliest November2 review and a last-writer/expiration gate."
+          "10311 forward-computed CE gradients and10312 fused normalization are open default-off candidates.10169 brokered recovery merged with deployment unverified;10033 closed unmerged.10279 legacy discovery removal is draft with earliest November2 review and a last-writer/expiration gate.",
+          "10415 MXFP8 experts and10423 IFBench checker repair remain open;10414 wrapper closed unmerged. Full-rack kernel candidates10311/10312 remain open, no main-run adoption. Checker regrade/deployment and failed-SWE baseline reruns need independent evidence."
         ]
       },
       "sourceIds": [
@@ -2738,7 +2805,10 @@ window.MARIN_RESEARCH = {
         "M400",
         "M404",
         "M405",
-        "M411"
+        "M411",
+        "M414",
+        "M413",
+        "M415"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2770,7 +2840,10 @@ window.MARIN_RESEARCH = {
           "Merged10170finalwrapper262Ksingle-rack66steps29.66→23.22s,+27.8%,std3.19→1.39s,peak+0.8GiB,drops1.63%unchanged,lossRMS4.6e-4;not11rackdeployment. Step270000one-offtemp0.7/1.0 artifacts need settings-aware comparison.",
           "Separate Step12 TPU/H100 comparison #10250 reports long-position divergence beyond 2048 with identical IDs; lower repeated TPU MATH500 scores remain stack-scoped, not Hero weight quality or a confirmed root cause.",
           "#10260 open Belay TPU port reports 400 matching losses, zero drops and 417400.46 sustained tokens/s over a 300-update window; full-run quality/restore unvalidated and cited external fixed report 404. #10108 downstream judge proposal is a small dense-model study; its ridge selection remains worse than random.",
-          "Final10145 one-rack65K CP4/EP16,106 steps per arm:15.938→15.586s,+2.26% tokens/s,drops1.17→0.23%,loss−0.0023; distinct from earlier dated version and not a main16K deployment.10311/10312 report isolated B200 operation gains, not measured full-step GB200/11-rack speed."
+          "Final10145 one-rack65K CP4/EP16,106 steps per arm:15.938→15.586s,+2.26% tokens/s,drops1.17→0.23%,loss−0.0023; distinct from earlier dated version and not a main16K deployment.Earlier10311/10312 isolated B200 gains now have separate short one-rack GB200 tests; no eleven-rack/main-run adoption.",
+          "One-rack GB200120step16K:CE+0.50%,fusednorm−0.85%,combined−0.02%tokens/s vs two baselines, not additive microbench forecast or11rackadoption.10412sequence-shuffle single-seed d512Paloma−.0135/lag128autocorrelation.226→.026;closure logs experiment,not rollout.",
+          "10415 local MXFP8 remat31.9vs51.0ms excludestransport;Gaussian error6.4–6.8%vsBF16.2–.3%;fullstep/qualityunknown.10388September4K RL and synthetic65K/shortoutput256Kprobes are historical scoped qualification,not currentmainRLlaunch.",
+          "10108 revisedv3/seed-calibrated judge:12seedweb-onlyDCLM+2.2% target[1.7,2.7] whilePaloma.2%worse;fullmix d1280+.4%[−.9,1.8]inconclusive. Task-format corrections/seed intervals not Hero mixture adoption."
         ]
       },
       "sourceIds": [
@@ -2844,7 +2917,10 @@ window.MARIN_RESEARCH = {
         "M399",
         "M400",
         "M404",
-        "M405"
+        "M405",
+        "M412",
+        "M414",
+        "M418"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2872,7 +2948,8 @@ window.MARIN_RESEARCH = {
           "Sampling-temperature variety is not measured checkpoint capability gain. History-reading commands include benign use,so16.4%ofreportedpassingtraces cannot be applied as a universal cheat-rate correction.",
           "The onset at 2048 in #10250 motivates attention/cache controls but does not identify the failing mechanism. #10222’s 3–3.5-hour fresh-suite budget is a forecast, not its measured 12m13s partial recovery or measured full-suite throughput.",
           "Zero SWE scores before any model query are not coding-ability measurements; mismatched BF16/FP32 runs cannot identify a same-precision backend difference. Small-model loss-order agreement in #10108 is study-scoped, not a universal metric ranking.",
-          "10311 estimated0.7% and10312 estimated0.6% full-step savings are forecasts from operation tests, not additive measured production gains.10318 load dependence is inferred; GET probes and POST counter-window means do not identify one bottleneck."
+          "10311 estimated0.7% and10312 estimated0.6% full-step savings are forecasts from operation tests, not additive measured production gains.10318 load dependence is inferred; GET probes and POST counter-window means do not identify one bottleneck.",
+          "Microbench savings do not add: observed rack combination is near baseline.10415 forecast8%shorterstep assumes unprofiled expert-cost share and local ratio;not measured fullstep. IFBench changed verdicts measure grader change,not model improvement."
         ]
       },
       "sourceIds": [
@@ -2938,7 +3015,9 @@ window.MARIN_RESEARCH = {
         "M400",
         "M404",
         "M405",
-        "M408"
+        "M408",
+        "M414",
+        "M415"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2963,8 +3042,9 @@ window.MARIN_RESEARCH = {
           "10180sixearlycheckpoint bias/pending equality remains unexplained;later nine comparisons do not certify all current saves. Corrected export/deployed10174/10175,full11racklatest10121cost,childownrestart and clean corrected evaluation remain unverified.",
           "10232shared-context evaluator accelerator rerun,10212/10223cleanpackages/fullhistoricaltraceaudit,effective restored checkpoint cloud protection and main-run adoption of merged10170 remain unverified. Earlysave10180andownchildrestartstill unresolved.",
           "#10245 reports deletion, but effective restored cloud deletion protection has no public apply receipt. #10237 shared endpoint failover, #10239 deployed dashboard/backfill, and #10250 TPU serving cause/repair remain unverified; none is evidence of a main Hero training failure.",
-          "#10262 shared Harbor-main repair, Marin pin advancement and matched clean reruns remain unverified; reported score/error counts have an unreconciled denominator. #10266 original FP32-vs-FP32 interpretation is withdrawn; new controlled comparison and deployed fix unknown. October 19 dated sample artifact is unavailable (404), not proof of no samples.",
-          "10273 capability replacement-gap availability and10274 scored-archive failure-row repair remain unverified; newer main pins do not certify historical policy archives.10318 connection/decision/ingress attribution lacks isolation. Merged precision/logging/layout/scratch code lacks inspected main-run adoption; own-child restore and effective restored cloud protection remain unknown."
+          "#10262 separate Harbor-main repair and matched clean reruns remain unverified; current Marin vendored install/source wiring is repaired; reported score/error counts have an unreconciled denominator. #10266 original FP32-vs-FP32 interpretation is withdrawn; new controlled comparison and deployed fix unknown. October 19 dated sample artifact is unavailable (404), not proof of no samples.",
+          "10273 capability replacement-gap availability and10274 scored-archive failure-row repair remain unverified; newer main pins do not certify historical policy archives.10318 connection/decision/ingress attribution lacks isolation. Merged precision/logging/layout/scratch code lacks inspected main-run adoption; own-child restore and effective restored cloud protection remain unknown.",
+          "Main adoption of kernel/FP8/cache experiments, fullscale quality and shuffle replication remain unverified. IFBench canonical regrade/deployed repair, fresh vendored SWE baseline reruns, capability-gap/archive recovery and own-child restart/cloud protection remain unknown."
         ]
       },
       "sourceIds": [
@@ -3056,12 +3136,234 @@ window.MARIN_RESEARCH = {
         "M407",
         "M408",
         "M349",
-        "M409"
+        "M409",
+        "M414",
+        "M412",
+        "M415"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-10-21-training-and-review",
+      "date": "2026-10-21",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero keeps training; new tests do not confirm another main-run change"
+      },
+      "detail": {
+        "en": "The main Hero run continues at 16K context and has reached a later evaluation point. Today’s public review finds no new main-run configuration handoff or verified restart from the child’s own later saved state; new optimization and posttraining reports have different scopes. Anonymous W&B at October 21 13:00:45.438 UTC (09:00 New York) shows hero-ctx16k-step257k running at step 303008, versus yesterday’s 296877 at 13:00:08 UTC. Loss is 1.0519748; training step 13.8975 seconds; iteration 14.0178 seconds; MFU 30.3069%, median 30.4575% over 500 samples. MFU is utilization, not a matched speed improvement. Latest returned 16K evaluation is step 302999: Paloma 0.7457772 and UncheatableEval 0.4858823 bits per byte. These are dated prediction measurements, not a final capability score; inherited 4K history, packing differences and contamination cautions remain separate. Required #8435/#8506/#8870 have no later official handoff than October 14. Screened 202 updated GitHub results over three pages and retrieved 261 topics covering launcher, checkpoint/restore, mixtures, communication/kernels, memory, context, evaluation and handoff. Latest standup remains October 13 (#10148); Belay’s main thread has no new result. Hero/mixture fixed reports and Open Athena index/expert-parallel article hashes are unchanged. Live and newly readable October 20 fixed examples contain 95 sets, highest step 288000; that child artifact completed October 20 at 15:52:04 UTC. October 19/21 pages return 404, so their availability is unknown. More examples do not establish capability gains. Focused X candidate-author query returned zero rows, with identity/full coverage unverified and no inactivity claim."
+      },
+      "sourceIds": [
+        "M343",
+        "M340",
+        "M2",
+        "M3",
+        "M45",
+        "M381",
+        "M137",
+        "M419",
+        "M420"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-21T13:05:15.074657+00:00",
+      "concept": {
+        "en": "A later evaluation is a new observation, while a configuration change needs a separate launch or running-lineage record. Example publication is another distinct event."
+      },
+      "exercise": {
+        "en": "Which of today’s observations shows continued training, and which would be needed to show adoption of a new optimization?"
+      }
+    },
+    {
+      "id": "event-2026-10-21-full-step-kernel-check",
+      "date": "2026-10-21",
+      "status": "experimental",
+      "title": {
+        "en": "A full-rack test finds that two local speed ideas do not add up to a faster training step"
+      },
+      "detail": {
+        "en": "New one-rack GB200 tests put yesterday’s two kernel proposals inside complete training steps. One is slightly faster, one is slightly slower, and their combination is effectively unchanged; isolated savings did not add into a main-run speedup. The public #10311/#10312 comparison uses the same 64 GPUs on 16 hosts, restoring step 240000 at 16K, batch 256 and 4194304 tokens per step for 120 updates. It excludes profiled updates and pre-restart observations. Two base medians are 13.142/13.148 seconds; forward-computed loss gradients give 13.079 (+0.50% tokens/s), fused normalization 13.258 (−0.85%), and the combination 13.148 (−0.02%). Peak memory is respectively 124.0, 124.6, 122.0 and 122.9 GiB; lower memory is a separate benefit from speed. Loss RMS differences remain around 0.001 and drop fractions around 0.003. These are public reported short comparisons, not independently recomputed histories, eleven-rack adoption or long-run quality tests. Both PRs remain open/default-off. Broken fusion or hidden transport is a hypothesis; requested profiles are not yet publicly inspected here. Yesterday’s B200 microbenchmarks retain their original scope rather than becoming incorrect measurements."
+      },
+      "sourceIds": [
+        "M404",
+        "M405"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-21T13:05:15.074657+00:00",
+      "concept": {
+        "en": "A faster component can shift memory pressure or overlap elsewhere in the program. Measure the whole step before predicting the sum of several local gains."
+      },
+      "exercise": {
+        "en": "Why could a change save memory yet make complete training steps slightly slower?"
+      }
+    },
+    {
+      "id": "event-2026-10-21-sequence-shuffle-trial",
+      "date": "2026-10-21",
+      "status": "experimental",
+      "title": {
+        "en": "Reordering the same training sequences reduces a repeating loss pattern in one small-model test"
+      },
+      "detail": {
+        "en": "A small-model experiment reports smoother loss and modestly better held-out prediction after shuffling already-packed sequences instead of keeping nearby document slices together. This changes order rather than content, but one seed is not enough to establish a new Hero data recipe. Issue #10412 reports S7 d512, batch 1024, 1346 steps, seed 0: Paloma macro loss 2.9322→2.9187, Uncheatable macro 2.3959→2.3817, and lag-128 train-loss autocorrelation 0.226→0.026. Its cache preserves sequence/token counts, with 514 sampled sequences byte-identical. Reported seed noise is about 0.007 macro loss; a second seed and batch-256 comparison remain unreported. BPB has a known batching dependence here, so loss is primary. The issue closed explicitly to log the experiment, not because the rollout criteria were met. Main fast-track still selects the old cache; no main Hero mixture/order adoption or full-scale causal guarantee follows. Public report and linked runs were read, not an independent replay of the cache build."
+      },
+      "sourceIds": [
+        "M412"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-21T13:05:15.074657+00:00",
+      "concept": {
+        "en": "Keeping the same examples but changing their order can change how strongly neighboring updates resemble each other. Repeated seeds help distinguish a real effect from run variation."
+      },
+      "exercise": {
+        "en": "What should remain fixed in the next seed comparison to isolate sequence ordering?"
+      }
+    },
+    {
+      "id": "event-2026-10-21-mxfp8-expert-candidate",
+      "date": "2026-10-21",
+      "status": "experimental",
+      "title": {
+        "en": "Lower-precision expert tests are faster locally, with numerical and full-run questions still open"
+      },
+      "detail": {
+        "en": "An open MXFP8 proposal reports faster expert computation in small tests while changing numerical precision. It is an opt-in candidate, not evidence that the main Hero adopted FP8 or that overall training is eight percent faster. PR #10415 reports one-B200 expert computation with quantization but without transport: rematerialized forward/backward 31.9 versus 51.0 milliseconds, peak memory 13.47 versus 15.89 GiB. Those timings used an earlier backward variant; the current variant measured about 0.1 millisecond slower per call. The kernels’ error on already dequantized inputs is distinct from full precision loss: Gaussian-data outputs/gradients differ from FP32 by 6.4–6.8%, versus 0.2–0.3% for BF16. Earlier eight-B200 checks use stock NCCL transport, not Hero’s device-initiated kernel. The separate wrapper #10414 closed without merge; #10415 contains the integration and remains open/default-off. No full Hero GB200 step, sixteen-node run or training-quality comparison is measured. Its approximate eight-percent shorter-step estimate assumes a local speed ratio and an unprofiled expert-cost share. Dropless evaluation resets this candidate to BF16, another distinction needed for evaluation interpretation."
+      },
+      "sourceIds": [
+        "M413",
+        "M414"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-21T13:05:15.074657+00:00",
+      "concept": {
+        "en": "Low precision trades representation accuracy for potential speed. Testing kernel arithmetic alone does not measure the total rounding effect or the training outcome."
+      },
+      "exercise": {
+        "en": "Why must a quality test record whether evaluation silently uses a different precision from training?"
+      }
+    },
+    {
+      "id": "event-2026-10-21-ifbench-checker-repair",
+      "date": "2026-10-21",
+      "status": "planned",
+      "title": {
+        "en": "A proposed grader repair changes whether answers pass without changing the answers"
+      },
+      "detail": {
+        "en": "An open IFBench update would repair seven checker defects, including a word-position task that was mistakenly graded by character positions. This is a correction to the measuring tool, not a model improvement, and no deployed regrade of canonical results is established. PR #10423 syncs six upstream fixes and adds an empty-field CSV guard that fails a response instead of crashing the whole task. The fixed public audit was independently readable; its broader proposed changes must not be confused with this narrower patch. The PR reports 257 changed strict constraint verdicts out of 78432 in 228 complete runs across 16 configurations; 227 changes are overlap checks, while greedy prompt-level scores move by at most one prompt (0.33 points). The CSV crash appeared in 251/3000 synthetic outputs but in none of that model panel, so it is not a measured panel failure rate. Dataset content is unchanged and pinned; downloaded NLTK data remain unpinned. These reported panel counts are not independently regenerated here. The PR remains open; old and corrected grader versions must stay explicit before comparing scores."
+      },
+      "sourceIds": [
+        "M415",
+        "M421"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-21T13:05:15.074657+00:00",
+      "concept": {
+        "en": "If a grader’s rule changes, a score can change even when the model answer stays identical. Store the grader version with the answer to make that difference auditable."
+      },
+      "exercise": {
+        "en": "How would you compare old and corrected scores without claiming the model itself improved?"
+      }
+    },
+    {
+      "id": "event-2026-10-21-vendored-runtime-boundary",
+      "date": "2026-10-21",
+      "status": "confirmed",
+      "title": {
+        "en": "Accepted local evaluation runtimes make the source version clearer, while old failures still need reruns"
+      },
+      "detail": {
+        "en": "Marin accepted local copies of Harbor and Evalchemy with separate dependency locks, so an evaluation can identify the exact checked-out runtime it executes. This is a reproducibility change and a repository-level installation repair, not proof that historical benchmark results are corrected. Harbor #10287 merged October 20 at 18:24:37 UTC, Evalchemy #10288 at 19:01:22 UTC, and campaign #9569 at 17:39:14 UTC. A public source/wiring check on #10262 says Marin’s vendored mini-swe-agent install includes mcp 2.3.0 and a setup import check; the separate Harbor main still awaits its draft fix. That check explicitly did not run a fresh SWE-bench trial, and the October 18 failed scores remain invalid. Comparisons need matched baseline reruns. Evalchemy now uses checkout-local libraries, independent locks and revision-keyed datasets; historical policies selecting old external evaluator commits require their corresponding pre-vendoring Marin checkout. Accepting the campaign code or new runtime does not retroactively reproduce an older policy or prove every evaluator’s archived failure-row repair."
+      },
+      "sourceIds": [
+        "M416",
+        "M417",
+        "M179",
+        "M398",
+        "M407"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-21T13:05:15.074657+00:00",
+      "concept": {
+        "en": "A dependency lock helps identify the software that ran. Reproducibility also needs the matching historical checkout, inputs and grader, especially across a runtime migration."
+      },
+      "exercise": {
+        "en": "Why might an old policy configuration fail on current main even though its original run remains reproducible from an older checkout?"
+      }
+    },
+    {
+      "id": "event-2026-10-21-broker-recovery-accepted",
+      "date": "2026-10-21",
+      "status": "confirmed",
+      "title": {
+        "en": "Brokered recovery code is accepted; deployment and each failure scenario still need evidence"
+      },
+      "detail": {
+        "en": "Marin accepted the brokered evaluation recovery proposed yesterday. It can restart an evaluator against saved outputs after a model or judge becomes ready, but merge does not establish a new successful live failover or blanket historical repair. PR #10169 merged October 20 at 21:41:06 UTC. Single-instance serving uses the existing broker; pipeline-parallel gangs retain direct serving. Completed evaluation steps remain cached and the vendored runtimes resume saved work. Requests retry only before response headers are accepted, later worker loss breaks a stream, and the broker’s in-memory queue is not durable across broker actor failure. These limits remain despite code acceptance. Capability replacement gaps #10273, stale scored aggregates #10274 and direct-client address issue #10237 still require their own evidence. The former relay #10033 remains closed without merge. No new main Hero training change or fresh cross-host recovery test is inferred."
+      },
+      "sourceIds": [
+        "M357",
+        "M406",
+        "M407",
+        "M390",
+        "M300"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-21T13:05:15.074657+00:00",
+      "concept": {
+        "en": "Acceptance changes code status; a live recovery test changes execution evidence. Different failure boundaries may need different tests even within one recovery system."
+      },
+      "exercise": {
+        "en": "Which separate tests would cover a moving worker, a lost partial response and a failed broker actor?"
+      }
+    },
+    {
+      "id": "event-2026-10-21-rl-readiness-report",
+      "date": "2026-10-21",
+      "status": "experimental",
+      "title": {
+        "en": "A readiness report describes earlier limited Hero learning tests, not a switch of the current training run"
+      },
+      "detail": {
+        "en": "A public readiness report reviewed today describes September tests in which a separate Hero RL setup learned a short-context math task and resumed its optimizer state. These are historical qualification experiments, not fresh October 21 measurements or a launch of reinforcement learning on the current main pretraining run. Issue #10388 dates its 4K snapshot to September 28 and longer-context probes to September 29. It reports one training seed per accelerator: after 64 updates, GSM8K held-out accuracy 563→610/1024 on H100 and 569→625/1024 on GB200; both restore step 32 and continue to 64. Scope is BF16, total length at most 4096, recorded expert-route replay, specified optimizer and staleness at most one; native routing fails the numerical gate. Sampled state checks are not full-byte checkpoint checksums, and repeat evaluations changed three answers per platform. Separate 65K synthetic AdamW capacity/restore tests and 256K short-output serving probes do not qualify long-context RL. Learner, serving and accepted online-response rates count different tokens and cannot be compared as one speed metric. Required wheel packaging, sustained longer-response throughput and fleet sizing remain open; raw internal artifacts were not independently audited here."
+      },
+      "sourceIds": [
+        "M418",
+        "M340",
+        "M343"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-21T13:05:15.074657+00:00",
+      "concept": {
+        "en": "An experimental readiness gate is only as broad as the task, context, precision and failure cases it actually tested. Historical success is useful without implying a new production launch."
+      },
+      "exercise": {
+        "en": "Why do synthetic 65K updates and short-output 256K serving probes not establish long-context RL readiness?"
+      }
+    },
+    {
+      "id": "event-2026-10-21-quality-judge-revision",
+      "date": "2026-10-21",
+      "status": "experimental",
+      "title": {
+        "en": "A revised data-quality study checks whether its judge mistakes random variation for a gain"
+      },
+      "detail": {
+        "en": "An updated small-model study adds repeat seeds and positive controls to test its data-selection judge itself. It reports that a prediction-loss average can reject a useful classifier, but neither the new judge nor a candidate is an accepted Hero mixture change. Open #10108 now uses corrected v3 task formatting and Welch t intervals. A 12-seed-per-arm web-only DCLM control reports a 2.2% combined task-target gain, interval +1.7 to +2.7%, while Paloma macro is 0.2% worse; the same classifier in the full mixed pool is about +0.4% at d1280 with interval −0.9 to +1.8%, inconclusive. The reported seed audit finds the previous bootstrap too narrow at three seeds; three seeds should rank candidates rather than certify acceptance near one-percent harm limits. MBPP line endings and GSM8K annotations were rescored on 133 checkpoints, changing one of 18 judge decisions; these are grading-input corrections, not new model weights. Ridge/fusion candidates remain worse than random or inconclusive, and unresolved contamination/dedup and mutable-input limits remain. The external study/offline histories were not independently reproduced. Previous dated statistics retain their original task-version scope, not a universal metric ranking."
+      },
+      "sourceIds": [
+        "M400"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-21T13:05:15.074657+00:00",
+      "concept": {
+        "en": "A decision rule needs controls too: compare random runs with random runs to estimate false discoveries, and check a known useful candidate without changing the rule after seeing results."
+      },
+      "exercise": {
+        "en": "Why can a positive point estimate still be inconclusive when its interval crosses zero or a harm limit?"
+      }
+    },
     {
       "id": "event-2026-10-20-training-and-review",
       "date": "2026-10-20",
