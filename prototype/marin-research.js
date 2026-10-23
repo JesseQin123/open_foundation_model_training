@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-10-22",
+  "snapshot": "2026-10-23",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -2620,6 +2620,84 @@ window.MARIN_RESEARCH = {
       "kind": "report",
       "title": "Hero step 294000 fixed example generated October 22",
       "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/results/760731eaefe2aa7667d50f8e9662b3f27308d73ac019108984cdb1870eb34a18.json"
+    },
+    {
+      "id": "M437",
+      "kind": "issue",
+      "title": "Identity SFT for Marin Snowball with capability-preservation checks",
+      "url": "https://github.com/marin-community/marin/issues/10491"
+    },
+    {
+      "id": "M438",
+      "kind": "pr",
+      "title": "[hero] Preserve routing precision and frozen-weight gradients",
+      "url": "https://github.com/marin-community/marin/pull/10556"
+    },
+    {
+      "id": "M439",
+      "kind": "pr",
+      "title": "[hero] Reproduce checkpoint averaging and compact format SFT",
+      "url": "https://github.com/marin-community/marin/pull/10539"
+    },
+    {
+      "id": "M440",
+      "kind": "pr",
+      "title": "[grug] Add a ring_filtered expert-parallel MoE backend",
+      "url": "https://github.com/marin-community/marin/pull/9880"
+    },
+    {
+      "id": "M441",
+      "kind": "pr",
+      "title": "[levanter] Run Belay's ReLU² experts on cudnn-frontend MXFP8 kernels",
+      "url": "https://github.com/marin-community/marin/pull/10559"
+    },
+    {
+      "id": "M442",
+      "kind": "pr",
+      "title": "Keep two SkyRL recovery checkpoints by default",
+      "url": "https://github.com/marin-community/marin/pull/10498"
+    },
+    {
+      "id": "M443",
+      "kind": "pr",
+      "title": "Propose a metadata-only Hero dataset",
+      "url": "https://github.com/marin-community/marin/pull/10527"
+    },
+    {
+      "id": "M444",
+      "kind": "issue",
+      "title": "Hero official status: automatic restore from step 312162 after startup retries, October 23 UTC",
+      "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-6355202688"
+    },
+    {
+      "id": "M445",
+      "kind": "report",
+      "title": "Hero format SFT: commit-pinned research notebook and execution limits",
+      "url": "https://github.com/marin-community/marin-logbooks/blob/d152151d8148734c8f1a954be1224eb83e20c2e9/logbooks/2-hero-checkpoint-format-sft/notebook.md"
+    },
+    {
+      "id": "M446",
+      "kind": "report",
+      "title": "Hero format SFT: complete 100-response qualitative review",
+      "url": "https://gist.github.com/dlwh/408759a8eb09796d253b8b53a43769d4"
+    },
+    {
+      "id": "M447",
+      "kind": "report",
+      "title": "Snowball V19: fixed final release comparison with math regressions",
+      "url": "https://gist.githubusercontent.com/penfever/f3e6d59ea8b0fa2db21799416efd5b17/raw/6125ae3d627880838f53dc3d2b0f1fd7b6ae04ec/evidence__v19-final-release-comparison.json"
+    },
+    {
+      "id": "M448",
+      "kind": "report",
+      "title": "Hero completions: October 22 labeled snapshot, reviewed October 23",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.22/index.html"
+    },
+    {
+      "id": "M449",
+      "kind": "report",
+      "title": "Hero step 306000 temperature 0.7 example, generated October 22",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/results/48e21db0037b92d30346a2ddf361d7c47ecb0c7b408e2fc3bd78655f38f4366a.json"
     }
   ],
   "claimGroups": [
@@ -2627,10 +2705,10 @@ window.MARIN_RESEARCH = {
       "status": "confirmed",
       "facts": {
         "en": [
-          "October22 13:04:58.069UTC:16K child running309154,eval308999 Paloma.7449429/Uncheatable.4844556BPB. October14 latest confirmed main handoff;own-child later-checkpoint restore unknown.",
+          "October 23: official status confirms automatic restoration of the 16K child from its own step 312162 after two startup failures, then step 312224. Later public W&B is running at 314894 (13:06:09.944 UTC), evaluation 311999 Paloma 0.7450160 / UncheatableEval 0.4838285 BPB. Initiating failure unknown; no new kernel adoption.",
           "At 16:03 UTC October 2 the same public run reached step 193768: loss 1.19200, 14.71-second training steps, 14.93-second iterations and MFU 26.69%. Median MFU is 26.70% over 118 samples. Latest returned evaluation: step 191999, Paloma 0.787332 and UncheatableEval 0.510539 BPB. No new software handoff is established.",
           "Launch-provenance PR #9637 merged; its tracked-file hash excludes untracked file contents. Exporter #9584, evaluation checks #9461 and logging prefetch #9600 remain merged repository facts with separate deployment requirements.",
-          "Hero/mixture fixed and OpenAthena hashes unchanged;standupOctober13. Live/October21-labeled samples97,highest294000,actual newartifact completedOctober22 05:04UTC. October19/22pages404;page labels do not date generated evidence.",
+          "Hero/mixture fixed reports and Open Athena hashes unchanged; latest standup October 13. Live examples 101 sets, October 22-labeled page 99, max step 306000. Inspected sample generated October 22 09:46 UTC; October 19/23 pages 404. Discovery dates do not redate measurement.",
           "Tokenizer-prefetch PR #9617 is closed without merge. Its earlier small benchmark is not an adopted data-pipeline change.",
           "Retry-resource/source-capture fixes #9705 and production-user alert enrollment #9700 are merged repository facts, without inspected Hero adoption evidence. A new fixed October 2 completion report preserves 41 sample sets, not a final benchmark.",
           "Step 192000 writing samples completed October 4 18:03UTC; live and October 4 fixed page list 42 sets, while October 2 remains 41. Samples do not establish final capability.",
@@ -2655,7 +2733,8 @@ window.MARIN_RESEARCH = {
           "Public Snowball family-tree revision 6 independently exposes 130 nodes and 138 parent links; #9737 merged separately. Internal nodes, selection limits and optimizer resets remain explicit; not a Hero release.",
           "10145 local token flatten,10313 test dependency/reference update,10267 precision override,10241 quieter logging and10221 scratch routing are merged repository facts. None supplies a new main Hero adoption record.",
           "Harbor10287,Evalchemy10288,campaign9569 and brokered recovery10169 merged. Public source/wiring check confirms current Marin vendored install repair; no fresh SWE-bench trial or blanket historical score repair. Historical pre-vendoring policies need their matching old checkout.",
-          "10224 sampler0.7,10437 shared master/model checkpoint records,10471 provider-dependency removal,10468 resume failure classification and9283 pipelineCP merged repository facts.10469temperature1.0 and10312fusednorm closed unmerged. No new main-run adoption."
+          "10224 sampler0.7,10437 shared master/model checkpoint records,10471 provider-dependency removal,10468 resume failure classification and9283 pipelineCP merged repository facts.10469temperature1.0 and10312fusednorm closed unmerged. No new main-run adoption.",
+          "PRs #10311 loss gradients, #9880 filtered routing and #10498 two-save retention merged October 22. They are accepted repository options/defaults, not inspected main-run adoption."
         ]
       },
       "sourceIds": [
@@ -2778,7 +2857,11 @@ window.MARIN_RESEARCH = {
         "M430",
         "M431",
         "M428",
-        "M405"
+        "M405",
+        "M404",
+        "M440",
+        "M442",
+        "M444"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2801,9 +2884,10 @@ window.MARIN_RESEARCH = {
           "10174 stored-router-bias loading/export-version correction and10175reference attention bounds open;pretraining update/activeFA4 unchanged.10169 preemption recovery merged; deployment unverified;10170zigzag wrapper merged;deployment unverified.10121latest two fixes unremeasured;no main-rack adoption.",
           "Checkpoint thinning is publicly reported completed, superseding the proposal; targeted cloud-policy apply still requires evidence. #10241 quieter GPU logging merged with live adoption unverified; #10238 chunk splitting is merged with deployment unverified; #10242 closed unmerged. #10239 dashboard deployment/backfill and custom-benchmark pin-gate coverage remain pending.",
           "Merged #10267 repairs BF16 dtype override; the matched-precision rerun and deployment remain unverified. Quality-track #10108 remains open with unresolved input limitations.",
-          "10311 forward-computed CE gradients remain open/default-off;10312 fused normalization closed unmerged.10169 brokered recovery merged with deployment unverified;10033 closed unmerged.10279 legacy discovery removal is draft with earliest November2 review and a last-writer/expiration gate.",
-          "10415 MXFP8 experts and10423 IFBench checker repair remain open;10414 wrapper closed unmerged. 10311 kernel candidate remains open;10312 closed unmerged, no main-run adoption. Checker regrade/deployment and failed-SWE baseline reruns need independent evidence.",
-          "ClassicLarry plans post-run4Kevaluation ofallcheckpoints;not completed.10484 shared HF release contract open with preserve default;distributedBridge/vLLM gates unrun.10480 checkpoint schedules/master export open;10428 nextformatSFT smoke planned."
+          "10311 forward-computed CE gradients merged/default-off;10312 fused normalization closed unmerged.10169 brokered recovery merged with deployment unverified;10033 closed unmerged.10279 legacy discovery removal is draft with earliest November2 review and a last-writer/expiration gate.",
+          "10415 MXFP8 experts and10423 IFBench checker repair remain open;10414 wrapper closed unmerged. 10311 kernel candidate merged/default-off;10312 closed unmerged, no main-run adoption. Checker regrade/deployment and failed-SWE baseline reruns need independent evidence.",
+          "ClassicLarry plans post-run4Kevaluation ofallcheckpoints;not completed.10484 shared HF release contract open with preserve default;distributedBridge/vLLM gates unrun.10480 checkpoint schedules/master export open;10428 completed 64-update format SFT and 100-reply side check; intended-backend capacity/parity pending.",
+          "#10527 metadata-only Hero corpus map remains incomplete/open. #10556 selected format-SFT fixes open; superseded #10539 closed unmerged. #10484 export contract open with relevant checks passing but Taskforge gate failing; preserve remains default. #10480 tiny-H100 master export gate publicly reported, full-size deployment unverified."
         ]
       },
       "sourceIds": [
@@ -2911,7 +2995,10 @@ window.MARIN_RESEARCH = {
         "M432",
         "M425",
         "M427",
-        "M423"
+        "M423",
+        "M443",
+        "M438",
+        "M439"
       ],
       "reviewStatus": "reviewed"
     },
@@ -2947,7 +3034,8 @@ window.MARIN_RESEARCH = {
           "One-rack GB200120step16K:CE+0.50%,fusednorm−0.85%,combined−0.02%tokens/s vs two baselines, not additive microbench forecast or11rackadoption.10412sequence-shuffle single-seed d512Paloma−.0135/lag128autocorrelation.226→.026;closure logs experiment,not rollout.",
           "10415 local MXFP8 remat31.9vs51.0ms excludestransport;Gaussian error6.4–6.8%vsBF16.2–.3%;fullstep/qualityunknown.10388September4K RL and synthetic65K/shortoutput256Kprobes are historical scoped qualification,not currentmainRLlaunch.",
           "10108 revisedv3/seed-calibrated judge:12seedweb-onlyDCLM+2.2% target[1.7,2.7] whilePaloma.2%worse;fullmix d1280+.4%[−.9,1.8]inconclusive. Task-format corrections/seed intervals not Hero mixture adoption.",
-          "10428 weighted282k/288k/294k average improves identical59sequenceC4panel2.130703034→2.109083774;one averagedforward,no broadquality/production.9283historical192H10065Ktenupdates predatesmainrefresh and needs externalJAXPPpatches,not currentGPUpass."
+          "10428 weighted282k/288k/294k average improves identical59sequenceC4panel2.130703034→2.109083774;one averagedforward,no broadquality/production.9283historical192H10065Ktenupdates predatesmainrefresh and needs externalJAXPPpatches,not currentGPUpass.",
+          "#10428 completed 64 total adapter/vocabulary SFT updates; all 100 qualitative replies ended at EOT, with content mistakes and two special-token anomalies. Training-source EOT scores are acquisition only; no serving throughput, full held-out quality or main adoption. Snowball identity V19 rejected after MATH500 449/500 to371/500 relative to V13; v0.1.1 earlier acceptance withdrawn after user-supplied creative failures, historical release remains. #10559 single-B200 cuDNN expert benchmarks need two-GPU/rack checks."
         ]
       },
       "sourceIds": [
@@ -3026,7 +3114,12 @@ window.MARIN_RESEARCH = {
         "M414",
         "M418",
         "M423",
-        "M431"
+        "M431",
+        "M445",
+        "M446",
+        "M437",
+        "M447",
+        "M441"
       ],
       "reviewStatus": "reviewed"
     },
@@ -3056,7 +3149,8 @@ window.MARIN_RESEARCH = {
           "Zero SWE scores before any model query are not coding-ability measurements; mismatched BF16/FP32 runs cannot identify a same-precision backend difference. Small-model loss-order agreement in #10108 is study-scoped, not a universal metric ranking.",
           "10311 estimated0.7% and10312 estimated0.6% full-step savings are forecasts from operation tests, not additive measured production gains.10318 load dependence is inferred; GET probes and POST counter-window means do not identify one bottleneck.",
           "Microbench savings do not add: observed rack combination is near baseline.10415 forecast8%shorterstep assumes unprofiled expert-cost share and local ratio;not measured fullstep. IFBench changed verdicts measure grader change,not model improvement.",
-          "Third-partyNAI forecast finalPaloma macro_loss1.979[1.965,1.994]or1.935[1.915,1.963],nominal90%bands/modelinference not finalcheckpoint. Reported~.03packingoffset is settings-scoped,not universalqualitycorrection.10453cleanrootcontrol confounded bywrapper/priority/nodes;exactcause not isolated."
+          "Third-partyNAI forecast finalPaloma macro_loss1.979[1.965,1.994]or1.935[1.915,1.963],nominal90%bands/modelinference not finalcheckpoint. Reported~.03packingoffset is settings-scoped,not universalqualitycorrection.10453cleanrootcontrol confounded bywrapper/priority/nodes;exactcause not isolated.",
+          "Identity overgeneralization is a hypothesis supported by narrow training-answer concentration, not a causal explanation of Snowball regression. #10559 estimated 1.4s across 48 layers is not a measured GB200 full-step saving; cannot add isolated benchmark deltas."
         ]
       },
       "sourceIds": [
@@ -3127,7 +3221,9 @@ window.MARIN_RESEARCH = {
         "M415",
         "M433",
         "M434",
-        "M422"
+        "M422",
+        "M437",
+        "M441"
       ],
       "reviewStatus": "reviewed"
     },
@@ -3145,17 +3241,18 @@ window.MARIN_RESEARCH = {
           "October6 report recovered; October7 andOctober8 fixed reports now readable. Execution of merged preemption/sampling code, optimizer guard deployment and historical allocation completeness remain unknown; current history proposal has no production reader.",
           "Condition causingOctober6 node taint,  wrong-model serving fix deployment remain unknown. Controller database backup improvement does not establish model-checkpoint improvement.",
           "PTB decontamination/clean correction and impact on other sets remain unknown. Optimized kernel bundle is adopted; storage/scorer adoption is unconfirmed; PGLE candidate failures require guards, no production profile speed result.",
-          "16K child own-checkpoint restart remains unverified; parent handoff restoration is confirmed. TPU gate cancelled without placement; auxiliary API/performance qualification and release remain pending. Existing partial mirror cleanup and10039 deployment unknown.",
-          "Public #10048 reports a critical-alert gap during a September 30 retry; initiating failure cause and deployed repair unknown. #10047 exact pending-worker verdict unavailable; #10059 memory constraint is visible but not isolated as the sole timeout cause. Own-checkpoint restoration of optimized Hero remains unverified.",
-          "16K child own-checkpoint restart remains unexercised publicly despite confirmed parent-checkpoint restore and first child save.10100 regeneration-config risk has no demonstrated corruption or deployed fix. Final serving qualification,clean PTB correction and critical-alert repair remain unverified.",
-          "Filtered current-Stack-v3 scan does not explain newerPTB/WikiTextdrops orcertifyfullstoreclean;olderpinnedrevision403,optout/name/size/formatgaps remain. Clean corrected eval,childownrestart,main-rack adoption andexistingpartialmirrorcleanup unverified.",
-          "10180sixearlycheckpoint bias/pending equality remains unexplained;later nine comparisons do not certify all current saves. Corrected export/deployed10174/10175,full11racklatest10121cost,childownrestart and clean corrected evaluation remain unverified.",
-          "10232shared-context evaluator accelerator rerun,10212/10223cleanpackages/fullhistoricaltraceaudit,effective restored checkpoint cloud protection and main-run adoption of merged10170 remain unverified. Earlysave10180andownchildrestartstill unresolved.",
+          "16K child own-checkpoint restart is publicly reported October 23; parent handoff restoration was separately confirmed. TPU gate cancelled without placement; auxiliary API/performance qualification and release remain pending. Existing partial mirror cleanup and10039 deployment unknown.",
+          "Public #10048 reports a critical-alert gap during a September 30 retry; initiating failure cause and deployed repair unknown. #10047 exact pending-worker verdict unavailable; #10059 memory constraint is visible but not isolated as the sole timeout cause. October 23 status now reports the 16K child restoring its own step 312162.",
+          "16K child own-checkpoint restart is now publicly exercised per October 23 official status.10100 regeneration-config risk has no demonstrated corruption or deployed fix. Final serving qualification,clean PTB correction and critical-alert repair remain unverified.",
+          "Filtered current-Stack-v3 scan does not explain newerPTB/WikiTextdrops orcertifyfullstoreclean;olderpinnedrevision403,optout/name/size/formatgaps remain. Clean corrected eval,adoption of other proposed code on the main rack andexistingpartialmirrorcleanup unverified.",
+          "10180sixearlycheckpoint bias/pending equality remains unexplained;later nine comparisons do not certify all current saves. Corrected export/deployed10174/10175,full11racklatest10121cost,clean corrected evaluation remain unverified.",
+          "10232shared-context evaluator accelerator rerun,10212/10223cleanpackages/fullhistoricaltraceaudit,effective restored checkpoint cloud protection and main-run adoption of merged10170 remain unverified. Early-save10180 remains unresolved; later own-child restore is now reported.",
           "#10245 reports deletion, but effective restored cloud deletion protection has no public apply receipt. #10237 shared endpoint failover, #10239 deployed dashboard/backfill, and #10250 TPU serving cause/repair remain unverified; none is evidence of a main Hero training failure.",
           "#10262 separate Harbor-main repair and matched clean reruns remain unverified; current Marin vendored install/source wiring is repaired; reported score/error counts have an unreconciled denominator. #10266 original FP32-vs-FP32 interpretation is withdrawn; new controlled comparison and deployed fix unknown. October 19 dated sample artifact is unavailable (404), not proof of no samples.",
-          "10273 capability replacement-gap availability and10274 scored-archive failure-row repair remain unverified; newer main pins do not certify historical policy archives.10318 connection/decision/ingress attribution lacks isolation. Merged precision/logging/layout/scratch code lacks inspected main-run adoption; own-child restore and effective restored cloud protection remain unknown.",
-          "Main adoption of kernel/FP8/cache experiments, fullscale quality and shuffle replication remain unverified. IFBench canonical regrade/deployed repair, fresh vendored SWE baseline reruns, capability-gap/archive recovery and own-child restart/cloud protection remain unknown.",
-          "10453partialsavecollision observed in separateSnowball;cleanoutputworkaround reported butcontrolledreproducer/shapechangecause/upstreamfixunknown.10484exportdistributedparity,postrun4Kevals,10428broaderquality,main9283adoption,childownrestart/effectivecloudpolicyapply remainunverified."
+          "10273 capability replacement-gap availability and10274 scored-archive failure-row repair remain unverified; newer main pins do not certify historical policy archives.10318 connection/decision/ingress attribution lacks isolation. Merged precision/logging/layout/scratch code lacks inspected main-run adoption; own-child restore is now reported; effective restored cloud protection remains unknown.",
+          "Main adoption of kernel/FP8/cache experiments, fullscale quality and shuffle replication remain unverified. IFBench canonical regrade/deployed repair, fresh vendored SWE baseline reruns, capability-gap/archive recovery and effective cloud protection remains unknown; own-child restart is now reported.",
+          "10453partialsavecollision observed in separateSnowball;cleanoutputworkaround reported butcontrolledreproducer/shapechangecause/upstreamfixunknown.10484exportdistributedparity,postrun4Kevals,10428broaderquality,main9283adoption,effective cloud-policy apply remains unverified; child own-save recovery is now publicly reported.",
+          "October 23 startup connection-refusal cause remains unknown despite official autonomous own-save recovery. Format-SFT intended-backend parity/throughput, independent merge parity, held-out quality and long context remain unqualified. Snowball creative failures need matched independent reproduction; full corpus reconstruction and cloud-policy apply remain unverified."
         ]
       },
       "sourceIds": [
@@ -3255,12 +3352,238 @@ window.MARIN_RESEARCH = {
         "M425",
         "M432",
         "M423",
-        "M431"
+        "M431",
+        "M444",
+        "M437",
+        "M443"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-10-23-main-run-automatic-recovery",
+      "date": "2026-10-23",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero resumes automatically from its own later save after two failed starts"
+      },
+      "detail": {
+        "en": "The main 16K Hero run resumed from one of its own later saved states and continued training without manual intervention, according to a new public status report. This closes an important recovery evidence gap, although the reason its first two starts failed is still unknown. The October 23 01:30 UTC comment (October 22 evening in New York, newly reviewed today) reports intentional credential-rotation preemption at 00:55:44 UTC, two startup connection refusals and automatic group retries. Attempt 2 restored step 312162 at 01:11:46; all 176 trainers were reported running, reaching step 312224 at 01:29:24. The public comment is the evidence; its linked internal incident was not used. Anonymous W&B later shows hero-ctx16k-step257k running at step 314894, timestamp October 23 13:06:09.944 UTC (09:06 New York), versus yesterday’s 309154. Loss 1.0479544; training step 13.7839 seconds; full iteration 13.8828 seconds; hardware utilization (MFU) 30.5567%, median 30.4219% across 500 samples. Latest returned evaluation is step 311999: Paloma 0.7450160 and UncheatableEval 0.4838285 bits per byte. These are live observations, not a matched speed comparison or final capability result. No new kernel or training-recipe adoption is established. Required launch/status/incident threads and 219 updated results covering 290 retrieved topics were checked. Latest standup remains October 13. Fixed Hero/mixture and Open Athena reports are unchanged. Live examples now list 101 sets, highest step 306000; the October 22-labeled page has 99. The inspected 306000 artifact was generated October 22 09:46 UTC; today’s discovery must not relabel its measurement date. October 19/23 sample pages return 404, not evidence of no work. Supplemental X checks returned no rows with identity/coverage limits."
+      },
+      "sourceIds": [
+        "M444",
+        "M343",
+        "M340",
+        "M2",
+        "M3",
+        "M45",
+        "M137",
+        "M448",
+        "M449"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-23T13:11:53.221387+00:00",
+      "concept": {
+        "en": "A recovery check should identify the exact saved state restored and show later computation. A successful recovery can be confirmed even while the initiating failure remains unexplained."
+      },
+      "exercise": {
+        "en": "Which two observations distinguish restoring the original parent checkpoint from recovering a later save made by the current run?"
+      },
+      "productionChange": true,
+      "productionEvidenceIds": [
+        "M444",
+        "M343"
+      ]
+    },
+    {
+      "id": "event-2026-10-23-format-sft-side-check",
+      "date": "2026-10-23",
+      "status": "experimental",
+      "title": {
+        "en": "A separate Hero experiment learns cleaner turn endings, but still makes content mistakes"
+      },
+      "detail": {
+        "en": "A separate Hero-derived checkpoint completed a short format-training experiment and ended all 100 reviewed replies at the intended end-of-turn marker. That makes it a provisional input for measuring a serving system’s capacity; it does not establish a production-ready assistant, broad quality gains or adoption by the main training run. The averaged 282000/288000/294000 checkpoint was given five chat-token output initializations, then small trainable adapters and vocabulary updates while its base weights and routing controls stayed frozen. The run continued from eight to 64 total updates with optimizer state, counters and data position restored; extending the learning-rate horizon raised the next rate rather than restarting training. On 16 fixed training-source prefixes, expected end-token NLL fell 3.38140 to 0.42875 and top-one matches rose 1/16 to 14/16: acquisition diagnostics, not held-out proof. Training reused about 47.6 corpus token-volume equivalents. The 100-response panel comprised 40 math, 40 Python and 20 fixed-history followups at temperature 0.7: no 2048-token caps; median length 113.5, maximum 496. Review found 33 correct math answers, 32 statically plausible code answers and 18 clear history passes, plus mistakes and two special-token anomalies. Code was not executed; pretraining contamination is unknown. Native sampling had no KV cache and its timing is not serving throughput. Full held-out quality, post-SFT C4 regression, long context and independent merged/backend numerical agreement remain unresolved. Research is now preserved in the pinned logbook. Broad reproduction PR #10539 closed unmerged; selected fixes #10556 remain open with CPU checks and hardware gates outstanding."
+      },
+      "sourceIds": [
+        "M423",
+        "M445",
+        "M446",
+        "M439",
+        "M438"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-23T13:11:53.221387+00:00",
+      "concept": {
+        "en": "Learning when to stop is a formatting skill. It can improve while reasoning, code correctness and serving performance still need separate checks."
+      },
+      "exercise": {
+        "en": "Why do 100 correctly terminated replies not prove either 100 correct answers or a fast serving backend?"
+      }
+    },
+    {
+      "id": "event-2026-10-23-snowball-identity-tradeoff",
+      "date": "2026-10-23",
+      "status": "experimental",
+      "title": {
+        "en": "Snowball’s identity training exposes why a narrow score cannot stand in for assistant quality"
+      },
+      "detail": {
+        "en": "A separate Snowball identity-training campaign reports better self-identification alongside worse math scores, and later user testing exposed creative-writing failures in the published version. The practical lesson is to test ordinary tasks as well as the skill being taught; this is not a Hero main-run regression. Issue #10491 reports identity development scores 7/60 for the initializer, 45/60 for V13 and 51/60 for V19. MATH500 instead falls 461/500 to 449/500 to 371/500; GSM8K falls 1224/1319 to 1038/1319 to 1015/1319 under the reported matched comparison settings. V19 will not be promoted to v0.1.2. V13 remains historically published as v0.1.1, but the issue withdraws its earlier acceptance judgment after user-supplied fiction/editing examples showed unsolicited project attribution and refusal-like behavior. Those user examples have not been independently reproduced under matched serving settings. Identity-panel scores guided data expansion, and coding results use only 14 task definitions through three interfaces, not broad capability preservation. An audit reports project names in 2303/2438 final V13 answers, supporting identity overgeneralization as a hypothesis, not a proven cause. V19 changes both data and expert capacity; neither is isolated. A fresh holdout, matched creative-task comparisons and controlled interventions remain future work. The public issue and fixed comparison are readable; gated training data were not used as independently reproducible evidence."
+      },
+      "sourceIds": [
+        "M437",
+        "M447"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-23T13:11:53.221387+00:00",
+      "concept": {
+        "en": "A development score can rise because training targets that score. Separate preservation tests ask whether other useful behavior was lost."
+      },
+      "exercise": {
+        "en": "Name two ordinary tasks you would reserve before tuning a model to answer identity questions."
+      }
+    },
+    {
+      "id": "event-2026-10-23-ce-code-accepted",
+      "date": "2026-10-23",
+      "status": "confirmed",
+      "title": {
+        "en": "A cheaper loss calculation is accepted into the codebase; main-run use is still unverified"
+      },
+      "detail": {
+        "en": "Marin merged an optional way to calculate training-loss gradients with less repeated matrix work. This is an accepted code change, not evidence that the main Hero run became faster or enabled it. PR #10311 merged October 22 at 16:52:08 UTC; the default remains the existing path and per-token losses retain it. Its reported single-B200 operation benchmark is 242.6 milliseconds versus 351–356, with peak memory rising from 12.08 to 13.06 GB. Those operation-level numbers are not whole-run gains. Earlier dated short one-rack GB200 comparisons remain separate; no new eleven-rack adoption, loss-preservation or recovery gate is supplied by the merge. The related fused-normalization proposal #10312 remains closed without merge. A proposed saving extrapolated from one operation must not be added to unrelated benchmark gains."
+      },
+      "sourceIds": [
+        "M404",
+        "M405",
+        "M340"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-23T13:11:53.221387+00:00",
+      "concept": {
+        "en": "A faster operation can use more memory, and the full training step contains other work. Code acceptance and deployment are different evidence milestones."
+      },
+      "exercise": {
+        "en": "What would you measure after enabling the option in a controlled full-step test?"
+      }
+    },
+    {
+      "id": "event-2026-10-23-filtered-routing-accepted",
+      "date": "2026-10-23",
+      "status": "confirmed",
+      "title": {
+        "en": "An accepted routing option sends less unused data, with hardware-dependent results"
+      },
+      "detail": {
+        "en": "Marin accepted an optional way to send model tokens only to machines that own the experts they need. The benchmarks show why reducing traffic can help, but also why a speedup on one machine does not establish a Hero improvement. PR #9880 merged October 22 at 21:55:34 UTC. At batch 64, each collective moves 537 MB per GPU rather than 1174 MB for the broadcast-style ring. A fair same-node AMD comparison after correcting what intermediate values were saved is effectively tied: 1.476 versus 1.482 seconds. The separate four-layer H100 comparisons favor the filtered option by about 2–4%, while reported TPU comparisons are slower. Fixed destination buffers can discard assignments when a destination fills, even if an expert has capacity; that tradeoff is absent from the old ring. One tagged alternative comparison hit a non-finite loss on H100, with cause unresolved. Additional stacked changes have their own benchmark and must not be attributed to this option alone. These are older scoped tests attached to newly accepted code, not fresh main-run measurements or deployment evidence."
+      },
+      "sourceIds": [
+        "M440",
+        "M340"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-23T13:11:53.221387+00:00",
+      "concept": {
+        "en": "A fair performance comparison holds memory-saving behavior and workload fixed. Otherwise a communication change may get credit for avoiding work the other configuration repeated."
+      },
+      "exercise": {
+        "en": "Why should the corrected AMD comparison take priority over the larger initial headline speedup?"
+      }
+    },
+    {
+      "id": "event-2026-10-23-cudnn-experts-side-test",
+      "date": "2026-10-23",
+      "status": "experimental",
+      "title": {
+        "en": "A new expert-computation option is faster on one GPU; multi-GPU validation is still pending"
+      },
+      "detail": {
+        "en": "An open Belay proposal reports a faster and smaller-memory expert calculation on a single B200 GPU. It is a promising small test, with no measured whole-GB200-step gain or Hero adoption. PR #10559 keeps QuACK as default and adds an opt-in cuDNN frontend path for low-precision expert matrix operations. Across three rotated rounds, balanced forward-plus-backward time is 91.0 to 61.0 milliseconds; partly filled receivers are 88.4 to 58.3. Peak program memory is 40.5 to 34.8 GiB. Reported numerical errors are similar between low-precision paths, not zero: output/activation/up-weight relative errors are roughly 5.8/6.5/6.5% against FP32, with a small extra down-weight difference. Repeats are reported deterministic. Alignment constraints require receiving layouts to agree across machines. The two-GPU end-to-end test has not run; CPU layout checks do not replace it. The roughly 1.4-second saving extrapolated across 48 layers is an estimate, not a measured full-step result. A rack comparison against both current dispatch and matched low-precision options remains planned."
+      },
+      "sourceIds": [
+        "M441",
+        "M401"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-23T13:11:53.221387+00:00",
+      "concept": {
+        "en": "A one-device kernel test isolates calculation. A multi-device training test must also validate communication, layout, memory and learning behavior."
+      },
+      "exercise": {
+        "en": "Which missing test could reveal a failure that a perfectly repeatable one-GPU benchmark cannot?"
+      }
+    },
+    {
+      "id": "event-2026-10-23-recovery-retention-default",
+      "date": "2026-10-23",
+      "status": "confirmed",
+      "title": {
+        "en": "Accepted SkyRL defaults keep two recent recovery saves while protecting unfinished exports"
+      },
+      "detail": {
+        "en": "Marin merged a SkyRL default that retains two recent recovery checkpoints instead of keeping every checkpoint. It aims to bound storage while preserving a fallback, but no current Hero deletion or deployed cloud-policy change is established. PR #10498 merged October 22 at 17:45:14 UTC. Cleanup follows successful publication of a replacement; pending inference exports and a selected best native checkpoint remain protected outside the rolling window. Individual runs can explicitly request one retained recovery point. This code-level retention rule is separate from the earlier Hero checkpoint-thinning receipt and from the still-unverified effective cloud protection policy. The separate open schedule/master-export PR #10480 now reports a tiny H100 optimizer-step/export gate; that does not prove full-size deployment or broad release parity."
+      },
+      "sourceIds": [
+        "M442",
+        "M427",
+        "M381"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-23T13:11:53.221387+00:00",
+      "concept": {
+        "en": "A retention window should remove an old save only after a usable replacement exists. Export and analysis jobs can need older saves independently of recovery."
+      },
+      "exercise": {
+        "en": "Why should a checkpoint awaiting export survive even after two newer recovery checkpoints exist?"
+      }
+    },
+    {
+      "id": "event-2026-10-23-metadata-only-data-proposal",
+      "date": "2026-10-23",
+      "status": "planned",
+      "title": {
+        "en": "A proposed Hero data map could make selected training text easier to reconstruct"
+      },
+      "detail": {
+        "en": "An open proposal would publish a map of selected Hero documents rather than redistribute all of their text. It could let researchers trace and rebuild selected material, but the full release and exact training-stream reconstruction are not established. PR #10527 covers a 292-source document pool, upstream row coordinates, repeated document occurrences and stored quantized embeddings. Draft tools checked selection/normalization across the source list and reconstructed samples from six provider families. Provider-file offsets and dataset-viewer offsets are different coordinate systems and cannot be silently substituted. Frozen embedding-model and quantization metadata were recovered for 291 sources, with Common Crawl Focus still missing provenance; selected-document embedding coverage has not been measured. Ordered manifests, locator backfill, historical transforms and full-store counts remain unfinished. Ninety reported tests and a documentation build support the draft tooling, not full corpus coverage, publication or token-stream equality."
+      },
+      "sourceIds": [
+        "M443"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-23T13:11:53.221387+00:00",
+      "concept": {
+        "en": "A data map needs both an address and the transformations applied after retrieval. A sample that reconstructs correctly does not prove that every selected document can be rebuilt."
+      },
+      "exercise": {
+        "en": "What evidence beyond six successful source samples would make a full reconstruction claim credible?"
+      }
+    },
+    {
+      "id": "event-2026-10-23-export-policy-review",
+      "date": "2026-10-23",
+      "status": "planned",
+      "title": {
+        "en": "The shared export proposal now spells out behavior changes; it remains unmerged"
+      },
+      "detail": {
+        "en": "The shared inference-export proposal now explicitly describes how stop-token and first-token controls will change. That makes the proposal easier to review, but it remains open and does not change existing published models or the main Hero run. PR #10484 keeps source precision as default. It no longer invents first-token suppression from padding/start/stop token IDs; consumers that relied on the old implicit field may generate a different first token. Explicit end-token lists that omit the tokenizer end token now fail validation instead of having that ID silently inserted. Matching completed non-Hub exports skip repeated shard work, while changed requests fail. After a main-branch reconciliation, export-related checks are reported passing but an independently reproduced Taskforge failure blocks the aggregate gate; an earlier green run must not be described as today’s all-green CI. Distributed conversion parity and representative vLLM logits/end-token checks remain unrun before BF16 could become default. An open PR with approval and passing relevant checks still is not merged code or a deployed release."
+      },
+      "sourceIds": [
+        "M425",
+        "M424"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-23T13:11:53.221387+00:00",
+      "concept": {
+        "en": "Model release metadata can affect generated behavior. A compatible file format alone does not guarantee identical first-token or stopping rules."
+      },
+      "exercise": {
+        "en": "Which comparison would catch a behavior change caused by export metadata while the stored weights stayed the same?"
+      }
+    },
     {
       "id": "event-2026-10-22-training-and-review",
       "date": "2026-10-22",
