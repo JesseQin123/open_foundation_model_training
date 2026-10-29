@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-10-28",
+  "snapshot": "2026-10-29",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -3094,6 +3094,60 @@ window.MARIN_RESEARCH = {
       "kind": "report",
       "title": "Hero step342000 example completed October28 UTC",
       "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/results/6101132a20366bafbe746f0c307d6d9e6ceb99a66105fbb349e1cd85268be8a9.json"
+    },
+    {
+      "id": "M516",
+      "kind": "issue",
+      "title": "[iris/grug] Save a final checkpoint before preemption kills training",
+      "url": "https://github.com/marin-community/marin/issues/10761"
+    },
+    {
+      "id": "M517",
+      "kind": "issue",
+      "title": "[canary-grug-multislice] JAX startup stalls after unequal retries",
+      "url": "https://github.com/marin-community/marin/issues/10755"
+    },
+    {
+      "id": "M518",
+      "kind": "pr",
+      "title": "Keep JAX peers aligned across retries and extend Datakit canary waits",
+      "url": "https://github.com/marin-community/marin/pull/10759"
+    },
+    {
+      "id": "M519",
+      "kind": "pr",
+      "title": "[rl] Adopt the reproduced Snowball evaluation profile",
+      "url": "https://github.com/marin-community/marin/pull/10760"
+    },
+    {
+      "id": "M520",
+      "kind": "issue",
+      "title": "Predicting Snowball's post-distillation SWE-bench pass@1 from its scaling ladder",
+      "url": "https://github.com/marin-community/marin/issues/10753"
+    },
+    {
+      "id": "M521",
+      "kind": "pr",
+      "title": "[agentx] Run Snowball and Hero throughput benchmarks on Iris",
+      "url": "https://github.com/marin-community/marin/pull/10645"
+    },
+    {
+      "id": "M522",
+      "kind": "pr",
+      "title": "[agentx] Add internal Snowball and provisional Hero benchmark views",
+      "url": "https://github.com/marin-community/marin/pull/10646"
+    },
+    {
+      "id": "M523",
+      "kind": "issue",
+      "title": "Qwen3.5 base thinking-switch follow-up: actual behavior and output-cap limits",
+      "url": "https://github.com/marin-community/marin/issues/10751#issuecomment-6494755783"
+    },
+    {
+      "id": "M524",
+      "kind": "issue",
+      "title": "Checkpoint on preemption: source audit and proposed bounded shutdown design",
+      "url": "https://github.com/marin-community/marin/issues/10761#issuecomment-6487751596"
     }
   ],
   "claimGroups": [
@@ -3101,10 +3155,10 @@ window.MARIN_RESEARCH = {
       "status": "confirmed",
       "facts": {
         "en": [
-          "October28 13:03:03.192UTC:16K Hero running345387;eval344999 Paloma0.7309599/Uncheatable0.4766259BPB. No new main-run handoff. #10715 recovery merged into main, distinct from Hero deployment.",
+          "October29 12:57:44.845UTC:16K Hero running351458;eval350999 Paloma0.7316116/Uncheatable0.4752037BPB. No new main-run handoff. Accepted JAX retry repair10759 is not proof of Hero deployment.",
           "At 16:03 UTC October 2 the same public run reached step 193768: loss 1.19200, 14.71-second training steps, 14.93-second iterations and MFU 26.69%. Median MFU is 26.70% over 118 samples. Latest returned evaluation: step 191999, Paloma 0.787332 and UncheatableEval 0.510539 BPB. No new software handoff is established.",
           "Launch-provenance PR #9637 merged; its tracked-file hash excludes untracked file contents. Exporter #9584, evaluation checks #9461 and logging prefetch #9600 remain merged repository facts with separate deployment requirements.",
-          "Fixed Hero/mixture/Open Athena/tied-drafter reports unchanged;standup10649 latest. Live/October27-labeled samples106sets/max342000 completedOctober28 01:59UTC. October19/28pages404;October27 nowaccessible.",
+          "Fixed Hero/mixture/Open Athena/tied-drafter and accessible sample hashes unchanged;lateststandup10649. Live sample106sets through342000,artifactcompletedOctober28 01:59UTC,notfreshOctober29. October19/28/29pages404.",
           "Tokenizer-prefetch PR #9617 is closed without merge. Its earlier small benchmark is not an adopted data-pipeline change.",
           "Retry-resource/source-capture fixes #9705 and production-user alert enrollment #9700 are merged repository facts, without inspected Hero adoption evidence. A new fixed October 2 completion report preserves 41 sample sets, not a final benchmark.",
           "Step 192000 writing samples completed October 4 18:03UTC; live and October 4 fixed page list 42 sets, while October 2 remains 41. Samples do not establish final capability.",
@@ -3135,7 +3189,8 @@ window.MARIN_RESEARCH = {
           "Week-of-October19 standup #10649 first publicly created October24; its retrospective plans and one-rack figures are not current main-run deployments or fresh measurements.",
           "Public #10677 replay closely reproduces available step324000 loss/norm and localizes an outlier sequence; this is an observed diagnostic, not proof of exact325710 cause or true derivative. An earlier correction withdrew the blanket correctness claim; the final follow-up adds token/op-level high-precision checks but no whole-chain FP32 backward.",
           "Export contract #10484 closed October26 without merge. #10742 merged into benfeuer/megatron-offload-resume, not main; parent #10715 subsequently merged into main October27 19:26UTC. These outcomes are not production deployments.",
-          "Snowball recovery10715 merged into main October27 19:26UTC;cache expiry10553 merged October28 12:31UTC. Accepted repository code does not establish deployed Hero use."
+          "Snowball recovery10715 merged into main October27 19:26UTC;cache expiry10553 merged October28 12:31UTC. Accepted repository code does not establish deployed Hero use.",
+          "JAX coordinator discovery10759 merged October29 12:11UTC;incident10755 closed. Datakit waits extended20200s after historical jobs outlasted CI;no fresh accelerator pass or main adoption established."
         ]
       },
       "sourceIds": [
@@ -3283,7 +3338,9 @@ window.MARIN_RESEARCH = {
         "M505",
         "M510",
         "M514",
-        "M515"
+        "M515",
+        "M518",
+        "M517"
       ],
       "reviewStatus": "reviewed"
     },
@@ -3314,7 +3371,8 @@ window.MARIN_RESEARCH = {
           "Preservation-selection #10651 draft/unmerged/defaults impose no gates. Metric-selection10672/trialcoverage10671/SOTOPIAlength10670/policydefaults10650 open, with no newly launched model evaluation or historical backfill. Tied-drafter10653 is archival draft, not deployment.",
           "10711open latest design evaluates4K/currentlength, adds65K/262K only when training reaches them, pads/masks tails and reuses10709devicegroups. Earlier65Kcap/alllength-immediate proposals superseded; noGPUrehearsal/relaunch.10709open one-rackacceptance lacks11rackqualification.10715 offloaded-optimizer resume merged into main after reported save/resume acceptance;10742 first merged into its feature branch. 10682 remains open side work.",
           "Hero context #10618, multi-length evaluation #10711 and device-group reuse #10709 remain open without a new relaunch. Snowball CPU-offload #10715 merged, while stable-softmax #10682 remains open; serving-replacement #10721 is a proposal with full-suite limits.",
-          "Snowball RL10740/10746/10747 remain open with calibrated short/medium guards and scoped Harbor tests. Train-long has no calibrated verdict;native eval sampling still equals training sampling.10751 longer-cap/newline-layout arms and possible data cleaning remain unrun proposals."
+          "Snowball RL10740/10746/10747 remain open with calibrated short/medium guards and scoped Harbor tests. Train-long has no calibrated verdict;native eval sampling still equals training sampling.10751 longer-cap/newline-layout arms and possible data cleaning remain unrun proposals.",
+          "10761 save-on-SIGTERM design is unimplemented;60sgrace is a starting test budget,notguarantee.10760 reproducible-evaluation profile is open with no exact-headGPUtest and unmeasured throughput cost.10753 forecast still selects/releases/retrains ladder inputs;no new forecast result."
         ]
       },
       "sourceIds": [
@@ -3445,7 +3503,11 @@ window.MARIN_RESEARCH = {
         "M509",
         "M508",
         "M507",
-        "M506"
+        "M506",
+        "M516",
+        "M524",
+        "M519",
+        "M520"
       ],
       "reviewStatus": "reviewed"
     },
@@ -3487,7 +3549,8 @@ window.MARIN_RESEARCH = {
           "Tied-drafter Belay final12pairs: native12288 beats draft16384 in loss and cost in all pairs; draft directcost+16.1%,common0.40nat target+27.2% by interpolation.3seeds×4windows not12independentseeds; permissive12/12acceptance is not cheaperlearning. Studyclosed/no newGPUjobs. AMD10673 two-nodeMI350X1.975→1.719/1.720s with unexplained3.026scontrol; short-window/openPR,notmainHero.",
           "10709one-rack65K eval nonpoolgrowth7.4GiB old vs0.004GiB instrumentednew;2evals/train300020,not11rack.10697capacity4 zero drops and10698lr0 selectedgate passed/502sourceequal tensors,with all-layer routing exceptions.10700merge alpha.875 strictidentitypass/GSM8K−8.592pp;notbroadpreservation.",
           "Snowball #10715 reports 67B resume/train/save/resume after releasing pinned memory; 1.6B scoped peak RSS31.7→28.9GiB/rank. CD16 creator gains coexist with BFCL27.6→7.3% and name failures; tool replay22.8% with small-panel uncertainty, no qualified release. #10682 corrects rounded confidence metrics in scoped tests, not Hero learning.",
-          "10751 base protocol tests require own-EOS correction:Qwen3 clean chat176/177 of200,math191/195 of200;not0% inability to stop.8192caps after504 limit long-math interpretation.10606 exactTPU509d688fa/fb02daf native-config test shows7global/19local layers,35801tokens,meanlogprobdifference.01598;notfullMATH500 onthatcommit."
+          "10751 base protocol tests require own-EOS correction:Qwen3 clean chat176/177 of200,math191/195 of200;not0% inability to stop.8192caps after504 limit long-math interpretation.10606 exactTPU509d688fa/fb02daf native-config test shows7global/19local layers,35801tokens,meanlogprobdifference.01598;notfullMATH500 onthatcommit.",
+          "10760 diagnostic branch:6fixed100taskevaluations/4startups match tokens/text/grades;one sequence per worker,notuniversaldeterminism. Qwen3.5 thinkingflagoff stillreasons at32768cap;completedthinkingonrepliesclose,capped17–19%areunfinished.10645SnowballC128/C256 repeatedpoints134.94806/110.54714tok/s/GPU;Hero calibrationdeferred."
         ]
       },
       "sourceIds": [
@@ -3590,7 +3653,10 @@ window.MARIN_RESEARCH = {
         "M487",
         "M506",
         "M511",
-        "M513"
+        "M513",
+        "M519",
+        "M523",
+        "M521"
       ],
       "reviewStatus": "reviewed"
     },
@@ -3626,7 +3692,8 @@ window.MARIN_RESEARCH = {
           "Tied-drafter results reject the tested cost-saving objective, not every possible draft architecture. Single-rack FP8 MFU39/35 standup figures cannot infer quality preservation or multi-rack main-run gain; no matching window/control.",
           "Final replay supports routing/attention/GatedNorm sensitivity with local high-precision checks; whole-chain FP32 validation and exact325710 attribution remain unverified. Weight-dependent formatting triggers do not justify broad data filtering. BF16 merge erasure is observed but its causal effect on identity lacksFP32servedcontrol.",
           "Current identity tests favor a system prompt over tested weight updates, within reused development panels and specific graders. Missing tool data may contribute to regressions but does not isolate their full cause. Corrected entropy values do not imply new learning.",
-          "Snowball plain-text orphan closing-think tags resemble a reasoning-trace format but do not identify the training stage or dataset. A possible Hero cooldown data-cleaning action is a suggestion,notanadoptedrule. GRPO guardPASS/nochange is not an improvement or equivalence claim."
+          "Snowball plain-text orphan closing-think tags resemble a reasoning-trace format but do not identify the training stage or dataset. A possible Hero cooldown data-cleaning action is a suggestion,notanadoptedrule. GRPO guardPASS/nochange is not an improvement or equivalence claim.",
+          "Template thinkingoff is not a verified nonthinking control on testedQwen3.5base. Untied stop/cap conventions can explain scoring differences without learning. Matchedstage ladder needed before attributing forecast error;early analysis choices are not measuredfinalcapability."
         ]
       },
       "sourceIds": [
@@ -3714,7 +3781,9 @@ window.MARIN_RESEARCH = {
         "M487",
         "M512",
         "M506",
-        "M507"
+        "M507",
+        "M523",
+        "M520"
       ],
       "reviewStatus": "reviewed"
     },
@@ -3748,7 +3817,8 @@ window.MARIN_RESEARCH = {
           "Tied-drafter original checkpoint bytes are not publicly hosted; public report supports recorded results, not independently rerun GPU training. Main FP8 adoption/quality, deployed preservation gates, eval metric-stack rollout/backfill and AMD unexplained control slowdown remain unknown. Prior startup cause/cloud protection/serving qualification unresolved.",
           "Exact325710weights unavailable; earlierblanketcorrectnessclaimwithdrawn; final local precision checks strengthen324000mechanism but whole-chain/exact325710validation incomplete.10699repeatnoise/rankplacementcauseunknown;all-layerrouteparity,mainclip/logadoption,multilengthevalGPUacceptance and11rackdevicegroupqualification remain unverified.",
           "Main-run adoption of Snowball recovery, numerical fixes and future context/evaluation changes is unverified. #10712 reports duplicate Kubernetes pods; exact signal path lacks controller-log confirmation. #10721 is not a deployed repair. Exact Hero325710 attribution and serving-repeat-noise causes remain unresolved.",
-          "Hero adoption of newly merged Snowball recovery/cache code remains unverified. Exact base protocol provenance,newline-vs-SFTcause,fullcapreruns,TPUmaintainedrevisionqualification,nightlycalibration andindependentevaluationsampling remain open."
+          "Hero adoption of newly merged Snowball recovery/cache code remains unverified. Exact base protocol provenance,newline-vs-SFTcause,fullcapreruns,TPUmaintainedrevisionqualification,nightlycalibration andindependentevaluationsampling remain open.",
+          "MainHero adoption ofshutdown/JAX/evaluationfixes remainsunverified. Boundedmulti-rankpreemptionsave,postmergeTPUsmokepass,exactheadevalGPUacceptance,sequencecapthroughputcost,Hero benchmarkcalibration andweeklyproductioningestion remainunmeasured/unactivated."
         ]
       },
       "sourceIds": [
@@ -3876,12 +3946,188 @@ window.MARIN_RESEARCH = {
         "M510",
         "M506",
         "M459",
-        "M507"
+        "M507",
+        "M516",
+        "M518",
+        "M519",
+        "M521",
+        "M522"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-10-29-main-training-review",
+      "date": "2026-10-29",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero keeps training; new work asks how to save progress before a forced shutdown"
+      },
+      "detail": {
+        "en": "Hero continues its 16K training run, with no newly confirmed configuration switch or production repair. A new shutdown proposal would reduce lost work before preemption, while separate startup and evaluation results need their own adoption checks. Anonymous W&B at October 29 12:57:44.845 UTC (08:57 New York) shows hero-ctx16k-step257k running at step 351458, versus yesterday’s 345387. Loss is 1.0135252; training steps take 13.8487 seconds and full iterations 13.9418 seconds. Model FLOP utilization, a compute-use measure, is 30.4138%, median 30.2803% over 500 samples. Latest returned evaluation is step 350999: Paloma 0.7316116 and UncheatableEval 0.4752037 bits per byte. These live observations are not matched speed comparisons or a fixed final evaluation; the Paloma movement is not automatically a quality improvement. Mandatory design/status/incident threads, 91 updated search results and 205 topics were checked across launcher, checkpoints, mixtures, communication, kernels, memory, context, evaluation and handoff. Latest standup remains #10649, first public October 24. Fixed Hero/mixture/Open Athena/tied-drafter reports and all accessible sample hashes are unchanged; the live page still has 106 sets through step 342000, completed October 28 01:59 UTC. October 19/28/29 sample pages return 404, which does not prove no update. The separate format-SFT logbook has no new serving qualification. Focused candidate-author social checks are empty with identity and coverage limits. Earlier own-save recovery is documented, while startup endpoint cause and adoption of new side fixes remain unknown."
+      },
+      "sourceIds": [
+        "M343",
+        "M340",
+        "M444",
+        "M462",
+        "M2",
+        "M3",
+        "M45",
+        "M467",
+        "M514",
+        "M515",
+        "M516",
+        "M518"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-29T13:01:07.214009+00:00",
+      "concept": {
+        "en": "A run continuing, a proposed safety improvement and an accepted startup fix are separate observations. Keep each claim tied to its own run and date."
+      },
+      "exercise": {
+        "en": "What extra evidence would show that Hero now saves a new checkpoint specifically when it receives a preemption warning?"
+      }
+    },
+    {
+      "id": "event-2026-10-29-preemption-save-proposal",
+      "date": "2026-10-29",
+      "status": "planned",
+      "title": {
+        "en": "A proposal would save the last completed step before a training job is stopped"
+      },
+      "detail": {
+        "en": "A new proposal aims to preserve more training work when a machine must be reclaimed. It would coordinate every process at the same completed step and finish a durable checkpoint before exiting, but this behavior has not been implemented or validated. A checkpoint saves model, optimizer and data position so training can resume consistently. Issue #10761 describes current Grug loops saving periodically or after normal completion, without a save-on-SIGTERM path; the launcher escalates to forced termination after ten seconds, the worker stop path defaults to five, and the task Pod spec has no explicit termination grace. The source audit also finds that waiting for an asynchronous save includes background deletion, potentially wasting shutdown time after data is committed. The proposal would add a configurable grace across launcher, worker and Pod, record shutdown intent in a signal handler, agree on a step across ranks, finish pending writes and wait for the completion metadata separately from pruning. Sixty seconds is only the proposed starting point for testing, not a guarantee. Required tests include a signal during a step, during a save, a failed rank and stalled storage, followed by controlled multi-rank GPU retry and restored step/data-position checks. The public audit found no matching open implementation PR; initial opt-in entrypoints remain undecided. The main Hero has not been shown to adopt this path."
+      },
+      "sourceIds": [
+        "M516",
+        "M524"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-29T13:01:07.214009+00:00",
+      "concept": {
+        "en": "Graceful shutdown needs time for coordination and durable saving, not just delivery of a stop signal. A saved model must match its optimizer and data position."
+      },
+      "exercise": {
+        "en": "Why must a shutdown test interrupt both an ordinary training step and an already running save?"
+      }
+    },
+    {
+      "id": "event-2026-10-29-jax-retry-alignment-merged",
+      "date": "2026-10-29",
+      "status": "confirmed",
+      "title": {
+        "en": "Accepted startup code makes retried JAX peers look for the same coordinator"
+      },
+      "detail": {
+        "en": "A startup repair has merged so independently retried JAX processes can find the same coordinator. This addresses a reproduced TPU smoke-test failure, while a successful new smoke run and main Hero adoption remain unverified. Issue #10755 reports that the October 28 two-slice test stalled after task zero retried: one process searched attempt one while another searched attempt zero. Later attempts timed out; the parent CI wait expired after 135 minutes with no training tasks completed. PR #10759 merged October 29 12:11:31 UTC and makes peers refresh task zero’s current attempt during discovery. It also raises two Datakit CI waits to 20200 seconds after jobs finished in about 4h44m and 5h26m, beyond their previous 7100/14400-second waits. Those eventual completions are historical incident outcomes, not proof that longer waits make work faster. Worker placement can still be delayed by scarce cluster memory. The separate sibling-job naming change #10420 must remain compatible. Closing the incident via the merge is repository acceptance, not an inspected post-fix accelerator pass or a production rollout."
+      },
+      "sourceIds": [
+        "M517",
+        "M518"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-29T13:01:07.214009+00:00",
+      "concept": {
+        "en": "Retrying one process can change its address without changing its peers’ attempt numbers. Discovery must follow the coordinator’s actual current identity."
+      },
+      "exercise": {
+        "en": "If one worker retries and the other does not, whose attempt number should both use to find the coordinator?"
+      }
+    },
+    {
+      "id": "event-2026-10-29-snowball-repeatable-evaluation",
+      "date": "2026-10-29",
+      "status": "experimental",
+      "title": {
+        "en": "A small Snowball panel now repeats exactly under a stricter serving profile"
+      },
+      "detail": {
+        "en": "A diagnostic Snowball setup returned identical results on the same small panel across fresh serving startups. This gives a concrete reproducibility check, but the open adoption PR’s exact head has not run on GPUs and the result does not establish universal determinism. PR #10760 reports six H100 evaluations across four engine startups: four direct supervised-model evaluations and two initial Megatron evaluations with expert-block weight transfer and zero optimizer steps. On the fixed 100-task panel, prompt and response tokens, text, grades and recorded outcomes match; each generates 469450 response tokens with mean reward 0.2002. The tested profile uses greedy evaluation, seed 20261020, batch-invariant arithmetic, no prefix cache and only one scheduled sequence per inference worker. Layout is DP8/EP8/TP1/PP1, chunked prefill budget 8192, CUDA graphs, context 24576 and reply cap 8192, using vLLM 39e62869693c. Concurrent batching still produced variation even with batch invariance initialized, prefix caching disabled and eager execution. This does not isolate an exclusive GPU-operator cause. The proposed sequence cap also constrains training generation; throughput cost is unmeasured. All GPU evidence is from a separate diagnostic branch, so CPU wiring and request-field checks cannot substitute for an exact-head GPU acceptance run."
+      },
+      "sourceIds": [
+        "M519",
+        "M484"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-29T13:01:07.214009+00:00",
+      "concept": {
+        "en": "Reproducibility applies to a defined model, workload and runtime. Narrowing concurrency may stabilize a test while changing its performance cost."
+      },
+      "exercise": {
+        "en": "Before adopting the single-sequence profile for training, which missing throughput and exact-version checks would you request?"
+      }
+    },
+    {
+      "id": "event-2026-10-29-thinking-switch-side-test",
+      "date": "2026-10-29",
+      "status": "experimental",
+      "title": {
+        "en": "Turning thinking off in a template did not stop one base model from reasoning"
+      },
+      "detail": {
+        "en": "A follow-up test found that a base model still produced reasoning when the template’s thinking switch was off. The switch reached the template, but the model did not behave like a non-thinking control; this is a Qwen3.5 side test, not a Hero behavior change. The public #10751 follow-up uses Qwen3.5-35B-A3B-Base at 0f081307, its shipped template, 200 math prompts, temperature 0.6, top-p 0.95, seed zero and a 32768-token output cap. Turning thinking off adds an empty thinking block and two prompt tokens. At repetition penalty 1.0, thinking-on/off generated closing tags in 162/158 replies, both ended 162 replies and hit the cap 38 times, with accuracy 82.0/81.5%. At penalty 1.05, closing tags are 166/157, turn endings 166/162, cap hits 34/38 and accuracy 82.5/80.0%. No paired replies are identical, so the prompt switch affected output, but both conditions still reason. Every completed thinking-on reply closes its block; the 17–19% overall shortfall is capped ongoing reasoning rather than an observed malformed ending. Answers are graded after the last closing tag, independently of closure. The old 8192-cap results should not be read as a measured new model improvement, and these new on/off accuracy gaps are not a clean thinking-versus-no-thinking comparison. Raw per-prompt artifacts require CoreWeave credentials and were not accessed; this review relies on the detailed public report."
+      },
+      "sourceIds": [
+        "M506",
+        "M523",
+        "M511"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-29T13:01:07.214009+00:00",
+      "concept": {
+        "en": "A configuration flag describes a request, not guaranteed behavior. A control group is valid only if the intended behavior actually changes."
+      },
+      "exercise": {
+        "en": "How would you verify that a “thinking off” control really stopped reasoning before interpreting its accuracy difference?"
+      }
+    },
+    {
+      "id": "event-2026-10-29-snowball-scaling-forecast-plan",
+      "date": "2026-10-29",
+      "status": "planned",
+      "title": {
+        "en": "A new forecast plan asks for small models that follow the same training stages"
+      },
+      "detail": {
+        "en": "A proposed Snowball coding forecast first asks which smaller models make a fair comparison. The work is still choosing and requesting its inputs, so it supplies no new measured final score or completed forecast. Issue #10753 revisits an earlier post-distillation SWE-bench prediction whose reported relative miss was 3.3–8.9%, largely from a loss forecast miss of minus 3.5%; those are historical author-reported results. The new plan would prefer a scaling ladder that reproduces Snowball’s second data mixture, cooldown and long-context extension. Existing Snowflake ladder models skip the second mixture stage and include a later supervised stage, confounding attribution of any forecast error. Options are an unreleased 80%-training target, retraining smaller models through matching stages, or releasing existing pre-SFT long-context ladder checkpoints for a cheaper but imperfect comparison. The author prefers matching stages, requests checkpoint releases and a decision on retraining, and has not yet preregistered this analysis. Small-model prediction quality in a different historical setting is not a measured result for this future coding forecast or for Hero."
+      },
+      "sourceIds": [
+        "M520"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-29T13:01:07.214009+00:00",
+      "concept": {
+        "en": "A scaling forecast needs comparable training stages as well as model sizes. Otherwise an error may come from unmatched data or training history."
+      },
+      "exercise": {
+        "en": "If smaller models skip a data-mixture stage used by the target, why is a forecast error hard to attribute?"
+      }
+    },
+    {
+      "id": "event-2026-10-29-throughput-calibration-side-results",
+      "date": "2026-10-29",
+      "status": "experimental",
+      "title": {
+        "en": "Repeated Snowball serving measurements still leave Hero sizing and deployment open"
+      },
+      "detail": {
+        "en": "A separate benchmark proposal now reports repeated Snowball serving points and a checked dashboard import. This is useful for choosing within the tested workload, but Hero calibration, weekly execution and production ingestion remain unactivated. PR #10645 reports three concurrency-128 runs averaging 134.94806 generated tokens per second per GPU with a 0.58% observed range, and three concurrency-256 runs averaging 110.54714 with a 1.88% range, on eight H100s. These are workload-specific repeated points, not hardware maxima or a universal concurrency rule. Snowball retains its 01911be runtime; explicit Hero submissions retain the qualified 3a054c runtime and provisional points, with Hero concurrency calibration deferred. PR #10646 reports importing actual benchmark artifacts into disposable PostgreSQL, checking chart values and request timelines in a private preview, and preserving point identities and trace bytes on repeated import. The code proposals remain open. A verified disposable import and provisional Hero charts are not a deployed monitoring service, a weekly unattended success or an observed main-run throughput gain."
+      },
+      "sourceIds": [
+        "M521",
+        "M522"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-10-29T13:01:07.214009+00:00",
+      "concept": {
+        "en": "A repeated benchmark, a dashboard preview and an activated monitoring schedule are distinct deliverables. Throughput depends on its workload and concurrency."
+      },
+      "exercise": {
+        "en": "Why does a working dashboard import not prove that weekly production measurements are already running?"
+      }
+    },
     {
       "id": "event-2026-10-28-main-training-review",
       "date": "2026-10-28",
