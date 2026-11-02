@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-11-01",
+  "snapshot": "2026-11-02",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -3406,6 +3406,78 @@ window.MARIN_RESEARCH = {
       "kind": "issue",
       "title": "Snowball identity-SFTPathBA13:identity/tool/mathtradeoffs",
       "url": "https://github.com/marin-community/marin/issues/10695#issuecomment-6540199478"
+    },
+    {
+      "id": "M568",
+      "kind": "pr",
+      "title": "[datakit] Require core and Uncheatable evals in the decontam corpus",
+      "url": "https://github.com/marin-community/marin/pull/10541"
+    },
+    {
+      "id": "M569",
+      "kind": "pr",
+      "title": "[datakit] Mark documents that hold most of one eval item",
+      "url": "https://github.com/marin-community/marin/pull/10836"
+    },
+    {
+      "id": "M570",
+      "kind": "issue",
+      "title": "[eval] A job timeout mid-eval discards every rollout result",
+      "url": "https://github.com/marin-community/marin/issues/10837"
+    },
+    {
+      "id": "M571",
+      "kind": "pr",
+      "title": "[eval] Preserve partial SkyRL rollout results",
+      "url": "https://github.com/marin-community/marin/pull/10840"
+    },
+    {
+      "id": "M572",
+      "kind": "issue",
+      "title": "[eval] Correct canonical task grading and scoring",
+      "url": "https://github.com/marin-community/marin/issues/10828"
+    },
+    {
+      "id": "M573",
+      "kind": "report",
+      "title": "Public W&B Hero65K production child",
+      "url": "https://wandb.ai/marin-community/marin_moe/runs/hero-ctx65k-step372k"
+    },
+    {
+      "id": "M574",
+      "kind": "issue",
+      "title": "Official65Kpaired control and initial operating gates",
+      "url": "https://github.com/marin-community/marin/issues/10821#issuecomment-6568749068"
+    },
+    {
+      "id": "M575",
+      "kind": "issue",
+      "title": "Official65Klaunch source checkpoint and lineage",
+      "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-6568294569"
+    },
+    {
+      "id": "M576",
+      "kind": "issue",
+      "title": "Official65Kmain-run GO after restore and first attempt",
+      "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-6568749287"
+    },
+    {
+      "id": "M577",
+      "kind": "report",
+      "title": "Public one-rack65K rehearsal with saves,notrestart",
+      "url": "https://wandb.ai/marin-community/marin_moe/runs/tok350-deploy65k-c2-01"
+    },
+    {
+      "id": "M578",
+      "kind": "report",
+      "title": "Fixed Hero completions November1:111sets,still16Klineage",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.11.01/index.html"
+    },
+    {
+      "id": "M579",
+      "kind": "report",
+      "title": "Fixed16Kchild366000sample completedNovember1",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/results/f01857c11586285c7822d9d3ac16c2fab5f835b10a7887a68b4d098bac328b33.json"
     }
   ],
   "claimGroups": [
@@ -3413,10 +3485,10 @@ window.MARIN_RESEARCH = {
       "status": "confirmed",
       "facts": {
         "en": [
-          "November 1 at 13:57:55.683 UTC (08:57:55 EST): hero-gradclip-step356k is running at 368698, still at 16K with cap 1.0. Latest live evaluation 365999: Paloma 0.7197850 / UncheatableEval 0.4724060 BPB. No new main-run switch; 65K remains draft.",
+          "November 2 at 13:57:43.884 UTC: main hero-ctx65k-step372k runs at 374269 with context 65536, capacity 1.5, qk_mult 1.66 and cap 1.0. Official launch and GO confirm source 6e6924fedd, restoring permanent checkpoint 372000. Returned evaluation 371999 is inherited 16K evidence, not a new 65K result.",
           "At 16:03 UTC October 2 the same public run reached step 193768: loss 1.19200, 14.71-second training steps, 14.93-second iterations and MFU 26.69%. Median MFU is 26.70% over 118 samples. Latest returned evaluation: step 191999, Paloma 0.787332 and UncheatableEval 0.510539 BPB. No new software handoff is established.",
           "Launch-provenance PR #9637 merged; its tracked-file hash excludes untracked file contents. Exporter #9584, evaluation checks #9461 and logging prefetch #9600 remain merged repository facts with separate deployment requirements.",
-          "Fixed October 31 and latest sample pages list 109 sets, maximum 360000. The new clipped-child sample completed October 31 at 21:48:48.638 UTC; generation is not restart qualification. Other fixed report hashes match October 31; standup #10649 is latest. Dated October 19/28/29/November 1 pages return 404.",
+          "Fixed November 1 and latest samples now list 111 sets, maximum 366000, still from the 16K clipped child. Other fixed report hashes are unchanged; standup #10649 is latest. Dated October 19/28/29/November 2 pages return 404.",
           "Tokenizer-prefetch PR #9617 is closed without merge. Its earlier small benchmark is not an adopted data-pipeline change.",
           "Retry-resource/source-capture fixes #9705 and production-user alert enrollment #9700 are merged repository facts, without inspected Hero adoption evidence. A new fixed October 2 completion report preserves 41 sample sets, not a final benchmark.",
           "Step 192000 writing samples completed October 4 18:03UTC; live and October 4 fixed page list 42 sets, while October 2 remains 41. Samples do not establish final capability.",
@@ -3450,8 +3522,9 @@ window.MARIN_RESEARCH = {
           "Snowball recovery10715 merged into main October27 19:26UTC;cache expiry10553 merged October28 12:31UTC. Accepted repository code does not establish deployed Hero use.",
           "JAX coordinator discovery10759 merged October29 12:11UTC;incident10755 closed. Datakit waits extended20200s after historical jobs outlasted CI;no fresh accelerator pass or main adoption established.",
           "Official8506 records October29 rack392→399 fallbackmigration andactual resumedsteps;today anonymousWB356478 passes old352561. Later permanent354000 reported/used byreadonlyprobes;privatemetadatanotindependentlyread. Softwarebundle remainsOctober14eadf76a1bc.",
-          "Main Hero clipping is adopted, supported by official launch, first-step, trial and anonymous W&B evidence. Parent finished at 356621; child is running at 362357. Merged BF16 copying #10792, scheduler guard #10795, diagnostics #10744, optional channels #10368 and GSM8K scorer #10808 are separate repository facts without inspected Hero deployment.",
-          "Main training continues at 16K. A fixed sample at 360000 uses clipped-child lineage. The pinned Mini receipt confirms independent execution validation, not full quality or production deployment."
+          "Main Hero clipping is adopted, supported by official launch, first-step, trial and anonymous W&B evidence. Parent finished at 356621; child is running at 362357. BF16copying #10792 is now explicitly included in the65Ksourceaudit; other unrelated merges still need separate deployment evidence.",
+          "Main training continues at 16K. A fixed sample at 360000 uses clipped-child lineage. The pinned Mini receipt confirms independent execution validation, not full quality or production deployment.",
+          "Actual 65K main launch and initial GO are confirmed by official source, lineage and gates plus anonymous W&B. Operators report eight IMEX domains swept; BF16 copying repair is included in the deployed source. These receipts do not establish causal quality gains, own-save recovery or historical checkpoint corruption."
         ]
       },
       "sourceIds": [
@@ -3616,7 +3689,12 @@ window.MARIN_RESEARCH = {
         "M558",
         "M559",
         "M561",
-        "M562"
+        "M562",
+        "M575",
+        "M574",
+        "M576",
+        "M573",
+        "M555"
       ],
       "reviewStatus": "reviewed"
     },
@@ -3624,7 +3702,7 @@ window.MARIN_RESEARCH = {
       "status": "planned",
       "facts": {
         "en": [
-          "Native Hero decoding and matched serving benchmarks #9659/#9663 remain open; full-size checkpoints, default GPU precision and production serving qualification remain unestablished.",
+          "Native Hero decoding #9659 remains open with serving qualification unestablished. Matched fixture PR #9663 is closed without merge, not a released fixture.",
           "GB200 pipeline launcher #9662 is experimental and open; the latest full-rack attempt failed during installation before finite updates. Earlier H100 pipeline/resume and dependency proposals remain open.",
           "Hero data registration/content-type, rack placement, symmetric buffers and query-bias evaluation remain unresolved. Closed tokenizer-prefetch #9617 is no longer an active open proposal. OLMo-core kernel comparisons are a benchmark plan, not a measured Hero gain.",
           "Evaluation campaign #9569 and policy-semantics #9407 remain open. MarinSkyRL #799 still requires published and qualified immutable serving packages; merged exporter code alone is not a reproducible release.",
@@ -3650,8 +3728,9 @@ window.MARIN_RESEARCH = {
           "Snowball RL10740/10746/10747 remain open with calibrated short/medium guards and scoped Harbor tests. Train-long has no calibrated verdict;native eval sampling still equals training sampling.10751 longer-cap/newline-layout arms and possible data cleaning remain unrun proposals.",
           "10761 now has open implementation10774 and tiny2H100GPUprobe;productiongrace/infrastructuredeploymentunvalidated.10760 reproducible-evaluation profile is open with no exact-headGPUtest and unmeasured throughput cost.10753 forecast still selects/releases/retrains ladder inputs;no new forecast result.",
           "PR #10783 merged and its main-run clipping handoff is confirmed October 30. Child restart and intervention on a real spike remain unverified. Preemption save #10774 is open with only a tiny GPU probe, without worker/controller deployment. Hero’s November completion and the fuller Snowball report remain forecasts and plans.",
-          "Multi-length evaluation #10711 and preemption save #10774 remain open. Draft 65K switch #10820 / issue #10821 selects CP1 × EP64, capacity 1.5 and qk_mult 1.66. Exact time, frozen source, full-size save/restart and eleven-rack deployment gates remain incomplete. Draft #10817 now has accepted independent execution validation, not a merge or full quality score.",
-          "The 65K phase targets November 2 near 375500 with about 0.68T tokens remaining. Conflicting UTC/PST labels and the draft launch assumption leave exact timing unsettled. Full save/restart, source freeze, storage, rollback, gates and the IMEX sweep remain planned; no completed repair or infrastructure action is inferred."
+          "Multi-length evaluation #10711 and preemption save #10774 remain open. The 65K deployment is now confirmed at step372000; full-size own-save restart remains untested. Draft #10817 now has accepted independent execution validation, not a merge or full quality score.",
+          "The earlier manual-handoff plan is superseded: actual 65K launch occurred November 2 at 03:25 UTC from 372000 with agreed initial gates and accepted throughput cost. Own-save restart, rollback rehearsal, first child evaluation/permanent checkpoint and sustained quality remain open.",
+          "Required-suite coverage #10541, item matching #10836, partial backups #10840 and canonical scorer correction #10828 remain open. The v5 corpus is reportedly staged; v6 is not. Hero’s pinned data-cleaning paths and deployed historical scoring remain unchanged by these proposals."
         ]
       },
       "sourceIds": [
@@ -3792,7 +3871,11 @@ window.MARIN_RESEARCH = {
         "M535",
         "M538",
         "M554",
-        "M555"
+        "M555",
+        "M568",
+        "M569",
+        "M571",
+        "M572"
       ],
       "reviewStatus": "reviewed"
     },
@@ -3838,7 +3921,8 @@ window.MARIN_RESEARCH = {
           "10760 diagnostic branch:6fixed100taskevaluations/4startups match tokens/text/grades;one sequence per worker,notuniversaldeterminism. Qwen3.5 thinkingflagoff stillreasons at32768cap;completedthinkingonrepliesclose,capped17–19%areunfinished.10645SnowballC128/C256 repeatedpoints134.94806/110.54714tok/s/GPU;Hero calibrationdeferred.",
           "10785one-rack50pairedsteps:FP32savedOmeanlossdelta+1.2e-5 matches rerunnoise;step+0.4%,peak+1.50GiB,nomodelqualitygainestablished. Frozenlogbook12reducespooledQ/Kerroronselectedqueries,notfullstep/prevalence.10774tiny2H100step3save/restartmatchesstep6withdeterministicsettings;production-size60snotqualified.",
           "Mini runtime f1a9e964 now independently verifies 21/21 paths, seven native verifiers and 112 real Pi calls with unchanged source; the earlier 19/21 result remains historical. Full 1626/450-rollout quality and ranking fidelity are unproven. One-rack 65K C1 completed 60 steps and evaluations, not a main launch. Snowball repeatability and identity SFT remain separate scoped experiments.",
-          "One-rack 65K C1: 60 steps, 15.571-second median, drop fraction 0.000829, peak 127.9 GiB, three evaluations. Snowball DP4 controls repeat 164 replies over 13 passes/four launches at about 300 versus 100 seconds; not a test of 01911be3/current DP8. Identity A13 improves naming but clean answers 15 < 20 and GSM8K −1.1 points leave tradeoffs; not Hero."
+          "One-rack 65K C1: 60 steps, 15.571-second median, drop fraction 0.000829, peak 127.9 GiB, three evaluations. Snowball DP4 controls repeat 164 replies over 13 passes/four launches at about 300 versus 100 seconds; not a test of 01911be3/current DP8. Identity A13 improves naming but clean answers 15 < 20 and GSM8K −1.1 points leave tradeoffs; not Hero.",
+          "C2 ran 100 one-rack steps from 366000 and saved twice in 93/78 seconds; final 4.29 TB state was not restored. Main initial median step 16.05 seconds differs from the table’s 16.11-second mean window. Higher MFU after changing context does not imply more tokens per second."
         ]
       },
       "sourceIds": [
@@ -3959,7 +4043,9 @@ window.MARIN_RESEARCH = {
         "M560",
         "M555",
         "M563",
-        "M567"
+        "M567",
+        "M577",
+        "M574"
       ],
       "reviewStatus": "reviewed"
     },
@@ -3999,7 +4085,8 @@ window.MARIN_RESEARCH = {
           "Template thinkingoff is not a verified nonthinking control on testedQwen3.5base. Untied stop/cap conventions can explain scoring differences without learning. Matchedstage ladder needed before attributing forecast error;early analysis choices are not measuredfinalcapability.",
           "Retained~18GiB fabric/driver memory anddisconnectedIMEXpeers areleadingrestartOOMexplanation,notfullyconfirmedownership/initialheartbeatcause. Candidateformattingsequencesat348000weightsdonotreproduce353060;noexactculprit or broadfilteringruleproven.",
           "The gradient cap is intended to limit rare oversized updates. Its ordinary-path trial does not prove a real spike was prevented or establish a long-run quality gain. Compact evaluation component timings do not establish whole-suite savings or release-selection quality.",
-          "65K finish dates and full-run step costs are forecasts from small tests and assumed overhead, not measured completion. Router/batch arithmetic explains observed local repeatability variation without proving all historical score differences or portable model determinism."
+          "65K finish dates and full-run step costs are forecasts from small tests and assumed overhead, not measured completion. Router/batch arithmetic explains observed local repeatability variation without proving all historical score differences or portable model determinism.",
+          "November 5 completion remains a forecast from early 65K timing and assumed overhead; the 24-hour calendar is pending. Lower control loss under changed context and capacity does not isolate model quality or a causal improvement."
         ]
       },
       "sourceIds": [
@@ -4098,7 +4185,8 @@ window.MARIN_RESEARCH = {
         "M555",
         "M554",
         "M563",
-        "M564"
+        "M564",
+        "M574"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4135,8 +4223,9 @@ window.MARIN_RESEARCH = {
           "Hero adoption of newly merged Snowball recovery/cache code remains unverified. Exact base protocol provenance,newline-vs-SFTcause,fullcapreruns,TPUmaintainedrevisionqualification,nightlycalibration andindependentevaluationsampling remain open.",
           "MainHero adoption ofshutdown/JAX/evaluationfixes remainsunverified. Representative-sizepreemptionsave,postmergeTPUsmokepass,exactheadevalGPUacceptance,sequencecapthroughputcost,Hero benchmarkcalibration andweeklyproductioningestion remainunmeasured/unactivated.",
           "ProviderIMEXrepair/exactretainedmemoryownership/initiatingtaskheartbeatcause remainunconfirmed. FP32attentionadoption,representative-sizepreemptionsave,livegrace/retryqualification andfreshSkyRLnightlygreen remainunverified. Closed10777isnotastoragerestorationreceipt.",
-          "Child own-checkpoint restart, retries and real-spike intervention remain unverified; responsible-owner acceptance of the MFU-band exception is unreported. BF16 library root cause, historical Hero corruption and deployed repair are unknown. CatCount setup delay lacks an exact request/provider cause; Grug passed, but a fresh wholly passing nightly remains pending.",
-          "65K main adoption, full-size child recovery, eleven-rack capacity behavior and capability beyond 32K remain unverified. NUPA saved-campaign regrading, scorer provenance and canonical grader parity are unresolved. Mini full quality/rank fidelity and the identity candidate clean gate remain unmet; a fresh wholly green CatCount nightly is still unconfirmed."
+          "Child own-checkpoint restart, retries and real-spike intervention remain unverified; responsible-owner acceptance of the MFU-band exception is unreported. BF16 library root cause and historicalHero corruption remain unknown; sourceinclusion is now documented in the65Kbundle. CatCount setup delay lacks an exact request/provider cause; Grug passed, but a fresh wholly passing nightly remains pending.",
+          "65K main adoption and initial eleven-rack capacity behavior are now confirmed; full-size child recovery and capability beyond32K remain unverified. NUPA saved-campaign regrading, scorer provenance and canonical grader parity are unresolved. Mini full quality/rank fidelity and the identity candidate clean gate remain unmet; a fresh wholly green CatCount nightly is still unconfirmed.",
+          "First 65K child evaluation at 375000, permanent checkpoint at 378000, own-save restart and long-context capability remain unverified; latest returned evaluation 371999 is inherited. Parent crashed label alone does not override official intentional cancellation. Missing decontamination coverage does not measure contamination rate. Best-effort partial backups cannot guarantee every result."
         ]
       },
       "sourceIds": [
@@ -4284,12 +4373,152 @@ window.MARIN_RESEARCH = {
         "M565",
         "M566",
         "M561",
-        "M567"
+        "M567",
+        "M573",
+        "M568",
+        "M571"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-11-02-hero65k-main-run-adoption",
+      "date": "2026-11-02",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero has switched to a four-times-longer reading window"
+      },
+      "detail": {
+        "en": "Hero’s main run now trains with a 65K-token reading window, four times its previous 16K window. Official launch and initial operating gates are supported by the new public run, but successful startup does not yet prove long-context capability or recovery from the child’s own checkpoint. This advances yesterday’s proposal to confirmed production adoption. PR #10820 merged at November 2 02:55:41 UTC as 6e6924fedd64cc241f2de50ec3660a386ec12436. The parent was intentionally cancelled after its control window through 372049; the 65K child hero-ctx65k-step372k launched at 03:25 UTC (November 1, 22:25 New York), restored permanent checkpoint 372000, and reached 372102 on attempt zero. The launch identifies eleven NVL72 racks, CP1 × EP64, receiver capacity 1.5, attention scaling qk_mult 1.66 and W&B fork through parent step 371999. Initial gates passed: first-ten-step maximum cross entropy 1.007 < 1.25; child-minus-parent control loss −0.02009 within 0.05; warmed median step 16.05 seconds < 17.3; final gate-window mean dropped-assignment fraction 0.0004058 < 0.002; peak memory 127.8 GiB < 130; no sustained gradient spike or retry reported. The metric table uses different windows and statistics: warmed-window mean step 16.11 seconds, not the median 16.05. Higher MFU is not a speedup: longer attention costs more compute, while tokens per second fell relative to 16K. Lower control loss also uses a different context and is not an isolated quality gain. At November 2 13:57:43.884 UTC (08:57:43 EST), anonymous W&B independently shows the child running at 374269 with context 65536, capacity 1.5, qk_mult 1.66 and gradient cap 1.0: loss 0.9914590, training 16.0331 seconds, iteration 16.1487 seconds, MFU 33.4219%, median 33.3242% over 500 samples. Its latest returned Paloma/UncheatableEval values are 0.7182593/0.4712321 BPB at 371999, inherited from the 16K parent; they are not new 65K evaluations. The first child evaluation at 375000 and permanent save at 378000 remain pending in the inspected official status. November 5 completion is a conditional forecast, not measured completion. The parent’s W&B state says crashed, while official status records deliberate cancellation; that label alone does not establish a new training incident."
+      },
+      "sourceIds": [
+        "M554",
+        "M555",
+        "M575",
+        "M574",
+        "M576",
+        "M573",
+        "M547"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-02T14:02:04.525854+00:00",
+      "concept": {
+        "en": "A larger reading window changes both training cost and the information available to the model. Startup gates, long-context quality and checkpoint recovery need separate evidence."
+      },
+      "exercise": {
+        "en": "Why cannot a lower loss after changing context length by itself prove that the model became better?"
+      },
+      "productionChange": true,
+      "productionEvidenceIds": [
+        "M575",
+        "M574",
+        "M576",
+        "M573"
+      ]
+    },
+    {
+      "id": "event-2026-11-02-65k-recovery-readiness-limits",
+      "date": "2026-11-02",
+      "status": "experimental",
+      "title": {
+        "en": "The 65K rehearsal saved full-size state but did not test restarting it"
+      },
+      "detail": {
+        "en": "A one-rack rehearsal completed two checkpoint saves before the main switch, reducing uncertainty about whether the new code can write a full model state. The saved state was not restored, so this is not a completed checkpoint-recovery or rollback test. Official #10821 records C2 at b7002ef3e6, restoring the parent’s 366000 for 100 steps: median 15.518 seconds, mean drop fraction 0.00100, peak 127.9 GiB, save times 93 and 78 seconds, and a complete 4.29 TB final checkpoint at 366100. Public C2 W&B independently exposes the finished training run through 366099; the private checkpoint metadata was not independently read. The source audit identifies BF16 TensorStore copying repair #10792 in the deployed 65K source, exercised by these saves; unlike yesterday, its inclusion in the main bundle is now explicitly documented. That does not show historical Hero checkpoints were corrupt or resolve the underlying library cause. The same official checklist reports eight IMEX memory-sharing domains swept to the new revision between 03:14 and 03:23 UTC and final storage headroom of 447 TB / 259 TB in the two regions. These are public operator receipts, not infrastructure operations performed or independently rerun here. Rollback rehearsal was not run, alert monitoring remains ongoing, and the new child’s first permanent checkpoint and own-save restart remain unverified. The fixed November 1 sample report separately advances to 111 sets, maximum 366000, with two newly discovered 16K-child artifacts completed November 1; they cannot qualify 65K quality or restart."
+      },
+      "sourceIds": [
+        "M555",
+        "M554",
+        "M577",
+        "M536",
+        "M578",
+        "M579"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-02T14:02:04.525854+00:00",
+      "concept": {
+        "en": "A completed write proves less than a successful restart. A rehearsal should restore state and resume useful work before being described as recovery-tested."
+      },
+      "exercise": {
+        "en": "Which extra test is missing after a 4.29 TB checkpoint has been successfully written?"
+      }
+    },
+    {
+      "id": "event-2026-11-02-decontamination-coverage-proposals",
+      "date": "2026-11-02",
+      "status": "planned",
+      "title": {
+        "en": "Proposed data checks would stop silently missing important evaluation sets"
+      },
+      "detail": {
+        "en": "Two open data-cleaning changes would make contamination checks harder to bypass accidentally, including when an evaluation item is hidden inside a long document. Neither changes Hero’s already pinned data-cleaning paths, so they do not certify its training data clean or repair its historical scores. PR #10541 makes required evaluation-suite loading fail closed before sealing a corpus or building its membership filter. Its public account says earlier CoreWeave marks never checked MMLU or GSM8K because best-effort loading skipped failures, and UncheatableEval was absent. This is a coverage gap, not a measured contamination rate or proof a specific score is inflated. The author reports v5 staged and sealed in four regions with nine AA benchmarks, seven Uncheatable subsets and 811 lm-eval leaf tasks; 116 other best-effort leaves still fail. A later reply supersedes the earlier missing-stage review and fixes viewer family handling without renaming sealed IDs; private regional manifests were not independently accessed. Stacked PR #10836 adds an item-level 13-gram overlap rule so surrounding text cannot dilute a copied evaluation item. Proposed thresholds are 0.5 for MMLU/MMLU-Pro/Uncheatable, 0.4 for HumanEval and 0.3 for GSM8K; boilerplate hashes do not contribute toward the threshold. The v6 corpus is not staged, and review identifies report/viewer attribution and a missing-configuration guard as remaining behavior gaps. Local 527 passing / five expected-failure tests are reported, not a production canary or Hero mixture adoption. No independent reproduction of broad recall, precision or giant-document memory claims is asserted."
+      },
+      "sourceIds": [
+        "M568",
+        "M569",
+        "M2"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-02T14:02:04.525854+00:00",
+      "concept": {
+        "en": "A contamination check can miss a benchmark because the benchmark never loaded, or because the matching rule misses its form. Neither absence of a flag proves the training data are clean."
+      },
+      "exercise": {
+        "en": "What should a data-cleaning pipeline do when a required evaluation dataset cannot be loaded?"
+      }
+    },
+    {
+      "id": "event-2026-11-02-partial-evaluation-backups-proposed",
+      "date": "2026-11-02",
+      "status": "planned",
+      "title": {
+        "en": "An open repair would preserve some evaluation work before a timeout"
+      },
+      "detail": {
+        "en": "A proposed repair would periodically save completed evaluation results instead of keeping everything in memory until the last task finishes. It could reduce lost work after interruption, but backups are best effort and the open PR does not establish durable recovery of every result. Issue #10837 observed 1522 of 1626 Mini840 rollouts completed after 71580 seconds against an 86400-second job limit, while the final export path was empty. That shows a loss risk, not proof this run actually timed out and lost every result. Its 401 retained agent trials are failure-selected, not a representative substitute for the completed set. After feedback, #10840 replaced an earlier immutable-per-row, fail-on-upload proposal with local append-only JSONL and asynchronous backups to two fixed keys per attempt, with a 30-second upload deadline. Storage errors do not stop the evaluation, and a kill can lose work since the last successful upload. Retry keys now preserve older attempts. Step-wise rows retain is_last_step in partial and full dumps; score readers must select final-step rows rather than average all rows. Local prefix/retry/deadline tests, CI and wheel packaging are reported passing. The vendored runtime wheel needs the change, but the PR remains open awaiting review, with no deployed recovery result or complete Mini840 quality score. Nearby #10737 serializer changes still need coordination."
+      },
+      "sourceIds": [
+        "M570",
+        "M571",
+        "M537",
+        "M538"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-02T14:02:04.525854+00:00",
+      "concept": {
+        "en": "A partial backup preserves a known prefix, not a full benchmark. Counts, attempt identity and selection rules determine which results can honestly be scored."
+      },
+      "exercise": {
+        "en": "If only 1500 of 1626 tasks survive, what must accompany any score reported from those tasks?"
+      }
+    },
+    {
+      "id": "event-2026-11-02-canonical-grader-followup",
+      "date": "2026-11-02",
+      "status": "planned",
+      "title": {
+        "en": "Evaluator migration now has an explicit correction checklist"
+      },
+      "detail": {
+        "en": "A new follow-up makes the known evaluator-migration problems explicit requirements before removing the older framework. This organizes the repair work but does not mean the scores have been corrected or the proposed code is deployed. Open issue #10828 follows yesterday’s #10757 review: IFBench checker fixes, complete FinanceBench evidence, correct reasoning/final-answer selection, Grug marker handling, CRUXEval assertions, symbolic relations, code-test budgets, likelihood token boundaries and GSM8K parity with merged #10808. It requires before/after grades on saved responses with scorer and data revisions. Candidate patches remain subject to review; #10757 and NUPA extraction #10733 are still open. This is continuity from yesterday’s scoring risks, not a new measured model gain or completed independent full-suite audit. Native matched-checkpoint fixture PR #9663 is now closed without merge, so it is no longer an active proposal; closure does not establish a released serving fixture or final Hero serving qualification."
+      },
+      "sourceIds": [
+        "M572",
+        "M557",
+        "M556",
+        "M539",
+        "M204"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-02T14:02:04.525854+00:00",
+      "concept": {
+        "en": "A correction checklist is useful because it defines what evidence is still owed. Fixing code and regrading saved responses are separate steps."
+      },
+      "exercise": {
+        "en": "Why should a scorer repair publish both its version and before/after grades on the same saved replies?"
+      }
+    },
     {
       "id": "event-2026-11-01-hero16k-continuity-and-fixed-sample",
       "date": "2026-11-01",
