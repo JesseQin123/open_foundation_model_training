@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-11-04",
+  "snapshot": "2026-11-05",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -3532,6 +3532,60 @@ window.MARIN_RESEARCH = {
       "kind": "pr",
       "title": "[grug] Order the compact mesh as data, expert, context",
       "url": "https://github.com/marin-community/marin/pull/10877"
+    },
+    {
+      "id": "M589",
+      "kind": "issue",
+      "title": "Hero status thread: checkpoint verification pending · November 5",
+      "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-6662739734"
+    },
+    {
+      "id": "M590",
+      "kind": "report",
+      "title": "Hero checkpoint completions · November 5 fixed snapshot",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.11.05/index.html"
+    },
+    {
+      "id": "M591",
+      "kind": "report",
+      "title": "Hero step 378000 fixed generation results",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/results/d26119bbde27340a9fe08c14a6f36c36daa48f10b70c900ec6d571080b9551ea.json"
+    },
+    {
+      "id": "M592",
+      "kind": "report",
+      "title": "Hero step 387000 fixed generation results",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/results/425233bbc764e71c06b0d91fabb89ba34896b45159e25618046ba2e0730d56ce.json"
+    },
+    {
+      "id": "M593",
+      "kind": "standup",
+      "title": "Week of October 26, 2026 standup",
+      "url": "https://github.com/marin-community/marin/issues/10944"
+    },
+    {
+      "id": "M594",
+      "kind": "pr",
+      "title": "[grug] Let the hero train past its schedule",
+      "url": "https://github.com/marin-community/marin/pull/10917"
+    },
+    {
+      "id": "M595",
+      "kind": "pr",
+      "title": "[grug] Read the long-context store from the hero launcher",
+      "url": "https://github.com/marin-community/marin/pull/10930"
+    },
+    {
+      "id": "M596",
+      "kind": "pr",
+      "title": "[grug] Add optional log scaling of hero global queries",
+      "url": "https://github.com/marin-community/marin/pull/10923"
+    },
+    {
+      "id": "M597",
+      "kind": "issue",
+      "title": "[levanter] Eval BPB is not total bits / total bytes of the source text",
+      "url": "https://github.com/marin-community/marin/issues/10968"
     }
   ],
   "claimGroups": [
@@ -3539,10 +3593,10 @@ window.MARIN_RESEARCH = {
       "status": "confirmed",
       "facts": {
         "en": [
-          "2026-11-04T14:05:41.668+00:00: Hero 65K child runs at 384761. Official restart from its own step 382854 confirms recovery and adoption of the final checkpoint cadence. Latest evaluation at 383999 is 0.7171915 Paloma and 0.4675045 UncheatableEval BPB.",
+          "On November 5 the 65K main run was marked finished by public W&B, with terminal row 390250 and last training row 390249. The November 4 official restart and retention policy remain independently documented.",
           "At 16:03 UTC October 2 the same public run reached step 193768: loss 1.19200, 14.71-second training steps, 14.93-second iterations and MFU 26.69%. Median MFU is 26.70% over 118 samples. Latest returned evaluation: step 191999, Paloma 0.787332 and UncheatableEval 0.510539 BPB. No new software handoff is established.",
           "Launch-provenance PR #9637 merged; its tracked-file hash excludes untracked file contents. Exporter #9584, evaluation checks #9461 and logging prefetch #9600 remain merged repository facts with separate deployment requirements.",
-          "Fixed November 1 and latest samples now list 111 sets, maximum 366000, still from the 16K clipped child. Other fixed report hashes are unchanged; standup #10649 is latest. Dated October 19/28/29/November 2 pages return 404.",
+          "The fixed November 5 completion archive matches the live index and lists 113 sets, with new 65K main-run samples at steps 378000 and 387000. The latest standup is #10944.",
           "Tokenizer-prefetch PR #9617 is closed without merge. Its earlier small benchmark is not an adopted data-pipeline change.",
           "Retry-resource/source-capture fixes #9705 and production-user alert enrollment #9700 are merged repository facts, without inspected Hero adoption evidence. A new fixed October 2 completion report preserves 41 sample sets, not a final benchmark.",
           "Step 192000 writing samples completed October 4 18:03UTC; live and October 4 fixed page list 42 sets, while October 2 remains 41. Samples do not establish final capability.",
@@ -3759,7 +3813,11 @@ window.MARIN_RESEARCH = {
         "M586",
         "M587",
         "M588",
-        "M481"
+        "M481",
+        "M593",
+        "M590",
+        "M591",
+        "M592"
       ],
       "reviewStatus": "reviewed"
     },
@@ -3797,7 +3855,7 @@ window.MARIN_RESEARCH = {
           "The earlier manual-handoff plan is superseded: actual 65K launch occurred November 2 at 03:25 UTC from 372000 with agreed initial gates and accepted throughput cost. Initial child evaluations and own-save restart now have evidence. Rollback rehearsal and sustained quality remain open.",
           "Required-suite coverage #10541, item matching #10836, partial backups #10840 and canonical scorer correction #10828 remain open. The v5 corpus is reportedly staged; v6 is not. Hero’s pinned data-cleaning paths and deployed historical scoring remain unchanged by these proposals.",
           "Five arms at three lengths are prepared for the same step 372000 checkpoint. The first rack allocation is pending.",
-          "The next dense permanent save is planned at 385500. The fixed-weight evaluation comparison still awaits a posted result."
+          "The 262K extension and long-document mixture are proposed in open PRs #10917 and #10930 and remain disabled. The fixed-weight evaluation comparison still awaits a posted result."
         ]
       },
       "sourceIds": [
@@ -3952,7 +4010,10 @@ window.MARIN_RESEARCH = {
         "M585",
         "M586",
         "M587",
-        "M588"
+        "M588",
+        "M593",
+        "M594",
+        "M595"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4001,7 +4062,8 @@ window.MARIN_RESEARCH = {
           "One-rack 65K C1: 60 steps, 15.571-second median, drop fraction 0.000829, peak 127.9 GiB, three evaluations. Snowball DP4 controls repeat 164 replies over 13 passes/four launches at about 300 versus 100 seconds; not a test of 01911be3/current DP8. Identity A13 improves naming but clean answers 15 < 20 and GSM8K −1.1 points leave tradeoffs; not Hero.",
           "C2 ran 100 one-rack steps from 366000 and saved twice in 93/78 seconds; final 4.29 TB state was not restored. Main initial median step 16.05 seconds differs from the table’s 16.11-second mean window. Higher MFU after changing context does not imply more tokens per second.",
           "The canary PR reports a one-rack reference comparison. Cross-rack behavior and same-commit variance remain outside its measured scope.",
-          "A 55-shard CPU export matched GPU output on a slice of step 378000. A 12-node synthetic mesh test gave similar timing and memory on both arms."
+          "A 55-shard CPU export matched GPU output on a slice of step 378000. A 12-node synthetic mesh test gave similar timing and memory on both arms.",
+          "The optional query-scaling diagnostic merged after a one-node 4K smoke test. Target-shape 262K quality and performance remain unmeasured."
         ]
       },
       "sourceIds": [
@@ -4134,7 +4196,8 @@ window.MARIN_RESEARCH = {
         "M585",
         "M586",
         "M587",
-        "M588"
+        "M588",
+        "M596"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4177,7 +4240,8 @@ window.MARIN_RESEARCH = {
           "65K finish dates and full-run step costs are forecasts from small tests and assumed overhead, not measured completion. Router/batch arithmetic explains observed local repeatability variation without proving all historical score differences or portable model determinism.",
           "November 5 completion remains a forecast from early 65K timing and assumed overhead; the 24-hour calendar is pending. Lower control loss under changed context and capacity does not isolate model quality or a causal improvement.",
           "The two early 65K evaluations move differently by suite relative to the inherited parent. Packing, attention scale and training progress cannot yet be separated.",
-          "Denser final saves increase the range available for analysis and averaging. Any quality benefit from averaging requires evaluation."
+          "Denser final saves increase the range available for analysis and averaging. Any quality benefit from averaging requires evaluation.",
+          "The latest two in-run evaluations moved in opposite directions by suite. A comparable fixed-checkpoint evaluation and scoring audit are needed to interpret the differences."
         ]
       },
       "sourceIds": [
@@ -4288,7 +4352,8 @@ window.MARIN_RESEARCH = {
         "M586",
         "M587",
         "M588",
-        "M481"
+        "M481",
+        "M597"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4327,7 +4392,7 @@ window.MARIN_RESEARCH = {
           "ProviderIMEXrepair/exactretainedmemoryownership/initiatingtaskheartbeatcause remainunconfirmed. FP32attentionadoption,representative-sizepreemptionsave,livegrace/retryqualification andfreshSkyRLnightlygreen remainunverified. Closed10777isnotastoragerestorationreceipt.",
           "Hero resumed from its own 382854 checkpoint on November 4. Other retries and real-spike intervention remain unverified; responsible-owner acceptance of the MFU-band exception is unreported. BF16 library root cause and historicalHero corruption remain unknown; sourceinclusion is now documented in the65Kbundle. CatCount setup delay lacks an exact request/provider cause; Grug passed, but a fresh wholly passing nightly remains pending.",
           "65K main adoption and initial eleven-rack capacity behavior are now confirmed; capability beyond 32K remains unverified. NUPA saved-campaign regrading, scorer provenance and canonical grader parity are unresolved. Mini full quality/rank fidelity and the identity candidate clean gate remain unmet; a fresh wholly green CatCount nightly is still unconfirmed.",
-          "Own-save restart is confirmed. Completion of the dense save series, full-model CPU export, fixed-setting quality comparisons and final training completion remain unverified."
+          "W&B records completion of its run, and the step-387000 sample establishes one usable save in the dense interval. The complete dense save series, final step-390251 checkpoint, fixed-checkpoint benchmark, 262K launch and full-model CPU export remain publicly unverified."
         ]
       },
       "sourceIds": [
@@ -4487,12 +4552,140 @@ window.MARIN_RESEARCH = {
         "M585",
         "M586",
         "M587",
-        "M588"
+        "M588",
+        "M589",
+        "M590"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-11-05-hero-65k-run-finished",
+      "date": "2026-11-05",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero’s 65K main run is marked finished in the public log"
+      },
+      "detail": {
+        "en": "The public log marks Hero’s 65K main training run finished and records its closing evaluation. That gives researchers an observed endpoint to compare with earlier readings, while the final saved model still awaits public verification. On November 5 the run hero-ctx65k-step372k recorded a terminal W&B row at global step 390250 (15:42:05 UTC). The last row with ordinary training loss and throughput is 390249: loss 1.0113876, 16.0333 seconds per training step and 33.4215% MFU, the share of theoretical compute used. The terminal row’s loss field is zero, so the training loss is taken from the last row with cross-entropy and throughput. The terminal Paloma and UncheatableEval scores are 0.7175311 and 0.4666161 bits per byte. Yesterday’s restart kept the same run ID. Today’s official status thread links an incident record and says checkpoint metadata verification is pending. The public log establishes its own finished state and reported metrics. A verified final step-390251 save and a fixed evaluation of its weights still need separate evidence."
+      },
+      "sourceIds": [
+        "M573",
+        "M584",
+        "M589",
+        "M585"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-05T16:16:01.618561+00:00",
+      "concept": {
+        "en": "The step shown in a logging dashboard and the name on a saved model can use different counters. A save receipt identifies what can actually be restored."
+      },
+      "exercise": {
+        "en": "Which would you cite to show the run ended, and which would you need to prove its final model can be restored?"
+      },
+      "productionChange": true,
+      "productionEvidenceIds": [
+        "M573"
+      ]
+    },
+    {
+      "id": "event-2026-11-05-65k-fixed-writing-samples",
+      "date": "2026-11-05",
+      "status": "confirmed",
+      "title": {
+        "en": "Two 65K main-run checkpoints now have fixed writing samples"
+      },
+      "detail": {
+        "en": "Marin published writing samples generated from two saved versions of the 65K main run. Readers can inspect how those versions respond to specific prompts and trace each response to its checkpoint. The November 5 archive and the live index both list 113 sample sets, up from 111 in the November 1 archive. The two new result files pin step 378000 (47 completions) and step 387000 (52 completions), both from hero-ctx65k-step372k. The later save provides evidence that at least one checkpoint in yesterday’s denser retention window was usable for generation. The records identify checkpoint paths, metadata digests and generation source revisions. They leave the other promised saves, the final checkpoint and benchmark quality open."
+      },
+      "sourceIds": [
+        "M590",
+        "M591",
+        "M592",
+        "M585"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-05T16:16:01.618561+00:00",
+      "concept": {
+        "en": "A fixed sample ties a prompt and an answer to a saved model and a generation setup."
+      },
+      "exercise": {
+        "en": "Pick one response and identify what its checkpoint record lets you reproduce. What extra evidence would you need to claim the model improved overall?"
+      }
+    },
+    {
+      "id": "event-2026-11-05-262k-extension-preparation",
+      "date": "2026-11-05",
+      "status": "planned",
+      "title": {
+        "en": "The 262K follow-on still needs a launch"
+      },
+      "detail": {
+        "en": "Marin proposed a way to keep training beyond the 65K schedule and to supply more long documents for a 262K follow-on. The two changes would let the team extend training without rewriting the earlier learning-rate schedule, but the options are off in the open proposals. The latest public weekly standup records a plan for a 262K cooldown. PR #10917 adds an optional lower-rate tail beyond 390251 and would save before the final evaluation. PR #10930 proposes upweighting long documents within each data bucket and aligning data positions between small tests and larger runs. Its store path is provisional and the PR reports a data read but no training steps on the new mixture. A launch and measured updates still need their own receipts."
+      },
+      "sourceIds": [
+        "M593",
+        "M594",
+        "M595",
+        "M573"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-05T16:16:01.618561+00:00",
+      "concept": {
+        "en": "A learning-rate schedule sets how much the model changes at each step. A low-rate tail lets training continue with small updates."
+      },
+      "exercise": {
+        "en": "Why might extending a schedule in place change earlier settings, even if all you want is extra steps at the end?"
+      }
+    },
+    {
+      "id": "event-2026-11-05-query-scaling-smoke-test",
+      "date": "2026-11-05",
+      "status": "experimental",
+      "title": {
+        "en": "An attention change for 262K passes a small test"
+      },
+      "detail": {
+        "en": "Marin ran a small test of a change meant to help the model choose which words to focus on in very long documents. The change passed a forward-and-backward check on one GB200 node at 4K tokens, and merged as an optional diagnostic with the main Hero configuration leaving it off. The mean output-score difference between splitting the input across four devices and keeping it on one was 0.00045 with scaling and 0.00042 without it. The test shows that the modified operation ran in that setup. Quality, speed and memory at the intended 262K shape remain open."
+      },
+      "sourceIds": [
+        "M596"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-05T16:16:01.618561+00:00",
+      "concept": {
+        "en": "Attention gives some words more weight than others. The test changes how sharply the model assigns those weights when it sees many words."
+      },
+      "exercise": {
+        "en": "Why can a short-input smoke test check that the code runs but leave its long-input quality unanswered?"
+      }
+    },
+    {
+      "id": "event-2026-11-05-closing-eval-comparability",
+      "date": "2026-11-05",
+      "status": "inference",
+      "title": {
+        "en": "The closing scores give a reference point for a matched evaluation"
+      },
+      "detail": {
+        "en": "The two suites moved in different directions between the last two logged evaluations of the 65K run. This makes the closing numbers useful as a reference point, while the quality comparison still needs the same scoring setup across saved versions. From step 389999 to 390250, Paloma moved from 0.7170215 to 0.7175311 and UncheatableEval moved from 0.4667149 to 0.4666161 bits per byte. The fixed-step 372000 comparison still has no public results. A separate new issue reports weighting and text-coverage problems in Levanter’s tagged evaluator. Its examples are scoped to the configurations tested, and the review found no recalculated values for Hero’s closing rows."
+      },
+      "sourceIds": [
+        "M573",
+        "M580",
+        "M581",
+        "M597"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-05T16:16:01.618561+00:00",
+      "concept": {
+        "en": "Bits per byte estimates how hard the model finds the text to predict. The selected text and averaging rules affect the answer."
+      },
+      "exercise": {
+        "en": "If one evaluation drops short tail segments and another includes them, what would you hold fixed to compare two model versions?"
+      }
+    },
     {
       "id": "event-2026-11-04-hero-resume-dense-saves",
       "date": "2026-11-04",

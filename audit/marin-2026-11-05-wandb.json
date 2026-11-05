@@ -1,0 +1,131 @@
+{
+  "checkedAt": "2026-11-05T16:16:01.618561+00:00",
+  "sourceId": "M573",
+  "runId": "hero-ctx65k-step372k",
+  "state": "finished",
+  "summary": {
+    "global_step": 390250,
+    "_timestamp": 1793893325.227536,
+    "train/loss": 0,
+    "train/cross_entropy_loss": 1.011387586593628,
+    "throughput/duration": 16.033277980983257,
+    "throughput/iteration_time": 16.154294305015355,
+    "throughput/mfu": 33.421504296349205,
+    "throughput/p50_mfu": 33.19994567034415,
+    "throughput/mfu_sample_count": 500
+  },
+  "terminalTimestamp": "2026-11-05T15:42:05.227536+00:00",
+  "lastEvaluationRows": [
+    {
+      "global_step": 383999,
+      "eval_dropless/paloma/macro_bpb": 0.7171914577484131,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.46750447154045105
+    },
+    {
+      "global_step": 386999,
+      "eval_dropless/paloma/macro_bpb": 0.7177108526229858,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.46696171164512634
+    },
+    {
+      "global_step": 389999,
+      "eval_dropless/paloma/macro_bpb": 0.7170215249061584,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.46671485900878906
+    },
+    {
+      "global_step": 390250,
+      "eval_dropless/paloma/macro_bpb": 0.7175310850143433,
+      "eval_dropless/uncheatable_eval/macro_bpb": 0.46661609411239624
+    }
+  ],
+  "trainingTail": [
+    [
+      {
+        "global_step": 390246,
+        "train/loss": 0.9773908257484436
+      },
+      {
+        "global_step": 390247,
+        "train/loss": 0.9857718348503113
+      },
+      {
+        "global_step": 390248,
+        "train/loss": 0.9201807379722595
+      },
+      {
+        "global_step": 390249,
+        "train/loss": 1.011387586593628
+      },
+      {
+        "global_step": 390250,
+        "train/loss": 0
+      }
+    ],
+    [
+      {
+        "global_step": 390245,
+        "train/cross_entropy_loss": 0.9701395034790039
+      },
+      {
+        "global_step": 390246,
+        "train/cross_entropy_loss": 0.9773908257484436
+      },
+      {
+        "global_step": 390247,
+        "train/cross_entropy_loss": 0.9857718348503113
+      },
+      {
+        "global_step": 390248,
+        "train/cross_entropy_loss": 0.9201807379722595
+      },
+      {
+        "global_step": 390249,
+        "train/cross_entropy_loss": 1.011387586593628
+      }
+    ],
+    [
+      {
+        "global_step": 390245,
+        "throughput/duration": 16.576131392735988
+      },
+      {
+        "global_step": 390246,
+        "throughput/duration": 16.070358308032155
+      },
+      {
+        "global_step": 390247,
+        "throughput/duration": 16.52308972273022
+      },
+      {
+        "global_step": 390248,
+        "throughput/duration": 16.163169033359736
+      },
+      {
+        "global_step": 390249,
+        "throughput/duration": 16.033277980983257
+      }
+    ],
+    [
+      {
+        "global_step": 390245,
+        "throughput/mfu": 32.326980055238735
+      },
+      {
+        "global_step": 390246,
+        "throughput/mfu": 33.34438838604897
+      },
+      {
+        "global_step": 390247,
+        "throughput/mfu": 32.430754654127114
+      },
+      {
+        "global_step": 390248,
+        "throughput/mfu": 33.15292117653538
+      },
+      {
+        "global_step": 390249,
+        "throughput/mfu": 33.421504296349205
+      }
+    ]
+  ],
+  "boundary": "Terminal summary train/loss is zero. Last ordinary training step with cross-entropy and throughput is 390249. Public history does not prove checkpoint commit."
+}
