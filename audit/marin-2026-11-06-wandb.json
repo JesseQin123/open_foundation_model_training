@@ -1,0 +1,77 @@
+{
+  "checkedAt": "2026-11-06T15:00:22.416192+00:00",
+  "metrics": {
+    "wandb": {
+      "runId": "hero-ctx65k-step372k",
+      "state": "finished",
+      "summary": {
+        "_timestamp": 1793893325.227536,
+        "eval_dropless/macro_bpb": 0.6411657333374023,
+        "eval_dropless/macro_loss": 1.813536524772644,
+        "eval_dropless/paloma/macro_bpb": 0.7175310850143433,
+        "eval_dropless/paloma/macro_loss": 1.9601895809173584,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.46661609411239624,
+        "eval_dropless/uncheatable_eval/macro_loss": 1.4783297777175903,
+        "global_step": 390250,
+        "throughput/duration": 16.033277980983257,
+        "throughput/iteration_time": 16.154294305015355,
+        "throughput/mfu": 33.421504296349205,
+        "throughput/mfu_sample_count": 500,
+        "throughput/p50_mfu": 33.19994567034415,
+        "train/cross_entropy_loss": 1.011387586593628,
+        "train/loss": 0
+      },
+      "evalTail": [
+        {
+          "global_step": 383999,
+          "eval_dropless/paloma/macro_bpb": 0.7171914577484131,
+          "eval_dropless/uncheatable_eval/macro_bpb": 0.46750447154045105
+        },
+        {
+          "global_step": 386999,
+          "eval_dropless/paloma/macro_bpb": 0.7177108526229858,
+          "eval_dropless/uncheatable_eval/macro_bpb": 0.46696171164512634
+        },
+        {
+          "global_step": 389999,
+          "eval_dropless/paloma/macro_bpb": 0.7170215249061584,
+          "eval_dropless/uncheatable_eval/macro_bpb": 0.46671485900878906
+        },
+        {
+          "global_step": 390250,
+          "eval_dropless/paloma/macro_bpb": 0.7175310850143433,
+          "eval_dropless/uncheatable_eval/macro_bpb": 0.46661609411239624
+        }
+      ]
+    },
+    "hero-ctx-evals-4k": {
+      "runId": "hero-ctx-evals-4k",
+      "state": "finished",
+      "summary": {
+        "_timestamp": 1793900786.7974942,
+        "eval_dropless/seq_len_4096/macro_bpb": 0.6496375799179077,
+        "eval_dropless/seq_len_4096/macro_loss": 1.836059331893921,
+        "eval_dropless/seq_len_4096/paloma/macro_bpb": 0.7261303067207336,
+        "eval_dropless/seq_len_4096/paloma/macro_loss": 1.9816981554031372,
+        "eval_dropless/seq_len_4096/uncheatable_eval/macro_bpb": 0.47479692101478577,
+        "eval_dropless/seq_len_4096/uncheatable_eval/macro_loss": 1.5031698942184448
+      },
+      "evalTail": []
+    },
+    "hero-merge-hb-avg11-save": {
+      "runId": "hero-merge-hb-avg11-save",
+      "state": "finished",
+      "summary": {
+        "_timestamp": 1793938384.9026566,
+        "eval_dropless/seq_len_65536/macro_bpb": 0.6393786668777466,
+        "eval_dropless/seq_len_65536/macro_loss": 1.808358073234558,
+        "eval_dropless/seq_len_65536/paloma/macro_bpb": 0.7153855562210083,
+        "eval_dropless/seq_len_65536/paloma/macro_loss": 1.9540733098983765,
+        "eval_dropless/seq_len_65536/uncheatable_eval/macro_bpb": 0.46564850211143494,
+        "eval_dropless/seq_len_65536/uncheatable_eval/macro_loss": 1.4752953052520752
+      },
+      "evalTail": []
+    }
+  },
+  "limits": "Main run is still finished with the same historical terminal row and last training measurements, not a new step. Official BPB and W&B macro BPB fields differ; the figures are preserved separately."
+}
