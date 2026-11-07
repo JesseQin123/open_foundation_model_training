@@ -1,0 +1,91 @@
+{
+  "checkedAt": "2026-11-07T14:11:18.995520+00:00",
+  "metrics": {
+    "wandb": {
+      "runId": "hero-ctx65k-step372k",
+      "state": "finished",
+      "summary": {
+        "_timestamp": 1793893325.227536,
+        "eval_dropless/macro_bpb": 0.6411657333374023,
+        "eval_dropless/macro_loss": 1.813536524772644,
+        "eval_dropless/paloma/macro_bpb": 0.7175310850143433,
+        "eval_dropless/paloma/macro_loss": 1.9601895809173584,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.46661609411239624,
+        "eval_dropless/uncheatable_eval/macro_loss": 1.4783297777175903,
+        "global_step": 390250,
+        "throughput/duration": 16.033277980983257,
+        "throughput/iteration_time": 16.154294305015355,
+        "throughput/mfu": 33.421504296349205,
+        "throughput/mfu_sample_count": 500,
+        "throughput/p50_mfu": 33.19994567034415,
+        "train/cross_entropy_loss": 1.011387586593628,
+        "train/loss": 0
+      },
+      "evalTail": [
+        {
+          "global_step": 383999,
+          "eval_dropless/paloma/macro_bpb": 0.7171914577484131,
+          "eval_dropless/uncheatable_eval/macro_bpb": 0.46750447154045105
+        },
+        {
+          "global_step": 386999,
+          "eval_dropless/paloma/macro_bpb": 0.7177108526229858,
+          "eval_dropless/uncheatable_eval/macro_bpb": 0.46696171164512634
+        },
+        {
+          "global_step": 389999,
+          "eval_dropless/paloma/macro_bpb": 0.7170215249061584,
+          "eval_dropless/uncheatable_eval/macro_bpb": 0.46671485900878906
+        },
+        {
+          "global_step": 390250,
+          "eval_dropless/paloma/macro_bpb": 0.7175310850143433,
+          "eval_dropless/uncheatable_eval/macro_bpb": 0.46661609411239624
+        }
+      ]
+    },
+    "wandb-262k": {
+      "runId": "hero-lce-global184-step390k",
+      "state": "running",
+      "summary": {
+        "_timestamp": 1794060540.165622,
+        "eval_dropless/macro_bpb": 0.6586514115333557,
+        "eval_dropless/macro_loss": 1.8508046865463257,
+        "eval_dropless/paloma/macro_bpb": 0.7549115419387817,
+        "eval_dropless/paloma/macro_loss": 2.037879228591919,
+        "eval_dropless/uncheatable_eval/macro_bpb": 0.4661311209201813,
+        "eval_dropless/uncheatable_eval/macro_loss": 1.4766556024551392,
+        "global_step": 392236,
+        "throughput/duration": 29.057485518977046,
+        "throughput/iteration_time": 29.311906495131552,
+        "throughput/mfu": 34.225863893255514,
+        "throughput/mfu_sample_count": 500,
+        "throughput/p50_mfu": 34.271121812561766,
+        "train/cross_entropy_loss": 0.8256664872169495,
+        "train/loss": 0.8256664872169495
+      },
+      "evalTail": [
+        {
+          "global_step": 390250,
+          "eval_dropless/paloma/macro_bpb": 0.7175310850143433,
+          "eval_dropless/uncheatable_eval/macro_bpb": 0.46661609411239624
+        },
+        {
+          "global_step": 390999,
+          "eval_dropless/paloma/macro_bpb": 0.7553595304489136,
+          "eval_dropless/uncheatable_eval/macro_bpb": 0.4664645195007324
+        },
+        {
+          "global_step": 391499,
+          "eval_dropless/paloma/macro_bpb": 0.7553333640098572,
+          "eval_dropless/uncheatable_eval/macro_bpb": 0.46619153022766113
+        },
+        {
+          "global_step": 391999,
+          "eval_dropless/paloma/macro_bpb": 0.7549115419387817,
+          "eval_dropless/uncheatable_eval/macro_bpb": 0.4661311209201813
+        }
+      ]
+    }
+  }
+}

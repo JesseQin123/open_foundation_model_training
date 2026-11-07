@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-11-06",
+  "snapshot": "2026-11-07",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -3646,6 +3646,60 @@ window.MARIN_RESEARCH = {
       "title": "[grug] Make the hero log scaling slope a required config value",
       "url": "https://github.com/marin-community/marin/pull/10986",
       "kind": "pr"
+    },
+    {
+      "id": "M608",
+      "title": "Marin confirms Hero 262K restore and first training steps",
+      "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-6696825577",
+      "kind": "issue"
+    },
+    {
+      "id": "M609",
+      "title": "Hero 262K main run clears first evaluation gate",
+      "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-6699324519",
+      "kind": "issue"
+    },
+    {
+      "id": "M610",
+      "title": "Marin selects two Hero 262K recipes",
+      "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-6696441295",
+      "kind": "issue"
+    },
+    {
+      "id": "M611",
+      "title": "[grug] Train the hero at 262K from the merged step-390251 checkpoint",
+      "url": "https://github.com/marin-community/marin/pull/11041",
+      "kind": "pr"
+    },
+    {
+      "id": "M612",
+      "title": "[grug] Train a sibling hero at 262K with log floor 65536 squared",
+      "url": "https://github.com/marin-community/marin/pull/11044",
+      "kind": "pr"
+    },
+    {
+      "id": "M613",
+      "title": "[eval] Exclude tags with no scored tokens from eval macros",
+      "url": "https://github.com/marin-community/marin/pull/11054",
+      "kind": "pr"
+    },
+    {
+      "id": "M614",
+      "title": "[hero] Extend the hero run to 262K context",
+      "url": "https://github.com/marin-community/marin/issues/11056",
+      "kind": "issue"
+    },
+    {
+      "id": "M615",
+      "title": "Hero 262K recipe trials and experiment design",
+      "url": "https://github.com/marin-community/marin-logbooks/issues/37",
+      "kind": "issue"
+    },
+    {
+      "id": "M616",
+      "title": "Hero 262K Global 1.84 production run",
+      "url": "https://wandb.ai/marin-community/marin_moe/runs/hero-lce-global184-step390k",
+      "kind": "report"
     }
   ],
   "claimGroups": [
@@ -3694,7 +3748,8 @@ window.MARIN_RESEARCH = {
           "Main training continues at 16K. A fixed sample at 360000 uses clipped-child lineage. The pinned Mini receipt confirms independent execution validation, not full quality or production deployment.",
           "Actual 65K main launch and initial GO are confirmed by official source, lineage and gates plus anonymous W&B. Operators report eight IMEX domains swept; BF16 copying repair is included in the deployed source. These receipts do not establish causal quality gains, own-save recovery or historical checkpoint corruption.",
           "The scheduled one-rack canary timed out before training. The CPU export and compact mesh changes merged. Current Hero adoption of the mixture and mesh changes remains unverified.",
-          "Marin reported the completed 18.0T-token main run, its step-390000 4K re-evaluation and the dense final saves used for averaging. The November 6 fixed samples independently show generation from the original step-390251 weights. The cache-backed long-context loader merged."
+          "Marin reported the completed 18.0T-token main run, its step-390000 4K re-evaluation and the dense final saves used for averaging. The November 6 fixed samples independently show generation from the original step-390251 weights. The cache-backed long-context loader merged.",
+          "The 262K main run restored the averaged 390251 save, passed the 390526 gate and reached 392236 on November 7. The 65K parent remains finished."
         ]
       },
       "sourceIds": [
@@ -3884,7 +3939,10 @@ window.MARIN_RESEARCH = {
         "M599",
         "M603",
         "M604",
-        "M605"
+        "M605",
+        "M608",
+        "M609",
+        "M616"
       ],
       "reviewStatus": "reviewed"
     },
@@ -3922,7 +3980,7 @@ window.MARIN_RESEARCH = {
           "The earlier manual-handoff plan is superseded: actual 65K launch occurred November 2 at 03:25 UTC from 372000 with agreed initial gates and accepted throughput cost. Initial child evaluations and own-save restart now have evidence. Rollback rehearsal and sustained quality remain open.",
           "Required-suite coverage #10541, item matching #10836, partial backups #10840 and canonical scorer correction #10828 remain open. The v5 corpus is reportedly staged; v6 is not. Hero’s pinned data-cleaning paths and deployed historical scoring remain unchanged by these proposals.",
           "Five arms at three lengths are prepared for the same step 372000 checkpoint. The first rack allocation is pending.",
-          "The optional schedule tail #10917 and explicit attention slope #10986 remain open. The cache-backed loader supersedes closed #10930. The 262K launch, 4× result and fixed-step-372000 comparison are pending."
+          "The first 262K finalist launched. The second sibling recipe, its serving path and matched offline results remain pending."
         ]
       },
       "sourceIds": [
@@ -4082,7 +4140,10 @@ window.MARIN_RESEARCH = {
         "M594",
         "M595",
         "M607",
-        "M605"
+        "M605",
+        "M614",
+        "M612",
+        "M610"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4133,7 +4194,8 @@ window.MARIN_RESEARCH = {
           "The canary PR reports a one-rack reference comparison. Cross-rack behavior and same-commit variance remain outside its measured scope.",
           "A 55-shard CPU export matched GPU output on a slice of step 378000. A 12-node synthetic mesh test gave similar timing and memory on both arms.",
           "The optional query-scaling diagnostic merged after a one-node 4K smoke test. Target-shape 262K quality and performance remain unmeasured.",
-          "A separate 11-save average reduced matched loss by 0.0032 overall; a separate 11-rack 262K test completed 100 steps with the evaluation handoff fix."
+          "A separate 11-save average reduced matched loss by 0.0032 overall; a separate 11-rack 262K test completed 100 steps with the evaluation handoff fix.",
+          "Seven short full-scale recipe trials did not separate held-out text quality within checkpoint variation. Retrieval observations have no seed repeats."
         ]
       },
       "sourceIds": [
@@ -4270,7 +4332,9 @@ window.MARIN_RESEARCH = {
         "M596",
         "M599",
         "M602",
-        "M606"
+        "M606",
+        "M610",
+        "M615"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4315,7 +4379,8 @@ window.MARIN_RESEARCH = {
           "The two early 65K evaluations move differently by suite relative to the inherited parent. Packing, attention scale and training progress cannot yet be separated.",
           "Denser final saves increase the range available for analysis and averaging. Any quality benefit from averaging requires evaluation.",
           "The latest two in-run evaluations moved in opposite directions by suite. A comparable fixed-checkpoint evaluation and scoring audit are needed to interpret the differences.",
-          "The 4K checkpoint score improves on the launch forecast under the reported measurement; the effects of the mixture, context and PTB overlap cannot be individually isolated. The 7% compute equivalent for averaging is modeled."
+          "The 4K checkpoint score improves on the launch forecast under the reported measurement; the effects of the mixture, context and PTB overlap cannot be individually isolated. The 7% compute equivalent for averaging is modeled.",
+          "The 262K online scores differ in coverage and input length from 65K, so their changes do not isolate a model-quality effect."
         ]
       },
       "sourceIds": [
@@ -4430,7 +4495,10 @@ window.MARIN_RESEARCH = {
         "M597",
         "M598",
         "M600",
-        "M599"
+        "M599",
+        "M613",
+        "M614",
+        "M616"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4469,7 +4537,7 @@ window.MARIN_RESEARCH = {
           "ProviderIMEXrepair/exactretainedmemoryownership/initiatingtaskheartbeatcause remainunconfirmed. FP32attentionadoption,representative-sizepreemptionsave,livegrace/retryqualification andfreshSkyRLnightlygreen remainunverified. Closed10777isnotastoragerestorationreceipt.",
           "Hero resumed from its own 382854 checkpoint on November 4. Other retries and real-spike intervention remain unverified; responsible-owner acceptance of the MFU-band exception is unreported. BF16 library root cause and historicalHero corruption remain unknown; sourceinclusion is now documented in the65Kbundle. CatCount setup delay lacks an exact request/provider cause; Grug passed, but a fresh wholly passing nightly remains pending.",
           "65K main adoption and initial eleven-rack capacity behavior are now confirmed; capability beyond 32K remains unverified. NUPA saved-campaign regrading, scorer provenance and canonical grader parity are unresolved. Mini full quality/rank fidelity and the identity candidate clean gate remain unmet; a fresh wholly green CatCount nightly is still unconfirmed.",
-          "The original final save is supported by its fixed samples and Marin reports using the complete dense series. The 262K main launch, adoption of the averaged checkpoint, public weight release and full-model CPU export remain unverified."
+          "Second finalist launch, repeated full-scale memory cycles, stop and final save, matched offline scores and public weights remain unverified."
         ]
       },
       "sourceIds": [
@@ -4635,12 +4703,119 @@ window.MARIN_RESEARCH = {
         "M603",
         "M604",
         "M599",
-        "M605"
+        "M605",
+        "M614",
+        "M609",
+        "M612"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-11-07-262k-run-first-public-metrics",
+      "date": "2026-11-07",
+      "status": "confirmed",
+      "title": {
+        "en": "The new 262K main run reaches step 392236"
+      },
+      "detail": {
+        "en": "The first 262K main run has continued training past its initial gate. The public dashboard also shows fresh evaluations with longer inputs, whose scores use a different set of scored text from the 65K parent. On November 7 at 14:09:00 UTC, the running Global 1.84 lineage logged step 392236, loss 0.8256665, 29.0575 seconds per training step, 29.3119 seconds per iteration and 34.2259% model FLOP utilization. The latest sampled evaluation at step 391999 logged Paloma 0.7549115 and UncheatableEval 0.4661311 macro bits per byte. PTB and WikiText-103 are too short for full 262K sequences in the online path. The launch code omits unscored tags from top-level averages. Matched offline evaluation is needed to compare model quality. The fixed November 6 generation archive still has 120 sets, and the mutable index has 122; the November 7 dated archive returned 404."
+      },
+      "sourceIds": [
+        "M616",
+        "M609",
+        "M613",
+        "M614",
+        "M603"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-07T14:11:18.995520+00:00",
+      "concept": {
+        "en": "An evaluation average changes when the set of scored examples changes. A matched comparison holds the scoring coverage and input length fixed."
+      },
+      "exercise": {
+        "en": "If two subsets have no eligible examples at 262K, what should you compare before interpreting a score change?"
+      }
+    },
+    {
+      "id": "event-2026-11-07-262k-second-finalist-plan",
+      "date": "2026-11-07",
+      "status": "planned",
+      "title": {
+        "en": "A second 262K recipe is queued for a separate comparison"
+      },
+      "detail": {
+        "en": "Marin plans to compare the running recipe with a second 262K recipe that changes how attention sharpens across very long documents. Both are intended to start from the same averaged save so the comparison can isolate the recipe difference. The two runs are scheduled sequentially, each for 3240 steps or about 149.5 billion tokens to step 393491, with the learning rate declining from 5% to 1% of peak. The second recipe uses log-squared scaling above 65536 tokens and has an open branch proposal. Its export and serving path still lacks support. The tracking issue calls for matched offline Paloma, UncheatableEval and retrieval tests before selecting a winner. No second launch or winning result was established in this review."
+      },
+      "sourceIds": [
+        "M610",
+        "M614",
+        "M612",
+        "M616"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-07T14:11:18.995520+00:00",
+      "concept": {
+        "en": "A sibling run starts from the same saved state as another run. This gives a cleaner comparison than starting one recipe from the end of the other."
+      },
+      "exercise": {
+        "en": "Why would starting the second recipe from the first recipe’s final weights make the result harder to interpret?"
+      }
+    },
+    {
+      "id": "event-2026-11-06-262k-main-run-launch",
+      "date": "2026-11-06",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero starts 262K training from the averaged 65K save"
+      },
+      "detail": {
+        "en": "Marin resumed main training with room for about four times as much text per example. The run restored the averaged save built from 11 late 65K checkpoints, confirming that a candidate tested yesterday is now being used for main training. On November 6 at 21:55 UTC, the operator confirmed run hero-lce-global184-step390k reached step 390260 after restoring step 390251. The November 6 New York evening gate, posted at 00:10 UTC November 7, passed at step 390526. The reported median was 29.06 seconds per step with a 0.00030 drop fraction, 180.444 GiB maximum device memory after the first eval and no retries. The largest gradient norm was 48.49 before clipping. This is the first training run of Global 1.84 at commit e0bc917ee5. Repeated memory cycles and the full-scale stop remain unverified."
+      },
+      "sourceIds": [
+        "M608",
+        "M609",
+        "M611"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-07T14:11:18.995520+00:00",
+      "concept": {
+        "en": "A checkpoint handoff connects a new run to saved weights and training state. Confirming restored steps establishes that training actually resumed."
+      },
+      "exercise": {
+        "en": "Which evidence shows the saved state was used, and which evidence only describes the launch configuration?"
+      },
+      "productionChange": true,
+      "productionEvidenceIds": [
+        "M608",
+        "M609"
+      ]
+    },
+    {
+      "id": "event-2026-11-06-262k-recipe-short-tests",
+      "date": "2026-11-06",
+      "status": "experimental",
+      "title": {
+        "en": "Short 262K tests leave the two recipes close on held-out text"
+      },
+      "detail": {
+        "en": "Marin tested seven candidate setups for 100 steps each at the full 11-rack scale. Their scores on held-out text were too close to distinguish reliably in that test. The clean macro loss spread was 0.0004, compared with 0.0002 to 0.0007 variation between nearby checkpoints. On one seed the averaged start’s advantage narrowed from about 0.003 to 0.0017 after 100 steps. Some retrieval comparisons favored the log-squared recipe, with uncertainty across seeds and checkpoints left unmeasured. The selected Global 1.84 recipe was not trained in these arms."
+      },
+      "sourceIds": [
+        "M610",
+        "M615",
+        "M612"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-07T14:11:18.995520+00:00",
+      "concept": {
+        "en": "A short trial can screen out failures. Repeats help separate a recipe effect from normal variation between runs."
+      },
+      "exercise": {
+        "en": "If the difference between recipes is smaller than the variation across nearby saves, what repeat would make the comparison stronger?"
+      }
+    },
     {
       "id": "event-2026-11-06-final-checkpoint-fixed-samples",
       "date": "2026-11-06",
