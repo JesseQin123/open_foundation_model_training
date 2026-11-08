@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-11-07",
+  "snapshot": "2026-11-08",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -3700,6 +3700,24 @@ window.MARIN_RESEARCH = {
       "title": "Hero 262K Global 1.84 production run",
       "url": "https://wandb.ai/marin-community/marin_moe/runs/hero-lce-global184-step390k",
       "kind": "report"
+    },
+    {
+      "id": "M617",
+      "title": "First Hero 262K finalist completes and second finalist launches",
+      "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-6715163540",
+      "kind": "issue"
+    },
+    {
+      "id": "M618",
+      "title": "Second Hero 262K finalist clears first evaluation gate",
+      "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-6716548620",
+      "kind": "issue"
+    },
+    {
+      "id": "M619",
+      "title": "Second Hero 262K finalist — log-squared attention",
+      "url": "https://wandb.ai/marin-community/marin_moe/runs/hero-lce-log65536sq-step390k",
+      "kind": "report"
     }
   ],
   "claimGroups": [
@@ -3749,7 +3767,8 @@ window.MARIN_RESEARCH = {
           "Actual 65K main launch and initial GO are confirmed by official source, lineage and gates plus anonymous W&B. Operators report eight IMEX domains swept; BF16 copying repair is included in the deployed source. These receipts do not establish causal quality gains, own-save recovery or historical checkpoint corruption.",
           "The scheduled one-rack canary timed out before training. The CPU export and compact mesh changes merged. Current Hero adoption of the mixture and mesh changes remains unverified.",
           "Marin reported the completed 18.0T-token main run, its step-390000 4K re-evaluation and the dense final saves used for averaging. The November 6 fixed samples independently show generation from the original step-390251 weights. The cache-backed long-context loader merged.",
-          "The 262K main run restored the averaged 390251 save, passed the 390526 gate and reached 392236 on November 7. The 65K parent remains finished."
+          "The 262K main run restored the averaged 390251 save, passed the 390526 gate and reached 392236 on November 7. The 65K parent remains finished.",
+          "Global 1.84 completed at 393491 and the operator confirmed its final checkpoint. Log-squared launched from the shared averaged 390251 save, passed the first gate and reached logged step 392225 on November 8."
         ]
       },
       "sourceIds": [
@@ -3942,7 +3961,10 @@ window.MARIN_RESEARCH = {
         "M605",
         "M608",
         "M609",
-        "M616"
+        "M616",
+        "M617",
+        "M618",
+        "M619"
       ],
       "reviewStatus": "reviewed"
     },
@@ -3980,7 +4002,7 @@ window.MARIN_RESEARCH = {
           "The earlier manual-handoff plan is superseded: actual 65K launch occurred November 2 at 03:25 UTC from 372000 with agreed initial gates and accepted throughput cost. Initial child evaluations and own-save restart now have evidence. Rollback rehearsal and sustained quality remain open.",
           "Required-suite coverage #10541, item matching #10836, partial backups #10840 and canonical scorer correction #10828 remain open. The v5 corpus is reportedly staged; v6 is not. Hero’s pinned data-cleaning paths and deployed historical scoring remain unchanged by these proposals.",
           "Five arms at three lengths are prepared for the same step 372000 checkpoint. The first rack allocation is pending.",
-          "The first 262K finalist launched. The second sibling recipe, its serving path and matched offline results remain pending."
+          "Both finalists launched in sequence from the same averaged save. Matched offline evaluation and a winner decision remain planned. The second finalist branch and serving work remain open."
         ]
       },
       "sourceIds": [
@@ -4143,7 +4165,8 @@ window.MARIN_RESEARCH = {
         "M605",
         "M614",
         "M612",
-        "M610"
+        "M610",
+        "M617"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4380,7 +4403,8 @@ window.MARIN_RESEARCH = {
           "Denser final saves increase the range available for analysis and averaging. Any quality benefit from averaging requires evaluation.",
           "The latest two in-run evaluations moved in opposite directions by suite. A comparable fixed-checkpoint evaluation and scoring audit are needed to interpret the differences.",
           "The 4K checkpoint score improves on the launch forecast under the reported measurement; the effects of the mixture, context and PTB overlap cannot be individually isolated. The 7% compute equivalent for averaging is modeled.",
-          "The 262K online scores differ in coverage and input length from 65K, so their changes do not isolate a model-quality effect."
+          "The 262K online scores differ in coverage and input length from 65K, so their changes do not isolate a model-quality effect.",
+          "At matched online log step 391999 the two 262K finalists have small, mixed score differences. This does not establish a winner."
         ]
       },
       "sourceIds": [
@@ -4498,7 +4522,8 @@ window.MARIN_RESEARCH = {
         "M599",
         "M613",
         "M614",
-        "M616"
+        "M616",
+        "M619"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4537,7 +4562,7 @@ window.MARIN_RESEARCH = {
           "ProviderIMEXrepair/exactretainedmemoryownership/initiatingtaskheartbeatcause remainunconfirmed. FP32attentionadoption,representative-sizepreemptionsave,livegrace/retryqualification andfreshSkyRLnightlygreen remainunverified. Closed10777isnotastoragerestorationreceipt.",
           "Hero resumed from its own 382854 checkpoint on November 4. Other retries and real-spike intervention remain unverified; responsible-owner acceptance of the MFU-band exception is unreported. BF16 library root cause and historicalHero corruption remain unknown; sourceinclusion is now documented in the65Kbundle. CatCount setup delay lacks an exact request/provider cause; Grug passed, but a fresh wholly passing nightly remains pending.",
           "65K main adoption and initial eleven-rack capacity behavior are now confirmed; capability beyond 32K remains unverified. NUPA saved-campaign regrading, scorer provenance and canonical grader parity are unresolved. Mini full quality/rank fidelity and the identity candidate clean gate remain unmet; a fresh wholly green CatCount nightly is still unconfirmed.",
-          "Second finalist launch, repeated full-scale memory cycles, stop and final save, matched offline scores and public weights remain unverified."
+          "Second finalist stop path and final save, matched offline scores, serving support and public weights remain unverified."
         ]
       },
       "sourceIds": [
@@ -4706,12 +4731,96 @@ window.MARIN_RESEARCH = {
         "M605",
         "M614",
         "M609",
-        "M612"
+        "M612",
+        "M618"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-11-08-262k-second-finalist-online-readings",
+      "date": "2026-11-08",
+      "status": "confirmed",
+      "title": {
+        "en": "The second 262K finalist continues past its launch check"
+      },
+      "detail": {
+        "en": "The second 262K run is training and posting online evaluations. Early readings at the same logged step are close, so the planned offline comparison still matters. At 16:59:40 UTC on November 8, hero-lce-log65536sq-step390k logged step 392225, training loss 0.9087946, 28.8403 seconds per step, 28.9631 seconds per iteration and 34.4836% model FLOP utilization. At step 391999, its Paloma and UncheatableEval scores were 0.7548913 and 0.4661892 macro bits per byte. The first finalist’s previously observed row at the same step was 0.7549115 and 0.4661311. The differences are small and point in opposite directions. The latest dated generation archive still has 120 sets and the mutable index 122. The November 7 and 8 archive paths returned 404. No matched offline result or second final save was established."
+      },
+      "sourceIds": [
+        "M619",
+        "M616",
+        "M614",
+        "M603"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-08T17:02:07.629706+00:00",
+      "concept": {
+        "en": "Matching the training step helps compare two recipes. Using the same fixed evaluation setup helps make that comparison interpretable."
+      },
+      "exercise": {
+        "en": "If one suite slightly favors each recipe at the same step, what result would help you decide whether either recipe is better?"
+      }
+    },
+    {
+      "id": "event-2026-11-07-262k-first-finalist-finish",
+      "date": "2026-11-07",
+      "status": "confirmed",
+      "title": {
+        "en": "The first 262K finalist finishes and saves its final model"
+      },
+      "detail": {
+        "en": "Marin finished training the first 262K recipe and reported that its final checkpoint was complete. This gives the team a saved model for the planned comparison. The official November 7 New York evening handoff, posted at 00:40 UTC November 8, confirms step 393491 for Global 1.84. The public run finished at log row 393490 at 00:28 UTC, with loss 0.8093567, 29.1299 seconds per step and 34.1408% model FLOP utilization. The final online Paloma and UncheatableEval readings were 0.7539423 and 0.4659090 macro bits per byte. The final checkpoint and last logged update use adjacent step numbers. The online readings are distinct from the planned matched offline results, and public weight release remains unverified."
+      },
+      "sourceIds": [
+        "M617",
+        "M616",
+        "M614"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-08T17:02:07.629706+00:00",
+      "concept": {
+        "en": "A checkpoint number identifies a saved training state. A log index can identify the update just before that state."
+      },
+      "exercise": {
+        "en": "Which record would you use to identify the saved model for a later comparison?"
+      },
+      "productionChange": true,
+      "productionEvidenceIds": [
+        "M617",
+        "M616"
+      ]
+    },
+    {
+      "id": "event-2026-11-07-262k-second-finalist-launch",
+      "date": "2026-11-07",
+      "status": "confirmed",
+      "title": {
+        "en": "The second 262K finalist starts from the same saved model"
+      },
+      "detail": {
+        "en": "Marin started the second 262K recipe from the same averaged 65K checkpoint used by the first. The shared start, data and schedule make a direct comparison possible once both recipes finish and are scored together. The November 7 New York evening launch used the branch of #11044 at 0454bdd609, with log-squared attention scaling above 65536 tokens. The operator posted GO at step 390530, with median 29.06 seconds per step, drop fraction 0.00031, peak 180.444 GiB after the first eval, largest gradient norm 20.14 before clipping, and no retries. This is an official Hero finalist run from a branch. The PR is still open, and the final save, serving support and quality verdict remain pending."
+      },
+      "sourceIds": [
+        "M617",
+        "M618",
+        "M612"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-08T17:02:07.629706+00:00",
+      "concept": {
+        "en": "Two sibling runs start from the same saved weights so their later scores are easier to compare."
+      },
+      "exercise": {
+        "en": "Why would the experiment answer a different question if the second run resumed from the first finalist’s ending checkpoint?"
+      },
+      "productionChange": true,
+      "productionEvidenceIds": [
+        "M617",
+        "M618"
+      ]
+    },
     {
       "id": "event-2026-11-07-262k-run-first-public-metrics",
       "date": "2026-11-07",
