@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-11-08",
+  "snapshot": "2026-11-09",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -3718,6 +3718,12 @@ window.MARIN_RESEARCH = {
       "title": "Second Hero 262K finalist — log-squared attention",
       "url": "https://wandb.ai/marin-community/marin_moe/runs/hero-lce-log65536sq-step390k",
       "kind": "report"
+    },
+    {
+      "id": "M620",
+      "title": "Hero fixed generation report — November 9",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.11.09/index.html",
+      "kind": "report"
     }
   ],
   "claimGroups": [
@@ -3768,7 +3774,8 @@ window.MARIN_RESEARCH = {
           "The scheduled one-rack canary timed out before training. The CPU export and compact mesh changes merged. Current Hero adoption of the mixture and mesh changes remains unverified.",
           "Marin reported the completed 18.0T-token main run, its step-390000 4K re-evaluation and the dense final saves used for averaging. The November 6 fixed samples independently show generation from the original step-390251 weights. The cache-backed long-context loader merged.",
           "The 262K main run restored the averaged 390251 save, passed the 390526 gate and reached 392236 on November 7. The 65K parent remains finished.",
-          "Global 1.84 completed at 393491 and the operator confirmed its final checkpoint. Log-squared launched from the shared averaged 390251 save, passed the first gate and reached logged step 392225 on November 8."
+          "Global 1.84 completed at 393491 and the operator confirmed its final checkpoint. Log-squared launched from the shared averaged 390251 save, passed the first gate and reached logged step 392225 on November 8.",
+          "On November 9 both 262K public logs showed finished at row 393490. A dated generation archive lists first-finalist steps 390500 and 391500."
         ]
       },
       "sourceIds": [
@@ -3964,7 +3971,8 @@ window.MARIN_RESEARCH = {
         "M616",
         "M617",
         "M618",
-        "M619"
+        "M619",
+        "M620"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4002,7 +4010,7 @@ window.MARIN_RESEARCH = {
           "The earlier manual-handoff plan is superseded: actual 65K launch occurred November 2 at 03:25 UTC from 372000 with agreed initial gates and accepted throughput cost. Initial child evaluations and own-save restart now have evidence. Rollback rehearsal and sustained quality remain open.",
           "Required-suite coverage #10541, item matching #10836, partial backups #10840 and canonical scorer correction #10828 remain open. The v5 corpus is reportedly staged; v6 is not. Hero’s pinned data-cleaning paths and deployed historical scoring remain unchanged by these proposals.",
           "Five arms at three lengths are prepared for the same step 372000 checkpoint. The first rack allocation is pending.",
-          "Both finalists launched in sequence from the same averaged save. Matched offline evaluation and a winner decision remain planned. The second finalist branch and serving work remain open."
+          "Both finalists are finished in the public run logs. Matched offline evaluation and a winner decision remain planned. The second finalist branch and serving work remain open."
         ]
       },
       "sourceIds": [
@@ -4166,7 +4174,8 @@ window.MARIN_RESEARCH = {
         "M614",
         "M612",
         "M610",
-        "M617"
+        "M617",
+        "M619"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4404,7 +4413,8 @@ window.MARIN_RESEARCH = {
           "The latest two in-run evaluations moved in opposite directions by suite. A comparable fixed-checkpoint evaluation and scoring audit are needed to interpret the differences.",
           "The 4K checkpoint score improves on the launch forecast under the reported measurement; the effects of the mixture, context and PTB overlap cannot be individually isolated. The 7% compute equivalent for averaging is modeled.",
           "The 262K online scores differ in coverage and input length from 65K, so their changes do not isolate a model-quality effect.",
-          "At matched online log step 391999 the two 262K finalists have small, mixed score differences. This does not establish a winner."
+          "At matched online log step 391999 the two 262K finalists have small, mixed score differences. This does not establish a winner.",
+          "The two final online rows are close. Without matched offline scores and uncertainty estimates the online gaps do not establish a recipe winner."
         ]
       },
       "sourceIds": [
@@ -4562,7 +4572,7 @@ window.MARIN_RESEARCH = {
           "ProviderIMEXrepair/exactretainedmemoryownership/initiatingtaskheartbeatcause remainunconfirmed. FP32attentionadoption,representative-sizepreemptionsave,livegrace/retryqualification andfreshSkyRLnightlygreen remainunverified. Closed10777isnotastoragerestorationreceipt.",
           "Hero resumed from its own 382854 checkpoint on November 4. Other retries and real-spike intervention remain unverified; responsible-owner acceptance of the MFU-band exception is unreported. BF16 library root cause and historicalHero corruption remain unknown; sourceinclusion is now documented in the65Kbundle. CatCount setup delay lacks an exact request/provider cause; Grug passed, but a fresh wholly passing nightly remains pending.",
           "65K main adoption and initial eleven-rack capacity behavior are now confirmed; capability beyond 32K remains unverified. NUPA saved-campaign regrading, scorer provenance and canonical grader parity are unresolved. Mini full quality/rank fidelity and the identity candidate clean gate remain unmet; a fresh wholly green CatCount nightly is still unconfirmed.",
-          "Second finalist stop path and final save, matched offline scores, serving support and public weights remain unverified."
+          "A separate second-finalist final checkpoint receipt, matched offline scores, serving support and public weights remain unverified."
         ]
       },
       "sourceIds": [
@@ -4732,12 +4742,65 @@ window.MARIN_RESEARCH = {
         "M614",
         "M609",
         "M612",
-        "M618"
+        "M618",
+        "M619"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-11-09-262k-second-finalist-finished-log",
+      "date": "2026-11-09",
+      "status": "confirmed",
+      "title": {
+        "en": "Both 262K finalists have finished in the public training logs"
+      },
+      "detail": {
+        "en": "The second 262K recipe has finished according to its public run log. Both recipes now have end-of-run readings at the same logged step, giving the team a point of comparison while the saved checkpoint and offline verdict still need separate evidence. The second run’s last row at step 393490 was logged November 9 at 03:22:20 UTC (November 8 at 22:22 New York time). It recorded loss 0.8093996, 29.1814 seconds per step, 29.4985 seconds per iteration and 34.0806% model FLOP utilization. Paloma and UncheatableEval scored 0.7541285 and 0.4659175 macro bits per byte. The first finalist’s historical end row was 0.7539423 and 0.4659090. These are online results, and the small gaps do not establish a winner. The second final checkpoint at expected step 393491 has no separate public completion receipt in the reviewed sources."
+      },
+      "sourceIds": [
+        "M619",
+        "M616",
+        "M614",
+        "M612"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-09T17:11:31.368926+00:00",
+      "concept": {
+        "en": "A training log can record a finished run and its last scored update. A checkpoint receipt identifies the saved model that can be restored."
+      },
+      "exercise": {
+        "en": "What additional evidence would you want before treating a finished run as a usable final checkpoint?"
+      },
+      "productionChange": true,
+      "productionEvidenceIds": [
+        "M619"
+      ]
+    },
+    {
+      "id": "event-2026-11-09-262k-global184-fixed-generations",
+      "date": "2026-11-09",
+      "status": "confirmed",
+      "title": {
+        "en": "A dated report publishes writing samples from the first 262K finalist"
+      },
+      "detail": {
+        "en": "Marin published fixed prompt responses from two intermediate saves of the first 262K recipe. Readers can now inspect concrete outputs from that run and see exactly which saved step produced them. The November 9 archive has 124 result sets and matches the live index at review time. Its two new sets since the previous review are from Global 1.84 steps 390500 and 391500, with the same generation specification and November 9 completion timestamps. The report provides qualitative examples and checkpoint identifiers. Matched scores between finalists, final-checkpoint comparisons and evidence of quality on very long inputs remain separate."
+      },
+      "sourceIds": [
+        "M620",
+        "M616"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-09T17:11:31.368926+00:00",
+      "concept": {
+        "en": "A dated generation report fixes which model produced each sample. It helps people inspect behavior on selected prompts."
+      },
+      "exercise": {
+        "en": "What would a fixed evaluation need to control before using these samples to compare the two recipes?"
+      }
+    },
     {
       "id": "event-2026-11-08-262k-second-finalist-online-readings",
       "date": "2026-11-08",
