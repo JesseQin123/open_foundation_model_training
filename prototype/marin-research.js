@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-11-09",
+  "snapshot": "2026-11-10",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -3724,6 +3724,72 @@ window.MARIN_RESEARCH = {
       "title": "Hero fixed generation report — November 9",
       "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.11.09/index.html",
       "kind": "report"
+    },
+    {
+      "id": "M621",
+      "title": "Official selection and final checkpoint for the 262K Hero",
+      "url": "https://github.com/marin-community/marin/issues/8435#issuecomment-6748198431",
+      "kind": "issue"
+    },
+    {
+      "id": "M622",
+      "title": "Matched offline comparison of the two final 262K checkpoints",
+      "url": "https://github.com/marin-community/marin-logbooks/issues/37#issuecomment-6751602983",
+      "kind": "issue"
+    },
+    {
+      "id": "M623",
+      "title": "Hero SFT plan and matched one-rack trials",
+      "url": "https://github.com/marin-community/marin/issues/8089#issuecomment-6760446807",
+      "kind": "issue"
+    },
+    {
+      "id": "M624",
+      "title": "[grug] Export hero log scaling at artifact schema 3",
+      "url": "https://github.com/marin-community/marin/pull/11128",
+      "kind": "pr"
+    },
+    {
+      "id": "M625",
+      "title": "[grug] Export, serve and RL-train the log-scaled hero",
+      "url": "https://github.com/marin-community/marin/issues/11127",
+      "kind": "issue"
+    },
+    {
+      "id": "M626",
+      "title": "[grug] Add full-model SFT for the hero on the 10.05 mix",
+      "url": "https://github.com/marin-community/marin/pull/11136",
+      "kind": "pr"
+    },
+    {
+      "id": "M627",
+      "title": "[grug] Balance hero SFT expert load with a static expert placement",
+      "url": "https://github.com/marin-community/marin/pull/11149",
+      "kind": "pr"
+    },
+    {
+      "id": "M628",
+      "title": "[grug] Default the hero SFT capacity factor to 1.625",
+      "url": "https://github.com/marin-community/marin/pull/11164",
+      "kind": "pr"
+    },
+    {
+      "id": "M629",
+      "title": "[iac] Restore the hero-* checkpoint deletion deny",
+      "url": "https://github.com/marin-community/marin/pull/11165",
+      "kind": "pr"
+    },
+    {
+      "id": "M630",
+      "title": "Week of November 2, 2026 standup",
+      "url": "https://github.com/marin-community/marin/issues/11169",
+      "kind": "issue"
+    },
+    {
+      "id": "M631",
+      "title": "Hero fixed generation report — November 10",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.11.10/index.html",
+      "kind": "report"
     }
   ],
   "claimGroups": [
@@ -3775,7 +3841,7 @@ window.MARIN_RESEARCH = {
           "Marin reported the completed 18.0T-token main run, its step-390000 4K re-evaluation and the dense final saves used for averaging. The November 6 fixed samples independently show generation from the original step-390251 weights. The cache-backed long-context loader merged.",
           "The 262K main run restored the averaged 390251 save, passed the 390526 gate and reached 392236 on November 7. The 65K parent remains finished.",
           "Global 1.84 completed at 393491 and the operator confirmed its final checkpoint. Log-squared launched from the shared averaged 390251 save, passed the first gate and reached logged step 392225 on November 8.",
-          "On November 9 both 262K public logs showed finished at row 393490. A dated generation archive lists first-finalist steps 390500 and 391500."
+          "Marin selected the log-squared 262K recipe and confirmed its step-393491 checkpoint; PR #11044 records it as current. Schema-3 export code merged and the November 10 samples include both final checkpoints."
         ]
       },
       "sourceIds": [
@@ -3972,7 +4038,11 @@ window.MARIN_RESEARCH = {
         "M617",
         "M618",
         "M619",
-        "M620"
+        "M620",
+        "M621",
+        "M612",
+        "M624",
+        "M631"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4010,7 +4080,7 @@ window.MARIN_RESEARCH = {
           "The earlier manual-handoff plan is superseded: actual 65K launch occurred November 2 at 03:25 UTC from 372000 with agreed initial gates and accepted throughput cost. Initial child evaluations and own-save restart now have evidence. Rollback rehearsal and sustained quality remain open.",
           "Required-suite coverage #10541, item matching #10836, partial backups #10840 and canonical scorer correction #10828 remain open. The v5 corpus is reportedly staged; v6 is not. Hero’s pinned data-cleaning paths and deployed historical scoring remain unchanged by these proposals.",
           "Five arms at three lengths are prepared for the same step 372000 checkpoint. The first rack allocation is pending.",
-          "Both finalists are finished in the public run logs. Matched offline evaluation and a winner decision remain planned. The second finalist branch and serving work remain open."
+          "Full 11-rack Hero SFT awaits gates, and schema-3 serving and RL parity are planned."
         ]
       },
       "sourceIds": [
@@ -4175,7 +4245,9 @@ window.MARIN_RESEARCH = {
         "M612",
         "M610",
         "M617",
-        "M619"
+        "M619",
+        "M623",
+        "M625"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4227,7 +4299,7 @@ window.MARIN_RESEARCH = {
           "A 55-shard CPU export matched GPU output on a slice of step 378000. A 12-node synthetic mesh test gave similar timing and memory on both arms.",
           "The optional query-scaling diagnostic merged after a one-node 4K smoke test. Target-shape 262K quality and performance remain unmeasured.",
           "A separate 11-save average reduced matched loss by 0.0032 overall; a separate 11-rack 262K test completed 100 steps with the evaluation handoff fix.",
-          "Seven short full-scale recipe trials did not separate held-out text quality within checkpoint variation. Retrieval observations have no seed repeats."
+          "The matched offline finalist comparison favors log-squared on MRCR full-context loss, ties on clean macro and uses one seed each. One-rack SFT placement cut drops from 3.60% to 0.56%."
         ]
       },
       "sourceIds": [
@@ -4366,7 +4438,9 @@ window.MARIN_RESEARCH = {
         "M602",
         "M606",
         "M610",
-        "M615"
+        "M615",
+        "M622",
+        "M623"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4414,7 +4488,7 @@ window.MARIN_RESEARCH = {
           "The 4K checkpoint score improves on the launch forecast under the reported measurement; the effects of the mixture, context and PTB overlap cannot be individually isolated. The 7% compute equivalent for averaging is modeled.",
           "The 262K online scores differ in coverage and input length from 65K, so their changes do not isolate a model-quality effect.",
           "At matched online log step 391999 the two 262K finalists have small, mixed score differences. This does not establish a winner.",
-          "The two final online rows are close. Without matched offline scores and uncertainty estimates the online gaps do not establish a recipe winner."
+          "Most of the MRCR loss gain is also present without the evidence, so the result does not isolate a retrieval-specific gain."
         ]
       },
       "sourceIds": [
@@ -4533,7 +4607,8 @@ window.MARIN_RESEARCH = {
         "M613",
         "M614",
         "M616",
-        "M619"
+        "M619",
+        "M622"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4572,7 +4647,7 @@ window.MARIN_RESEARCH = {
           "ProviderIMEXrepair/exactretainedmemoryownership/initiatingtaskheartbeatcause remainunconfirmed. FP32attentionadoption,representative-sizepreemptionsave,livegrace/retryqualification andfreshSkyRLnightlygreen remainunverified. Closed10777isnotastoragerestorationreceipt.",
           "Hero resumed from its own 382854 checkpoint on November 4. Other retries and real-spike intervention remain unverified; responsible-owner acceptance of the MFU-band exception is unreported. BF16 library root cause and historicalHero corruption remain unknown; sourceinclusion is now documented in the65Kbundle. CatCount setup delay lacks an exact request/provider cause; Grug passed, but a fresh wholly passing nightly remains pending.",
           "65K main adoption and initial eleven-rack capacity behavior are now confirmed; capability beyond 32K remains unverified. NUPA saved-campaign regrading, scorer provenance and canonical grader parity are unresolved. Mini full quality/rank fidelity and the identity candidate clean gate remain unmet; a fresh wholly green CatCount nightly is still unconfirmed.",
-          "A separate second-finalist final checkpoint receipt, matched offline scores, serving support and public weights remain unverified."
+          "Full-scale SFT launch, end-to-end export and serving parity, public weights and training-seed variability remain unverified."
         ]
       },
       "sourceIds": [
@@ -4743,12 +4818,141 @@ window.MARIN_RESEARCH = {
         "M609",
         "M612",
         "M618",
-        "M619"
+        "M619",
+        "M623",
+        "M625",
+        "M622"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-11-10-hero-sft-one-rack-plan",
+      "date": "2026-11-10",
+      "status": "planned",
+      "title": {
+        "en": "Hero fine-tuning is planned after a one-rack test"
+      },
+      "detail": {
+        "en": "Marin proposed an 11-rack supervised fine-tuning run from the selected 262K checkpoint. A one-rack trial suggests that rearranging where the model’s specialists sit can reduce skipped assignments, and the full run still awaits sign-off. In matched 100-update trials with frozen router bias and the same capacity, static placement cut expert assignment drops from 3.60% to 0.56%, with training loss 0.5581 versus 0.5510 and identical rounded Paloma macro loss of 2.0336. The launcher, placement and capacity changes have merged. The proposed run is 6916 updates with about 20% replay; the public plan still calls for data review and a short resume test from main."
+      },
+      "sourceIds": [
+        "M623",
+        "M626",
+        "M627",
+        "M628"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-10T17:05:22.615080+00:00",
+      "concept": {
+        "en": "Supervised fine-tuning trains a base model on example responses. Expert placement spreads busy specialists across available capacity."
+      },
+      "exercise": {
+        "en": "Why check both skipped assignments and held-out loss before calling the placement useful?"
+      }
+    },
+    {
+      "id": "event-2026-11-10-hero-export-schema-three",
+      "date": "2026-11-10",
+      "status": "confirmed",
+      "title": {
+        "en": "Marin merges an export format that guards against incorrect long-context serving"
+      },
+      "detail": {
+        "en": "Marin merged a file-format change that records the selected model’s attention scaling. Older serving engines reject the new format, preventing them from silently running the model with different behavior on long documents. PR #11128 writes three log-scaling settings in artifact schema 3. The serving and reinforcement-learning engines still need implementations and parity tests, and the merged change does not establish an exported or publicly uploaded Hero checkpoint."
+      },
+      "sourceIds": [
+        "M624",
+        "M625",
+        "M621"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-10T17:05:22.615080+00:00",
+      "concept": {
+        "en": "An artifact schema specifies how model settings are stored. A version check can stop a loader that cannot honor those settings."
+      },
+      "exercise": {
+        "en": "What could go wrong if an older engine silently ignored the new attention settings?"
+      }
+    },
+    {
+      "id": "event-2026-11-10-hero-finalists-fixed-generations",
+      "date": "2026-11-10",
+      "status": "confirmed",
+      "title": {
+        "en": "Fixed writing samples now include both final 262K checkpoints"
+      },
+      "detail": {
+        "en": "Marin published fixed prompt responses from both finalists’ final saved models. Readers can trace the answers back to each recipe, while the offline experiment provides the measured comparison. The November 10 report has 130 result sets, six more than the previous fixed edition. Both lineages are represented at steps 392500, 393000 and 393491. These are qualitative native generation samples under a shared specification, not a 262K serving-parity test or a public weight download."
+      },
+      "sourceIds": [
+        "M631",
+        "M621",
+        "M622"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-10T17:05:22.615080+00:00",
+      "concept": {
+        "en": "Fixed generation samples identify the exact checkpoint behind an answer. A benchmark measures a defined collection under a controlled setup."
+      },
+      "exercise": {
+        "en": "What can you check by reading paired prompt answers that an average loss alone cannot show?"
+      }
+    },
+    {
+      "id": "event-2026-11-09-262k-official-selection",
+      "date": "2026-11-09",
+      "status": "confirmed",
+      "title": {
+        "en": "Marin selects the log-squared recipe for the 262K Hero"
+      },
+      "detail": {
+        "en": "Marin chose the second 262K recipe and confirmed its final saved model. The selected checkpoint gives downstream training a definite starting point. The November 9 decision names hero-lce-log65536sq-step390k at step 393491. Merged PR #11044 changes the current Hero run and recipe to that lineage. Both finalists trained 3240 steps from the same averaged 65K checkpoint, on the same data in the same order. The official decision and merged configuration establish selection. The next training stage, compatible serving and public weight release still need separate evidence."
+      },
+      "sourceIds": [
+        "M621",
+        "M612",
+        "M622",
+        "M619"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-10T17:05:22.615080+00:00",
+      "concept": {
+        "en": "A checkpoint records weights and training state. Selecting one identifies the model downstream work should start from."
+      },
+      "exercise": {
+        "en": "Which source confirms the chosen checkpoint, and what evidence would show downstream training used it?"
+      },
+      "productionChange": true,
+      "productionEvidenceIds": [
+        "M621",
+        "M619"
+      ]
+    },
+    {
+      "id": "event-2026-11-09-262k-offline-comparison",
+      "date": "2026-11-09",
+      "status": "experimental",
+      "title": {
+        "en": "The selected recipe lowers long-document loss in the offline comparison"
+      },
+      "detail": {
+        "en": "In the offline comparison, the selected recipe predicted answers better on a long-document test. The general held-out text score was effectively tied, and a control that removed the key evidence still showed most of the loss difference. At step 393491, full-context MRCR negative log likelihood was 0.0223 versus 0.0252 (difference −0.0029, 95% interval −0.0037 to −0.0021). Distractor-only loss fell by 0.0025. Recovery was 0.982 versus 0.981, with an interval crossing zero. The 19-subset 262K clean macro was 1.6434 versus 1.6433. There were 299 MRCR documents and one training seed per recipe. The intervals quantify document sampling, leaving run-to-run training variation and a retrieval-specific gain unresolved."
+      },
+      "sourceIds": [
+        "M622",
+        "M621"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-10T17:05:22.615080+00:00",
+      "concept": {
+        "en": "A control removes one ingredient to test whether that ingredient explains the effect. Here the control removes the evidence needed to answer."
+      },
+      "exercise": {
+        "en": "If loss improves almost as much when key evidence is removed, what part of the retrieval claim remains uncertain?"
+      }
+    },
     {
       "id": "event-2026-11-09-262k-second-finalist-finished-log",
       "date": "2026-11-09",
