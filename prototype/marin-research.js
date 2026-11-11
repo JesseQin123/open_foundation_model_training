@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-11-10",
+  "snapshot": "2026-11-11",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -3790,6 +3790,72 @@ window.MARIN_RESEARCH = {
       "title": "Hero fixed generation report — November 10",
       "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.11.10/index.html",
       "kind": "report"
+    },
+    {
+      "id": "M632",
+      "title": "Hero SFT production launch on 11 GB200 racks",
+      "url": "https://github.com/marin-community/marin/issues/8089#issuecomment-6761658823",
+      "kind": "issue"
+    },
+    {
+      "id": "M633",
+      "title": "First Hero SFT attempt stops in routing statistics check",
+      "url": "https://github.com/marin-community/marin/issues/8089#issuecomment-6762784351",
+      "kind": "issue"
+    },
+    {
+      "id": "M634",
+      "title": "Hero SFT relaunch from the selected base under a new run ID",
+      "url": "https://github.com/marin-community/marin/issues/8089#issuecomment-6771184334",
+      "kind": "issue"
+    },
+    {
+      "id": "M635",
+      "title": "Hero SFT restores its rolling checkpoint after an NVLink fault",
+      "url": "https://github.com/marin-community/marin/issues/8089#issuecomment-6774002954",
+      "kind": "issue"
+    },
+    {
+      "id": "M636",
+      "title": "Mochi base step 393491 exported to object storage at schema 3",
+      "url": "https://github.com/marin-community/marin/issues/11127#issuecomment-6783132654",
+      "kind": "issue"
+    },
+    {
+      "id": "M637",
+      "title": "Hero full-model SFT, attempt 2",
+      "url": "https://wandb.ai/marin-community/marin_moe_sft/runs/hero-sft-fullab-step393k-v2",
+      "kind": "report"
+    },
+    {
+      "id": "M638",
+      "title": "[grug] Count MoE routing assignments in int32",
+      "url": "https://github.com/marin-community/marin/pull/11166",
+      "kind": "pr"
+    },
+    {
+      "id": "M639",
+      "title": "[grug] Hand off hero SFT to another rack count",
+      "url": "https://github.com/marin-community/marin/pull/11189",
+      "kind": "pr"
+    },
+    {
+      "id": "M640",
+      "title": "[rl] Add an experimental Mochi schema-3 runtime",
+      "url": "https://github.com/marin-community/marin/pull/11199",
+      "kind": "pr"
+    },
+    {
+      "id": "M641",
+      "title": "Mochi e2e post-training run #1",
+      "url": "https://github.com/marin-community/marin/issues/11191",
+      "kind": "issue"
+    },
+    {
+      "id": "M642",
+      "title": "[GrugMoE] Scale hero global-layer queries by position",
+      "url": "https://github.com/marin-community/vllm/pull/121",
+      "kind": "pr"
     }
   ],
   "claimGroups": [
@@ -3841,7 +3907,8 @@ window.MARIN_RESEARCH = {
           "Marin reported the completed 18.0T-token main run, its step-390000 4K re-evaluation and the dense final saves used for averaging. The November 6 fixed samples independently show generation from the original step-390251 weights. The cache-backed long-context loader merged.",
           "The 262K main run restored the averaged 390251 save, passed the 390526 gate and reached 392236 on November 7. The 65K parent remains finished.",
           "Global 1.84 completed at 393491 and the operator confirmed its final checkpoint. Log-squared launched from the shared averaged 390251 save, passed the first gate and reached logged step 392225 on November 8.",
-          "Marin selected the log-squared 262K recipe and confirmed its step-393491 checkpoint; PR #11044 records it as current. Schema-3 export code merged and the November 10 samples include both final checkpoints."
+          "Marin selected the log-squared 262K recipe and confirmed its step-393491 checkpoint; PR #11044 records it as current. Schema-3 export code merged and the November 10 samples include both final checkpoints.",
+          "Full-model Hero SFT launched on 11 racks, relaunched as v2 after the routing count fix, and restored step 393593 after NVLink failure. The base checkpoint has a verified schema-3 object-store export."
         ]
       },
       "sourceIds": [
@@ -4042,7 +4109,11 @@ window.MARIN_RESEARCH = {
         "M621",
         "M612",
         "M624",
-        "M631"
+        "M631",
+        "M632",
+        "M634",
+        "M635",
+        "M636"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4080,7 +4151,7 @@ window.MARIN_RESEARCH = {
           "The earlier manual-handoff plan is superseded: actual 65K launch occurred November 2 at 03:25 UTC from 372000 with agreed initial gates and accepted throughput cost. Initial child evaluations and own-save restart now have evidence. Rollback rehearsal and sustained quality remain open.",
           "Required-suite coverage #10541, item matching #10836, partial backups #10840 and canonical scorer correction #10828 remain open. The v5 corpus is reportedly staged; v6 is not. Hero’s pinned data-cleaning paths and deployed historical scoring remain unchanged by these proposals.",
           "Five arms at three lengths are prepared for the same step 372000 checkpoint. The first rack allocation is pending.",
-          "Full 11-rack Hero SFT awaits gates, and schema-3 serving and RL parity are planned."
+            "An open proposal would permit a nine-rack SFT handoff. Released schema-3 serving parity and the end-to-end post-training run remain planned."
         ]
       },
       "sourceIds": [
@@ -4247,7 +4318,10 @@ window.MARIN_RESEARCH = {
         "M617",
         "M619",
         "M623",
-        "M625"
+        "M625",
+        "M639",
+        "M641",
+        "M642"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4299,7 +4373,8 @@ window.MARIN_RESEARCH = {
           "A 55-shard CPU export matched GPU output on a slice of step 378000. A 12-node synthetic mesh test gave similar timing and memory on both arms.",
           "The optional query-scaling diagnostic merged after a one-node 4K smoke test. Target-shape 262K quality and performance remain unmeasured.",
           "A separate 11-save average reduced matched loss by 0.0032 overall; a separate 11-rack 262K test completed 100 steps with the evaluation handoff fix.",
-          "The matched offline finalist comparison favors log-squared on MRCR full-context loss, ties on clean macro and uses one seed each. One-rack SFT placement cut drops from 3.60% to 0.56%."
+          "The matched offline finalist comparison favors log-squared on MRCR full-context loss, ties on clean macro and uses one seed each. One-rack SFT placement cut drops from 3.60% to 0.56%.",
+          "A one-rack Mochi schema-3 RL smoke completed five 4K updates, saved a checkpoint and restored it at 32K. No 32K update completed."
         ]
       },
       "sourceIds": [
@@ -4440,7 +4515,9 @@ window.MARIN_RESEARCH = {
         "M610",
         "M615",
         "M622",
-        "M623"
+        "M623",
+        "M640",
+        "M641"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4488,7 +4565,8 @@ window.MARIN_RESEARCH = {
           "The 4K checkpoint score improves on the launch forecast under the reported measurement; the effects of the mixture, context and PTB overlap cannot be individually isolated. The 7% compute equivalent for averaging is modeled.",
           "The 262K online scores differ in coverage and input length from 65K, so their changes do not isolate a model-quality effect.",
           "At matched online log step 391999 the two 262K finalists have small, mixed score differences. This does not establish a winner.",
-          "Most of the MRCR loss gain is also present without the evidence, so the result does not isolate a retrieval-specific gain."
+          "Most of the MRCR loss gain is also present without the evidence, so the result does not isolate a retrieval-specific gain.",
+          "The int32 change addresses the operator-reproduced counting failure. An NVLink error is observed separately; the underlying fault is unverified."
         ]
       },
       "sourceIds": [
@@ -4608,7 +4686,10 @@ window.MARIN_RESEARCH = {
         "M614",
         "M616",
         "M619",
-        "M622"
+        "M622",
+        "M633",
+        "M638",
+        "M635"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4647,7 +4728,7 @@ window.MARIN_RESEARCH = {
           "ProviderIMEXrepair/exactretainedmemoryownership/initiatingtaskheartbeatcause remainunconfirmed. FP32attentionadoption,representative-sizepreemptionsave,livegrace/retryqualification andfreshSkyRLnightlygreen remainunverified. Closed10777isnotastoragerestorationreceipt.",
           "Hero resumed from its own 382854 checkpoint on November 4. Other retries and real-spike intervention remain unverified; responsible-owner acceptance of the MFU-band exception is unreported. BF16 library root cause and historicalHero corruption remain unknown; sourceinclusion is now documented in the65Kbundle. CatCount setup delay lacks an exact request/provider cause; Grug passed, but a fresh wholly passing nightly remains pending.",
           "65K main adoption and initial eleven-rack capacity behavior are now confirmed; capability beyond 32K remains unverified. NUPA saved-campaign regrading, scorer provenance and canonical grader parity are unresolved. Mini full quality/rank fidelity and the identity candidate clean gate remain unmet; a fresh wholly green CatCount nightly is still unconfirmed.",
-          "Full-scale SFT launch, end-to-end export and serving parity, public weights and training-seed variability remain unverified."
+            "Current v2 W&B measurements, later SFT progress, a rack-count handoff, full-model serving parity and public weight release remain unverified."
         ]
       },
       "sourceIds": [
@@ -4821,12 +4902,149 @@ window.MARIN_RESEARCH = {
         "M619",
         "M623",
         "M625",
-        "M622"
+        "M622",
+        "M637",
+        "M639",
+        "M636",
+        "M640"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-11-11-hero-sft-rack-handoff-plan",
+      "date": "2026-11-11",
+      "status": "planned",
+      "title": {
+        "en": "An open proposal would let Hero fine-tuning resume on fewer racks"
+      },
+      "detail": {
+        "en": "Marin proposed a way to continue fine-tuning on nine racks if the run needs to move. The proposal tracks the next training example so a smaller batch can continue the same data stream. PR #11189 is open. Its dry run changes the batch from 176 to 144 sequences and maps a hypothetical step-394552 handoff to sequence 186736. It keeps the learning-rate decay over the same final sequences. The public production record confirms recovery on 11 racks, and a nine-rack handoff remains unverified."
+      },
+      "sourceIds": [
+        "M639",
+        "M635",
+        "M634"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-11T16:58:34.308851+00:00",
+      "concept": {
+        "en": "A batch is the group of examples processed in one update. When its size changes, the next data position matters more than the old step count alone."
+      },
+      "exercise": {
+        "en": "If a run moves to smaller batches, what should the checkpoint store to avoid skipping examples?"
+      }
+    },
+    {
+      "id": "event-2026-11-11-mochi-schema-three-rl-smoke",
+      "date": "2026-11-11",
+      "status": "experimental",
+      "title": {
+        "en": "A small Mochi reinforcement-learning test completes five short-context updates"
+      },
+      "detail": {
+        "en": "An experimental schema-3 runtime completed five reinforcement-learning updates at a 4K token cap and saved a checkpoint. This shows part of the training and serving loop can work on one rack. The draft reports 40 agentic and 40 non-agentic trajectories with nonzero loss masks, three updates with zero gradients and zero agentic rewards. A 32K continuation restored the saved state, but the first update hit a host-memory limit and later retries did not complete a 32K update. The draft remains open. It does not establish learning quality, production serving or use of a completed Hero SFT checkpoint."
+      },
+      "sourceIds": [
+        "M640",
+        "M641",
+        "M636"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-11T16:58:34.308851+00:00",
+      "concept": {
+        "en": "A smoke test runs a short version of a workflow to see which pieces function. Learning quality requires a separate evaluation."
+      },
+      "exercise": {
+        "en": "Why distinguish a successful restore from a successful optimizer update after that restore?"
+      }
+    },
+    {
+      "id": "event-2026-11-10-hero-sft-production-relaunch",
+      "date": "2026-11-10",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero starts full-model fine-tuning after a counting fix"
+      },
+      "detail": {
+        "en": "Marin started full-scale supervised fine-tuning from the selected 262K checkpoint. The first attempt stopped after one update, and a counting fix let the replacement run proceed. The November 10 launch used 11 GB200 racks and restored step 393491 on all 704 ranks. The routing check failed when counts for heavily used experts exceeded the exact integer range of float32. PR #11166 switched the statistics to int32, leaving the training math unchanged. The first attempt wrote no checkpoint and its W&B run was deleted. Marin relaunched as hero-sft-fullab-step393k-v2 from the same base at b448fb962d. The plan targets 6916 updates through step 400407 with 20.43% replay. The recovery report confirms training progressed on v2."
+      },
+      "sourceIds": [
+        "M632",
+        "M633",
+        "M634",
+        "M638",
+        "M635",
+        "M637"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-11T16:58:34.308851+00:00",
+      "concept": {
+        "en": "A training check can stop a healthy update if the statistics it reads are rounded. Exact counts help keep the check reliable at scale."
+      },
+      "exercise": {
+        "en": "Why could a counting problem appear at 11 racks after passing a one-rack test?"
+      },
+      "productionChange": true,
+      "productionEvidenceIds": [
+        "M632",
+        "M634",
+        "M635"
+      ]
+    },
+    {
+      "id": "event-2026-11-10-hero-sft-nvlink-recovery",
+      "date": "2026-11-10",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero fine-tuning resumes from its own checkpoint after a link fault"
+      },
+      "detail": {
+        "en": "An NVLink error stopped all workers in the replacement fine-tuning run. The automatic restart recovered the run’s own saved state and resumed training without repeating the one-time setup. On November 10 at 16:21 UTC the fault interrupted training near step 393617. All 704 ranks restored the temporary step-393593 checkpoint, losing about 24 updates and taking about nine minutes to restart. The operator reported step 393665 at 17:12 UTC, with mean loss 0.524 over the last 30 steps, 0.54% skipped expert assignments, gradient norm 0.21, 29.3 seconds per step and peak memory 131.1 GiB. The retry used the same nodes. A deeper cause and later run metrics remain unverified."
+      },
+      "sourceIds": [
+        "M635",
+        "M634",
+        "M637"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-11T16:58:34.308851+00:00",
+      "concept": {
+        "en": "A temporary checkpoint saves recent training state for recovery. It can reduce the amount of work repeated after a failure."
+      },
+      "exercise": {
+        "en": "How many updates were lost if training stopped near 393617 and resumed from 393593?"
+      },
+      "productionChange": true,
+      "productionEvidenceIds": [
+        "M635"
+      ]
+    },
+    {
+      "id": "event-2026-11-10-hero-base-schema-three-export",
+      "date": "2026-11-10",
+      "status": "confirmed",
+      "title": {
+        "en": "The selected Hero base checkpoint is exported in the new format"
+      },
+      "detail": {
+        "en": "Marin completed an object-store export of the selected 262K base checkpoint. The export preserves the long-context attention settings, and eight sampled tensors matched the original checkpoint bit for bit. The November 10 New York evening receipt names step 393491 and schema 3 with a 262144-position limit. The vLLM fork merged log scaling and reports a small H100 test. Pinning a released wheel, matching full-model outputs on GB200, exporting the later fine-tuned model and public weight release remain separate steps."
+      },
+      "sourceIds": [
+        "M636",
+        "M642",
+        "M625"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-11T16:58:34.308851+00:00",
+      "concept": {
+        "en": "An export converts a checkpoint into a format another tool can load. A parity test checks whether both tools compute the same outputs."
+      },
+      "exercise": {
+        "en": "Why check both the stored weights and the outputs produced by the serving engine?"
+      }
+    },
     {
       "id": "event-2026-11-10-hero-sft-one-rack-plan",
       "date": "2026-11-10",
