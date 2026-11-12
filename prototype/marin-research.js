@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-11-11",
+  "snapshot": "2026-11-12",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -3856,6 +3856,48 @@ window.MARIN_RESEARCH = {
       "title": "[GrugMoE] Scale hero global-layer queries by position",
       "url": "https://github.com/marin-community/vllm/pull/121",
       "kind": "pr"
+    },
+    {
+      "id": "M643",
+      "title": "Hero SFT deploys permanent checkpoints every 500 steps",
+      "url": "https://github.com/marin-community/marin/issues/8089#issuecomment-6808056022",
+      "kind": "issue"
+    },
+    {
+      "id": "M644",
+      "title": "Hero SFT restores after coordinator eviction",
+      "url": "https://github.com/marin-community/marin/issues/8089#issuecomment-6809342358",
+      "kind": "issue"
+    },
+    {
+      "id": "M645",
+      "title": "Hero SFT restores after a second fault on rack 136",
+      "url": "https://github.com/marin-community/marin/issues/8089#issuecomment-6810562073",
+      "kind": "issue"
+    },
+    {
+      "id": "M646",
+      "title": "[sft] Save permanent checkpoints every 500 steps",
+      "url": "https://github.com/marin-community/marin/pull/11217",
+      "kind": "pr"
+    },
+    {
+      "id": "M647",
+      "title": "[canary-hero-gb200] Kueue preemptions exhaust the Actions wait",
+      "url": "https://github.com/marin-community/marin/issues/11228",
+      "kind": "issue"
+    },
+    {
+      "id": "M648",
+      "title": "resume the hero canary queue deadline after Kueue preemption",
+      "url": "https://github.com/marin-community/marin/pull/11243",
+      "kind": "pr"
+    },
+    {
+      "id": "M649",
+      "title": "[datakit] Report which dataset records occur verbatim in the hero store",
+      "url": "https://github.com/marin-community/marin/pull/11249",
+      "kind": "pr"
     }
   ],
   "claimGroups": [
@@ -3908,7 +3950,8 @@ window.MARIN_RESEARCH = {
           "The 262K main run restored the averaged 390251 save, passed the 390526 gate and reached 392236 on November 7. The 65K parent remains finished.",
           "Global 1.84 completed at 393491 and the operator confirmed its final checkpoint. Log-squared launched from the shared averaged 390251 save, passed the first gate and reached logged step 392225 on November 8.",
           "Marin selected the log-squared 262K recipe and confirmed its step-393491 checkpoint; PR #11044 records it as current. Schema-3 export code merged and the November 10 samples include both final checkpoints.",
-          "Full-model Hero SFT launched on 11 racks, relaunched as v2 after the routing count fix, and restored step 393593 after NVLink failure. The base checkpoint has a verified schema-3 object-store export."
+          "Full-model Hero SFT launched on 11 racks, relaunched as v2 after the routing count fix, and restored step 393593 after NVLink failure. The base checkpoint has a verified schema-3 object-store export.",
+          "The 11-rack SFT v2 run adopted permanent saves every 500 steps and recovered twice on the same lineage, with the last operator-reported step 397342."
         ]
       },
       "sourceIds": [
@@ -4113,7 +4156,10 @@ window.MARIN_RESEARCH = {
         "M632",
         "M634",
         "M635",
-        "M636"
+        "M636",
+        "M643",
+        "M644",
+        "M645"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4151,7 +4197,8 @@ window.MARIN_RESEARCH = {
           "The earlier manual-handoff plan is superseded: actual 65K launch occurred November 2 at 03:25 UTC from 372000 with agreed initial gates and accepted throughput cost. Initial child evaluations and own-save restart now have evidence. Rollback rehearsal and sustained quality remain open.",
           "Required-suite coverage #10541, item matching #10836, partial backups #10840 and canonical scorer correction #10828 remain open. The v5 corpus is reportedly staged; v6 is not. Hero’s pinned data-cleaning paths and deployed historical scoring remain unchanged by these proposals.",
           "Five arms at three lengths are prepared for the same step 372000 checkpoint. The first rack allocation is pending.",
-            "An open proposal would permit a nine-rack SFT handoff. Released schema-3 serving parity and the end-to-end post-training run remain planned."
+          "An open proposal would permit a nine-rack SFT handoff. Released schema-3 serving parity and the end-to-end post-training run remain planned.",
+          "A nine-rack SFT handoff remains open. The canary queue-deadline repair and Hero data copy audit remain proposals."
         ]
       },
       "sourceIds": [
@@ -4321,7 +4368,9 @@ window.MARIN_RESEARCH = {
         "M625",
         "M639",
         "M641",
-        "M642"
+        "M642",
+        "M648",
+        "M649"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4566,7 +4615,8 @@ window.MARIN_RESEARCH = {
           "The 262K online scores differ in coverage and input length from 65K, so their changes do not isolate a model-quality effect.",
           "At matched online log step 391999 the two 262K finalists have small, mixed score differences. This does not establish a winner.",
           "Most of the MRCR loss gain is also present without the evidence, so the result does not isolate a retrieval-specific gain.",
-          "The int32 change addresses the operator-reproduced counting failure. An NVLink error is observed separately; the underlying fault is unverified."
+          "The int32 change addresses the operator-reproduced counting failure. An NVLink error is observed separately; the underlying fault is unverified.",
+          "Two NVLink errors were reported on the same physical rack. That identifies a repeated location without establishing the underlying cause."
         ]
       },
       "sourceIds": [
@@ -4689,7 +4739,8 @@ window.MARIN_RESEARCH = {
         "M622",
         "M633",
         "M638",
-        "M635"
+        "M635",
+        "M645"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4728,7 +4779,8 @@ window.MARIN_RESEARCH = {
           "ProviderIMEXrepair/exactretainedmemoryownership/initiatingtaskheartbeatcause remainunconfirmed. FP32attentionadoption,representative-sizepreemptionsave,livegrace/retryqualification andfreshSkyRLnightlygreen remainunverified. Closed10777isnotastoragerestorationreceipt.",
           "Hero resumed from its own 382854 checkpoint on November 4. Other retries and real-spike intervention remain unverified; responsible-owner acceptance of the MFU-band exception is unreported. BF16 library root cause and historicalHero corruption remain unknown; sourceinclusion is now documented in the65Kbundle. CatCount setup delay lacks an exact request/provider cause; Grug passed, but a fresh wholly passing nightly remains pending.",
           "65K main adoption and initial eleven-rack capacity behavior are now confirmed; capability beyond 32K remains unverified. NUPA saved-campaign regrading, scorer provenance and canonical grader parity are unresolved. Mini full quality/rank fidelity and the identity candidate clean gate remain unmet; a fresh wholly green CatCount nightly is still unconfirmed.",
-            "Current v2 W&B measurements, later SFT progress, a rack-count handoff, full-model serving parity and public weight release remain unverified."
+          "Current v2 W&B measurements, later SFT progress, a rack-count handoff, full-model serving parity and public weight release remain unverified.",
+          "SFT v2 current anonymous W&B metrics, later progress, scheduled permanent save completion, nine-rack handoff and public weights remain unverified."
         ]
       },
       "sourceIds": [
@@ -4906,12 +4958,117 @@ window.MARIN_RESEARCH = {
         "M637",
         "M639",
         "M636",
-        "M640"
+        "M640",
+        "M643",
+        "M645"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-11-12-hero-canary-queue-deadline-proposal",
+      "date": "2026-11-12",
+      "status": "planned",
+      "title": {
+        "en": "A Hero canary timeout leads to a proposal for bounded retries"
+      },
+      "detail": {
+        "en": "Marin proposed restoring the queue deadline when a test job loses its compute allocation. This would let the canary report a capacity problem instead of waiting until the workflow times out. The separate GB200 canary was preempted twice by Kueue and never reached its metrics report. Once a task ran, the monitor kept treating the gang as started even after it went back to waiting. Open PR #11243 would clear that state when no task is running. The PR reports that its changed tests could not run locally. This is a canary scheduling failure and a proposed fix, with no production training adoption established."
+      },
+      "sourceIds": [
+        "M647",
+        "M648"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-12T17:00:46.435680+00:00",
+      "concept": {
+        "en": "A canary is a small recurring test. Its monitor can distinguish waiting for machines from a job that is using them."
+      },
+      "exercise": {
+        "en": "When a running test is preempted, which timer should limit the wait for machines to return?"
+      }
+    },
+    {
+      "id": "event-2026-11-12-hero-training-copy-audit-proposal",
+      "date": "2026-11-12",
+      "status": "planned",
+      "title": {
+        "en": "A proposed audit checks which benchmark records appear in Hero training data"
+      },
+      "detail": {
+        "en": "Marin proposed a tool to find exact text copies of benchmark records in the Hero data store. It distinguishes documents that survived filtering from documents that were discarded, which matters when assessing possible benchmark exposure. The open PR reports a run over stack-v3 for GSM8K, HumanEval and MMLU with manual spot checks. It looks for all searched fields in one normalized document and checks the store’s filtering metadata. Short or generic text can match by coincidence, and this method misses paraphrases. The PR supplies a method and test scope. It does not establish a contamination rate for the released model or quantify an effect on evaluation scores."
+      },
+      "sourceIds": [
+        "M649"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-12T17:00:46.435680+00:00",
+      "concept": {
+        "en": "A copied record in retained data is stronger evidence of possible exposure than a copy in discarded data. Exposure still needs to be linked to what the model actually trained on."
+      },
+      "exercise": {
+        "en": "Why does finding both a question and its answer in one retained document matter more than finding a common phrase?"
+      }
+    },
+    {
+      "id": "event-2026-11-11-hero-sft-permanent-checkpoint-cadence",
+      "date": "2026-11-11",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero fine-tuning begins keeping permanent checkpoints every 500 steps"
+      },
+      "detail": {
+        "en": "Marin restarted the same fine-tuning run with more permanent saves. This gives the team intermediate models to evaluate while hourly temporary saves still support recovery. The November 11 operator receipt says all 704 ranks on 11 racks restored step 397115 and training resumed around 21:50 UTC with the same run ID and data. The deployed revision is 89a267e03d. The policy schedules seven permanent checkpoints from 397500 through the final 400407, with estimated total storage near 27 TB. The receipt confirms the policy was adopted. Completion of each scheduled save requires its own evidence."
+      },
+      "sourceIds": [
+        "M643",
+        "M646",
+        "M637"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-12T17:00:46.435680+00:00",
+      "concept": {
+        "en": "Permanent saves preserve milestones for analysis. Temporary saves keep recent state for restart."
+      },
+      "exercise": {
+        "en": "Which kind of save would you keep to compare early and late fine-tuning behavior?"
+      },
+      "productionChange": true,
+      "productionEvidenceIds": [
+        "M643"
+      ]
+    },
+    {
+      "id": "event-2026-11-11-hero-sft-two-recoveries-rack136",
+      "date": "2026-11-11",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero fine-tuning recovers from two interruptions on 11 racks"
+      },
+      "detail": {
+        "en": "The fine-tuning run resumed after its coordinator was evicted and again after another NVLink error. Both recoveries used completed hourly checkpoints and kept the same run. In the first interruption, an emergency save at step 397242 remained incomplete. Training restored 397223, costing 19 steps and about ten minutes. The second interruption, at 23:59 UTC November 11, involved the same physical rack as the previous day’s NVLink fault. All ranks restored step 397332, and the operator reported step 397342 around 00:15 UTC November 12 (19:15 November 11 in New York). That interruption cost about 16 minutes. Rack co-location is an observation. The underlying cause and a nine-rack production handoff remain unverified."
+      },
+      "sourceIds": [
+        "M644",
+        "M645",
+        "M639",
+        "M637"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-12T17:00:46.435680+00:00",
+      "concept": {
+        "en": "A checkpoint completion marker tells the restore process that a save finished. Partial output can be skipped after a crash."
+      },
+      "exercise": {
+        "en": "If a newer save is incomplete, how do you choose the most recent safe restart point?"
+      },
+      "productionChange": true,
+      "productionEvidenceIds": [
+        "M644",
+        "M645"
+      ]
+    },
     {
       "id": "event-2026-11-11-hero-sft-rack-handoff-plan",
       "date": "2026-11-11",
