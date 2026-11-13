@@ -1,0 +1,3401 @@
+{
+  "checkedAt": "2026-11-13T19:53:02.942756+00:00",
+  "previousSnapshot": "2026-11-12",
+  "requiredIssues": [
+    8435,
+    8506,
+    8870
+  ],
+  "updatedSearchResults": 321,
+  "standup": 11169,
+  "topics": [
+    {
+      "number": 10022,
+      "title": "[inference] Adopt the qualified vLLM 0.30 GPU release",
+      "url": "https://github.com/marin-community/marin/pull/10022",
+      "state": "closed",
+      "updatedAt": "2026-11-12T07:11:28Z",
+      "mergedAt": null,
+      "comments": 4
+    },
+    {
+      "number": 10023,
+      "title": "[inference] Stage the shared vLLM 0.30 TPU pair",
+      "url": "https://github.com/marin-community/marin/pull/10023",
+      "state": "closed",
+      "updatedAt": "2026-11-12T07:11:26Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 10063,
+      "title": "[iac] Retire the contractor account in favor of personal login",
+      "url": "https://github.com/marin-community/marin/pull/10063",
+      "state": "closed",
+      "updatedAt": "2026-11-12T21:38:18Z",
+      "mergedAt": "2026-11-12T21:38:16Z",
+      "comments": 5
+    },
+    {
+      "number": 10066,
+      "title": "[rl] Prepare TaskSpec inputs for SkyRL",
+      "url": "https://github.com/marin-community/marin/pull/10066",
+      "state": "closed",
+      "updatedAt": "2026-11-12T07:11:23Z",
+      "mergedAt": null,
+      "comments": 4
+    },
+    {
+      "number": 10090,
+      "title": "[iris] gVisor sandbox pods fail to start on cw-us-east-02a H100 nodes",
+      "url": "https://github.com/marin-community/marin/issues/10090",
+      "state": "open",
+      "updatedAt": "2026-11-13T12:23:16Z",
+      "mergedAt": null,
+      "comments": 4
+    },
+    {
+      "number": 10092,
+      "title": "[taskforge] State field bounds in the structured-output instruction",
+      "url": "https://github.com/marin-community/marin/pull/10092",
+      "state": "open",
+      "updatedAt": "2026-11-12T07:11:21Z",
+      "mergedAt": null,
+      "comments": 5
+    },
+    {
+      "number": 10115,
+      "title": "[taskcompendium] Tell a failed grading preparation from a failed grader",
+      "url": "https://github.com/marin-community/marin/pull/10115",
+      "state": "open",
+      "updatedAt": "2026-11-13T06:46:47Z",
+      "mergedAt": null,
+      "comments": 10
+    },
+    {
+      "number": 10123,
+      "title": "[shellbox] Refuse an empty workdir on the Iris backend",
+      "url": "https://github.com/marin-community/marin/pull/10123",
+      "state": "open",
+      "updatedAt": "2026-11-12T07:11:17Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 10154,
+      "title": "Convert Skill2Env packages into TaskSpecs for QUICK inspection",
+      "url": "https://github.com/marin-community/marin/pull/10154",
+      "state": "open",
+      "updatedAt": "2026-11-13T15:54:43Z",
+      "mergedAt": null,
+      "comments": 11
+    },
+    {
+      "number": 10279,
+      "title": "[storage] Remove expired scratch checkpoint discovery",
+      "url": "https://github.com/marin-community/marin/pull/10279",
+      "state": "open",
+      "updatedAt": "2026-11-12T07:11:12Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 10280,
+      "title": "[taskcompendium] Add a decision-model grader graded on the host",
+      "url": "https://github.com/marin-community/marin/pull/10280",
+      "state": "open",
+      "updatedAt": "2026-11-12T07:11:10Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 10323,
+      "title": "[rolloutengine] Preserve conversation prompt options",
+      "url": "https://github.com/marin-community/marin/pull/10323",
+      "state": "open",
+      "updatedAt": "2026-11-13T06:46:38Z",
+      "mergedAt": null,
+      "comments": 8
+    },
+    {
+      "number": 10353,
+      "title": "[docs] Preserve Snowball and Hero performance planning guides",
+      "url": "https://github.com/marin-community/marin/pull/10353",
+      "state": "open",
+      "updatedAt": "2026-11-13T06:46:36Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 10355,
+      "title": "[skyrl] Preserve exact chat retries without router capture",
+      "url": "https://github.com/marin-community/marin/pull/10355",
+      "state": "open",
+      "updatedAt": "2026-11-13T06:46:34Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 10380,
+      "title": "[rl] Support expert-block weight sync with colocated inference",
+      "url": "https://github.com/marin-community/marin/issues/10380",
+      "state": "closed",
+      "updatedAt": "2026-11-12T13:27:42Z",
+      "mergedAt": null,
+      "comments": 5
+    },
+    {
+      "number": 10395,
+      "title": "[embeddings] Add JAX Harrier inference for GPU and TPU",
+      "url": "https://github.com/marin-community/marin/pull/10395",
+      "state": "open",
+      "updatedAt": "2026-11-13T06:46:31Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 10634,
+      "title": "[rl] Zero vLLM-trainer numerics mismatch (1/3): Select numerics and check trainer-engine log-probabilities online",
+      "url": "https://github.com/marin-community/marin/pull/10634",
+      "state": "closed",
+      "updatedAt": "2026-11-13T03:33:40Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 10635,
+      "title": "[rl] Zero vLLM-trainer numerics mismatch (2/3): Run decode-invariant vLLM engines for exact numerics",
+      "url": "https://github.com/marin-community/marin/pull/10635",
+      "state": "closed",
+      "updatedAt": "2026-11-13T03:33:37Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 10636,
+      "title": "[rl] Zero vLLM-trainer numerics mismatch (3/3): Reproduce the decode-invariant engines' log-probabilities in Grug",
+      "url": "https://github.com/marin-community/marin/pull/10636",
+      "state": "closed",
+      "updatedAt": "2026-11-13T03:33:34Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 10642,
+      "title": "[rl] Typed recipes (2/4): Add a typed SkyRL recipe library",
+      "url": "https://github.com/marin-community/marin/pull/10642",
+      "state": "closed",
+      "updatedAt": "2026-11-12T17:53:19Z",
+      "mergedAt": "2026-11-12T17:53:15Z",
+      "comments": 4
+    },
+    {
+      "number": 10643,
+      "title": "[rl] Typed recipes (4/4): Validate every recipe path with typed classes",
+      "url": "https://github.com/marin-community/marin/pull/10643",
+      "state": "closed",
+      "updatedAt": "2026-11-13T03:05:08Z",
+      "mergedAt": "2026-11-13T03:05:05Z",
+      "comments": 4
+    },
+    {
+      "number": 10660,
+      "title": "[skyrl] Delete SGLang, PPO critic and FlashQLA code from vendored SkyRL",
+      "url": "https://github.com/marin-community/marin/pull/10660",
+      "state": "open",
+      "updatedAt": "2026-11-13T06:00:31Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 10661,
+      "title": "[rl] Faster RL startup (1/4): Start ranks and workers without waiting",
+      "url": "https://github.com/marin-community/marin/pull/10661",
+      "state": "open",
+      "updatedAt": "2026-11-13T09:44:32Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 10662,
+      "title": "[rl] Faster RL startup (2/4): Read remote weights in large ranges",
+      "url": "https://github.com/marin-community/marin/pull/10662",
+      "state": "open",
+      "updatedAt": "2026-11-13T09:44:42Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 10663,
+      "title": "[rl] Faster RL startup (3/4): Build engines and policy concurrently",
+      "url": "https://github.com/marin-community/marin/pull/10663",
+      "state": "open",
+      "updatedAt": "2026-11-13T09:44:52Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 10664,
+      "title": "[rl] Faster RL startup (4/4): Optionally skip engine weight loading",
+      "url": "https://github.com/marin-community/marin/pull/10664",
+      "state": "open",
+      "updatedAt": "2026-11-13T09:44:59Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 10666,
+      "title": "[rl] Worker batch assembly (1/3): Build batches from row facts",
+      "url": "https://github.com/marin-community/marin/pull/10666",
+      "state": "open",
+      "updatedAt": "2026-11-13T03:53:32Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 10667,
+      "title": "[rl] Worker batch assembly (2/3): Share metrics and batch lifecycle",
+      "url": "https://github.com/marin-community/marin/pull/10667",
+      "state": "open",
+      "updatedAt": "2026-11-13T03:53:33Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 10668,
+      "title": "[rl] Worker batch assembly (3/3): Assemble batches on policy workers",
+      "url": "https://github.com/marin-community/marin/pull/10668",
+      "state": "open",
+      "updatedAt": "2026-11-13T03:53:32Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 10680,
+      "title": "[RL] Correctness (1/3): Preserve served tokens after Grug tool calls",
+      "url": "https://github.com/marin-community/marin/pull/10680",
+      "state": "open",
+      "updatedAt": "2026-11-13T14:43:07Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 10681,
+      "title": "[RL] Correctness (3/3): Match Grug sampler and trainer numerics",
+      "url": "https://github.com/marin-community/marin/pull/10681",
+      "state": "open",
+      "updatedAt": "2026-11-13T14:15:11Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 10687,
+      "title": "[levanter] Add an FP32-activations flag to Snowball",
+      "url": "https://github.com/marin-community/marin/pull/10687",
+      "state": "closed",
+      "updatedAt": "2026-11-12T15:36:50Z",
+      "mergedAt": "2026-11-12T15:36:46Z",
+      "comments": 16
+    },
+    {
+      "number": 10695,
+      "title": "Snowball v0.1 identity: why it claims to be ChatGPT, and context distillation",
+      "url": "https://github.com/marin-community/marin/issues/10695",
+      "state": "closed",
+      "updatedAt": "2026-11-12T20:33:03Z",
+      "mergedAt": null,
+      "comments": 12
+    },
+    {
+      "number": 10698,
+      "title": "[levanter] Snowball forward in Levanter differs numerically from vLLM",
+      "url": "https://github.com/marin-community/marin/issues/10698",
+      "state": "open",
+      "updatedAt": "2026-11-12T00:46:19Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 10705,
+      "title": "[training] Account for supervised tokens in ordered chat mixtures",
+      "url": "https://github.com/marin-community/marin/pull/10705",
+      "state": "closed",
+      "updatedAt": "2026-11-12T15:36:51Z",
+      "mergedAt": "2026-11-12T15:36:47Z",
+      "comments": 13
+    },
+    {
+      "number": 10706,
+      "title": "[sft] Audit loader batches against a frozen plan before training",
+      "url": "https://github.com/marin-community/marin/pull/10706",
+      "state": "open",
+      "updatedAt": "2026-11-12T15:36:51Z",
+      "mergedAt": null,
+      "comments": 4
+    },
+    {
+      "number": 10707,
+      "title": "[sft] Verify HF exports against trained master weights",
+      "url": "https://github.com/marin-community/marin/pull/10707",
+      "state": "open",
+      "updatedAt": "2026-11-12T15:36:55Z",
+      "mergedAt": null,
+      "comments": 4
+    },
+    {
+      "number": 10710,
+      "title": "[RL] Correctness (2/3): Fix reward and group-baseline rules",
+      "url": "https://github.com/marin-community/marin/pull/10710",
+      "state": "open",
+      "updatedAt": "2026-11-13T14:58:09Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 10735,
+      "title": "Stop agent processes before Harbor verification",
+      "url": "https://github.com/marin-community/marin/pull/10735",
+      "state": "open",
+      "updatedAt": "2026-11-13T11:17:41Z",
+      "mergedAt": null,
+      "comments": 21
+    },
+    {
+      "number": 10737,
+      "title": "[rl] Save SkyRL run records and add named evaluations",
+      "url": "https://github.com/marin-community/marin/pull/10737",
+      "state": "open",
+      "updatedAt": "2026-11-13T08:25:19Z",
+      "mergedAt": null,
+      "comments": 4
+    },
+    {
+      "number": 10740,
+      "title": "[rl] Run Snowball RL experiments from presets with control verdicts",
+      "url": "https://github.com/marin-community/marin/pull/10740",
+      "state": "open",
+      "updatedAt": "2026-11-13T08:45:00Z",
+      "mergedAt": null,
+      "comments": 8
+    },
+    {
+      "number": 10753,
+      "title": "Predicting Snowball's post-distillation SWE-bench pass@1 from its scaling ladder",
+      "url": "https://github.com/marin-community/marin/issues/10753",
+      "state": "closed",
+      "updatedAt": "2026-11-13T16:55:34Z",
+      "mergedAt": null,
+      "comments": 6
+    },
+    {
+      "number": 10760,
+      "title": "[rl] Enable reproducible Grug prefix caching",
+      "url": "https://github.com/marin-community/marin/pull/10760",
+      "state": "closed",
+      "updatedAt": "2026-11-13T18:38:46Z",
+      "mergedAt": "2026-11-13T18:38:44Z",
+      "comments": 7
+    },
+    {
+      "number": 10763,
+      "title": "[levanter] Separate language and vision checkpoint converters",
+      "url": "https://github.com/marin-community/marin/pull/10763",
+      "state": "open",
+      "updatedAt": "2026-11-12T22:35:41Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 10813,
+      "title": "Retain successful Open-SWE trajectories and preserve tool IDs",
+      "url": "https://github.com/marin-community/marin/pull/10813",
+      "state": "open",
+      "updatedAt": "2026-11-13T17:21:29Z",
+      "mergedAt": null,
+      "comments": 7
+    },
+    {
+      "number": 10821,
+      "title": "[hero] Switch the hero run from 16K to 65K context",
+      "url": "https://github.com/marin-community/marin/issues/10821",
+      "state": "open",
+      "updatedAt": "2026-11-06T21:43:29Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 10822,
+      "title": "[iris] Add native task containers and driver connections",
+      "url": "https://github.com/marin-community/marin/pull/10822",
+      "state": "open",
+      "updatedAt": "2026-11-13T15:19:25Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 10849,
+      "title": "Experiment: hero step-372000 evals across eval length, partial sequences and qk_mult",
+      "url": "https://github.com/marin-community/marin/issues/10849",
+      "state": "open",
+      "updatedAt": "2026-11-02T18:32:18Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 10863,
+      "title": "[rl] Publish Snowball gate results to the progress dashboard",
+      "url": "https://github.com/marin-community/marin/pull/10863",
+      "state": "open",
+      "updatedAt": "2026-11-13T09:02:23Z",
+      "mergedAt": null,
+      "comments": 8
+    },
+    {
+      "number": 10877,
+      "title": "[grug] Order the compact mesh as data, expert, context",
+      "url": "https://github.com/marin-community/marin/pull/10877",
+      "state": "closed",
+      "updatedAt": "2026-11-03T23:31:53Z",
+      "mergedAt": "2026-11-03T23:31:50Z",
+      "comments": 4
+    },
+    {
+      "number": 10879,
+      "title": "[task-curation] Add a Lean v4.34.1 proof grader and ProofNet-Verified",
+      "url": "https://github.com/marin-community/marin/pull/10879",
+      "state": "open",
+      "updatedAt": "2026-11-13T18:03:55Z",
+      "mergedAt": null,
+      "comments": 14
+    },
+    {
+      "number": 10884,
+      "title": "[evals] Split identity screen answers at the generated end-think token",
+      "url": "https://github.com/marin-community/marin/pull/10884",
+      "state": "open",
+      "updatedAt": "2026-11-12T15:36:55Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 10890,
+      "title": "Export and upload Hero checkpoints on CPU",
+      "url": "https://github.com/marin-community/marin/pull/10890",
+      "state": "closed",
+      "updatedAt": "2026-11-04T01:43:57Z",
+      "mergedAt": "2026-11-04T01:43:56Z",
+      "comments": 5
+    },
+    {
+      "number": 10896,
+      "title": "[grug] Keep hero permanent checkpoints every 500 steps over the final 5000",
+      "url": "https://github.com/marin-community/marin/pull/10896",
+      "state": "closed",
+      "updatedAt": "2026-11-04T04:13:25Z",
+      "mergedAt": "2026-11-04T04:13:23Z",
+      "comments": 2
+    },
+    {
+      "number": 10897,
+      "title": "[canary-hero-gb200] Kueue-gated gang bypasses queue timeout",
+      "url": "https://github.com/marin-community/marin/issues/10897",
+      "state": "closed",
+      "updatedAt": "2026-11-05T22:41:50Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 10898,
+      "title": "Batch and throttle checkpoint uploads to respect Hub commit limits",
+      "url": "https://github.com/marin-community/marin/pull/10898",
+      "state": "closed",
+      "updatedAt": "2026-11-13T15:16:02Z",
+      "mergedAt": "2026-11-13T15:16:00Z",
+      "comments": 4
+    },
+    {
+      "number": 10910,
+      "title": "[nightly-gsm8k-h100-and-grug-megatron-h100] scheduled run failing",
+      "url": "https://github.com/marin-community/marin/issues/10910",
+      "state": "open",
+      "updatedAt": "2026-11-12T18:24:40Z",
+      "mergedAt": null,
+      "comments": 19
+    },
+    {
+      "number": 10917,
+      "title": "[grug] Let the hero train past its schedule",
+      "url": "https://github.com/marin-community/marin/pull/10917",
+      "state": "closed",
+      "updatedAt": "2026-11-06T20:18:28Z",
+      "mergedAt": "2026-11-06T20:18:26Z",
+      "comments": 7
+    },
+    {
+      "number": 10923,
+      "title": "[grug] Add optional log scaling of hero global queries",
+      "url": "https://github.com/marin-community/marin/pull/10923",
+      "state": "closed",
+      "updatedAt": "2026-11-05T00:25:04Z",
+      "mergedAt": "2026-11-05T00:21:57Z",
+      "comments": 4
+    },
+    {
+      "number": 10926,
+      "title": "[task-curation] Grade Snowball panels locally and build EvalLite",
+      "url": "https://github.com/marin-community/marin/pull/10926",
+      "state": "closed",
+      "updatedAt": "2026-11-12T22:57:56Z",
+      "mergedAt": "2026-11-12T22:57:53Z",
+      "comments": 7
+    },
+    {
+      "number": 10927,
+      "title": "[eval] Correct canonical task grading and scoring",
+      "url": "https://github.com/marin-community/marin/pull/10927",
+      "state": "open",
+      "updatedAt": "2026-11-13T06:02:56Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 10930,
+      "title": "[grug] Read the long-context store from the hero launcher",
+      "url": "https://github.com/marin-community/marin/pull/10930",
+      "state": "closed",
+      "updatedAt": "2026-11-05T21:18:17Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 10957,
+      "title": "Complete migration to curated TaskSpec evaluations",
+      "url": "https://github.com/marin-community/marin/pull/10957",
+      "state": "closed",
+      "updatedAt": "2026-11-13T01:58:44Z",
+      "mergedAt": "2026-11-13T01:58:39Z",
+      "comments": 18
+    },
+    {
+      "number": 10968,
+      "title": "[levanter] Eval BPB is not total bits / total bytes of the source text",
+      "url": "https://github.com/marin-community/marin/issues/10968",
+      "state": "open",
+      "updatedAt": "2026-11-13T12:32:13Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 10969,
+      "title": "[levanter] Lock multi-process checkpoint commits on NFS with lock files",
+      "url": "https://github.com/marin-community/marin/pull/10969",
+      "state": "open",
+      "updatedAt": "2026-11-12T23:57:29Z",
+      "mergedAt": null,
+      "comments": 8
+    },
+    {
+      "number": 10980,
+      "title": "[grug] Read Hero length buckets from existing token caches",
+      "url": "https://github.com/marin-community/marin/pull/10980",
+      "state": "closed",
+      "updatedAt": "2026-11-06T04:01:46Z",
+      "mergedAt": "2026-11-06T04:01:44Z",
+      "comments": 10
+    },
+    {
+      "number": 10981,
+      "title": "[eval] Add GenomeQA with subtask scores and an overall macro score",
+      "url": "https://github.com/marin-community/marin/issues/10981",
+      "state": "open",
+      "updatedAt": "2026-11-13T18:47:15Z",
+      "mergedAt": null,
+      "comments": 10
+    },
+    {
+      "number": 10984,
+      "title": "[eval] Add GenomeQA through TaskCompendium",
+      "url": "https://github.com/marin-community/marin/pull/10984",
+      "state": "open",
+      "updatedAt": "2026-11-13T15:44:24Z",
+      "mergedAt": null,
+      "comments": 13
+    },
+    {
+      "number": 10986,
+      "title": "[grug] Make the hero log scaling slope required and add a power",
+      "url": "https://github.com/marin-community/marin/pull/10986",
+      "state": "closed",
+      "updatedAt": "2026-11-09T20:40:33Z",
+      "mergedAt": "2026-11-09T20:40:30Z",
+      "comments": 4
+    },
+    {
+      "number": 10994,
+      "title": "[grug] Keep weights on their devices on the dropless eval move",
+      "url": "https://github.com/marin-community/marin/pull/10994",
+      "state": "closed",
+      "updatedAt": "2026-11-06T03:25:00Z",
+      "mergedAt": "2026-11-06T03:24:57Z",
+      "comments": 2
+    },
+    {
+      "number": 11019,
+      "title": "[belay] Add the Data Belay for testing new training datasets",
+      "url": "https://github.com/marin-community/marin/pull/11019",
+      "state": "open",
+      "updatedAt": "2026-11-13T18:25:20Z",
+      "mergedAt": null,
+      "comments": 18
+    },
+    {
+      "number": 11020,
+      "title": "Browse AgentX baselines and calibrations in Marina",
+      "url": "https://github.com/marin-community/marin/pull/11020",
+      "state": "open",
+      "updatedAt": "2026-11-12T06:52:41Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 11037,
+      "title": "[iris] Write controller job, config and attempt rows to Finelog",
+      "url": "https://github.com/marin-community/marin/pull/11037",
+      "state": "open",
+      "updatedAt": "2026-11-13T19:01:16Z",
+      "mergedAt": null,
+      "comments": 12
+    },
+    {
+      "number": 11041,
+      "title": "[grug] Train the hero at 262K from the merged step-390251 checkpoint",
+      "url": "https://github.com/marin-community/marin/pull/11041",
+      "state": "closed",
+      "updatedAt": "2026-11-06T20:46:22Z",
+      "mergedAt": "2026-11-06T20:37:09Z",
+      "comments": 7
+    },
+    {
+      "number": 11044,
+      "title": "[grug] Make the log-scaled 262K run the hero's recipe and current run",
+      "url": "https://github.com/marin-community/marin/pull/11044",
+      "state": "closed",
+      "updatedAt": "2026-11-09T21:11:25Z",
+      "mergedAt": "2026-11-09T21:11:23Z",
+      "comments": 4
+    },
+    {
+      "number": 11046,
+      "title": "[levanter] Allow JAX 0.12 for the AMD jax_triton kernel fix",
+      "url": "https://github.com/marin-community/marin/pull/11046",
+      "state": "closed",
+      "updatedAt": "2026-11-12T15:00:22Z",
+      "mergedAt": null,
+      "comments": 4
+    },
+    {
+      "number": 11049,
+      "title": "[rl] Add agent protocol probe tasks and an offline fetch tool",
+      "url": "https://github.com/marin-community/marin/pull/11049",
+      "state": "closed",
+      "updatedAt": "2026-11-13T01:11:56Z",
+      "mergedAt": "2026-11-13T01:11:54Z",
+      "comments": 11
+    },
+    {
+      "number": 11052,
+      "title": "[levanter, marin] Add a rocm extra that installs JAX 0.12 on AMD",
+      "url": "https://github.com/marin-community/marin/pull/11052",
+      "state": "closed",
+      "updatedAt": "2026-11-12T15:00:12Z",
+      "mergedAt": "2026-11-12T15:00:09Z",
+      "comments": 1
+    },
+    {
+      "number": 11054,
+      "title": "[eval] Exclude tags with no scored tokens from eval macros",
+      "url": "https://github.com/marin-community/marin/pull/11054",
+      "state": "closed",
+      "updatedAt": "2026-11-06T21:12:35Z",
+      "mergedAt": "2026-11-06T21:12:32Z",
+      "comments": 2
+    },
+    {
+      "number": 11055,
+      "title": "[inference] Draft GitHub issues for poor responses from the dashboard",
+      "url": "https://github.com/marin-community/marin/pull/11055",
+      "state": "open",
+      "updatedAt": "2026-11-13T01:40:26Z",
+      "mergedAt": null,
+      "comments": 5
+    },
+    {
+      "number": 11056,
+      "title": "[hero] Extend the hero run to 262K context",
+      "url": "https://github.com/marin-community/marin/issues/11056",
+      "state": "closed",
+      "updatedAt": "2026-11-09T21:30:24Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 11059,
+      "title": "[eval] Add original PDBThink to vendored Evalchemy",
+      "url": "https://github.com/marin-community/marin/pull/11059",
+      "state": "open",
+      "updatedAt": "2026-11-13T02:03:21Z",
+      "mergedAt": null,
+      "comments": 7
+    },
+    {
+      "number": 11062,
+      "title": "[rl] Run curated closure rows under the assistant-prefix harness",
+      "url": "https://github.com/marin-community/marin/pull/11062",
+      "state": "closed",
+      "updatedAt": "2026-11-13T06:19:47Z",
+      "mergedAt": "2026-11-12T22:41:44Z",
+      "comments": 3
+    },
+    {
+      "number": 11063,
+      "title": "[evals] Add SimpleQA Verified to vendored Evalchemy",
+      "url": "https://github.com/marin-community/marin/pull/11063",
+      "state": "open",
+      "updatedAt": "2026-11-13T17:18:57Z",
+      "mergedAt": null,
+      "comments": 7
+    },
+    {
+      "number": 11065,
+      "title": "[eval] Send benchmark-declared sampling to local endpoints",
+      "url": "https://github.com/marin-community/marin/pull/11065",
+      "state": "closed",
+      "updatedAt": "2026-11-13T02:53:53Z",
+      "mergedAt": null,
+      "comments": 5
+    },
+    {
+      "number": 11066,
+      "title": "[skyrl] Add score centering to PPO with TIS",
+      "url": "https://github.com/marin-community/marin/pull/11066",
+      "state": "open",
+      "updatedAt": "2026-11-12T23:24:17Z",
+      "mergedAt": null,
+      "comments": 5
+    },
+    {
+      "number": 11091,
+      "title": "iris: sandbox pods outlive their killed jobs on cw-rno2a; the leak fills node disks and takes nodes out",
+      "url": "https://github.com/marin-community/marin/issues/11091",
+      "state": "open",
+      "updatedAt": "2026-11-13T07:19:14Z",
+      "mergedAt": null,
+      "comments": 6
+    },
+    {
+      "number": 11104,
+      "title": "[rl] Support colocated expert-block weight sync",
+      "url": "https://github.com/marin-community/marin/pull/11104",
+      "state": "closed",
+      "updatedAt": "2026-11-12T13:27:43Z",
+      "mergedAt": "2026-11-12T13:27:41Z",
+      "comments": 3
+    },
+    {
+      "number": 11107,
+      "title": "[skyrl] Reuse complete checkpoint exports after Iris retries",
+      "url": "https://github.com/marin-community/marin/pull/11107",
+      "state": "closed",
+      "updatedAt": "2026-11-12T19:49:41Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11110,
+      "title": "[taskforge] Add the author stage and its agentic harness",
+      "url": "https://github.com/marin-community/marin/pull/11110",
+      "state": "open",
+      "updatedAt": "2026-11-12T21:40:50Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 11111,
+      "title": "[taskforge] Add the triage, validate and review stages",
+      "url": "https://github.com/marin-community/marin/pull/11111",
+      "state": "open",
+      "updatedAt": "2026-11-12T21:40:45Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 11114,
+      "title": "Alert when a B200 cluster remains underutilized",
+      "url": "https://github.com/marin-community/marin/issues/11114",
+      "state": "closed",
+      "updatedAt": "2026-11-13T08:23:10Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 11115,
+      "title": "Alert on idle GB200 cluster capacity",
+      "url": "https://github.com/marin-community/marin/pull/11115",
+      "state": "closed",
+      "updatedAt": "2026-11-13T08:23:11Z",
+      "mergedAt": "2026-11-13T08:23:09Z",
+      "comments": 5
+    },
+    {
+      "number": 11117,
+      "title": "[sft] Mirror HFModel Hub weights on CPU before training",
+      "url": "https://github.com/marin-community/marin/pull/11117",
+      "state": "open",
+      "updatedAt": "2026-11-12T22:20:36Z",
+      "mergedAt": null,
+      "comments": 4
+    },
+    {
+      "number": 11118,
+      "title": "[rl] Refresh model mirrors and require them on GPU nodes",
+      "url": "https://github.com/marin-community/marin/pull/11118",
+      "state": "closed",
+      "updatedAt": "2026-11-12T01:06:29Z",
+      "mergedAt": null,
+      "comments": 21
+    },
+    {
+      "number": 11119,
+      "title": "[tests] Delete duplicate Zephyr, Fray and Rigging tests",
+      "url": "https://github.com/marin-community/marin/pull/11119",
+      "state": "closed",
+      "updatedAt": "2026-11-12T17:55:42Z",
+      "mergedAt": "2026-11-12T17:55:39Z",
+      "comments": 4
+    },
+    {
+      "number": 11120,
+      "title": "[post-training] Add the Snowball long-loop prototype",
+      "url": "https://github.com/marin-community/marin/pull/11120",
+      "state": "open",
+      "updatedAt": "2026-11-13T19:18:10Z",
+      "mergedAt": null,
+      "comments": 17
+    },
+    {
+      "number": 11122,
+      "title": "[levanter] Count attention-map FLOPs with and without causal masking",
+      "url": "https://github.com/marin-community/marin/pull/11122",
+      "state": "closed",
+      "updatedAt": "2026-11-12T14:36:51Z",
+      "mergedAt": "2026-11-12T14:36:50Z",
+      "comments": 7
+    },
+    {
+      "number": 11123,
+      "title": "[grug] Report FLOPs, step time and MFU from the June synthetic benchmark",
+      "url": "https://github.com/marin-community/marin/pull/11123",
+      "state": "open",
+      "updatedAt": "2026-11-12T15:03:16Z",
+      "mergedAt": null,
+      "comments": 5
+    },
+    {
+      "number": 11124,
+      "title": "[grug] Add a dense synthetic harness for Llama-3 8B and Marin 32B shapes",
+      "url": "https://github.com/marin-community/marin/pull/11124",
+      "state": "open",
+      "updatedAt": "2026-11-12T03:09:27Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 11125,
+      "title": "[grug] Leave the MoE ring padding rows outside every ragged_dot group",
+      "url": "https://github.com/marin-community/marin/pull/11125",
+      "state": "closed",
+      "updatedAt": "2026-11-12T15:08:28Z",
+      "mergedAt": "2026-11-12T15:08:27Z",
+      "comments": 9
+    },
+    {
+      "number": 11126,
+      "title": "[grug] Add an opt-in ring MoE assignment selection without a sort",
+      "url": "https://github.com/marin-community/marin/pull/11126",
+      "state": "closed",
+      "updatedAt": "2026-11-13T19:35:59Z",
+      "mergedAt": null,
+      "comments": 7
+    },
+    {
+      "number": 11127,
+      "title": "[grug] Export, serve and RL-train the log-scaled hero",
+      "url": "https://github.com/marin-community/marin/issues/11127",
+      "state": "open",
+      "updatedAt": "2026-11-11T03:02:41Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11128,
+      "title": "[grug] Export hero log scaling at artifact schema 3",
+      "url": "https://github.com/marin-community/marin/pull/11128",
+      "state": "closed",
+      "updatedAt": "2026-11-10T06:41:02Z",
+      "mergedAt": "2026-11-10T06:40:59Z",
+      "comments": 2
+    },
+    {
+      "number": 11130,
+      "title": "[skyrl] Load Grug routed experts from checkpoint keys",
+      "url": "https://github.com/marin-community/marin/pull/11130",
+      "state": "closed",
+      "updatedAt": "2026-11-12T02:05:46Z",
+      "mergedAt": "2026-11-12T02:05:43Z",
+      "comments": 4
+    },
+    {
+      "number": 11136,
+      "title": "[grug] Add full-model SFT for the hero on the 10.05 mix",
+      "url": "https://github.com/marin-community/marin/pull/11136",
+      "state": "closed",
+      "updatedAt": "2026-11-10T00:50:15Z",
+      "mergedAt": "2026-11-10T00:25:08Z",
+      "comments": 6
+    },
+    {
+      "number": 11139,
+      "title": "[ops] Post Iris jobs active for more than a week to Slack",
+      "url": "https://github.com/marin-community/marin/pull/11139",
+      "state": "open",
+      "updatedAt": "2026-11-13T02:07:56Z",
+      "mergedAt": null,
+      "comments": 5
+    },
+    {
+      "number": 11140,
+      "title": "[grug] Let the June synthetic benchmark repeat a pool of batches",
+      "url": "https://github.com/marin-community/marin/pull/11140",
+      "state": "closed",
+      "updatedAt": "2026-11-12T02:58:58Z",
+      "mergedAt": "2026-11-10T19:51:43Z",
+      "comments": 1
+    },
+    {
+      "number": 11141,
+      "title": "[grug] Add a Pallas q/k head norm and half-RoPE option to the June model",
+      "url": "https://github.com/marin-community/marin/pull/11141",
+      "state": "closed",
+      "updatedAt": "2026-11-13T19:36:02Z",
+      "mergedAt": null,
+      "comments": 9
+    },
+    {
+      "number": 11142,
+      "title": "[grug] Add a custom-VJP RMS norm option to the June MoE model",
+      "url": "https://github.com/marin-community/marin/pull/11142",
+      "state": "closed",
+      "updatedAt": "2026-11-13T19:36:05Z",
+      "mergedAt": null,
+      "comments": 9
+    },
+    {
+      "number": 11143,
+      "title": "[grug] Add Pallas-Triton row gathers for ring_filtered's backward",
+      "url": "https://github.com/marin-community/marin/pull/11143",
+      "state": "open",
+      "updatedAt": "2026-11-12T22:30:12Z",
+      "mergedAt": null,
+      "comments": 7
+    },
+    {
+      "number": 11144,
+      "title": "[grug] Add QB radix-select thresholds and a switch for router diagnostics",
+      "url": "https://github.com/marin-community/marin/pull/11144",
+      "state": "open",
+      "updatedAt": "2026-11-12T02:58:52Z",
+      "mergedAt": null,
+      "comments": 7
+    },
+    {
+      "number": 11145,
+      "title": "[levanter] Write the batched_xla CE weight gradient in place",
+      "url": "https://github.com/marin-community/marin/pull/11145",
+      "state": "open",
+      "updatedAt": "2026-11-13T04:39:39Z",
+      "mergedAt": null,
+      "comments": 9
+    },
+    {
+      "number": 11146,
+      "title": "[grug] Add ring_filtered send-gather and token-sum options",
+      "url": "https://github.com/marin-community/marin/pull/11146",
+      "state": "closed",
+      "updatedAt": "2026-11-13T19:36:09Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 11147,
+      "title": "[grug] Add fused add + RMS norm + GatedNorm options to the June model",
+      "url": "https://github.com/marin-community/marin/pull/11147",
+      "state": "closed",
+      "updatedAt": "2026-11-13T19:36:12Z",
+      "mergedAt": null,
+      "comments": 8
+    },
+    {
+      "number": 11148,
+      "title": "[grug] Add Pallas-Triton routing metadata kernels for ring_filtered",
+      "url": "https://github.com/marin-community/marin/pull/11148",
+      "state": "open",
+      "updatedAt": "2026-11-12T03:03:39Z",
+      "mergedAt": null,
+      "comments": 7
+    },
+    {
+      "number": 11149,
+      "title": "[grug] Balance hero SFT expert load with a static expert placement",
+      "url": "https://github.com/marin-community/marin/pull/11149",
+      "state": "closed",
+      "updatedAt": "2026-11-10T05:59:25Z",
+      "mergedAt": "2026-11-10T05:59:23Z",
+      "comments": 6
+    },
+    {
+      "number": 11150,
+      "title": "[grug] Add June layer-scan options",
+      "url": "https://github.com/marin-community/marin/pull/11150",
+      "state": "closed",
+      "updatedAt": "2026-11-12T18:50:26Z",
+      "mergedAt": "2026-11-12T18:50:26Z",
+      "comments": 7
+    },
+    {
+      "number": 11151,
+      "title": "[grug] Reduce June replicated gradients and routing stats after the scan",
+      "url": "https://github.com/marin-community/marin/pull/11151",
+      "state": "closed",
+      "updatedAt": "2026-11-13T19:36:15Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 11152,
+      "title": "[grug] Carry a compute-dtype parameter copy in the June train state",
+      "url": "https://github.com/marin-community/marin/pull/11152",
+      "state": "closed",
+      "updatedAt": "2026-11-13T19:36:19Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 11153,
+      "title": "[grug] Accumulate June gradients over microbatches",
+      "url": "https://github.com/marin-community/marin/pull/11153",
+      "state": "closed",
+      "updatedAt": "2026-11-13T19:36:22Z",
+      "mergedAt": null,
+      "comments": 4
+    },
+    {
+      "number": 11154,
+      "title": "[grug] Reduce June accumulated gradients once per step",
+      "url": "https://github.com/marin-community/marin/pull/11154",
+      "state": "closed",
+      "updatedAt": "2026-11-13T19:36:25Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 11155,
+      "title": "[grug] Overlap June expert-gradient reductions with the last microbatch",
+      "url": "https://github.com/marin-community/marin/pull/11155",
+      "state": "closed",
+      "updatedAt": "2026-11-13T19:36:28Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 11156,
+      "title": "[grug] Shard June expert optimizer state over the replicas (ZeRO-1)",
+      "url": "https://github.com/marin-community/marin/pull/11156",
+      "state": "closed",
+      "updatedAt": "2026-11-13T19:36:31Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 11157,
+      "title": "[grug] Gather June ZeRO-1 expert weights in the first microbatch",
+      "url": "https://github.com/marin-community/marin/pull/11157",
+      "state": "closed",
+      "updatedAt": "2026-11-13T19:36:36Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 11158,
+      "title": "[grug] Add an option to checkpoint June stacked blocks without prevent_cse",
+      "url": "https://github.com/marin-community/marin/pull/11158",
+      "state": "closed",
+      "updatedAt": "2026-11-13T19:36:39Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 11159,
+      "title": "[grug] Pipeline June step logging and check the loss in the step",
+      "url": "https://github.com/marin-community/marin/pull/11159",
+      "state": "closed",
+      "updatedAt": "2026-11-13T19:36:43Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 11160,
+      "title": "[inference] Prepare Hugging Face weights for direct marin-serve iris",
+      "url": "https://github.com/marin-community/marin/pull/11160",
+      "state": "closed",
+      "updatedAt": "2026-11-12T15:54:23Z",
+      "mergedAt": "2026-11-12T15:54:22Z",
+      "comments": 5
+    },
+    {
+      "number": 11161,
+      "title": "[rl] Mirror Hub models on CPU while retaining node fallback",
+      "url": "https://github.com/marin-community/marin/pull/11161",
+      "state": "closed",
+      "updatedAt": "2026-11-12T01:06:53Z",
+      "mergedAt": "2026-11-12T01:06:51Z",
+      "comments": 11
+    },
+    {
+      "number": 11164,
+      "title": "[grug] Default the hero SFT capacity factor to 1.625",
+      "url": "https://github.com/marin-community/marin/pull/11164",
+      "state": "closed",
+      "updatedAt": "2026-11-10T06:28:49Z",
+      "mergedAt": "2026-11-10T06:28:46Z",
+      "comments": 2
+    },
+    {
+      "number": 11165,
+      "title": "[iac] Restore the hero-* checkpoint deletion deny",
+      "url": "https://github.com/marin-community/marin/pull/11165",
+      "state": "closed",
+      "updatedAt": "2026-11-10T18:14:11Z",
+      "mergedAt": "2026-11-10T18:14:08Z",
+      "comments": 3
+    },
+    {
+      "number": 11169,
+      "title": "Week of November 2, 2026 standup",
+      "url": "https://github.com/marin-community/marin/issues/11169",
+      "state": "open",
+      "updatedAt": "2026-11-10T14:22:36Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11176,
+      "title": "[finelog] Forward rows named for the sender's own cluster",
+      "url": "https://github.com/marin-community/marin/pull/11176",
+      "state": "closed",
+      "updatedAt": "2026-11-12T16:59:33Z",
+      "mergedAt": "2026-11-12T16:59:31Z",
+      "comments": 3
+    },
+    {
+      "number": 11181,
+      "title": "Experiment: evaluate Marin Hero on variant effect prediction",
+      "url": "https://github.com/marin-community/marin/issues/11181",
+      "state": "open",
+      "updatedAt": "2026-11-13T19:12:42Z",
+      "mergedAt": null,
+      "comments": 8
+    },
+    {
+      "number": 11182,
+      "title": "[iris] Admit Snowball parity CI to cw-us-east-02a",
+      "url": "https://github.com/marin-community/marin/pull/11182",
+      "state": "open",
+      "updatedAt": "2026-11-13T07:52:03Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 11184,
+      "title": "[finelog] Prune segments by catalog min/max of flagged columns",
+      "url": "https://github.com/marin-community/marin/pull/11184",
+      "state": "open",
+      "updatedAt": "2026-11-13T16:44:58Z",
+      "mergedAt": null,
+      "comments": 6
+    },
+    {
+      "number": 11188,
+      "title": "[sft] Data review of the 10.05 SFT mix: flaws in a 7,503-document sample",
+      "url": "https://github.com/marin-community/marin/issues/11188",
+      "state": "open",
+      "updatedAt": "2026-11-13T05:45:53Z",
+      "mergedAt": null,
+      "comments": 6
+    },
+    {
+      "number": 11189,
+      "title": "[grug] Hand off hero SFT to another rack count",
+      "url": "https://github.com/marin-community/marin/pull/11189",
+      "state": "closed",
+      "updatedAt": "2026-11-13T01:32:57Z",
+      "mergedAt": null,
+      "comments": 12
+    },
+    {
+      "number": 11190,
+      "title": "[RL] Explain the extra rollout wait in the Snowball FP8 run",
+      "url": "https://github.com/marin-community/marin/issues/11190",
+      "state": "open",
+      "updatedAt": "2026-11-13T03:08:06Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 11191,
+      "title": "Mochi e2e post-training run #1",
+      "url": "https://github.com/marin-community/marin/issues/11191",
+      "state": "open",
+      "updatedAt": "2026-11-11T03:41:06Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11192,
+      "title": "[iris] Grant submitter access to the shared H100 clusters",
+      "url": "https://github.com/marin-community/marin/pull/11192",
+      "state": "closed",
+      "updatedAt": "2026-11-12T02:35:58Z",
+      "mergedAt": "2026-11-11T20:41:36Z",
+      "comments": 2
+    },
+    {
+      "number": 11198,
+      "title": "[task-curation] Add an RL Data Atlas dataset guide and Iris defaults",
+      "url": "https://github.com/marin-community/marin/pull/11198",
+      "state": "closed",
+      "updatedAt": "2026-11-13T15:25:48Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11199,
+      "title": "[rl] Add an experimental Mochi schema-3 MuonH runtime",
+      "url": "https://github.com/marin-community/marin/pull/11199",
+      "state": "open",
+      "updatedAt": "2026-11-12T15:12:05Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11200,
+      "title": "[catalog] Require measured snapshot counts for Daytona-safety verdicts",
+      "url": "https://github.com/marin-community/marin/pull/11200",
+      "state": "closed",
+      "updatedAt": "2026-11-12T10:36:58Z",
+      "mergedAt": "2026-11-12T10:36:54Z",
+      "comments": 8
+    },
+    {
+      "number": 11202,
+      "title": "[shellbox] Centralize Daytona snapshot identity and reclamation",
+      "url": "https://github.com/marin-community/marin/pull/11202",
+      "state": "closed",
+      "updatedAt": "2026-11-13T10:59:03Z",
+      "mergedAt": "2026-11-13T10:59:00Z",
+      "comments": 20
+    },
+    {
+      "number": 11206,
+      "title": "Test Grug routed-expert checkpoint layout selection",
+      "url": "https://github.com/marin-community/marin/pull/11206",
+      "state": "closed",
+      "updatedAt": "2026-11-13T11:25:16Z",
+      "mergedAt": "2026-11-13T11:25:15Z",
+      "comments": 4
+    },
+    {
+      "number": 11210,
+      "title": "Reuse verified Hugging Face checkpoint exports on retry",
+      "url": "https://github.com/marin-community/marin/pull/11210",
+      "state": "open",
+      "updatedAt": "2026-11-12T16:02:21Z",
+      "mergedAt": null,
+      "comments": 4
+    },
+    {
+      "number": 11220,
+      "title": "[ci] Run the Snowball parity H100 leg on cw-rno2a as github-iris",
+      "url": "https://github.com/marin-community/marin/pull/11220",
+      "state": "closed",
+      "updatedAt": "2026-11-12T14:52:37Z",
+      "mergedAt": "2026-11-12T14:52:34Z",
+      "comments": 3
+    },
+    {
+      "number": 11221,
+      "title": "Preserve task environments and require verifier execution evidence",
+      "url": "https://github.com/marin-community/marin/pull/11221",
+      "state": "closed",
+      "updatedAt": "2026-11-13T13:14:07Z",
+      "mergedAt": "2026-11-13T13:14:04Z",
+      "comments": 6
+    },
+    {
+      "number": 11222,
+      "title": "[taskcompendium] Add a trivial-reply floor audit for evaluation corpora",
+      "url": "https://github.com/marin-community/marin/pull/11222",
+      "state": "open",
+      "updatedAt": "2026-11-12T00:00:12Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11223,
+      "title": "[eval] Regrade stored model responses on republished corpora",
+      "url": "https://github.com/marin-community/marin/pull/11223",
+      "state": "open",
+      "updatedAt": "2026-11-13T06:02:18Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11224,
+      "title": "[eval] Report length stops in evaluation result roots",
+      "url": "https://github.com/marin-community/marin/pull/11224",
+      "state": "open",
+      "updatedAt": "2026-11-13T06:01:02Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11225,
+      "title": "[skyrl] Honor recipe special-token and stop-token settings",
+      "url": "https://github.com/marin-community/marin/pull/11225",
+      "state": "closed",
+      "updatedAt": "2026-11-12T00:34:50Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11226,
+      "title": "[eval] GSM8K extraction returns [invalid] when reasoning restates the question",
+      "url": "https://github.com/marin-community/marin/issues/11226",
+      "state": "open",
+      "updatedAt": "2026-11-12T11:55:02Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 11228,
+      "title": "[canary-hero-gb200] Kueue preemptions exhaust the Actions wait",
+      "url": "https://github.com/marin-community/marin/issues/11228",
+      "state": "open",
+      "updatedAt": "2026-11-12T11:55:28Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11229,
+      "title": "[skyrl] Honor recipe special-token and stop-token settings",
+      "url": "https://github.com/marin-community/marin/pull/11229",
+      "state": "closed",
+      "updatedAt": "2026-11-12T01:44:22Z",
+      "mergedAt": "2026-11-12T01:42:59Z",
+      "comments": 1
+    },
+    {
+      "number": 11230,
+      "title": "[skyrl] Remove dedicated SGLang support",
+      "url": "https://github.com/marin-community/marin/pull/11230",
+      "state": "closed",
+      "updatedAt": "2026-11-12T12:19:40Z",
+      "mergedAt": "2026-11-12T12:19:40Z",
+      "comments": 1
+    },
+    {
+      "number": 11231,
+      "title": "Preserve archived Python-test environments in new source versions",
+      "url": "https://github.com/marin-community/marin/pull/11231",
+      "state": "closed",
+      "updatedAt": "2026-11-12T02:24:06Z",
+      "mergedAt": "2026-11-12T02:24:04Z",
+      "comments": 1
+    },
+    {
+      "number": 11232,
+      "title": "[skyrl] Preserve requested turn terminators in chat replies",
+      "url": "https://github.com/marin-community/marin/pull/11232",
+      "state": "open",
+      "updatedAt": "2026-11-12T02:42:15Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11233,
+      "title": "[grug] Compute the June half-RoPE without splitting head_dim",
+      "url": "https://github.com/marin-community/marin/pull/11233",
+      "state": "open",
+      "updatedAt": "2026-11-12T19:28:54Z",
+      "mergedAt": null,
+      "comments": 7
+    },
+    {
+      "number": 11234,
+      "title": "[task-curation] Add miniF2F and PutnamBench as Lean evals",
+      "url": "https://github.com/marin-community/marin/pull/11234",
+      "state": "open",
+      "updatedAt": "2026-11-12T06:06:35Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11235,
+      "title": "[skyrl] Preserve Harbor trajectories after context rejection",
+      "url": "https://github.com/marin-community/marin/pull/11235",
+      "state": "closed",
+      "updatedAt": "2026-11-12T05:56:51Z",
+      "mergedAt": "2026-11-12T05:56:06Z",
+      "comments": 2
+    },
+    {
+      "number": 11236,
+      "title": "Score absent pytest task modules and admit e2egit-v2",
+      "url": "https://github.com/marin-community/marin/pull/11236",
+      "state": "closed",
+      "updatedAt": "2026-11-12T04:23:02Z",
+      "mergedAt": "2026-11-12T04:22:34Z",
+      "comments": 1
+    },
+    {
+      "number": 11237,
+      "title": "Pin archived stdio images and preserve verifier outcomes",
+      "url": "https://github.com/marin-community/marin/pull/11237",
+      "state": "closed",
+      "updatedAt": "2026-11-13T15:25:37Z",
+      "mergedAt": null,
+      "comments": 7
+    },
+    {
+      "number": 11238,
+      "title": "Register controlled SWE-smith packages for native Harbor",
+      "url": "https://github.com/marin-community/marin/pull/11238",
+      "state": "closed",
+      "updatedAt": "2026-11-13T15:25:40Z",
+      "mergedAt": null,
+      "comments": 6
+    },
+    {
+      "number": 11239,
+      "title": "[rolloutengine] Let harnesses select context recovery",
+      "url": "https://github.com/marin-community/marin/pull/11239",
+      "state": "open",
+      "updatedAt": "2026-11-13T09:42:24Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11240,
+      "title": "[long-loop] Equal verifier deadlines suppress SWE timeout verdicts",
+      "url": "https://github.com/marin-community/marin/issues/11240",
+      "state": "open",
+      "updatedAt": "2026-11-12T10:11:54Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11241,
+      "title": "Adopt vLLM 0ac9dcb for standalone GPU serving",
+      "url": "https://github.com/marin-community/marin/pull/11241",
+      "state": "open",
+      "updatedAt": "2026-11-13T14:40:40Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11242,
+      "title": "Define judge tiers and serialize their execution settings",
+      "url": "https://github.com/marin-community/marin/pull/11242",
+      "state": "open",
+      "updatedAt": "2026-11-12T14:46:53Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 11243,
+      "title": "resume the hero canary queue deadline after Kueue preemption",
+      "url": "https://github.com/marin-community/marin/pull/11243",
+      "state": "open",
+      "updatedAt": "2026-11-12T11:59:53Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11244,
+      "title": "[atlas] Require ingestion metadata and restore source browsing",
+      "url": "https://github.com/marin-community/marin/pull/11244",
+      "state": "closed",
+      "updatedAt": "2026-11-13T15:25:44Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 11245,
+      "title": "Pin reply-source judges and repair TaskTrove oracle staging",
+      "url": "https://github.com/marin-community/marin/pull/11245",
+      "state": "closed",
+      "updatedAt": "2026-11-12T17:18:34Z",
+      "mergedAt": "2026-11-12T17:18:32Z",
+      "comments": 0
+    },
+    {
+      "number": 11246,
+      "title": "[rl] Add a local-judge callback to terminate long drain tails",
+      "url": "https://github.com/marin-community/marin/issues/11246",
+      "state": "open",
+      "updatedAt": "2026-11-12T13:54:04Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11247,
+      "title": "[inference] Authenticate CPU preparation with explicit HF secrets",
+      "url": "https://github.com/marin-community/marin/pull/11247",
+      "state": "closed",
+      "updatedAt": "2026-11-12T15:01:49Z",
+      "mergedAt": "2026-11-12T15:01:47Z",
+      "comments": 0
+    },
+    {
+      "number": 11248,
+      "title": "Survey Atlas backends and flag overlapping sources",
+      "url": "https://github.com/marin-community/marin/pull/11248",
+      "state": "closed",
+      "updatedAt": "2026-11-12T17:12:04Z",
+      "mergedAt": "2026-11-12T17:12:02Z",
+      "comments": 0
+    },
+    {
+      "number": 11249,
+      "title": "[datakit] Report which dataset records occur verbatim in the hero store",
+      "url": "https://github.com/marin-community/marin/pull/11249",
+      "state": "open",
+      "updatedAt": "2026-11-12T15:09:59Z",
+      "mergedAt": null,
+      "comments": 5
+    },
+    {
+      "number": 11250,
+      "title": "[task-curation] Give published cohorts a QUICK converted view",
+      "url": "https://github.com/marin-community/marin/pull/11250",
+      "state": "closed",
+      "updatedAt": "2026-11-12T17:09:56Z",
+      "mergedAt": "2026-11-12T17:09:54Z",
+      "comments": 1
+    },
+    {
+      "number": 11251,
+      "title": "[atlas] Fix the getting-started guide from its cold-read review",
+      "url": "https://github.com/marin-community/marin/pull/11251",
+      "state": "closed",
+      "updatedAt": "2026-11-12T15:03:23Z",
+      "mergedAt": "2026-11-12T15:03:21Z",
+      "comments": 0
+    },
+    {
+      "number": 11252,
+      "title": "[atlas] QA and privately publish eight TaskTrove cohorts",
+      "url": "https://github.com/marin-community/marin/pull/11252",
+      "state": "closed",
+      "updatedAt": "2026-11-12T17:21:58Z",
+      "mergedAt": "2026-11-12T17:21:56Z",
+      "comments": 0
+    },
+    {
+      "number": 11253,
+      "title": "[skyrl] Move checkpoint Hub publication off GPU jobs",
+      "url": "https://github.com/marin-community/marin/pull/11253",
+      "state": "open",
+      "updatedAt": "2026-11-12T20:48:27Z",
+      "mergedAt": null,
+      "comments": 6
+    },
+    {
+      "number": 11254,
+      "title": "[marina] Add a model scorecard for policy eval results",
+      "url": "https://github.com/marin-community/marin/pull/11254",
+      "state": "closed",
+      "updatedAt": "2026-11-12T19:01:33Z",
+      "mergedAt": "2026-11-12T19:01:30Z",
+      "comments": 8
+    },
+    {
+      "number": 11255,
+      "title": "[canary-datakit-smoke] Perf report timeout fails a succeeded ferry",
+      "url": "https://github.com/marin-community/marin/issues/11255",
+      "state": "open",
+      "updatedAt": "2026-11-12T16:40:16Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 11256,
+      "title": "[harbor] Daytona cleanup breaks TB2 verification and leaves trials unscored",
+      "url": "https://github.com/marin-community/marin/issues/11256",
+      "state": "open",
+      "updatedAt": "2026-11-12T17:10:41Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11257,
+      "title": "Bind Atlas source identity and releases to measured evidence",
+      "url": "https://github.com/marin-community/marin/pull/11257",
+      "state": "closed",
+      "updatedAt": "2026-11-12T18:11:21Z",
+      "mergedAt": "2026-11-12T18:11:19Z",
+      "comments": 0
+    },
+    {
+      "number": 11258,
+      "title": "Calibrate task resources in the full-population oracle filter",
+      "url": "https://github.com/marin-community/marin/pull/11258",
+      "state": "closed",
+      "updatedAt": "2026-11-12T18:18:58Z",
+      "mergedAt": "2026-11-12T18:18:56Z",
+      "comments": 0
+    },
+    {
+      "number": 11259,
+      "title": "Recover retired native Harbor sources through private QUICK conversion",
+      "url": "https://github.com/marin-community/marin/pull/11259",
+      "state": "closed",
+      "updatedAt": "2026-11-12T18:27:36Z",
+      "mergedAt": "2026-11-12T18:27:34Z",
+      "comments": 0
+    },
+    {
+      "number": 11260,
+      "title": "[levanter] Add RMNPH and a Qwen3-130M reproduction recipe",
+      "url": "https://github.com/marin-community/marin/pull/11260",
+      "state": "open",
+      "updatedAt": "2026-11-12T18:33:29Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11261,
+      "title": "Preserve Daytona verdicts for the deployed Atlas renderer",
+      "url": "https://github.com/marin-community/marin/pull/11261",
+      "state": "closed",
+      "updatedAt": "2026-11-12T18:22:13Z",
+      "mergedAt": "2026-11-12T18:22:11Z",
+      "comments": 0
+    },
+    {
+      "number": 11262,
+      "title": "Protect non-Python SHARED grading with native integrity contracts",
+      "url": "https://github.com/marin-community/marin/pull/11262",
+      "state": "closed",
+      "updatedAt": "2026-11-12T18:31:41Z",
+      "mergedAt": "2026-11-12T18:31:39Z",
+      "comments": 0
+    },
+    {
+      "number": 11263,
+      "title": "[canary-datakit-tier2] Perf report timeout fails succeeded ferry",
+      "url": "https://github.com/marin-community/marin/issues/11263",
+      "state": "open",
+      "updatedAt": "2026-11-12T18:06:03Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 11264,
+      "title": "Measure Atlas lexical overlap and declared execution requirements",
+      "url": "https://github.com/marin-community/marin/pull/11264",
+      "state": "closed",
+      "updatedAt": "2026-11-12T18:33:45Z",
+      "mergedAt": "2026-11-12T18:33:43Z",
+      "comments": 0
+    },
+    {
+      "number": 11265,
+      "title": "[finelog] Hub FetchLogs deadlines fail successful SkyRL nightly gate",
+      "url": "https://github.com/marin-community/marin/issues/11265",
+      "state": "open",
+      "updatedAt": "2026-11-12T18:22:01Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 11266,
+      "title": "Bind actor census receipts for 59 native QUICK releases",
+      "url": "https://github.com/marin-community/marin/pull/11266",
+      "state": "closed",
+      "updatedAt": "2026-11-12T18:43:40Z",
+      "mergedAt": "2026-11-12T18:43:38Z",
+      "comments": 0
+    },
+    {
+      "number": 11267,
+      "title": "Bind Atlas actor censuses to exact source and converter versions",
+      "url": "https://github.com/marin-community/marin/pull/11267",
+      "state": "closed",
+      "updatedAt": "2026-11-12T18:49:02Z",
+      "mergedAt": "2026-11-12T18:49:00Z",
+      "comments": 0
+    },
+    {
+      "number": 11268,
+      "title": "Measure benchmark overlap without dropping evaluation tasks",
+      "url": "https://github.com/marin-community/marin/pull/11268",
+      "state": "closed",
+      "updatedAt": "2026-11-12T19:16:46Z",
+      "mergedAt": "2026-11-12T19:16:44Z",
+      "comments": 0
+    },
+    {
+      "number": 11269,
+      "title": "Restore five reply sources from private QUICK releases",
+      "url": "https://github.com/marin-community/marin/pull/11269",
+      "state": "closed",
+      "updatedAt": "2026-11-12T19:13:28Z",
+      "mergedAt": "2026-11-12T19:13:27Z",
+      "comments": 0
+    },
+    {
+      "number": 11270,
+      "title": "Keep Atlas census imports independent of optional runtimes",
+      "url": "https://github.com/marin-community/marin/pull/11270",
+      "state": "closed",
+      "updatedAt": "2026-11-12T19:24:27Z",
+      "mergedAt": "2026-11-12T19:24:26Z",
+      "comments": 0
+    },
+    {
+      "number": 11271,
+      "title": "Keep declared training Use despite benchmark taxonomy tags",
+      "url": "https://github.com/marin-community/marin/pull/11271",
+      "state": "closed",
+      "updatedAt": "2026-11-12T19:46:25Z",
+      "mergedAt": "2026-11-12T19:46:23Z",
+      "comments": 0
+    },
+    {
+      "number": 11272,
+      "title": "Publish refreshed integrity summaries for measured Atlas inputs",
+      "url": "https://github.com/marin-community/marin/pull/11272",
+      "state": "closed",
+      "updatedAt": "2026-11-12T19:48:07Z",
+      "mergedAt": "2026-11-12T19:48:05Z",
+      "comments": 0
+    },
+    {
+      "number": 11273,
+      "title": "Keep consumer demand classifications in TaskCompendium",
+      "url": "https://github.com/marin-community/marin/pull/11273",
+      "state": "closed",
+      "updatedAt": "2026-11-12T19:49:40Z",
+      "mergedAt": "2026-11-12T19:49:39Z",
+      "comments": 0
+    },
+    {
+      "number": 11274,
+      "title": "[skyrl] Align typed recipes with sampling and engine defaults",
+      "url": "https://github.com/marin-community/marin/pull/11274",
+      "state": "closed",
+      "updatedAt": "2026-11-12T20:56:31Z",
+      "mergedAt": "2026-11-12T20:56:29Z",
+      "comments": 2
+    },
+    {
+      "number": 11275,
+      "title": "[shellbox] Add process scopes for delegated local cgroups",
+      "url": "https://github.com/marin-community/marin/pull/11275",
+      "state": "closed",
+      "updatedAt": "2026-11-12T21:19:10Z",
+      "mergedAt": "2026-11-12T21:19:06Z",
+      "comments": 6
+    },
+    {
+      "number": 11276,
+      "title": "Preserve pytest startup diagnostics in Python 3.9 guests",
+      "url": "https://github.com/marin-community/marin/pull/11276",
+      "state": "closed",
+      "updatedAt": "2026-11-12T20:15:15Z",
+      "mergedAt": "2026-11-12T20:15:14Z",
+      "comments": 0
+    },
+    {
+      "number": 11277,
+      "title": "Consolidate Atlas ingestion, qualification and evidence",
+      "url": "https://github.com/marin-community/marin/pull/11277",
+      "state": "open",
+      "updatedAt": "2026-11-13T19:31:53Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11278,
+      "title": "Record SOURCE_ENV_INCOMPATIBLE_WITH_GRADER exclusions",
+      "url": "https://github.com/marin-community/marin/pull/11278",
+      "state": "closed",
+      "updatedAt": "2026-11-13T00:14:19Z",
+      "mergedAt": "2026-11-13T00:04:52Z",
+      "comments": 3
+    },
+    {
+      "number": 11279,
+      "title": "[finelog] Encode exact index sections without copying the sidecar",
+      "url": "https://github.com/marin-community/marin/pull/11279",
+      "state": "open",
+      "updatedAt": "2026-11-13T17:10:43Z",
+      "mergedAt": null,
+      "comments": 5
+    },
+    {
+      "number": 11280,
+      "title": "Pin the QA reviewer to the heavy judge tier",
+      "url": "https://github.com/marin-community/marin/pull/11280",
+      "state": "closed",
+      "updatedAt": "2026-11-13T00:16:04Z",
+      "mergedAt": "2026-11-13T00:16:02Z",
+      "comments": 5
+    },
+    {
+      "number": 11281,
+      "title": "Register lexical measurements against canonical Atlas inputs",
+      "url": "https://github.com/marin-community/marin/pull/11281",
+      "state": "closed",
+      "updatedAt": "2026-11-12T22:55:59Z",
+      "mergedAt": "2026-11-12T22:29:08Z",
+      "comments": 3
+    },
+    {
+      "number": 11282,
+      "title": "Preserve Daytona diagnostics when output capture fails",
+      "url": "https://github.com/marin-community/marin/pull/11282",
+      "state": "closed",
+      "updatedAt": "2026-11-12T23:38:16Z",
+      "mergedAt": "2026-11-12T23:36:40Z",
+      "comments": 1
+    },
+    {
+      "number": 11283,
+      "title": "Deduplicate source task contracts before curation",
+      "url": "https://github.com/marin-community/marin/pull/11283",
+      "state": "closed",
+      "updatedAt": "2026-11-12T23:52:04Z",
+      "mergedAt": "2026-11-12T23:31:21Z",
+      "comments": 3
+    },
+    {
+      "number": 11284,
+      "title": "Preserve oracle history across approved infrastructure retries",
+      "url": "https://github.com/marin-community/marin/pull/11284",
+      "state": "closed",
+      "updatedAt": "2026-11-13T00:45:11Z",
+      "mergedAt": "2026-11-13T00:27:51Z",
+      "comments": 3
+    },
+    {
+      "number": 11285,
+      "title": "Adopt vLLM head for TPU serving",
+      "url": "https://github.com/marin-community/marin/pull/11285",
+      "state": "open",
+      "updatedAt": "2026-11-12T23:55:07Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11286,
+      "title": "Review retained Atlas content with pinned local GLM inference",
+      "url": "https://github.com/marin-community/marin/pull/11286",
+      "state": "closed",
+      "updatedAt": "2026-11-13T01:56:00Z",
+      "mergedAt": "2026-11-13T01:18:46Z",
+      "comments": 3
+    },
+    {
+      "number": 11287,
+      "title": "Preserve source semantics in shared SWE grading",
+      "url": "https://github.com/marin-community/marin/pull/11287",
+      "state": "closed",
+      "updatedAt": "2026-11-13T01:02:59Z",
+      "mergedAt": "2026-11-13T00:52:31Z",
+      "comments": 3
+    },
+    {
+      "number": 11288,
+      "title": "[grug] Shard expert RNG at initialization",
+      "url": "https://github.com/marin-community/marin/pull/11288",
+      "state": "open",
+      "updatedAt": "2026-11-13T00:18:22Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 11289,
+      "title": "[iris] Superseded PREEMPTED attempts keep worker capacity reserved",
+      "url": "https://github.com/marin-community/marin/issues/11289",
+      "state": "open",
+      "updatedAt": "2026-11-13T04:47:54Z",
+      "mergedAt": null,
+      "comments": 5
+    },
+    {
+      "number": 11290,
+      "title": "Align oracle exclusion documentation and retry expectations",
+      "url": "https://github.com/marin-community/marin/pull/11290",
+      "state": "closed",
+      "updatedAt": "2026-11-13T01:34:01Z",
+      "mergedAt": "2026-11-13T01:33:58Z",
+      "comments": 2
+    },
+    {
+      "number": 11291,
+      "title": "Avoid duplicating large Harbor shell commands",
+      "url": "https://github.com/marin-community/marin/pull/11291",
+      "state": "closed",
+      "updatedAt": "2026-11-13T01:29:51Z",
+      "mergedAt": "2026-11-13T01:28:08Z",
+      "comments": 1
+    },
+    {
+      "number": 11292,
+      "title": "[skyrl] Centralize backend validation and simplify remote inference",
+      "url": "https://github.com/marin-community/marin/pull/11292",
+      "state": "closed",
+      "updatedAt": "2026-11-13T01:19:58Z",
+      "mergedAt": "2026-11-13T01:14:55Z",
+      "comments": 2
+    },
+    {
+      "number": 11293,
+      "title": "[grug] Shard Splash segment IDs and mask metadata",
+      "url": "https://github.com/marin-community/marin/pull/11293",
+      "state": "open",
+      "updatedAt": "2026-11-13T01:23:53Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 11294,
+      "title": "Start self-hosted reviewers with staged multi-host weights",
+      "url": "https://github.com/marin-community/marin/pull/11294",
+      "state": "closed",
+      "updatedAt": "2026-11-13T02:14:05Z",
+      "mergedAt": "2026-11-13T02:12:20Z",
+      "comments": 1
+    },
+    {
+      "number": 11295,
+      "title": "Drop redundant full-QC review cases",
+      "url": "https://github.com/marin-community/marin/pull/11295",
+      "state": "closed",
+      "updatedAt": "2026-11-13T01:59:47Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 11296,
+      "title": "Drop redundant full-QC quality variants",
+      "url": "https://github.com/marin-community/marin/pull/11296",
+      "state": "closed",
+      "updatedAt": "2026-11-13T07:50:16Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11297,
+      "title": "Bump basic-ftp from 5.3.1 to removed in /infra/grafana/marin-infra-panel in the npm-security group across 1 directory",
+      "url": "https://github.com/marin-community/marin/pull/11297",
+      "state": "closed",
+      "updatedAt": "2026-11-13T07:48:16Z",
+      "mergedAt": "2026-11-13T07:48:14Z",
+      "comments": 1
+    },
+    {
+      "number": 11298,
+      "title": "Bound verifier resource measurements on the host",
+      "url": "https://github.com/marin-community/marin/pull/11298",
+      "state": "closed",
+      "updatedAt": "2026-11-13T02:25:43Z",
+      "mergedAt": "2026-11-13T02:24:00Z",
+      "comments": 1
+    },
+    {
+      "number": 11299,
+      "title": "[rl] Allow cross-host expert-parallel resource planning",
+      "url": "https://github.com/marin-community/marin/pull/11299",
+      "state": "open",
+      "updatedAt": "2026-11-13T19:24:29Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11300,
+      "title": "Use a common KV block size for GLM pipeline workers",
+      "url": "https://github.com/marin-community/marin/pull/11300",
+      "state": "closed",
+      "updatedAt": "2026-11-13T02:33:10Z",
+      "mergedAt": "2026-11-13T02:31:39Z",
+      "comments": 1
+    },
+    {
+      "number": 11301,
+      "title": "[rl] Match Hero EP MuonH updates and checkpoint recipes",
+      "url": "https://github.com/marin-community/marin/pull/11301",
+      "state": "open",
+      "updatedAt": "2026-11-13T04:46:42Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11302,
+      "title": "Preserve frozen pytest entrypoint names and loading order",
+      "url": "https://github.com/marin-community/marin/pull/11302",
+      "state": "closed",
+      "updatedAt": "2026-11-13T03:56:08Z",
+      "mergedAt": "2026-11-13T03:45:34Z",
+      "comments": 3
+    },
+    {
+      "number": 11303,
+      "title": "Shard retained reviews and assemble complete source evidence",
+      "url": "https://github.com/marin-community/marin/pull/11303",
+      "state": "closed",
+      "updatedAt": "2026-11-13T04:31:29Z",
+      "mergedAt": "2026-11-13T04:17:53Z",
+      "comments": 3
+    },
+    {
+      "number": 11304,
+      "title": "Bound trial output transfers before grading",
+      "url": "https://github.com/marin-community/marin/pull/11304",
+      "state": "closed",
+      "updatedAt": "2026-11-13T04:30:13Z",
+      "mergedAt": "2026-11-13T04:05:37Z",
+      "comments": 3
+    },
+    {
+      "number": 11305,
+      "title": "[rl] Start SkyRL attempt ids with a letter so YAML reads them as text",
+      "url": "https://github.com/marin-community/marin/pull/11305",
+      "state": "open",
+      "updatedAt": "2026-11-13T06:37:46Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 11306,
+      "title": "Pin private deduplicated and decontaminated releases",
+      "url": "https://github.com/marin-community/marin/pull/11306",
+      "state": "closed",
+      "updatedAt": "2026-11-13T08:08:41Z",
+      "mergedAt": "2026-11-13T07:53:34Z",
+      "comments": 3
+    },
+    {
+      "number": 11307,
+      "title": "Adopt vLLM GPU wheels in SkyRL with stock Megatron",
+      "url": "https://github.com/marin-community/marin/pull/11307",
+      "state": "open",
+      "updatedAt": "2026-11-13T17:44:15Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 11308,
+      "title": "Remove stale artifact timeout rationale",
+      "url": "https://github.com/marin-community/marin/pull/11308",
+      "state": "closed",
+      "updatedAt": "2026-11-13T09:19:52Z",
+      "mergedAt": "2026-11-13T09:19:49Z",
+      "comments": 2
+    },
+    {
+      "number": 11309,
+      "title": "Stage pinned CrossCode Python qualification contracts",
+      "url": "https://github.com/marin-community/marin/pull/11309",
+      "state": "closed",
+      "updatedAt": "2026-11-13T05:44:16Z",
+      "mergedAt": "2026-11-13T05:17:48Z",
+      "comments": 3
+    },
+    {
+      "number": 11310,
+      "title": "[curation] Reviewer mistakes implicit answer staging for a task defect",
+      "url": "https://github.com/marin-community/marin/issues/11310",
+      "state": "open",
+      "updatedAt": "2026-11-13T06:05:29Z",
+      "mergedAt": null,
+      "comments": 11
+    },
+    {
+      "number": 11311,
+      "title": "[shellbox] Run local sandboxes on NixOS",
+      "url": "https://github.com/marin-community/marin/pull/11311",
+      "state": "closed",
+      "updatedAt": "2026-11-13T08:23:45Z",
+      "mergedAt": "2026-11-13T08:23:45Z",
+      "comments": 4
+    },
+    {
+      "number": 11312,
+      "title": "[eval] Seed GPU evaluation runs by default and set Snowball temperature",
+      "url": "https://github.com/marin-community/marin/pull/11312",
+      "state": "open",
+      "updatedAt": "2026-11-13T19:43:00Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 11313,
+      "title": "[iris] Release capacity held by superseded preempted attempts",
+      "url": "https://github.com/marin-community/marin/pull/11313",
+      "state": "open",
+      "updatedAt": "2026-11-13T18:47:38Z",
+      "mergedAt": null,
+      "comments": 6
+    },
+    {
+      "number": 11314,
+      "title": "Stage Daytona command wrappers to avoid argument overflow",
+      "url": "https://github.com/marin-community/marin/pull/11314",
+      "state": "closed",
+      "updatedAt": "2026-11-13T05:22:59Z",
+      "mergedAt": "2026-11-13T05:21:03Z",
+      "comments": 1
+    },
+    {
+      "number": 11315,
+      "title": "Load protected SWE bootstrap metadata from setup files",
+      "url": "https://github.com/marin-community/marin/pull/11315",
+      "state": "closed",
+      "updatedAt": "2026-11-13T05:37:26Z",
+      "mergedAt": "2026-11-13T05:35:22Z",
+      "comments": 1
+    },
+    {
+      "number": 11316,
+      "title": "Explain automatic answer staging to the quality reviewer",
+      "url": "https://github.com/marin-community/marin/pull/11316",
+      "state": "closed",
+      "updatedAt": "2026-11-13T06:20:07Z",
+      "mergedAt": "2026-11-13T06:08:58Z",
+      "comments": 3
+    },
+    {
+      "number": 11317,
+      "title": "Keep each SkyRL trainer and inference engine within one NVLink domain",
+      "url": "https://github.com/marin-community/marin/pull/11317",
+      "state": "open",
+      "updatedAt": "2026-11-13T19:48:47Z",
+      "mergedAt": null,
+      "comments": 5
+    },
+    {
+      "number": 11318,
+      "title": "Deslop CrossCode qualification tests",
+      "url": "https://github.com/marin-community/marin/pull/11318",
+      "state": "closed",
+      "updatedAt": "2026-11-13T09:19:33Z",
+      "mergedAt": "2026-11-13T09:19:31Z",
+      "comments": 1
+    },
+    {
+      "number": 11319,
+      "title": "Preserve Daytona failures when sandbox deletion also fails",
+      "url": "https://github.com/marin-community/marin/pull/11319",
+      "state": "closed",
+      "updatedAt": "2026-11-13T06:05:03Z",
+      "mergedAt": "2026-11-13T06:03:32Z",
+      "comments": 1
+    },
+    {
+      "number": 11320,
+      "title": "Add an AgentX and vLLM throughput tuning guide",
+      "url": "https://github.com/marin-community/marin/pull/11320",
+      "state": "open",
+      "updatedAt": "2026-11-13T06:13:55Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 11321,
+      "title": "[rl] Launch Mochi RL directly at 65K context",
+      "url": "https://github.com/marin-community/marin/pull/11321",
+      "state": "open",
+      "updatedAt": "2026-11-13T09:48:13Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 11322,
+      "title": "Keep repository-owned pytest plugins live during grading",
+      "url": "https://github.com/marin-community/marin/pull/11322",
+      "state": "closed",
+      "updatedAt": "2026-11-13T08:50:03Z",
+      "mergedAt": "2026-11-13T08:41:53Z",
+      "comments": 3
+    },
+    {
+      "number": 11323,
+      "title": "Resume task reviews after batch inference preemption",
+      "url": "https://github.com/marin-community/marin/pull/11323",
+      "state": "closed",
+      "updatedAt": "2026-11-13T08:32:24Z",
+      "mergedAt": "2026-11-13T08:16:27Z",
+      "comments": 4
+    },
+    {
+      "number": 11324,
+      "title": "Restore dataset harness bindings for canonical tasks",
+      "url": "https://github.com/marin-community/marin/pull/11324",
+      "state": "closed",
+      "updatedAt": "2026-11-13T13:16:31Z",
+      "mergedAt": "2026-11-13T13:16:31Z",
+      "comments": 2
+    },
+    {
+      "number": 11325,
+      "title": "[finelog] Drain object-backed L0 backlogs within one maintenance visit",
+      "url": "https://github.com/marin-community/marin/pull/11325",
+      "state": "open",
+      "updatedAt": "2026-11-13T17:53:11Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 11326,
+      "title": "Use ChatReviewer identity for full-QC receipts",
+      "url": "https://github.com/marin-community/marin/pull/11326",
+      "state": "closed",
+      "updatedAt": "2026-11-13T09:19:10Z",
+      "mergedAt": "2026-11-13T09:19:07Z",
+      "comments": 2
+    },
+    {
+      "number": 11327,
+      "title": "[finelog] Stop housekeeping and query reads from starving L0 compaction",
+      "url": "https://github.com/marin-community/marin/pull/11327",
+      "state": "open",
+      "updatedAt": "2026-11-13T18:45:15Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 11328,
+      "title": "[harbor] Stop Mini-SWE after typed server context rejection",
+      "url": "https://github.com/marin-community/marin/pull/11328",
+      "state": "open",
+      "updatedAt": "2026-11-13T09:40:54Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 11329,
+      "title": "Restore standard site builtins in shared pytest grading",
+      "url": "https://github.com/marin-community/marin/pull/11329",
+      "state": "closed",
+      "updatedAt": "2026-11-13T09:52:48Z",
+      "mergedAt": "2026-11-13T09:51:24Z",
+      "comments": 1
+    },
+    {
+      "number": 11330,
+      "title": "[rl] Recover native continuations from their own checkpoints",
+      "url": "https://github.com/marin-community/marin/pull/11330",
+      "state": "open",
+      "updatedAt": "2026-11-13T09:47:51Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11331,
+      "title": "Serialize Harrier model initialization across local workers",
+      "url": "https://github.com/marin-community/marin/pull/11331",
+      "state": "closed",
+      "updatedAt": "2026-11-13T11:15:04Z",
+      "mergedAt": "2026-11-13T11:13:54Z",
+      "comments": 1
+    },
+    {
+      "number": 11332,
+      "title": "Repair incomplete QA without resampling primary reviews",
+      "url": "https://github.com/marin-community/marin/pull/11332",
+      "state": "closed",
+      "updatedAt": "2026-11-13T11:06:35Z",
+      "mergedAt": "2026-11-13T10:55:07Z",
+      "comments": 3
+    },
+    {
+      "number": 11333,
+      "title": "Inventory retained contracts before resource calibration",
+      "url": "https://github.com/marin-community/marin/pull/11333",
+      "state": "closed",
+      "updatedAt": "2026-11-13T11:39:24Z",
+      "mergedAt": "2026-11-13T11:26:51Z",
+      "comments": 3
+    },
+    {
+      "number": 11334,
+      "title": "[shellbox] Implement process scopes for every machine backend",
+      "url": "https://github.com/marin-community/marin/issues/11334",
+      "state": "open",
+      "updatedAt": "2026-11-13T11:16:28Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11335,
+      "title": "Restore Atlas preview views with current evidence",
+      "url": "https://github.com/marin-community/marin/pull/11335",
+      "state": "closed",
+      "updatedAt": "2026-11-13T12:44:57Z",
+      "mergedAt": "2026-11-13T12:33:54Z",
+      "comments": 6
+    },
+    {
+      "number": 11336,
+      "title": "[harbor] Preserve prepared Iris sandboxes for verification",
+      "url": "https://github.com/marin-community/marin/pull/11336",
+      "state": "closed",
+      "updatedAt": "2026-11-13T13:13:53Z",
+      "mergedAt": "2026-11-13T13:13:39Z",
+      "comments": 7
+    },
+    {
+      "number": 11337,
+      "title": "Track run-ready Snowball recipes and Micro eval policy scores",
+      "url": "https://github.com/marin-community/marin/issues/11337",
+      "state": "open",
+      "updatedAt": "2026-11-13T11:38:17Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 11338,
+      "title": "Keep CrossCodeEval cohorts out of training",
+      "url": "https://github.com/marin-community/marin/pull/11338",
+      "state": "closed",
+      "updatedAt": "2026-11-13T12:18:37Z",
+      "mergedAt": "2026-11-13T12:07:19Z",
+      "comments": 3
+    },
+    {
+      "number": 11339,
+      "title": "[shellbox] Extend Daytona output collection deadline",
+      "url": "https://github.com/marin-community/marin/pull/11339",
+      "state": "open",
+      "updatedAt": "2026-11-13T11:43:57Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 11340,
+      "title": "Preserve declared native limit literals during calibration",
+      "url": "https://github.com/marin-community/marin/pull/11340",
+      "state": "closed",
+      "updatedAt": "2026-11-13T12:14:04Z",
+      "mergedAt": "2026-11-13T12:12:32Z",
+      "comments": 1
+    },
+    {
+      "number": 11341,
+      "title": "Preserve source dependencies in product Python subprocesses",
+      "url": "https://github.com/marin-community/marin/pull/11341",
+      "state": "closed",
+      "updatedAt": "2026-11-13T12:14:57Z",
+      "mergedAt": "2026-11-13T12:13:19Z",
+      "comments": 1
+    },
+    {
+      "number": 11342,
+      "title": "[iris] Set exact sandbox disk limits and classify storage evictions",
+      "url": "https://github.com/marin-community/marin/pull/11342",
+      "state": "closed",
+      "updatedAt": "2026-11-13T12:43:33Z",
+      "mergedAt": "2026-11-13T12:43:30Z",
+      "comments": 6
+    },
+    {
+      "number": 11343,
+      "title": "[iris] gVisor sandbox pods fail to start on cw-us-east-02a cpu-genoa nodes",
+      "url": "https://github.com/marin-community/marin/issues/11343",
+      "state": "open",
+      "updatedAt": "2026-11-13T12:15:50Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11344,
+      "title": "Archive generated Atlas registry receipts behind verified pins",
+      "url": "https://github.com/marin-community/marin/pull/11344",
+      "state": "closed",
+      "updatedAt": "2026-11-13T13:48:57Z",
+      "mergedAt": "2026-11-13T13:48:55Z",
+      "comments": 7
+    },
+    {
+      "number": 11345,
+      "title": "[iris] Route 02a sandboxes through the CPU gVisor handler",
+      "url": "https://github.com/marin-community/marin/pull/11345",
+      "state": "open",
+      "updatedAt": "2026-11-13T12:25:52Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 11346,
+      "title": "Lift source-declared execution limits during ingestion",
+      "url": "https://github.com/marin-community/marin/pull/11346",
+      "state": "closed",
+      "updatedAt": "2026-11-13T12:50:27Z",
+      "mergedAt": "2026-11-13T12:38:28Z",
+      "comments": 3
+    },
+    {
+      "number": 11347,
+      "title": "Record final Prism content review with one unreviewed task",
+      "url": "https://github.com/marin-community/marin/pull/11347",
+      "state": "closed",
+      "updatedAt": "2026-11-13T12:38:13Z",
+      "mergedAt": "2026-11-13T12:36:58Z",
+      "comments": 1
+    },
+    {
+      "number": 11348,
+      "title": "Version future FULL QC with doubled reviewer context",
+      "url": "https://github.com/marin-community/marin/pull/11348",
+      "state": "closed",
+      "updatedAt": "2026-11-13T13:07:35Z",
+      "mergedAt": "2026-11-13T12:45:56Z",
+      "comments": 3
+    },
+    {
+      "number": 11349,
+      "title": "Enforce LOCAL sandbox disk limits with fixed-size filesystems",
+      "url": "https://github.com/marin-community/marin/pull/11349",
+      "state": "closed",
+      "updatedAt": "2026-11-13T16:38:03Z",
+      "mergedAt": "2026-11-13T16:38:00Z",
+      "comments": 4
+    },
+    {
+      "number": 11350,
+      "title": "Batch native checksum inspection during oracle collection",
+      "url": "https://github.com/marin-community/marin/pull/11350",
+      "state": "closed",
+      "updatedAt": "2026-11-13T13:16:20Z",
+      "mergedAt": "2026-11-13T13:14:52Z",
+      "comments": 2
+    },
+    {
+      "number": 11351,
+      "title": "Pin FULL-QC reviewer policy across relay changes",
+      "url": "https://github.com/marin-community/marin/pull/11351",
+      "state": "closed",
+      "updatedAt": "2026-11-13T13:27:29Z",
+      "mergedAt": null,
+      "comments": 5
+    },
+    {
+      "number": 11352,
+      "title": "Repair incomplete review batches concurrently on owned endpoints",
+      "url": "https://github.com/marin-community/marin/pull/11352",
+      "state": "closed",
+      "updatedAt": "2026-11-13T13:30:36Z",
+      "mergedAt": "2026-11-13T13:21:18Z",
+      "comments": 4
+    },
+    {
+      "number": 11353,
+      "title": "[rl] Run Mochi full-context RL across three NVL72 racks",
+      "url": "https://github.com/marin-community/marin/pull/11353",
+      "state": "open",
+      "updatedAt": "2026-11-13T13:53:08Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 11354,
+      "title": "Show evidence-backed contamination chips in Atlas",
+      "url": "https://github.com/marin-community/marin/pull/11354",
+      "state": "closed",
+      "updatedAt": "2026-11-13T14:19:53Z",
+      "mergedAt": "2026-11-13T14:10:52Z",
+      "comments": 8
+    },
+    {
+      "number": 11355,
+      "title": "Bind missing grading censuses to the Atlas source catalog",
+      "url": "https://github.com/marin-community/marin/pull/11355",
+      "state": "closed",
+      "updatedAt": "2026-11-13T16:26:50Z",
+      "mergedAt": "2026-11-13T16:17:04Z",
+      "comments": 4
+    },
+    {
+      "number": 11356,
+      "title": "Backfill frozen Atlas curriculum coverage",
+      "url": "https://github.com/marin-community/marin/pull/11356",
+      "state": "open",
+      "updatedAt": "2026-11-13T19:23:30Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 11357,
+      "title": "Pin every v3 reviewer and serving identity field",
+      "url": "https://github.com/marin-community/marin/pull/11357",
+      "state": "closed",
+      "updatedAt": "2026-11-13T14:33:45Z",
+      "mergedAt": "2026-11-13T14:22:58Z",
+      "comments": 3
+    },
+    {
+      "number": 11358,
+      "title": "Bind evaluation overlap measurements to retained dataset pins",
+      "url": "https://github.com/marin-community/marin/pull/11358",
+      "state": "closed",
+      "updatedAt": "2026-11-13T15:38:18Z",
+      "mergedAt": "2026-11-13T15:36:48Z",
+      "comments": 1
+    },
+    {
+      "number": 11359,
+      "title": "Document targeted oracle requalification with exact receipt carryover",
+      "url": "https://github.com/marin-community/marin/pull/11359",
+      "state": "closed",
+      "updatedAt": "2026-11-13T14:33:54Z",
+      "mergedAt": "2026-11-13T14:32:27Z",
+      "comments": 1
+    },
+    {
+      "number": 11360,
+      "title": "Require runnable-grader evidence before Atlas admission",
+      "url": "https://github.com/marin-community/marin/pull/11360",
+      "state": "closed",
+      "updatedAt": "2026-11-13T18:49:43Z",
+      "mergedAt": "2026-11-13T18:49:40Z",
+      "comments": 5
+    },
+    {
+      "number": 11361,
+      "title": "Deslop local FULL-QC serving pin",
+      "url": "https://github.com/marin-community/marin/pull/11361",
+      "state": "open",
+      "updatedAt": "2026-11-13T17:07:28Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 11362,
+      "title": "Base Atlas provisional Results on review completeness",
+      "url": "https://github.com/marin-community/marin/pull/11362",
+      "state": "closed",
+      "updatedAt": "2026-11-13T15:47:25Z",
+      "mergedAt": "2026-11-13T15:38:26Z",
+      "comments": 6
+    },
+    {
+      "number": 11363,
+      "title": "Group incomplete full-QC batches for parallel repair",
+      "url": "https://github.com/marin-community/marin/pull/11363",
+      "state": "closed",
+      "updatedAt": "2026-11-13T16:00:04Z",
+      "mergedAt": "2026-11-13T16:00:01Z",
+      "comments": 2
+    },
+    {
+      "number": 11364,
+      "title": "Bind Atlas Results to pinned SAMPLE content reviews",
+      "url": "https://github.com/marin-community/marin/pull/11364",
+      "state": "open",
+      "updatedAt": "2026-11-13T19:33:08Z",
+      "mergedAt": null,
+      "comments": 4
+    },
+    {
+      "number": 11365,
+      "title": "[iac] Let a registered developer impersonate the Finelog runtime account",
+      "url": "https://github.com/marin-community/marin/pull/11365",
+      "state": "open",
+      "updatedAt": "2026-11-13T16:28:49Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 11366,
+      "title": "[iris] Preserve prepared sandbox image workdirs",
+      "url": "https://github.com/marin-community/marin/pull/11366",
+      "state": "closed",
+      "updatedAt": "2026-11-13T15:58:22Z",
+      "mergedAt": "2026-11-13T15:58:19Z",
+      "comments": 3
+    },
+    {
+      "number": 11367,
+      "title": "Survey backend fit for pinned Atlas populations",
+      "url": "https://github.com/marin-community/marin/pull/11367",
+      "state": "closed",
+      "updatedAt": "2026-11-13T19:18:53Z",
+      "mergedAt": "2026-11-13T19:18:51Z",
+      "comments": 4
+    },
+    {
+      "number": 11368,
+      "title": "Bind nine verified SAMPLE content Results",
+      "url": "https://github.com/marin-community/marin/pull/11368",
+      "state": "open",
+      "updatedAt": "2026-11-13T19:17:19Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 11369,
+      "title": "[marina] Add Qwen 3.6 and the finished smell-test runs to the model scorecard",
+      "url": "https://github.com/marin-community/marin/pull/11369",
+      "state": "closed",
+      "updatedAt": "2026-11-13T16:10:00Z",
+      "mergedAt": "2026-11-13T16:09:57Z",
+      "comments": 4
+    },
+    {
+      "number": 11370,
+      "title": "[levanter] Preserve packed Snowball attention across context shards",
+      "url": "https://github.com/marin-community/marin/pull/11370",
+      "state": "closed",
+      "updatedAt": "2026-11-13T18:38:17Z",
+      "mergedAt": "2026-11-13T18:38:14Z",
+      "comments": 4
+    },
+    {
+      "number": 11371,
+      "title": "[shellbox] Retry transient Daytona lifecycle requests",
+      "url": "https://github.com/marin-community/marin/pull/11371",
+      "state": "closed",
+      "updatedAt": "2026-11-13T17:07:08Z",
+      "mergedAt": "2026-11-13T17:07:05Z",
+      "comments": 5
+    },
+    {
+      "number": 11372,
+      "title": "Execute converted TaskSpecs through Harbor trials",
+      "url": "https://github.com/marin-community/marin/pull/11372",
+      "state": "open",
+      "updatedAt": "2026-11-13T19:18:24Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 11373,
+      "title": "Repair the tau rlvr1/rlvr2 graders and publish the repaired pins",
+      "url": "https://github.com/marin-community/marin/pull/11373",
+      "state": "open",
+      "updatedAt": "2026-11-13T19:42:35Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11374,
+      "title": "Document the limits of copying FineStore archives",
+      "url": "https://github.com/marin-community/marin/pull/11374",
+      "state": "closed",
+      "updatedAt": "2026-11-13T16:46:59Z",
+      "mergedAt": "2026-11-13T16:46:56Z",
+      "comments": 2
+    },
+    {
+      "number": 11375,
+      "title": "Add bounded VEP likelihood evaluation harness",
+      "url": "https://github.com/marin-community/marin/pull/11375",
+      "state": "closed",
+      "updatedAt": "2026-11-13T17:13:42Z",
+      "mergedAt": null,
+      "comments": 4
+    },
+    {
+      "number": 11376,
+      "title": "[finelog] Add a staged deploy script for the forwarding servers",
+      "url": "https://github.com/marin-community/marin/pull/11376",
+      "state": "open",
+      "updatedAt": "2026-11-13T16:47:27Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 11377,
+      "title": "Preserve vocabulary maps in online EAGLE checkpoints",
+      "url": "https://github.com/marin-community/marin/pull/11377",
+      "state": "open",
+      "updatedAt": "2026-11-13T16:50:37Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 11378,
+      "title": "Move Atlas aliases to catalog boundaries",
+      "url": "https://github.com/marin-community/marin/pull/11378",
+      "state": "closed",
+      "updatedAt": "2026-11-13T18:22:18Z",
+      "mergedAt": "2026-11-13T18:22:16Z",
+      "comments": 4
+    },
+    {
+      "number": 11379,
+      "title": "[levanter] Add opt-in bounded lookahead window to the SFT packer",
+      "url": "https://github.com/marin-community/marin/pull/11379",
+      "state": "open",
+      "updatedAt": "2026-11-13T18:18:33Z",
+      "mergedAt": null,
+      "comments": 4
+    },
+    {
+      "number": 11380,
+      "title": "[sft] Packing-efficiency ablation: padding under different packers",
+      "url": "https://github.com/marin-community/marin/issues/11380",
+      "state": "open",
+      "updatedAt": "2026-11-13T17:14:34Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 11381,
+      "title": "Predicting Snowball's post-SFT tbench pass@1 from Snowflake",
+      "url": "https://github.com/marin-community/marin/issues/11381",
+      "state": "open",
+      "updatedAt": "2026-11-13T17:46:49Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 11382,
+      "title": "Raise Experiment 2’s chat packing cap to 256",
+      "url": "https://github.com/marin-community/marin/pull/11382",
+      "state": "open",
+      "updatedAt": "2026-11-13T19:18:11Z",
+      "mergedAt": null,
+      "comments": 7
+    },
+    {
+      "number": 11383,
+      "title": "[daytona] Keep provider waits outside source execution budgets",
+      "url": "https://github.com/marin-community/marin/pull/11383",
+      "state": "open",
+      "updatedAt": "2026-11-13T19:25:04Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 11384,
+      "title": "[atlas] Refill review batch slots while slow batches finish",
+      "url": "https://github.com/marin-community/marin/pull/11384",
+      "state": "closed",
+      "updatedAt": "2026-11-13T18:11:34Z",
+      "mergedAt": "2026-11-13T18:03:51Z",
+      "comments": 4
+    },
+    {
+      "number": 11385,
+      "title": "[evals] Validate BiomniBench-DA public-50 for ID evaluation",
+      "url": "https://github.com/marin-community/marin/issues/11385",
+      "state": "open",
+      "updatedAt": "2026-11-13T19:05:21Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 11386,
+      "title": "[atlas] Resume completed primary shards before loading reviewers",
+      "url": "https://github.com/marin-community/marin/pull/11386",
+      "state": "closed",
+      "updatedAt": "2026-11-13T19:14:16Z",
+      "mergedAt": "2026-11-13T18:56:29Z",
+      "comments": 4
+    },
+    {
+      "number": 11387,
+      "title": "Share FULL-QC shard contract checks",
+      "url": "https://github.com/marin-community/marin/pull/11387",
+      "state": "open",
+      "updatedAt": "2026-11-13T19:15:20Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 11388,
+      "title": "[eval] Add typed eval policy declarations and their resolution",
+      "url": "https://github.com/marin-community/marin/pull/11388",
+      "state": "open",
+      "updatedAt": "2026-11-13T19:20:44Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 11389,
+      "title": "[iris] Reachable cw-us-east-02a leaves hub handoffs unaccepted",
+      "url": "https://github.com/marin-community/marin/issues/11389",
+      "state": "open",
+      "updatedAt": "2026-11-13T19:47:59Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 2351,
+      "title": "Spec-Driven Large-Scale Pretraining Data Curation from Common Crawl",
+      "url": "https://github.com/marin-community/marin/issues/2351",
+      "state": "open",
+      "updatedAt": "2026-11-13T05:37:03Z",
+      "mergedAt": null,
+      "comments": 57
+    },
+    {
+      "number": 4031,
+      "title": "[moe] Great 10T: latent MoE perf",
+      "url": "https://github.com/marin-community/marin/issues/4031",
+      "state": "closed",
+      "updatedAt": "2026-11-12T07:12:14Z",
+      "mergedAt": null,
+      "comments": 9
+    },
+    {
+      "number": 7857,
+      "title": "[iris] Let a task select its node pool and CPU architecture",
+      "url": "https://github.com/marin-community/marin/issues/7857",
+      "state": "closed",
+      "updatedAt": "2026-11-12T07:12:10Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 8060,
+      "title": "[rl] Rerun Snowball E6 with MuonH",
+      "url": "https://github.com/marin-community/marin/issues/8060",
+      "state": "open",
+      "updatedAt": "2026-11-13T06:47:08Z",
+      "mergedAt": null,
+      "comments": 6
+    },
+    {
+      "number": 8089,
+      "title": "[epic][sft] Establish a versioned cold-start SFT recipe",
+      "url": "https://github.com/marin-community/marin/issues/8089",
+      "state": "closed",
+      "updatedAt": "2026-11-13T09:43:31Z",
+      "mergedAt": null,
+      "comments": 21
+    },
+    {
+      "number": 8108,
+      "title": "Experiment: reimplement mixture-of-kittens",
+      "url": "https://github.com/marin-community/marin/issues/8108",
+      "state": "closed",
+      "updatedAt": "2026-11-13T15:14:16Z",
+      "mergedAt": null,
+      "comments": 39
+    },
+    {
+      "number": 8155,
+      "title": "[dedup] Audit fuzzy verification quality and thresholds",
+      "url": "https://github.com/marin-community/marin/issues/8155",
+      "state": "closed",
+      "updatedAt": "2026-11-12T07:12:05Z",
+      "mergedAt": null,
+      "comments": 50
+    },
+    {
+      "number": 8222,
+      "title": "[grug] PGLE on GB200: CUPTI contention yields empty traces and kills gangs",
+      "url": "https://github.com/marin-community/marin/issues/8222",
+      "state": "closed",
+      "updatedAt": "2026-11-12T07:12:03Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 8234,
+      "title": "[datakit] Run the Harrier embedding pool on the Marin inference stack",
+      "url": "https://github.com/marin-community/marin/issues/8234",
+      "state": "closed",
+      "updatedAt": "2026-11-12T07:12:01Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 8236,
+      "title": "Benchmark MoK on the doubled-expert hero configuration",
+      "url": "https://github.com/marin-community/marin/issues/8236",
+      "state": "closed",
+      "updatedAt": "2026-11-12T07:11:59Z",
+      "mergedAt": null,
+      "comments": 4
+    },
+    {
+      "number": 8239,
+      "title": "[datakit] Verify ID properties after normalization",
+      "url": "https://github.com/marin-community/marin/issues/8239",
+      "state": "closed",
+      "updatedAt": "2026-11-12T07:11:57Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 8247,
+      "title": "[iris] Accelerator-free workloads are placed domain-blind, stranding idle GB200 GPUs",
+      "url": "https://github.com/marin-community/marin/issues/8247",
+      "state": "closed",
+      "updatedAt": "2026-11-12T07:11:54Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 8248,
+      "title": "[datakit] GHALogs output paths differ per region",
+      "url": "https://github.com/marin-community/marin/issues/8248",
+      "state": "closed",
+      "updatedAt": "2026-11-12T07:11:53Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 8253,
+      "title": "[grug] save_moe remat corrupts training on the fixed_all_to_all EP backend",
+      "url": "https://github.com/marin-community/marin/issues/8253",
+      "state": "closed",
+      "updatedAt": "2026-11-12T07:11:51Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 8260,
+      "title": "[iris] per-user S3 tokens",
+      "url": "https://github.com/marin-community/marin/issues/8260",
+      "state": "closed",
+      "updatedAt": "2026-11-12T07:11:49Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 8435,
+      "title": "[Hero Run] 535B-A23B on 18T tokens",
+      "url": "https://github.com/marin-community/marin/issues/8435",
+      "state": "open",
+      "updatedAt": "2026-11-09T18:35:02Z",
+      "mergedAt": null,
+      "comments": 44
+    },
+    {
+      "number": 8496,
+      "title": "[pulumi] Evaluate moving to a single stack per provider",
+      "url": "https://github.com/marin-community/marin/issues/8496",
+      "state": "open",
+      "updatedAt": "2026-11-12T07:11:42Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 8506,
+      "title": "Hero Run / Ongoing Status",
+      "url": "https://github.com/marin-community/marin/issues/8506",
+      "state": "open",
+      "updatedAt": "2026-11-08T03:10:39Z",
+      "mergedAt": null,
+      "comments": 86
+    },
+    {
+      "number": 8563,
+      "title": "[telemetry] Cut Finelog write volume and isolate priority metrics",
+      "url": "https://github.com/marin-community/marin/issues/8563",
+      "state": "open",
+      "updatedAt": "2026-11-13T06:46:58Z",
+      "mergedAt": null,
+      "comments": 4
+    },
+    {
+      "number": 8827,
+      "title": "Hero Run Checkpoint Prompt Completions",
+      "url": "https://github.com/marin-community/marin/issues/8827",
+      "state": "open",
+      "updatedAt": "2026-11-13T17:52:21Z",
+      "mergedAt": null,
+      "comments": 6
+    },
+    {
+      "number": 8846,
+      "title": "[dependencies] Advance native package versions",
+      "url": "https://github.com/marin-community/marin/pull/8846",
+      "state": "open",
+      "updatedAt": "2026-11-13T13:33:07Z",
+      "mergedAt": null,
+      "comments": 1
+    },
+    {
+      "number": 8870,
+      "title": "[grug] Ragged EP train step hangs silently on one rack at d6144 hero scale",
+      "url": "https://github.com/marin-community/marin/issues/8870",
+      "state": "open",
+      "updatedAt": "2026-09-24T00:09:31Z",
+      "mergedAt": null,
+      "comments": 29
+    },
+    {
+      "number": 9029,
+      "title": "[levanter] Snowball ignores packed-example attention boundaries",
+      "url": "https://github.com/marin-community/marin/issues/9029",
+      "state": "closed",
+      "updatedAt": "2026-11-13T18:40:47Z",
+      "mergedAt": null,
+      "comments": 5
+    },
+    {
+      "number": 9358,
+      "title": "[grafana] Add generation and train-step boards for sync RL runs",
+      "url": "https://github.com/marin-community/marin/pull/9358",
+      "state": "closed",
+      "updatedAt": "2026-11-13T01:46:09Z",
+      "mergedAt": null,
+      "comments": 3
+    },
+    {
+      "number": 9400,
+      "title": "[inference] Cover June Snowball TPU parity",
+      "url": "https://github.com/marin-community/marin/pull/9400",
+      "state": "closed",
+      "updatedAt": "2026-11-12T07:11:39Z",
+      "mergedAt": null,
+      "comments": 6
+    },
+    {
+      "number": 9514,
+      "title": "Marin Belay Intake",
+      "url": "https://github.com/marin-community/marin/issues/9514",
+      "state": "open",
+      "updatedAt": "2026-11-13T19:30:47Z",
+      "mergedAt": null,
+      "comments": 21
+    },
+    {
+      "number": 9605,
+      "title": "[RL] Run async and Snowball launchers on Megatron with rollout buffers",
+      "url": "https://github.com/marin-community/marin/pull/9605",
+      "state": "closed",
+      "updatedAt": "2026-11-13T01:46:14Z",
+      "mergedAt": null,
+      "comments": 2
+    },
+    {
+      "number": 9703,
+      "title": "[ferries] Document bisecting a TPU canary MFU change",
+      "url": "https://github.com/marin-community/marin/pull/9703",
+      "state": "closed",
+      "updatedAt": "2026-11-12T07:11:33Z",
+      "mergedAt": null,
+      "comments": 4
+    },
+    {
+      "number": 9706,
+      "title": "[rl] Keep Levanter out of RL launcher imports",
+      "url": "https://github.com/marin-community/marin/pull/9706",
+      "state": "open",
+      "updatedAt": "2026-11-13T09:35:59Z",
+      "mergedAt": null,
+      "comments": 0
+    },
+    {
+      "number": 9749,
+      "title": "[rl] Typed recipes (3/4): Build experiment recipes from typed classes",
+      "url": "https://github.com/marin-community/marin/pull/9749",
+      "state": "closed",
+      "updatedAt": "2026-11-12T19:34:08Z",
+      "mergedAt": "2026-11-12T19:34:04Z",
+      "comments": 5
+    },
+    {
+      "number": 9873,
+      "title": "[shellbox] Let graders terminate processes an agent left running",
+      "url": "https://github.com/marin-community/marin/issues/9873",
+      "state": "open",
+      "updatedAt": "2026-11-12T20:03:01Z",
+      "mergedAt": null,
+      "comments": 7
+    },
+    {
+      "number": 9881,
+      "title": "[rl-data-atlas] Register PDBThink in the curation inventory",
+      "url": "https://github.com/marin-community/marin/pull/9881",
+      "state": "open",
+      "updatedAt": "2026-11-12T17:04:18Z",
+      "mergedAt": null,
+      "comments": 4
+    }
+  ],
+  "reports": [
+    {
+      "name": "hero-fixed",
+      "url": "https://storage.googleapis.com/marin-public/held/hero-open-weight-ppl/2026.09.05.1/index.html",
+      "sha256": "7a563bc63f4d8120ef9ccc4af4e25e245376a712d80aef0927ae91dcd57f7ec5",
+      "bytes": 14819
+    },
+    {
+      "name": "mixture-fixed",
+      "url": "https://storage.googleapis.com/marin-public/held/h100-mix25-paloma/final-2026.09.15.1/index.html",
+      "sha256": "45fc4010a5fefc9085b1395e9038e06c76ac824d4f173be83d8b6bdc894abdd2",
+      "bytes": 5091
+    },
+    {
+      "name": "samples-live",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/latest/index.html",
+      "sha256": "0597f61dd9ceea318673f553c7c53daebe61b689a068eb5250bf03cb34f7a7ee",
+      "bytes": 80906
+    },
+    {
+      "name": "samples-fixed",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.02/index.html",
+      "sha256": "a9f66f8e27480d29e2cd826f48afe69eb4c308335305a5bdced15316dd2c5667",
+      "bytes": 38290
+    },
+    {
+      "name": "athena-blog",
+      "url": "https://openathena.ai/blog/",
+      "sha256": "571a511d26951460298fef9759493e97f653c274743a8ef730899eca1c81fea5",
+      "bytes": 19527
+    },
+    {
+      "name": "ep",
+      "url": "https://openathena.ai/blog/expert-parallelism/",
+      "sha256": "f5cbf2126f047d24dbe41849db21cfbc4077c5d33c0be2194878d5dc3a1c8027",
+      "bytes": 39863
+    },
+    {
+      "name": "samples-oct4",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.04/index.html",
+      "sha256": "51ba0ce11b81df9b11a1f33854a038c63f3d3f3d09135cb5d8529db4b95e1198",
+      "bytes": 38752
+    },
+    {
+      "name": "samples-2026.10.16",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.16/index.html",
+      "sha256": "97378821cebbfb8c99c3b44aa5964e31ffb88a8449c18317ca42298bf917c33a",
+      "bytes": 54789
+    },
+    {
+      "name": "samples-2026.10.17",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.17/index.html",
+      "sha256": "b89837bce83d31186e6f89c6d506ecb3fe274c0c02f9c2ab3a5655221a19626f",
+      "bytes": 58034
+    },
+    {
+      "name": "samples-2026.10.18",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.18/index.html",
+      "sha256": "a66fc847459eabd148bf09df59fb40dff875037f26824e7b827292b202fd70ef",
+      "bytes": 61696
+    },
+    {
+      "name": "samples-2026.10.19",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.19/index.html",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "samples-2026.10.20",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.20/index.html",
+      "sha256": "d7ef14d16a730261de99782cb94c595bfa99f5c2df3ec57ab953c7cb9d047798",
+      "bytes": 63053
+    },
+    {
+      "name": "samples-2026.10.21",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.21/index.html",
+      "sha256": "5950bae1796334862e8f99101df782c1097ea7acafc6a71bb6a062437243cb99",
+      "bytes": 63958
+    },
+    {
+      "name": "samples-2026.10.22",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.22/index.html",
+      "sha256": "4552b7bff3b2694db60a4dcb7acc5019728b8bd285f2aba45bba0e11362ca509",
+      "bytes": 64868
+    },
+    {
+      "name": "samples-2026.10.23",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.23/index.html",
+      "sha256": "d6f7e13a55fc5ac402fd9bb95d292be636e05957f053a6cd4a729f53f04440f2",
+      "bytes": 66233
+    },
+    {
+      "name": "samples-2026.10.24",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.24/index.html",
+      "sha256": "3ec5cf10857b741d991ee0f9f54d581f6556e767b8a88a8f74948ac464f7a4b9",
+      "bytes": 66688
+    },
+    {
+      "name": "samples-2026.10.25",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.25/index.html",
+      "sha256": "fb4133486ff8a4a26ddf50850b40096e1a87c8422520e400e02ccb19a6dff104",
+      "bytes": 67143
+    },
+    {
+      "name": "tied-report",
+      "url": "https://storage.googleapis.com/marin-public/benfeuer/tied-drafter-belay/2026.10.24/index.html",
+      "sha256": "18d211642621bc29ac3fd8eeabc3ea7438130232dc3d84a5cce2d32af13b9d1c",
+      "bytes": 148805
+    },
+    {
+      "name": "tied-plan",
+      "url": "https://storage.googleapis.com/marin-public/benfeuer/tied-drafter-belay/2026.10.24/plan.html",
+      "sha256": "c593f9402449638a7f2d9a9035a8ce1c79af12fa4c5513476f4849c23a560473",
+      "bytes": 44304
+    },
+    {
+      "name": "tied-calibration",
+      "url": "https://storage.googleapis.com/marin-public/benfeuer/tied-drafter-belay/2026.10.24/design-and-calibration-record.html",
+      "sha256": "29e2d35c1cec350bfc267c5b84030c54386a70076ef008cac66413dde07f30b2",
+      "bytes": 24653
+    },
+    {
+      "name": "samples-2026.10.26",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.26/index.html",
+      "sha256": "9881f8d998e072fd3fd745d3d3aecb812a7c5af0379db43ec3ef4a4122d6998a",
+      "bytes": 67598
+    },
+    {
+      "name": "samples-2026.10.27",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.27/index.html",
+      "sha256": "c3401caabf69e1e189feef8de75dcaba464d3d927585ac8b86439dd1e9a5ab40",
+      "bytes": 68053
+    },
+    {
+      "name": "samples-2026.10.28",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.28/index.html",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "samples-2026.10.29",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.29/index.html",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "samples-2026.10.30",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.30/index.html",
+      "sha256": "259039a3e6933fedc0eda29bca13393c3e1754f57afec2d830e4c4f0ee023bae",
+      "bytes": 68963
+    },
+    {
+      "name": "posttraining-oct29",
+      "url": "https://openathena.ai/blog/post-training-in-the-open/",
+      "sha256": "c4a4bba383921f8969011d457e43a080b4ae5aacc44f5a1248ee124699bf76d3",
+      "bytes": 23160
+    },
+    {
+      "name": "samples-2026.10.31",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.10.31/index.html",
+      "sha256": "63659d77e54a72023b7164ccb6d7c8d70e2d573c5055451c68d185219fff0710",
+      "bytes": 69420
+    },
+    {
+      "name": "samples-2026.11.01",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.11.01/index.html",
+      "sha256": "e725703850ec74510bb68d4e79f3dcb973daf177dd7c32f9f8e1b62a7d57c02f",
+      "bytes": 70332
+    },
+    {
+      "name": "samples-2026.11.02",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.11.02/index.html",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "samples-2026.11.03",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.11.03/index.html",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "samples-2026.11.04",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.11.04/index.html",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "samples-2026.11.05",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.11.05/index.html",
+      "sha256": "7ff99de1e6b1417f6df087856976f97ebb12f20d0b211ed9326a84d6d1322b93",
+      "bytes": 71721
+    },
+    {
+      "name": "samples-2026.11.06",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.11.06/index.html",
+      "sha256": "657c430ec1973804a56f329a5928312912f18f0e15e828ac1679c62def2f7b22",
+      "bytes": 74908
+    },
+    {
+      "name": "samples-2026.11.07",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.11.07/index.html",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "samples-2026.11.08",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.11.08/index.html",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "samples-2026.11.09",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.11.09/index.html",
+      "sha256": "0ec50910547bcf87c61c9c5ca09555f91d14de27cb0f5eab1fd3a70c4b254cd9",
+      "bytes": 76742
+    },
+    {
+      "name": "samples-2026.11.10",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.11.10/index.html",
+      "sha256": "d8275045ee204b6c6262bc38c4584b2420bae7871f5ef43663051cfdd893240e",
+      "bytes": 79517
+    },
+    {
+      "name": "samples-2026.11.11",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.11.11/index.html",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "samples-2026.11.12",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.11.12/index.html",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "samples-2026.11.13",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.11.13/index.html",
+      "sha256": "1440d56a9492e200971c85c22ba25da993037fa7607d81e798032b526b7ce261",
+      "bytes": 80443
+    }
+  ],
+  "fixedSamples": 132,
+  "mutableSamples": 133,
+  "newFixedEntries": [
+    {
+      "id": "0d55e01093d12e449fac02493cf72f8745ca3290be6112baa2214853e43c21c9",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/results/0d55e01093d12e449fac02493cf72f8745ca3290be6112baa2214853e43c21c9.json",
+      "step": 392000,
+      "run_id": "hero-lce-log65536sq-step390k",
+      "release": "hero-native-v6-temperature-0.7",
+      "spec_id": "30bf58156430bb388ccb2dc048ffd87a11be13bd20a960b357613c4774f43ee9",
+      "completed_at": "2026-11-13T03:51:52.875034+00:00"
+    },
+    {
+      "id": "b92bfbab1e2916f6754a5272a152e7ed189ec33dcae21b6fefeb472e54cb4958",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/results/b92bfbab1e2916f6754a5272a152e7ed189ec33dcae21b6fefeb472e54cb4958.json",
+      "step": 391500,
+      "run_id": "hero-lce-log65536sq-step390k",
+      "release": "hero-native-v6-temperature-0.7",
+      "spec_id": "30bf58156430bb388ccb2dc048ffd87a11be13bd20a960b357613c4774f43ee9",
+      "completed_at": "2026-11-13T03:51:12.954189+00:00"
+    }
+  ],
+  "receiptCreatedAt": "2026-11-13T01:47:57Z",
+  "receiptUpdatedAt": "2026-11-13T06:11:48Z"
+}

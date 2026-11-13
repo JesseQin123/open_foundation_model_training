@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-11-12",
+  "snapshot": "2026-11-13",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -3898,6 +3898,36 @@ window.MARIN_RESEARCH = {
       "title": "[datakit] Report which dataset records occur verbatim in the hero store",
       "url": "https://github.com/marin-community/marin/pull/11249",
       "kind": "pr"
+    },
+    {
+      "id": "M650",
+      "title": "Hero SFT completion and final export receipt",
+      "url": "https://github.com/marin-community/marin/issues/8089#issuecomment-6841382920",
+      "kind": "issue"
+    },
+    {
+      "id": "M651",
+      "title": "Adopt vLLM 0ac9dcb for standalone GPU serving",
+      "url": "https://github.com/marin-community/marin/pull/11241",
+      "kind": "pr"
+    },
+    {
+      "id": "M652",
+      "title": "[rl] Run Mochi full-context RL across three NVL72 racks",
+      "url": "https://github.com/marin-community/marin/pull/11353",
+      "kind": "pr"
+    },
+    {
+      "id": "M653",
+      "title": "Published schema-3 GPU inference wheel",
+      "url": "https://github.com/marin-community/vllm/releases/tag/marin-vllm-gpu-20261113-0ac9dcb157ee",
+      "kind": "report"
+    },
+    {
+      "id": "M654",
+      "title": "Hero fixed generation report — November 13",
+      "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.11.13/index.html",
+      "kind": "report"
     }
   ],
   "claimGroups": [
@@ -3951,7 +3981,8 @@ window.MARIN_RESEARCH = {
           "Global 1.84 completed at 393491 and the operator confirmed its final checkpoint. Log-squared launched from the shared averaged 390251 save, passed the first gate and reached logged step 392225 on November 8.",
           "Marin selected the log-squared 262K recipe and confirmed its step-393491 checkpoint; PR #11044 records it as current. Schema-3 export code merged and the November 10 samples include both final checkpoints.",
           "Full-model Hero SFT launched on 11 racks, relaunched as v2 after the routing count fix, and restored step 393593 after NVLink failure. The base checkpoint has a verified schema-3 object-store export.",
-          "The 11-rack SFT v2 run adopted permanent saves every 500 steps and recovered twice on the same lineage, with the last operator-reported step 397342."
+          "The 11-rack SFT v2 run adopted permanent saves every 500 steps and recovered twice on the same lineage, with the last operator-reported step 397342.",
+          "The 11-rack SFT v2 run completed 6916 updates and wrote final step 400407 plus all six intermediate permanent saves. Its schema-3 export is reported complete."
         ]
       },
       "sourceIds": [
@@ -4159,7 +4190,9 @@ window.MARIN_RESEARCH = {
         "M636",
         "M643",
         "M644",
-        "M645"
+        "M645",
+        "M650",
+        "M637"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4198,7 +4231,8 @@ window.MARIN_RESEARCH = {
           "Required-suite coverage #10541, item matching #10836, partial backups #10840 and canonical scorer correction #10828 remain open. The v5 corpus is reportedly staged; v6 is not. Hero’s pinned data-cleaning paths and deployed historical scoring remain unchanged by these proposals.",
           "Five arms at three lengths are prepared for the same step 372000 checkpoint. The first rack allocation is pending.",
           "An open proposal would permit a nine-rack SFT handoff. Released schema-3 serving parity and the end-to-end post-training run remain planned.",
-          "A nine-rack SFT handoff remains open. The canary queue-deadline repair and Hero data copy audit remain proposals."
+          "A nine-rack SFT handoff remains open. The canary queue-deadline repair and Hero data copy audit remain proposals.",
+          "The standalone schema-3 serving pin remains draft and production end-to-end RL remains planned."
         ]
       },
       "sourceIds": [
@@ -4370,7 +4404,8 @@ window.MARIN_RESEARCH = {
         "M641",
         "M642",
         "M648",
-        "M649"
+        "M649",
+        "M651"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4423,7 +4458,8 @@ window.MARIN_RESEARCH = {
           "The optional query-scaling diagnostic merged after a one-node 4K smoke test. Target-shape 262K quality and performance remain unmeasured.",
           "A separate 11-save average reduced matched loss by 0.0032 overall; a separate 11-rack 262K test completed 100 steps with the evaluation handoff fix.",
           "The matched offline finalist comparison favors log-squared on MRCR full-context loss, ties on clean macro and uses one seed each. One-rack SFT placement cut drops from 3.60% to 0.56%.",
-          "A one-rack Mochi schema-3 RL smoke completed five 4K updates, saved a checkpoint and restored it at 32K. No 32K update completed."
+          "A one-rack Mochi schema-3 RL smoke completed five 4K updates, saved a checkpoint and restored it at 32K. No 32K update completed.",
+          "A separate three-rack Mochi RL test applied a near-262K update with zero gradients and saved native checkpoint 5."
         ]
       },
       "sourceIds": [
@@ -4566,7 +4602,8 @@ window.MARIN_RESEARCH = {
         "M622",
         "M623",
         "M640",
-        "M641"
+        "M641",
+        "M652"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4616,7 +4653,8 @@ window.MARIN_RESEARCH = {
           "At matched online log step 391999 the two 262K finalists have small, mixed score differences. This does not establish a winner.",
           "Most of the MRCR loss gain is also present without the evidence, so the result does not isolate a retrieval-specific gain.",
           "The int32 change addresses the operator-reproduced counting failure. An NVLink error is observed separately; the underlying fault is unverified.",
-          "Two NVLink errors were reported on the same physical rack. That identifies a repeated location without establishing the underlying cause."
+          "Two NVLink errors were reported on the same physical rack. That identifies a repeated location without establishing the underlying cause.",
+          "SFT training loss fell with broadly flat held-out losses. The near-limit RL result establishes capacity in the tested setup, not learning gains."
         ]
       },
       "sourceIds": [
@@ -4740,7 +4778,9 @@ window.MARIN_RESEARCH = {
         "M633",
         "M638",
         "M635",
-        "M645"
+        "M645",
+        "M650",
+        "M652"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4780,7 +4820,7 @@ window.MARIN_RESEARCH = {
           "Hero resumed from its own 382854 checkpoint on November 4. Other retries and real-spike intervention remain unverified; responsible-owner acceptance of the MFU-band exception is unreported. BF16 library root cause and historicalHero corruption remain unknown; sourceinclusion is now documented in the65Kbundle. CatCount setup delay lacks an exact request/provider cause; Grug passed, but a fresh wholly passing nightly remains pending.",
           "65K main adoption and initial eleven-rack capacity behavior are now confirmed; capability beyond 32K remains unverified. NUPA saved-campaign regrading, scorer provenance and canonical grader parity are unresolved. Mini full quality/rank fidelity and the identity candidate clean gate remain unmet; a fresh wholly green CatCount nightly is still unconfirmed.",
           "Current v2 W&B measurements, later SFT progress, a rack-count handoff, full-model serving parity and public weight release remain unverified.",
-          "SFT v2 current anonymous W&B metrics, later progress, scheduled permanent save completion, nine-rack handoff and public weights remain unverified."
+          "Anonymous SFT W&B metrics, SFT UncheatableEval, full-model serving parity, public weights and production end-to-end RL remain unverified."
         ]
       },
       "sourceIds": [
@@ -4960,12 +5000,112 @@ window.MARIN_RESEARCH = {
         "M636",
         "M640",
         "M643",
-        "M645"
+        "M645",
+        "M651",
+        "M641"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-11-13-hero-sft-schema-three-export",
+      "date": "2026-11-13",
+      "status": "confirmed",
+      "title": {
+        "en": "Marin exports the finished Hero fine-tune for compatible inference"
+      },
+      "detail": {
+        "en": "Marin reports converting the final fine-tuned checkpoint to a format compatible with its newer inference engine. That gives downstream tests a concrete artifact to load. The November 13 update names step 400407, schema 3, BF16 safetensors and 193 shards totaling about 1.07 TB. It requires a compatible vLLM fork plus a separately pinned tokenizer and generation settings. A compatible GPU wheel is published, and the main-branch pin is still a draft. The receipt establishes export to object storage. Full-model serving parity and public weight release remain unverified."
+      },
+      "sourceIds": [
+        "M650",
+        "M651",
+        "M653"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-13T19:53:02.942756+00:00",
+      "concept": {
+        "en": "Export stores trained weights for another runtime. The tokenizer and generation settings also affect how it handles prompts and responses."
+      },
+      "exercise": {
+        "en": "Which files or settings would you verify before comparing the same prompt across two runtimes?"
+      }
+    },
+    {
+      "id": "event-2026-11-13-mochi-three-rack-rl-capacity",
+      "date": "2026-11-13",
+      "status": "experimental",
+      "title": {
+        "en": "A three-rack Mochi test fits a near-limit RL update"
+      },
+      "detail": {
+        "en": "A draft reports an applied reinforcement-learning update on inputs near the 262K token limit. This shows that the tested setup can fit a forward pass, backward pass and update at that length. Three ordinary updates completed first, including nonzero gradients. A fresh process then restored checkpoint 3, and the capacity test used eight samples with 260966 to 261740 attended tokens. The capacity update and the subsequent continuation updates had zero gradients. Update 5 saved a complete native checkpoint. This is a three-rack experiment from the fine-tuned model, with learning gains and production adoption still unverified."
+      },
+      "sourceIds": [
+        "M652",
+        "M641",
+        "M650"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-13T19:53:02.942756+00:00",
+      "concept": {
+        "en": "A backward pass computes gradients. A zero-gradient update can demonstrate that the computation fits while providing no evidence of a learning gain."
+      },
+      "exercise": {
+        "en": "What extra result would show that the model learned from the near-limit examples?"
+      }
+    },
+    {
+      "id": "event-2026-11-13-hero-fixed-more-base-samples",
+      "date": "2026-11-13",
+      "status": "confirmed",
+      "title": {
+        "en": "The dated generation report adds two pretraining checkpoints"
+      },
+      "detail": {
+        "en": "The dated Hero sample report adds outputs from two earlier saves of the chosen 262K recipe. Readers can inspect those outputs with the originating checkpoints identified. The November 13 fixed report has 132 sets, two more than November 10, and adds steps 391500 and 392000 from the log-squared pretraining run. The mutable index has a third new set at 391000, for 133 total. These examples describe selected pretraining prompts. The finished fine-tune still needs its own fixed evaluation evidence."
+      },
+      "sourceIds": [
+        "M654",
+        "M619"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-13T19:53:02.942756+00:00",
+      "concept": {
+        "en": "A dated report preserves a reproducible snapshot. A live index can add later results."
+      },
+      "exercise": {
+        "en": "Why should you cite the dated report when comparing the same sample set later?"
+      }
+    },
+    {
+      "id": "event-2026-11-12-hero-sft-sealed",
+      "date": "2026-11-12",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero completes fine-tuning and saves its final model"
+      },
+      "detail": {
+        "en": "The 11-rack Hero fine-tune completed all 6916 updates and wrote its final checkpoint. The saved model gives downstream work a fixed starting point. The operator reported the finish on November 12 at 20:47 New York time, with permanent step 400407 metadata written at 01:42:23 UTC November 13. All seven scheduled permanent saves have completion metadata, and all three unplanned interruptions recovered on the same lineage. Median step time was 29.3 seconds. Mean training loss over 50 steps fell from 0.565 to 0.487, while dropless evaluation loss was 1.7105 versus 1.7106 and Paloma macro loss was 2.0380 versus 2.0404. These operator-reported results show training completed, with held-out loss broadly flat. Anonymous W&B returned no SFT project, so MFU and UncheatableEval were unavailable there."
+      },
+      "sourceIds": [
+        "M650",
+        "M637"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-13T19:53:02.942756+00:00",
+      "concept": {
+        "en": "A completion record ties the last update to a durable saved model. Held-out loss measures behavior on data outside the training batches."
+      },
+      "exercise": {
+        "en": "If training loss falls while held-out loss stays flat, what does each measure tell you?"
+      },
+      "productionChange": true,
+      "productionEvidenceIds": [
+        "M650"
+      ]
+    },
     {
       "id": "event-2026-11-12-hero-canary-queue-deadline-proposal",
       "date": "2026-11-12",
