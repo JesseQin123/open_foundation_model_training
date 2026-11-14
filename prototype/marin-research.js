@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-11-13",
+  "snapshot": "2026-11-14",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -3928,6 +3928,78 @@ window.MARIN_RESEARCH = {
       "title": "Hero fixed generation report — November 13",
       "url": "https://storage.googleapis.com/marin-public/rav/hero-completions/2026.11.13/index.html",
       "kind": "report"
+    },
+    {
+      "id": "M655",
+      "title": "Hero vLLM decode throughput on GB200",
+      "url": "https://github.com/marin-community/marin/issues/11430",
+      "kind": "issue"
+    },
+    {
+      "id": "M656",
+      "title": "Paired full-graph decode experiment (R12)",
+      "url": "https://github.com/marin-community/marin/issues/11430#issuecomment-6875745633",
+      "kind": "issue"
+    },
+    {
+      "id": "M657",
+      "title": "Same-node long-prompt scoring repeat",
+      "url": "https://github.com/marin-community/marin/issues/11430#issuecomment-6876475833",
+      "kind": "issue"
+    },
+    {
+      "id": "M658",
+      "title": "Stacked decode optimizations tested with an A/B/A control (R16)",
+      "url": "https://github.com/marin-community/marin/issues/11430#issuecomment-6877151630",
+      "kind": "issue"
+    },
+    {
+      "id": "M659",
+      "title": "Rollout log-probability consistency and throughput (R23)",
+      "url": "https://github.com/marin-community/marin/issues/11430#issuecomment-6881025571",
+      "kind": "issue"
+    },
+    {
+      "id": "M660",
+      "title": "Match Hero EP MuonH updates and checkpoint recipes",
+      "url": "https://github.com/marin-community/marin/pull/11301",
+      "kind": "pr"
+    },
+    {
+      "id": "M661",
+      "title": "Hero SFT identity probe with reasoning enabled",
+      "url": "https://github.com/marin-community/marin/issues/11418",
+      "kind": "issue"
+    },
+    {
+      "id": "M662",
+      "title": "Three same-node pairs for the 64-sequence cap (R2c)",
+      "url": "https://github.com/marin-community/marin/issues/11430#issuecomment-6869682501",
+      "kind": "issue"
+    },
+    {
+      "id": "M663",
+      "title": "Closeout of the combined one-rack RL draft",
+      "url": "https://github.com/marin-community/marin/pull/11199#issuecomment-6873212847",
+      "kind": "issue"
+    },
+    {
+      "id": "M664",
+      "title": "Restore Adam step counters when loading Megatron checkpoints",
+      "url": "https://github.com/marin-community/marin/pull/11473",
+      "kind": "pr"
+    },
+    {
+      "id": "M665",
+      "title": "Adopt published FlashAttention wheels and TE 2.21 in SkyRL",
+      "url": "https://github.com/marin-community/marin/pull/11307",
+      "kind": "pr"
+    },
+    {
+      "id": "M666",
+      "title": "Recover native continuations from their own checkpoints",
+      "url": "https://github.com/marin-community/marin/pull/11330",
+      "kind": "pr"
     }
   ],
   "claimGroups": [
@@ -3982,7 +4054,8 @@ window.MARIN_RESEARCH = {
           "Marin selected the log-squared 262K recipe and confirmed its step-393491 checkpoint; PR #11044 records it as current. Schema-3 export code merged and the November 10 samples include both final checkpoints.",
           "Full-model Hero SFT launched on 11 racks, relaunched as v2 after the routing count fix, and restored step 393593 after NVLink failure. The base checkpoint has a verified schema-3 object-store export.",
           "The 11-rack SFT v2 run adopted permanent saves every 500 steps and recovered twice on the same lineage, with the last operator-reported step 397342.",
-          "The 11-rack SFT v2 run completed 6916 updates and wrote final step 400407 plus all six intermediate permanent saves. Its schema-3 export is reported complete."
+          "The 11-rack SFT v2 run completed 6916 updates and wrote final step 400407 plus all six intermediate permanent saves. Its schema-3 export is reported complete.",
+          "The Hero-compatible expert-bank optimizer option merged in #11301 with small reference and restart checks. End-to-end training with the new main-branch option is unverified."
         ]
       },
       "sourceIds": [
@@ -4192,7 +4265,8 @@ window.MARIN_RESEARCH = {
         "M644",
         "M645",
         "M650",
-        "M637"
+        "M637",
+        "M660"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4232,7 +4306,8 @@ window.MARIN_RESEARCH = {
           "Five arms at three lengths are prepared for the same step 372000 checkpoint. The first rack allocation is pending.",
           "An open proposal would permit a nine-rack SFT handoff. Released schema-3 serving parity and the end-to-end post-training run remain planned.",
           "A nine-rack SFT handoff remains open. The canary queue-deadline repair and Hero data copy audit remain proposals.",
-          "The standalone schema-3 serving pin remains draft and production end-to-end RL remains planned."
+          "The standalone schema-3 serving pin remains draft and production end-to-end RL remains planned.",
+          "Mochi checkpoint continuation and Adam counter repair remain open. An SFT data change for reasoning-mode identity is proposed, with no corrected checkpoint recorded."
         ]
       },
       "sourceIds": [
@@ -4405,7 +4480,11 @@ window.MARIN_RESEARCH = {
         "M642",
         "M648",
         "M649",
-        "M651"
+        "M651",
+        "M664",
+        "M661",
+        "M666",
+        "M665"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4458,8 +4537,10 @@ window.MARIN_RESEARCH = {
           "The optional query-scaling diagnostic merged after a one-node 4K smoke test. Target-shape 262K quality and performance remain unmeasured.",
           "A separate 11-save average reduced matched loss by 0.0032 overall; a separate 11-rack 262K test completed 100 steps with the evaluation handoff fix.",
           "The matched offline finalist comparison favors log-squared on MRCR full-context loss, ties on clean macro and uses one seed each. One-rack SFT placement cut drops from 3.60% to 0.56%.",
-          "A one-rack Mochi schema-3 RL smoke completed five 4K updates, saved a checkpoint and restored it at 32K. No 32K update completed.",
-          "A separate three-rack Mochi RL test applied a near-262K update with zero gradients and saved native checkpoint 5."
+          "A separate three-rack Mochi RL test applied a near-262K update with zero gradients and saved native checkpoint 5.",
+          "The earlier one-rack RL draft documents five 32K updates and three 48K updates. Its combined PR closed without merge. Separate GB200 serving trials on the final SFT weights show gains from larger batches and full decode graph replay.",
+          "A separate full-size one-rack FlashAttention 4 qualification reached 65,360 attended tokens and saved native checkpoint 17. It used a preserved experimental branch.",
+          "A separate trainer-only replay from native checkpoint 5 applied update 6 using saved responses. Fresh full-context on-policy learning remains unverified."
         ]
       },
       "sourceIds": [
@@ -4603,7 +4684,13 @@ window.MARIN_RESEARCH = {
         "M623",
         "M640",
         "M641",
-        "M652"
+        "M652",
+        "M663",
+        "M655",
+        "M656",
+        "M659",
+        "M662",
+        "M665"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4654,7 +4741,8 @@ window.MARIN_RESEARCH = {
           "Most of the MRCR loss gain is also present without the evidence, so the result does not isolate a retrieval-specific gain.",
           "The int32 change addresses the operator-reproduced counting failure. An NVLink error is observed separately; the underlying fault is unverified.",
           "Two NVLink errors were reported on the same physical rack. That identifies a repeated location without establishing the underlying cause.",
-          "SFT training loss fell with broadly flat held-out losses. The near-limit RL result establishes capacity in the tested setup, not learning gains."
+          "SFT training loss fell with broadly flat held-out losses. The near-limit RL result establishes capacity in the tested setup, not learning gains.",
+          "The targeted identity test points to reasoning-mode identity coverage as a possible contributor. A matched data and checkpoint experiment is needed to test causality."
         ]
       },
       "sourceIds": [
@@ -4780,7 +4868,8 @@ window.MARIN_RESEARCH = {
         "M635",
         "M645",
         "M650",
-        "M652"
+        "M652",
+        "M661"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4820,7 +4909,8 @@ window.MARIN_RESEARCH = {
           "Hero resumed from its own 382854 checkpoint on November 4. Other retries and real-spike intervention remain unverified; responsible-owner acceptance of the MFU-band exception is unreported. BF16 library root cause and historicalHero corruption remain unknown; sourceinclusion is now documented in the65Kbundle. CatCount setup delay lacks an exact request/provider cause; Grug passed, but a fresh wholly passing nightly remains pending.",
           "65K main adoption and initial eleven-rack capacity behavior are now confirmed; capability beyond 32K remains unverified. NUPA saved-campaign regrading, scorer provenance and canonical grader parity are unresolved. Mini full quality/rank fidelity and the identity candidate clean gate remain unmet; a fresh wholly green CatCount nightly is still unconfirmed.",
           "Current v2 W&B measurements, later SFT progress, a rack-count handoff, full-model serving parity and public weight release remain unverified.",
-          "Anonymous SFT W&B metrics, SFT UncheatableEval, full-model serving parity, public weights and production end-to-end RL remain unverified."
+          "Anonymous SFT W&B metrics, SFT UncheatableEval, full-model serving parity, public weights and production end-to-end RL remain unverified.",
+          "Serving comparisons cover selected numerical tests. General serving parity, deployment of the benchmark configuration and a production RL handoff remain unverified."
         ]
       },
       "sourceIds": [
@@ -5002,12 +5092,112 @@ window.MARIN_RESEARCH = {
         "M643",
         "M645",
         "M651",
-        "M641"
+        "M641",
+        "M655",
+        "M659",
+        "M650"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-11-14-hero-decode-full-graph-benchmark",
+      "date": "2026-11-14",
+      "status": "experimental",
+      "title": {
+        "en": "A serving test makes the finished Hero model generate faster"
+      },
+      "detail": {
+        "en": "A test on the finished Hero model generated 43% more output per GPU when 1,024 requests shared the same machines. Replaying the GPU work for each new token as one unit cut coordination time, which could help generate practice responses for reinforcement learning. The November 14 paired GB200 test used the BF16 export of step 400407 and moved from 925 to 1,321 output tokens per second per GPU, with 2.5% more throughput at 2,048 requests. The apparent 65K prompt slowdown did not repeat. A separate A/B/A comparison added expert-kernel tuning and symmetric GPU communication buffers on top of full replay and four API servers: 1,291 to 1,433 tokens/s/GPU at 1,024 requests and 2,104 to 2,391 at 2,048. The reported numerical checks cover selected inputs. Deployment of the tested optimizations and their impact on training remain unverified."
+      },
+      "sourceIds": [
+        "M655",
+        "M656",
+        "M657",
+        "M658",
+        "M650"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-14T17:02:32Z",
+      "concept": {
+        "en": "A CUDA graph records a sequence of GPU operations so later steps can replay it with less work for the CPU."
+      },
+      "exercise": {
+        "en": "Why can a faster token-generation step yield a smaller throughput gain at heavier load?"
+      }
+    },
+    {
+      "id": "event-2026-11-14-hero-rollout-consistency-cost",
+      "date": "2026-11-14",
+      "status": "experimental",
+      "title": {
+        "en": "A serving test measures the cost of matching token probabilities"
+      },
+      "detail": {
+        "en": "Marin tested two ways to make Hero’s token probabilities more consistent when it generates practice responses. Matching the probabilities from generation and from scoring the completed text carried a large speed cost in this setup. At 2,048 concurrent requests on the same four GB200 nodes, replaying one fixed batch shape removed numerical differences caused by other engines’ load and yielded 2,364 versus 2,421 output tokens/s/GPU. It left the generation-versus-scoring gap. The batch-invariant mode matched both paths in the reported checks and yielded 532 tokens/s/GPU, 78% below the default. At 1,024 concurrent requests the two modes cost 17% and 78%, respectively. This was a serving benchmark with short prompts and 1,024 generated tokens. Training quality effects and production uptake remain open."
+      },
+      "sourceIds": [
+        "M659",
+        "M655"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-14T17:02:32Z",
+      "concept": {
+        "en": "A token log-probability records how likely the model considered a token. RL can use those values when comparing generated answers and updating a policy."
+      },
+      "exercise": {
+        "en": "Which of the two tested settings would you choose if you needed matching probabilities from generation and later scoring? What would it cost?"
+      }
+    },
+    {
+      "id": "event-2026-11-14-hero-muonh-reference-merge",
+      "date": "2026-11-14",
+      "status": "confirmed",
+      "title": {
+        "en": "Marin merges code that matches Hero’s optimizer rule"
+      },
+      "detail": {
+        "en": "Marin accepted an option that lets the reinforcement-learning trainer update expert weights using the same rule as the Hero trainer. This makes the rule available for downstream recipes, with a small restart test showing that the trainer can save and recover its update state. PR #11301 merged at 06:13 UTC on November 14. CPU comparisons against an independent JAX reference reported a maximum relative L2 error of 9.46e-6 after three updates. A small four-GB200 test using supplied gradients matched an uninterrupted run bit for bit after restore. Normalizing each expert separately remains the default. The combined experimental PR was closed in favor of narrowly scoped changes. A full-model run using the accepted main-branch code remains unverified."
+      },
+      "sourceIds": [
+        "M660",
+        "M663",
+        "M640"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-14T17:02:32Z",
+      "concept": {
+        "en": "An optimizer changes the weights using gradients and saved state. Sharing a size constraint across a bank of experts can produce different updates from constraining each expert on its own."
+      },
+      "exercise": {
+        "en": "Why does a matching update after restart matter more than simply being able to open the checkpoint?"
+      }
+    },
+    {
+      "id": "event-2026-11-14-mochi-fa4-one-rack-qualification",
+      "date": "2026-11-14",
+      "status": "experimental",
+      "title": {
+        "en": "A one-rack Mochi test applies updates on nearly 65K-token examples"
+      },
+      "detail": {
+        "en": "An experimental full-size Mochi run restored its saved state and made training updates on examples near the 65K-token limit. This shows that the tested software could generate responses, use them to update the model and save its progress at that length. The qualification in open PR #11307 restored checkpoint 13 and finished four updates through 17, reaching 65,360 attended tokens. Step 16 had a nonzero training signal on eight sequences of 64,351 to 64,806 tokens. Gradients at steps 16 and 17 were finite and nonzero, with norms of 11.70 and 3.84. Rollout 17 used published weights from update 16 as intended. The report checked all referenced objects and byte ranges in checkpoint 17. The 48 training GPUs and 12 inference GPUs used a preserved experimental source tree. Main-branch qualification, model quality gains and production adoption remain open."
+      },
+      "sourceIds": [
+        "M665",
+        "M640",
+        "M663"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-14T17:02:32Z",
+      "concept": {
+        "en": "A policy advantage tells the optimizer which generated responses to reinforce. A nonzero gradient shows that the optimizer received a signal."
+      },
+      "exercise": {
+        "en": "What extra comparison would tell you whether the updated model gives better answers?"
+      }
+    },
     {
       "id": "event-2026-11-13-hero-sft-schema-three-export",
       "date": "2026-11-13",
@@ -5077,6 +5267,75 @@ window.MARIN_RESEARCH = {
       },
       "exercise": {
         "en": "Why should you cite the dated report when comparing the same sample set later?"
+      }
+    },
+    {
+      "id": "event-2026-11-13-hero-sft-identity-probe",
+      "date": "2026-11-13",
+      "status": "experimental",
+      "title": {
+        "en": "An identity test finds that Hero sometimes names the wrong maker"
+      },
+      "detail": {
+        "en": "A focused test of the finished Hero model found frequent incorrect maker claims when reasoning was enabled. This identifies a behavior to check before release and gives the next data experiment a baseline. The November 13 report counted foreign self-claims in either reasoning or answer in 222 of 320 responses to ten identity questions at temperature 0.7; 43 answers named Marin alone. Ten policy prompts yielded zero such claims, and 20 ordinary prompts yielded one in 640 reasoning traces and zero in answers. A follow-up proposed a versioned set of reasoning-enabled identity examples. The prompt set is targeted, so the counts do not estimate general traffic. The data audit identifies a possible explanation, with causality and a corrected checkpoint still unverified."
+      },
+      "sourceIds": [
+        "M661",
+        "M650"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-14T17:02:32Z",
+      "concept": {
+        "en": "A targeted probe holds the question and generation settings steady so that a later model can be compared on the same behavior."
+      },
+      "exercise": {
+        "en": "What matched test would show whether a new identity dataset improves responses without affecting ordinary questions?"
+      }
+    },
+    {
+      "id": "event-2026-11-13-hero-serving-batching-test",
+      "date": "2026-11-13",
+      "status": "experimental",
+      "title": {
+        "en": "Handling more requests at once nearly doubles Hero’s output in a test"
+      },
+      "detail": {
+        "en": "The first public serving tests of the exported Hero fine-tune found that raising the simultaneous sequence limit roughly doubled output at high load. It also reduced the wait to start receiving an answer, because fewer requests sat in the queue. On November 13 New York time, the team reported three same-node pairs at 1,024 concurrent requests: 540 to 1,053, 508 to 1,011, and 507 to 992 output tokens per second per GPU when the cap rose from 32 to 64 per engine. In the repeat, median time to first token fell from 64.6 to 1.49 seconds, while median time between tokens moved from 61.9 to 63.6 ms. The results apply to the tested short-prompt load and give no production adoption receipt."
+      },
+      "sourceIds": [
+        "M655",
+        "M662",
+        "M650"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-14T17:02:32Z",
+      "concept": {
+        "en": "A sequence cap limits how many requests a serving engine can process together. Once all slots are full, new requests must wait."
+      },
+      "exercise": {
+        "en": "Why can raising the sequence cap shorten a queue even if each active request generates tokens at about the same rate?"
+      }
+    },
+    {
+      "id": "event-2026-11-13-mochi-offline-replay-update",
+      "date": "2026-11-13",
+      "status": "experimental",
+      "title": {
+        "en": "A Mochi replay test changes weights using saved responses"
+      },
+      "detail": {
+        "en": "A trainer-only follow-up to the three-rack experiment used previously generated responses to make a weight update. It shows that gradients can pass through the tested setup when suitable saved examples are available. The draft reported that a 64-GPU replay restored native checkpoint 5, rescored samples from an earlier policy and applied update 6. The gradient norm was 0.62572, no step was skipped, and the BF16 weights changed. The original generation probabilities were unavailable. Fresh responses generated by the updated model and learning gains under the full-context recipe remain unverified."
+      },
+      "sourceIds": [
+        "M652"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-14T17:02:32Z",
+      "concept": {
+        "en": "An offline replay reuses saved examples. An on-policy trial generates fresh examples from the policy it is testing."
+      },
+      "exercise": {
+        "en": "Why does a successful replay leave open whether fresh responses will give a useful training signal?"
       }
     },
     {
