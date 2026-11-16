@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-11-14",
+  "snapshot": "2026-11-15",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -4000,6 +4000,48 @@ window.MARIN_RESEARCH = {
       "title": "Recover native continuations from their own checkpoints",
       "url": "https://github.com/marin-community/marin/pull/11330",
       "kind": "pr"
+    },
+    {
+      "id": "M667",
+      "title": "Hero long-context scoring comparison (R25)",
+      "url": "https://github.com/marin-community/marin/issues/11430#issuecomment-6882101992",
+      "kind": "issue"
+    },
+    {
+      "id": "M668",
+      "title": "Hero near-limit prompt serving benchmark (R27)",
+      "url": "https://github.com/marin-community/marin/issues/11430#issuecomment-6882715780",
+      "kind": "issue"
+    },
+    {
+      "id": "M669",
+      "title": "Expose NCCL symmetric memory and document Hero tuning",
+      "url": "https://github.com/marin-community/marin/pull/11492",
+      "kind": "pr"
+    },
+    {
+      "id": "M670",
+      "title": "Complete LMH coverage and measure past decontamination gaps",
+      "url": "https://github.com/marin-community/marin/issues/11503",
+      "kind": "issue"
+    },
+    {
+      "id": "M671",
+      "title": "Add LongBench v2 with precompiled middle-truncated prompts",
+      "url": "https://github.com/marin-community/marin/pull/11504",
+      "kind": "pr"
+    },
+    {
+      "id": "M672",
+      "title": "November 15 Grug nightly mismatch findings",
+      "url": "https://github.com/marin-community/marin/issues/10910#issuecomment-6897572501",
+      "kind": "issue"
+    },
+    {
+      "id": "M673",
+      "title": "Mochi 65K runnable draft",
+      "url": "https://github.com/marin-community/marin/pull/11321",
+      "kind": "pr"
     }
   ],
   "claimGroups": [
@@ -4055,7 +4097,8 @@ window.MARIN_RESEARCH = {
           "Full-model Hero SFT launched on 11 racks, relaunched as v2 after the routing count fix, and restored step 393593 after NVLink failure. The base checkpoint has a verified schema-3 object-store export.",
           "The 11-rack SFT v2 run adopted permanent saves every 500 steps and recovered twice on the same lineage, with the last operator-reported step 397342.",
           "The 11-rack SFT v2 run completed 6916 updates and wrote final step 400407 plus all six intermediate permanent saves. Its schema-3 export is reported complete.",
-          "The Hero-compatible expert-bank optimizer option merged in #11301 with small reference and restart checks. End-to-end training with the new main-branch option is unverified."
+          "The Hero-compatible expert-bank optimizer option merged in #11301 with small reference and restart checks. End-to-end training with the new main-branch option is unverified.",
+          "The standalone GPU vLLM pin and native continuation recovery merged into main. The public checks support the repository changes."
         ]
       },
       "sourceIds": [
@@ -4266,7 +4309,9 @@ window.MARIN_RESEARCH = {
         "M645",
         "M650",
         "M637",
-        "M660"
+        "M660",
+        "M651",
+        "M666"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4306,8 +4351,8 @@ window.MARIN_RESEARCH = {
           "Five arms at three lengths are prepared for the same step 372000 checkpoint. The first rack allocation is pending.",
           "An open proposal would permit a nine-rack SFT handoff. Released schema-3 serving parity and the end-to-end post-training run remain planned.",
           "A nine-rack SFT handoff remains open. The canary queue-deadline repair and Hero data copy audit remain proposals.",
-          "The standalone schema-3 serving pin remains draft and production end-to-end RL remains planned.",
-          "Mochi checkpoint continuation and Adam counter repair remain open. An SFT data change for reasoning-mode identity is proposed, with no corrected checkpoint recorded."
+          "Adam counter repair and the reasoning-mode identity data change remain proposals.",
+          "The staged evaluation reference adds required core tasks and UncheatableEval. Hero is still pinned to its historical filter. The Mochi 65K and 262K recipes remain drafts."
         ]
       },
       "sourceIds": [
@@ -4484,7 +4529,11 @@ window.MARIN_RESEARCH = {
         "M664",
         "M661",
         "M666",
-        "M665"
+        "M665",
+        "M670",
+        "M652",
+        "M669",
+        "M673"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4540,7 +4589,8 @@ window.MARIN_RESEARCH = {
           "A separate three-rack Mochi RL test applied a near-262K update with zero gradients and saved native checkpoint 5.",
           "The earlier one-rack RL draft documents five 32K updates and three 48K updates. Its combined PR closed without merge. Separate GB200 serving trials on the final SFT weights show gains from larger batches and full decode graph replay.",
           "A separate full-size one-rack FlashAttention 4 qualification reached 65,360 attended tokens and saved native checkpoint 17. It used a preserved experimental branch.",
-          "A separate trainer-only replay from native checkpoint 5 applied update 6 using saved responses. Fresh full-context on-policy learning remains unverified."
+          "A separate trainer-only replay from native checkpoint 5 applied update 6 using saved responses. Fresh full-context on-policy learning remains unverified.",
+          "Hero serving checks cover selected positions through 262K. The LongBench v2 pilot reports Qwen results with protocol-dependent scores."
         ]
       },
       "sourceIds": [
@@ -4690,7 +4740,10 @@ window.MARIN_RESEARCH = {
         "M656",
         "M659",
         "M662",
-        "M665"
+        "M665",
+        "M667",
+        "M668",
+        "M671"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4742,7 +4795,8 @@ window.MARIN_RESEARCH = {
           "The int32 change addresses the operator-reproduced counting failure. An NVLink error is observed separately; the underlying fault is unverified.",
           "Two NVLink errors were reported on the same physical rack. That identifies a repeated location without establishing the underlying cause.",
           "SFT training loss fell with broadly flat held-out losses. The near-limit RL result establishes capacity in the tested setup, not learning gains.",
-          "The targeted identity test points to reasoning-mode identity coverage as a possible contributor. A matched data and checkpoint experiment is needed to test causality."
+          "The targeted identity test points to reasoning-mode identity coverage as a possible contributor. A matched data and checkpoint experiment is needed to test causality.",
+          "Expanding the reference likely improves detection coverage in a matched scan. The exact-copy probes do not measure historical training-data overlap or score effects."
         ]
       },
       "sourceIds": [
@@ -4869,7 +4923,8 @@ window.MARIN_RESEARCH = {
         "M645",
         "M650",
         "M652",
-        "M661"
+        "M661",
+        "M670"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4910,7 +4965,8 @@ window.MARIN_RESEARCH = {
           "65K main adoption and initial eleven-rack capacity behavior are now confirmed; capability beyond 32K remains unverified. NUPA saved-campaign regrading, scorer provenance and canonical grader parity are unresolved. Mini full quality/rank fidelity and the identity candidate clean gate remain unmet; a fresh wholly green CatCount nightly is still unconfirmed.",
           "Current v2 W&B measurements, later SFT progress, a rack-count handoff, full-model serving parity and public weight release remain unverified.",
           "Anonymous SFT W&B metrics, SFT UncheatableEval, full-model serving parity, public weights and production end-to-end RL remain unverified.",
-          "Serving comparisons cover selected numerical tests. General serving parity, deployment of the benchmark configuration and a production RL handoff remain unverified."
+          "Serving comparisons cover selected numerical tests. General serving parity, deployment of the benchmark configuration and a production RL handoff remain unverified.",
+          "Production RL launch, tuned Hero serving adoption, effects of historical filtering gaps, and fixed final-SFT Paloma and UncheatableEval remain unverified."
         ]
       },
       "sourceIds": [
@@ -5095,12 +5151,83 @@ window.MARIN_RESEARCH = {
         "M641",
         "M655",
         "M659",
-        "M650"
+        "M650",
+        "M669",
+        "M670"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-11-15-hero-standalone-vllm-pin-merged",
+      "date": "2026-11-15",
+      "status": "confirmed",
+      "title": {
+        "en": "Marin adds support for the finished Hero export to its GPU launcher"
+      },
+      "detail": {
+        "en": "Marin merged a serving-engine upgrade so the standalone GPU launcher can install the version built to read Hero’s final export. This makes the dependency available through the normal launcher, with faster serving settings under separate review. PR #11241 merged into main at 21:06 UTC on November 15 and pins vLLM wheel 0ac9dcb157ee. Release gates ran on H100 and GB200. The two 64-prompt Snowball checks recorded maximum probability errors of 0.124960 and 0.124768 against a 0.125 limit. The Hero tuning draft uses an additional patched build. Adoption in a running Hero service and in the RL trainer remains unverified."
+      },
+      "sourceIds": [
+        "M651",
+        "M653",
+        "M669"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-15T21:23:45Z",
+      "concept": {
+        "en": "A dependency pin fixes the version a launcher installs so a later run can be traced to that version."
+      },
+      "exercise": {
+        "en": "What record would show that a running Hero service actually uses the new wheel?"
+      }
+    },
+    {
+      "id": "event-2026-11-15-hero-decontamination-reference-gaps",
+      "date": "2026-11-15",
+      "status": "planned",
+      "title": {
+        "en": "Marin prepares broader checks for benchmark text in training data"
+      },
+      "detail": {
+        "en": "Marin prepared a wider collection of reference questions after finding that earlier Hero filtering missed some benchmarks. The new references could help future scans catch more copies of test questions or answers. Open PR #10541 reports that the older filter lacked GSM8K and MMLU after load failures and never included UncheatableEval. It reports a sealed v5 collection staged in four regions, including seven pinned UncheatableEval subsets. The gap audit counts 121 failed task requests in v3 and 116 in staged v5. A separate replay raised exact-copy detections from 16,887 to 421,159 on the same reference probes. Hero still points to its historical filter. How much overlap exists in its training data and whether scores were affected remain unknown."
+      },
+      "sourceIds": [
+        "M568",
+        "M670"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-15T21:23:45Z",
+      "concept": {
+        "en": "Decontamination screens training text for overlap with evaluation examples. Coverage depends on which examples are indexed and how copies are recognized."
+      },
+      "exercise": {
+        "en": "What would you scan to measure how the expanded reference changes detections in the actual training data?"
+      }
+    },
+    {
+      "id": "event-2026-11-15-longbench-v2-protocol-pilot",
+      "date": "2026-11-15",
+      "status": "experimental",
+      "title": {
+        "en": "A long-document pilot shows how the test setup can move a score"
+      },
+      "detail": {
+        "en": "Marin tested a way to compare models on the same 503 long-document questions. An experimental Qwen score shifted when the evaluation setup changed, which matters when comparing models across reports. Draft PR #11504 prepares versions of each prompt with progressively more text cut from the middle. The branch reports 38.2% for Qwen3-32B with thinking off, and 52.1% and 60.8% for Qwen3.5-35B-A3B with thinking off and on. An earlier exact-fit evaluation reported 38.4%, 52.5% and 64.4%, respectively. Prompt length, sampling variation and an omitted presence penalty affect interpretation of the thinking-mode difference. The trial reports Qwen results. A matching Hero score is still unavailable."
+      },
+      "sourceIds": [
+        "M671"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-15T21:23:45Z",
+      "concept": {
+        "en": "An evaluation protocol specifies the prompts, generation settings and scoring rules. Model scores can move when those settings change."
+      },
+      "exercise": {
+        "en": "What would you hold fixed to measure the effect of changing only how the prompt is shortened?"
+      }
+    },
     {
       "id": "event-2026-11-14-hero-decode-full-graph-benchmark",
       "date": "2026-11-14",
@@ -5196,6 +5323,53 @@ window.MARIN_RESEARCH = {
       },
       "exercise": {
         "en": "What extra comparison would tell you whether the updated model gives better answers?"
+      }
+    },
+    {
+      "id": "event-2026-11-14-hero-262k-scoring-benchmark",
+      "date": "2026-11-14",
+      "status": "experimental",
+      "title": {
+        "en": "A serving test checks Hero’s scoring near its 262K limit"
+      },
+      "detail": {
+        "en": "Marin checked how closely two software stacks score a book-length input with Hero’s final weights. The experiment extends the earlier serving tests to the part of the text that uses Hero’s long-context scaling. In R25 the team sampled positions in one book at 131K and 262K against two JAX layouts. The 262K median maximum token-probability error was 0.0080, 0.0005 above the earlier 65K band. The team accepted it using the spread between the JAX references. In R27 increasing the input processing budget reduced the first-token wait for one 258K request from 24.93 to 18.56 seconds. At 32 concurrent 258K requests, output throughput was 10.1 versus 9.8 tokens/s/GPU and queueing dominated the wait. Broad model quality and production serving behavior remain open."
+      },
+      "sourceIds": [
+        "M667",
+        "M668",
+        "M655"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-15T21:23:45Z",
+      "concept": {
+        "en": "Prefill processes the prompt before the first new token. Queueing and prefill can dominate the wait with long inputs."
+      },
+      "exercise": {
+        "en": "Why can first-token latency improve for one request while throughput stays about the same under concurrent load?"
+      }
+    },
+    {
+      "id": "event-2026-11-14-skyrl-continuation-recovery-merged",
+      "date": "2026-11-14",
+      "status": "confirmed",
+      "title": {
+        "en": "Marin lets continued RL jobs recover their own latest save"
+      },
+      "detail": {
+        "en": "Marin merged recovery code that helps a continued training job keep work it has already done. After a restart it tries its own latest save first, falling back to the starting save when it has none. PR #11330 merged at 22:33 New York time on November 14. CPU tests compared the model, optimizer and schedule state with an uninterrupted run. Recovery stops if the selected save is missing or corrupt. The 65K and 262K Mochi drafts reuse this logic, with accelerator testing of the new composed recipes still open."
+      },
+      "sourceIds": [
+        "M666",
+        "M652"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-15T21:23:45Z",
+      "concept": {
+        "en": "A starting save provides the initial training state. The continuation then creates its own recovery saves."
+      },
+      "exercise": {
+        "en": "A continuation starts from step 5 and saves step 7 before a crash. Which save should recovery pick?"
       }
     },
     {
