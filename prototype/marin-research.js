@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-11-15",
+  "snapshot": "2026-11-16",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -4042,6 +4042,42 @@ window.MARIN_RESEARCH = {
       "title": "Mochi 65K runnable draft",
       "url": "https://github.com/marin-community/marin/pull/11321",
       "kind": "pr"
+    },
+    {
+      "id": "M674",
+      "title": "Serve one vLLM model across data-parallel hosts",
+      "url": "https://github.com/marin-community/marin/pull/11528",
+      "kind": "pr"
+    },
+    {
+      "id": "M675",
+      "title": "MXFP8 expert changes split for review",
+      "url": "https://github.com/marin-community/marin/pull/10415#issuecomment-6905059103",
+      "kind": "pr"
+    },
+    {
+      "id": "M676",
+      "title": "Align receiver rows in ragged expert exchange",
+      "url": "https://github.com/marin-community/marin/pull/11523",
+      "kind": "pr"
+    },
+    {
+      "id": "M677",
+      "title": "Add MXFP8 layout and quantizers for routed experts",
+      "url": "https://github.com/marin-community/marin/pull/11524",
+      "kind": "pr"
+    },
+    {
+      "id": "M678",
+      "title": "LongBench v2 final-answer grading follow-up",
+      "url": "https://github.com/marin-community/marin/pull/11504#issuecomment-6922134263",
+      "kind": "pr"
+    },
+    {
+      "id": "M679",
+      "title": "Keep MuonH expert banks separate across model chunks",
+      "url": "https://github.com/marin-community/marin/pull/11519",
+      "kind": "pr"
     }
   ],
   "claimGroups": [
@@ -4098,7 +4134,8 @@ window.MARIN_RESEARCH = {
           "The 11-rack SFT v2 run adopted permanent saves every 500 steps and recovered twice on the same lineage, with the last operator-reported step 397342.",
           "The 11-rack SFT v2 run completed 6916 updates and wrote final step 400407 plus all six intermediate permanent saves. Its schema-3 export is reported complete.",
           "The Hero-compatible expert-bank optimizer option merged in #11301 with small reference and restart checks. End-to-end training with the new main-branch option is unverified.",
-          "The standalone GPU vLLM pin and native continuation recovery merged into main. The public checks support the repository changes."
+          "The standalone GPU vLLM pin and native continuation recovery merged into main. The public checks support the repository changes.",
+          "SkyRL merged its FlashAttention and Transformer Engine dependency upgrade. The cited full-size qualification used a preserved revision."
         ]
       },
       "sourceIds": [
@@ -4311,7 +4348,8 @@ window.MARIN_RESEARCH = {
         "M637",
         "M660",
         "M651",
-        "M666"
+        "M666",
+        "M665"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4352,7 +4390,8 @@ window.MARIN_RESEARCH = {
           "An open proposal would permit a nine-rack SFT handoff. Released schema-3 serving parity and the end-to-end post-training run remain planned.",
           "A nine-rack SFT handoff remains open. The canary queue-deadline repair and Hero data copy audit remain proposals.",
           "Adam counter repair and the reasoning-mode identity data change remain proposals.",
-          "The staged evaluation reference adds required core tasks and UncheatableEval. Hero is still pinned to its historical filter. The Mochi 65K and 262K recipes remain drafts."
+          "The staged evaluation reference adds required core tasks and UncheatableEval. Hero is still pinned to its historical filter. The Mochi 65K and 262K recipes remain drafts.",
+          "A cross-host Hero serving launcher, split opt-in MXFP8 changes, chunk-specific MuonH bank IDs and explicit final-answer LongBench scoring remain proposals."
         ]
       },
       "sourceIds": [
@@ -4533,7 +4572,11 @@ window.MARIN_RESEARCH = {
         "M670",
         "M652",
         "M669",
-        "M673"
+        "M673",
+        "M674",
+        "M675",
+        "M679",
+        "M678"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4966,7 +5009,8 @@ window.MARIN_RESEARCH = {
           "Current v2 W&B measurements, later SFT progress, a rack-count handoff, full-model serving parity and public weight release remain unverified.",
           "Anonymous SFT W&B metrics, SFT UncheatableEval, full-model serving parity, public weights and production end-to-end RL remain unverified.",
           "Serving comparisons cover selected numerical tests. General serving parity, deployment of the benchmark configuration and a production RL handoff remain unverified.",
-          "Production RL launch, tuned Hero serving adoption, effects of historical filtering gaps, and fixed final-SFT Paloma and UncheatableEval remain unverified."
+          "Production RL launch, tuned Hero serving adoption, effects of historical filtering gaps, and fixed final-SFT Paloma and UncheatableEval remain unverified.",
+          "The reviewed public sources still do not establish production Mochi RL, GPU execution of the new multi-host serving launcher, or a passing post-merge Grug nightly."
         ]
       },
       "sourceIds": [
@@ -5153,12 +5197,64 @@ window.MARIN_RESEARCH = {
         "M659",
         "M650",
         "M669",
-        "M670"
+        "M670",
+        "M665",
+        "M672",
+        "M674"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-11-16-longbench-final-answer-grading",
+      "date": "2026-11-16",
+      "status": "planned",
+      "title": {
+        "en": "Marin plans an explicit final-answer rule for LongBench"
+      },
+      "detail": {
+        "en": "Marin agreed to make LongBench’s grader read the model’s final answer explicitly. This reduces the chance of scoring a choice that appeared only in the model’s reasoning. The November 16 review says the author will use the shared final-only scoring option once PR #11201 merges. The PR reports that regrading the stored Qwen thinking outputs found no reasoning text reached that grader. This is a protocol follow-up to the Qwen pilot. The reviewed sources still do not provide a matching Hero LongBench score or fixed final-SFT Paloma and UncheatableEval results."
+      },
+      "sourceIds": [
+        "M671",
+        "M678",
+        "M637",
+        "M654"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-16T17:04:11Z",
+      "concept": {
+        "en": "A reasoning trace can mention several possible choices. The grader should score the final answer the model selects."
+      },
+      "exercise": {
+        "en": "If the model considers A in its reasoning and gives B as its final answer, which text should a test fixture ask the grader to score?"
+      }
+    },
+    {
+      "id": "event-2026-11-16-hero-four-host-serve-draft",
+      "date": "2026-11-16",
+      "status": "planned",
+      "title": {
+        "en": "A draft launcher would let four hosts serve one Hero model"
+      },
+      "detail": {
+        "en": "Marin opened a draft so four GPU hosts can serve the finished Hero model as one endpoint. This would give future evaluations a standard way to start a model whose exported weights do not fit the tested single GB200 host. The November 16 draft revision references earlier four-host experiments with the step 400407 BF16 export. Its new path uses four local data-parallel ranks on each host, 16 in total, and one HTTP endpoint. A dry run resolved four tasks of four GB200 GPUs each. The configuration also pins a tokenizer and supplies both stop tokens. The new launcher path has yet to run on GPUs."
+      },
+      "sourceIds": [
+        "M674",
+        "M655",
+        "M651"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-16T17:04:11Z",
+      "concept": {
+        "en": "A dry run checks the launch plan without loading weights or serving requests."
+      },
+      "exercise": {
+        "en": "Which checks would you run after all four hosts load their model shards?"
+      }
+    },
     {
       "id": "event-2026-11-15-hero-standalone-vllm-pin-merged",
       "date": "2026-11-15",
@@ -5226,6 +5322,55 @@ window.MARIN_RESEARCH = {
       },
       "exercise": {
         "en": "What would you hold fixed to measure the effect of changing only how the prompt is shortened?"
+      }
+    },
+    {
+      "id": "event-2026-11-15-skyrl-attention-stack-merge",
+      "date": "2026-11-15",
+      "status": "confirmed",
+      "title": {
+        "en": "Marin merges the GPU training dependencies tested with Mochi"
+      },
+      "detail": {
+        "en": "Marin merged a GPU training update that gives future Mochi runs a standard way to install the attention software tested on long inputs. The merge makes those dependencies available in SkyRL. PR #11307 merged at 19:49 New York time on November 15. It selects published FlashAttention 3 wheels on H100 and FlashAttention 4 on GB200, along with Transformer Engine 2.21. The prior 535B test through update 17 used a preserved source revision; the newer loop and optimizer changes only have small-scale coverage. The merge establishes the repository change. A production Mochi RL launch and a passing rerun of the separate failing Grug nightly remain unverified."
+      },
+      "sourceIds": [
+        "M665",
+        "M672",
+        "M651"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-16T17:04:11Z",
+      "concept": {
+        "en": "A dependency change can make a tested package available to future jobs. A launch record ties a specific running job to the package it uses."
+      },
+      "exercise": {
+        "en": "What evidence would show that a new full-model job actually ran with the merged dependencies?"
+      }
+    },
+    {
+      "id": "event-2026-11-15-mxfp8-expert-review-split",
+      "date": "2026-11-15",
+      "status": "planned",
+      "title": {
+        "en": "Marin splits lower-precision expert support into reviewable changes"
+      },
+      "detail": {
+        "en": "Marin split its proposal for lower-precision expert computation into smaller changes, making it easier to test the data layout and arithmetic independently. The work is intended for future experiments. Three parts were open on November 15 New York time, including receiver-row alignment and MXFP8 quantizers. The original proposal cites an October one-B200 expert-only comparison of 31.9 versus 51.0 ms with recomputation, excluding communication. It also reports larger numerical differences from FP32 with synthetic inputs. The current Hero recipe was finalized without FP8. A full-step result and a training-quality comparison are still open."
+      },
+      "sourceIds": [
+        "M414",
+        "M675",
+        "M676",
+        "M677"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-16T17:04:11Z",
+      "concept": {
+        "en": "MXFP8 represents values with fewer bits and a scale shared by a small block. Reduced precision can speed up arithmetic while changing rounding."
+      },
+      "exercise": {
+        "en": "What measurements would tell you whether a faster expert kernel also speeds up complete training steps?"
       }
     },
     {
