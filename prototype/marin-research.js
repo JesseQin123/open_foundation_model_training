@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-11-16",
+  "snapshot": "2026-11-17",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -4078,6 +4078,42 @@ window.MARIN_RESEARCH = {
       "title": "Keep MuonH expert banks separate across model chunks",
       "url": "https://github.com/marin-community/marin/pull/11519",
       "kind": "pr"
+    },
+    {
+      "id": "M680",
+      "title": "Mochi final SFT on BFCL ×5 versus Snowball models",
+      "url": "https://github.com/marin-community/marin/issues/11538",
+      "kind": "issue"
+    },
+    {
+      "id": "M681",
+      "title": "Snowball ablations to choose the Mochi SFT/RL recipe",
+      "url": "https://github.com/marin-community/marin/issues/11535",
+      "kind": "issue"
+    },
+    {
+      "id": "M682",
+      "title": "Multi-host Mochi startup incident during FlashInfer download",
+      "url": "https://github.com/marin-community/marin/issues/11569",
+      "kind": "issue"
+    },
+    {
+      "id": "M683",
+      "title": "Reuse final permanent checkpoints",
+      "url": "https://github.com/marin-community/marin/pull/11552",
+      "kind": "pr"
+    },
+    {
+      "id": "M684",
+      "title": "Levanter final re-save can leave a committed checkpoint unreadable",
+      "url": "https://github.com/marin-community/marin/issues/11534",
+      "kind": "issue"
+    },
+    {
+      "id": "M685",
+      "title": "Index AAII v5 and eval-policy benchmarks in the decontamination corpus",
+      "url": "https://github.com/marin-community/marin/pull/10938",
+      "kind": "pr"
     }
   ],
   "claimGroups": [
@@ -4135,7 +4171,8 @@ window.MARIN_RESEARCH = {
           "The 11-rack SFT v2 run completed 6916 updates and wrote final step 400407 plus all six intermediate permanent saves. Its schema-3 export is reported complete.",
           "The Hero-compatible expert-bank optimizer option merged in #11301 with small reference and restart checks. End-to-end training with the new main-branch option is unverified.",
           "The standalone GPU vLLM pin and native continuation recovery merged into main. The public checks support the repository changes.",
-          "SkyRL merged its FlashAttention and Transformer Engine dependency upgrade. The cited full-size qualification used a preserved revision."
+          "SkyRL merged its FlashAttention and Transformer Engine dependency upgrade. The cited full-size qualification used a preserved revision.",
+          "The four-host Mochi evaluation setup reported prior successful starts and one cold-start file-lock failure. Levanter merged reuse of a matching permanent final save. Neither establishes deployment of the new standalone launcher or a Hero training change."
         ]
       },
       "sourceIds": [
@@ -4349,7 +4386,10 @@ window.MARIN_RESEARCH = {
         "M660",
         "M651",
         "M666",
-        "M665"
+        "M665",
+        "M680",
+        "M682",
+        "M683"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4391,7 +4431,8 @@ window.MARIN_RESEARCH = {
           "A nine-rack SFT handoff remains open. The canary queue-deadline repair and Hero data copy audit remain proposals.",
           "Adam counter repair and the reasoning-mode identity data change remain proposals.",
           "The staged evaluation reference adds required core tasks and UncheatableEval. Hero is still pinned to its historical filter. The Mochi 65K and 262K recipes remain drafts.",
-          "A cross-host Hero serving launcher, split opt-in MXFP8 changes, chunk-specific MuonH bank IDs and explicit final-answer LongBench scoring remain proposals."
+          "A cross-host Hero serving launcher, split opt-in MXFP8 changes, chunk-specific MuonH bank IDs and explicit final-answer LongBench scoring remain proposals.",
+          "The v13 evaluation reference expansion remains open and unstaged. The documented serving workarounds still need a deployed repair receipt."
         ]
       },
       "sourceIds": [
@@ -4576,7 +4617,9 @@ window.MARIN_RESEARCH = {
         "M674",
         "M675",
         "M679",
-        "M678"
+        "M678",
+        "M685",
+        "M682"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4633,7 +4676,8 @@ window.MARIN_RESEARCH = {
           "The earlier one-rack RL draft documents five 32K updates and three 48K updates. Its combined PR closed without merge. Separate GB200 serving trials on the final SFT weights show gains from larger batches and full decode graph replay.",
           "A separate full-size one-rack FlashAttention 4 qualification reached 65,360 attended tokens and saved native checkpoint 17. It used a preserved experimental branch.",
           "A separate trainer-only replay from native checkpoint 5 applied update 6 using saved responses. Fresh full-context on-policy learning remains unverified.",
-          "Hero serving checks cover selected positions through 262K. The LongBench v2 pilot reports Qwen results with protocol-dependent scores."
+          "Hero serving checks cover selected positions through 262K. The LongBench v2 pilot reports Qwen results with protocol-dependent scores.",
+          "Mochi final SFT step 400407 scored 450/615 on BFCL with the configured retry rule, with a 73.01–73.17% first-attempt bound."
         ]
       },
       "sourceIds": [
@@ -4786,7 +4830,8 @@ window.MARIN_RESEARCH = {
         "M665",
         "M667",
         "M668",
-        "M671"
+        "M671",
+        "M680"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4839,7 +4884,8 @@ window.MARIN_RESEARCH = {
           "Two NVLink errors were reported on the same physical rack. That identifies a repeated location without establishing the underlying cause.",
           "SFT training loss fell with broadly flat held-out losses. The near-limit RL result establishes capacity in the tested setup, not learning gains.",
           "The targeted identity test points to reasoning-mode identity coverage as a possible contributor. A matched data and checkpoint experiment is needed to test causality.",
-          "Expanding the reference likely improves detection coverage in a matched scan. The exact-copy probes do not measure historical training-data overlap or score effects."
+          "Expanding the reference likely improves detection coverage in a matched scan. The exact-copy probes do not measure historical training-data overlap or score effects.",
+          "The Mochi and Snowball BFCL comparison is descriptive because serving hardware and software differed. It does not isolate a recipe effect."
         ]
       },
       "sourceIds": [
@@ -4967,7 +5013,8 @@ window.MARIN_RESEARCH = {
         "M650",
         "M652",
         "M661",
-        "M670"
+        "M670",
+        "M680"
       ],
       "reviewStatus": "reviewed"
     },
@@ -5010,7 +5057,8 @@ window.MARIN_RESEARCH = {
           "Anonymous SFT W&B metrics, SFT UncheatableEval, full-model serving parity, public weights and production end-to-end RL remain unverified.",
           "Serving comparisons cover selected numerical tests. General serving parity, deployment of the benchmark configuration and a production RL handoff remain unverified.",
           "Production RL launch, tuned Hero serving adoption, effects of historical filtering gaps, and fixed final-SFT Paloma and UncheatableEval remain unverified.",
-          "The reviewed public sources still do not establish production Mochi RL, GPU execution of the new multi-host serving launcher, or a passing post-merge Grug nightly."
+          "The reviewed public sources still do not establish production Mochi RL, GPU execution of the new multi-host serving launcher, or a passing post-merge Grug nightly.",
+          "Production Mochi RL and fixed final-SFT Paloma and UncheatableEval remain unverified. The BFCL receipt measures a separate task family."
         ]
       },
       "sourceIds": [
@@ -5200,12 +5248,60 @@ window.MARIN_RESEARCH = {
         "M670",
         "M665",
         "M672",
-        "M674"
+        "M674",
+        "M680"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-11-17-levanter-reuse-final-permanent-save",
+      "date": "2026-11-17",
+      "status": "confirmed",
+      "title": {
+        "en": "Levanter stops rewriting a final checkpoint that was already saved"
+      },
+      "detail": {
+        "en": "Marin merged a change that preserves a completed permanent checkpoint when training finishes at the same step. Avoiding a second write closes one way an interruption could leave the last save unreadable. In a local 16 MiB test, the forced save took 60 ms and grew the directory from 16.8 to 33.6 MB. The revised path took under 1 ms without growth. A regression test restored the original checkpoint after reproducing a failed second manifest write on the baseline. The merge covers matching permanent saves within the same checkpointer. Temporary saves and restarts with a new checkpointer can still rewrite the path. The local timing does not measure Hero storage performance or deployment."
+      },
+      "sourceIds": [
+        "M683",
+        "M684"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-17T14:07:15Z",
+      "concept": {
+        "en": "The checkpoint manifest describes the files that must be read to recover. A save can appear committed yet be unusable if its manifest is damaged."
+      },
+      "exercise": {
+        "en": "If a completed checkpoint already covers the last step, why can skipping a redundant write make recovery safer?"
+      }
+    },
+    {
+      "id": "event-2026-11-17-decontam-reference-expansion-v13",
+      "date": "2026-11-17",
+      "status": "planned",
+      "title": {
+        "en": "Marin proposes adding more benchmark examples to the overlap check"
+      },
+      "detail": {
+        "en": "Marin proposed screening future training text against more public benchmark material. The expansion could catch copied task instructions even when a copy omits the reference answer. The open change describes 32,374 added records, including public AAII v5 tasks and uncovered post-training benchmarks, and separately indexes sufficiently long views of an item such as the prompt or reference answer. It records source exceptions, including a mirror for GDP.pdf and a broader MRCR selection. The proposed v13 reference corpus is not yet staged. There is no new Hero filtering run or measured change to its scores."
+      },
+      "sourceIds": [
+        "M685",
+        "M568",
+        "M670"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-17T14:07:15Z",
+      "concept": {
+        "en": "Indexing different parts of an evaluation item can catch partial copies in training text."
+      },
+      "exercise": {
+        "en": "How would you test if indexing a task instruction catches copies without flagging unrelated documents?"
+      }
+    },
     {
       "id": "event-2026-11-16-longbench-final-answer-grading",
       "date": "2026-11-16",
@@ -5253,6 +5349,54 @@ window.MARIN_RESEARCH = {
       },
       "exercise": {
         "en": "Which checks would you run after all four hosts load their model shards?"
+      }
+    },
+    {
+      "id": "event-2026-11-16-mochi-bfcl-final-sft",
+      "date": "2026-11-16",
+      "status": "experimental",
+      "title": {
+        "en": "Mochi’s finished fine-tune answers 450 of 615 tool-use trials"
+      },
+      "detail": {
+        "en": "Marin measured how often Mochi’s finished fine-tune successfully used tools in a benchmark. That gives the team a baseline for later training experiments. On November 16, the published run for SFT step 400407 scored 73.17% across five repeats of 123 Berkeley Function Calling Leaderboard tasks with the Pi agent. There were 449 first-attempt wins and one first-attempt result unavailable after a timeout, bounding the first-attempt score at 73.01–73.17%. Snowball runs using the same tasks and template scored 33.98–52.36%, with different serving hardware and code versions. The comparison is descriptive. It does not isolate a model or training-recipe effect, and the benchmark does not cover nested edits."
+      },
+      "sourceIds": [
+        "M680",
+        "M681",
+        "M650"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-17T14:07:15Z",
+      "concept": {
+        "en": "A matched benchmark comparison keeps the setup fixed so the variable of interest is easier to isolate."
+      },
+      "exercise": {
+        "en": "What would you keep the same if you wanted to compare two checkpoints’ tool-use scores?"
+      }
+    },
+    {
+      "id": "event-2026-11-16-mochi-serving-cold-start-incident",
+      "date": "2026-11-16",
+      "status": "confirmed",
+      "title": {
+        "en": "A four-host Mochi evaluation serve failed while starting on a cold node"
+      },
+      "detail": {
+        "en": "Marin reported that one four-host Mochi evaluation serve could not start after workers timed out waiting for a shared file. This shows that startup readiness matters even after the model has served evaluations successfully. On November 16 the incident report recorded a 30-second FlashInfer download-lock timeout, missing header errors and other engines still waiting while tasks appeared running. Two earlier starts with the same model and image succeeded. The report ties the failure to this occurrence and proposes prefetching or packaging the required files. A durable repair and a successful GPU run of the separate draft launcher remain unverified."
+      },
+      "sourceIds": [
+        "M682",
+        "M674",
+        "M680"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-17T14:07:15Z",
+      "concept": {
+        "en": "A worker can be running without being ready to handle requests. A readiness check asks whether the whole service can respond."
+      },
+      "exercise": {
+        "en": "Which check would catch a service whose workers are alive but stuck waiting for their peers?"
       }
     },
     {
