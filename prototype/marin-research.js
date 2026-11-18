@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-11-17",
+  "snapshot": "2026-11-18",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -4114,6 +4114,72 @@ window.MARIN_RESEARCH = {
       "title": "Index AAII v5 and eval-policy benchmarks in the decontamination corpus",
       "url": "https://github.com/marin-community/marin/pull/10938",
       "kind": "pr"
+    },
+    {
+      "id": "M686",
+      "title": "Initial pretraining checkpoints for Marin Mochi 535B-A23B",
+      "url": "https://openathena.ai/blog/marin-mochi-pretraining-checkpoints/",
+      "kind": "web"
+    },
+    {
+      "id": "M687",
+      "title": "Mochi public pretraining checkpoint repository",
+      "url": "https://huggingface.co/open-athena/Marin-Mochi-535B-A23B",
+      "kind": "report"
+    },
+    {
+      "id": "M688",
+      "title": "Pinned Mochi pretraining release model card",
+      "url": "https://huggingface.co/open-athena/Marin-Mochi-535B-A23B/blob/dbec8ca184824a65229e22ac91ece0c126df3308/README.md",
+      "kind": "report"
+    },
+    {
+      "id": "M689",
+      "title": "Pinned final pretraining upload manifest",
+      "url": "https://huggingface.co/open-athena/Marin-Mochi-535B-A23B/resolve/dbec8ca184824a65229e22ac91ece0c126df3308/hf-upload-manifest.json",
+      "kind": "report"
+    },
+    {
+      "id": "M690",
+      "title": "NCCL source-library numerical A/B result",
+      "url": "https://github.com/marin-community/marin/issues/11649#issuecomment-6977654297",
+      "kind": "issue"
+    },
+    {
+      "id": "M691",
+      "title": "Use 4 MiB NCCL buffers for policy and reference roles",
+      "url": "https://github.com/marin-community/marin/pull/11656",
+      "kind": "pr"
+    },
+    {
+      "id": "M692",
+      "title": "Correction to EAGER module-loading stall observations",
+      "url": "https://github.com/marin-community/marin/issues/11646#issuecomment-6976136441",
+      "kind": "issue"
+    },
+    {
+      "id": "M693",
+      "title": "Long Loop first train-step stall on 64 H100s",
+      "url": "https://github.com/marin-community/marin/issues/11646",
+      "kind": "issue"
+    },
+    {
+      "id": "M694",
+      "title": "Streamed policy loader can exhaust host RAM",
+      "url": "https://github.com/marin-community/marin/issues/11638",
+      "kind": "issue"
+    },
+    {
+      "id": "M695",
+      "title": "Adopt vLLM 47a8e415bff1 for GPU serving",
+      "url": "https://github.com/marin-community/marin/pull/11635",
+      "kind": "pr"
+    },
+    {
+      "id": "M696",
+      "title": "Week of November 9 standup",
+      "url": "https://github.com/marin-community/marin/issues/11597",
+      "kind": "standup"
     }
   ],
   "claimGroups": [
@@ -4172,7 +4238,8 @@ window.MARIN_RESEARCH = {
           "The Hero-compatible expert-bank optimizer option merged in #11301 with small reference and restart checks. End-to-end training with the new main-branch option is unverified.",
           "The standalone GPU vLLM pin and native continuation recovery merged into main. The public checks support the repository changes.",
           "SkyRL merged its FlashAttention and Transformer Engine dependency upgrade. The cited full-size qualification used a preserved revision.",
-          "The four-host Mochi evaluation setup reported prior successful starts and one cold-start file-lock failure. Levanter merged reuse of a matching permanent final save. Neither establishes deployment of the new standalone launcher or a Hero training change."
+          "The four-host Mochi evaluation setup reported prior successful starts and one cold-start file-lock failure. Levanter merged reuse of a matching permanent final save. Neither establishes deployment of the new standalone launcher or a Hero training change.",
+          "Open Athena announced 57 public pretraining checkpoints on November 17 and acknowledged substantial missed benchmark leakage. The public weights are pretraining stages, distinct from SFT step 400407."
         ]
       },
       "sourceIds": [
@@ -4389,7 +4456,10 @@ window.MARIN_RESEARCH = {
         "M665",
         "M680",
         "M682",
-        "M683"
+        "M683",
+        "M686",
+        "M687",
+        "M689"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4432,7 +4502,8 @@ window.MARIN_RESEARCH = {
           "Adam counter repair and the reasoning-mode identity data change remain proposals.",
           "The staged evaluation reference adds required core tasks and UncheatableEval. Hero is still pinned to its historical filter. The Mochi 65K and 262K recipes remain drafts.",
           "A cross-host Hero serving launcher, split opt-in MXFP8 changes, chunk-specific MuonH bank IDs and explicit final-answer LongBench scoring remain proposals.",
-          "The v13 evaluation reference expansion remains open and unstaged. The documented serving workarounds still need a deployed repair receipt."
+          "The v13 evaluation reference expansion remains open and unstaged. The documented serving workarounds still need a deployed repair receipt.",
+          "The four-MiB policy/reference NCCL mitigation and adoption of the full-decode-graph GPU wheel remain open. The official post-training work is still under development."
         ]
       },
       "sourceIds": [
@@ -4619,7 +4690,10 @@ window.MARIN_RESEARCH = {
         "M679",
         "M678",
         "M685",
-        "M682"
+        "M682",
+        "M691",
+        "M695",
+        "M686"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4677,7 +4751,8 @@ window.MARIN_RESEARCH = {
           "A separate full-size one-rack FlashAttention 4 qualification reached 65,360 attended tokens and saved native checkpoint 17. It used a preserved experimental branch.",
           "A separate trainer-only replay from native checkpoint 5 applied update 6 using saved responses. Fresh full-context on-policy learning remains unverified.",
           "Hero serving checks cover selected positions through 262K. The LongBench v2 pilot reports Qwen results with protocol-dependent scores.",
-          "Mochi final SFT step 400407 scored 450/615 on BFCL with the configured retry rule, with a 73.01–73.17% first-attempt bound."
+          "Mochi final SFT step 400407 scored 450/615 on BFCL with the configured retry rule, with a 73.01–73.17% first-attempt bound.",
+          "An eight-GB200 NCCL library A/B reproduced and corrected the tested small-buffer reduction failure. The 64-H100 Long Loop first-step workaround still stalls in later runs."
         ]
       },
       "sourceIds": [
@@ -4831,7 +4906,10 @@ window.MARIN_RESEARCH = {
         "M667",
         "M668",
         "M671",
-        "M680"
+        "M680",
+        "M690",
+        "M693",
+        "M692"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4885,7 +4963,8 @@ window.MARIN_RESEARCH = {
           "SFT training loss fell with broadly flat held-out losses. The near-limit RL result establishes capacity in the tested setup, not learning gains.",
           "The targeted identity test points to reasoning-mode identity coverage as a possible contributor. A matched data and checkpoint experiment is needed to test causality.",
           "Expanding the reference likely improves detection coverage in a matched scan. The exact-copy probes do not measure historical training-data overlap or score effects.",
-          "The Mochi and Snowball BFCL comparison is descriptive because serving hardware and software differed. It does not isolate a recipe effect."
+          "The Mochi and Snowball BFCL comparison is descriptive because serving hardware and software differed. It does not isolate a recipe effect.",
+          "Missed benchmark leakage constrains fair model comparisons. The release provides no corrected scores or measured inflation, so the size of the quality impact is unknown."
         ]
       },
       "sourceIds": [
@@ -5014,7 +5093,8 @@ window.MARIN_RESEARCH = {
         "M652",
         "M661",
         "M670",
-        "M680"
+        "M680",
+        "M686"
       ],
       "reviewStatus": "reviewed"
     },
@@ -5053,12 +5133,11 @@ window.MARIN_RESEARCH = {
           "ProviderIMEXrepair/exactretainedmemoryownership/initiatingtaskheartbeatcause remainunconfirmed. FP32attentionadoption,representative-sizepreemptionsave,livegrace/retryqualification andfreshSkyRLnightlygreen remainunverified. Closed10777isnotastoragerestorationreceipt.",
           "Hero resumed from its own 382854 checkpoint on November 4. Other retries and real-spike intervention remain unverified; responsible-owner acceptance of the MFU-band exception is unreported. BF16 library root cause and historicalHero corruption remain unknown; sourceinclusion is now documented in the65Kbundle. CatCount setup delay lacks an exact request/provider cause; Grug passed, but a fresh wholly passing nightly remains pending.",
           "65K main adoption and initial eleven-rack capacity behavior are now confirmed; capability beyond 32K remains unverified. NUPA saved-campaign regrading, scorer provenance and canonical grader parity are unresolved. Mini full quality/rank fidelity and the identity candidate clean gate remain unmet; a fresh wholly green CatCount nightly is still unconfirmed.",
-          "Current v2 W&B measurements, later SFT progress, a rack-count handoff, full-model serving parity and public weight release remain unverified.",
-          "Anonymous SFT W&B metrics, SFT UncheatableEval, full-model serving parity, public weights and production end-to-end RL remain unverified.",
           "Serving comparisons cover selected numerical tests. General serving parity, deployment of the benchmark configuration and a production RL handoff remain unverified.",
           "Production RL launch, tuned Hero serving adoption, effects of historical filtering gaps, and fixed final-SFT Paloma and UncheatableEval remain unverified.",
           "The reviewed public sources still do not establish production Mochi RL, GPU execution of the new multi-host serving launcher, or a passing post-merge Grug nightly.",
-          "Production Mochi RL and fixed final-SFT Paloma and UncheatableEval remain unverified. The BFCL receipt measures a separate task family."
+          "Production Mochi RL and fixed final-SFT Paloma and UncheatableEval remain unverified. The BFCL receipt measures a separate task family.",
+          "Pretraining checkpoints are public. The final SFT weight release, validated generation from the public pretraining exports, corrected contaminated-benchmark comparisons and production Mochi RL remain unverified."
         ]
       },
       "sourceIds": [
@@ -5249,12 +5328,61 @@ window.MARIN_RESEARCH = {
         "M665",
         "M672",
         "M674",
-        "M680"
+        "M680",
+        "M686",
+        "M688"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-11-18-nccl-small-buffer-numerical-ab",
+      "date": "2026-11-18",
+      "status": "experimental",
+      "title": {
+        "en": "A communication test explains a failed check of matching weights"
+      },
+      "detail": {
+        "en": "Marin reproduced incorrect GPU reductions that could make a strict check reject matching model weights. This gives the team a concrete target for repairing the communication setup before a training launch. In an eight-GB200 library A/B, packaged and source-built NCCL 2.30.7 returned incorrect results with the tested 256 KiB buffer settings. A patch bounding the communication chunk to its FIFO capacity passed both native C and PyTorch checks. The run covered 1,824 numerical cases and 7,296 independent hash checks. Unpatched 4 MiB controls passed through 512 MiB messages. The proposed policy/reference-buffer change remains open, and the three-rack training geometry has not been requalified. The evidence supports the tested communication failure and fix, with broader training effects still unmeasured."
+      },
+      "sourceIds": [
+        "M690",
+        "M691"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-18T14:02:02Z",
+      "concept": {
+        "en": "A known-input reduction test has an exact expected result. It can distinguish a faulty comparison operation from differences in the model being compared."
+      },
+      "exercise": {
+        "en": "If two replicas have equal independent hashes but a GPU comparison says otherwise, what known-input test would you run?"
+      }
+    },
+    {
+      "id": "event-2026-11-18-long-loop-stall-workaround-limit",
+      "date": "2026-11-18",
+      "status": "experimental",
+      "title": {
+        "en": "The first-step stall in a separate training loop still has no reliable workaround"
+      },
+      "detail": {
+        "en": "New tests show that an early workaround does not consistently unblock a separate Snowball training experiment. That keeps the cause and the readiness of its proposed optimizer settings open. On November 18, fresh-state runs stalled beyond 300 seconds even with eager CUDA module loading and autotune level zero. A further run also stalled after moving the full training state to CPU memory and back. The currently recorded eager-mode runs with that round trip include five completions and one stall, across differing runs. These observations do not estimate a success rate. The experiment uses 64 H100s on a Long Loop branch and does not establish an incident in Hero’s completed pretraining or fine-tune."
+      },
+      "sourceIds": [
+        "M693",
+        "M692",
+        "M696"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-18T14:02:02Z",
+      "concept": {
+        "en": "A workaround needs repeatable success under matched conditions before it can explain or resolve an intermittent failure."
+      },
+      "exercise": {
+        "en": "Which settings and input state would you keep fixed when testing the proposed workaround again?"
+      }
+    },
     {
       "id": "event-2026-11-17-levanter-reuse-final-permanent-save",
       "date": "2026-11-17",
@@ -5300,6 +5428,103 @@ window.MARIN_RESEARCH = {
       },
       "exercise": {
         "en": "How would you test if indexing a task instruction catches copies without flagging unrelated documents?"
+      }
+    },
+    {
+      "id": "event-2026-11-17-mochi-pretraining-checkpoint-release",
+      "date": "2026-11-17",
+      "status": "confirmed",
+      "title": {
+        "en": "Marin releases 57 Mochi pretraining checkpoints for research"
+      },
+      "detail": {
+        "en": "Open Athena announced 57 publicly uploaded Mochi pretraining checkpoints on November 17. Researchers can use the saved weights to study how the model changed during training. The announcement reports ten saves from context extension and says evaluation and post-training work are ongoing. The November 18 public Hub check found 57 step branches, with final pretraining step 393491 on main. Its pinned card and manifest describe 193 BF16 shards and 1,070,954,213,376 payload bytes, with optimizer and data-loader state excluded. The manifest records that generation parity was not tested. This release is the pretraining sequence. The separately completed SFT step 400407 is outside its published inventory. The review inspected metadata and the index, without downloading or rehashing all weight shards."
+      },
+      "sourceIds": [
+        "M686",
+        "M687",
+        "M688",
+        "M689"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-18T14:02:02Z",
+      "concept": {
+        "en": "A sequence of saved models lets researchers compare training stages while holding their evaluation method fixed."
+      },
+      "exercise": {
+        "en": "Which two checkpoints and matched test would help you study the effect of extending context length?"
+      }
+    },
+    {
+      "id": "event-2026-11-17-mochi-release-benchmark-leakage",
+      "date": "2026-11-17",
+      "status": "confirmed",
+      "title": {
+        "en": "Marin says missed benchmark overlap limits its model comparisons"
+      },
+      "detail": {
+        "en": "Open Athena says its earlier filtering missed substantial leakage from common pretraining benchmarks. That limits which evaluations it can fairly use to compare Mochi with other models. The November 17 release note connects the investigation to unexpected evaluation-loss changes and an external concern. It does not publish an affected-benchmark list, a corrected score set or a measured inflation estimate. Earlier reference-coverage proposals help explain the need for more checks, with the amount of score distortion still unknown."
+      },
+      "sourceIds": [
+        "M686",
+        "M568",
+        "M670",
+        "M685"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-18T14:02:02Z",
+      "concept": {
+        "en": "If evaluation text appears in training data, a score can reflect familiarity with that text as well as the ability being tested."
+      },
+      "exercise": {
+        "en": "What evidence would you request before using an affected benchmark to rank two models?"
+      }
+    },
+    {
+      "id": "event-2026-11-17-streamed-mochi-loader-memory",
+      "date": "2026-11-17",
+      "status": "confirmed",
+      "title": {
+        "en": "A streamed 535B evaluation load exhausted the host’s memory budget"
+      },
+      "detail": {
+        "en": "A reported evaluation launch failed while loading the large model, before serving could begin. Bounding the loader’s temporary memory would help prevent several workers from filling the same host at once. The November 17 report records 910.94 GB used out of 955.71 GB, with four EngineCore processes using 191–197 GB each. Ray killed one actor at its 0.95 threshold. The evaluation recipe omitted finite loader limits, whereas the existing training recipe specifies an 8 GiB limit and lower concurrency. Reusing bounded settings is the proposed recipe correction. A verified successful relaunch and a shared default repair remain open."
+      },
+      "sourceIds": [
+        "M694",
+        "M674"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-18T14:02:02Z",
+      "concept": {
+        "en": "A model loader may hold temporary copies or buffers in CPU memory before transferring weights to GPUs."
+      },
+      "exercise": {
+        "en": "Why should a per-worker loader budget account for every worker sharing the same host?"
+      }
+    },
+    {
+      "id": "event-2026-11-17-hero-symmetric-memory-option-merge",
+      "date": "2026-11-17",
+      "status": "confirmed",
+      "title": {
+        "en": "Marin merges an option used in the faster Hero serving tests"
+      },
+      "detail": {
+        "en": "Marin merged an evaluation setting that can request symmetric GPU communication memory. This makes one of the tested Hero serving controls available through recorded model configuration. PR #11492 merged on November 17 New York time. A same-node full-decode-graph comparison reports 1,421 to 1,514 output tokens/s/GPU at 1,024 concurrent requests, with single-request latency moving from 20.2 to 18.2 ms/token. Those results use a patched serving build. The new wheel adoption remains a draft awaiting Snowball cluster parity, and the settings still select piecewise graphs by default. A production gain from the new option remains unverified."
+      },
+      "sourceIds": [
+        "M669",
+        "M695",
+        "M655"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-18T14:02:02Z",
+      "concept": {
+        "en": "An optional setting makes a behavior selectable. The speed effect depends on the software and workload used with it."
+      },
+      "exercise": {
+        "en": "What matched run would show whether the current wheel benefits from the new option?"
       }
     },
     {
