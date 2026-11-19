@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-11-18",
+  "snapshot": "2026-11-19",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -4180,6 +4180,36 @@ window.MARIN_RESEARCH = {
       "title": "Week of November 9 standup",
       "url": "https://github.com/marin-community/marin/issues/11597",
       "kind": "standup"
+    },
+    {
+      "id": "M697",
+      "title": "Three-rack Snowball NCCL qualification with two optimizer updates",
+      "url": "https://github.com/marin-community/marin/issues/11649#issuecomment-6988951209",
+      "kind": "issue"
+    },
+    {
+      "id": "M698",
+      "title": "Read-only Mochi SFT benchmark and failure-trace audit",
+      "url": "https://github.com/marin-community/marin/issues/11723",
+      "kind": "issue"
+    },
+    {
+      "id": "M699",
+      "title": "Offline top-K Mochi-to-Snowball distillation ablation",
+      "url": "https://github.com/marin-community/marin/pull/11732",
+      "kind": "pr"
+    },
+    {
+      "id": "M700",
+      "url": "https://github.com/marin-community/marin/pull/11728",
+      "title": "Mochi one-rack RL liveness and mixed-task launcher draft",
+      "kind": "pr"
+    },
+    {
+      "id": "M701",
+      "url": "https://github.com/marin-community/marin/pull/11712",
+      "title": "SFT-to-RL export presets and production checkpoint CPU readback",
+      "kind": "pr"
     }
   ],
   "claimGroups": [
@@ -4239,7 +4269,8 @@ window.MARIN_RESEARCH = {
           "The standalone GPU vLLM pin and native continuation recovery merged into main. The public checks support the repository changes.",
           "SkyRL merged its FlashAttention and Transformer Engine dependency upgrade. The cited full-size qualification used a preserved revision.",
           "The four-host Mochi evaluation setup reported prior successful starts and one cold-start file-lock failure. Levanter merged reuse of a matching permanent final save. Neither establishes deployment of the new standalone launcher or a Hero training change.",
-          "Open Athena announced 57 public pretraining checkpoints on November 17 and acknowledged substantial missed benchmark leakage. The public weights are pretraining stages, distinct from SFT step 400407."
+          "Open Athena announced 57 public pretraining checkpoints on November 17 and acknowledged substantial missed benchmark leakage. The public weights are pretraining stages, distinct from SFT step 400407.",
+          "The four-MiB NCCL role-buffer defaults and GPU vLLM 47a8e415bff1 pin merged November 18 New York time. These are accepted code changes with future-launch/default-mode limits; no full-Mochi adoption is established."
         ]
       },
       "sourceIds": [
@@ -4459,7 +4490,9 @@ window.MARIN_RESEARCH = {
         "M683",
         "M686",
         "M687",
-        "M689"
+        "M689",
+        "M691",
+        "M695"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4503,7 +4536,7 @@ window.MARIN_RESEARCH = {
           "The staged evaluation reference adds required core tasks and UncheatableEval. Hero is still pinned to its historical filter. The Mochi 65K and 262K recipes remain drafts.",
           "A cross-host Hero serving launcher, split opt-in MXFP8 changes, chunk-specific MuonH bank IDs and explicit final-answer LongBench scoring remain proposals.",
           "The v13 evaluation reference expansion remains open and unstaged. The documented serving workarounds still need a deployed repair receipt.",
-          "The four-MiB policy/reference NCCL mitigation and adoption of the full-decode-graph GPU wheel remain open. The official post-training work is still under development."
+          "Full Mochi post-training qualification, downstream validation of teacher distillation and clean benchmark comparisons remain future work. The distillation and newer serving presets remain open proposals."
         ]
       },
       "sourceIds": [
@@ -4693,7 +4726,8 @@ window.MARIN_RESEARCH = {
         "M682",
         "M691",
         "M695",
-        "M686"
+        "M686",
+        "M699"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4752,7 +4786,9 @@ window.MARIN_RESEARCH = {
           "A separate trainer-only replay from native checkpoint 5 applied update 6 using saved responses. Fresh full-context on-policy learning remains unverified.",
           "Hero serving checks cover selected positions through 262K. The LongBench v2 pilot reports Qwen results with protocol-dependent scores.",
           "Mochi final SFT step 400407 scored 450/615 on BFCL with the configured retry rule, with a 73.01–73.17% first-attempt bound.",
-          "An eight-GB200 NCCL library A/B reproduced and corrected the tested small-buffer reduction failure. The 64-H100 Long Loop first-step workaround still stalls in later runs."
+          "An eight-GB200 NCCL library A/B reproduced and corrected the tested small-buffer reduction failure. The 64-H100 Long Loop first-step workaround still stalls in later runs.",
+          "A three-rack 67B Snowball run passed two updates and strict byte checks with 4 MiB NCCL buffers; full tensor restoration and full 535B qualification remain untested. A read-only SFT audit reports long-text/instruction weaknesses; a 60-step teacher trial does not improve held-out loss.",
+          "A November 19 draft reports full Mochi one-rack RL liveness: two optimizer updates and checkpoint step2 at4453e9745a using an explicit published initializer. A separate draft reports CPU export/readback of SFT400407; linked internal jobs were not independently inspected. Neither is a sustained production launch or public final-SFT release."
         ]
       },
       "sourceIds": [
@@ -4909,7 +4945,12 @@ window.MARIN_RESEARCH = {
         "M680",
         "M690",
         "M693",
-        "M692"
+        "M692",
+        "M697",
+        "M698",
+        "M699",
+        "M700",
+        "M701"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4964,7 +5005,8 @@ window.MARIN_RESEARCH = {
           "The targeted identity test points to reasoning-mode identity coverage as a possible contributor. A matched data and checkpoint experiment is needed to test causality.",
           "Expanding the reference likely improves detection coverage in a matched scan. The exact-copy probes do not measure historical training-data overlap or score effects.",
           "The Mochi and Snowball BFCL comparison is descriptive because serving hardware and software differed. It does not isolate a recipe effect.",
-          "Missed benchmark leakage constrains fair model comparisons. The release provides no corrected scores or measured inflation, so the size of the quality impact is unknown."
+          "Missed benchmark leakage constrains fair model comparisons. The release provides no corrected scores or measured inflation, so the size of the quality impact is unknown.",
+          "The new failure-trace patterns suggest targeted retrieval and instruction tests. Their heuristics and configuration-dependent comparisons do not identify a causal mechanism or a clean model ranking."
         ]
       },
       "sourceIds": [
@@ -5094,7 +5136,8 @@ window.MARIN_RESEARCH = {
         "M661",
         "M670",
         "M680",
-        "M686"
+        "M686",
+        "M698"
       ],
       "reviewStatus": "reviewed"
     },
@@ -5137,7 +5180,9 @@ window.MARIN_RESEARCH = {
           "Production RL launch, tuned Hero serving adoption, effects of historical filtering gaps, and fixed final-SFT Paloma and UncheatableEval remain unverified.",
           "The reviewed public sources still do not establish production Mochi RL, GPU execution of the new multi-host serving launcher, or a passing post-merge Grug nightly.",
           "Production Mochi RL and fixed final-SFT Paloma and UncheatableEval remain unverified. The BFCL receipt measures a separate task family.",
-          "Pretraining checkpoints are public. The final SFT weight release, validated generation from the public pretraining exports, corrected contaminated-benchmark comparisons and production Mochi RL remain unverified."
+          "Pretraining checkpoints are public. The final SFT weight release, validated generation from the public pretraining exports, corrected contaminated-benchmark comparisons and production Mochi RL remain unverified.",
+          "Full 535B RL production adoption, complete tensor restore after the three-rack Snowball test, corrected clean benchmark rankings, and downstream benefit from teacher distillation remain unverified. No new fixed final-SFT Paloma or UncheatableEval artifact was established.",
+          "A full Mochi one-rack two-update smoke is now publicly reported. Sustained production RL, final released-P83 smoke qualification, public final-SFT weight release and generation parity remain unverified."
         ]
       },
       "sourceIds": [
@@ -5330,12 +5375,112 @@ window.MARIN_RESEARCH = {
         "M674",
         "M680",
         "M686",
-        "M688"
+        "M688",
+        "M697",
+        "M698",
+        "M699",
+        "M700",
+        "M701"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-11-19-mochi-one-rack-rl-liveness",
+      "date": "2026-11-19",
+      "status": "experimental",
+      "title": {
+        "en": "Mochi completes two updates in a one-rack reinforcement-learning smoke test"
+      },
+      "detail": {
+        "en": "A draft reports that the full Mochi model completed two optimizer updates and saved a checkpoint in a one-rack reinforcement-learning smoke test. This checks that the training pieces can work together, without demonstrating a sustained production run or improved model quality. The November 19 report in PR #11728 identifies source revision 4453e9745a, an explicit published initializer and checkpoint step 2. During the second update, 59.75% of loss-bearing tokens used synchronized weights with piecewise CUDA graphs enabled. This is a reported weight-freshness observation, not an accuracy score. Final smoke evidence on the released P83 stack is still being gathered. The shared launcher and its runtime/SFT dependencies remain drafts. The linked internal job was not independently inspected; the public PR is the evidence for this bounded operator-reported result."
+      },
+      "sourceIds": [
+        "M700",
+        "M697",
+        "M650"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-19T14:10:56Z",
+      "concept": {
+        "en": "A smoke test checks whether a workflow starts and completes a few real operations. Longer training and independent evaluation answer different questions."
+      },
+      "exercise": {
+        "en": "What would you require beyond two updates before calling this a sustained production training run?"
+      }
+    },
+    {
+      "id": "event-2026-11-19-sft-to-rl-export-readback",
+      "date": "2026-11-19",
+      "status": "experimental",
+      "title": {
+        "en": "A fine-tuned Mochi export is read back for the next training stage"
+      },
+      "detail": {
+        "en": "A draft reports a CPU export and separate readback of the completed Mochi fine-tune for reinforcement-learning preparation. This helps connect the saved training state to the next-stage loader, without establishing that the fine-tuned weights are publicly released or generate matching answers. PR #11712 describes export of sealed production SFT checkpoint 400407 into 193 BF16 shards with the pinned tokenizer and stop IDs 128001, 128008 and 128009. The export wrote its artifact before its readback command failed; a separate CPU job verified the artifact and registered a versioned model handle. The linked internal jobs were not independently inspected. Its separate Snowball four-node H100 test completed five updates and exported checkpoint step 4; a CPU read checked all 79 indexed shard files. The larger Snowball 32-node preset still awaits an accelerator run. These draft workflow checks are distinct from the public 57-checkpoint pretraining release and do not prove generation parity or production RL adoption."
+      },
+      "sourceIds": [
+        "M701",
+        "M686",
+        "M689"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-19T14:10:56Z",
+      "concept": {
+        "en": "An export can be structurally readable while still needing a comparison of actual model outputs."
+      },
+      "exercise": {
+        "en": "Which prompt-and-output comparison would test whether the exported model preserves the original model’s behavior?"
+      }
+    },
+    {
+      "id": "event-2026-11-19-mochi-readonly-weakness-audit",
+      "date": "2026-11-19",
+      "status": "experimental",
+      "title": {
+        "en": "A read-only audit identifies where Mochi loses track of long text and strict instructions"
+      },
+      "detail": {
+        "en": "A newly published audit of the completed Mochi fine-tune identifies trouble selecting the requested occurrence in long text and obeying exact response rules. These findings suggest focused tests and training targets, without showing that a repair has improved the model. The November 19 analysis covers SFT step 400407: twelve completed full-size EvalDash benchmarks, one run each, plus separate tool-use and coding-agent screens. The reported MRCR-65K score is 26.49% over 901 items, and IFBench is 26.00% strict versus 32.33% loose over 300 prompts. Among 620 low-scoring MRCR items with a matching prefix, a 60-character heuristic found another same-topic occurrence in 423; this is a diagnostic pattern, not proof of a causal mechanism. Serving used H100s, three pipeline stages, data parallelism eight and a 65,536-token limit. Cross-model comparisons remain configuration-dependent, and the official missed-benchmark-overlap warning still limits fair rankings. Hard reasoning, 128K retrieval and several major agentic suites lack completed full-size results in this retained snapshot. The audit is an operator-reported analysis, not an independently reproduced clean final evaluation."
+      },
+      "sourceIds": [
+        "M698",
+        "M686",
+        "M650"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-19T14:09:12Z",
+      "concept": {
+        "en": "An error audit looks at failed examples to choose the next experiment. A pattern in failures still needs a controlled test before it explains the cause."
+      },
+      "exercise": {
+        "en": "How would you test whether the model confuses repeated passages rather than simply failing because the text is longer?"
+      }
+    },
+    {
+      "id": "event-2026-11-19-snowball-teacher-distillation-ablation",
+      "date": "2026-11-19",
+      "status": "experimental",
+      "title": {
+        "en": "A small teaching experiment brings Snowball closer to Mochi without improving held-out loss"
+      },
+      "detail": {
+        "en": "A short Snowball experiment made its predicted distribution slightly closer to a stored Mochi teacher, while loss on held-out text stayed essentially unchanged. It tests a possible training ingredient and does not demonstrate better downstream ability. Open PR #11732 reports one seed and 60 steps, comparing ordinary hard-target training with hard loss plus 0.5 times a soft teacher term. The teacher supplies its top 20 token predictions from SFT step 400407. At step 59, held-out negative log likelihood was 0.54430 versus 0.54432, while KL distance to the teacher was 0.07584 versus 0.07525, about 0.8% lower. Both arms had eval/loss 0.49500; E12 loss was 0.02941 versus 0.02954. They used the same data order, steps and learning rate 2e-5. Both ran about 2.7 times slower than the template; the suspected teacher-array overhead has not been profiled. No downstream evaluations or larger Mochi production adoption are reported, and the code remains open."
+      },
+      "sourceIds": [
+        "M699",
+        "M698"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-19T14:09:12Z",
+      "concept": {
+        "en": "Distillation teaches a smaller model from a larger model’s token probabilities. Imitating the teacher more closely does not automatically improve a separate task."
+      },
+      "exercise": {
+        "en": "Which held-out task and repeated trials would show whether the extra teaching signal is useful?"
+      }
+    },
     {
       "id": "event-2026-11-18-nccl-small-buffer-numerical-ab",
       "date": "2026-11-18",
@@ -5381,6 +5526,76 @@ window.MARIN_RESEARCH = {
       },
       "exercise": {
         "en": "Which settings and input state would you keep fixed when testing the proposed workaround again?"
+      }
+    },
+    {
+      "id": "event-2026-11-18-snowball-three-rack-communication-check",
+      "date": "2026-11-18",
+      "status": "experimental",
+      "title": {
+        "en": "A smaller model passes a three-rack communication check before larger training work"
+      },
+      "detail": {
+        "en": "A reported Snowball test passed strict checks that training and inference workers held matching weights across three racks. This qualifies the tested communication setup for two updates and removes one obstacle to a larger Mochi trial. Snowball has 67B total parameters and about 2B active per token; it is smaller than Mochi 535B-A23B. The November 18 report used 64 training GPUs plus two 64-GPU inference engines, existing NCCL 2.30.7 and an explicit 4 MiB buffer, with the comparison chunk workaround disabled. Both optimizer updates applied, zero were skipped, and strict byte checks found zero mismatches with complete receiver byte coverage initially and after each update. All 192 launch-collective/PyNccl checks passed. Native checkpoint 2 had a structural readback of 74,572 tensor extents in 64 rank files; full tensor restoration was not tested. Evaluation was disabled, and two updates do not establish steady-state speed, model quality or a successful 535B training launch."
+      },
+      "sourceIds": [
+        "M697",
+        "M690",
+        "M691"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-19T14:09:12Z",
+      "concept": {
+        "en": "A smaller end-to-end trial checks whether components work together. Scaling up still needs its own test."
+      },
+      "exercise": {
+        "en": "What additional check would you require before claiming that the full 535B model can restart safely?"
+      }
+    },
+    {
+      "id": "event-2026-11-18-nccl-buffer-defaults-merged",
+      "date": "2026-11-18",
+      "status": "confirmed",
+      "title": {
+        "en": "Marin accepts larger communication buffers for future training launches"
+      },
+      "detail": {
+        "en": "Marin merged a change that gives policy and reference workers an explicit 4 MiB communication buffer. This avoids the tested small-buffer setting that returned incorrect GPU reductions, while keeping the existing communication library. PR #11656 merged at 03:22:54 UTC November 19, still November 18 in New York. Its defaults apply to future launches and override an inherited small-buffer environment; explicit role tuning remains available. Colocated reference workers retain larger buffers, which must fit their memory budget. The accepted code does not change earlier immutable runs or establish adoption by the full Mochi training run. The separate three-rack qualification used Snowball."
+      },
+      "sourceIds": [
+        "M691",
+        "M697"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-19T14:09:12Z",
+      "concept": {
+        "en": "A safer default can prevent a known configuration error, while requiring fresh launches and enough memory."
+      },
+      "exercise": {
+        "en": "Why does merging a default change leave the configuration of an earlier saved run unchanged?"
+      }
+    },
+    {
+      "id": "event-2026-11-18-gpu-serving-wheel-accepted",
+      "date": "2026-11-18",
+      "status": "confirmed",
+      "title": {
+        "en": "Marin accepts a tested GPU serving package with an optional faster decoding mode"
+      },
+      "detail": {
+        "en": "Marin merged a new GPU inference package after smaller-model compatibility checks passed. This makes a faster decoding mode available for evaluation, while the recorded default still uses the existing mode. PR #11635 merged on November 18 and pins vLLM revision 47a8e415bff1. Its H100 Snowball cluster comparison passed all three tested arms: Levanter, vLLM with one pipeline stage and vLLM with two. Fork wheel tests passed on H100 and GB200; the TPU arm was not run. The motivation cites an earlier Hero BF16 single-request comparison at TP1/DP16/EP16, about 62 to 20 ms per output token with full decode graphs. That earlier result is not a fresh measurement of this merged package in production. Configurations still select PIECEWISE; FULL_AND_PIECEWISE is now available. Main-run serving adoption and a matched production speed gain remain unverified."
+      },
+      "sourceIds": [
+        "M695",
+        "M655"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-19T14:09:12Z",
+      "concept": {
+        "en": "A software package can make a faster mode selectable without turning it on by default."
+      },
+      "exercise": {
+        "en": "Which software version, mode and workload must match to test the claimed latency change fairly?"
       }
     },
     {
