@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-11-19",
+  "snapshot": "2026-11-20",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -4210,6 +4210,54 @@ window.MARIN_RESEARCH = {
       "url": "https://github.com/marin-community/marin/pull/11712",
       "title": "SFT-to-RL export presets and production checkpoint CPU readback",
       "kind": "pr"
+    },
+    {
+      "id": "M702",
+      "url": "https://github.com/marin-community/marin/pull/11120",
+      "title": "Consolidated long-loop bounded acceptance results",
+      "kind": "pr"
+    },
+    {
+      "id": "M703",
+      "url": "https://github.com/marin-community/marin/pull/11749",
+      "title": "Select InfiniBand rails on CoreWeave GPU clusters",
+      "kind": "pr"
+    },
+    {
+      "id": "M704",
+      "url": "https://github.com/marin-community/marin/pull/11752",
+      "title": "Extend InfiniBand rail selection to GB200 cluster",
+      "kind": "pr"
+    },
+    {
+      "id": "M705",
+      "url": "https://github.com/marin-community/marin/pull/11755",
+      "title": "Prevent scale-invariant optimizer drift at zero learning rate",
+      "kind": "pr"
+    },
+    {
+      "id": "M706",
+      "url": "https://github.com/marin-community/marin/pull/11751",
+      "title": "Store Snowball SFT parameters in FP32",
+      "kind": "pr"
+    },
+    {
+      "id": "M707",
+      "url": "https://github.com/marin-community/marin/issues/11337#issuecomment-7041057634",
+      "title": "Constant-reply floors and grader defects in Micro210",
+      "kind": "issue"
+    },
+    {
+      "id": "M708",
+      "url": "https://github.com/marin-community/marin/pull/11815",
+      "title": "Preserve Mochi evaluation transport and validate admission",
+      "kind": "pr"
+    },
+    {
+      "id": "M709",
+      "url": "https://github.com/marin-community/marin/issues/11775",
+      "title": "Same compiled Snowball executable runs faster in fresh cache-loading process",
+      "kind": "issue"
     }
   ],
   "claimGroups": [
@@ -4270,7 +4318,8 @@ window.MARIN_RESEARCH = {
           "SkyRL merged its FlashAttention and Transformer Engine dependency upgrade. The cited full-size qualification used a preserved revision.",
           "The four-host Mochi evaluation setup reported prior successful starts and one cold-start file-lock failure. Levanter merged reuse of a matching permanent final save. Neither establishes deployment of the new standalone launcher or a Hero training change.",
           "Open Athena announced 57 public pretraining checkpoints on November 17 and acknowledged substantial missed benchmark leakage. The public weights are pretraining stages, distinct from SFT step 400407.",
-          "The four-MiB NCCL role-buffer defaults and GPU vLLM 47a8e415bff1 pin merged November 18 New York time. These are accepted code changes with future-launch/default-mode limits; no full-Mochi adoption is established."
+          "The four-MiB NCCL role-buffer defaults and GPU vLLM 47a8e415bff1 pin merged November 18 New York time. These are accepted code changes with future-launch/default-mode limits; no full-Mochi adoption is established.",
+          "InfiniBand rail defaults merged November19 New York time. FP32 Snowball stored-parameter recipe and Mochi evaluation-preflight fixes merged November20. These are code/configuration acceptance, with rollout and improved model quality separately unverified."
         ]
       },
       "sourceIds": [
@@ -4492,7 +4541,11 @@ window.MARIN_RESEARCH = {
         "M687",
         "M689",
         "M691",
-        "M695"
+        "M695",
+        "M703",
+        "M704",
+        "M706",
+        "M708"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4536,7 +4589,8 @@ window.MARIN_RESEARCH = {
           "The staged evaluation reference adds required core tasks and UncheatableEval. Hero is still pinned to its historical filter. The Mochi 65K and 262K recipes remain drafts.",
           "A cross-host Hero serving launcher, split opt-in MXFP8 changes, chunk-specific MuonH bank IDs and explicit final-answer LongBench scoring remain proposals.",
           "The v13 evaluation reference expansion remains open and unstaged. The documented serving workarounds still need a deployed repair receipt.",
-          "Full Mochi post-training qualification, downstream validation of teacher distillation and clean benchmark comparisons remain future work. The distillation and newer serving presets remain open proposals."
+          "Full Mochi post-training qualification, downstream validation of teacher distillation and clean benchmark comparisons remain future work. The distillation and newer serving presets remain open proposals.",
+          "Production-sized clean evaluations, revised Micro210 policies and sustained three-rack RL qualification remain future work. Consolidated long-loop and zero-rate optimizer repair remain open."
         ]
       },
       "sourceIds": [
@@ -4727,7 +4781,10 @@ window.MARIN_RESEARCH = {
         "M691",
         "M695",
         "M686",
-        "M699"
+        "M699",
+        "M702",
+        "M707",
+        "M705"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4788,7 +4845,8 @@ window.MARIN_RESEARCH = {
           "Mochi final SFT step 400407 scored 450/615 on BFCL with the configured retry rule, with a 73.01–73.17% first-attempt bound.",
           "An eight-GB200 NCCL library A/B reproduced and corrected the tested small-buffer reduction failure. The 64-H100 Long Loop first-step workaround still stalls in later runs.",
           "A three-rack 67B Snowball run passed two updates and strict byte checks with 4 MiB NCCL buffers; full tensor restoration and full 535B qualification remain untested. A read-only SFT audit reports long-text/instruction weaknesses; a 60-step teacher trial does not improve held-out loss.",
-          "A November 19 draft reports full Mochi one-rack RL liveness: two optimizer updates and checkpoint step2 at4453e9745a using an explicit published initializer. A separate draft reports CPU export/readback of SFT400407; linked internal jobs were not independently inspected. Neither is a sustained production launch or public final-SFT release."
+          "A November 19 draft reports full Mochi one-rack RL liveness: two optimizer updates and checkpoint step2 at4453e9745a using an explicit published initializer. A separate draft reports CPU export/readback of SFT400407; linked internal jobs were not independently inspected. Neither is a sustained production launch or public final-SFT release.",
+          "Bounded Mochi/Snowball loop smokes exercised two updates, evaluation and archive retention with zero scores on four tasks. Constant-answer controls expose selected Micro210 defects; a same-executable Snowball speed control implicates process state without identifying its cause."
         ]
       },
       "sourceIds": [
@@ -4950,7 +5008,10 @@ window.MARIN_RESEARCH = {
         "M698",
         "M699",
         "M700",
-        "M701"
+        "M701",
+        "M702",
+        "M707",
+        "M709"
       ],
       "reviewStatus": "reviewed"
     },
@@ -5006,7 +5067,8 @@ window.MARIN_RESEARCH = {
           "Expanding the reference likely improves detection coverage in a matched scan. The exact-copy probes do not measure historical training-data overlap or score effects.",
           "The Mochi and Snowball BFCL comparison is descriptive because serving hardware and software differed. It does not isolate a recipe effect.",
           "Missed benchmark leakage constrains fair model comparisons. The release provides no corrected scores or measured inflation, so the size of the quality impact is unknown.",
-          "The new failure-trace patterns suggest targeted retrieval and instruction tests. Their heuristics and configuration-dependent comparisons do not identify a causal mechanism or a clean model ranking."
+          "The new failure-trace patterns suggest targeted retrieval and instruction tests. Their heuristics and configuration-dependent comparisons do not identify a causal mechanism or a clean model ranking.",
+          "Small evaluation scores may reflect answer ordering or extractor behavior. Neither a passing workflow smoke nor matching the teacher distribution demonstrates useful learning; the compiling-process slowdown is not established teacher-array overhead."
         ]
       },
       "sourceIds": [
@@ -5137,7 +5199,10 @@ window.MARIN_RESEARCH = {
         "M670",
         "M680",
         "M686",
-        "M698"
+        "M698",
+        "M707",
+        "M702",
+        "M709"
       ],
       "reviewStatus": "reviewed"
     },
@@ -5182,7 +5247,8 @@ window.MARIN_RESEARCH = {
           "Production Mochi RL and fixed final-SFT Paloma and UncheatableEval remain unverified. The BFCL receipt measures a separate task family.",
           "Pretraining checkpoints are public. The final SFT weight release, validated generation from the public pretraining exports, corrected contaminated-benchmark comparisons and production Mochi RL remain unverified.",
           "Full 535B RL production adoption, complete tensor restore after the three-rack Snowball test, corrected clean benchmark rankings, and downstream benefit from teacher distillation remain unverified. No new fixed final-SFT Paloma or UncheatableEval artifact was established.",
-          "A full Mochi one-rack two-update smoke is now publicly reported. Sustained production RL, final released-P83 smoke qualification, public final-SFT weight release and generation parity remain unverified."
+          "A full Mochi one-rack two-update smoke is now publicly reported. Sustained production RL, final released-P83 smoke qualification, public final-SFT weight release and generation parity remain unverified.",
+          "Sustained production RL, GPU native RL restart, three-rack RL updates, corrected clean final scores, zero-rate fix deployment and the compiling-process slowdown cause remain unverified. Newly queried RL W&B projects returned null anonymously."
         ]
       },
       "sourceIds": [
@@ -5380,12 +5446,179 @@ window.MARIN_RESEARCH = {
         "M698",
         "M699",
         "M700",
-        "M701"
+        "M701",
+        "M702",
+        "M707",
+        "M705",
+        "M709"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-11-20-mochi-long-loop-retention-smoke",
+      "date": "2026-11-20",
+      "status": "experimental",
+      "title": {
+        "en": "Mochi passes a short training-to-evaluation loop with saved model selection"
+      },
+      "detail": {
+        "en": "A reported Mochi smoke test completed two updates, ran evaluations and retained the selected and final saved states. This checks more of the end-to-end workflow than yesterday’s two-update liveness report, without showing better model quality or sustained production training. The November 20 public report in draft PR #11120 describes Mochi acceptance 403 on 60 GB200s and a separate Snowball acceptance 305 on 40 GB200s. Both evaluated four held-out tasks at each update and scored 0.0; step 1 won the tie and final step 2 was also retained, with post-archive native-retention assertions passing. A separate 16-GB200 serving probe processed a 250,034-token input plus 1,024 output tokens in 90.41 seconds, including prefill; it is one request, not sustained throughput. GPU restart from a native RL checkpoint, a three-rack RL update and production-sized evaluation cohorts remain unverified. Public operator reports are readable, while their internal storage receipts were not independently inspected. The current branch has later CPU-only changes and conflicts with main; the GPU receipts belong to their earlier pinned revisions."
+      },
+      "sourceIds": [
+        "M702",
+        "M700",
+        "M701"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-20T14:05:55Z",
+      "concept": {
+        "en": "A workflow test can verify that training, scoring and saving connect correctly even when the model solves none of the test tasks."
+      },
+      "exercise": {
+        "en": "What separate evidence would you require for reliable recovery and useful learning?"
+      }
+    },
+    {
+      "id": "event-2026-11-20-micro210-constant-answer-floors",
+      "date": "2026-11-20",
+      "status": "experimental",
+      "title": {
+        "en": "Fixed replies expose weaknesses in several small evaluation scores"
+      },
+      "detail": {
+        "en": "A contributor found that fixed replies can score highly on several Micro210 subsets without answering their questions. This limits how those subsets can distinguish a useful training change from answer-position or grading effects. The November 20 audit reports that boxed A scores 100% on ten TruthfulQA tasks, B scores 50% on ten GPQA tasks, and I don’t know scores 40% on ten MMLU-Pro tasks because the extractor reads its capital I. The prepared TruthfulQA choices put a true answer first in all ten Micro210 rows and all 41 Mini840 rows inspected. An IFBench capitals checker also rejects a correct list including Kyiv. The audit tested 140 prepared answer-only tasks; six agentic suites were not run. It does not prove that a trained model guesses or invalidate the full policy’s order-independent TruthfulQA likelihood scoring. Corrections and newly hashed evaluation policies are still proposed; old scores retain their original protocol limits."
+      },
+      "sourceIds": [
+        "M707",
+        "M702"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-20T14:05:55Z",
+      "concept": {
+        "en": "A constant-answer baseline checks how much of a score can be earned without solving the intended task."
+      },
+      "exercise": {
+        "en": "Before comparing two models on ten multiple-choice questions, what answer-key and fixed-reply checks would you run?"
+      }
+    },
+    {
+      "id": "event-2026-11-20-sft-fp32-storage-merged",
+      "date": "2026-11-20",
+      "status": "confirmed",
+      "title": {
+        "en": "Marin accepts higher-precision weight storage for a Snowball training recipe"
+      },
+      "detail": {
+        "en": "Marin merged a recipe change that keeps Snowball fine-tuning weights in FP32 between updates. This avoids repeatedly rounding the stored model to BF16 when the previous recipe had no separate FP32 master copy. PR #11751 merged November 20 at 13:23:50 UTC. Computation and exported output remain BF16; the change concerns stored training parameters. Broader trainer enforcement remains in open PR #11717. This accepted recipe change does not independently establish a better model, resolve the separate zero-rate optimizer defect, or prove adoption by the full Mochi run."
+      },
+      "sourceIds": [
+        "M706",
+        "M705"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-20T14:05:55Z",
+      "concept": {
+        "en": "Stored parameter precision and compute precision can differ. More precise stored weights can preserve small updates that would otherwise round away."
+      },
+      "exercise": {
+        "en": "How would you separate the effect of storage precision from an optimizer-code correction?"
+      }
+    },
+    {
+      "id": "event-2026-11-20-mochi-evaluation-preflight-merged",
+      "date": "2026-11-20",
+      "status": "confirmed",
+      "title": {
+        "en": "Marin accepts checks that preserve the intended Mochi evaluation setup"
+      },
+      "detail": {
+        "en": "Marin merged evaluation-launch checks after a CPU preflight found that the planned Mochi evaluation dropped its qualified network settings. This makes configuration mistakes easier to reject before allocating expensive GPUs. PR #11815 merged November 20 at 13:57:09 UTC, preserving explicit InfiniBand settings, declaring a 4 MiB NCCL buffer and checking physical GPU allocation against the requested model ranks. The preflight also checks that the pinned API judge is available. Fresh base-step393491 and SFT-step400407 rounds use the current Together judge policy; the older MiniMax source is preserved separately. These protocol versions must stay distinct when comparing results. The merge confirms launch validation code, not a completed corrected GPU evaluation or a clean final model score."
+      },
+      "sourceIds": [
+        "M708",
+        "M702",
+        "M691"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-20T14:05:55Z",
+      "concept": {
+        "en": "A preflight checks a planned run before it starts. Passing it validates specified inputs and resources, not the results of the future run."
+      },
+      "exercise": {
+        "en": "Which policy identity and serving settings would you record before comparing old and new evaluation scores?"
+      }
+    },
+    {
+      "id": "event-2026-11-20-snowball-compile-cache-process-effect",
+      "date": "2026-11-20",
+      "status": "experimental",
+      "title": {
+        "en": "A fresh process runs the same compiled Snowball training step much faster"
+      },
+      "detail": {
+        "en": "A controlled Snowball test found that a fresh process loading a cached program ran much faster than the process that compiled it. This warns that compilation state can confound a speed comparison, including the earlier teaching experiment. The reported 64-H100 FP32 test used matching executable fingerprints and compiled-text hashes. In-process steps took 125.7 and 122.5 seconds; the next job using the same persistent cache took 49.4, 41.7, 44.4 and 46.8 seconds. A separate teaching-arm rerun showed a similar difference, despite reusing the same code and cache entry. The report proposes a short cache-building job before measurement. The cause remains unknown; these controls do not isolate memory placement, kernel behavior or compiler-process state, and do not establish a production speed improvement. The earlier unprofiled teacher-array-overhead hypothesis remains unconfirmed."
+      },
+      "sourceIds": [
+        "M709",
+        "M699"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-20T14:05:55Z",
+      "concept": {
+        "en": "A fair speed test must control execution state as well as code, data and hardware."
+      },
+      "exercise": {
+        "en": "How would you compare profiles from the compiling and cache-loading processes while keeping the executable fixed?"
+      }
+    },
+    {
+      "id": "event-2026-11-19-gpu-network-rail-pins-merged",
+      "date": "2026-11-19",
+      "status": "confirmed",
+      "title": {
+        "en": "Marin accepts a network setting that avoids the wrong GPU communication path"
+      },
+      "detail": {
+        "en": "Marin merged a setting that directs GPU communication toward the intended InfiniBand network cards. This addresses a reported startup failure in separate training tests when the communication library selected front-end Ethernet RDMA functions instead. PR #11749 merged November 19 and the GB200 extension #11752 merged at 02:46:02 UTC November 20, still November 19 in New York. Both set NCCL_IB_HCA=ibp for their cluster task environments. The GB200 report identifies four InfiniBand cards alongside nine Ethernet RDMA functions and an earlier three-rack Snowball engine-init failure. The cluster-wide change takes effect after controller configuration rollout; merge alone does not prove that rollout or universal failure recovery. Later Mochi one-rack smoke evidence separately reports this rail pin in its own launch."
+      },
+      "sourceIds": [
+        "M703",
+        "M704",
+        "M700"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-20T14:05:55Z",
+      "concept": {
+        "en": "A machine may expose several network interfaces. Selecting the right one can matter before any model training begins."
+      },
+      "exercise": {
+        "en": "Which startup log and controller receipt would show that a new launch actually used the intended network?"
+      }
+    },
+    {
+      "id": "event-2026-11-19-zero-rate-optimizer-drift",
+      "date": "2026-11-19",
+      "status": "experimental",
+      "title": {
+        "en": "A zero-learning-rate test finds weights changing when they should stay fixed"
+      },
+      "detail": {
+        "en": "A Snowball test reported weight changes even with the learning rate set to zero. This exposes an optimizer rounding problem that can distort a comparison intended to leave the model unchanged. Open PR #11755 reports that a 15-update run changed 8.16% of one expert bank by one BF16 storage step. The proposed correction computes both normalization terms and the rescaling ratio in FP32 before casting the update back. Tiny-model tests report exact zero-rate identity for the tested MuonH and AdamH configurations under BF16 and FP32 storage, plus lower norm drift at a positive learning rate. The PR remains open; the tests do not establish repaired historical weights, a production deployment or a downstream quality gain."
+      },
+      "sourceIds": [
+        "M705"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-20T14:05:55Z",
+      "concept": {
+        "en": "A zero-change control checks whether the training machinery preserves a model when no learning is requested."
+      },
+      "exercise": {
+        "en": "Why should a benchmark compare weights before and after a zero-learning-rate run?"
+      }
+    },
     {
       "id": "event-2026-11-19-mochi-one-rack-rl-liveness",
       "date": "2026-11-19",
