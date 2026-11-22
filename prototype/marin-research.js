@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-11-21",
+  "snapshot": "2026-11-22",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -4324,6 +4324,78 @@ window.MARIN_RESEARCH = {
       "url": "https://huggingface.co/open-athena/Marin-Mochi-535B-A23B/resolve/f683d02a689b6545a093442667f13020000dc030/hf-upload-manifest.json",
       "title": "Pinned averaged-65K upload provenance manifest",
       "kind": "report"
+    },
+    {
+      "id": "M721",
+      "url": "https://github.com/marin-community/marin/issues/11954",
+      "title": "Mochi decode sprint, selected RL configuration and final first-update evidence",
+      "kind": "issue"
+    },
+    {
+      "id": "M722",
+      "url": "https://github.com/marin-community/marin/issues/11954#issuecomment-7071948896",
+      "title": "Mochi selected RL trial completes its first policy update",
+      "kind": "issue"
+    },
+    {
+      "id": "M723",
+      "url": "https://github.com/marin-community/marin/issues/11954#issuecomment-7078985433",
+      "title": "Mochi trial ended by operator; retry plan awaits review",
+      "kind": "issue"
+    },
+    {
+      "id": "M724",
+      "url": "https://github.com/marin-community/marin/issues/11954#issuecomment-7079087158",
+      "title": "Mochi retry implementation ready for review, without RL relaunch",
+      "kind": "issue"
+    },
+    {
+      "id": "M725",
+      "url": "https://github.com/marin-community/marin/issues/11969",
+      "title": "Snowball serving and training sizing tests with checkpoint OOM",
+      "kind": "issue"
+    },
+    {
+      "id": "M726",
+      "url": "https://github.com/marin-community/marin/pull/11960",
+      "title": "Preserve final checkpoints across forced saves",
+      "kind": "pr"
+    },
+    {
+      "id": "M727",
+      "url": "https://github.com/marin-community/marin/pull/11956",
+      "title": "Preserve NCCL AllGather in SkyRL learner processes",
+      "kind": "pr"
+    },
+    {
+      "id": "M728",
+      "url": "https://github.com/marin-community/marin/pull/11981",
+      "title": "Send MMLU-Pro worked examples as conversation turns",
+      "kind": "pr"
+    },
+    {
+      "id": "M729",
+      "url": "https://github.com/marin-community/marin/issues/11978",
+      "title": "Nemotron instruction checker rules disagree with prompt wording",
+      "kind": "issue"
+    },
+    {
+      "id": "M730",
+      "url": "https://github.com/marin-community/marin/pull/11979",
+      "title": "Grade Nemotron instruction rows with verifyit",
+      "kind": "pr"
+    },
+    {
+      "id": "M731",
+      "url": "https://github.com/marin-community/marin/pull/11983",
+      "title": "Align shared IFEval format checks with Nemotron prompts",
+      "kind": "pr"
+    },
+    {
+      "id": "M732",
+      "url": "https://github.com/marin-community/marin/pull/11985",
+      "title": "Consolidate IFEval grading paths on verifyit",
+      "kind": "pr"
     }
   ],
   "claimGroups": [
@@ -4387,7 +4459,8 @@ window.MARIN_RESEARCH = {
           "The four-MiB NCCL role-buffer defaults and GPU vLLM 47a8e415bff1 pin merged November 18 New York time. These are accepted code changes with future-launch/default-mode limits; no full-Mochi adoption is established.",
           "InfiniBand rail defaults merged November19 New York time. FP32 Snowball stored-parameter recipe and Mochi evaluation-preflight fixes merged November20. These are code/configuration acceptance, with rollout and improved model quality separately unverified.",
           "SFT/RL presets, zero-rate optimizer repair and NCCL2.32.6 requirements merged November20. The IFBench Kyiv checker merged November20 NewYork, but frozen Micro210 still uses its old checker. These are code acceptance, not production handoffs.",
-          "The public Hub default changed November20 to the averaged65K model at f683d02a689b6545a093442667f13020000dc030. The final262K checkpoint remains step-393491; this is an artifact-default change, not new training or finalSFT release."
+          "The public Hub default changed November20 to the averaged65K model at f683d02a689b6545a093442667f13020000dc030. The final262K checkpoint remains step-393491; this is an artifact-default change, not new training or finalSFT release.",
+          "Forced-final-save local manifest safety and the SkyRL learner AllGather fallback merged, with bounded CPU/GPU validation. Nemotron instruction grading now uses verifyit for newly rebuilt pools; old pool identities and frozen evaluations do not change automatically."
         ]
       },
       "sourceIds": [
@@ -4620,7 +4693,11 @@ window.MARIN_RESEARCH = {
         "M710",
         "M713",
         "M719",
-        "M720"
+        "M720",
+        "M726",
+        "M727",
+        "M730",
+        "M731"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4665,7 +4742,8 @@ window.MARIN_RESEARCH = {
           "A cross-host Hero serving launcher, split opt-in MXFP8 changes, chunk-specific MuonH bank IDs and explicit final-answer LongBench scoring remain proposals.",
           "The v13 evaluation reference expansion remains open and unstaged. The documented serving workarounds still need a deployed repair receipt.",
           "Full Mochi post-training qualification, downstream validation of teacher distillation and clean benchmark comparisons remain future work. The distillation and newer serving presets remain open proposals.",
-          "The consolidated artifact loop, cross-rank executable guard, memory-layout refresh and host-rebind barrier remain open. Sustained Mochi RL, full GPU restart and revised clean evaluation policies remain future work."
+          "The consolidated artifact loop, cross-rank executable guard, memory-layout refresh and host-rebind barrier remain open. Sustained Mochi RL, full GPU restart and revised clean evaluation policies remain future work.",
+          "The ended Mochi trial has a reviewed-restart prerequisite; no revised RL launch is reported. Snowball checkpoint sharding/demand-gate retry, full vLLM AllGather repair, MMLU turn formatting and duplicate IFEval-grader consolidation remain pending."
         ]
       },
       "sourceIds": [
@@ -4862,7 +4940,13 @@ window.MARIN_RESEARCH = {
         "M705",
         "M715",
         "M716",
-        "M717"
+        "M717",
+        "M723",
+        "M724",
+        "M725",
+        "M727",
+        "M728",
+        "M732"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4925,7 +5009,8 @@ window.MARIN_RESEARCH = {
           "A three-rack 67B Snowball run passed two updates and strict byte checks with 4 MiB NCCL buffers; full tensor restoration and full 535B qualification remain untested. A read-only SFT audit reports long-text/instruction weaknesses; a 60-step teacher trial does not improve held-out loss.",
           "A November 19 draft reports full Mochi one-rack RL liveness: two optimizer updates and checkpoint step2 at4453e9745a using an explicit published initializer. A separate draft reports CPU export/readback of SFT400407; linked internal jobs were not independently inspected. Neither is a sustained production launch or public final-SFT release.",
           "Bounded Mochi/Snowball loop smokes exercised two updates, evaluation and archive retention with zero scores on four tasks. Constant-answer controls expose selected Micro210 defects; a same-executable Snowball speed control implicates process state without identifying its cause.",
-          "Snowball restored native step20 and completed23 more updates before another memory failure; a changed40H100layoutcompleted25updateswithHFexportdisabled. Uniformemptyautotuneinputs produced matchingprograms andthreeupdatesintworegions,withoutrecoveringthefastrate. Mochi base/SFTsmallcomparisonandEOT-correctedSnowballscoresretainprotocolandgradinglimits."
+          "Snowball restored native step20 and completed23 more updates before another memory failure; a changed40H100layoutcompleted25updateswithHFexportdisabled. Uniformemptyautotuneinputs produced matchingprograms andthreeupdatesintworegions,withoutrecoveringthefastrate. Mochi base/SFTsmallcomparisonandEOT-correctedSnowballscoresretainprotocolandgradinglimits.",
+          "A longer full-Mochi trial completed one real update before operator termination; the full-step rollout rate was73.378tokens/s/GPU, not the synthetic-serving peak. Snowball sizing hit checkpoint host OOM after two steps. Fixed-weight MMLU-Pro prompt controls show large scoring effects on two Snowball models."
         ]
       },
       "sourceIds": [
@@ -5094,7 +5179,11 @@ window.MARIN_RESEARCH = {
         "M716",
         "M714",
         "M711",
-        "M712"
+        "M712",
+        "M722",
+        "M723",
+        "M725",
+        "M728"
       ],
       "reviewStatus": "reviewed"
     },
@@ -5152,7 +5241,8 @@ window.MARIN_RESEARCH = {
           "Missed benchmark leakage constrains fair model comparisons. The release provides no corrected scores or measured inflation, so the size of the quality impact is unknown.",
           "The new failure-trace patterns suggest targeted retrieval and instruction tests. Their heuristics and configuration-dependent comparisons do not identify a causal mechanism or a clean model ranking.",
           "Small evaluation scores may reflect answer ordering or extractor behavior. Neither a passing workflow smoke nor matching the teacher distribution demonstrates useful learning; the compiling-process slowdown is not established teacher-array overhead.",
-          "Oppositely ordered collectives in divergent rank programs support the tested deadlock mechanism. This does not explain every speed anomaly. Higher SFT subset scores are configuration-dependent observations, and changed evaluation scores on unchanged weights are not training gains."
+          "Oppositely ordered collectives in divergent rank programs support the tested deadlock mechanism. This does not explain every speed anomaly. Higher SFT subset scores are configuration-dependent observations, and changed evaluation scores on unchanged weights are not training gains.",
+          "High synthetic decode throughput does not establish learner saturation. Prompt and grader corrections can change scores on unchanged weights; the current evidence does not establish new quality gains or every underlying bottleneck."
         ]
       },
       "sourceIds": [
@@ -5289,7 +5379,11 @@ window.MARIN_RESEARCH = {
         "M709",
         "M714",
         "M711",
-        "M712"
+        "M712",
+        "M721",
+        "M725",
+        "M728",
+        "M730"
       ],
       "reviewStatus": "reviewed"
     },
@@ -5337,7 +5431,8 @@ window.MARIN_RESEARCH = {
           "A full Mochi one-rack two-update smoke is now publicly reported. Sustained production RL, final released-P83 smoke qualification, public final-SFT weight release and generation parity remain unverified.",
           "Sustained production RL, Mochi GPU native RL restart, three-rack RL updates, corrected clean final scores, zero-rate fix deployment and the compiling-process slowdown cause remain unverified. Newly queried RL W&B projects returned null anonymously.",
           "Full Mochi native GPU training restart, sustained production RL, broad quality gains, fast uniform-autotune qualification and multi-host verification of the startup barrier remain unverified. Snowball restart is now reported separately; public new-RL W&B project reads remain null.",
-          "The averaged65K public export has generation_parity_tested=false. Its default selection does not establish validated generation, clean quality gains or finalSFT publication."
+          "The averaged65K public export has generation_parity_tested=false. Its default selection does not establish validated generation, clean quality gains or finalSFT publication.",
+          "Sustained Mochi RL, its revised relaunch, full native GPU restart, post-fix Snowball checkpoint success, full nightly inference recovery and clean model-quality gains remain unverified. The exact linked mochi-rl W&B project returns null anonymously."
         ]
       },
       "sourceIds": [
@@ -5544,12 +5639,183 @@ window.MARIN_RESEARCH = {
         "M714",
         "M717",
         "M719",
-        "M720"
+        "M720",
+        "M723",
+        "M724",
+        "M725",
+        "M727",
+        "M722"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-11-22-mochi-trial-ended-retry-review",
+      "date": "2026-11-22",
+      "status": "planned",
+      "title": {
+        "en": "The longer Mochi trial has ended; its revised restart is waiting for review"
+      },
+      "detail": {
+        "en": "The operator ended the Mochi trial after its reported first-update milestone. A revised workflow is prepared for review, so it should not be described as a new running RL launch. The November 22 post-close note preserves the earlier first-update result and lists checkpoint/evaluation overlap, evaluation dispatch draining and scoring as retry work. A later note reports landed branch changes for wait-or-abort draining and scoring, plus CPU and native-preflight checks. The selected abort behavior revokes leases and excludes aborted work from metrics. The report explicitly says no RL relaunch before coordinator review. This is preparation on the working branch, not a completed resumed training run, a production handoff or evidence of model improvement."
+      },
+      "sourceIds": [
+        "M723",
+        "M724",
+        "M721"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-22T14:00:15Z",
+      "concept": {
+        "en": "A prepared retry and a running retry are different states. Passing setup checks does not show that training has restarted."
+      },
+      "exercise": {
+        "en": "Which launch and first-update receipts would establish that the revised run actually started?"
+      }
+    },
+    {
+      "id": "event-2026-11-22-snowball-sizing-checkpoint-memory-limit",
+      "date": "2026-11-22",
+      "status": "experimental",
+      "title": {
+        "en": "A Snowball training-sizing test completes two steps, then runs out of memory while saving"
+      },
+      "detail": {
+        "en": "A Snowball sizing test reached two training steps but failed during its first scheduled checkpoint save. It also spent most of its second step waiting for data, so the test has not established a smaller efficient training layout. The public November 22 report describes 64 GB200s: 32 trainer GPUs and 32 rollout GPUs. Step 1 took 3,927.6 seconds; step 2 took 1,695.4 seconds, including 1,528.4 seconds of admission wait and 119.8 seconds of optimizer work. At step 3 the save gathered roughly 200 GB of optimizer state in each of four workers on a host and hit its memory limit. A changed checkpoint-sharding setting and raised demand gates were submitted as a new test, without a completed result in this review. Separate synthetic H100 decode tests showed large cache-fit gains, but repeated prompts and different hardware prevent treating them as training or model-quality gains."
+      },
+      "sourceIds": [
+        "M725",
+        "M716"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-22T14:00:15Z",
+      "concept": {
+        "en": "Reducing GPU allocation only saves useful compute if the complete training loop still feeds the learner and saves recoverable state."
+      },
+      "exercise": {
+        "en": "Which wait-time, save-memory and repeated-step measurements would qualify a smaller layout?"
+      }
+    },
+    {
+      "id": "event-2026-11-22-nccl-learner-allgather-fix",
+      "date": "2026-11-22",
+      "status": "confirmed",
+      "title": {
+        "en": "Marin repairs a learner startup failure, while the full nightly still needs an inference fix"
+      },
+      "detail": {
+        "en": "Marin merged a communication-setting repair that lets the learner perform AllGather again. The original failing GPU test now passes, but a separate inference-engine process still exposes the same class of setting error. PR #11956 merged November 22 at 11:25:24 UTC. The old setting selected Tree only for all-reduce and left other operations without an algorithm after vLLM initialization. SkyRL reapplies a Ring fallback before learner process groups are created. Targeted H100 tests passed in all three matrix lanes. The full nightly rerun passed that case and a four-GPU rollout case, then failed in the separate vLLM engine core; a changed fork, GPU wheel and adoption are still required. This is an accepted learner-side repair, not a wholly green nightly or main-training recovery."
+      },
+      "sourceIds": [
+        "M727",
+        "M710"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-22T14:00:15Z",
+      "concept": {
+        "en": "Processes in one workflow can initialize the same library separately. Fixing the parent’s settings does not automatically fix a child process."
+      },
+      "exercise": {
+        "en": "What separate learner and inference-engine checks would you require after this repair?"
+      }
+    },
+    {
+      "id": "event-2026-11-22-snowball-mmlu-prompt-format-test",
+      "date": "2026-11-22",
+      "status": "experimental",
+      "title": {
+        "en": "A two-model Snowball test shows that prompt formatting can hide correct answers"
+      },
+      "detail": {
+        "en": "Two fixed Snowball-family models scored much higher when worked examples were sent as conversation turns instead of one long user message. This exposes a prompt-and-answer-extraction effect, not newly learned ability or a result on Mochi. Open PR #11981 reports all 12,032 MMLU-Pro questions on Smartie step 14 and Campaign2: one-message few-shot accuracy was 28.8% and 41.3%, while conversation-turn examples gave 75.5% and 74.5%. Regrading the original replies using the last answer marker gave 59.7% and 59.6%; zero-shot runs gave 77.0% and 75.6%. Many original replies repeated worked examples, whose first answer was then extracted. The proposed converter gives the changed corpus a new identity and leaves zero-shot selection unchanged. No other model has been tested with these turns, and the PR remains open."
+      },
+      "sourceIds": [
+        "M728",
+        "M711"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-22T14:00:15Z",
+      "concept": {
+        "en": "A benchmark measures the model through a prompt and an answer extractor. A change to either can move the score without changing the weights."
+      },
+      "exercise": {
+        "en": "How would you compare raw responses and extracted answers before attributing a score increase to training?"
+      }
+    },
+    {
+      "id": "event-2026-11-22-nemotron-instruction-grading-repair",
+      "date": "2026-11-22",
+      "status": "confirmed",
+      "title": {
+        "en": "Marin accepts an instruction-grading repair that rewards replies following the prompt"
+      },
+      "detail": {
+        "en": "Marin merged a grading change after constructed replies following several instruction prompts were incorrectly rejected. This can restore a useful reward signal in newly rebuilt task pools, without demonstrating better trained models. PR #11979 merged November 22 and routes Nemotron instruction rows through verifyit. Constructed replies passed 109,315 of 109,316 single-instruction checks; conversion retained 56,083 rows instead of 54,954. The source version advances to 2, so older pools keep their grading until rebuilt. A separately merged format repair fixes shared checks for paragraph dividers, bullet counts, titles and bold spans. Consolidating the remaining duplicate grading paths is still draft in #11985. These are checker tests and accepted code; full pool rebuild/adoption, frozen evaluation revision and downstream learning effects are not established."
+      },
+      "sourceIds": [
+        "M729",
+        "M730",
+        "M731",
+        "M732"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-22T14:00:15Z",
+      "concept": {
+        "en": "A reward function must agree with what the prompt asks. Synthetic correct and incorrect replies can test that contract before training."
+      },
+      "exercise": {
+        "en": "Which positive and negative examples would you test before rebuilding an instruction-following task pool?"
+      }
+    },
+    {
+      "id": "event-2026-11-21-mochi-longer-rl-first-update",
+      "date": "2026-11-21",
+      "status": "experimental",
+      "title": {
+        "en": "A longer Mochi reinforcement-learning trial completes its first real update"
+      },
+      "detail": {
+        "en": "A reported Mochi trial completed its first optimizer update after spending most of the first step filling the training batch. This extends the earlier short workflow tests, while one update still cannot demonstrate stable training or better model quality. The 64-GB200 campaign used 48 training GPUs and 16 rollout GPUs, meaning workers that generate training examples. Update 1 completed November 21 at 19:50 New York time on source 6a118946e605a3eba586b0d256139a6690a859cc. The full step took 5,869.202 seconds, including 82 minutes 30 seconds of batch filling and 519.148 seconds of optimizer work. It generated 6,890,762 tokens at a full-step average of 73.378 tokens/s per rollout GPU. The report found all 210,644 selected tokens finite and mean absolute trainer-versus-rollout log-probability difference 0.01199. This is a numerical consistency check, not an accuracy gain. The campaign’s fixed-prompt serving peaks and 2.169-times selection proxy are not matched full-update speed improvements. The public report is readable; internal receipts and live W&B metrics were not independently available."
+      },
+      "sourceIds": [
+        "M721",
+        "M722",
+        "M700",
+        "M702"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-22T14:00:15Z",
+      "concept": {
+        "en": "A fast text-generation engine can still leave training waiting for a complete batch. Measure the whole update as well as its individual components."
+      },
+      "exercise": {
+        "en": "What baseline and repeated update windows would you require before claiming a training speedup?"
+      }
+    },
+    {
+      "id": "event-2026-11-21-forced-final-save-crash-repair",
+      "date": "2026-11-21",
+      "status": "confirmed",
+      "title": {
+        "en": "Marin accepts a fix that keeps final checkpoint manifests readable after a crash"
+      },
+      "detail": {
+        "en": "Marin merged a checkpoint repair for temporary saves and restarted completed runs. This prevents the tested local interruption from leaving the latest saved state undiscoverable, helping future runs recover from that failure. PR #11960 merged at 00:07:08 UTC November 22, still November 21 in New York. It promotes an already saved temporary checkpoint by changing metadata, and writes replacement local manifests atomically. Object-store paths keep their direct-write behavior. CPU crash-injection tests reproduced failures before the change and verified the tested repaired cases. Multi-process execution and a crash during restarted array rewriting remain untested. The merge does not establish deployment to Mochi or repair the separate optimizer-shard memory failure in the Snowball sizing campaign."
+      },
+      "sourceIds": [
+        "M726",
+        "M701"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-22T14:00:15Z",
+      "concept": {
+        "en": "An atomic metadata replacement keeps either the old complete file or the new complete file visible after an interruption. It does not protect every part of a larger save."
+      },
+      "exercise": {
+        "en": "Which additional crash point would you test after proving that manifest replacement is safe?"
+      }
+    },
     {
       "id": "event-2026-11-21-cross-rank-compile-divergence-tests",
       "date": "2026-11-21",
