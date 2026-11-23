@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-11-22",
+  "snapshot": "2026-11-23",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -4396,6 +4396,84 @@ window.MARIN_RESEARCH = {
       "url": "https://github.com/marin-community/marin/pull/11985",
       "title": "Consolidate IFEval grading paths on verifyit",
       "kind": "pr"
+    },
+    {
+      "id": "M733",
+      "url": "https://github.com/marin-community/marin/issues/8506#issuecomment-7086862573",
+      "title": "Official status tracker closes and redirects to post-training",
+      "kind": "issue"
+    },
+    {
+      "id": "M734",
+      "url": "https://github.com/marin-community/marin/pull/11991",
+      "title": "Correct repeat and language grading with new protocol versions",
+      "kind": "pr"
+    },
+    {
+      "id": "M735",
+      "url": "https://github.com/marin-community/marin/issues/12102",
+      "title": "November 23 snapshot of realized RL and SFT step times",
+      "kind": "issue"
+    },
+    {
+      "id": "M736",
+      "url": "https://github.com/marin-community/marin/issues/11969#issuecomment-7092228946",
+      "title": "Final short H100 sizing ladder and residual rollout wait",
+      "kind": "issue"
+    },
+    {
+      "id": "M737",
+      "url": "https://github.com/marin-community/marin/issues/11969#issuecomment-7088190645",
+      "title": "H100 sizing close-out with checkpoint success and unresolved saturation",
+      "kind": "issue"
+    },
+    {
+      "id": "M738",
+      "url": "https://github.com/marin-community/marin/pull/12073",
+      "title": "Exact replay scoring on a bounded native Snowball TPU fixture",
+      "kind": "pr"
+    },
+    {
+      "id": "M739",
+      "url": "https://github.com/marin-community/marin/pull/12085",
+      "title": "Proposed isolated native Snowball learner strategy",
+      "kind": "pr"
+    },
+    {
+      "id": "M740",
+      "url": "https://github.com/marin-community/marin/pull/11993",
+      "title": "Two-stage encoder decontamination proof of concept",
+      "kind": "pr"
+    },
+    {
+      "id": "M741",
+      "url": "https://github.com/marin-community/marin/pull/11992",
+      "title": "Proposed repair for reply-controlled code and reasoning rewards",
+      "kind": "pr"
+    },
+    {
+      "id": "M742",
+      "url": "https://github.com/marin-community/marin/issues/12002",
+      "title": "Passing SWE-style test suites receive zero oracle reward",
+      "kind": "issue"
+    },
+    {
+      "id": "M743",
+      "url": "https://github.com/marin-community/marin/pull/12069",
+      "title": "Staged TruthfulQA choice-shuffle Micro210 policy",
+      "kind": "pr"
+    },
+    {
+      "id": "M744",
+      "url": "https://github.com/marin-community/marin/issues/11994",
+      "title": "Completed SFT updates and export followed by shutdown failure",
+      "kind": "issue"
+    },
+    {
+      "id": "M745",
+      "url": "https://github.com/marin-community/marin/issues/12103",
+      "title": "Planned Mochi and Snowball learning-rate ablation",
+      "kind": "issue"
     }
   ],
   "claimGroups": [
@@ -4460,7 +4538,8 @@ window.MARIN_RESEARCH = {
           "InfiniBand rail defaults merged November19 New York time. FP32 Snowball stored-parameter recipe and Mochi evaluation-preflight fixes merged November20. These are code/configuration acceptance, with rollout and improved model quality separately unverified.",
           "SFT/RL presets, zero-rate optimizer repair and NCCL2.32.6 requirements merged November20. The IFBench Kyiv checker merged November20 NewYork, but frozen Micro210 still uses its old checker. These are code acceptance, not production handoffs.",
           "The public Hub default changed November20 to the averaged65K model at f683d02a689b6545a093442667f13020000dc030. The final262K checkpoint remains step-393491; this is an artifact-default change, not new training or finalSFT release.",
-          "Forced-final-save local manifest safety and the SkyRL learner AllGather fallback merged, with bounded CPU/GPU validation. Nemotron instruction grading now uses verifyit for newly rebuilt pools; old pool identities and frozen evaluations do not change automatically."
+          "Forced-final-save local manifest safety and the SkyRL learner AllGather fallback merged, with bounded CPU/GPU validation. Nemotron instruction grading now uses verifyit for newly rebuilt pools; old pool identities and frozen evaluations do not change automatically.",
+          "Official #8506 closed November22 and redirects post-training tracking to milestone15/#11191. IFEval consolidation and repeat/language repairs merged with new versions; frozen Micro210 and old task pools do not automatically change."
         ]
       },
       "sourceIds": [
@@ -4697,7 +4776,10 @@ window.MARIN_RESEARCH = {
         "M726",
         "M727",
         "M730",
-        "M731"
+        "M731",
+        "M733",
+        "M732",
+        "M734"
       ],
       "reviewStatus": "reviewed"
     },
@@ -4743,7 +4825,7 @@ window.MARIN_RESEARCH = {
           "The v13 evaluation reference expansion remains open and unstaged. The documented serving workarounds still need a deployed repair receipt.",
           "Full Mochi post-training qualification, downstream validation of teacher distillation and clean benchmark comparisons remain future work. The distillation and newer serving presets remain open proposals.",
           "The consolidated artifact loop, cross-rank executable guard, memory-layout refresh and host-rebind barrier remain open. Sustained Mochi RL, full GPU restart and revised clean evaluation policies remain future work.",
-          "The ended Mochi trial has a reviewed-restart prerequisite; no revised RL launch is reported. Snowball checkpoint sharding/demand-gate retry, full vLLM AllGather repair, MMLU turn formatting and duplicate IFEval-grader consolidation remain pending."
+          "Learning-rate ablations for Mochi and Snowball are proposed but not scheduled. Native SkyRL accelerator composition, immutable TruthfulQA-shuffle publication, reward-isolation repair and broad corrected evaluations remain pending."
         ]
       },
       "sourceIds": [
@@ -4946,7 +5028,11 @@ window.MARIN_RESEARCH = {
         "M725",
         "M727",
         "M728",
-        "M732"
+        "M732",
+        "M745",
+        "M739",
+        "M743",
+        "M741"
       ],
       "reviewStatus": "reviewed"
     },
@@ -5010,7 +5096,8 @@ window.MARIN_RESEARCH = {
           "A November 19 draft reports full Mochi one-rack RL liveness: two optimizer updates and checkpoint step2 at4453e9745a using an explicit published initializer. A separate draft reports CPU export/readback of SFT400407; linked internal jobs were not independently inspected. Neither is a sustained production launch or public final-SFT release.",
           "Bounded Mochi/Snowball loop smokes exercised two updates, evaluation and archive retention with zero scores on four tasks. Constant-answer controls expose selected Micro210 defects; a same-executable Snowball speed control implicates process state without identifying its cause.",
           "Snowball restored native step20 and completed23 more updates before another memory failure; a changed40H100layoutcompleted25updateswithHFexportdisabled. Uniformemptyautotuneinputs produced matchingprograms andthreeupdatesintworegions,withoutrecoveringthefastrate. Mochi base/SFTsmallcomparisonandEOT-correctedSnowballscoresretainprotocolandgradinglimits.",
-          "A longer full-Mochi trial completed one real update before operator termination; the full-step rollout rate was73.378tokens/s/GPU, not the synthetic-serving peak. Snowball sizing hit checkpoint host OOM after two steps. Fixed-weight MMLU-Pro prompt controls show large scoring effects on two Snowball models."
+          "A longer full-Mochi trial completed one real update before operator termination; the full-step rollout rate was73.378tokens/s/GPU, not the synthetic-serving peak. Snowball sizing hit checkpoint host OOM after two steps. Fixed-weight MMLU-Pro prompt controls show large scoring effects on two Snowball models.",
+          "A public snapshot reports Mochi .123 through step11 and .124 failing atstep4 after a shorter measured evaluation cycle. Short Snowball sizing,32-tokenTPUreplay,encoderdecontamination andgraderdiagnostics remainboundedoperatorreports,notproductionqualitygains."
         ]
       },
       "sourceIds": [
@@ -5183,7 +5270,12 @@ window.MARIN_RESEARCH = {
         "M722",
         "M723",
         "M725",
-        "M728"
+        "M728",
+        "M735",
+        "M736",
+        "M738",
+        "M740",
+        "M742"
       ],
       "reviewStatus": "reviewed"
     },
@@ -5242,7 +5334,8 @@ window.MARIN_RESEARCH = {
           "The new failure-trace patterns suggest targeted retrieval and instruction tests. Their heuristics and configuration-dependent comparisons do not identify a causal mechanism or a clean model ranking.",
           "Small evaluation scores may reflect answer ordering or extractor behavior. Neither a passing workflow smoke nor matching the teacher distribution demonstrates useful learning; the compiling-process slowdown is not established teacher-array overhead.",
           "Oppositely ordered collectives in divergent rank programs support the tested deadlock mechanism. This does not explain every speed anomaly. Higher SFT subset scores are configuration-dependent observations, and changed evaluation scores on unchanged weights are not training gains.",
-          "High synthetic decode throughput does not establish learner saturation. Prompt and grader corrections can change scores on unchanged weights; the current evidence does not establish new quality gains or every underlying bottleneck."
+          "High synthetic decode throughput does not establish learner saturation. Prompt and grader corrections can change scores on unchanged weights; the current evidence does not establish new quality gains or every underlying bottleneck.",
+          "Evaluation/refill dominate reported realized RL time. Different token volumes, hardware and short windows do not establish a general speed ranking. Pooled detector precision and small grader samples do not certify the corpus or all benchmark scores."
         ]
       },
       "sourceIds": [
@@ -5383,7 +5476,11 @@ window.MARIN_RESEARCH = {
         "M721",
         "M725",
         "M728",
-        "M730"
+        "M730",
+        "M735",
+        "M736",
+        "M740",
+        "M742"
       ],
       "reviewStatus": "reviewed"
     },
@@ -5432,7 +5529,7 @@ window.MARIN_RESEARCH = {
           "Sustained production RL, Mochi GPU native RL restart, three-rack RL updates, corrected clean final scores, zero-rate fix deployment and the compiling-process slowdown cause remain unverified. Newly queried RL W&B projects returned null anonymously.",
           "Full Mochi native GPU training restart, sustained production RL, broad quality gains, fast uniform-autotune qualification and multi-host verification of the startup barrier remain unverified. Snowball restart is now reported separately; public new-RL W&B project reads remain null.",
           "The averaged65K public export has generation_parity_tested=false. Its default selection does not establish validated generation, clean quality gains or finalSFT publication.",
-          "Sustained Mochi RL, its revised relaunch, full native GPU restart, post-fix Snowball checkpoint success, full nightly inference recovery and clean model-quality gains remain unverified. The exact linked mochi-rl W&B project returns null anonymously."
+          "Current sustained Mochi reliability, full GPU native restart, corrected .124 drain-run outcomes, truly saturated long-cycle Snowball sizing, complete nativeRLintegration,full-corpusdecontamination andcleanqualitygainsremainunverified."
         ]
       },
       "sourceIds": [
@@ -5644,12 +5741,249 @@ window.MARIN_RESEARCH = {
         "M724",
         "M725",
         "M727",
-        "M722"
+        "M722",
+        "M735",
+        "M736",
+        "M739",
+        "M740",
+        "M741"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-11-23-mochi-rl-realized-step-snapshot",
+      "date": "2026-11-23",
+      "status": "experimental",
+      "title": {
+        "en": "New Mochi trials reach more updates, while evaluation and refill dominate elapsed time"
+      },
+      "detail": {
+        "en": "A public timing snapshot reports a Mochi RL trial through step 11, extending the earlier one-update evidence. It also shows why fast optimizer steps do not yet imply an efficient complete training loop. Run .123 used 128 GB200s, with 48 trainer and 80 rollout GPUs. Steps 2–11 averaged about 1,620 seconds including evaluation and refill, compared with about 175 seconds for a typical no-evaluation step and about 125 seconds of optimizer work. Each step consumed roughly 1.3–1.4 million response tokens. A separate priority-drain run .124 reduced its third full step to 1,142 seconds versus .123’s 2,254, then failed at step 4 on a reported drain bug. The snapshot says that bug was fixed, without a completed corrected rerun shown here. These are operator-reported working-loop experiments, not a clean model-quality comparison, a long-run reliability guarantee or independently read live W&B metrics."
+      },
+      "sourceIds": [
+        "M735",
+        "M722",
+        "M723"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-23T14:09:24Z",
+      "concept": {
+        "en": "End-to-end training time includes evaluation, waiting and refilling data as well as numerical model updates."
+      },
+      "exercise": {
+        "en": "Which repeated full-cycle windows would you compare before calling a faster optimizer an overall training speedup?"
+      }
+    },
+    {
+      "id": "event-2026-11-23-snowball-sizing-followup-short-windows",
+      "date": "2026-11-23",
+      "status": "experimental",
+      "title": {
+        "en": "Short Snowball comparisons identify useful layouts without proving sustained saturation"
+      },
+      "detail": {
+        "en": "Follow-up Snowball tests report viable GPU layouts and checkpoint saves after the earlier save failure. Their short measurement windows and remaining rollout wait limit claims about sustained efficiency. The campaign selected 64 GB200s at about 195 seconds per update with 13.4% rollout wait; increasing rollout workers and opening admission gates were separate changes along the tested ladder. A later 112-H100 layout reported 170.4 seconds with 42.5% wait, and its scheduled step-3 checkpoint succeeded. Raising that H100 layout to six engines and 128 GPUs took 544.8 seconds for step 2; no third clean step was measured. The campaign labels the smaller layout saturated, but the recorded residual wait and short windows do not independently establish zero-wait or long-cycle saturation. Different hardware, token volumes and checkpoint/evaluation shares prevent a general hardware speed ranking."
+      },
+      "sourceIds": [
+        "M725",
+        "M736",
+        "M737"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-23T14:09:24Z",
+      "concept": {
+        "en": "A best observed short-window layout is not automatically a fully utilized or long-run optimal layout."
+      },
+      "exercise": {
+        "en": "Which checkpoint/evaluation cycles and matched token counts would you measure before selecting a production layout?"
+      }
+    },
+    {
+      "id": "event-2026-11-23-native-snowball-bounded-replay-parity",
+      "date": "2026-11-23",
+      "status": "experimental",
+      "title": {
+        "en": "A small native Snowball test matches serving and learner scores exactly"
+      },
+      "detail": {
+        "en": "A separate native Snowball test matched the probability scores used for generation and learning on a tiny controlled sample. This checks an important training interface, without proving a complete native RL workflow. Draft PR #12073 reports one TPUv4-8 host with four 256-position slots and 32 sampled token scores. All served raw-policy log probabilities matched learner recomputation bit for bit using the same snapshot and captured expert routes; the tested log-ratio and KL term were zero, even with a positive KL coefficient. This does not mean independently updated policies should have zero KL. The composed SkyRL learner strategy in draft #12085 has CPU launch/config tests, while its accelerator launch remains pending. Larger contexts, other hardware, throughput and end-to-end learning still need their own evidence."
+      },
+      "sourceIds": [
+        "M738",
+        "M739"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-23T14:09:24Z",
+      "concept": {
+        "en": "Exact replay compares the same model, tokens and expert choices on both sides of an interface. It is a bounded consistency test."
+      },
+      "exercise": {
+        "en": "How would you expand the fixture before relying on it for a full distributed training run?"
+      }
+    },
+    {
+      "id": "event-2026-11-23-encoder-decontamination-poc",
+      "date": "2026-11-23",
+      "status": "experimental",
+      "title": {
+        "en": "A contamination detector shows promise on sampled records, with uneven coverage"
+      },
+      "detail": {
+        "en": "A proof of concept narrows a large data search to likely benchmark copies and then scores those candidates with an encoder. This could make contamination review more tractable, but it does not establish that the training corpus is clean. Open PR #11993 combines rare 20-character keys with a learned pair classifier. On 128 held-out validation shards, the iteration-10 model reports candidate-weighted precision 0.980 with a bootstrap 5% bound of 0.954, at roughly 62–64% recall of high-overlap copies. However, 106 of 160 labeled copies are short DROP questions; the non-DROP sample is too small for a useful bound. Synthetic layout tests also expose missed choice-letter, LaTeX and casing forms. Full-catalog CPU and GPU costs are estimates, not completed scans. Adoption, corrected benchmark scores and broader contamination coverage remain unverified."
+      },
+      "sourceIds": [
+        "M740",
+        "M686",
+        "M568"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-23T14:09:24Z",
+      "concept": {
+        "en": "Precision measures how many flagged records really match; recall measures how many actual copies are found. Strong pooled precision can hide weak subgroup coverage."
+      },
+      "exercise": {
+        "en": "Which additional labeled benchmark families would you sample before trusting the pooled precision bound?"
+      }
+    },
+    {
+      "id": "event-2026-11-23-reward-integrity-code-reasoning-tests",
+      "date": "2026-11-23",
+      "status": "experimental",
+      "title": {
+        "en": "Grader tests find rewards that a reply can obtain without solving the task"
+      },
+      "detail": {
+        "en": "A public audit shows that some code and reasoning-task replies can influence the grading result without solving the intended problem. This weakens the affected reward signal and motivates a proposed grader-isolation repair. Open PR #11992 moves code-output comparison outside the process running the submitted program and restricts text sent to executable parsers. Controlled bypass tests no longer receive the earlier unintended reward in the repaired paths, while extensive ordinary-answer comparisons preserve reported scores. The report also retains a separate test-file visibility gap that this change does not close. Code grading becomes slower in the measured sample, about 0.30 seconds more per reply. The PR is not merged, and no actual training-policy exploitation, rebuilt pool or downstream improvement is established."
+      },
+      "sourceIds": [
+        "M741"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-23T14:09:24Z",
+      "concept": {
+        "en": "A training reward must depend on solving the task rather than influencing the mechanism that assigns the score."
+      },
+      "exercise": {
+        "en": "What isolation boundary and honest-answer regression tests would you require before rebuilding these tasks?"
+      }
+    },
+    {
+      "id": "event-2026-11-23-swe-grader-false-zero-report",
+      "date": "2026-11-23",
+      "status": "experimental",
+      "title": {
+        "en": "Three passing coding-task test suites were recorded as zero reward"
+      },
+      "detail": {
+        "en": "A diagnostic report identifies three coding tasks whose passing test suites were recorded as zero reward. This means some apparent task failures need grader investigation before they can be used to judge a model or filter training data. Issue #12002 compares stored oracle verdicts with same-environment-family runs using the gold patch and test command. The examples include a 48-test suite, 26 passing package markers and another passing Go suite. A mismatch between configured test identifiers and parsed log names is the suspected mechanism, not an independently established cause for every affected row. The report does not measure the share of false negatives in the 13,471-row oracle-failed tail. A fixed parser, full regrade and clean downstream scores remain unverified."
+      },
+      "sourceIds": [
+        "M742"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-23T14:09:24Z",
+      "concept": {
+        "en": "A zero reward can mean a wrong solution, a failed execution or a grader that did not recognize a passing result."
+      },
+      "exercise": {
+        "en": "Which raw test logs and matched oracle run would distinguish these possibilities?"
+      }
+    },
+    {
+      "id": "event-2026-11-23-truthfulqa-shuffle-policy-staged",
+      "date": "2026-11-23",
+      "status": "planned",
+      "title": {
+        "en": "A staged evaluation policy removes the always-correct first-answer shortcut"
+      },
+      "detail": {
+        "en": "A proposed Micro210 policy shuffles TruthfulQA choices so a fixed first-letter reply no longer passes every selected question. This addresses one known shortcut while leaving model scores unmeasured until a new evaluation runs. Draft PR #12069 preserves the 440-row selection and non-TruthfulQA rows. Under the frozen grader, constant A falls from 10 of 10 old tasks to 3 of 10 shuffled tasks, while the best constant letter still gets 5 of 10. The policy is staged with a new hash, but immutable Hub commits are still needed before the launcher can select it. The current launcher pin and old results remain unchanged. This does not establish balanced keys for every benchmark or a corrected model ranking."
+      },
+      "sourceIds": [
+        "M743",
+        "M707"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-23T14:09:24Z",
+      "concept": {
+        "en": "Removing a universal answer shortcut is useful, but a tiny sample can still favor one constant answer."
+      },
+      "exercise": {
+        "en": "What constant-answer floor and task-count check would you add before publishing the new model scores?"
+      }
+    },
+    {
+      "id": "event-2026-11-23-sft-finalization-completion-boundary",
+      "date": "2026-11-23",
+      "status": "experimental",
+      "title": {
+        "en": "A fine-tuning job finished its updates and export, then failed during shutdown"
+      },
+      "detail": {
+        "en": "A reported multi-host fine-tuning job completed its updates and saved artifacts but still ended as a failed job during finalization. This distinguishes model artifacts that were written from the completion receipt the workflow still needs. Issue #11994 records 528 updates, a committed native checkpoint and a finished export before a 32-process shutdown barrier timed out with one process missing. A two-process CPU delay reproduces the shutdown failure pattern. The exact operation delaying the missing process is not recovered from the fatal dump, so an upload deadlock is not proven. Multi-host GPU remediation and publication of the missing completion receipt remain open; this is not evidence of a main Mochi training failure."
+      },
+      "sourceIds": [
+        "M744"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-23T14:09:24Z",
+      "concept": {
+        "en": "Training, artifact saving and clean workflow completion are separate milestones. One can succeed while a later milestone fails."
+      },
+      "exercise": {
+        "en": "Which artifact and completion receipts would you check before deciding whether a failed job must retrain?"
+      }
+    },
+    {
+      "id": "event-2026-11-22-official-pretraining-status-handoff",
+      "date": "2026-11-22",
+      "status": "confirmed",
+      "title": {
+        "en": "Marin closes the pretraining status tracker and points readers to post-training"
+      },
+      "detail": {
+        "en": "Marin closed its ongoing pretraining status issue and directed further status tracking to the post-training milestone. This marks where to follow the next work, without claiming that post-training is complete or newly deployed. The official November 22 comment on #8506 says pretraining is complete and links milestone 15, starting with #11191. It is consistent with #8435 having closed on November 18. The tracker closure is a documented project-stage boundary, distinct from the later experimental RL runs and their remaining stability and evaluation limits."
+      },
+      "sourceIds": [
+        "M733",
+        "M2",
+        "M3"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-23T14:09:24Z",
+      "concept": {
+        "en": "A closed tracking issue can mark the end of one stage while work continues under another tracker."
+      },
+      "exercise": {
+        "en": "Which linked tracker would you inspect before deciding whether post-training itself is complete?"
+      }
+    },
+    {
+      "id": "event-2026-11-22-ifeval-protocol-revisions-accepted",
+      "date": "2026-11-22",
+      "status": "confirmed",
+      "title": {
+        "en": "Marin accepts further instruction-grading repairs under new version identities"
+      },
+      "detail": {
+        "en": "Marin merged consolidation and follow-up fixes for instruction grading, giving changed scores distinct protocol versions. This reduces disagreement among grading paths while preserving the identity of earlier frozen results. PR #11985 merged November 22, moving the remaining IFEval paths to verifyit; #11991 later corrected prompt repetition and harness language checks. The harness uses a seeded language detector, while RLVR curation and preflight reject response-language descriptors that their remaining hint-word scorer cannot safely support. The IFEval protocol advances to 2026.11.22.1 and the RLVR source to version 3. Frozen Micro210 policy and prepared rows remain unchanged. These are accepted grading changes, not a completed rerun or evidence of better model training."
+      },
+      "sourceIds": [
+        "M732",
+        "M734",
+        "M730"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-23T14:09:24Z",
+      "concept": {
+        "en": "Versioning a grader lets readers distinguish a changed measurement method from a changed model."
+      },
+      "exercise": {
+        "en": "Which model, task-table and grader versions would you keep when comparing scores across this repair?"
+      }
+    },
     {
       "id": "event-2026-11-22-mochi-trial-ended-retry-review",
       "date": "2026-11-22",
