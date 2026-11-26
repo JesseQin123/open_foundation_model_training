@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-11-25",
+  "snapshot": "2026-11-26",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -4726,6 +4726,132 @@ window.MARIN_RESEARCH = {
       "url": "https://github.com/marin-community/marin/issues/12199",
       "title": "Sealed SFT mix history distinguishes trained and unused candidates",
       "kind": "issue"
+    },
+    {
+      "id": "M788",
+      "url": "https://github.com/marin-community/marin/issues/12267#issuecomment-7166056310",
+      "title": "Mochi .131 production launch explicitly waives rather than passes the numerical gate",
+      "kind": "issue"
+    },
+    {
+      "id": "M789",
+      "url": "https://github.com/marin-community/marin/issues/12267#issuecomment-7167490130",
+      "title": "Mochi .131 first two full updates with mismatch and draft counters",
+      "kind": "issue"
+    },
+    {
+      "id": "M790",
+      "url": "https://github.com/marin-community/marin/issues/12267#issuecomment-7165485040",
+      "title": "Completed batch-invariance diagnostic has exact fixed-prefix repeats",
+      "kind": "issue"
+    },
+    {
+      "id": "M791",
+      "url": "https://github.com/marin-community/marin/issues/12267#issuecomment-7166358831",
+      "title": "FA2-only diagnostic retains rank and request-pattern mismatch",
+      "kind": "issue"
+    },
+    {
+      "id": "M792",
+      "url": "https://github.com/marin-community/marin/issues/11337#issuecomment-7185489083",
+      "title": "Mochi .129 best-step24 evaluation sealed with full434-trial coverage",
+      "kind": "issue"
+    },
+    {
+      "id": "M793",
+      "url": "https://github.com/marin-community/marin/issues/10197#issuecomment-7185455515",
+      "title": "Frozen infrastructure-recovery rule and final Mochi .129 seal",
+      "kind": "issue"
+    },
+    {
+      "id": "M794",
+      "url": "https://github.com/marin-community/marin/issues/12267#issuecomment-7174052199",
+      "title": "Mochi learning budgets and .129 final-save/best-export receipts",
+      "kind": "issue"
+    },
+    {
+      "id": "M795",
+      "url": "https://github.com/marin-community/marin/issues/12267#issuecomment-7181469028",
+      "title": "Archive preservation succeeds before later evaluation-coverage recovery",
+      "kind": "issue"
+    },
+    {
+      "id": "M796",
+      "url": "https://github.com/marin-community/marin/issues/11337#issuecomment-7177577750",
+      "title": "Offline BixBench coverage repair publishes new result versions",
+      "kind": "issue"
+    },
+    {
+      "id": "M797",
+      "url": "https://github.com/marin-community/marin/issues/11337#issuecomment-7170267992",
+      "title": "Mochi V5 SFT2100 evaluation before BixBench regrade",
+      "kind": "issue"
+    },
+    {
+      "id": "M798",
+      "url": "https://github.com/marin-community/marin/issues/12360",
+      "title": "Partial generations lost at turn deadlines; masking and implementation boundaries",
+      "kind": "issue"
+    },
+    {
+      "id": "M799",
+      "url": "https://github.com/marin-community/marin/issues/12267#issuecomment-7182161172",
+      "title": "Read-only timeout evidence rejects blanket engine-queue starvation",
+      "kind": "issue"
+    },
+    {
+      "id": "M800",
+      "url": "https://github.com/marin-community/marin/commit/0602a5bbdc91d2f548d96b9f9ecb7404395b9261",
+      "title": "Branch implementation retains actual partial rollout replies",
+      "kind": "code"
+    },
+    {
+      "id": "M801",
+      "url": "https://github.com/marin-community/marin/pull/12284",
+      "title": "Proposed SFT mix runner and stalled/retried Exp7 launch",
+      "kind": "pr"
+    },
+    {
+      "id": "M802",
+      "url": "https://github.com/marin-community/marin/pull/12272",
+      "title": "Accepted Go test-name matching and unscorable-log safeguards",
+      "kind": "pr"
+    },
+    {
+      "id": "M803",
+      "url": "https://github.com/marin-community/marin/pull/12312",
+      "title": "Accepted DS-1000 mini200 verifier pin and version revision",
+      "kind": "pr"
+    },
+    {
+      "id": "M804",
+      "url": "https://github.com/marin-community/marin/pull/12289",
+      "title": "Released evaluation policy pins launcher and grader code to a git tag",
+      "kind": "pr"
+    },
+    {
+      "id": "M805",
+      "url": "https://github.com/marin-community/marin/pull/12287",
+      "title": "Trial-policy judge and CruxEval metric differences are documented",
+      "kind": "pr"
+    },
+    {
+      "id": "M806",
+      "url": "https://github.com/marin-community/marin/pull/12299",
+      "title": "Proposed shadow-expert defaults await larger paired results",
+      "kind": "pr"
+    },
+    {
+      "id": "M807",
+      "url": "https://github.com/marin-community/marin/pull/11628",
+      "title": "Accepted atomic checkpoint staging-wave commits and CPU timing limits",
+      "kind": "pr"
+    },
+    {
+      "id": "M808",
+      "url": "https://github.com/marin-community/marin/pull/12352",
+      "title": "Proposed bounded preemption checkpoint retention",
+      "kind": "pr"
     }
   ],
   "claimGroups": [
@@ -4792,7 +4918,8 @@ window.MARIN_RESEARCH = {
           "The public Hub default changed November20 to the averaged65K model at f683d02a689b6545a093442667f13020000dc030. The final262K checkpoint remains step-393491; this is an artifact-default change, not new training or finalSFT release.",
           "Forced-final-save local manifest safety and the SkyRL learner AllGather fallback merged, with bounded CPU/GPU validation. Nemotron instruction grading now uses verifyit for newly rebuilt pools; old pool identities and frozen evaluations do not change automatically.",
           "Official #8506 closed November22 and redirects post-training tracking to milestone15/#11191. IFEval consolidation and repeat/language repairs merged with new versions; frozen Micro210 and old task pools do not automatically change.",
-          "The #12185 wheel pin and #12192 restore metadata fix are merged. #12194 includes the opt-in chunked PPO/memory-preflight implementation; two later #12193 guards remain branch-only. #12167 TaskSpec migration and #12238 candidate-error grading repair are accepted repository changes with bounded tests, not demonstrated full long-loop production adoption."
+          "The #12185 wheel pin and #12192 restore metadata fix are merged. #12194 includes the opt-in chunked PPO/memory-preflight implementation; two later #12193 guards remain branch-only. #12167 TaskSpec migration and #12238 candidate-error grading repair are accepted repository changes with bounded tests, not demonstrated full long-loop production adoption.",
+          "Public launch and first-update lineage confirm Mochi .131 running after an explicit gate waiver, not a passed numerical control; this is the named post-training round, not resumed Hero pretraining. DSpark preset, Snowball long-memory layout, math/Go/DS-1000 grading repairs and released-policy code-tag rule are merged repository changes."
         ]
       },
       "sourceIds": [
@@ -5040,7 +5167,15 @@ window.MARIN_RESEARCH = {
         "M778",
         "M779",
         "M780",
-        "M781"
+        "M781",
+        "M788",
+        "M789",
+        "M776",
+        "M716",
+        "M782",
+        "M802",
+        "M803",
+        "M804"
       ],
       "reviewStatus": "reviewed"
     },
@@ -5086,7 +5221,7 @@ window.MARIN_RESEARCH = {
           "The v13 evaluation reference expansion remains open and unstaged. The documented serving workarounds still need a deployed repair receipt.",
           "Full Mochi post-training qualification, downstream validation of teacher distillation and clean benchmark comparisons remain future work. The distillation and newer serving presets remain open proposals.",
           "The consolidated artifact loop, cross-rank executable guard, memory-layout refresh and host-rebind barrier remain open. Sustained Mochi RL, full GPU restart and revised clean evaluation policies remain future work.",
-          "Mochi .131 remains blocked by its plain-decoding control; a batch-invariant diagnostic bundle has no completed score receipt here. #12239 DSpark, #12261 draft inputs, #12221 final-answer selection and draft #12197 math parsing remain open. Main-preset parity, full recovery and repetition-baseline/remedy work remain incomplete."
+          "The numerical root cause and full .131 outcome remain open despite the launch waiver. Exp7 SFT recovery lacks full first-update metrics; shared runner/Micro210 bindings, shadow-expert defaults, repetition remedies and GPU certification of partial-output handling remain incomplete. A policy-tag rule is accepted, but no release-tag creation or finalized November 30 policy is established."
         ]
       },
       "sourceIds": [
@@ -5305,7 +5440,12 @@ window.MARIN_RESEARCH = {
         "M777",
         "M783",
         "M782",
-        "M785"
+        "M785",
+        "M791",
+        "M801",
+        "M806",
+        "M798",
+        "M804"
       ],
       "reviewStatus": "reviewed"
     },
@@ -5371,7 +5511,7 @@ window.MARIN_RESEARCH = {
           "Snowball restored native step20 and completed23 more updates before another memory failure; a changed40H100layoutcompleted25updateswithHFexportdisabled. Uniformemptyautotuneinputs produced matchingprograms andthreeupdatesintworegions,withoutrecoveringthefastrate. Mochi base/SFTsmallcomparisonandEOT-correctedSnowballscoresretainprotocolandgradinglimits.",
           "A longer full-Mochi trial completed one real update before operator termination; the full-step rollout rate was73.378tokens/s/GPU, not the synthetic-serving peak. Snowball sizing hit checkpoint host OOM after two steps. Fixed-weight MMLU-Pro prompt controls show large scoring effects on two Snowball models.",
           "A public snapshot reports Mochi .123 through step11 and .124 failing atstep4 after a shorter measured evaluation cycle. Short Snowball sizing,32-tokenTPUreplay,encoderdecontamination andgraderdiagnostics remainboundedoperatorreports,notproductionqualitygains.",
-          "Mochi .123 finished22 updates with final-fallback selection; old-panel reward means fall with coverage and grader caveats. Revised 434-slot evaluations include base Mochi but not a completed matched SFT/RL pair. .129 has nine-update bulk mismatch observations, while .131 serving diagnostics still fail across some rank/request conditions. Five-update DSpark and 150-update shadow-expert tests remain bounded."
+          "Mochi .129 best 24 now reports267/434 pass@1 with full coverage after rule-based recovery; parent V5 SFT is247/431 under the same policy but different coverage. Batch-invariance diagnostics are exact on the fixed panel; FA2 alone still fails. BixBench offline regrades are new artifacts, and zero-response timing evidence distinguishes lost partial work from presumed queue starvation."
         ]
       },
       "sourceIds": [
@@ -5559,7 +5699,14 @@ window.MARIN_RESEARCH = {
         "M772",
         "M775",
         "M776",
-        "M784"
+        "M784",
+        "M792",
+        "M793",
+        "M797",
+        "M790",
+        "M791",
+        "M796",
+        "M799"
       ],
       "reviewStatus": "reviewed"
     },
@@ -5621,7 +5768,8 @@ window.MARIN_RESEARCH = {
           "High synthetic decode throughput does not establish learner saturation. Prompt and grader corrections can change scores on unchanged weights; the current evidence does not establish new quality gains or every underlying bottleneck.",
           "Evaluation/refill dominate reported realized RL time. Different token volumes, hardware and short windows do not establish a general speed ranking. Pooled detector precision and small grader samples do not certify the corpus or all benchmark scores.",
           "Eight-model transfer predicts 0.243 ± 0.007 MAI-code BPB / 0.888 ± 0.020 chart units; this is not measured OpenAI private loss and excludes additional axis-mapping uncertainty. Changing scored subsets prevents interpreting aggregate holdout as paired improvement.",
-          "The old Mochi/Snowball SFT-to-RL contrast does not isolate model, data or optimizer causes. Cache-off cross-rank mismatch shows prefix caching is not necessary for that discrepancy, without identifying an arithmetic root cause. Saved-response regrading changes scores without model learning; partial-test timings do not certify production speed."
+          "The old Mochi/Snowball SFT-to-RL contrast does not isolate model, data or optimizer causes. Cache-off cross-rank mismatch shows prefix caching is not necessary for that discrepancy, without identifying an arithmetic root cause. Saved-response regrading changes scores without model learning; partial-test timings do not certify production speed.",
+          "The complete invariance bundle succeeds where FA2 alone does not; this does not identify a unique arithmetic cause or establish DSpark/trainer parity. Same-policy small-panel aggregates with different coverage/recovery are not a paired causal training effect. Recorded zero tokens need not mean no generation, and masked unavailable rewards are not trained negative examples."
         ]
       },
       "sourceIds": [
@@ -5772,7 +5920,11 @@ window.MARIN_RESEARCH = {
         "M767",
         "M775",
         "M783",
-        "M780"
+        "M780",
+        "M790",
+        "M791",
+        "M792",
+        "M799"
       ],
       "reviewStatus": "reviewed"
     },
@@ -5823,7 +5975,7 @@ window.MARIN_RESEARCH = {
           "The averaged65K public export has generation_parity_tested=false. Its default selection does not establish validated generation, clean quality gains or finalSFT publication.",
           "Current sustained Mochi reliability, full GPU native restart, corrected .124 drain-run outcomes, truly saturated long-cycle Snowball sizing, complete nativeRLintegration,full-corpusdecontamination andcleanqualitygainsremainunverified.",
           "Clean paired Mochi holdout gains, complete contamination exclusion, private-test loss, full GPU optimizer restore, main-preset handoff and broad corrected evaluation rankings remain unverified.",
-          "Clean paired Mochi RL gains, .131 numerical root cause and qualification, complete fixed-policy model rankings, enabled full GPU recovery and broad main-launcher parity remain unverified. Public anonymous RL W&B project candidates return no readable project; operator reports are not independent live telemetry."
+          "Current .131 final checkpoint/evaluation, the numerical mismatch root cause, clean paired learning gains, broad corrected rankings and partial-output GPU qualification remain unverified. Current anonymous RL W&B candidates return null projects; operator reports do not become independently read live metrics. The .129 coverage seal is complete, replacing its earlier provisional/unsealed state."
         ]
       },
       "sourceIds": [
@@ -6049,12 +6201,301 @@ window.MARIN_RESEARCH = {
         "M767",
         "M773",
         "M775",
-        "M769"
+        "M769",
+        "M789",
+        "M792",
+        "M798",
+        "M791"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-11-26-mochi131-launch-with-waived-gate",
+      "date": "2026-11-26",
+      "status": "confirmed",
+      "title": {
+        "en": "Mochi’s new RL round starts after an explicit waiver, while the failed numerical gate stays on record"
+      },
+      "detail": {
+        "en": "A public operator report confirms that Mochi .131 launched and completed real training updates after the pre-launch numerical gate was explicitly waived. This changes yesterday’s blocked-run status, but it does not turn the failed control into a pass or establish a quality gain. The November 25 launch pins source fe4695fbcd27 and mochi-exp4-dspark-rl.yaml, requesting production-priority 128 GB200s: 48 trainer and 80 rollout GPUs, V5 SFT step 2100, the Exp4 pool with a200-prompt holdout, and the 766M draft with four proposals. No diagnostic invariance or FA2 setting was added to RL. Full steps 1/2 complete at 17:14:02.753 /17:23:07.465UTC, with finite losses0.00403874 /−0.00297295 and wall times3569.958 /544.552s. Baseline coverage is185/200, meeting the 180-score selection minimum. Mean learner-versus-rollout logprob differences are0.00949820 /0.00874858 nats and ESS about 99.872 /99.887%; two updates do not certify parity. Reset-aware counters across 80 engines report draft acceptance28.5755% /27.0952% and generated-token rates4014.5 /4732.7 per second; rolling lookahead and different task mixes prevent attributing a controlled speedup. This is documented adoption in the named post-training round, not a change to completed Hero pretraining or a completed final evaluation; the current end state of .131 is not independently available through public W&B."
+      },
+      "sourceIds": [
+        "M788",
+        "M789"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-26T14:05:00Z",
+      "concept": {
+        "en": "An explicit exception can allow a run to start without changing what an acceptance test measured. Keep authorization, test verdict and observed execution separate."
+      },
+      "exercise": {
+        "en": "Which three receipts distinguish a waived gate, a submitted job and a completed training update?"
+      },
+      "productionChange": true,
+      "productionEvidenceIds": [
+        "M788",
+        "M789"
+      ]
+    },
+    {
+      "id": "event-2026-11-26-invariance-bundle-versus-fa2",
+      "date": "2026-11-26",
+      "status": "experimental",
+      "title": {
+        "en": "A numerical preset removes observed repeat differences on a small panel; changing attention alone does not"
+      },
+      "detail": {
+        "en": "A completed serving-only test makes repeated scores and cross-worker comparisons exact on its fixed prefix panel. A second test changes only attention implementation and still disagrees, narrowing the investigation without identifying a unique root cause. The batch-invariance preset finishes four tasks with 980 finite observations:98 prefixes from 14 prompts, two sweeps over five rank/concurrency conditions. All repeated and four second-sweep cross-condition logprob, top-choice and ordered-route differences are zero. The preset bundles FA4-to-FA2, matrix arithmetic, softmax, communication and compilation changes; it also moves scores relative to the prior serve by max 0.427068 nats with 2/98 top-choice changes. FA2-only later retains automatic serial-repeat max 0.345049 and serial cross-rank max 0.271096, above the unchanged0.243823 bound; one cross-condition comparison has2 top-choice changes against a1/98 limit. One fresh serve per arm and node/compile/batch variation remain confounded. Exact repeats do not establish unchanged probabilities, trainer parity or autoregressive DSpark correctness. The later .131 launch proceeds by explicit waiver, not because this diagnostic passed its original full qualification."
+      },
+      "sourceIds": [
+        "M790",
+        "M791",
+        "M788"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-26T14:05:00Z",
+      "concept": {
+        "en": "Repeatability means a system gives the same answer when repeated. Agreement with another implementation is a separate question."
+      },
+      "exercise": {
+        "en": "Why can a repeatable numerical preset still change the probabilities compared with the original implementation?"
+      }
+    },
+    {
+      "id": "event-2026-11-26-mochi129-full-coverage-seal",
+      "date": "2026-11-26",
+      "status": "experimental",
+      "title": {
+        "en": "A Mochi RL checkpoint now has a fully scored small-panel evaluation after targeted recovery"
+      },
+      "detail": {
+        "en": "The operator has sealed a complete434-trial evaluation for Mochi .129 best checkpoint24 after recovering missing infrastructure outcomes. This supplies a more usable small-panel measurement, while differing coverage and recovery execution still limit a clean training-effect estimate. The final pass@1 is267/434 =0.6152, including BixBench2/10; without that benchmark it is265/424 =0.6250. Under the same frozen2026.11.23 policy and BixBench regrade, the V5 SFT2100 parent records 247/431 =0.5731 and SFT400407 records 250/427 =0.5855. These are descriptive aggregates on a small panel with repeated attempts, different coverage and serving profiles, not a paired effect with uncertainty. After an earlier exact59-slot recovery preserving375 outcomes, an outcome-independent zero-actual-token/zero-assistant-turn plus transport-or-harness-failure rule identifies only UIDs140 and 398. Their single recoveries retain one pass and one fail;432 other row and line hashes remain unchanged, including failures after real model work. The policy/AGENT gates are publicly reported passing, with rule and seal hashes and permanent archive inventories. The named run ends after 25 updates under its step-boundary budget; best 24, final 25 and SFT2100 remain retained. This is a different recipe and policy from the earlier .123 decline, so neither result cancels the other. Login-only payloads were not independently downloaded or rerun here."
+      },
+      "sourceIds": [
+        "M792",
+        "M793",
+        "M797",
+        "M796",
+        "M794"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-26T14:05:00Z",
+      "concept": {
+        "en": "Recovering infrastructure failures should use a rule fixed before looking at success, preserve trial identities and retain genuine model failures."
+      },
+      "exercise": {
+        "en": "How would you audit that a higher final coverage did not come from rerunning only bad answers?"
+      }
+    },
+    {
+      "id": "event-2026-11-26-bixbench-versioned-regrade",
+      "date": "2026-11-26",
+      "status": "experimental",
+      "title": {
+        "en": "A verifier-configuration repair restores missing benchmark scores without rerunning model responses"
+      },
+      "detail": {
+        "en": "A public audit identifies why one benchmark vanished from many small-panel aggregates and regrades its saved responses under the frozen judge. This repairs coverage as a new result version, rather than silently rewriting a sealed measurement or claiming that the models improved. A Harbor configuration rebuild redacted a judge-relay placeholder into a rejected literal, causing BixBench trials to fail before verification. The offline repair grades52 available answered trajectories with zero reported judge failures and counts no-answer agent failures as zero. It publishes aggregate-bixbench-v2 and new dashboard versions, retaining originals. Examples: Mochi base becomes0.2569 at 432/434, SFT400407 becomes0.5855 at 427/434, V5 SFT2100 becomes0.5731 at 431/434, and Snowball Exp4 SFT/RL become0.3279 at 433/434 and 0.4329 at 432/434. Stopped-early aggregate-only rows lack stored trajectories and keep BixBench unavailable. The comment also corrects Snowball v0.1’s sealed basis to 0.5585 before regrade, rather than an older tracking-CSV0.5532. Comparison must use the same revised artifacts and outcome rules; neither judge reruns nor repairs prove clean general capability."
+      },
+      "sourceIds": [
+        "M796",
+        "M792"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-26T14:05:00Z",
+      "concept": {
+        "en": "A benchmark can disappear because its verifier failed, not because the model had no ability on it. A repaired measurement needs a new identity."
+      },
+      "exercise": {
+        "en": "Which original and revised records would you keep so readers can reconstruct the changed denominator?"
+      }
+    },
+    {
+      "id": "event-2026-11-26-zero-token-timeout-correction",
+      "date": "2026-11-26",
+      "status": "experimental",
+      "title": {
+        "en": "Some zero-token archives hid long active generations, rather than a long wait to start"
+      },
+      "detail": {
+        "en": "A read-only audit shows that some timeout rows recorded as zero generated tokens had actually produced substantial text before the non-streaming response was discarded. This changes the diagnosis and the proposed remedy: preserve actual partial work and grade it, while keeping slow generation separate from admission wait. In a balanced500-rollout sample,58 rows time out this way; retained timing matches29 of those session IDs, with 32 requests showing115–19,735 tokens, queue waits at most18.529s and first-token delays at most19.773s. Observed decode spans reach1743.155s. These are limited retained events, not a causal classification of every missing row. The separate learner cohort has363/12,800 unavailable rows (2.84%); they are token-loss masked and excluded from RLOO baselines, not trained as reward-zero negatives. Fractionally retained archives report .129 212/1786 and .131 194/2083 timeout rows; different populations prevent a DSpark causal comparison. Branch implementation0602a5bbdc retains actual partial tokens/logprobs/routes with a30-second reserve, and later shared-client/admission-clock commits are reported landed for future launches. Already submitted jobs keep their pins. GPU certification, strict queue-versus-decode attribution and coverage changes remain open. Earlier unsealed .129 aggregates in this incident are superseded by the later full-coverage seal."
+      },
+      "sourceIds": [
+        "M798",
+        "M799",
+        "M800",
+        "M792"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-26T14:05:00Z",
+      "concept": {
+        "en": "An empty recorded reply does not prove an engine did no work. Recorder boundaries, task verdicts and training masks answer different questions."
+      },
+      "exercise": {
+        "en": "Which engine timing and exact partial-token evidence would distinguish waiting from generating slowly?"
+      }
+    },
+    {
+      "id": "event-2026-11-26-exp7-sft-recovery-pending",
+      "date": "2026-11-26",
+      "status": "experimental",
+      "title": {
+        "en": "A new Snowball fine-tuning attempt passes a failing startup stage, but its first update is not yet confirmed"
+      },
+      "detail": {
+        "en": "A proposed unified mix runner reports an actual Exp7 fine-tuning launch and retries after failures before the first update. The latest public note reaches finite-loss checks and post-step compiler uploads, so it is progress in startup diagnosis rather than a completed measured training update. Open PR#12284 uses an approved V10.1 seal and a one-epoch capacity receipt resolving1680 updates,256 H100s and 262144 positions. It ports Exp6 SFT157’s native optimizer, precision, masking, sharding and reference-gate controls; a recovered immutable launch bundle pins CUDA, shared compilation cache, no shard autotuning and 600-second first-collective termination limits. The initial launch aborts in its first collective. Recovery version2026.11.26.62001 attempt0 ends at the 90-minute startup watchdog; a30.446-second rendezvous warning actually reports successful rendezvous, not its failure cause. Attempt1 passes the training collective and reaches HLO uploads, with full update metrics pending; all 32 optimized training HLOs are identical. The SFT-only graph constructs no RL or Micro210 stages. The stall mechanism, completed-update throughput and normalized later RL binding remain unverified. Open#12299 likewise proposes new shadow-expert defaults but preserves the original Mochi SFT reproduction fingerprint and awaits the larger paired run."
+      },
+      "sourceIds": [
+        "M801",
+        "M806"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-26T14:05:00Z",
+      "concept": {
+        "en": "Passing one stage of startup does not prove a whole update completed. A warning’s text and terminal event can describe different outcomes."
+      },
+      "exercise": {
+        "en": "Which optimizer, publication and full-step events would you require before reporting the first successful update?"
+      }
+    },
+    {
+      "id": "event-2026-11-26-accepted-mochi-dspark-preset",
+      "date": "2026-11-26",
+      "status": "confirmed",
+      "title": {
+        "en": "The one-rack Mochi draft-decoding change is accepted, with its prior short-test limits intact"
+      },
+      "detail": {
+        "en": "Marin merged the one-rack Mochi DSpark configuration that was open at yesterday’s review. This confirms accepted preset and draft-fitting code, separately from the named .131 launch and its explicit numerical waiver. PR#12239 merged November 26 at 01:29UTC, or November 25 evening in New York. One-rack standard and agentic presets use the interleaved766M draft, four proposals and 0.775 vLLM memory; three-rack presets retain plain decoding pending262K-context measurements. The five-update timing table is historical evidence already recorded, not a new measurement: updates2–5 total 21m32s versus 34m18s plain, with different fresh-token coverage and memory fractions. Neither that short window nor the merge demonstrates general learning quality, long-run speed or a passed numerical gate."
+      },
+      "sourceIds": [
+        "M776",
+        "M788"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-26T14:05:00Z",
+      "concept": {
+        "en": "A merged preset states how future runs are configured. Each actual run still needs its own identity, acceptance verdict and measurements."
+      },
+      "exercise": {
+        "en": "Why should a code merge, a launch waiver and a timing comparison remain separate receipts?"
+      }
+    },
+    {
+      "id": "event-2026-11-26-accepted-snowball-long-memory",
+      "date": "2026-11-26",
+      "status": "confirmed",
+      "title": {
+        "en": "Snowball’s long-run memory layout is accepted after a bounded 25-update test"
+      },
+      "detail": {
+        "en": "Marin accepted a Snowball long-training layout that gets beyond an earlier out-of-memory point in a small test. The change also protects shared task inputs and isolates launcher coordination, but does not prove a full long training/evaluation/export cycle. PR#11943 merged November 26 at 07:05UTC. It packs samples and uses two context-parallel ranks with key/value all-gather for policy and reference. A40-H100 Reno proof completes 25 updates; the earlier one-rank layout exhausted memory at update24. Published task selections become read-only graph inputs, launcher NCCL rendezvous is scoped to job and attempt, and gate GPU-hours use first recorded workload start through native completion. This is accepted code supported by a short Snowball run; it is not a qualified Mochi long-context restart or an independently readable current W&B measurement."
+      },
+      "sourceIds": [
+        "M716"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-26T14:05:00Z",
+      "concept": {
+        "en": "Crossing a previous failure point is useful evidence, but a few more updates do not test every periodic checkpoint, evaluation or export path."
+      },
+      "exercise": {
+        "en": "Which later full-cycle events could still fail after update25 succeeds?"
+      }
+    },
+    {
+      "id": "event-2026-11-26-accepted-math-unit-grading",
+      "date": "2026-11-26",
+      "status": "confirmed",
+      "title": {
+        "en": "The mathematical-reference parser repair is now accepted"
+      },
+      "detail": {
+        "en": "Marin merged the fix for correct numeric answers being rejected or misgraded when references contain units or ordinals. This changes the accepted grading implementation, while historical task packages and model scores still require explicit rebuild or regrade evidence. PR#12197 merged November 25 at 16:24UTC, restoring terminal compound-unit chains, ordinal superscripts and signed/spaced unit powers while preserving the fail-closed path for text groups followed by more math. Its205 focused math-answer tests pass. Broader affected lanes report thousands of passing tests but reach a600-second session limit, so this is not a completed all-tests claim. It follows yesterday’s draft repair and the 27-row regression report; no full task-pool rebuild or corrected historical model ranking is established by the merge alone."
+      },
+      "sourceIds": [
+        "M782"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-26T14:05:00Z",
+      "concept": {
+        "en": "A parser repair can restore the intended meaning of a reference without improving the model that produced the answer."
+      },
+      "exercise": {
+        "en": "What task-version and regrade receipts would connect this accepted fix to a later benchmark score?"
+      }
+    },
+    {
+      "id": "event-2026-11-26-accepted-swe-test-name-repair",
+      "date": "2026-11-26",
+      "status": "confirmed",
+      "title": {
+        "en": "A coding-task parser now recognizes Go test names and refuses logs with no usable test results"
+      },
+      "detail": {
+        "en": "Marin accepted the parser fix behind a report that passing Go test suites received zero reward. It also treats logs with no named results as unscorable, avoiding a guessed success or failure when the evidence is missing. PR#12272 merged November 25 at 19:25UTC and closes#12002. Go JSON events carry package paths separately, so the parser stops prepending them to test names; failures and skips take precedence when packages reuse a name. Jest suite summaries, Go package summaries and build-error cases no longer yield a resolved verdict without the required named results. Focused grader/task-curation regressions pass27/27; the affected runner times out after 1422 passes and 4 skips. This confirms a repository repair and bounded tests, not a full regrade of the earlier oracle-failed tail or every coding benchmark."
+      },
+      "sourceIds": [
+        "M802"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-26T14:05:00Z",
+      "concept": {
+        "en": "A parser should match the test identity the runner actually emits and preserve an unknown outcome when the log contains no usable evidence."
+      },
+      "exercise": {
+        "en": "How would you distinguish a passing suite from a package summary that never lists individual test outcomes?"
+      }
+    },
+    {
+      "id": "event-2026-11-26-accepted-ds1000-verifier-version",
+      "date": "2026-11-26",
+      "status": "confirmed",
+      "title": {
+        "en": "A new DS-1000 verifier version closes an exit-without-testing shortcut"
+      },
+      "detail": {
+        "en": "Marin accepted a new verifier revision that stops a submitted program from earning full reward simply by exiting successfully before tests run. It also fixes one task whose own reference always failed, making new scores a different measurement version. PR#12312 merged November 25 at 20:44UTC and pins mini200 packages at cedf53d719. The200-package wrapper now requires the reward file written only after assertions pass; missing reward counts as zero while exit status still informs verdict type. Task701’s solution insertion is corrected. Package-environment probes change sys.exit(0) and os._exit(0) rewards1→0, retain passing probes at 1, and repair task701’s reference0→1. The other800 DS-1000 packages retain their older verifier. Recipe and protocol advance to 2026.11.25, with a fixed archive digest. Earlier and later scores are not directly interchangeable, and no broad model rerun is claimed."
+      },
+      "sourceIds": [
+        "M803"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-26T14:05:00Z",
+      "concept": {
+        "en": "A successful process exit only says the program stopped successfully. A verifier must establish that the required assertions actually ran and passed."
+      },
+      "exercise": {
+        "en": "Which bypass, failing-assertion and passing-reference controls would you require before trusting the new package?"
+      }
+    },
+    {
+      "id": "event-2026-11-26-released-policy-code-tag",
+      "date": "2026-11-26",
+      "status": "confirmed",
+      "title": {
+        "en": "Released evaluation policies now pin the code used to launch and grade them"
+      },
+      "detail": {
+        "en": "Marin accepted a rule that ties a released evaluation policy to one clean git-tagged code revision. This makes reproducibility stronger than a version label alone, while leaving the current trial policy unreleased. PR#12289 merged November 25 at 20:26UTC: a released policy can launch only from its eval-policy-version tag and clean checkout, run IDs include that commit, and status/verify reject other revisions. A fix requires a new release version and tag; the merge is not evidence that a release tag was cut. Separately merged#12287 documents that the trial’s FinanceBench/OlympiadBench judge differs from October’s offline MiniMax regrade and that CruxEval’s metric direction differs; it changes documentation, not execution. November 30 policy choices remain proposed. Open#12352 separately proposes bounded rolling preemption saves and interrupted-delete recovery; merged#11628 accepts atomic staging-wave checkpoint commits with CPU/NFS timing limits, not a full GPU recovery certification."
+      },
+      "sourceIds": [
+        "M804",
+        "M805",
+        "M807",
+        "M808"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-26T14:05:00Z",
+      "concept": {
+        "en": "A policy version identifies intended tests; a code pin identifies the implementation that actually launches and grades them. Both are needed for a repeatable measurement."
+      },
+      "exercise": {
+        "en": "Which version, tag, model, task table and judge would you record before comparing two releases?"
+      }
+    },
     {
       "id": "event-2026-11-25-mochi123-final-panel-outcome",
       "date": "2026-11-25",
