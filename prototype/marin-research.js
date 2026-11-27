@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-11-26",
+  "snapshot": "2026-11-27",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -4852,6 +4852,162 @@ window.MARIN_RESEARCH = {
       "url": "https://github.com/marin-community/marin/pull/12352",
       "title": "Proposed bounded preemption checkpoint retention",
       "kind": "pr"
+    },
+    {
+      "id": "M809",
+      "url": "https://github.com/marin-community/marin/issues/11337#issuecomment-7194544910",
+      "title": "Mochi .131 best34 frozen-panel seal and preservation recovery",
+      "kind": "issue"
+    },
+    {
+      "id": "M810",
+      "url": "https://github.com/marin-community/marin-logbooks/issues/91",
+      "title": "Public Mochi50-step data-mix campaign index",
+      "kind": "issue"
+    },
+    {
+      "id": "M811",
+      "url": "https://github.com/marin-community/marin-logbooks/issues/91#issuecomment-7219972274",
+      "title": "Two campaign runs finish50updates and enter automatic export",
+      "kind": "issue"
+    },
+    {
+      "id": "M812",
+      "url": "https://github.com/marin-community/marin-logbooks/issues/91#issuecomment-7219252974",
+      "title": "Exp7 RL703 first completed optimizer update",
+      "kind": "issue"
+    },
+    {
+      "id": "M813",
+      "url": "https://github.com/marin-community/marin-logbooks/issues/91#issuecomment-7219993319",
+      "title": "Exp7 native budget ruling supersedes proposed external cutoff",
+      "kind": "issue"
+    },
+    {
+      "id": "M814",
+      "url": "https://github.com/marin-community/marin-logbooks/issues/86",
+      "title": "Completed Mochi action-loop experiment with negative and underpowered results",
+      "kind": "issue"
+    },
+    {
+      "id": "M815",
+      "url": "https://github.com/marin-community/marin-logbooks/issues/86#issuecomment-7207810490",
+      "title": "Loop-guard experiment closes with no complete registered success",
+      "kind": "issue"
+    },
+    {
+      "id": "M816",
+      "url": "https://github.com/marin-community/marin-logbooks/issues/86#issuecomment-7207602208",
+      "title": "Four-update antithrash arm records zero penalty exposure",
+      "kind": "issue"
+    },
+    {
+      "id": "M817",
+      "url": "https://github.com/marin-community/marin/issues/12386",
+      "title": "Polaris retained grader rejects supported correct-answer formats",
+      "kind": "issue"
+    },
+    {
+      "id": "M818",
+      "url": "https://github.com/marin-community/marin/issues/12386#issuecomment-7211881434",
+      "title": "Independent Polaris candidate audit fails with false zeros and missing verdicts",
+      "kind": "issue"
+    },
+    {
+      "id": "M819",
+      "url": "https://github.com/marin-community/marin/issues/12386#issuecomment-7214456484",
+      "title": "Polaris v4 native development controls pass while admission remains held",
+      "kind": "issue"
+    },
+    {
+      "id": "M820",
+      "url": "https://github.com/marin-community/marin/issues/12386#issuecomment-7215474491",
+      "title": "Fresh99-task Polaris replay submitted with independent review still pending",
+      "kind": "issue"
+    },
+    {
+      "id": "M821",
+      "url": "https://github.com/marin-community/marin/issues/12374",
+      "title": "Unavailable SWE pivot judge removes intended campaign training feedback",
+      "kind": "issue"
+    },
+    {
+      "id": "M822",
+      "url": "https://github.com/marin-community/marin/pull/12385",
+      "title": "Proposed byte-weighted evaluation bits per byte",
+      "kind": "pr"
+    },
+    {
+      "id": "M823",
+      "url": "https://github.com/marin-community/marin/pull/12027",
+      "title": "Accepted fixed FP32 row-tile policy normalization primitive",
+      "kind": "pr"
+    },
+    {
+      "id": "M824",
+      "url": "https://github.com/marin-community/marin/pull/12392",
+      "title": "Proposed shared partial-generation deadline handling",
+      "kind": "pr"
+    },
+    {
+      "id": "M825",
+      "url": "https://github.com/marin-community/marin/pull/12392#issuecomment-7217530551",
+      "title": "Partial-generation review identifies training reach and unverified GPU abort",
+      "kind": "issue"
+    },
+    {
+      "id": "M826",
+      "url": "https://github.com/marin-community/marin/issues/12372",
+      "title": "Multilingual coding agents retrieve upstream fixes over the network",
+      "kind": "issue"
+    },
+    {
+      "id": "M827",
+      "url": "https://github.com/marin-community/marin/pull/12373",
+      "title": "Proposed offline coding agent and separate networked verifier",
+      "kind": "pr"
+    },
+    {
+      "id": "M828",
+      "url": "https://github.com/marin-community/marin/pull/12198",
+      "title": "Accepted evaluation-policy launch command",
+      "kind": "pr"
+    },
+    {
+      "id": "M829",
+      "url": "https://github.com/marin-community/marin/pull/12216",
+      "title": "Accepted policy status/verify and code-pinned run validation",
+      "kind": "pr"
+    },
+    {
+      "id": "M830",
+      "url": "https://github.com/marin-community/marin/pull/12294",
+      "title": "Accepted policy launch across candidates and checkpoint models",
+      "kind": "pr"
+    },
+    {
+      "id": "M831",
+      "url": "https://github.com/marin-community/marin/pull/12380",
+      "title": "Closed-unmerged shared Micro210 registration draft",
+      "kind": "pr"
+    },
+    {
+      "id": "M832",
+      "url": "https://github.com/marin-community/marin/pull/12249",
+      "title": "Open sealed Micro210 native task-runtime binding",
+      "kind": "pr"
+    },
+    {
+      "id": "M833",
+      "url": "https://github.com/marin-community/marin/pull/12351",
+      "title": "Accepted failed-controller-checkpoint upload alert",
+      "kind": "pr"
+    },
+    {
+      "id": "M834",
+      "url": "https://github.com/marin-community/marin/pull/12378",
+      "title": "Proposed CUDA discovery mask for privileged GPU tasks",
+      "kind": "pr"
     }
   ],
   "claimGroups": [
@@ -4919,7 +5075,8 @@ window.MARIN_RESEARCH = {
           "Forced-final-save local manifest safety and the SkyRL learner AllGather fallback merged, with bounded CPU/GPU validation. Nemotron instruction grading now uses verifyit for newly rebuilt pools; old pool identities and frozen evaluations do not change automatically.",
           "Official #8506 closed November22 and redirects post-training tracking to milestone15/#11191. IFEval consolidation and repeat/language repairs merged with new versions; frozen Micro210 and old task pools do not automatically change.",
           "The #12185 wheel pin and #12192 restore metadata fix are merged. #12194 includes the opt-in chunked PPO/memory-preflight implementation; two later #12193 guards remain branch-only. #12167 TaskSpec migration and #12238 candidate-error grading repair are accepted repository changes with bounded tests, not demonstrated full long-loop production adoption.",
-          "Public launch and first-update lineage confirm Mochi .131 running after an explicit gate waiver, not a passed numerical control; this is the named post-training round, not resumed Hero pretraining. DSpark preset, Snowball long-memory layout, math/Go/DS-1000 grading repairs and released-policy code-tag rule are merged repository changes."
+          "Public launch and first-update lineage confirm Mochi .131 running after an explicit gate waiver, not a passed numerical control; this is the named post-training round, not resumed Hero pretraining. DSpark preset, Snowball long-memory layout, math/Go/DS-1000 grading repairs and released-policy code-tag rule are merged repository changes.",
+          "Hero multi-context evaluation, fixed FP32 row policy normalization, policy launch/status/verify and controller checkpoint-failure alert code are accepted repository changes. Their merges do not establish live GPU adoption, corrected historical loss or alert delivery. .131 selected34 export/evaluation has a later public preservation/seal receipt."
         ]
       },
       "sourceIds": [
@@ -5175,7 +5332,14 @@ window.MARIN_RESEARCH = {
         "M782",
         "M802",
         "M803",
-        "M804"
+        "M804",
+        "M480",
+        "M823",
+        "M828",
+        "M829",
+        "M830",
+        "M833",
+        "M809"
       ],
       "reviewStatus": "reviewed"
     },
@@ -5221,7 +5385,7 @@ window.MARIN_RESEARCH = {
           "The v13 evaluation reference expansion remains open and unstaged. The documented serving workarounds still need a deployed repair receipt.",
           "Full Mochi post-training qualification, downstream validation of teacher distillation and clean benchmark comparisons remain future work. The distillation and newer serving presets remain open proposals.",
           "The consolidated artifact loop, cross-rank executable guard, memory-layout refresh and host-rebind barrier remain open. Sustained Mochi RL, full GPU restart and revised clean evaluation policies remain future work.",
-          "The numerical root cause and full .131 outcome remain open despite the launch waiver. Exp7 SFT recovery lacks full first-update metrics; shared runner/Micro210 bindings, shadow-expert defaults, repetition remedies and GPU certification of partial-output handling remain incomplete. A policy-tag rule is accepted, but no release-tag creation or finalized November 30 policy is established."
+          "Byte-weighted BPB, shared partial-output deadline behavior, offline multilingual coding agents/separate verifier and native Micro210 binding remain open. GPU partial-abort validation and training-clock issues remain unresolved; no finalized November 30 policy or live alert deployment is established."
         ]
       },
       "sourceIds": [
@@ -5445,7 +5609,13 @@ window.MARIN_RESEARCH = {
         "M801",
         "M806",
         "M798",
-        "M804"
+        "M804",
+        "M822",
+        "M824",
+        "M825",
+        "M827",
+        "M832",
+        "M833"
       ],
       "reviewStatus": "reviewed"
     },
@@ -5511,7 +5681,8 @@ window.MARIN_RESEARCH = {
           "Snowball restored native step20 and completed23 more updates before another memory failure; a changed40H100layoutcompleted25updateswithHFexportdisabled. Uniformemptyautotuneinputs produced matchingprograms andthreeupdatesintworegions,withoutrecoveringthefastrate. Mochi base/SFTsmallcomparisonandEOT-correctedSnowballscoresretainprotocolandgradinglimits.",
           "A longer full-Mochi trial completed one real update before operator termination; the full-step rollout rate was73.378tokens/s/GPU, not the synthetic-serving peak. Snowball sizing hit checkpoint host OOM after two steps. Fixed-weight MMLU-Pro prompt controls show large scoring effects on two Snowball models.",
           "A public snapshot reports Mochi .123 through step11 and .124 failing atstep4 after a shorter measured evaluation cycle. Short Snowball sizing,32-tokenTPUreplay,encoderdecontamination andgraderdiagnostics remainboundedoperatorreports,notproductionqualitygains.",
-          "Mochi .129 best 24 now reports267/434 pass@1 with full coverage after rule-based recovery; parent V5 SFT is247/431 under the same policy but different coverage. Batch-invariance diagnostics are exact on the fixed panel; FA2 alone still fails. BixBench offline regrades are new artifacts, and zero-response timing evidence distinguishes lost partial work from presumed queue starvation."
+          "Mochi .129 best 24 now reports267/434 pass@1 with full coverage after rule-based recovery; parent V5 SFT is247/431 under the same policy but different coverage. Batch-invariance diagnostics are exact on the fixed panel; FA2 alone still fails. BixBench offline regrades are new artifacts, and zero-response timing evidence distinguishes lost partial work from presumed queue starvation.",
+          "Mochi .131 best 34 reports 258/429 pass@1 with five verifier absences, separately from .129267/434. Two campaign children finish50 updates but exports/evaluations and effective-source qualification remain limited. Exp7 RL703 reports its first optimizer update. Action-loop guards fail complete registered success rules; the four-update antithrash treatment logs zero exposure."
         ]
       },
       "sourceIds": [
@@ -5706,7 +5877,12 @@ window.MARIN_RESEARCH = {
         "M790",
         "M791",
         "M796",
-        "M799"
+        "M799",
+        "M809",
+        "M811",
+        "M812",
+        "M814",
+        "M816"
       ],
       "reviewStatus": "reviewed"
     },
@@ -5769,7 +5945,8 @@ window.MARIN_RESEARCH = {
           "Evaluation/refill dominate reported realized RL time. Different token volumes, hardware and short windows do not establish a general speed ranking. Pooled detector precision and small grader samples do not certify the corpus or all benchmark scores.",
           "Eight-model transfer predicts 0.243 ± 0.007 MAI-code BPB / 0.888 ± 0.020 chart units; this is not measured OpenAI private loss and excludes additional axis-mapping uncertainty. Changing scored subsets prevents interpreting aggregate holdout as paired improvement.",
           "The old Mochi/Snowball SFT-to-RL contrast does not isolate model, data or optimizer causes. Cache-off cross-rank mismatch shows prefix caching is not necessary for that discrepancy, without identifying an arithmetic root cause. Saved-response regrading changes scores without model learning; partial-test timings do not certify production speed.",
-          "The complete invariance bundle succeeds where FA2 alone does not; this does not identify a unique arithmetic cause or establish DSpark/trainer parity. Same-policy small-panel aggregates with different coverage/recovery are not a paired causal training effect. Recorded zero tokens need not mean no generation, and masked unavailable rewards are not trained negative examples."
+          "The complete invariance bundle succeeds where FA2 alone does not; this does not identify a unique arithmetic cause or establish DSpark/trainer parity. Same-policy small-panel aggregates with different coverage/recovery are not a paired causal training effect. Recorded zero tokens need not mean no generation, and masked unavailable rewards are not trained negative examples.",
+          "Different recipe, coverage, recovery history and grader populations prevent attributing the .131/.129 aggregate difference to DSpark. Zero antithrash exposure does not estimate active-penalty efficacy. Byte-weighted ratio repair is not a universal correction factor for existing Hero metrics, and network-assisted benchmark passes are not unaided solves."
         ]
       },
       "sourceIds": [
@@ -5924,7 +6101,11 @@ window.MARIN_RESEARCH = {
         "M790",
         "M791",
         "M792",
-        "M799"
+        "M799",
+        "M809",
+        "M816",
+        "M822",
+        "M826"
       ],
       "reviewStatus": "reviewed"
     },
@@ -5975,7 +6156,7 @@ window.MARIN_RESEARCH = {
           "The averaged65K public export has generation_parity_tested=false. Its default selection does not establish validated generation, clean quality gains or finalSFT publication.",
           "Current sustained Mochi reliability, full GPU native restart, corrected .124 drain-run outcomes, truly saturated long-cycle Snowball sizing, complete nativeRLintegration,full-corpusdecontamination andcleanqualitygainsremainunverified.",
           "Clean paired Mochi holdout gains, complete contamination exclusion, private-test loss, full GPU optimizer restore, main-preset handoff and broad corrected evaluation rankings remain unverified.",
-          "Current .131 final checkpoint/evaluation, the numerical mismatch root cause, clean paired learning gains, broad corrected rankings and partial-output GPU qualification remain unverified. Current anonymous RL W&B candidates return null projects; operator reports do not become independently read live metrics. The .129 coverage seal is complete, replacing its earlier provisional/unsealed state."
+          "Polaris v4 admission is unresolved: the dedicated audit awaits unused-case replay/review while the campaign index claims qualified/runnable. Current anonymous RL/Exp7/loop W&B candidates remain unreadable; public operator receipts are not independent live telemetry. Sustained Exp7 progress, clean paired learning effects, numerical root cause and shared deadline GPU correctness remain unverified."
         ]
       },
       "sourceIds": [
@@ -6205,12 +6386,306 @@ window.MARIN_RESEARCH = {
         "M789",
         "M792",
         "M798",
-        "M791"
+        "M791",
+        "M817",
+        "M819",
+        "M820",
+        "M810",
+        "M812",
+        "M824"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-11-27-mochi131-sealed-evaluation",
+      "date": "2026-11-27",
+      "status": "experimental",
+      "title": {
+        "en": "Mochi’s draft-assisted RL round now has a sealed small-panel result, without a causal speed or quality claim"
+      },
+      "detail": {
+        "en": "A later public receipt reports a sealed evaluation for Mochi .131 best-by-validation checkpoint34. This closes yesterday’s missing selected-checkpoint result, while leaving five unavailable trials and the earlier numerical waiver visible. Pass@1 is258/429 =0.6014 with 429/434 valid (98.85%); BixBench is3/10 after the established offline verifier projection, and without it the score is255/419 =0.6086. The four original evaluation workers succeeded; a parent preservation stage failed with KeyError:artifacts, then a CPU-only adoption/preserve job reused the completed export and evaluation. No RL, export or response-generation stage was rerun. Five verifier-timeout identities remain absent, not zeros. All53 scored agent-task zeros have actual generated tokens and assistant turns; the frozen no-work transport rule reclassifies none. Same-policy references are .129 RL24 at 267/434 =0.6152 and V5 SFT2100 at 247/431 =0.5731, with different coverage, task mix and recovery histories. These are descriptive small-panel aggregates, not a paired DSpark effect. The pre-launch numerical gate was waived, not passed; a sealed evaluation does not retroactively change that verdict. Raw login-only archives were not independently fetched here."
+      },
+      "sourceIds": [
+        "M809",
+        "M788",
+        "M789"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-27T14:02:07Z",
+      "concept": {
+        "en": "Model execution, evaluation and durable preservation are separate stages. A failure after evaluation can be repaired without regenerating the model’s answers."
+      },
+      "exercise": {
+        "en": "Which receipts would show that a preservation repair left the original model responses unchanged?"
+      }
+    },
+    {
+      "id": "event-2026-11-27-campaign-training-versus-admitted-mix",
+      "date": "2026-11-27",
+      "status": "experimental",
+      "title": {
+        "en": "Two data-mix trials reach 50 updates, while grader failures change what their rewards represent"
+      },
+      "detail": {
+        "en": "A public Mochi curriculum campaign reports two trials completing50 updates and entering export, not yet a final evaluation comparison. Grader failures and checkpoint eligibility differences mean their training rewards cannot be read as a clean ranking of intended data mixes. The stage receipt names .532/v3-mix-048 and .534/v2-mix-043 with final-native50 state. .532 has an eligible best50 marker at 180/200 scored; .534 has no eligible trained best and must label its export final-native fallback. Automatic exports are running at the receipt, with no completed Micro210 outcome established. The campaign holds the .131 RL settings and changes equal-weight source mixes, but the index records masked judge failures in .532 and a Polaris format defect in both runs. In an earlier stopped .526 pivot trial,81 retained judge calls all return model_not_available; null scores are loss-masked and the intended SWE source does not enter its first two consumed batches, despite overall rewards0.990234375 /0.96484375. That is missing training feedback, not an all-pass source. Later substitution/qualification claims must retain new identities and cannot rewrite old consumed mixtures. The mutable index contains operational claims that conflict with dedicated Polaris audit notes; no universal source-admission conclusion is drawn."
+      },
+      "sourceIds": [
+        "M810",
+        "M811",
+        "M821",
+        "M817"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-27T14:02:07Z",
+      "concept": {
+        "en": "The configured mixture and the mixture that actually contributes usable training feedback can differ. A high reward on the surviving sources can hide a missing source."
+      },
+      "exercise": {
+        "en": "Which per-source consumed counts, verifier coverage and checkpoint-selection receipts would you inspect before comparing two mixtures?"
+      }
+    },
+    {
+      "id": "event-2026-11-27-exp7-first-rl-update-and-clock",
+      "date": "2026-11-27",
+      "status": "experimental",
+      "title": {
+        "en": "Exp7’s recovered RL path completes its first update; its budget starts at that update, not resubmission"
+      },
+      "detail": {
+        "en": "A newer public logbook receipt confirms that Exp7’s recovered RL child completed its first optimizer update from a permanent SFT655 initializer. This resolves the earlier no-update observation, while one update does not establish sustained throughput or explain parser warnings. At08:03:39EST, native records and the cited W&B log report policy loss0.103117, raw reward0.489505, verifier coverage99.8047%,13 agentic/51 nonagentic groups and zero rejected groups. The first cycle takes 2352s, including 2051s for group admission and 212s policy training. The later08:46EST ruling says the frozen43200s learning clock plus1800s drain is measured from first optimizer completion, around20:03/20:33EST; it explicitly withdraws an earlier18:52:23 resubmission-based external cutoff. No external guard is armed and no live configuration change is reported. The named run’s public anonymous W&B project remains unreadable in this review, so those metrics remain operator-reported, not independently read live values. The open mix-runner PR body still describes an older startup state; the later exact-child update receipt is the narrower progress evidence."
+      },
+      "sourceIds": [
+        "M812",
+        "M813",
+        "M801"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-27T14:02:07Z",
+      "concept": {
+        "en": "A time budget needs an explicit starting event. Starting from submission, admission or the first completed update gives different deadlines."
+      },
+      "exercise": {
+        "en": "Which clock event would you preserve to reproduce both the measured training duration and its remaining budget?"
+      }
+    },
+    {
+      "id": "event-2026-11-27-action-loop-guards-negative-result",
+      "date": "2026-11-27",
+      "status": "experimental",
+      "title": {
+        "en": "The action-loop experiment closes without a guard meeting its full registered success rule"
+      },
+      "detail": {
+        "en": "No tested action-loop intervention met the complete registered loop-reduction rule in the completed Mochi experiment. This is useful negative evidence, but the RL penalty arm cannot test the effect of an actively applied penalty because its logged exposure is zero. The final disposition says the stop guard came closest, cutting TBLite loops42.5% versus the required50%; correctness passes only under the documented0.75 threshold override for that guard. Repetition penalty also fails its loop caps. A concurrent fixed-four-update antithrash pair records repeat-turn shares0.1501→0.2139 on TB2,0.0765→0.0815 on TBLite and 0.1322→0.2022 on the held-out cohort. Both arms satisfy validity, but treatment antithrash fire fraction and mean penalty are zero at every update1–4, below the preregistered2% diagnostic. The verdict is FAIL+UNDERPOWERED, not evidence that an applied penalty is ineffective or harmful; one pair does not establish a significant causal increase. A pinned216-store SFT audit is unperformed because its manifest is unavailable, with no follow-up run under the final disposition. These are action loops, distinct from the still-pending exact-tail FTPO baseline in#12240."
+      },
+      "sourceIds": [
+        "M814",
+        "M815",
+        "M816",
+        "M785"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-27T14:02:07Z",
+      "concept": {
+        "en": "A treatment configured on but never triggered has zero measured exposure. A failed outcome then cannot establish the causal effect of the active mechanism."
+      },
+      "exercise": {
+        "en": "Which exposure metric would you require before interpreting a control-versus-treatment difference?"
+      }
+    },
+    {
+      "id": "event-2026-11-27-polaris-grading-and-admission-conflict",
+      "date": "2026-11-27",
+      "status": "unknown",
+      "title": {
+        "en": "A math-source audit finds false zero rewards, while later repair-admission claims conflict"
+      },
+      "detail": {
+        "en": "A retained math-source audit reports correct answers receiving zero reward, and public sources disagree about whether the later repair is qualified. This can distort training feedback and prevents treating the replacement source as independently admitted. Polaris tasks request plain text while the frozen grader requires literal XML end-think plus a boxed answer;17 of 20 independently reviewed captured replies are correct but all 20 score zero with nonzero loss masks. A later independent candidate audit still finds eight definite false zeros and two unavailable verdicts among102 cases; its conditional100-gradable-case error estimate is20.28% (bootstrap8.83–31.22%), not a full-source or later-v4 error rate. V4 development controls subsequently pass47/47 on nine reused TaskSpecs, explicitly not a fresh population qualification. The dedicated audit’s latest note submits replay on 99 unused tasks with fresh independent review pending and target-policy decisions still held. The campaign index instead lists a v4 release as runnable and claims a51-case review with no false rewards. No matching completed fresh-review receipt is available in the inspected dedicated thread, and the release payload is not independently read here. Keep the conflict unresolved; neither development-test success nor an index label supersedes qualification evidence."
+      },
+      "sourceIds": [
+        "M817",
+        "M818",
+        "M819",
+        "M820",
+        "M810"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-27T14:02:07Z",
+      "concept": {
+        "en": "Development examples show whether a fix handles known cases. Fresh qualification estimates how it behaves on unused cases and can disagree with a readiness label."
+      },
+      "exercise": {
+        "en": "What exact release identity and completed unused-case review would reconcile the conflicting admission claims?"
+      }
+    },
+    {
+      "id": "event-2026-11-27-byte-weighted-bpb-proposal",
+      "date": "2026-11-27",
+      "status": "planned",
+      "title": {
+        "en": "A proposed loss-metric repair removes a batch-dependent distortion in bits per byte"
+      },
+      "detail": {
+        "en": "A proposed evaluator fix computes prediction loss per byte from total loss and total scored bytes, rather than averaging batch ratios with token weights. This matters because otherwise the same data can report different bits-per-byte values when batch boundaries change. Open PR#12385 gives a controlled example: one- and two-byte tokens with equal per-token loss produce1.082 BPB under the token-weighted calculation instead of 0.962 from 2 nats over 3 bytes. Historical ladder checks in#10968 report3.6–4.7% effects on one Paloma programming-language set; that percentage is not a correction factor for Hero’s public W&B rows. The proposed repair changes per-set/group BPB with a tokenizer, not per-set loss, and handles zero-byte targets explicitly. Partial UTF-8 tokens, scored-versus-source text and MoE auxiliary loss remain separate defects. The PR is unmerged and no corrected full evaluation is established; retain historical measurements with their original implementation and dates."
+      },
+      "sourceIds": [
+        "M822"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-27T14:02:07Z",
+      "concept": {
+        "en": "The ratio of total loss to total bytes is generally different from a weighted average of batch ratios. A measurement method should not depend on arbitrary batching."
+      },
+      "exercise": {
+        "en": "How would you split the same tiny dataset into two batches to test that reported bits per byte stays unchanged?"
+      }
+    },
+    {
+      "id": "event-2026-11-27-accepted-hero-multicontext-eval",
+      "date": "2026-11-27",
+      "status": "confirmed",
+      "title": {
+        "en": "Hero evaluation can now keep separate context-length measurements in accepted code"
+      },
+      "detail": {
+        "en": "Marin accepted code that evaluates Hero at several sequence lengths while keeping their measurements separate. It helps distinguish a change in evaluation context from a change in the model, but no GPU rehearsal or live adoption of this revision is shown. PR#10711 merged November 27 at 07:54UTC. It always evaluates4K and current training length, adding fixed 65K/262K only after training reaches those lengths; length-specific metric keys leave the legacy aggregate at training length. The evaluator retains training context-parallel groups to avoid replacing the device groups implicated in earlier NCCL memory growth. Continuous-text validation retains incomplete final sequences with right padding and masks padding from attention and loss, including the real-to-pad prediction, so short corpora remain represented. CPU tests check groups, sharding and handoff; the source explicitly says this revision has no GPU rehearsal. This is repository capability, not new pretraining progress or freshly comparable multi-length benchmark results."
+      },
+      "sourceIds": [
+        "M480"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-27T14:02:07Z",
+      "concept": {
+        "en": "A fixed model can score differently at different context lengths. Separate metric identities preserve what was actually measured."
+      },
+      "exercise": {
+        "en": "Which context length, padding rule and model revision would you record before comparing two loss curves?"
+      }
+    },
+    {
+      "id": "event-2026-11-27-accepted-fixed-row-policy-normalization",
+      "date": "2026-11-27",
+      "status": "confirmed",
+      "title": {
+        "en": "An accepted TPU scoring primitive gives tokens a fixed arithmetic reduction schedule"
+      },
+      "detail": {
+        "en": "Marin merged a shared policy-normalization primitive designed to keep a token’s score from changing just because learner batching changes. This is an accepted numerical building block, not evidence that the separate Mochi GPU mismatch is fixed. PR#12027 merged November 27 at 07:17UTC. It uses fixed FP32 row tiles for log-normalization and log-softmax, preserves leading-axis sharding, gathers vocabulary shards before reduction and shares the accurate reduction with fused cross-entropy reference code. Serving and learner callers can adopt it separately; matching their implementation and actual launch revisions remains necessary. Its stated target is TPU policy scoring, whereas the earlier Mochi gate involved a pinned vLLM GPU stack and multiple bundled numerical settings. No new production handoff or end-to-end GPU parity measurement is established by this merge."
+      },
+      "sourceIds": [
+        "M823",
+        "M790",
+        "M791"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-27T14:02:07Z",
+      "concept": {
+        "en": "Floating-point sums can depend on reduction order. A fixed arithmetic schedule reduces one source of differences without certifying a whole distributed system."
+      },
+      "exercise": {
+        "en": "Which caller and hardware matches would be needed before transferring a TPU scoring result to Mochi’s GPU path?"
+      }
+    },
+    {
+      "id": "event-2026-11-27-partial-deadline-shared-path-review",
+      "date": "2026-11-27",
+      "status": "planned",
+      "title": {
+        "en": "Keeping partial answers at deadlines remains an open change with training-side effects to resolve"
+      },
+      "detail": {
+        "en": "An open patch would return and grade real tokens already generated when a turn deadline expires, instead of losing the whole non-streaming reply. The proposed shared clock also affects training rollouts, so its scope and real-GPU abort behavior need validation before treating it as an evaluation-only repair. PR#12392 carries scheduling notices across Ray, separates a cumulative2280-second admission allowance from execution time and waits for the original collector after a native partial abort. CPU regressions cover clocks, cancellation, transports and deadline attribution. A later review notes that the clock is installed on every vLLM-backed training attempt, weight-sync pauses can consume admission allowance, attempt time is rebased on first scheduling and multi-prompt in-trial calls can be rejected. It also requests an actual GPU check aligning emitted partial tokens, logprobs and policy stamps with engine counts. The source reports passing focused suites and CI, while the broad runner fails before collection without pytest-xdist. The PR remains open, with no GPU boundary certification or running-job mutation established. It is separate from the already recorded branch fixes and completed .129/.131 evaluation recoveries."
+      },
+      "sourceIds": [
+        "M824",
+        "M825",
+        "M798"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-27T14:02:07Z",
+      "concept": {
+        "en": "A shared timeout mechanism changes every caller that uses it. CPU simulations can test control flow without proving the real engine returns the promised partial output."
+      },
+      "exercise": {
+        "en": "Which active-decode GPU test and training weight-sync case would you require before enabling this shared path?"
+      }
+    },
+    {
+      "id": "event-2026-11-27-multilingual-coding-network-leak",
+      "date": "2026-11-27",
+      "status": "experimental",
+      "title": {
+        "en": "A coding benchmark let some agents retrieve the upstream fix before passing"
+      },
+      "detail": {
+        "en": "A public evaluation audit finds two multilingual coding tasks where agents used internet access to read the upstream fix before passing. This means those observed passes cannot be interpreted as unaided bug solving under a network-restricted task. Issue#12372 identifies bat-3108 and jq-2750 in the 100-task panel; local repository history ended at each task’s base commit, so that history was not the observed leak. Simply disabling all networking would break the current verifier’s parser installation. Open PR#12373 instead runs agents offline and applies their patch in a separate fresh networked verifier. Its null-agent screen grades99/100 tasks at zero with one image-build failure; a hosted27-task smoke grades26 with 13 passes and no agent network commands. These are bounded branch tests, not a corrected full model comparison or general leakage-rate estimate. Package edits, image preparation, patch-size handling and a new corpus version remain proposed and dependent on the verifier-environment work."
+      },
+      "sourceIds": [
+        "M826",
+        "M827"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-27T14:02:07Z",
+      "concept": {
+        "en": "An evaluation must specify what information the agent can access. Networking needed by a verifier need not be available to the agent solving the task."
+      },
+      "exercise": {
+        "en": "How would you verify both that the agent cannot fetch the fix and that the separate verifier still tests its real patch?"
+      }
+    },
+    {
+      "id": "event-2026-11-27-accepted-policy-launch-and-validation",
+      "date": "2026-11-27",
+      "status": "confirmed",
+      "title": {
+        "en": "The shared policy launcher and run-validation commands are now accepted"
+      },
+      "detail": {
+        "en": "Marin merged the tools for launching declared evaluation policies and checking that recorded runs match them. This improves reviewable evaluation provenance, while the native sealed Micro210 migration is still unfinished. PRs#12198/#12216/#12294 merged November 26 around18:40UTC, adding policy launch/status/verify, multiple candidate selection and checkpoint-model inputs. Run identities track resolved model, tasks, judge, serving/runtime inputs and concurrency; full launches reject dirty or mismatched source revisions. Successful-but-invalid runs need explicit rerun selection rather than silently being overwritten, and resolution fails before submission if a model is invalid. The proposed shared Micro210 registration#12380 closed without merge;#12249 remains open. Its draft publishes340 chat plus94 Pi rows with a90% reporting threshold, but local434-row compilation and three matched smoke digests are not a completed full GPU evaluation or deployment. The current trial remains distinct from a finalized November 30 policy release."
+      },
+      "sourceIds": [
+        "M828",
+        "M829",
+        "M830",
+        "M831",
+        "M832"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-27T14:02:07Z",
+      "concept": {
+        "en": "A run can finish successfully yet be invalid for a particular policy. Recording what actually ran makes that distinction auditable."
+      },
+      "exercise": {
+        "en": "Which model, task, judge, runtime and coverage mismatches should invalidate a supposedly comparable run?"
+      }
+    },
+    {
+      "id": "event-2026-11-27-accepted-controller-checkpoint-alert",
+      "date": "2026-11-27",
+      "status": "confirmed",
+      "title": {
+        "en": "Controller checkpoint-upload failures now have an accepted alert rule"
+      },
+      "detail": {
+        "en": "Marin merged an alert for a controller that stays alive while its periodic checkpoint uploads fail. This closes an observability gap in code, but deployment and reliable delivery still require evidence that the rule and telemetry are active. PR#12351 merged November 27 at 04:41UTC after an incident with three rejected storage-key attempts. The rule reads numeric upload-attempt telemetry and clears after a successful upload; missing samples produce no checkpoint verdict, not proof of healthy backups. The runbook notes that refreshing a mounted secret can leave an old startup storage client in use. Separately open#12378 proposes masking CUDA discovery to a privileged task’s assigned devices and failing on a GPU-count mismatch; that mask does not revoke host-device access. Neither accepted alert code nor a proposed discovery mask proves the earlier incidents cannot recur."
+      },
+      "sourceIds": [
+        "M833",
+        "M834"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-27T14:02:07Z",
+      "concept": {
+        "en": "A service being alive does not show that its recovery snapshots are being saved. Missing monitoring data is an unknown state, not a success event."
+      },
+      "exercise": {
+        "en": "Which upload receipt and alert-delivery test would demonstrate that a live controller is actually recoverable?"
+      }
+    },
     {
       "id": "event-2026-11-26-mochi131-launch-with-waived-gate",
       "date": "2026-11-26",
