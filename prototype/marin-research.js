@@ -1,5 +1,5 @@
 window.MARIN_RESEARCH = {
-  "snapshot": "2026-11-27",
+  "snapshot": "2026-11-28",
   "coverageStart": "2026-08-29",
   "language": "en",
   "importedThrough": "2026-09-22",
@@ -5008,6 +5008,174 @@ window.MARIN_RESEARCH = {
       "url": "https://github.com/marin-community/marin/pull/12378",
       "title": "Proposed CUDA discovery mask for privileged GPU tasks",
       "kind": "pr"
+    },
+    {
+      "id": "M835",
+      "url": "https://github.com/marin-community/marin/issues/11337#issuecomment-7234552360",
+      "title": "Exp7 terminal RL22 frozen Micro210 result",
+      "kind": "issue"
+    },
+    {
+      "id": "M836",
+      "url": "https://github.com/marin-community/marin/issues/11337#issuecomment-7236076836",
+      "title": "Exp7 SFT655 baseline and matched-policy comparison",
+      "kind": "issue"
+    },
+    {
+      "id": "M837",
+      "url": "https://github.com/marin-community/marin/issues/12438",
+      "title": "SFT weight-storage and movement hypotheses; tests not started",
+      "kind": "issue"
+    },
+    {
+      "id": "M838",
+      "url": "https://github.com/marin-community/marin-logbooks/issues/91#issuecomment-7240013954",
+      "title": "Campaign .715 reward result, checkpoint hold conflict and failed stronger guardian test",
+      "kind": "issue"
+    },
+    {
+      "id": "M839",
+      "url": "https://github.com/marin-community/marin-logbooks/issues/91#issuecomment-7240263982",
+      "title": "Guardian repair qualification and one replacement campaign submission",
+      "kind": "issue"
+    },
+    {
+      "id": "M840",
+      "url": "https://github.com/marin-community/marin-logbooks/issues/91#issuecomment-7239942955",
+      "title": "Native retention deletes a checkpoint after an external measurement hold",
+      "kind": "issue"
+    },
+    {
+      "id": "M841",
+      "url": "https://github.com/marin-community/marin/issues/12386#issuecomment-7226052799",
+      "title": "Polaris v4 full upstream reference census finds 1433 raising rows",
+      "kind": "issue"
+    },
+    {
+      "id": "M842",
+      "url": "https://github.com/marin-community/marin/issues/12418",
+      "title": "Plain-answer math fallback can reject correct or accept wrong fragments",
+      "kind": "issue"
+    },
+    {
+      "id": "M843",
+      "url": "https://github.com/marin-community/marin/issues/12419",
+      "title": "NuminaMath labelled references reject ordinary correct answer forms",
+      "kind": "issue"
+    },
+    {
+      "id": "M844",
+      "url": "https://github.com/marin-community/marin/pull/12436",
+      "title": "Open whole-answer unboxed math grading repair",
+      "kind": "pr"
+    },
+    {
+      "id": "M845",
+      "url": "https://github.com/marin-community/marin/pull/12435",
+      "title": "Open labelled math choice repair",
+      "kind": "pr"
+    },
+    {
+      "id": "M846",
+      "url": "https://github.com/marin-community/marin/issues/12432",
+      "title": "AceCode candidate failures become infrastructure errors",
+      "kind": "issue"
+    },
+    {
+      "id": "M847",
+      "url": "https://github.com/marin-community/marin/pull/12434",
+      "title": "Open AceCode candidate-zero repair",
+      "kind": "pr"
+    },
+    {
+      "id": "M848",
+      "url": "https://github.com/marin-community/marin/issues/12433",
+      "title": "Branch LeetCode grader lacks shipped harness and isolates reward poorly",
+      "kind": "issue"
+    },
+    {
+      "id": "M849",
+      "url": "https://github.com/marin-community/marin/issues/11188",
+      "title": "Published 7503-document review of the October5 SFT mixture",
+      "kind": "issue"
+    },
+    {
+      "id": "M850",
+      "url": "https://github.com/marin-community/marin/pull/12402",
+      "title": "Open lexical decontamination stage with ASDiv reproduction",
+      "kind": "pr"
+    },
+    {
+      "id": "M851",
+      "url": "https://github.com/marin-community/marin/pull/12403",
+      "title": "Related lexical decontamination draft closed without merge",
+      "kind": "pr"
+    },
+    {
+      "id": "M852",
+      "url": "https://github.com/marin-community/marin/issues/12408",
+      "title": "LiveCodeBench copies in Hero sources and bounded clean-subset validation",
+      "kind": "issue"
+    },
+    {
+      "id": "M853",
+      "url": "https://github.com/marin-community/marin/pull/12409",
+      "title": "Open Hero-copy-filtered LiveCodeBench subset",
+      "kind": "pr"
+    },
+    {
+      "id": "M854",
+      "url": "https://github.com/marin-community/marin/pull/12410",
+      "title": "Open asynchronous checkpoint staging and publication",
+      "kind": "pr"
+    },
+    {
+      "id": "M855",
+      "url": "https://github.com/marin-community/marin/pull/12404",
+      "title": "Merged canonical Arrow text-width alignment for mixed task inputs",
+      "kind": "pr"
+    },
+    {
+      "id": "M856",
+      "url": "https://github.com/marin-community/marin/pull/12417",
+      "title": "Merged spare-prompt fixture repair; four-H100 rerun absent",
+      "kind": "pr"
+    },
+    {
+      "id": "M857",
+      "url": "https://github.com/marin-community/marin/issues/12440",
+      "title": "Next Hero profiling plan and explicitly projected efficiency gains",
+      "kind": "issue"
+    },
+    {
+      "id": "M858",
+      "url": "https://github.com/marin-community/marin/pull/12405",
+      "title": "Open evaluation-policy release manifest and tag",
+      "kind": "pr"
+    },
+    {
+      "id": "M859",
+      "url": "https://github.com/marin-community/marin/pull/12406",
+      "title": "Open EvalDash released-policy cohort admission",
+      "kind": "pr"
+    },
+    {
+      "id": "M860",
+      "url": "https://github.com/marin-community/marin/issues/12407",
+      "title": "Lost step lease can let a stale holder overwrite results",
+      "kind": "issue"
+    },
+    {
+      "id": "M861",
+      "url": "https://github.com/marin-community/marin/pull/12439",
+      "title": "Open stop-before-write guard for a lost step lease",
+      "kind": "pr"
+    },
+    {
+      "id": "M862",
+      "url": "https://github.com/marin-community/marin/issues/12427",
+      "title": "Newly published standup for the week ending November20",
+      "kind": "standup"
     }
   ],
   "claimGroups": [
@@ -5076,7 +5244,8 @@ window.MARIN_RESEARCH = {
           "Official #8506 closed November22 and redirects post-training tracking to milestone15/#11191. IFEval consolidation and repeat/language repairs merged with new versions; frozen Micro210 and old task pools do not automatically change.",
           "The #12185 wheel pin and #12192 restore metadata fix are merged. #12194 includes the opt-in chunked PPO/memory-preflight implementation; two later #12193 guards remain branch-only. #12167 TaskSpec migration and #12238 candidate-error grading repair are accepted repository changes with bounded tests, not demonstrated full long-loop production adoption.",
           "Public launch and first-update lineage confirm Mochi .131 running after an explicit gate waiver, not a passed numerical control; this is the named post-training round, not resumed Hero pretraining. DSpark preset, Snowball long-memory layout, math/Go/DS-1000 grading repairs and released-policy code-tag rule are merged repository changes.",
-          "Hero multi-context evaluation, fixed FP32 row policy normalization, policy launch/status/verify and controller checkpoint-failure alert code are accepted repository changes. Their merges do not establish live GPU adoption, corrected historical loss or alert delivery. .131 selected34 export/evaluation has a later public preservation/seal receipt."
+          "Hero multi-context evaluation, fixed FP32 row policy normalization, policy launch/status/verify and controller checkpoint-failure alert code are accepted repository changes. Their merges do not establish live GPU adoption, corrected historical loss or alert delivery. .131 selected34 export/evaluation has a later public preservation/seal receipt.",
+          "Top-level Arrow text-width alignment and spare-prompt parity fixture fixes are merged. Their accepted code does not establish resumed mix-009 training, a completed four-H100 parity rerun or Hero production adoption."
         ]
       },
       "sourceIds": [
@@ -5339,7 +5508,9 @@ window.MARIN_RESEARCH = {
         "M829",
         "M830",
         "M833",
-        "M809"
+        "M809",
+        "M855",
+        "M856"
       ],
       "reviewStatus": "reviewed"
     },
@@ -5385,7 +5556,8 @@ window.MARIN_RESEARCH = {
           "The v13 evaluation reference expansion remains open and unstaged. The documented serving workarounds still need a deployed repair receipt.",
           "Full Mochi post-training qualification, downstream validation of teacher distillation and clean benchmark comparisons remain future work. The distillation and newer serving presets remain open proposals.",
           "The consolidated artifact loop, cross-rank executable guard, memory-layout refresh and host-rebind barrier remain open. Sustained Mochi RL, full GPU restart and revised clean evaluation policies remain future work.",
-          "Byte-weighted BPB, shared partial-output deadline behavior, offline multilingual coding agents/separate verifier and native Micro210 binding remain open. GPU partial-abort validation and training-clock issues remain unresolved; no finalized November 30 policy or live alert deployment is established."
+          "Byte-weighted BPB, shared partial-output deadline behavior, offline multilingual coding agents/separate verifier and native Micro210 binding remain open. GPU partial-abort validation and training-clock issues remain unresolved; no finalized November 30 policy or live alert deployment is established.",
+          "Asynchronous checkpoint publication, lexical training decontamination, the no-detected-copy LiveCodeBench subset, evaluation release manifests and lease-lost writer guards remain open. Next-Hero MFU gains are profile-dependent projections, with fresh shapes and loss parity still required."
         ]
       },
       "sourceIds": [
@@ -5615,7 +5787,13 @@ window.MARIN_RESEARCH = {
         "M825",
         "M827",
         "M832",
-        "M833"
+        "M833",
+        "M854",
+        "M850",
+        "M853",
+        "M858",
+        "M861",
+        "M857"
       ],
       "reviewStatus": "reviewed"
     },
@@ -5682,7 +5860,7 @@ window.MARIN_RESEARCH = {
           "A longer full-Mochi trial completed one real update before operator termination; the full-step rollout rate was73.378tokens/s/GPU, not the synthetic-serving peak. Snowball sizing hit checkpoint host OOM after two steps. Fixed-weight MMLU-Pro prompt controls show large scoring effects on two Snowball models.",
           "A public snapshot reports Mochi .123 through step11 and .124 failing atstep4 after a shorter measured evaluation cycle. Short Snowball sizing,32-tokenTPUreplay,encoderdecontamination andgraderdiagnostics remainboundedoperatorreports,notproductionqualitygains.",
           "Mochi .129 best 24 now reports267/434 pass@1 with full coverage after rule-based recovery; parent V5 SFT is247/431 under the same policy but different coverage. Batch-invariance diagnostics are exact on the fixed panel; FA2 alone still fails. BixBench offline regrades are new artifacts, and zero-response timing evidence distinguishes lost partial work from presumed queue starvation.",
-          "Mochi .131 best 34 reports 258/429 pass@1 with five verifier absences, separately from .129267/434. Two campaign children finish50 updates but exports/evaluations and effective-source qualification remain limited. Exp7 RL703 reports its first optimizer update. Action-loop guards fail complete registered success rules; the four-update antithrash treatment logs zero exposure."
+          "Exp7 has terminal RL22 reward0.3550 versus its later published SFT655 baseline0.3756 on the same policy, with serving-region and coverage limits. Campaign .715 reports pooled reward0.6118904207 on422/434, not binary pass@1. Guardian sixteen-pool qualification passes and .726 is submitted without a first-update receipt. Polaris upstream-reference census finds1433 raises; wider source-format and grader-isolation defects remain bounded audits."
         ]
       },
       "sourceIds": [
@@ -5882,7 +6060,14 @@ window.MARIN_RESEARCH = {
         "M811",
         "M812",
         "M814",
-        "M816"
+        "M816",
+        "M835",
+        "M836",
+        "M838",
+        "M839",
+        "M841",
+        "M843",
+        "M848"
       ],
       "reviewStatus": "reviewed"
     },
@@ -5946,7 +6131,8 @@ window.MARIN_RESEARCH = {
           "Eight-model transfer predicts 0.243 ± 0.007 MAI-code BPB / 0.888 ± 0.020 chart units; this is not measured OpenAI private loss and excludes additional axis-mapping uncertainty. Changing scored subsets prevents interpreting aggregate holdout as paired improvement.",
           "The old Mochi/Snowball SFT-to-RL contrast does not isolate model, data or optimizer causes. Cache-off cross-rank mismatch shows prefix caching is not necessary for that discrepancy, without identifying an arithmetic root cause. Saved-response regrading changes scores without model learning; partial-test timings do not certify production speed.",
           "The complete invariance bundle succeeds where FA2 alone does not; this does not identify a unique arithmetic cause or establish DSpark/trainer parity. Same-policy small-panel aggregates with different coverage/recovery are not a paired causal training effect. Recorded zero tokens need not mean no generation, and masked unavailable rewards are not trained negative examples.",
-          "Different recipe, coverage, recovery history and grader populations prevent attributing the .131/.129 aggregate difference to DSpark. Zero antithrash exposure does not estimate active-penalty efficacy. Byte-weighted ratio repair is not a universal correction factor for existing Hero metrics, and network-assisted benchmark passes are not unaided solves."
+          "Different recipe, coverage, recovery history and grader populations prevent attributing the .131/.129 aggregate difference to DSpark. Zero antithrash exposure does not estimate active-penalty efficacy. Byte-weighted ratio repair is not a universal correction factor for existing Hero metrics, and network-assisted benchmark passes are not unaided solves.",
+          "The BF16 weight-movement explanation is an untested hypothesis across confounded recipes. Reward means, binary pass@1 and benchmark macro means are different statistics; their values cannot be directly ranked. Source-copy matches before sampling do not establish actual training exposure, and source shares in clipped SFT review are not defect prevalence."
         ]
       },
       "sourceIds": [
@@ -6105,7 +6291,11 @@ window.MARIN_RESEARCH = {
         "M809",
         "M816",
         "M822",
-        "M826"
+        "M826",
+        "M837",
+        "M838",
+        "M852",
+        "M849"
       ],
       "reviewStatus": "reviewed"
     },
@@ -6156,7 +6346,7 @@ window.MARIN_RESEARCH = {
           "The averaged65K public export has generation_parity_tested=false. Its default selection does not establish validated generation, clean quality gains or finalSFT publication.",
           "Current sustained Mochi reliability, full GPU native restart, corrected .124 drain-run outcomes, truly saturated long-cycle Snowball sizing, complete nativeRLintegration,full-corpusdecontamination andcleanqualitygainsremainunverified.",
           "Clean paired Mochi holdout gains, complete contamination exclusion, private-test loss, full GPU optimizer restore, main-preset handoff and broad corrected evaluation rankings remain unverified.",
-          "Polaris v4 admission is unresolved: the dedicated audit awaits unused-case replay/review while the campaign index claims qualified/runnable. Current anonymous RL/Exp7/loop W&B candidates remain unreadable; public operator receipts are not independent live telemetry. Sustained Exp7 progress, clean paired learning effects, numerical root cause and shared deadline GPU correctness remain unverified."
+          "Polaris retained-source qualification remains unresolved despite small passing controls; the exact retained census and native full replay are not established. Anonymous RL/Exp7 W&B remains unreadable. The removed .721 measurement checkpoint recovery, .726 actual-agent gate/first update, archive-upload incident impact, same-serving Exp7 repeat and proposed fixes’ production adoption remain unknown."
         ]
       },
       "sourceIds": [
@@ -6392,12 +6582,302 @@ window.MARIN_RESEARCH = {
         "M820",
         "M810",
         "M812",
-        "M824"
+        "M824",
+        "M841",
+        "M839",
+        "M840",
+        "M836"
       ],
       "reviewStatus": "reviewed"
     }
   ],
   "updates": [
+    {
+      "id": "event-2026-11-28-exp7-terminal-versus-sft",
+      "date": "2026-11-28",
+      "status": "experimental",
+      "title": {
+        "en": "Exp7’s final small-panel evaluation scores below its own supervised starting point"
+      },
+      "detail": {
+        "en": "Exp7’s final reinforcement-learning checkpoint scored below its own supervised-learning initializer on the same frozen evaluation policy. This gives a completed outcome for yesterday’s first-update report, but it does not isolate why the score fell. The November28 public receipts report pooled scored-attempt mean reward 0.3756 for SFT655 versus 0.3550 for RL22, a difference of about -0.021; binary pass@1 is separately 103/198 versus 102/198. The RL result scores 423/440 expected rollouts across 198/200 attempted tasks; BixBench has ten unscored attempts and both terminal-benchmark recovery panels attempt nine of ten tasks. The baseline receipt reports matching frozen policy, judge, tasks and decoding, but uses the H100 cw-us-east-02a static-export serving profile while RL uses cw-rno2a. The selected RL checkpoint is native22, chosen by adjusted EMA with 200/200 scored selection tasks. That selection score rises from 0.4346 to 0.4750 even as pooled Micro210 reward falls: these are different measurements. Exp6 RL20 is a separate descriptive reference at 0.4269 over423 scored attempts, not this round’s SFT control. The later SFT receipt supersedes the earlier terminal comment’s statement that its own baseline is absent. These public operator results were read; private raw archives and live RL W&B were not independently retrieved."
+      },
+      "sourceIds": [
+        "M835",
+        "M836"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-28T14:07:21Z",
+      "concept": {
+        "en": "A training selection score and a held-out evaluation can disagree. Compare the same statistic and preserve differences in coverage and serving conditions."
+      },
+      "exercise": {
+        "en": "Which additional matched-serving repeat would help distinguish a reproducible quality change from evaluation variation?"
+      }
+    },
+    {
+      "id": "event-2026-11-28-bf16-movement-hypothesis",
+      "date": "2026-11-28",
+      "status": "inference",
+      "title": {
+        "en": "Limited weight movement may explain an older SFT result, but the proposed explanation is untested"
+      },
+      "detail": {
+        "en": "A new analysis proposes that an older supervised model benefited from changing its weights less during training. This could motivate a controlled experiment, but the evidence does not show that lower-precision weight storage caused its higher small-panel score. The seven-round ledger reports BF16-stored Exp1 SFT746 at pooled reward0.4651 with404/434 scored, versus FP32-stored Exp7 SFT655 at0.3756 with423 scored. Exp1 remains0.433 if its30 missing attempts are counted as zero, a sensitivity check rather than a completed matched evaluation. The runs also differ in data mix, optimizer grouping, warmup, learning rate and serving profiles; Exp7 stops at655 of1680 intended updates before its final15% cooldown. A separate one-hour storage-controlled pair has BF16 held-out SFT loss0.13 higher and pretraining-loss change at most0.003, with no Micro210 result. Reported weight-update rounding and lower movement motivate the hypothesis; they do not remove recipe confounders. Issue#12438 proposes measuring movement, interpolating checkpoints and a same-recipe BF16 repeat; all three tests are unstarted. Its declarative causal sentence is treated here as a hypothesis, not a demonstrated conclusion."
+      },
+      "sourceIds": [
+        "M837",
+        "M836"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-28T14:07:21Z",
+      "concept": {
+        "en": "A correlation between weight movement and scores can suggest a mechanism without establishing it. A controlled comparison changes one factor while keeping the recipe comparable."
+      },
+      "exercise": {
+        "en": "What would you keep fixed when testing whether storage precision, rather than data mix, explains the score?"
+      }
+    },
+    {
+      "id": "event-2026-11-28-campaign715-reward-and-coverage",
+      "date": "2026-11-28",
+      "status": "experimental",
+      "title": {
+        "en": "Another data-mix trial reports a higher small-panel reward, with twelve attempts still unscored"
+      },
+      "detail": {
+        "en": "A separate Mochi data-mix trial now has a published small-panel reward result above its recorded baseline. This is a descriptive outcome for that trial, not a causal ranking of data sources or a comparison with yesterday’s binary pass rate. The November28 receipt for v2-mix-026 .715 reports422/434 scored and pooled scored-attempt mean reward0.6118904207, approximately+0.0148 versus its recorded0.5971 baseline. Eight DS-1000 and four TB2 attempts remain unscored. The metric weights by scored-attempt count; it is neither binary pass@1 nor a mean giving each benchmark equal weight. The actual evaluation child a5e6034c355e succeeds4/4 tasks and finishes12:58:23UTC; the operator reports terminal manifest, artifact and published-record readback, with no replay. This closes one campaign evaluation gap while leaving other mixes and incomplete verifier coverage distinct. The EvalDash URL and exact public receipt are cited, but the private terminal archive was not independently fetched."
+      },
+      "sourceIds": [
+        "M838"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-28T14:07:21Z",
+      "concept": {
+        "en": "An average changes meaning with its denominator and weighting. A scored-attempt reward mean cannot be compared directly with binary pass@1."
+      },
+      "exercise": {
+        "en": "How would you label a chart so that missing attempts and reward weighting remain visible?"
+      }
+    },
+    {
+      "id": "event-2026-11-28-campaign-guardian-qualification",
+      "date": "2026-11-28",
+      "status": "experimental",
+      "title": {
+        "en": "A repaired worker setup passes a stronger device test and submits one replacement trial"
+      },
+      "detail": {
+        "en": "A campaign worker repair passed a stronger setup test and a replacement trial was submitted once. This removes a reproduced startup obstacle in that test, while the new trial has not yet demonstrated a completed training update. An earlier four-pool test passed but a sixteen-pool test failed to create a loop device; neither diagnostic ran a model. The later regional test holds16 pools and16 allocation-owned loop devices concurrently on s1csxs64, with four tests passing and no skips. The repaired guardian exposes the kernel-selected device from its sysfs identity and preserves scoped cleanup. The original failed host state was not captured, so the precise cause of .723 remains unknown. At13:52:19.885UTC, v2-mix-028 .726 is accepted from commit09d9069b02, with144 GB200 planned; its initial tree has only the root, with regional secret/actual-agent gate, GPU child and execution identity still pending. The existing74634-row pool is adopted unchanged. Separate bounded receipts show .719 at full step36 and .721 at24, not .726. Focused and landing tests pass, but the affected suite records1986 pass/15 fail/3 skip and stops before the root suite; it is not a broad pass or evidence of Hero pretraining deployment."
+      },
+      "sourceIds": [
+        "M838",
+        "M839"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-28T14:07:21Z",
+      "concept": {
+        "en": "A setup qualification tests whether workers can start safely. A submitted root is a different receipt from allocated workers or a completed optimizer update."
+      },
+      "exercise": {
+        "en": "Which child identity and finite-update receipt would you require before calling the replacement trial running?"
+      }
+    },
+    {
+      "id": "event-2026-11-28-checkpoint-measurement-hold",
+      "date": "2026-11-28",
+      "status": "unknown",
+      "title": {
+        "en": "An external checkpoint hold did not stop a live trainer’s automatic cleanup"
+      },
+      "detail": {
+        "en": "A public incident receipt says a checkpoint needed for measurement disappeared after an external preservation hold. This exposes a gap between operator instructions and the retention rules already running inside the trainer. The .721 trainer logs native cleanup of global_step_10 at13:21:31UTC after the08:20EST hold; earlier .719 step20 and .721 step5 removals precede that hold. The operator reports no held-key deletion or live-trainer patch. The bounded readback retains .533 step3, .717 steps25/30 and .719 step25, with .719 step25 at risk under the next rolling save. The live keep-two policy recognizes best/export protections but no general external measurement-hold marker. Availability is only established at those observations, not guaranteed now, and later recovery of the removed measurement input is not shown. Separately3.904005TiB of obsolete .712 step25 objects are deleted under a frozen ledger while native30 is retained; verified object absence is not measured physical free capacity. This matters for reproducible comparisons even when training continues."
+      },
+      "sourceIds": [
+        "M840",
+        "M838",
+        "M839"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-28T14:07:21Z",
+      "concept": {
+        "en": "A retention policy needs a machine-readable protection rule. A written hold cannot protect a file if the already-running cleanup code never reads it."
+      },
+      "exercise": {
+        "en": "How would you test that both automatic retention and operator pruning honor the same measurement hold?"
+      }
+    },
+    {
+      "id": "event-2026-11-28-polaris-full-reference-census",
+      "date": "2026-11-28",
+      "status": "experimental",
+      "title": {
+        "en": "A wider math-grader check finds failures beyond the small controls that passed"
+      },
+      "detail": {
+        "en": "A full upstream-reference check reports many failures in the revised Polaris math grader. This narrows yesterday’s conflicting qualification claims: passing a small control set does not establish that the retained training source is ready. The November27 evening comment probes the v4 score function at334094a731 against all53291 pinned upstream rows, using each reference as its own boxed answer. It reports1433 exceptions:926 reference-parse failures,421 label/content disagreements,62 undeclared choices,22 undefined values and2 deadlines. The retained release has53167 rows, only124 fewer, so at least1309 raising rows must remain if it is the stated upstream subset; the exact retained census was not readable and is not claimed. Of397 valid-label references among raises, a diagnostic choice lookup repairs341, leaving56. Separately68 of71 factorial references get zero after an rstrip(\".!\") path removes the factorial sign; stripping periods alone yields70/71 correct. Twelve negation references also give false zeros. These are reported local in-process reference probes, not a native guest rehearsal, campaign model-answer error rate or independently downloaded release census. Admission remains unresolved."
+      },
+      "sourceIds": [
+        "M841"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-28T14:07:21Z",
+      "concept": {
+        "en": "A reference should normally pass its own grader. This invariant catches conversion and parsing defects before model-quality conclusions are drawn."
+      },
+      "exercise": {
+        "en": "Why can a full reference census reveal defects that a small set of handpicked controls misses?"
+      }
+    },
+    {
+      "id": "event-2026-11-28-answer-format-and-grader-isolation",
+      "date": "2026-11-28",
+      "status": "experimental",
+      "title": {
+        "en": "Answer-format and isolation audits reveal ways correct work can lose training credit"
+      },
+      "detail": {
+        "en": "New grader audits show how correct answers can receive no useful reward, while some malformed or hostile outputs can be accepted. These are concrete source and branch defects, not measured error rates across all campaign replies. NuminaMath conversion retains23247 label-plus-content references; on22631 rows tested ordinary letter-only or content-only correct forms all fail, while the combined form often passes. Campaign reply frequency is unmeasured. A separate plain-answer math fallback can extract a numeric fragment instead of checking the whole answer. On the Atlas task-curation branch,60 seeded LeetCode rows fail for reference solutions and12 other nonempty reply forms because the shipped grader omits leetcode_harness; empty replies alone retain zero. Adding the module without process isolation lets a tested print(1)+SystemExit(0) output score1 on those60 cases. AceCode has a separate candidate-error-as-infrastructure defect. Open PRs#12435/#12436/#12434 propose repairs; no merge, full reconversion, campaign adoption or clean rerun is established. Candidate mistakes should score zero, whereas a broken verifier should remain visibly unavailable."
+      },
+      "sourceIds": [
+        "M843",
+        "M842",
+        "M848",
+        "M846",
+        "M845",
+        "M844",
+        "M847"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-28T14:07:21Z",
+      "concept": {
+        "en": "A scorer must separate candidate behavior from infrastructure failure and keep candidate output outside the trusted reward channel."
+      },
+      "exercise": {
+        "en": "Which tests would cover a correct short answer, a wrong numeric fragment, a crashing candidate and a missing grader dependency?"
+      }
+    },
+    {
+      "id": "event-2026-11-28-sft-data-sample-audit",
+      "date": "2026-11-28",
+      "status": "experimental",
+      "title": {
+        "en": "A published review finds recurring flaws in a sample of the October supervised data"
+      },
+      "detail": {
+        "en": "A newly published review identifies recurring low-value or misleading material in the October5 supervised-training mixture. It supplies candidates for cleaning a future data build, not evidence that filters or retraining have already improved a model. The review samples7503 cached documents using training shares with a four-document floor per source and seed1;3760 long documents are clipped to the first12000 and last4000 tokens. Ten language-model reviewers and script counts find long reasoning that gives up before a confident answer, questionable replay material, conversion artifacts and agent claims without supporting actions. The216 SFT stores account for79.65% of configured positions and391 replay caches for20.35%, but source shares are not defect prevalence: saying candidate filters touch sources over half the mix does not mean half its tokens are wrong. Only about6.5% of each long replay document is visible. No code, Lean or answer-key validation is performed; loss masks, long-document splitting and instance-level benchmark joins are unchecked. No filters have been applied and no retraining run. Counts and excerpts are source-reported, not independently relabelled here."
+      },
+      "sourceIds": [
+        "M849"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-28T14:07:21Z",
+      "concept": {
+        "en": "A sampled document review can identify failure patterns. Clipping, source floors and missing ground truth limit estimates of how common those failures are."
+      },
+      "exercise": {
+        "en": "What extra sampling and validation would you need before estimating the fraction of training tokens that are defective?"
+      }
+    },
+    {
+      "id": "event-2026-11-28-lexical-copy-filtering",
+      "date": "2026-11-28",
+      "status": "planned",
+      "title": {
+        "en": "Proposed copy filters make benchmark overlap explicit, without proving all remaining tasks are clean"
+      },
+      "detail": {
+        "en": "New proposals would reject training tasks that copy evaluation text and publish a coding subset with no detected Hero-source copies. This improves comparability if adopted, but a lexical scan cannot establish that every remaining task is uncontaminated. Open PR#12402 reproduces ASDiv flags and rendered text on2294 shared tasks with zero mismatches, retaining the same410 IDs and rejecting1884. Its11-row difference from the sealed2305-task census is accounted for by ten newer conversion rejects and one semantic duplicate, not unexplained nondeterminism; the full ordered-population digest is not claimed equal. Related#12403 closes unmerged. Separately the292-source pretraining scan flags676 of1055 LiveCodeBench problems under a declared13-gram overlap rule. It scans before deduplication and sampling, so detected source copies need not have reached the trained store; paraphrases/translations escape detection. Proposed livecodebench-hero-clean keeps379 no-detected-copy problems. A Qwen3-8B test grades379/379 at0.596 +/-0.025, including14 context-cutoff zeros; this validates a bounded evaluation path, not Hero quality. The original benchmark identity is unchanged. PR#12409 is open."
+      },
+      "sourceIds": [
+        "M850",
+        "M851",
+        "M852",
+        "M853"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-28T14:07:21Z",
+      "concept": {
+        "en": "No detected text overlap is a result under a specified detector, not proof of no shared information. Training-store exposure also differs from presence in an upstream source."
+      },
+      "exercise": {
+        "en": "How would you distinguish a source-level copy, an actually sampled training example and an undetected paraphrase?"
+      }
+    },
+    {
+      "id": "event-2026-11-28-async-checkpoint-proposal",
+      "date": "2026-11-28",
+      "status": "planned",
+      "title": {
+        "en": "A checkpoint proposal shortens a small test’s pause, while durable saving still finishes later"
+      },
+      "detail": {
+        "en": "An open change would let training resume after checkpoint data is safely copied to host memory, while storage uploads continue in the background. Its small test measures the staging handoff, not a completed durable save or a demonstrated speedup for the full Mochi run. The proposal cites synchronous saves of8.8-9.1 minutes in three earlier runs, about17% of completed-update wall time. A two-H100 smoke stages a5.52GiB payload in24.8-26.2 seconds across four saves. Each rank has a default16GiB host buffer; oversize shares can block while the buffer drains. The resume marker is published only after all shard/metadata writes and trainer/rollout state succeed; later saves, dependent exports and finalization wait for pending publication. A separate Gloo group carries checkpoint collectives. A matched full-size Mochi update comparison and current-run adoption are absent; PR#12410 remains open. This concerns saving and recovery, separate from the external measurement-hold failure."
+      },
+      "sourceIds": [
+        "M854",
+        "M840"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-28T14:07:21Z",
+      "concept": {
+        "en": "A staged copy permits computation to continue, but recoverability begins only after every required object and its completion marker are durable."
+      },
+      "exercise": {
+        "en": "Which timestamps would separate training pause, upload completion and the first safely restorable checkpoint?"
+      }
+    },
+    {
+      "id": "event-2026-11-28-accepted-input-and-test-fixture-fixes",
+      "date": "2026-11-28",
+      "status": "confirmed",
+      "title": {
+        "en": "Accepted input-schema and test-fixture fixes remove two specific startup failures in code"
+      },
+      "detail": {
+        "en": "Marin merged two narrow fixes for combining task inputs and starting a batch-parity test. They remove identified code and fixture failures, without proving that a repaired campaign or GPU parity run has completed. PR#12404 merges November27 at21:38:14UTC, widening compatible top-level Arrow text columns to large_string before combining datasets. Mixed-width regression tests preserve task JSON, hashes, routes and numeric values; incompatible nontext schemas still fail, and nested mixed text widths are outside the fix. The motivating v2-mix-009 run died at startup, so this merge alone does not remove its separately reported driver-memory hold. PR#12417 merges November28 at04:30:37UTC, supplying a fourth distinct prompt required to admit three rollout slots. The three recorded groups remain the parity comparison input;49 earlier Grug tests passed before the fixture error. The four-H100 parity test has not been rerun with the fix. These are accepted repository changes, not confirmed main-run production interventions."
+      },
+      "sourceIds": [
+        "M855",
+        "M856",
+        "M839"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-28T14:07:21Z",
+      "concept": {
+        "en": "A test fixture can prevent the behavior under test from running at all. Repairing the fixture enables a test; it does not supply the missing test result."
+      },
+      "exercise": {
+        "en": "Which rerun receipt would show that batch parity was actually compared after prompt admission succeeded?"
+      }
+    },
+    {
+      "id": "event-2026-11-28-next-run-profile-and-release-plans",
+      "date": "2026-11-28",
+      "status": "planned",
+      "title": {
+        "en": "The next-run plan asks for new profiles before choosing optimizations, and evaluation releases remain proposed"
+      },
+      "detail": {
+        "en": "A new plan asks for measurements on the next model’s actual shape before committing to efficiency changes. This is preparation for a possible successor, not a measured gain or a new Hero launch. Issue#12440 describes a tentative second-quarter2027 run and profile-dependent choices. Its September one-rack4K trace totals14.03 seconds, including11.79 compute,0.805 exposed ragged communication,0.57 FSDP and0.62 offload; it is not a current65K eleven-rack trace. The plan calls for fresh post-MFU30 one-rack4K/65K and two-rack profiles, loss parity and hardware qualification. Proposed gains such as about0.5 MFU points from gradient parallelism and2.5 from expert-only MXFP8 are projections; an older Belay ladder gain is a different shape. In parallel open#12405/#12406 propose hash-pinned evaluation release manifests/tags and released-cohort admission, without demonstrating a final November30 release. Open#12439 would stop lease-lost workers from publishing stale results. The newly published standup#12427 reports the week ending November20; its Trainium scaling and NFS test outcomes retain that historical scope and are not fresh Hero measurements."
+      },
+      "sourceIds": [
+        "M857",
+        "M858",
+        "M859",
+        "M860",
+        "M861",
+        "M862"
+      ],
+      "reviewStatus": "reviewed",
+      "checkedAt": "2026-11-28T14:07:21Z",
+      "concept": {
+        "en": "A projected efficiency gain depends on the workload and measured bottleneck. A reproducible release also needs pinned inputs and an actual published manifest."
+      },
+      "exercise": {
+        "en": "Which fresh trace and released-manifest receipt would separate next-run preparation from measured adoption?"
+      }
+    },
     {
       "id": "event-2026-11-27-mochi131-sealed-evaluation",
       "date": "2026-11-27",
